@@ -1,0 +1,9 @@
+---
+- project:
+    merge-mode: squash-merge
+    default-branch: main
+    templates:
+      - umn-hc-jobs
+    check:
+      jobs:
+        - noop
