@@ -3,6 +3,7 @@ Managing Notebook Instances
 ===========================
 
 .. toctree::
+   :maxdepth: 1
 
    creating_a_notebook_instance
    opening_a_notebook_instance

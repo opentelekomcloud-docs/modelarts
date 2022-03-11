@@ -11,7 +11,7 @@ When a model references a dependency package, select a frequently-used framework
 
    For example, the OBS path specified by **Code Directory** contains model files and the **pip-requirements.txt** file. The following shows the code directory structure:
 
-   .. code::
+   .. code-block::
 
       |---OBS path to the model boot file
            |---model.py               #Model boot file
@@ -19,7 +19,7 @@ When a model references a dependency package, select a frequently-used framework
 
    The following shows the content of the **pip-requirements.txt** file:
 
-   .. code::
+   .. code-block::
 
       alembic==0.8.6
       bleach==1.4.3
@@ -31,7 +31,7 @@ When a model references a dependency package, select a frequently-used framework
 
    For example, the OBS path specified by **Code Directory** contains model files, .whl file, and **pip-requirements.txt** file. The following shows the code directory structure:
 
-   .. code::
+   .. code-block::
 
       |---OBS path to the model boot file
            |---model.py               #Model boot file
@@ -40,10 +40,11 @@ When a model references a dependency package, select a frequently-used framework
 
    The following shows the content of the **pip-requirements.txt** file:
 
-   .. code::
+   .. code-block::
 
       numpy-1.15.4-cp36-cp36m-manylinux1_x86_64.whl
       tensorflow-1.8.0-cp36-cp36m-manylinux1_x86_64.whl
 
 
-.. |image1| image:: /images/note_3.0-en-us.png
+
+.. |image1| image:: /_static/images/note_3.0-en-us.png

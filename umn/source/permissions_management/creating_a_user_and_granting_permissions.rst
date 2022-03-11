@@ -34,7 +34,7 @@ Example Policies
 
 -  A policy can define a single permission, such as the permission to deny ExeML project deletion.
 
-   .. code::
+   .. code-block::
 
       { 
             "Version": "1.1", 
@@ -50,7 +50,7 @@ Example Policies
 
 -  A policy can define multiple permissions, such as the permissions to delete an ExeML version and an ExeML project.
 
-   .. code::
+   .. code-block::
 
       { 
           "Version": "1.1", 
@@ -71,8 +71,7 @@ Authentication Logic
 IAM authenticates users according to the permissions that the users have been granted. The authentication logic is as follows:
 
 | **Figure 1** Authentication logic
-| |image2|
-  |image3|
+| |image2| |image3|
 
 The actions in each policy bear the OR relationship.
 
@@ -83,7 +82,8 @@ The actions in each policy bear the OR relationship.
 #. If no explicit allow permission is found, the system returns a decision of **Deny**, and the authentication ends.
 
 
-.. |image1| image:: /images/note_3.0-en-us.png
-.. |image2| image:: /images/en-us_image_0000001110920802.png
 
-.. |image3| image:: /images/note_3.0-en-us.png
+.. |image1| image:: /_static/images/note_3.0-en-us.png
+.. |image2| image:: /_static/images/en-us_image_0000001110920802.png
+
+.. |image3| image:: /_static/images/note_3.0-en-us.png

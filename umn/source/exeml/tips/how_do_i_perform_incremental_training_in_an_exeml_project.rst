@@ -23,4 +23,5 @@ Incremental Training Procedure
    After the settings are complete, click **Yes** to start incremental training. The system automatically switches to the **Train Model** page. After the training is complete, you can view the training details, such as training precision, evaluation result, and training parameters.
 
 
-.. |image1| image:: /images/note_3.0-en-us.png
+
+.. |image1| image:: /_static/images/note_3.0-en-us.png

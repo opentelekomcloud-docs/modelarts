@@ -57,7 +57,7 @@ The command for sending inference requests can be input as a file or text.
 
 #. File input
 
-   .. code-block:: bash
+   .. code-block::
 
       curl -k -F 'images=@Image path' -H 'X-Auth-Token:Token value' -X POST Real-time service URL
 
@@ -68,17 +68,16 @@ The command for sending inference requests can be input as a file or text.
 
    The following is an example of the cURL command for inference with file input:
 
-   .. code::
+   .. code-block::
 
       curl -k -F 'images=@/home/data/test.png' -H 'X-Auth-Token:MIISkAY***80T9wHQ==' -X POST https://modelarts-infers-1.xxx/v1/infers/eb3e0c54-3dfa-4750-af0c-95c45e5d3e83
 
 #. Text input
 
-   .. code-block:: bash
+   .. code-block::
 
-      curl -k -d '{"data":{"req_data":[{"sepal_length":3,"sepal_width":1,"petal_length":2.2,"petal_width":4}]}}' \
-        -H 'X-Auth-Token:MIISkAY***80T9wHQ==' -H 'Content-type: application/json' \
-        -X POST https://modelarts-infers-1.xxx/v1/infers/eb3e0c54-3dfa-4750-af0c-95c45e5d3e83
+      curl -k -d '{"data":{"req_data":[{"sepal_length":3,"sepal_width":1,"petal_length":2.2,"petal_width":4}]}}' -H 'X-Auth-Token:MIISkAY***80T9wHQ==' -H 'Content-type: application/json' -X POST https://modelarts-infers-1.xxx/v1/infers/eb3e0c54-3dfa-4750-af0c-95c45e5d3e83
 
    **-d** indicates the text input of the request body.
+
 

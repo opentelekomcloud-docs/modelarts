@@ -11,3 +11,4 @@ Data may be stored in OBS or EVS, depending on which kind of storage you have co
 
    After you click **upload**, the data is uploaded to the instance container, that is, the **~/work** directory on the **Terminal** page.
 
+

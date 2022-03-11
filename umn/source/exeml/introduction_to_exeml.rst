@@ -31,5 +31,6 @@ ExeML Projects
    An object detection project aims to identify the class and location of objects in images. You only need to add images and label objects in the images with proper bounding boxes. The labled images will be used as the training set for creating a model. The model can identify multiple objects and count the number of objects in a single image, as well as inspect employees' dress code and perform unattended inspection of article placement.
 
 
-.. |image1| image:: /images/en-us_image_0000001110921482.png
+
+.. |image1| image:: /_static/images/en-us_image_0000001110921482.png
 

@@ -13,7 +13,7 @@ The manifest file that contains information about the original file and labeling
 
 -  The manifest file uses the JSON Lines format (**jsonlines.org**). A line contains one JSON object.
 
-   .. code::
+   .. code-block::
 
       {"source": "/path/to/image1.jpg", "annotation": ... }
       {"source": "/path/to/image2.jpg", "annotation": ... }
@@ -26,37 +26,34 @@ The manifest file that contains information about the original file and labeling
 Image Classification
 --------------------
 
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| ::                                                        | ::                                                        |
-|                                                           |                                                           |
-|     1                                                     |    {                                                      |
-|     2                                                     |        "source":"s3://path/to/image1.jpg",                |
-|     3                                                     |        "usage":"TRAIN",                                   |
-|     4                                                     |        "id":"0162005993f8065ef47eefb59d1e4970",           |
-|     5                                                     |        "annotation": [                                    |
-|     6                                                     |            {                                              |
-|     7                                                     |                "type": "modelarts/image_classification",  |
-|     8                                                     |                "name": "cat",                             |
-|     9                                                     |                "property": {                              |
-|    10                                                     |                    "color":"white",                       |
-|    11                                                     |                    "kind":"Persian cat"                   |
-|    12                                                     |                },                                         |
-|    13                                                     |                "annotated-by":"human",                    |
-|    14                                                     |                                                           |
-|    15                                                     |             "creation-time":"2019-01-23 11:30:30"         |
-|    16                                                     |            },                                             |
-|    17                                                     |            {                                              |
-|    18                                                     |                "type": "modelarts/image_classification",  |
-|    19                                                     |                "name":"animal",                           |
-|    20                                                     |                                                           |
-|    21                                                     |               "annotated-by":"modelarts/active-learning", |
-|    22                                                     |                "confidence": 0.8,                         |
-|    23                                                     |                                                           |
-|    24                                                     |             "creation-time":"2019-01-23 11:30:30"         |
-|                                                           |            }],                                            |
-|                                                           |        "inference-loc":"/path/to/inference-output"        |
-|                                                           |    }                                                      |
-+-----------------------------------------------------------+-----------------------------------------------------------+
++-----------------------------------+--------------------------------------------------------------+
+| ::                                | ::                                                           |
+|                                   |                                                              |
+|     1                             |    {                                                         |
+|     2                             |        "source":"s3://path/to/image1.jpg",                   |
+|     3                             |        "usage":"TRAIN",                                      |
+|     4                             |        "id":"0162005993f8065ef47eefb59d1e4970",              |
+|     5                             |        "annotation": [                                       |
+|     6                             |            {                                                 |
+|     7                             |                "type": "modelarts/image_classification",     |
+|     8                             |                "name": "cat",                                |
+|     9                             |                "property": {                                 |
+|    10                             |                    "color":"white",                          |
+|    11                             |                    "kind":"Persian cat"                      |
+|    12                             |                },                                            |
+|    13                             |                "annotated-by":"human",                       |
+|    14                             |                "creation-time":"2019-01-23 11:30:30"         |
+|    15                             |            },                                                |
+|    16                             |            {                                                 |
+|    17                             |                "type": "modelarts/image_classification",     |
+|    18                             |                "name":"animal",                              |
+|    19                             |                "annotated-by":"modelarts/active-learning",   |
+|    20                             |                "confidence": 0.8,                            |
+|    21                             |                "creation-time":"2019-01-23 11:30:30"         |
+|    22                             |            }],                                               |
+|    23                             |        "inference-loc":"/path/to/inference-output"           |
+|    24                             |    }                                                         |
++-----------------------------------+--------------------------------------------------------------+
 
 
 
@@ -64,49 +61,26 @@ Image Classification
 
 .. table:: **Table 1** Parameters
 
-   +---------------------------------------+---------------------------------------+---------------------------------------+
-   | Parameter                             | Mandatory                             | Description                           |
-   +=======================================+=======================================+=======================================+
-   | source                                | Yes                                   | URI of an object to be labeled. For   |
-   |                                       |                                       | details about data source types and   |
-   |                                       |                                       | examples, see `Table                  |
-   |                                       |                                       | 2 <#modelarts_23_0009__en-us_top      |
-   |                                       |                                       | ic_0170886817_table9303122642318>`__. |
-   +---------------------------------------+---------------------------------------+---------------------------------------+
-   | usage                                 | No                                    | By default, the parameter value is    |
-   |                                       |                                       | left blank. Possible values are as    |
-   |                                       |                                       | follows:                              |
-   |                                       |                                       |                                       |
-   |                                       |                                       | -  **TRAIN**: The object is used for  |
-   |                                       |                                       |    training.                          |
-   |                                       |                                       | -  **EVAL**: The object is used for   |
-   |                                       |                                       |    evaluation.                        |
-   |                                       |                                       | -  **TEST**: The object is used for   |
-   |                                       |                                       |    testing.                           |
-   |                                       |                                       | -  **INFERENCE**: The object is used  |
-   |                                       |                                       |    for inference.                     |
-   |                                       |                                       |                                       |
-   |                                       |                                       | If the parameter value is left blank, |
-   |                                       |                                       | the user decides how to use the       |
-   |                                       |                                       | object.                               |
-   +---------------------------------------+---------------------------------------+---------------------------------------+
-   | id                                    | No                                    | Sample ID exported from the system.   |
-   |                                       |                                       | You do not need to set this parameter |
-   |                                       |                                       | when importing the sample.            |
-   +---------------------------------------+---------------------------------------+---------------------------------------+
-   | annotation                            | No                                    | If the parameter value is left blank, |
-   |                                       |                                       | the object is not labeled. The value  |
-   |                                       |                                       | of **annotation** consists of an      |
-   |                                       |                                       | object list. For details about the    |
-   |                                       |                                       | parameters, see `Table                |
-   |                                       |                                       | 3 <#modelarts_23_0009__en-us_topi     |
-   |                                       |                                       | c_0170886817_table48141825192716>`__. |
-   +---------------------------------------+---------------------------------------+---------------------------------------+
-   | inference-loc                         | No                                    | This parameter is available when the  |
-   |                                       |                                       | file is generated by the inference    |
-   |                                       |                                       | service, indicating the location of   |
-   |                                       |                                       | the inference result file.            |
-   +---------------------------------------+---------------------------------------+---------------------------------------+
+   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter             | Mandatory             | Description                                                                                                                                                                                                                                  |
+   +=======================+=======================+==============================================================================================================================================================================================================================================+
+   | source                | Yes                   | URI of an object to be labeled. For details about data source types and examples, see `Table 2 <#modelarts_23_0009__en-us_topic_0170886817_table9303122642318>`__.                                                                           |
+   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | usage                 | No                    | By default, the parameter value is left blank. Possible values are as follows:                                                                                                                                                               |
+   |                       |                       |                                                                                                                                                                                                                                              |
+   |                       |                       | -  **TRAIN**: The object is used for training.                                                                                                                                                                                               |
+   |                       |                       | -  **EVAL**: The object is used for evaluation.                                                                                                                                                                                              |
+   |                       |                       | -  **TEST**: The object is used for testing.                                                                                                                                                                                                 |
+   |                       |                       | -  **INFERENCE**: The object is used for inference.                                                                                                                                                                                          |
+   |                       |                       |                                                                                                                                                                                                                                              |
+   |                       |                       | If the parameter value is left blank, the user decides how to use the object.                                                                                                                                                                |
+   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | id                    | No                    | Sample ID exported from the system. You do not need to set this parameter when importing the sample.                                                                                                                                         |
+   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | annotation            | No                    | If the parameter value is left blank, the object is not labeled. The value of **annotation** consists of an object list. For details about the parameters, see `Table 3 <#modelarts_23_0009__en-us_topic_0170886817_table48141825192716>`__. |
+   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | inference-loc         | No                    | This parameter is available when the file is generated by the inference service, indicating the location of the inference result file.                                                                                                       |
+   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 
@@ -127,62 +101,38 @@ Image Classification
 
 .. table:: **Table 3** **annotation** objects
 
-   +---------------------------------------+---------------------------------------+---------------------------------------+
-   | Parameter                             | Mandatory                             | Description                           |
-   +=======================================+=======================================+=======================================+
-   | type                                  | Yes                                   | Label type. Possible values are as    |
-   |                                       |                                       | follows:                              |
-   |                                       |                                       |                                       |
-   |                                       |                                       | -  **image_classification**: image    |
-   |                                       |                                       |    classification                     |
-   |                                       |                                       | -  **text_classification**: text      |
-   |                                       |                                       |    classification                     |
-   |                                       |                                       | -  **text_entity**: named entity      |
-   |                                       |                                       |    recognition                        |
-   |                                       |                                       | -  **object_detection**: object       |
-   |                                       |                                       |    detection                          |
-   |                                       |                                       | -  **audio_classification**: sound    |
-   |                                       |                                       |    classification                     |
-   |                                       |                                       | -  **audio_content**: speech labeling |
-   |                                       |                                       | -  **audio_segmentation**: speech     |
-   |                                       |                                       |    paragraph labeling                 |
-   +---------------------------------------+---------------------------------------+---------------------------------------+
-   | name                                  | Yes/No                                | This parameter is mandatory for the   |
-   |                                       |                                       | classification type but optional for  |
-   |                                       |                                       | other types. This example uses the    |
-   |                                       |                                       | image classification type.            |
-   +---------------------------------------+---------------------------------------+---------------------------------------+
-   | id                                    | Yes/No                                | Label ID. This parameter is mandatory |
-   |                                       |                                       | for triplets but optional for other   |
-   |                                       |                                       | types. The entity label ID of a       |
-   |                                       |                                       | triplet is in **E+number** format,    |
-   |                                       |                                       | for example, **E1** and **E2**. The   |
-   |                                       |                                       | relationship label ID of a triplet is |
-   |                                       |                                       | in **R+number** format, for example,  |
-   |                                       |                                       | **R1** and **R2**.                    |
-   +---------------------------------------+---------------------------------------+---------------------------------------+
-   | property                              | No                                    | Labeling property. In this example,   |
-   |                                       |                                       | the cat has two properties: color and |
-   |                                       |                                       | kind.                                 |
-   +---------------------------------------+---------------------------------------+---------------------------------------+
-   | annotated-by                          | No                                    | The default value is **human**,       |
-   |                                       |                                       | indicating manual labeling.           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | -  human                              |
-   +---------------------------------------+---------------------------------------+---------------------------------------+
-   | creation-time                         | No                                    | Time when the labeling job was        |
-   |                                       |                                       | created. It is the time when labeling |
-   |                                       |                                       | information was written, not the time |
-   |                                       |                                       | when the manifest file was generated. |
-   +---------------------------------------+---------------------------------------+---------------------------------------+
-   | confidence                            | No                                    | Confidence score of machine labeling. |
-   |                                       |                                       | The value ranges from 0 to 1.         |
-   +---------------------------------------+---------------------------------------+---------------------------------------+
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter             | Mandatory             | Description                                                                                                                                                                                                                                                                    |
+   +=======================+=======================+================================================================================================================================================================================================================================================================================+
+   | type                  | Yes                   | Label type. Possible values are as follows:                                                                                                                                                                                                                                    |
+   |                       |                       |                                                                                                                                                                                                                                                                                |
+   |                       |                       | -  **image_classification**: image classification                                                                                                                                                                                                                              |
+   |                       |                       | -  **text_classification**: text classification                                                                                                                                                                                                                                |
+   |                       |                       | -  **text_entity**: named entity recognition                                                                                                                                                                                                                                   |
+   |                       |                       | -  **object_detection**: object detection                                                                                                                                                                                                                                      |
+   |                       |                       | -  **audio_classification**: sound classification                                                                                                                                                                                                                              |
+   |                       |                       | -  **audio_content**: speech labeling                                                                                                                                                                                                                                          |
+   |                       |                       | -  **audio_segmentation**: speech paragraph labeling                                                                                                                                                                                                                           |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | name                  | Yes/No                | This parameter is mandatory for the classification type but optional for other types. This example uses the image classification type.                                                                                                                                         |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | id                    | Yes/No                | Label ID. This parameter is mandatory for triplets but optional for other types. The entity label ID of a triplet is in **E+number** format, for example, **E1** and **E2**. The relationship label ID of a triplet is in **R+number** format, for example, **R1** and **R2**. |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | property              | No                    | Labeling property. In this example, the cat has two properties: color and kind.                                                                                                                                                                                                |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | annotated-by          | No                    | The default value is **human**, indicating manual labeling.                                                                                                                                                                                                                    |
+   |                       |                       |                                                                                                                                                                                                                                                                                |
+   |                       |                       | -  human                                                                                                                                                                                                                                                                       |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | creation-time         | No                    | Time when the labeling job was created. It is the time when labeling information was written, not the time when the manifest file was generated.                                                                                                                               |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | confidence            | No                    | Confidence score of machine labeling. The value ranges from 0 to 1.                                                                                                                                                                                                            |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Image Segmentation
 ------------------
 
-.. code::
+.. code-block::
 
    {
        "annotation": [{
@@ -209,61 +159,34 @@ Image Segmentation
 
 .. table:: **Table 4** PASCAL VOC format parameters
 
-   +-------------+-----------+--------------------------------------------------------------------------------+
-   | Parameter   | Mandatory | Description                                                                    |
-   +=============+===========+================================================================================+
-   | folder      | Yes       | Directory where the data source is located                                     |
-   +-------------+-----------+--------------------------------------------------------------------------------+
-   | filename    | Yes       | Name of the file to be labeled                                                 |
-   +-------------+-----------+--------------------------------------------------------------------------------+
-   | size        | Yes       | Image pixel                                                                    |
-   |             |           |                                                                                |
-   |             |           | -  **width**: image width. This                                                |
-   |             |           |    parameter is mandatory.                                                     |
-   |             |           | -  **height**: image height. This                                              |
-   |             |           |    parameter is mandatory.                                                     |
-   |             |           | -  **depth**: number of image                                                  |
-   |             |           |    channels. This parameter is                                                 |
-   |             |           |    mandatory.                                                                  |
-   +-------------+-----------+--------------------------------------------------------------------------------+
-   | segmented   | Yes       | Segmented or not                                                               |
-   +-------------+-----------+--------------------------------------------------------------------------------+
-   | mask_source | No        | Segmentation mask path                                                         |
-   +-------------+-----------+--------------------------------------------------------------------------------+
-   | object      | Yes       | Object detection information.                                                  |
-   |             |           | Multiple **object{}** functions are                                            |
-   |             |           | generated for multiple objects.                                                |
-   |             |           |                                                                                |
-   |             |           | -  **name**: class of the labeled                                              |
-   |             |           |    content. This parameter is                                                  |
-   |             |           |    mandatory.                                                                  |
-   |             |           | -  **pose**: shooting angle of the                                             |
-   |             |           |    labeled content. This parameter is                                          |
-   |             |           |    mandatory.                                                                  |
-   |             |           | -  **truncated**: whether the labeled                                          |
-   |             |           |    content is truncated (**0**                                                 |
-   |             |           |    indicates that the content is not                                           |
-   |             |           |    truncated). This parameter is                                               |
-   |             |           |    mandatory.                                                                  |
-   |             |           | -  **occluded**: whether the labeled                                           |
-   |             |           |    content is occluded (**0**                                                  |
-   |             |           |    indicates that the content is not                                           |
-   |             |           |    occluded). This parameter is                                                |
-   |             |           |    mandatory.                                                                  |
-   |             |           | -  **difficult**: whether the labeled                                          |
-   |             |           |    object is difficult to identify                                             |
-   |             |           |    (**0** indicates that the object                                            |
-   |             |           |    is easy to identify). This                                                  |
-   |             |           |    parameter is mandatory.                                                     |
-   |             |           | -  **confidence**: confidence score                                            |
-   |             |           |    of the labeled object. The value                                            |
-   |             |           |    ranges from 0 to 1. This parameter is optional.                             |
-   |             |           | -  **bndbox**: bounding box type. This parameter is mandatory. For             |
-   |             |           |    details about the possible values, see                                      |
-   |             |           |    `Table 5 <#modelarts_23_0009__en-us_topic_0170886817_table181711917139>`__. |
-   |             |           | -  **mask_color**: label color, which is represented by the RGB value.         |
-   |             |           |    This parameter is mandatory.                                                |
-   +-------------+-----------+--------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter             | Mandatory             | Description                                                                                                                                                                           |
+   +=======================+=======================+=======================================================================================================================================================================================+
+   | folder                | Yes                   | Directory where the data source is located                                                                                                                                            |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | filename              | Yes                   | Name of the file to be labeled                                                                                                                                                        |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | size                  | Yes                   | Image pixel                                                                                                                                                                           |
+   |                       |                       |                                                                                                                                                                                       |
+   |                       |                       | -  **width**: image width. This parameter is mandatory.                                                                                                                               |
+   |                       |                       | -  **height**: image height. This parameter is mandatory.                                                                                                                             |
+   |                       |                       | -  **depth**: number of image channels. This parameter is mandatory.                                                                                                                  |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | segmented             | Yes                   | Segmented or not                                                                                                                                                                      |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | mask_source           | No                    | Segmentation mask path                                                                                                                                                                |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | object                | Yes                   | Object detection information. Multiple **object{}** functions are generated for multiple objects.                                                                                     |
+   |                       |                       |                                                                                                                                                                                       |
+   |                       |                       | -  **name**: class of the labeled content. This parameter is mandatory.                                                                                                               |
+   |                       |                       | -  **pose**: shooting angle of the labeled content. This parameter is mandatory.                                                                                                      |
+   |                       |                       | -  **truncated**: whether the labeled content is truncated (**0** indicates that the content is not truncated). This parameter is mandatory.                                          |
+   |                       |                       | -  **occluded**: whether the labeled content is occluded (**0** indicates that the content is not occluded). This parameter is mandatory.                                             |
+   |                       |                       | -  **difficult**: whether the labeled object is difficult to identify (**0** indicates that the object is easy to identify). This parameter is mandatory.                             |
+   |                       |                       | -  **confidence**: confidence score of the labeled object. The value ranges from 0 to 1. This parameter is optional.                                                                  |
+   |                       |                       | -  **bndbox**: bounding box type. This parameter is mandatory. For details about the possible values, see `Table 5 <#modelarts_23_0009__en-us_topic_0170886817_table181711917139>`__. |
+   |                       |                       | -  **mask_color**: label color, which is represented by the RGB value. This parameter is mandatory.                                                                                   |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 
@@ -271,43 +194,43 @@ Image Segmentation
 
 .. table:: **Table 5** Bounding box types
 
-   +---------------------------------------+---------------------------------------+---------------------------------------+
-   | Type                                  | Shape                                 | Labeling Information                  |
-   +=======================================+=======================================+=======================================+
-   | polygon                               | Polygon                               | Coordinates of points                 |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <x1>100<x1>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <y1>100<y1>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <x2>200<x2>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <y2>100<y2>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <x3>250<x3>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <y3>150<y3>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <x4>200<x4>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <y4>200<y4>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <x5>100<x5>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <y5>200<y5>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <x6>50<x6>                            |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <y6>150<y6>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <x7>100<x7>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <y7>100<y7>                           |
-   +---------------------------------------+---------------------------------------+---------------------------------------+
+   +-----------------------+-----------------------+-----------------------+
+   | Type                  | Shape                 | Labeling Information  |
+   +=======================+=======================+=======================+
+   | polygon               | Polygon               | Coordinates of points |
+   |                       |                       |                       |
+   |                       |                       | <x1>100<x1>           |
+   |                       |                       |                       |
+   |                       |                       | <y1>100<y1>           |
+   |                       |                       |                       |
+   |                       |                       | <x2>200<x2>           |
+   |                       |                       |                       |
+   |                       |                       | <y2>100<y2>           |
+   |                       |                       |                       |
+   |                       |                       | <x3>250<x3>           |
+   |                       |                       |                       |
+   |                       |                       | <y3>150<y3>           |
+   |                       |                       |                       |
+   |                       |                       | <x4>200<x4>           |
+   |                       |                       |                       |
+   |                       |                       | <y4>200<y4>           |
+   |                       |                       |                       |
+   |                       |                       | <x5>100<x5>           |
+   |                       |                       |                       |
+   |                       |                       | <y5>200<y5>           |
+   |                       |                       |                       |
+   |                       |                       | <x6>50<x6>            |
+   |                       |                       |                       |
+   |                       |                       | <y6>150<y6>           |
+   |                       |                       |                       |
+   |                       |                       | <x7>100<x7>           |
+   |                       |                       |                       |
+   |                       |                       | <y7>100<y7>           |
+   +-----------------------+-----------------------+-----------------------+
 
 Example:
 
-.. code::
+.. code-block::
 
    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
    <annotation>
@@ -352,7 +275,7 @@ Example:
 Text Classification
 -------------------
 
-.. code::
+.. code-block::
 
    {
        "source": "content://I like this product ",
@@ -362,7 +285,7 @@ Text Classification
                "type": "modelarts/text_classification",
                "name": " positive",
                "annotated-by": "human",
-               "creation-time": "2019-01-23 11:30:30"
+               "creation-time": "2019-01-23 11:30:30"        
            } ]
    }
 
@@ -371,7 +294,7 @@ The **content** parameter indicates the text to be labeled (in UTF-8 encoding fo
 Named Entity Recognition
 ------------------------
 
-.. code::
+.. code-block::
 
    {
        "source":"content://Michael Jordan is the most famous basketball player in the world.",
@@ -410,20 +333,18 @@ The parameters such as **source**, **usage**, and **annotation** are the same as
 
 .. table:: **Table 6** Description of **property** parameters
 
-   +------------------------+-----------+-------------------------------------------------------------------------------+
-   | Parameter              | Data Type | Description                                                                   |
-   +========================+===========+===============================================================================+
-   | @modelarts:start_index | Integer   | Start position of the text. The value starts from 0, including the characters |
-   |                        |           | specified by **start_index**.                                                 |
-   +------------------------+-----------+-------------------------------------------------------------------------------+
-   | @modelarts:end_index   | Integer   | End position of the text, excluding the characters specified by               |
-   |                        |           | **end_index**.                                                                |
-   +------------------------+-----------+-------------------------------------------------------------------------------+
+   +------------------------+-----------+-------------------------------------------------------------------------------------------------------------+
+   | Parameter              | Data Type | Description                                                                                                 |
+   +========================+===========+=============================================================================================================+
+   | @modelarts:start_index | Integer   | Start position of the text. The value starts from 0, including the characters specified by **start_index**. |
+   +------------------------+-----------+-------------------------------------------------------------------------------------------------------------+
+   | @modelarts:end_index   | Integer   | End position of the text, excluding the characters specified by **end_index**.                              |
+   +------------------------+-----------+-------------------------------------------------------------------------------------------------------------+
 
 Text Triplet
 ------------
 
-.. code::
+.. code-block::
 
    {
        "source":"content://"Three Body" is a series of long science fiction novels created by Liu Cix.",
@@ -486,24 +407,22 @@ The parameters such as **source**, **usage**, and **annotation** are the same as
 
 .. table:: **Table 7** Description of **property** parameters
 
-   +------------------------+-----------+-------------------------------------------------------------------------------+
-   | Parameter              | Data Type | Description                                                                   |
-   +========================+===========+===============================================================================+
-   | @modelarts:start_index | Integer   | Start position of the triplet entities. The value starts from 0, including    |
-   |                        |           | the characters specified by **start_index**.                                  |
-   +------------------------+-----------+-------------------------------------------------------------------------------+
-   | @modelarts:end_index   | Integer   | End position of the triplet entities, excluding the characters specified by   |
-   |                        |           | **end_index**.                                                                |
-   +------------------------+-----------+-------------------------------------------------------------------------------+
-   | @modelarts:from        | String    | Start entity ID of the triplet relationship.                                  |
-   +------------------------+-----------+-------------------------------------------------------------------------------+
-   | @modelarts:to          | String    | Entity ID pointed to in the triplet relationship.                             |
-   +------------------------+-----------+-------------------------------------------------------------------------------+
+   +------------------------+-----------+-------------------------------------------------------------------------------------------------------------------------+
+   | Parameter              | Data Type | Description                                                                                                             |
+   +========================+===========+=========================================================================================================================+
+   | @modelarts:start_index | Integer   | Start position of the triplet entities. The value starts from 0, including the characters specified by **start_index**. |
+   +------------------------+-----------+-------------------------------------------------------------------------------------------------------------------------+
+   | @modelarts:end_index   | Integer   | End position of the triplet entities, excluding the characters specified by **end_index**.                              |
+   +------------------------+-----------+-------------------------------------------------------------------------------------------------------------------------+
+   | @modelarts:from        | String    | Start entity ID of the triplet relationship.                                                                            |
+   +------------------------+-----------+-------------------------------------------------------------------------------------------------------------------------+
+   | @modelarts:to          | String    | Entity ID pointed to in the triplet relationship.                                                                       |
+   +------------------------+-----------+-------------------------------------------------------------------------------------------------------------------------+
 
 Object Detection
 ----------------
 
-.. code::
+.. code-block::
 
    {
        "source":"s3://path/to/image1.jpg",
@@ -514,7 +433,7 @@ Object Detection
                "annotation-loc": "s3://path/to/annotation1.xml",
                "annotation-format":"PASCAL VOC",
                "annotated-by":"human",
-               "creation-time":"2019-01-23 11:30:30"
+               "creation-time":"2019-01-23 11:30:30"                
            }]
    }
 
@@ -528,60 +447,31 @@ Object Detection
 
 .. table:: **Table 8** PASCAL VOC format parameters
 
-   +-----------+-----------+-------------------------------------------------------------------------------------+
-   | Parameter | Mandatory | Description                                                                         |
-   +===========+===========+=====================================================================================+
-   | folder    | Yes       | Directory where the data source is                                                  |
-   |           |           | located                                                                             |
-   +-----------+-----------+-------------------------------------------------------------------------------------+
-   | filename  | Yes       | Name of the file to be labeled                                                      |
-   +-----------+-----------+-------------------------------------------------------------------------------------+
-   | size      | Yes       | Image pixel                                                                         |
-   |           |           |                                                                                     |
-   |           |           | -  **width**: image width. This                                                     |
-   |           |           |    parameter is mandatory.                                                          |
-   |           |           | -  **height**: image height. This                                                   |
-   |           |           |    parameter is mandatory.                                                          |
-   |           |           | -  **depth**: number of image                                                       |
-   |           |           |    channels. This parameter is                                                      |
-   |           |           |    mandatory.                                                                       |
-   +-----------+-----------+-------------------------------------------------------------------------------------+
-   | segmented | Yes       | Segmented or not                                                                    |
-   +-----------+-----------+-------------------------------------------------------------------------------------+
-   | object    | Yes       | Object detection information.                                                       |
-   |           |           | Multiple **object{}** functions are                                                 |
-   |           |           | generated for multiple objects.                                                     |
-   |           |           |                                                                                     |
-   |           |           | -  **name**: class of the labeled                                                   |
-   |           |           |    content. This parameter is                                                       |
-   |           |           |    mandatory.                                                                       |
-   |           |           | -  **pose**: shooting angle of the                                                  |
-   |           |           |    labeled content. This parameter is                                               |
-   |           |           |    mandatory.                                                                       |
-   |           |           | -  **truncated**: whether the labeled                                               |
-   |           |           |    content is truncated (**0**                                                      |
-   |           |           |    indicates that the content is not                                                |
-   |           |           |    truncated). This parameter is                                                    |
-   |           |           |    mandatory.                                                                       |
-   |           |           | -  **occluded**: whether the labeled                                                |
-   |           |           |    content is occluded (**0**                                                       |
-   |           |           |    indicates that the content is not                                                |
-   |           |           |    occluded). This parameter is                                                     |
-   |           |           |    mandatory.                                                                       |
-   |           |           | -  **difficult**: whether the labeled                                               |
-   |           |           |    object is difficult to identify                                                  |
-   |           |           |    (**0** indicates that the object                                                 |
-   |           |           |    is easy to identify). This                                                       |
-   |           |           |    parameter is mandatory.                                                          |
-   |           |           | -  **confidence**: confidence score                                                 |
-   |           |           |    of the labeled object. The value                                                 |
-   |           |           |    ranges from 0 to 1. This parameter                                               |
-   |           |           |    is optional.                                                                     |
-   |           |           | -  **bndbox**: bounding box type.                                                   |
-   |           |           |    This parameter is mandatory. For                                                 |
-   |           |           |    details about the possible values,                                               |
-   |           |           |    see `Table 9 <#modelarts_23_0009__en-us_topic_0170886817_table1770752310500>`__. |
-   +-----------+-----------+-------------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter             | Mandatory             | Description                                                                                                                                                                            |
+   +=======================+=======================+========================================================================================================================================================================================+
+   | folder                | Yes                   | Directory where the data source is located                                                                                                                                             |
+   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | filename              | Yes                   | Name of the file to be labeled                                                                                                                                                         |
+   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | size                  | Yes                   | Image pixel                                                                                                                                                                            |
+   |                       |                       |                                                                                                                                                                                        |
+   |                       |                       | -  **width**: image width. This parameter is mandatory.                                                                                                                                |
+   |                       |                       | -  **height**: image height. This parameter is mandatory.                                                                                                                              |
+   |                       |                       | -  **depth**: number of image channels. This parameter is mandatory.                                                                                                                   |
+   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | segmented             | Yes                   | Segmented or not                                                                                                                                                                       |
+   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | object                | Yes                   | Object detection information. Multiple **object{}** functions are generated for multiple objects.                                                                                      |
+   |                       |                       |                                                                                                                                                                                        |
+   |                       |                       | -  **name**: class of the labeled content. This parameter is mandatory.                                                                                                                |
+   |                       |                       | -  **pose**: shooting angle of the labeled content. This parameter is mandatory.                                                                                                       |
+   |                       |                       | -  **truncated**: whether the labeled content is truncated (**0** indicates that the content is not truncated). This parameter is mandatory.                                           |
+   |                       |                       | -  **occluded**: whether the labeled content is occluded (**0** indicates that the content is not occluded). This parameter is mandatory.                                              |
+   |                       |                       | -  **difficult**: whether the labeled object is difficult to identify (**0** indicates that the object is easy to identify). This parameter is mandatory.                              |
+   |                       |                       | -  **confidence**: confidence score of the labeled object. The value ranges from 0 to 1. This parameter is optional.                                                                   |
+   |                       |                       | -  **bndbox**: bounding box type. This parameter is mandatory. For details about the possible values, see `Table 9 <#modelarts_23_0009__en-us_topic_0170886817_table1770752310500>`__. |
+   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 
@@ -589,74 +479,73 @@ Object Detection
 
 .. table:: **Table 9** Description of bounding box types
 
-   +---------------------------------------+---------------------------------------+---------------------------------------+
-   | Type                                  | Shape                                 | Labeling Information                  |
-   +=======================================+=======================================+=======================================+
-   | point                                 | Point                                 | Coordinates of a point                |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <x>100<x>                             |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <y>100<y>                             |
-   +---------------------------------------+---------------------------------------+---------------------------------------+
-   | line                                  | Line                                  | Coordinates of points                 |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <x1>100<x1>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <y1>100<y1>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <x2>200<x2>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <y2>200<y2>                           |
-   +---------------------------------------+---------------------------------------+---------------------------------------+
-   | bndbox                                | Rectangle                             | Coordinates of the upper left and     |
-   |                                       |                                       | lower right points                    |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <xmin>100<xmin>                       |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <ymin>100<ymin>                       |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <xmax>200<xmax>                       |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <ymax>200<ymax>                       |
-   +---------------------------------------+---------------------------------------+---------------------------------------+
-   | polygon                               | Polygon                               | Coordinates of points                 |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <x1>100<x1>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <y1>100<y1>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <x2>200<x2>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <y2>100<y2>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <x3>250<x3>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <y3>150<y3>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <x4>200<x4>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <y4>200<y4>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <x5>100<x5>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <y5>200<y5>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <x6>50<x6>                            |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <y6>150<y6>                           |
-   +---------------------------------------+---------------------------------------+---------------------------------------+
-   | circle                                | Circle                                | Center coordinates and radius         |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <cx>100<cx>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <cy>100<cy>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <r>50<r>                              |
-   +---------------------------------------+---------------------------------------+---------------------------------------+
+   +-----------------------+-----------------------+------------------------------------------------------+
+   | Type                  | Shape                 | Labeling Information                                 |
+   +=======================+=======================+======================================================+
+   | point                 | Point                 | Coordinates of a point                               |
+   |                       |                       |                                                      |
+   |                       |                       | <x>100<x>                                            |
+   |                       |                       |                                                      |
+   |                       |                       | <y>100<y>                                            |
+   +-----------------------+-----------------------+------------------------------------------------------+
+   | line                  | Line                  | Coordinates of points                                |
+   |                       |                       |                                                      |
+   |                       |                       | <x1>100<x1>                                          |
+   |                       |                       |                                                      |
+   |                       |                       | <y1>100<y1>                                          |
+   |                       |                       |                                                      |
+   |                       |                       | <x2>200<x2>                                          |
+   |                       |                       |                                                      |
+   |                       |                       | <y2>200<y2>                                          |
+   +-----------------------+-----------------------+------------------------------------------------------+
+   | bndbox                | Rectangle             | Coordinates of the upper left and lower right points |
+   |                       |                       |                                                      |
+   |                       |                       | <xmin>100<xmin>                                      |
+   |                       |                       |                                                      |
+   |                       |                       | <ymin>100<ymin>                                      |
+   |                       |                       |                                                      |
+   |                       |                       | <xmax>200<xmax>                                      |
+   |                       |                       |                                                      |
+   |                       |                       | <ymax>200<ymax>                                      |
+   +-----------------------+-----------------------+------------------------------------------------------+
+   | polygon               | Polygon               | Coordinates of points                                |
+   |                       |                       |                                                      |
+   |                       |                       | <x1>100<x1>                                          |
+   |                       |                       |                                                      |
+   |                       |                       | <y1>100<y1>                                          |
+   |                       |                       |                                                      |
+   |                       |                       | <x2>200<x2>                                          |
+   |                       |                       |                                                      |
+   |                       |                       | <y2>100<y2>                                          |
+   |                       |                       |                                                      |
+   |                       |                       | <x3>250<x3>                                          |
+   |                       |                       |                                                      |
+   |                       |                       | <y3>150<y3>                                          |
+   |                       |                       |                                                      |
+   |                       |                       | <x4>200<x4>                                          |
+   |                       |                       |                                                      |
+   |                       |                       | <y4>200<y4>                                          |
+   |                       |                       |                                                      |
+   |                       |                       | <x5>100<x5>                                          |
+   |                       |                       |                                                      |
+   |                       |                       | <y5>200<y5>                                          |
+   |                       |                       |                                                      |
+   |                       |                       | <x6>50<x6>                                           |
+   |                       |                       |                                                      |
+   |                       |                       | <y6>150<y6>                                          |
+   +-----------------------+-----------------------+------------------------------------------------------+
+   | circle                | Circle                | Center coordinates and radius                        |
+   |                       |                       |                                                      |
+   |                       |                       | <cx>100<cx>                                          |
+   |                       |                       |                                                      |
+   |                       |                       | <cy>100<cy>                                          |
+   |                       |                       |                                                      |
+   |                       |                       | <r>50<r>                                             |
+   +-----------------------+-----------------------+------------------------------------------------------+
 
 Example:
 
-.. code::
+.. code-block::
 
    <annotation>
       <folder>test_data</folder>
@@ -710,7 +599,7 @@ Example:
           <truncated>0</truncated>
           <occluded>0</occluded>
           <difficult>0</difficult>
-
+          
           <polygon>
               <x1>373</x1>
               <y1>264</y1>
@@ -739,18 +628,18 @@ Example:
 Sound Classification
 --------------------
 
-.. code::
+.. code-block::
 
    {
    "source":
-   "s3://path/to/pets.wav",
+   "s3://path/to/pets.wav", 
        "annotation": [
            {
                "type": "modelarts/audio_classification",
-               "name":"cat",
+               "name":"cat",    
                "annotated-by":"human",
                "creation-time":"2019-01-23 11:30:30"
-           }
+           } 
        ]
    }
 
@@ -759,7 +648,7 @@ The parameters such as **source**, **usage**, and **annotation** are the same as
 Speech Labeling
 ---------------
 
-.. code::
+.. code-block::
 
    {
        "source":"s3://path/to/audio1.wav",
@@ -781,21 +670,21 @@ Speech Labeling
 Speech Paragraph Labeling
 -------------------------
 
-.. code::
+.. code-block::
 
    {
        "source":"s3://path/to/audio1.wav",
        "usage":"TRAIN",
        "annotation":[
            {
-
+              
    "type":"modelarts/audio_segmentation",
                "property":{
                    "@modelarts:start_time":"00:01:10.123",
                    "@modelarts:end_time":"00:01:15.456",
-
+                  
                    "@modelarts:source":"Tom",
-
+                  
                    "@modelarts:content":"How are you?"
                },
               "annotated-by":"human",
@@ -816,41 +705,32 @@ Speech Paragraph Labeling
    }
 
 -  The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#modelarts_23_0009__en-us_topic_0170886817_section260132417144>`__. For details, see `Table 1 <#modelarts_23_0009__en-us_topic_0170886817_table598984218223>`__.
--  `Table 10 <#modelarts_23_0009__en-us_topic_0170886817_table1151144815513>`__ describes the **property** parameters.
-
+-  `Table 10 <#modelarts_23_0009__en-us_topic_0170886817_table1151144815513>`__ describes the **property** parameters. 
 
 .. _modelarts_23_0009__en-us_topic_0170886817_table1151144815513:
 
    .. table:: **Table 10** Description of **property** parameters
 
-      +---------------------------------------+---------------------------------------+---------------------------------------+
-      | Parameter                             | Data Type                             | Description                           |
-      +=======================================+=======================================+=======================================+
-      | @modelarts:start_time                 | String                                | Start time of the sound. The format   |
-      |                                       |                                       | is **hh:mm:ss.SSS**.                  |
-      |                                       |                                       |                                       |
-      |                                       |                                       | **hh** indicates the hour, **mm**     |
-      |                                       |                                       | indicates the minute, **ss**          |
-      |                                       |                                       | indicates the second, and **SSS**     |
-      |                                       |                                       | indicates the millisecond.            |
-      +---------------------------------------+---------------------------------------+---------------------------------------+
-      | @modelarts:end_time                   | String                                | End time of the sound. The format is  |
-      |                                       |                                       | **hh:mm:ss.SSS**.                     |
-      |                                       |                                       |                                       |
-      |                                       |                                       | **hh** indicates the hour, **mm**     |
-      |                                       |                                       | indicates the minute, **ss**          |
-      |                                       |                                       | indicates the second, and **SSS**     |
-      |                                       |                                       | indicates the millisecond.            |
-      +---------------------------------------+---------------------------------------+---------------------------------------+
-      | @modelarts:source                     | String                                | Sound source                          |
-      +---------------------------------------+---------------------------------------+---------------------------------------+
-      | @modelarts:content                    | String                                | Sound content                         |
-      +---------------------------------------+---------------------------------------+---------------------------------------+
+      +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------+
+      | Parameter             | Data Type             | Description                                                                                                                 |
+      +=======================+=======================+=============================================================================================================================+
+      | @modelarts:start_time | String                | Start time of the sound. The format is **hh:mm:ss.SSS**.                                                                    |
+      |                       |                       |                                                                                                                             |
+      |                       |                       | **hh** indicates the hour, **mm** indicates the minute, **ss** indicates the second, and **SSS** indicates the millisecond. |
+      +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------+
+      | @modelarts:end_time   | String                | End time of the sound. The format is **hh:mm:ss.SSS**.                                                                      |
+      |                       |                       |                                                                                                                             |
+      |                       |                       | **hh** indicates the hour, **mm** indicates the minute, **ss** indicates the second, and **SSS** indicates the millisecond. |
+      +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------+
+      | @modelarts:source     | String                | Sound source                                                                                                                |
+      +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------+
+      | @modelarts:content    | String                | Sound content                                                                                                               |
+      +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------+
 
 Video Labeling
 --------------
 
-.. code::
+.. code-block::
 
    {
        "annotation": [{
@@ -882,13 +762,15 @@ Video Labeling
 
 .. table:: **Table 11** **property** parameters
 
-   ========================== ========= ================================================
-   Parameter                  Data Type Description
-   ========================== ========= ================================================
-   @modelarts:parent_duration Double    Duration of the labeled video, in seconds
-   @modelarts:time_in_video   Double    Timestamp of the labeled video frame, in seconds
-   @modelarts:parent_source   String    OBS path of the labeled video
-   ========================== ========= ================================================
+   +----------------------------+-----------+--------------------------------------------------+
+   | Parameter                  | Data Type | Description                                      |
+   +============================+===========+==================================================+
+   | @modelarts:parent_duration | Double    | Duration of the labeled video, in seconds        |
+   +----------------------------+-----------+--------------------------------------------------+
+   | @modelarts:time_in_video   | Double    | Timestamp of the labeled video frame, in seconds |
+   +----------------------------+-----------+--------------------------------------------------+
+   | @modelarts:parent_source   | String    | OBS path of the labeled video                    |
+   +----------------------------+-----------+--------------------------------------------------+
 
 
 
@@ -896,60 +778,31 @@ Video Labeling
 
 .. table:: **Table 12** PASCAL VOC format parameters
 
-   +-----------+-----------+-------------------------------------------------------------------------------------+
-   | Parameter | Mandatory | Description                                                                         |
-   +===========+===========+=====================================================================================+
-   | folder    | Yes       | Directory where the data source is                                                  |
-   |           |           | located                                                                             |
-   +-----------+-----------+-------------------------------------------------------------------------------------+
-   | filename  | Yes       | Name of the file to be labeled                                                      |
-   +-----------+-----------+-------------------------------------------------------------------------------------+
-   | size      | Yes       | Image pixel                                                                         |
-   |           |           |                                                                                     |
-   |           |           | -  **width**: image width. This                                                     |
-   |           |           |    parameter is mandatory.                                                          |
-   |           |           | -  **height**: image height. This                                                   |
-   |           |           |    parameter is mandatory.                                                          |
-   |           |           | -  **depth**: number of image                                                       |
-   |           |           |    channels. This parameter is                                                      |
-   |           |           |    mandatory.                                                                       |
-   +-----------+-----------+-------------------------------------------------------------------------------------+
-   | segmented | Yes       | Segmented or not                                                                    |
-   +-----------+-----------+-------------------------------------------------------------------------------------+
-   | object    | Yes       | Object detection information.                                                       |
-   |           |           | Multiple **object{}** functions are                                                 |
-   |           |           | generated for multiple objects.                                                     |
-   |           |           |                                                                                     |
-   |           |           | -  **name**: class of the labeled                                                   |
-   |           |           |    content. This parameter is                                                       |
-   |           |           |    mandatory.                                                                       |
-   |           |           | -  **pose**: shooting angle of the                                                  |
-   |           |           |    labeled content. This parameter is                                               |
-   |           |           |    mandatory.                                                                       |
-   |           |           | -  **truncated**: whether the labeled                                               |
-   |           |           |    content is truncated (**0**                                                      |
-   |           |           |    indicates that the content is not                                                |
-   |           |           |    truncated). This parameter is                                                    |
-   |           |           |    mandatory.                                                                       |
-   |           |           | -  **occluded**: whether the labeled                                                |
-   |           |           |    content is occluded (**0**                                                       |
-   |           |           |    indicates that the content is not                                                |
-   |           |           |    occluded). This parameter is                                                     |
-   |           |           |    mandatory.                                                                       |
-   |           |           | -  **difficult**: whether the labeled                                               |
-   |           |           |    object is difficult to identify                                                  |
-   |           |           |    (**0** indicates that the object                                                 |
-   |           |           |    is easy to identify). This                                                       |
-   |           |           |    parameter is mandatory.                                                          |
-   |           |           | -  **confidence**: confidence score                                                 |
-   |           |           |    of the labeled object. The value                                                 |
-   |           |           |    ranges from 0 to 1. This parameter                                               |
-   |           |           |    is optional.                                                                     |
-   |           |           | -  **bndbox**: bounding box type.                                                   |
-   |           |           |    This parameter is mandatory. For                                                 |
-   |           |           |    details about the possible values,                                               |
-   |           |           |    see `Table 13 <#modelarts_23_0009__en-us_topic_0170886817_table869624041814>`__. |
-   +-----------+-----------+-------------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter             | Mandatory             | Description                                                                                                                                                                            |
+   +=======================+=======================+========================================================================================================================================================================================+
+   | folder                | Yes                   | Directory where the data source is located                                                                                                                                             |
+   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | filename              | Yes                   | Name of the file to be labeled                                                                                                                                                         |
+   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | size                  | Yes                   | Image pixel                                                                                                                                                                            |
+   |                       |                       |                                                                                                                                                                                        |
+   |                       |                       | -  **width**: image width. This parameter is mandatory.                                                                                                                                |
+   |                       |                       | -  **height**: image height. This parameter is mandatory.                                                                                                                              |
+   |                       |                       | -  **depth**: number of image channels. This parameter is mandatory.                                                                                                                   |
+   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | segmented             | Yes                   | Segmented or not                                                                                                                                                                       |
+   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | object                | Yes                   | Object detection information. Multiple **object{}** functions are generated for multiple objects.                                                                                      |
+   |                       |                       |                                                                                                                                                                                        |
+   |                       |                       | -  **name**: class of the labeled content. This parameter is mandatory.                                                                                                                |
+   |                       |                       | -  **pose**: shooting angle of the labeled content. This parameter is mandatory.                                                                                                       |
+   |                       |                       | -  **truncated**: whether the labeled content is truncated (**0** indicates that the content is not truncated). This parameter is mandatory.                                           |
+   |                       |                       | -  **occluded**: whether the labeled content is occluded (**0** indicates that the content is not occluded). This parameter is mandatory.                                              |
+   |                       |                       | -  **difficult**: whether the labeled object is difficult to identify (**0** indicates that the object is easy to identify). This parameter is mandatory.                              |
+   |                       |                       | -  **confidence**: confidence score of the labeled object. The value ranges from 0 to 1. This parameter is optional.                                                                   |
+   |                       |                       | -  **bndbox**: bounding box type. This parameter is mandatory. For details about the possible values, see `Table 13 <#modelarts_23_0009__en-us_topic_0170886817_table869624041814>`__. |
+   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 
@@ -957,74 +810,73 @@ Video Labeling
 
 .. table:: **Table 13** Bounding box types
 
-   +---------------------------------------+---------------------------------------+---------------------------------------+
-   | Type                                  | Shape                                 | Labeling Information                  |
-   +=======================================+=======================================+=======================================+
-   | point                                 | Point                                 | Coordinates of a point                |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <x>100<x>                             |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <y>100<y>                             |
-   +---------------------------------------+---------------------------------------+---------------------------------------+
-   | line                                  | Line                                  | Coordinates of points                 |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <x1>100<x1>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <y1>100<y1>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <x2>200<x2>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <y2>200<y2>                           |
-   +---------------------------------------+---------------------------------------+---------------------------------------+
-   | bndbox                                | Rectangle                             | Coordinates of the upper left and     |
-   |                                       |                                       | lower right points                    |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <xmin>100<xmin>                       |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <ymin>100<ymin>                       |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <xmax>200<xmax>                       |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <ymax>200<ymax>                       |
-   +---------------------------------------+---------------------------------------+---------------------------------------+
-   | polygon                               | Polygon                               | Coordinates of points                 |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <x1>100<x1>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <y1>100<y1>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <x2>200<x2>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <y2>100<y2>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <x3>250<x3>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <y3>150<y3>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <x4>200<x4>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <y4>200<y4>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <x5>100<x5>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <y5>200<y5>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <x6>50<x6>                            |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <y6>150<y6>                           |
-   +---------------------------------------+---------------------------------------+---------------------------------------+
-   | circle                                | Circle                                | Center coordinates and radius         |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <cx>100<cx>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <cy>100<cy>                           |
-   |                                       |                                       |                                       |
-   |                                       |                                       | <r>50<r>                              |
-   +---------------------------------------+---------------------------------------+---------------------------------------+
+   +-----------------------+-----------------------+------------------------------------------------------+
+   | Type                  | Shape                 | Labeling Information                                 |
+   +=======================+=======================+======================================================+
+   | point                 | Point                 | Coordinates of a point                               |
+   |                       |                       |                                                      |
+   |                       |                       | <x>100<x>                                            |
+   |                       |                       |                                                      |
+   |                       |                       | <y>100<y>                                            |
+   +-----------------------+-----------------------+------------------------------------------------------+
+   | line                  | Line                  | Coordinates of points                                |
+   |                       |                       |                                                      |
+   |                       |                       | <x1>100<x1>                                          |
+   |                       |                       |                                                      |
+   |                       |                       | <y1>100<y1>                                          |
+   |                       |                       |                                                      |
+   |                       |                       | <x2>200<x2>                                          |
+   |                       |                       |                                                      |
+   |                       |                       | <y2>200<y2>                                          |
+   +-----------------------+-----------------------+------------------------------------------------------+
+   | bndbox                | Rectangle             | Coordinates of the upper left and lower right points |
+   |                       |                       |                                                      |
+   |                       |                       | <xmin>100<xmin>                                      |
+   |                       |                       |                                                      |
+   |                       |                       | <ymin>100<ymin>                                      |
+   |                       |                       |                                                      |
+   |                       |                       | <xmax>200<xmax>                                      |
+   |                       |                       |                                                      |
+   |                       |                       | <ymax>200<ymax>                                      |
+   +-----------------------+-----------------------+------------------------------------------------------+
+   | polygon               | Polygon               | Coordinates of points                                |
+   |                       |                       |                                                      |
+   |                       |                       | <x1>100<x1>                                          |
+   |                       |                       |                                                      |
+   |                       |                       | <y1>100<y1>                                          |
+   |                       |                       |                                                      |
+   |                       |                       | <x2>200<x2>                                          |
+   |                       |                       |                                                      |
+   |                       |                       | <y2>100<y2>                                          |
+   |                       |                       |                                                      |
+   |                       |                       | <x3>250<x3>                                          |
+   |                       |                       |                                                      |
+   |                       |                       | <y3>150<y3>                                          |
+   |                       |                       |                                                      |
+   |                       |                       | <x4>200<x4>                                          |
+   |                       |                       |                                                      |
+   |                       |                       | <y4>200<y4>                                          |
+   |                       |                       |                                                      |
+   |                       |                       | <x5>100<x5>                                          |
+   |                       |                       |                                                      |
+   |                       |                       | <y5>200<y5>                                          |
+   |                       |                       |                                                      |
+   |                       |                       | <x6>50<x6>                                           |
+   |                       |                       |                                                      |
+   |                       |                       | <y6>150<y6>                                          |
+   +-----------------------+-----------------------+------------------------------------------------------+
+   | circle                | Circle                | Center coordinates and radius                        |
+   |                       |                       |                                                      |
+   |                       |                       | <cx>100<cx>                                          |
+   |                       |                       |                                                      |
+   |                       |                       | <cy>100<cy>                                          |
+   |                       |                       |                                                      |
+   |                       |                       | <r>50<r>                                             |
+   +-----------------------+-----------------------+------------------------------------------------------+
 
 Example:
 
-.. code::
+.. code-block::
 
    <annotation>
       <folder>test_data</folder>
@@ -1104,4 +956,5 @@ Example:
    </annotation>
 
 
-.. |image1| image:: /images/note_3.0-en-us.png
+
+.. |image1| image:: /_static/images/note_3.0-en-us.png

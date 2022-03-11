@@ -17,5 +17,6 @@ Procedure
    After a dataset is deleted, some functions such as dataset version management become unavailable. Exercise caution when performing this operation. However, the original data and labeling data of the dataset are still stored in OBS.
 
 
-.. |image1| image:: /images/note_3.0-en-us.png
-.. |image2| image:: /images/note_3.0-en-us.png
+
+.. |image1| image:: /_static/images/note_3.0-en-us.png
+.. |image2| image:: /_static/images/note_3.0-en-us.png

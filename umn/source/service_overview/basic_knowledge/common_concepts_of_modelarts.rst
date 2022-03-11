@@ -26,3 +26,4 @@ Resource Pool
 
 ModelArts provides large-scale computing clusters for model development, training, and deployment. There are two types of resource pools: public resource pool and dedicated resource pool. The public resource pool is provided by default. Dedicated resource pools are created separately and used exclusively.
 
+

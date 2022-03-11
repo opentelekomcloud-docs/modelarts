@@ -76,7 +76,8 @@ When you export data to a new dataset or OBS, you can view the export task detai
 #. In the **View Task History** dialog box, view the export task history of the current dataset. Information about **Task ID**, **Created**, **Type**, **Path**, **Total**, and **Status** is included.
 
 
-.. |image1| image:: /images/note_3.0-en-us.png
-.. |image2| image:: /images/note_3.0-en-us.png
-.. |image3| image:: /images/note_3.0-en-us.png
-.. |image4| image:: /images/note_3.0-en-us.png
+
+.. |image1| image:: /_static/images/note_3.0-en-us.png
+.. |image2| image:: /_static/images/note_3.0-en-us.png
+.. |image3| image:: /_static/images/note_3.0-en-us.png
+.. |image4| image:: /_static/images/note_3.0-en-us.png

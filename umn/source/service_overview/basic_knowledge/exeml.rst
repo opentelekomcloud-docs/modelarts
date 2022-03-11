@@ -13,5 +13,6 @@ ModelArts ExeML also provides the auto learning white-box capabilities. It opens
 The key techniques of automatic deep learning are transfer learning (generating high-quality models based on a small amount of data), automatic design of the model architecture in multiple dimensions (neural network search and adaptive model optimization), and fast, accurate automatic tuning of training parameters.
 
 
-.. |image1| image:: /images/en-us_image_0000001214778791.png
+
+.. |image1| image:: /_static/images/en-us_image_0000001214778791.png
 

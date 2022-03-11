@@ -3,6 +3,7 @@ ExeML
 =====
 
 .. toctree::
+   :maxdepth: 1
 
    what_is_exeml
    what_are_image_classification_and_object_detection

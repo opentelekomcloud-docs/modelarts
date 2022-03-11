@@ -3,6 +3,7 @@ Template Description
 ====================
 
 .. toctree::
+   :maxdepth: 1
 
    tensorflow-py36_general_template
    mxnet-py36_general_template

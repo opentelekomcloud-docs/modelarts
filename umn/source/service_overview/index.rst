@@ -3,6 +3,7 @@ Service Overview
 ================
 
 .. toctree::
+   :maxdepth: 1
 
    what_is_modelarts
    functions

@@ -14,17 +14,17 @@ The template input is the TensorFlow-based model package stored on OBS. Ensure t
 Input and Output Mode
 ---------------------
 
-`Undefined Mode <modelarts_23_0103.html>`__ can be overwritten. That is, you can select another input and output mode during model creation.
+`Undefined Mode <../../model_templates/input_and_output_modes/undefined_mode.html>`__ can be overwritten. That is, you can select another input and output mode during model creation.
 
 Model Package Specifications
 ----------------------------
 
 -  The model package must be stored in the OBS folder named **model**. Model files and the model inference code file are stored in the **model** folder.
--  The model inference code file is optional. If the file exists, the file name must be **customize_service.py**. Only one inference code file can exist in the **model** folder. For details about how to compile the model inference code file, see `Specifications for Compiling Model Inference Code <modelarts_23_0093.html>`__.
+-  The model inference code file is optional. If the file exists, the file name must be **customize_service.py**. Only one inference code file can exist in the **model** folder. For details about how to compile the model inference code file, see `Specifications for Compiling Model Inference Code <../../model_package_specifications/specifications_for_compiling_model_inference_code.html>`__.
 
 -  The structure of the model package imported using the template is as follows:
 
-   .. code::
+   .. code-block::
 
       model/
       │
@@ -39,7 +39,7 @@ Model Package Example
 
 When publishing the model, you only need to specify the **model** directory.
 
-.. code::
+.. code-block::
 
    OBS bucket/directory name
    |── model    (Mandatory) The folder must be named model and is used to store model-related files.
@@ -49,4 +49,5 @@ When publishing the model, you only need to specify the **model** directory.
            ├── variables.index                   Mandatory
            ├── variables.data-00000-of-00001     Mandatory
        ├──customize_service.py   (Optional) Model inference code file. The file must be named customize_service.py. Only one inference code file exists. The .py file on which customize_service.py depends can be directly put in the model directory.
+
 

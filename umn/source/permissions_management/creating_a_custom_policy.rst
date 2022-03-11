@@ -22,7 +22,7 @@ Example Custom Policies of OBS
 
 ModelArts is a project-level service, and OBS is a global service. Therefore, you need to create custom policies for the two services respectively and grant them to users. The permissions to use ModelArts depend on OBS authorization. The following example shows the minimum permissions for OBS, including the permissions for OBS buckets and objects. After being granted the minimum permissions for OBS, users can access OBS from ModelArts without restrictions.
 
-.. code::
+.. code-block::
 
    {
        "Version": "1.1",
@@ -58,7 +58,7 @@ Example Custom Policies of ModelArts
 
    The following method can be used if you need to assign permissions of the **ModelArts FullAccess** policy to a user but also forbid the user from deleting ExeML projects. Create a custom policy for denying ExeML project deletion, and assign both policies to the group the user belongs to. Then the user can perform all operations on ModelArts except deleting ExeML projects. The following is an example deny policy:
 
-   .. code::
+   .. code-block::
 
       { 
             "Version": "1.1", 
@@ -76,7 +76,7 @@ Example Custom Policies of ModelArts
 
    The following is a policy configuration example for this user:
 
-   .. code::
+   .. code-block::
 
       { 
           "Version": "1.1", 
@@ -96,4 +96,5 @@ Example Custom Policies of ModelArts
               } 
           ] 
       }
+
 

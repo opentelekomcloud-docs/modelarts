@@ -32,160 +32,86 @@ Creating a Training Job
 
       Specify **Name** and **Description** according to actual requirements.
 
-   b. Set job parameters, including the data source, algorithm source, and more. For details, see `Table 1 <#modelarts_23_0239__en-us_topic_0216621184_table1819364517144>`__.
-      
+   b. Set job parameters, including the data source, algorithm source, and more. For details, see `Table 1 <#modelarts_23_0239__en-us_topic_0216621184_table1819364517144>`__. 
 
 .. _modelarts_23_0239__en-us_topic_0216621184_table1819364517144:
 
       .. table:: **Table 1** Job parameters
 
-         +---------------------------------------+---------------------------------------+---------------------------------------+
-         | Parameter                             | Sub-Parameter                         | Description                           |
-         +=======================================+=======================================+=======================================+
-         | One-Click Configuration               | -                                     | If you have saved job parameter       |
-         |                                       |                                       | configurations in ModelArts, click    |
-         |                                       |                                       | **One-Click Configuration** and       |
-         |                                       |                                       | select an existing job parameter      |
-         |                                       |                                       | configuration as prompted to quickly  |
-         |                                       |                                       | complete parameter setting for the    |
-         |                                       |                                       | job.                                  |
-         +---------------------------------------+---------------------------------------+---------------------------------------+
-         | Algorithm Source                      | Custom                                | For details about custom image        |
-         |                                       |                                       | specifications, see `Specifications   |
-         |                                       |                                       | for Custom Images Used for Training   |
-         |                                       |                                       | Jobs <modelarts_23_0217.html>`__.     |
-         |                                       |                                       |                                       |
-         |                                       |                                       | -  **Image Path**: SWR URL after the  |
-         |                                       |                                       |    image is uploaded to SWR. For      |
-         |                                       |                                       |    details about how to upload an     |
-         |                                       |                                       |    image, see `Creating and Uploading |
-         |                                       |                                       |    a Custom                           |
-         |                                       |                                       |    Image <modelarts_23_0085.html>`__. |
-         |                                       |                                       | -  **Code Directory**: OBS path for   |
-         |                                       |                                       |    storing the training code file.    |
-         |                                       |                                       | -  **Boot Command**: Command to boot  |
-         |                                       |                                       |    the training job after the image   |
-         |                                       |                                       |    is started. Set this parameter     |
-         |                                       |                                       |    based on site requirements. If the |
-         |                                       |                                       |    custom image is based on a basic   |
-         |                                       |                                       |    ModelArts image, set parameters by |
-         |                                       |                                       |    referring to `Creating a Training  |
-         |                                       |                                       |    Job Using a Custom Image           |
-         |                                       |                                       |    (GPU) <modelarts_23_0087.html>`__. |
-         +---------------------------------------+---------------------------------------+---------------------------------------+
-         | Data Source                           | Dataset                               | Select an available dataset and its   |
-         |                                       |                                       | version from the ModelArts **Data     |
-         |                                       |                                       | Management** module.                  |
-         |                                       |                                       |                                       |
-         |                                       |                                       | -  **Dataset**: Select an existing    |
-         |                                       |                                       |    dataset from the drop-down list.   |
-         |                                       |                                       |    If no dataset is available in      |
-         |                                       |                                       |    ModelArts, no result will be       |
-         |                                       |                                       |    displayed in the drop-down list.   |
-         |                                       |                                       | -  **Version**: Select a version      |
-         |                                       |                                       |    according to the **Dataset**       |
-         |                                       |                                       |    setting.                           |
-         +---------------------------------------+---------------------------------------+---------------------------------------+
-         |                                       | Data path                             | Select the training data from your    |
-         |                                       |                                       | OBS bucket. On the right of the       |
-         |                                       |                                       | **Data path** text box, click         |
-         |                                       |                                       | **Select**. In the dialog box that is |
-         |                                       |                                       | displayed, select an OBS folder for   |
-         |                                       |                                       | storing data.                         |
-         +---------------------------------------+---------------------------------------+---------------------------------------+
-         | Training Output Path                  | -                                     | Storage path of the training result   |
-         |                                       |                                       |                                       |
-         |                                       |                                       | NOTE:                                 |
-         |                                       |                                       | To minimize errors, select an empty   |
-         |                                       |                                       | directory for **Training Output       |
-         |                                       |                                       | Path**. Do not select the directory   |
-         |                                       |                                       | used for storing the dataset for      |
-         |                                       |                                       | **Training Output Path**.             |
-         +---------------------------------------+---------------------------------------+---------------------------------------+
-         | Environment Variable                  | -                                     | Add environment variables based on    |
-         |                                       |                                       | your image file. This parameter is    |
-         |                                       |                                       | optional. You can click **Add         |
-         |                                       |                                       | Environment Variable** to add         |
-         |                                       |                                       | multiple variable parameters.         |
-         +---------------------------------------+---------------------------------------+---------------------------------------+
-         | Job Log Path                          | -                                     | Select a path for storing log files   |
-         |                                       |                                       | generated during job running.         |
-         +---------------------------------------+---------------------------------------+---------------------------------------+
+         +-------------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | Parameter               | Sub-Parameter         | Description                                                                                                                                                                                                                                                                                                                                                                        |
+         +=========================+=======================+====================================================================================================================================================================================================================================================================================================================================================================================+
+         | One-Click Configuration | -                     | If you have saved job parameter configurations in ModelArts, click **One-Click Configuration** and select an existing job parameter configuration as prompted to quickly complete parameter setting for the job.                                                                                                                                                                   |
+         +-------------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | Algorithm Source        | Custom                | For details about custom image specifications, see `Specifications for Custom Images Used for Training Jobs <../../custom_images/for_training_models/specifications_for_custom_images_used_for_training_jobs.html>`__.                                                                                                                                                             |
+         |                         |                       |                                                                                                                                                                                                                                                                                                                                                                                    |
+         |                         |                       | -  **Image Path**: SWR URL after the image is uploaded to SWR. For details about how to upload an image, see `Creating and Uploading a Custom Image <../../custom_images/creating_and_uploading_a_custom_image.html>`__.                                                                                                                                                           |
+         |                         |                       | -  **Code Directory**: OBS path for storing the training code file.                                                                                                                                                                                                                                                                                                                |
+         |                         |                       | -  **Boot Command**: Command to boot the training job after the image is started. Set this parameter based on site requirements. If the custom image is based on a basic ModelArts image, set parameters by referring to `Creating a Training Job Using a Custom Image (GPU) <../../custom_images/for_training_models/creating_a_training_job_using_a_custom_image_(gpu).html>`__. |
+         +-------------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | Data Source             | Dataset               | Select an available dataset and its version from the ModelArts **Data Management** module.                                                                                                                                                                                                                                                                                         |
+         |                         |                       |                                                                                                                                                                                                                                                                                                                                                                                    |
+         |                         |                       | -  **Dataset**: Select an existing dataset from the drop-down list. If no dataset is available in ModelArts, no result will be displayed in the drop-down list.                                                                                                                                                                                                                    |
+         |                         |                       | -  **Version**: Select a version according to the **Dataset** setting.                                                                                                                                                                                                                                                                                                             |
+         +-------------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+         |                         | Data path             | Select the training data from your OBS bucket. On the right of the **Data path** text box, click **Select**. In the dialog box that is displayed, select an OBS folder for storing data.                                                                                                                                                                                           |
+         +-------------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | Training Output Path    | -                     | Storage path of the training result                                                                                                                                                                                                                                                                                                                                                |
+         |                         |                       |                                                                                                                                                                                                                                                                                                                                                                                    |
+         |                         |                       | NOTE:                                                                                                                                                                                                                                                                                                                                                                              |
+         |                         |                       | To minimize errors, select an empty directory for **Training Output Path**. Do not select the directory used for storing the dataset for **Training Output Path**.                                                                                                                                                                                                                 |
+         +-------------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | Environment Variable    | -                     | Add environment variables based on your image file. This parameter is optional. You can click **Add Environment Variable** to add multiple variable parameters.                                                                                                                                                                                                                    |
+         +-------------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | Job Log Path            | -                     | Select a path for storing log files generated during job running.                                                                                                                                                                                                                                                                                                                  |
+         +-------------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   c. Select resources for the training job.
-      
+   c. Select resources for the training job. 
 
 .. _modelarts_23_0239__en-us_topic_0216621184_table8958315124918:
 
       .. table:: **Table 2** Resource parameters
 
-         +-----------------------------------------------------------+-----------------------------------------------------------+
-         | Parameter                                                 | Description                                               |
-         +===========================================================+===========================================================+
-         | Resource Pool                                             | Select resource pools for the job.                        |
-         +-----------------------------------------------------------+-----------------------------------------------------------+
-         | Type                                                      | If **Resource Pool** is set to **Public resource pools**, |
-         |                                                           | select a resource type. Available resource types are      |
-         |                                                           | **CPU** and **GPU**.                                      |
-         |                                                           |                                                           |
-         |                                                           | The GPU resource delivers better performance, and the CPU |
-         |                                                           | resource is more cost effective. If the selected          |
-         |                                                           | algorithm has been defined to use the CPU or GPU, the     |
-         |                                                           | resource type is automatically displayed on the page.     |
-         |                                                           | Select the resource type as required.                     |
-         +-----------------------------------------------------------+-----------------------------------------------------------+
-         | Specifications                                            | Select a resource flavor based on the resource type.      |
-         +-----------------------------------------------------------+-----------------------------------------------------------+
-         | Compute Nodes                                             | Set the number of compute nodes. If you set **Compute     |
-         |                                                           | Nodes** to **1**, the standalone computing mode is used.  |
-         |                                                           | If you set **Compute Nodes** to a value greater than      |
-         |                                                           | **1**, the distributed computing mode is used. Select a   |
-         |                                                           | computing mode based on the actual requirements.          |
-         +-----------------------------------------------------------+-----------------------------------------------------------+
+         +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | Parameter                         | Description                                                                                                                                                                                                                                                                  |
+         +===================================+==============================================================================================================================================================================================================================================================================+
+         | Resource Pool                     | Select resource pools for the job.                                                                                                                                                                                                                                           |
+         +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | Type                              | If **Resource Pool** is set to **Public resource pools**, select a resource type. Available resource types are **CPU** and **GPU**.                                                                                                                                          |
+         |                                   |                                                                                                                                                                                                                                                                              |
+         |                                   | The GPU resource delivers better performance, and the CPU resource is more cost effective. If the selected algorithm has been defined to use the CPU or GPU, the resource type is automatically displayed on the page. Select the resource type as required.                 |
+         +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | Specifications                    | Select a resource flavor based on the resource type.                                                                                                                                                                                                                         |
+         +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | Compute Nodes                     | Set the number of compute nodes. If you set **Compute Nodes** to **1**, the standalone computing mode is used. If you set **Compute Nodes** to a value greater than **1**, the distributed computing mode is used. Select a computing mode based on the actual requirements. |
+         +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   d. Configure **Notification** and select whether to save the parameters of the training job.
-      
+   d. Configure **Notification** and select whether to save the parameters of the training job. 
 
 .. _modelarts_23_0239__en-us_topic_0216621184_table1217141794320:
 
       .. table:: **Table 3** Parameters related to notification and parameter configuration saving
 
-         +-----------------------------------------------------------+-----------------------------------------------------------+
-         | Parameter                                                 | Description                                               |
-         +===========================================================+===========================================================+
-         | Notification                                              | Select the resource pool status to be monitored from the  |
-         |                                                           | event list, and SMN sends a notification message when the |
-         |                                                           | event occurs.                                             |
-         |                                                           |                                                           |
-         |                                                           | This parameter is optional. You can choose whether to     |
-         |                                                           | enable subscription based on actual requirements. If you  |
-         |                                                           | enable subscription, set the following parameters as      |
-         |                                                           | required:                                                 |
-         |                                                           |                                                           |
-         |                                                           | -  **Topic**: indicates the topic name. You can create a  |
-         |                                                           |    topic on the SMN console.                              |
-         |                                                           | -  **Event**: indicates the event to be subscribed to.    |
-         |                                                           |    The options are **OnJobRunning**, **OnJobSucceeded**,  |
-         |                                                           |    and **OnJobFailed**, indicating that training is in    |
-         |                                                           |    progress, successful, and failed, respectively.        |
-         +-----------------------------------------------------------+-----------------------------------------------------------+
-         | Saving Training Parameters                                | If you select this option, the parameter settings of the  |
-         |                                                           | current job will be saved to facilitate subsequent job    |
-         |                                                           | creation.                                                 |
-         |                                                           |                                                           |
-         |                                                           | Select **Save Training Parameters** and specify           |
-         |                                                           | **Configuration Name** and **Description**. After a       |
-         |                                                           | training job is created, you can switch to the **Job      |
-         |                                                           | Parameters** tab page to view your saved job parameter    |
-         |                                                           | settings. For details, see `Managing Job                  |
-         |                                                           | Parameters <modelarts_23_0049.html>`__.                   |
-         +-----------------------------------------------------------+-----------------------------------------------------------+
+         +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | Parameter                         | Description                                                                                                                                                                                                                                                                                                                      |
+         +===================================+==================================================================================================================================================================================================================================================================================================================================+
+         | Notification                      | Select the resource pool status to be monitored from the event list, and SMN sends a notification message when the event occurs.                                                                                                                                                                                                 |
+         |                                   |                                                                                                                                                                                                                                                                                                                                  |
+         |                                   | This parameter is optional. You can choose whether to enable subscription based on actual requirements. If you enable subscription, set the following parameters as required:                                                                                                                                                    |
+         |                                   |                                                                                                                                                                                                                                                                                                                                  |
+         |                                   | -  **Topic**: indicates the topic name. You can create a topic on the SMN console.                                                                                                                                                                                                                                               |
+         |                                   | -  **Event**: indicates the event to be subscribed to. The options are **OnJobRunning**, **OnJobSucceeded**, and **OnJobFailed**, indicating that training is in progress, successful, and failed, respectively.                                                                                                                 |
+         +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | Saving Training Parameters        | If you select this option, the parameter settings of the current job will be saved to facilitate subsequent job creation.                                                                                                                                                                                                        |
+         |                                   |                                                                                                                                                                                                                                                                                                                                  |
+         |                                   | Select **Save Training Parameters** and specify **Configuration Name** and **Description**. After a training job is created, you can switch to the **Job Parameters** tab page to view your saved job parameter settings. For details, see `Managing Job Parameters <../../training_management/managing_job_parameters.html>`__. |
+         +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
    e. After setting the parameters, click **Next**.
 
 #. Confirm that the information is correct on the **Confirm** page that is displayed and click **Submit**. Generally, training jobs run for a period of time, which may be several minutes or tens of minutes depending on the amount of your selected data and resources.
 
-   After a custom image job is created, the system authorizes ModelArts to obtain and run the image by default. When you run a custom image job for the first time, ModelArts checks the custom image. For details about the check, see `Specifications for Custom Images Used for Training Jobs <modelarts_23_0217.html>`__. You can view the cause of the check failure in the log and modify the custom image based on the log.
+   After a custom image job is created, the system authorizes ModelArts to obtain and run the image by default. When you run a custom image job for the first time, ModelArts checks the custom image. For details about the check, see `Specifications for Custom Images Used for Training Jobs <../../custom_images/for_training_models/specifications_for_custom_images_used_for_training_jobs.html>`__. You can view the cause of the check failure in the log and modify the custom image based on the log.
 
    After the image is checked, the background starts the custom image container to run the custom image training job. You can switch to the training job list to view the basic information about training jobs. In the training job list, **Status** of the newly created training job is **Initializing**. If the status changes to **Successful**, the training job ends and the model generated is stored in the location specified by **Training Output Path**. If the status of a training job changes to **Running failed**. Click the name of the training job and view the job logs. Troubleshoot the fault based on the logs.
 
@@ -195,4 +121,5 @@ Creating a Training Job
    -  The default user of a custom image must be the user whose UID is **1101**.
 
 
-.. |image1| image:: /images/note_3.0-en-us.png
+
+.. |image1| image:: /_static/images/note_3.0-en-us.png

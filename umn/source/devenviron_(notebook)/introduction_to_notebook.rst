@@ -21,26 +21,34 @@ Each development environment supports multiple AI engines that run independently
 
 .. table:: **Table 1** AI engines
 
-   ======================================== ============================== ==============
-   Work Environment                         Built-in AI Engine and Version Supported Chip
-   ======================================== ============================== ==============
-   Multi-Engine 1.0 (Python 3, Recommended) MXNet-1.2.1                    GPU
-   \                                        PySpark-2.3.2                  CPU
-   \                                        Pytorch-1.0.0                  GPU
-   \                                        TensorFlow-1.13.1              GPU
-   \                                        XGBoost-Sklearn                CPU
-   Multi-Engine 2.0 (Python3)               Pytorch-1.4.0                  GPU
-   \                                        TensorFlow-2.1.0               CPU/GPU
-   Ascend-Powered-Engine 1.0 (Python3)      MindSpore-1.1.1                Ascend 910
-   \                                        TensorFlow-1.15.0              Ascend 910
-   ======================================== ============================== ==============
+   +------------------------------------------+--------------------------------+----------------+
+   | Work Environment                         | Built-in AI Engine and Version | Supported Chip |
+   +==========================================+================================+================+
+   | Multi-Engine 1.0 (Python 3, Recommended) | MXNet-1.2.1                    | GPU            |
+   +------------------------------------------+--------------------------------+----------------+
+   |                                          | PySpark-2.3.2                  | CPU            |
+   +------------------------------------------+--------------------------------+----------------+
+   |                                          | Pytorch-1.0.0                  | GPU            |
+   +------------------------------------------+--------------------------------+----------------+
+   |                                          | TensorFlow-1.13.1              | GPU            |
+   +------------------------------------------+--------------------------------+----------------+
+   |                                          | XGBoost-Sklearn                | CPU            |
+   +------------------------------------------+--------------------------------+----------------+
+   | Multi-Engine 2.0 (Python3)               | Pytorch-1.4.0                  | GPU            |
+   +------------------------------------------+--------------------------------+----------------+
+   |                                          | TensorFlow-2.1.0               | CPU/GPU        |
+   +------------------------------------------+--------------------------------+----------------+
+   | Ascend-Powered-Engine 1.0 (Python3)      | MindSpore-1.1.1                | Ascend 910     |
+   +------------------------------------------+--------------------------------+----------------+
+   |                                          | TensorFlow-1.15.0              | Ascend 910     |
+   +------------------------------------------+--------------------------------+----------------+
 
 Constraints
 -----------
 
 -  For security purposes, the root permission is not granted to the notebook instances integrated in ModelArts. You can use the non-privileged user **jovyan** or **ma-user** (using **Multi-Engine**) to perform operations. Therefore, you cannot use **apt-get** to install the OS software.
 -  Notebook instances support only standalone training under the current AI engine framework. If you need to use distributed training, use ModelArts training jobs and specify multiple nodes in the resource pool.
--  ModelArts DevEnviron does not support apt-get. You can use a `custom image <modelarts_23_0084.html>`__ to train a model.
+-  ModelArts DevEnviron does not support apt-get. You can use a `custom image <../custom_images/introduction_to_custom_images.html>`__ to train a model.
 -  Notebook instances do not support GUI-related libraries, such as PyQt.
 -  Notebook instances created using Ascend specifications cannot be attached to EVS disks.
 -  Notebook instances cannot be connected to DWS and database services.
@@ -50,4 +58,5 @@ Constraints
 -  If the code output is still displayed after you close the page and open it again, use Terminal.
 
 
-.. |image1| image:: /images/note_3.0-en-us.png
+
+.. |image1| image:: /_static/images/note_3.0-en-us.png

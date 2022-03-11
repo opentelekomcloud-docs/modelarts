@@ -19,7 +19,7 @@ Procedure
    a. Set the basic information, the name and description of the dataset.\ **Figure 1** Basic information about a dataset
       |image1|
 
-   b. Select a labeling scene and type as required. For details about the types supported by ModelArts, see `Dataset Types <modelarts_23_0003.html#modelarts_23_0003__en-us_topic_0171496996_section51771731153811>`__.\ **Figure 2** Selecting a labeling scene and type
+   b. Select a labeling scene and type as required. For details about the types supported by ModelArts, see `Dataset Types <../data_management/introduction_to_data_management.html#modelarts_23_0003__en-us_topic_0171496996_section51771731153811>`__.\ **Figure 2** Selecting a labeling scene and type
       |image2|
 
    c. Set the parameters based on the dataset type. For details, see the parameters of the following dataset types:
@@ -39,232 +39,130 @@ Images (Image Classification, Object Detection, and Image Segmentation)
 -----------------------------------------------------------------------
 
 | **Figure 3** Parameters of datasets for image classification and object detection
-| |image3|
-  
+| |image3| 
 
 .. _modelarts_23_0004__en-us_topic_0170886809_table169611557277:
 
 .. table:: **Table 1** Dataset parameters
 
-   +-----------------------------------------------------------+-----------------------------------------------------------+
-   | Parameter                                                 | Description                                               |
-   +===========================================================+===========================================================+
-   | Input Dataset Path                                        | Select the OBS path to the input dataset.                 |
-   +-----------------------------------------------------------+-----------------------------------------------------------+
-   | Output Dataset Path                                       | Select the OBS path to the output dataset.                |
-   |                                                           |                                                           |
-   |                                                           | NOTE:                                                     |
-   |                                                           | The output dataset path cannot be the same as the input   |
-   |                                                           | dataset path or cannot be the subdirectory of the input   |
-   |                                                           | dataset path. Select an empty directory as the **Output   |
-   |                                                           | Dataset Path**.                                           |
-   +-----------------------------------------------------------+-----------------------------------------------------------+
-   | Label Set                                                 | -  **Label Name**: Enter a label name. The label name can |
-   |                                                           |    contain only letters, digits, underscores (_), and     |
-   |                                                           |    hyphens (-). The name contains 1 to 32 characters.     |
-   |                                                           |                                                           |
-   |                                                           | -  **Add Label**: Click **Add Label** to add more labels. |
-   |                                                           |                                                           |
-   |                                                           | -  Setting a label color: This function is available only |
-   |                                                           |    for datasets of the object detection type. Select a    |
-   |                                                           |    color from the color palette on the right of a label,  |
-   |                                                           |    or enter the hexadecimal color code to set the color.  |
-   |                                                           |                                                           |
-   |                                                           | -  Setting label attributes: For an object detection      |
-   |                                                           |    dataset, you can click the plus sign (+) on the right  |
-   |                                                           |    to add label attributes after setting a label color.   |
-   |                                                           |    Label attributes are used to distinguish different     |
-   |                                                           |    attributes of the objects with the same label. For     |
-   |                                                           |    example, yellow kittens and black kittens have the     |
-   |                                                           |    same label **cat** and their label attribute is        |
-   |                                                           |    **color**.                                             |
-   +-----------------------------------------------------------+-----------------------------------------------------------+
-   | Team Labeling                                             | Enable or disable team labeling. Image segmentation does  |
-   |                                                           | not support team labeling. Therefore, this parameter is   |
-   |                                                           | unavailable when you use image segmentation.              |
-   |                                                           |                                                           |
-   |                                                           | After enabling team labeling, enter the name and type of  |
-   |                                                           | the team labeling task, and select the labeling team and  |
-   |                                                           | team members. For details about the parameter settings,   |
-   |                                                           | see `Creating Team Labeling                               |
-   |                                                           | Tasks <modelarts_23_0210.html#modelart                    |
-   |                                                           | s_23_0210__en-us_topic_0209053802_section72262410214>`__. |
-   |                                                           |                                                           |
-   |                                                           | Before enabling team labeling, ensure that you have added |
-   |                                                           | a team and members on the **Labeling Teams** page. If no  |
-   |                                                           | labeling team is available, click the link on the page to |
-   |                                                           | go to the **Labeling Teams** page, and add your team and  |
-   |                                                           | members. For details, see `Introduction to Team           |
-   |                                                           | Labeling <modelarts_23_0181.html>`__.                     |
-   |                                                           |                                                           |
-   |                                                           | After a dataset is created with team labeling enabled,    |
-   |                                                           | you can view the **Team Labeling** mark in **Labeling     |
-   |                                                           | Type**.                                                   |
-   +-----------------------------------------------------------+-----------------------------------------------------------+
+   +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter                         | Description                                                                                                                                                                                                                                                                                                                                                                         |
+   +===================================+=====================================================================================================================================================================================================================================================================================================================================================================================+
+   | Input Dataset Path                | Select the OBS path to the input dataset.                                                                                                                                                                                                                                                                                                                                           |
+   +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Output Dataset Path               | Select the OBS path to the output dataset.                                                                                                                                                                                                                                                                                                                                          |
+   |                                   |                                                                                                                                                                                                                                                                                                                                                                                     |
+   |                                   | NOTE:                                                                                                                                                                                                                                                                                                                                                                               |
+   |                                   | The output dataset path cannot be the same as the input dataset path or cannot be the subdirectory of the input dataset path. Select an empty directory as the **Output Dataset Path**.                                                                                                                                                                                             |
+   +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Label Set                         | -  **Label Name**: Enter a label name. The label name can contain only letters, digits, underscores (_), and hyphens (-). The name contains 1 to 32 characters.                                                                                                                                                                                                                     |
+   |                                   |                                                                                                                                                                                                                                                                                                                                                                                     |
+   |                                   | -  **Add Label**: Click **Add Label** to add more labels.                                                                                                                                                                                                                                                                                                                           |
+   |                                   |                                                                                                                                                                                                                                                                                                                                                                                     |
+   |                                   | -  Setting a label color: This function is available only for datasets of the object detection type. Select a color from the color palette on the right of a label, or enter the hexadecimal color code to set the color.                                                                                                                                                           |
+   |                                   |                                                                                                                                                                                                                                                                                                                                                                                     |
+   |                                   | -  Setting label attributes: For an object detection dataset, you can click the plus sign (+) on the right to add label attributes after setting a label color. Label attributes are used to distinguish different attributes of the objects with the same label. For example, yellow kittens and black kittens have the same label **cat** and their label attribute is **color**. |
+   +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Team Labeling                     | Enable or disable team labeling. Image segmentation does not support team labeling. Therefore, this parameter is unavailable when you use image segmentation.                                                                                                                                                                                                                       |
+   |                                   |                                                                                                                                                                                                                                                                                                                                                                                     |
+   |                                   | After enabling team labeling, enter the name and type of the team labeling task, and select the labeling team and team members. For details about the parameter settings, see `Creating Team Labeling Tasks <../data_management/team_labeling/managing_team_labeling_tasks.html#modelarts_23_0210__en-us_topic_0209053802_section72262410214>`__.                                   |
+   |                                   |                                                                                                                                                                                                                                                                                                                                                                                     |
+   |                                   | Before enabling team labeling, ensure that you have added a team and members on the **Labeling Teams** page. If no labeling team is available, click the link on the page to go to the **Labeling Teams** page, and add your team and members. For details, see `Introduction to Team Labeling <../data_management/team_labeling/introduction_to_team_labeling.html>`__.            |
+   |                                   |                                                                                                                                                                                                                                                                                                                                                                                     |
+   |                                   | After a dataset is created with team labeling enabled, you can view the **Team Labeling** mark in **Labeling Type**.                                                                                                                                                                                                                                                                |
+   +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Audio (Sound Classification, Speech Labeling, and Speech Paragraph Labeling)
 ----------------------------------------------------------------------------
 
 | **Figure 4** Parameters of datasets for sound classification, speech labeling, and speech paragraph labeling
-| |image4|
-  
+| |image4| 
 
 .. _modelarts_23_0004__en-us_topic_0170886809_table46851641358:
 
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| Parameter                                                 | Description                                               |
-+===========================================================+===========================================================+
-| Input Dataset Path                                        | Select the OBS path to the input dataset.                 |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| Output Dataset Path                                       | Select the OBS path to the output dataset.                |
-|                                                           |                                                           |
-|                                                           | NOTE:                                                     |
-|                                                           | The output dataset path cannot be the same as the input   |
-|                                                           | dataset path or cannot be the subdirectory of the input   |
-|                                                           | dataset path. Select an empty directory as the **Output   |
-|                                                           | Dataset Path**.                                           |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| Label Set (Sound Classification)                          | Set labels only for datasets of the sound classification  |
-|                                                           | type.                                                     |
-|                                                           |                                                           |
-|                                                           | -  **Label Name**: Enter a label name. The label name can |
-|                                                           |    contain only letters, digits, underscores (_), and     |
-|                                                           |    hyphens (-). The name contains 1 to 32 characters.     |
-|                                                           | -  **Add Label**: Click **Add Label** to add more labels. |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| Label Management (Speech Paragraph Labeling)              | Only datasets for speech paragraph labeling support       |
-|                                                           | multiple labels.                                          |
-|                                                           |                                                           |
-|                                                           | -  **Single Label**\ A single label is used to label a    |
-|                                                           |    piece of audio that has only one class.                |
-|                                                           |                                                           |
-|                                                           |    -  **Label Name**: Enter a label name. The label name  |
-|                                                           |       can contain contains 1 to 32 characters. Only       |
-|                                                           |       letters, digits, underscores (_), and hyphens (-)   |
-|                                                           |       are allowed.                                        |
-|                                                           |    -  **Label Color**: Set the label color in the **Label |
-|                                                           |       Color** column. You can select a color from the     |
-|                                                           |       color palette or enter a hexadecimal color code to  |
-|                                                           |       set the color.                                      |
-|                                                           |                                                           |
-|                                                           | -  **Multiple Labels**\ Multiple labels are suitable for  |
-|                                                           |    multi-dimensional labeling. For example, you can label |
-|                                                           |    a piece of audio as both noise and speech. For speech, |
-|                                                           |    you can label the audio with different speakers. You   |
-|                                                           |    can click **Add Label Class** to add multiple label    |
-|                                                           |    classes. A label class can contain multiple labels.    |
-|                                                           |    The label class and name can contain contains 1 to 32  |
-|                                                           |    characters. Only letters, digits, underscores (_), and |
-|                                                           |    hyphens (-) are allowed.                               |
-|                                                           |                                                           |
-|                                                           |    -  **Label Class**: Set a label class.                 |
-|                                                           |    -  **Label Name**: Enter a label name.                 |
-|                                                           |    -  **Add Label**: Click **Add Label** to add more      |
-|                                                           |       labels.                                             |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| Speech Labeling (Speech Paragraph Labeling)               | Only datasets for speech paragraph labeling support       |
-|                                                           | speech labeling. By default, speech labeling is disabled. |
-|                                                           | If this function is enabled, you can label speech         |
-|                                                           | content.                                                  |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| Team Labeling                                             | Only datasets of speech paragraph labeling support team   |
-|                                                           | labeling.                                                 |
-|                                                           |                                                           |
-|                                                           | After enabling team labeling, set the name and type of    |
-|                                                           | the team labeling task, and select the team and team      |
-|                                                           | members. For details about the parameter settings, see    |
-|                                                           | `Creating Team Labeling                                   |
-|                                                           | Tasks <modelarts_23_0210.html#modelart                    |
-|                                                           | s_23_0210__en-us_topic_0209053802_section72262410214>`__. |
-|                                                           |                                                           |
-|                                                           | Before enabling team labeling, ensure that you have added |
-|                                                           | a team and members on the **Labeling Teams** page. If no  |
-|                                                           | labeling team is available, click the link on the page to |
-|                                                           | go to the **Labeling Teams** page, and add your team and  |
-|                                                           | members. For details, see `Introduction to Team           |
-|                                                           | Labeling <modelarts_23_0181.html>`__.                     |
-|                                                           |                                                           |
-|                                                           | After a dataset is created with team labeling enabled,    |
-|                                                           | you can view the **Team Labeling** mark in **Labeling     |
-|                                                           | Type**.                                                   |
-+-----------------------------------------------------------+-----------------------------------------------------------+
++----------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Parameter                                    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
++==============================================+===========================================================================================================================================================================================================================================================================================================================================================================================================================================================================+
+| Input Dataset Path                           | Select the OBS path to the input dataset.                                                                                                                                                                                                                                                                                                                                                                                                                                 |
++----------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Output Dataset Path                          | Select the OBS path to the output dataset.                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|                                              | NOTE:                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|                                              | The output dataset path cannot be the same as the input dataset path or cannot be the subdirectory of the input dataset path. Select an empty directory as the **Output Dataset Path**.                                                                                                                                                                                                                                                                                   |
++----------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Label Set (Sound Classification)             | Set labels only for datasets of the sound classification type.                                                                                                                                                                                                                                                                                                                                                                                                            |
+|                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|                                              | -  **Label Name**: Enter a label name. The label name can contain only letters, digits, underscores (_), and hyphens (-). The name contains 1 to 32 characters.                                                                                                                                                                                                                                                                                                           |
+|                                              | -  **Add Label**: Click **Add Label** to add more labels.                                                                                                                                                                                                                                                                                                                                                                                                                 |
++----------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Label Management (Speech Paragraph Labeling) | Only datasets for speech paragraph labeling support multiple labels.                                                                                                                                                                                                                                                                                                                                                                                                      |
+|                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|                                              | -  **Single Label**\ A single label is used to label a piece of audio that has only one class.                                                                                                                                                                                                                                                                                                                                                                            |
+|                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|                                              |    -  **Label Name**: Enter a label name. The label name can contain contains 1 to 32 characters. Only letters, digits, underscores (_), and hyphens (-) are allowed.                                                                                                                                                                                                                                                                                                     |
+|                                              |    -  **Label Color**: Set the label color in the **Label Color** column. You can select a color from the color palette or enter a hexadecimal color code to set the color.                                                                                                                                                                                                                                                                                               |
+|                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|                                              | -  **Multiple Labels**\ Multiple labels are suitable for multi-dimensional labeling. For example, you can label a piece of audio as both noise and speech. For speech, you can label the audio with different speakers. You can click **Add Label Class** to add multiple label classes. A label class can contain multiple labels. The label class and name can contain contains 1 to 32 characters. Only letters, digits, underscores (_), and hyphens (-) are allowed. |
+|                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|                                              |    -  **Label Class**: Set a label class.                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|                                              |    -  **Label Name**: Enter a label name.                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|                                              |    -  **Add Label**: Click **Add Label** to add more labels.                                                                                                                                                                                                                                                                                                                                                                                                              |
++----------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Speech Labeling (Speech Paragraph Labeling)  | Only datasets for speech paragraph labeling support speech labeling. By default, speech labeling is disabled. If this function is enabled, you can label speech content.                                                                                                                                                                                                                                                                                                  |
++----------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Team Labeling                                | Only datasets of speech paragraph labeling support team labeling.                                                                                                                                                                                                                                                                                                                                                                                                         |
+|                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|                                              | After enabling team labeling, set the name and type of the team labeling task, and select the team and team members. For details about the parameter settings, see `Creating Team Labeling Tasks <../data_management/team_labeling/managing_team_labeling_tasks.html#modelarts_23_0210__en-us_topic_0209053802_section72262410214>`__.                                                                                                                                    |
+|                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|                                              | Before enabling team labeling, ensure that you have added a team and members on the **Labeling Teams** page. If no labeling team is available, click the link on the page to go to the **Labeling Teams** page, and add your team and members. For details, see `Introduction to Team Labeling <../data_management/team_labeling/introduction_to_team_labeling.html>`__.                                                                                                  |
+|                                              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|                                              | After a dataset is created with team labeling enabled, you can view the **Team Labeling** mark in **Labeling Type**.                                                                                                                                                                                                                                                                                                                                                      |
++----------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Text (Text Classification, Named Entity Recognition, and Text Triplet)
 ----------------------------------------------------------------------
 
 | **Figure 5** Parameters of datasets for text classification, named entity recognition, and text triplet
-| |image5|
-  
+| |image5| 
 
 .. _modelarts_23_0004__en-us_topic_0170886809_table8639141818387:
 
 .. table:: **Table 2** Dataset parameters
 
-   +-----------------------------------------------------------+-----------------------------------------------------------+
-   | Parameter                                                 | Description                                               |
-   +===========================================================+===========================================================+
-   | Input Dataset Path                                        | Select the OBS path to the input dataset.                 |
-   |                                                           |                                                           |
-   |                                                           | NOTE:                                                     |
-   |                                                           | Labeled text classification data can be identified only   |
-   |                                                           | when you import data. When creating a dataset, set an     |
-   |                                                           | empty OBS directory. After the dataset is created, import |
-   |                                                           | the labeled data into it. For details about the format of |
-   |                                                           | the data to be imported, see `Specifications for          |
-   |                                                           | Importing Data from an OBS                                |
-   |                                                           | Directory <modelarts_23_0008.html>`__.                    |
-   +-----------------------------------------------------------+-----------------------------------------------------------+
-   | Output Dataset Path                                       | Select the OBS path to the output dataset.                |
-   |                                                           |                                                           |
-   |                                                           | NOTE:                                                     |
-   |                                                           | The output dataset path cannot be the same as the input   |
-   |                                                           | dataset path or cannot be the subdirectory of the input   |
-   |                                                           | dataset path. Select an empty directory as the **Output   |
-   |                                                           | Dataset Path**.                                           |
-   +-----------------------------------------------------------+-----------------------------------------------------------+
-   | Label Set (for text classification and named entity       | -  **Label Name**: Enter a label name. The label name can |
-   | recognition)                                              |    contain only letters, digits, underscores (_), and     |
-   |                                                           |    hyphens (-). The name contains 1 to 32 characters.     |
-   |                                                           |                                                           |
-   |                                                           | -  **Add Label**: Click **Add Label** to add more labels. |
-   |                                                           |                                                           |
-   |                                                           | -  Setting a label color: Select a color from the color   |
-   |                                                           |    palette or enter the hexadecimal color code to set the |
-   |                                                           |    color.                                                 |
-   +-----------------------------------------------------------+-----------------------------------------------------------+
-   | Label Set (for text triplet)                              | For datasets of the text triplet type, set entity labels  |
-   |                                                           | and relationship labels.                                  |
-   |                                                           |                                                           |
-   |                                                           | -  **Entity Label**: Set the label name and label color.  |
-   |                                                           |    You can click the plus sign (+) on the right of the    |
-   |                                                           |    color area to add multiple labels.                     |
-   |                                                           | -  **Relationship Label**: a relationship between two     |
-   |                                                           |    entities. Set the source entity and target entity.     |
-   |                                                           |    Therefore, add at least two entity labels before       |
-   |                                                           |    adding a relationship label.                           |
-   |                                                           |                                                           |
-   |                                                           | |image6|                                                  |
-   +-----------------------------------------------------------+-----------------------------------------------------------+
-   | Team Labeling                                             | Enable or disable team labeling.                          |
-   |                                                           |                                                           |
-   |                                                           | After enabling team labeling, enter the name and type of  |
-   |                                                           | the team labeling task, and select the labeling team and  |
-   |                                                           | team members. For details about the parameter settings,   |
-   |                                                           | see `Creating Team Labeling                               |
-   |                                                           | Tasks <modelarts_23_0210.html#modelart                    |
-   |                                                           | s_23_0210__en-us_topic_0209053802_section72262410214>`__. |
-   |                                                           |                                                           |
-   |                                                           | Before enabling team labeling, ensure that you have added |
-   |                                                           | a team and members on the **Labeling Teams** page. If no  |
-   |                                                           | labeling team is available, click the link on the page to |
-   |                                                           | go to the **Labeling Teams** page, and add your team and  |
-   |                                                           | members. For details, see `Introduction to Team           |
-   |                                                           | Labeling <modelarts_23_0181.html>`__.                     |
-   |                                                           |                                                           |
-   |                                                           | After a dataset is created with team labeling enabled,    |
-   |                                                           | you can view the **Team Labeling** mark in **Labeling     |
-   |                                                           | Type**.                                                   |
-   +-----------------------------------------------------------+-----------------------------------------------------------+
+   +------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter                                                        | Description                                                                                                                                                                                                                                                                                                                                                                                                                  |
+   +==================================================================+==============================================================================================================================================================================================================================================================================================================================================================================================================================+
+   | Input Dataset Path                                               | Select the OBS path to the input dataset.                                                                                                                                                                                                                                                                                                                                                                                    |
+   |                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                              |
+   |                                                                  | NOTE:                                                                                                                                                                                                                                                                                                                                                                                                                        |
+   |                                                                  | Labeled text classification data can be identified only when you import data. When creating a dataset, set an empty OBS directory. After the dataset is created, import the labeled data into it. For details about the format of the data to be imported, see `Specifications for Importing Data from an OBS Directory <../data_management/importing_data/specifications_for_importing_data_from_an_obs_directory.html>`__. |
+   +------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Output Dataset Path                                              | Select the OBS path to the output dataset.                                                                                                                                                                                                                                                                                                                                                                                   |
+   |                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                              |
+   |                                                                  | NOTE:                                                                                                                                                                                                                                                                                                                                                                                                                        |
+   |                                                                  | The output dataset path cannot be the same as the input dataset path or cannot be the subdirectory of the input dataset path. Select an empty directory as the **Output Dataset Path**.                                                                                                                                                                                                                                      |
+   +------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Label Set (for text classification and named entity recognition) | -  **Label Name**: Enter a label name. The label name can contain only letters, digits, underscores (_), and hyphens (-). The name contains 1 to 32 characters.                                                                                                                                                                                                                                                              |
+   |                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                              |
+   |                                                                  | -  **Add Label**: Click **Add Label** to add more labels.                                                                                                                                                                                                                                                                                                                                                                    |
+   |                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                              |
+   |                                                                  | -  Setting a label color: Select a color from the color palette or enter the hexadecimal color code to set the color.                                                                                                                                                                                                                                                                                                        |
+   +------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Label Set (for text triplet)                                     | For datasets of the text triplet type, set entity labels and relationship labels.                                                                                                                                                                                                                                                                                                                                            |
+   |                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                              |
+   |                                                                  | -  **Entity Label**: Set the label name and label color. You can click the plus sign (+) on the right of the color area to add multiple labels.                                                                                                                                                                                                                                                                              |
+   |                                                                  | -  **Relationship Label**: a relationship between two entities. Set the source entity and target entity. Therefore, add at least two entity labels before adding a relationship label.                                                                                                                                                                                                                                       |
+   |                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                              |
+   |                                                                  | |image6|                                                                                                                                                                                                                                                                                                                                                                                                                     |
+   +------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Team Labeling                                                    | Enable or disable team labeling.                                                                                                                                                                                                                                                                                                                                                                                             |
+   |                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                              |
+   |                                                                  | After enabling team labeling, enter the name and type of the team labeling task, and select the labeling team and team members. For details about the parameter settings, see `Creating Team Labeling Tasks <../data_management/team_labeling/managing_team_labeling_tasks.html#modelarts_23_0210__en-us_topic_0209053802_section72262410214>`__.                                                                            |
+   |                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                              |
+   |                                                                  | Before enabling team labeling, ensure that you have added a team and members on the **Labeling Teams** page. If no labeling team is available, click the link on the page to go to the **Labeling Teams** page, and add your team and members. For details, see `Introduction to Team Labeling <../data_management/team_labeling/introduction_to_team_labeling.html>`__.                                                     |
+   |                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                              |
+   |                                                                  | After a dataset is created with team labeling enabled, you can view the **Team Labeling** mark in **Labeling Type**.                                                                                                                                                                                                                                                                                                         |
+   +------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Table
 -----
@@ -282,60 +180,31 @@ When using a CSV file, pay attention to the following:
 
 .. table:: **Table 3** Dataset parameters
 
-   +-----------------------------------------------------------+-----------------------------------------------------------+
-   | Parameter                                                 | Description                                               |
-   +===========================================================+===========================================================+
-   | Storage Path                                              | Select the OBS path for storing table data. The data      |
-   |                                                           | imported from the data source is stored in this path. The |
-   |                                                           | path cannot be the same as or a subdirectory of the file  |
-   |                                                           | path in the OBS data source.                              |
-   |                                                           |                                                           |
-   |                                                           | After a table dataset is created, the following four      |
-   |                                                           | directories are automatically generated in the storage    |
-   |                                                           | path:                                                     |
-   |                                                           |                                                           |
-   |                                                           | -  **annotation**: version publishing directory. Each     |
-   |                                                           |    time a version is published, a subdirectory with the   |
-   |                                                           |    same name as the version is generated in this          |
-   |                                                           |    directory.                                             |
-   |                                                           | -  **data**: data storage directory. Imported data is     |
-   |                                                           |    stored in this directory.                              |
-   |                                                           | -  **logs**: directory for storing logs                   |
-   |                                                           | -  **temp**: temporary working directory                  |
-   +-----------------------------------------------------------+-----------------------------------------------------------+
-   | Import                                                    | If you have stored table data on other cloud services,    |
-   |                                                           | you can enable this function to import data stored on     |
-   |                                                           | OBS, DLI, or MRS.                                         |
-   +-----------------------------------------------------------+-----------------------------------------------------------+
-   | Data Source (OBS)                                         | -  **File Path**: Browse all OBS buckets of the account   |
-   |                                                           |    and select the directory where the data file to be     |
-   |                                                           |    imported is located.                                   |
-   |                                                           | -  **Contain Table Header**: If this parameter is         |
-   |                                                           |    enabled, the imported file contains table headers. In  |
-   |                                                           |    this case, the first row of the imported file is used  |
-   |                                                           |    as the column name. Otherwise, the default column name |
-   |                                                           |    is added and automatically filled in the schema        |
-   |                                                           |    information.                                           |
-   |                                                           |                                                           |
-   |                                                           | For details about OBS functions, see *Object Storage      |
-   |                                                           | Service Console Operation Guide*.                         |
-   +-----------------------------------------------------------+-----------------------------------------------------------+
-   | Schema                                                    | Names and types of table columns, which must be the same  |
-   |                                                           | as those of the imported data. Set the column name based  |
-   |                                                           | on the imported data and select the column type. For      |
-   |                                                           | details about the supported types, see `Table             |
-   |                                                           | 4 <#modelart                                              |
-   |                                                           | s_23_0004__en-us_topic_0170886809_table1916832104917>`__. |
-   |                                                           |                                                           |
-   |                                                           | Click **Add Schema** to add a new record. When creating a |
-   |                                                           | dataset, you must specify a schema. Once created, the     |
-   |                                                           | schema cannot be modified.                                |
-   |                                                           |                                                           |
-   |                                                           | When data is imported from OBS, the schema of the CSV     |
-   |                                                           | file in the file path is automatically obtained. If the   |
-   |                                                           | schemas of multiple CSV files are inconsistent, an error  |
-   |                                                           | is reported.                                              |
-   +-----------------------------------------------------------+-----------------------------------------------------------+
+   +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter                         | Description                                                                                                                                                                                                                                                                                |
+   +===================================+============================================================================================================================================================================================================================================================================================+
+   | Storage Path                      | Select the OBS path for storing table data. The data imported from the data source is stored in this path. The path cannot be the same as or a subdirectory of the file path in the OBS data source.                                                                                       |
+   |                                   |                                                                                                                                                                                                                                                                                            |
+   |                                   | After a table dataset is created, the following four directories are automatically generated in the storage path:                                                                                                                                                                          |
+   |                                   |                                                                                                                                                                                                                                                                                            |
+   |                                   | -  **annotation**: version publishing directory. Each time a version is published, a subdirectory with the same name as the version is generated in this directory.                                                                                                                        |
+   |                                   | -  **data**: data storage directory. Imported data is stored in this directory.                                                                                                                                                                                                            |
+   |                                   | -  **logs**: directory for storing logs                                                                                                                                                                                                                                                    |
+   |                                   | -  **temp**: temporary working directory                                                                                                                                                                                                                                                   |
+   +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Import                            | If you have stored table data on other cloud services, you can enable this function to import data stored on OBS, DLI, or MRS.                                                                                                                                                             |
+   +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Data Source (OBS)                 | -  **File Path**: Browse all OBS buckets of the account and select the directory where the data file to be imported is located.                                                                                                                                                            |
+   |                                   | -  **Contain Table Header**: If this parameter is enabled, the imported file contains table headers. In this case, the first row of the imported file is used as the column name. Otherwise, the default column name is added and automatically filled in the schema information.          |
+   |                                   |                                                                                                                                                                                                                                                                                            |
+   |                                   | For details about OBS functions, see *Object Storage Service Console Operation Guide*.                                                                                                                                                                                                     |
+   +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Schema                            | Names and types of table columns, which must be the same as those of the imported data. Set the column name based on the imported data and select the column type. For details about the supported types, see `Table 4 <#modelarts_23_0004__en-us_topic_0170886809_table1916832104917>`__. |
+   |                                   |                                                                                                                                                                                                                                                                                            |
+   |                                   | Click **Add Schema** to add a new record. When creating a dataset, you must specify a schema. Once created, the schema cannot be modified.                                                                                                                                                 |
+   |                                   |                                                                                                                                                                                                                                                                                            |
+   |                                   | When data is imported from OBS, the schema of the CSV file in the file path is automatically obtained. If the schemas of multiple CSV files are inconsistent, an error is reported.                                                                                                        |
+   +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 
@@ -343,108 +212,94 @@ When using a CSV file, pay attention to the following:
 
 .. table:: **Table 4** Migration data types
 
-   +-----------+-------------------------------------------+---------------+-------------------------------------------+
-   | Type      | Description                               | Storage Space | Range                                     |
-   +===========+===========================================+===============+===========================================+
-   | String    | String                                    | -             | -                                         |
-   +-----------+-------------------------------------------+---------------+-------------------------------------------+
-   | Short     | Signed integer                            | 2 bytes       | -32768 to 32767                           |
-   +-----------+-------------------------------------------+---------------+-------------------------------------------+
-   | Int       | Signed integer                            | 4 bytes       | –2147483648 to 2147483647                 |
-   +-----------+-------------------------------------------+---------------+-------------------------------------------+
-   | Long      | Signed integer                            | 8 bytes       | –9223372036854775808 to                   |
-   |           |                                           |               | 9223372036854775807                       |
-   +-----------+-------------------------------------------+---------------+-------------------------------------------+
-   | Double    | Double-precision floating point           | 8 bytes       | -                                         |
-   +-----------+-------------------------------------------+---------------+-------------------------------------------+
-   | Float     | Single-precision floating point           | 4 bytes       | -                                         |
-   +-----------+-------------------------------------------+---------------+-------------------------------------------+
-   | Byte      | Signed integer                            | 1 byte        | -128 to 127                               |
-   +-----------+-------------------------------------------+---------------+-------------------------------------------+
-   | Date      | Date type in the format of *yyyy-MM-dd*,  | -             | -                                         |
-   |           | for example, 2014-05-29                   |               |                                           |
-   +-----------+-------------------------------------------+---------------+-------------------------------------------+
-   | Timestamp | Timestamp that represents date and time.  | -             | -                                         |
-   |           | Format: *yyyy-MM-dd HH:mm:ss*             |               |                                           |
-   +-----------+-------------------------------------------+---------------+-------------------------------------------+
-   | Boolean   | Boolean                                   | 1 byte        | TRUE or FALSE                             |
-   +-----------+-------------------------------------------+---------------+-------------------------------------------+
+   +-----------+------------------------------------------------------------------------+---------------+---------------------------------------------+
+   | Type      | Description                                                            | Storage Space | Range                                       |
+   +===========+========================================================================+===============+=============================================+
+   | String    | String                                                                 | -             | -                                           |
+   +-----------+------------------------------------------------------------------------+---------------+---------------------------------------------+
+   | Short     | Signed integer                                                         | 2 bytes       | -32768 to 32767                             |
+   +-----------+------------------------------------------------------------------------+---------------+---------------------------------------------+
+   | Int       | Signed integer                                                         | 4 bytes       | –2147483648 to 2147483647                   |
+   +-----------+------------------------------------------------------------------------+---------------+---------------------------------------------+
+   | Long      | Signed integer                                                         | 8 bytes       | –9223372036854775808 to 9223372036854775807 |
+   +-----------+------------------------------------------------------------------------+---------------+---------------------------------------------+
+   | Double    | Double-precision floating point                                        | 8 bytes       | -                                           |
+   +-----------+------------------------------------------------------------------------+---------------+---------------------------------------------+
+   | Float     | Single-precision floating point                                        | 4 bytes       | -                                           |
+   +-----------+------------------------------------------------------------------------+---------------+---------------------------------------------+
+   | Byte      | Signed integer                                                         | 1 byte        | -128 to 127                                 |
+   +-----------+------------------------------------------------------------------------+---------------+---------------------------------------------+
+   | Date      | Date type in the format of *yyyy-MM-dd*, for example, 2014-05-29       | -             | -                                           |
+   +-----------+------------------------------------------------------------------------+---------------+---------------------------------------------+
+   | Timestamp | Timestamp that represents date and time. Format: *yyyy-MM-dd HH:mm:ss* | -             | -                                           |
+   +-----------+------------------------------------------------------------------------+---------------+---------------------------------------------+
+   | Boolean   | Boolean                                                                | 1 byte        | TRUE or FALSE                               |
+   +-----------+------------------------------------------------------------------------+---------------+---------------------------------------------+
 
 Video
 -----
 
 | **Figure 6** Parameters of datasets of the video type
-| |image8|
-  
+| |image8| 
 
 .. _modelarts_23_0004__en-us_topic_0170886809_table623753175616:
 
 .. table:: **Table 5** Dataset parameters
 
-   +-----------------------------------------------------------+-----------------------------------------------------------+
-   | Parameter                                                 | Description                                               |
-   +===========================================================+===========================================================+
-   | Input Dataset Path                                        | Select the OBS path to the input dataset.                 |
-   +-----------------------------------------------------------+-----------------------------------------------------------+
-   | Output Dataset Path                                       | Select the OBS path to the output dataset.                |
-   |                                                           |                                                           |
-   |                                                           | NOTE:                                                     |
-   |                                                           | The output dataset path cannot be the same as the input   |
-   |                                                           | dataset path or cannot be the subdirectory of the input   |
-   |                                                           | dataset path. Select an empty directory as the **Output   |
-   |                                                           | Dataset Path**.                                           |
-   +-----------------------------------------------------------+-----------------------------------------------------------+
-   | Label Set                                                 | -  **Label Name**: Enter a label name. The label name can |
-   |                                                           |    contain only letters, digits, underscores (_), and     |
-   |                                                           |    hyphens (-). The name contains 1 to 32 characters.     |
-   |                                                           |                                                           |
-   |                                                           | -  **Add Label**: Click **Add Label** to add more labels. |
-   |                                                           |                                                           |
-   |                                                           | -  Setting a label color: Select a color from the color   |
-   |                                                           |    palette or enter the hexadecimal color code to set the |
-   |                                                           |    color.                                                 |
-   +-----------------------------------------------------------+-----------------------------------------------------------+
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter                         | Description                                                                                                                                                                             |
+   +===================================+=========================================================================================================================================================================================+
+   | Input Dataset Path                | Select the OBS path to the input dataset.                                                                                                                                               |
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Output Dataset Path               | Select the OBS path to the output dataset.                                                                                                                                              |
+   |                                   |                                                                                                                                                                                         |
+   |                                   | NOTE:                                                                                                                                                                                   |
+   |                                   | The output dataset path cannot be the same as the input dataset path or cannot be the subdirectory of the input dataset path. Select an empty directory as the **Output Dataset Path**. |
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Label Set                         | -  **Label Name**: Enter a label name. The label name can contain only letters, digits, underscores (_), and hyphens (-). The name contains 1 to 32 characters.                         |
+   |                                   |                                                                                                                                                                                         |
+   |                                   | -  **Add Label**: Click **Add Label** to add more labels.                                                                                                                               |
+   |                                   |                                                                                                                                                                                         |
+   |                                   | -  Setting a label color: Select a color from the color palette or enter the hexadecimal color code to set the color.                                                                   |
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Other (Free Format)
 -------------------
 
 | **Figure 7** Parameters of datasets of the free format type
-| |image9|
-  
+| |image9| 
 
 .. _modelarts_23_0004__en-us_topic_0170886809_table115315465714:
 
 .. table:: **Table 6** Dataset parameters
 
-   +-----------------------------------------------------------+-----------------------------------------------------------+
-   | Parameter                                                 | Description                                               |
-   +===========================================================+===========================================================+
-   | Input Dataset Path                                        | Select the OBS path to the input dataset.                 |
-   +-----------------------------------------------------------+-----------------------------------------------------------+
-   | Output Dataset Path                                       | Select the OBS path to the output dataset.                |
-   |                                                           |                                                           |
-   |                                                           | NOTE:                                                     |
-   |                                                           | The output dataset path cannot be the same as the input   |
-   |                                                           | dataset path or cannot be the subdirectory of the input   |
-   |                                                           | dataset path. Select an empty directory as the **Output   |
-   |                                                           | Dataset Path**.                                           |
-   +-----------------------------------------------------------+-----------------------------------------------------------+
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter                         | Description                                                                                                                                                                             |
+   +===================================+=========================================================================================================================================================================================+
+   | Input Dataset Path                | Select the OBS path to the input dataset.                                                                                                                                               |
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Output Dataset Path               | Select the OBS path to the output dataset.                                                                                                                                              |
+   |                                   |                                                                                                                                                                                         |
+   |                                   | NOTE:                                                                                                                                                                                   |
+   |                                   | The output dataset path cannot be the same as the input dataset path or cannot be the subdirectory of the input dataset path. Select an empty directory as the **Output Dataset Path**. |
+   +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-.. |image1| image:: /images/en-us_image_0000001157080905.png
 
-.. |image2| image:: /images/en-us_image_0000001110761058.png
+.. |image1| image:: /_static/images/en-us_image_0000001157080905.png
 
-.. |image3| image:: /images/en-us_image_0000001157080911.png
+.. |image2| image:: /_static/images/en-us_image_0000001110761058.png
 
-.. |image4| image:: /images/en-us_image_0000001157080903.png
+.. |image3| image:: /_static/images/en-us_image_0000001157080911.png
 
-.. |image5| image:: /images/en-us_image_0000001110920960.png
+.. |image4| image:: /_static/images/en-us_image_0000001157080903.png
 
-.. |image6| image:: /images/en-us_image_0000001156920935.png
+.. |image5| image:: /_static/images/en-us_image_0000001110920960.png
 
-.. |image7| image:: /images/note_3.0-en-us.png
-.. |image8| image:: /images/en-us_image_0000001157080907.png
+.. |image6| image:: /_static/images/en-us_image_0000001156920935.png
 
-.. |image9| image:: /images/en-us_image_0000001156920933.png
+.. |image7| image:: /_static/images/note_3.0-en-us.png
+.. |image8| image:: /_static/images/en-us_image_0000001157080907.png
+
+.. |image9| image:: /_static/images/en-us_image_0000001156920933.png
 

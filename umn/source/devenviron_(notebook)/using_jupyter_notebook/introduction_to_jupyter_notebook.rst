@@ -17,3 +17,4 @@ Differences Between Notebook Kernels and Common Interactive Python Interpreters
 
 A notebook kernel is an IPython running environment, which can be considered as an enhanced Python shell. Compared with a Python interpreter, a notebook kernel can execute shell scripts and integrate more visualized tools and magic commands. For details, see `IPython Documentation <https://ipython.readthedocs.io/>`__.
 
+

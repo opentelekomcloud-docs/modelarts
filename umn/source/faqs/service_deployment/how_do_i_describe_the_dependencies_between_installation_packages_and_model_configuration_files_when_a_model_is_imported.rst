@@ -15,7 +15,7 @@ The dependencies in list format must be installed in sequence. For example, inst
 
 Example:
 
-.. code::
+.. code-block::
 
    "dependencies": [
        {
@@ -57,4 +57,5 @@ Example:
            }]
        }
    ]
+
 

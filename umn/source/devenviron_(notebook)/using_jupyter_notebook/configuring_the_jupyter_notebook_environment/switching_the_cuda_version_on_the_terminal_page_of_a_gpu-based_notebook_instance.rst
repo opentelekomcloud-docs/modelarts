@@ -11,13 +11,13 @@ CPU-based notebook instances do not use CUDA. Therefore, the following operation
 
 #. Run the following command to go to **/usr/local**:
 
-   .. code::
+   .. code-block::
 
       cd /usr/local
 
 #. For example, to switch to CUDA 10, run the following command:
 
-   .. code::
+   .. code-block::
 
       sudo ln -snf /usr/local/cuda-10.0 cuda
 
@@ -25,5 +25,6 @@ CPU-based notebook instances do not use CUDA. Therefore, the following operation
    | |image1|
 
 
-.. |image1| image:: /images/en-us_image_0000001156920929.png
+
+.. |image1| image:: /_static/images/en-us_image_0000001156920929.png
 

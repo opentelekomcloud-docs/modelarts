@@ -3,6 +3,7 @@ FAQs
 ====
 
 .. toctree::
+   :maxdepth: 1
 
    general_issues/index
    exeml/index

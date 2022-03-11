@@ -25,5 +25,6 @@ ModelArts has the following features:
    Enables model building without coding and supports image classification, object detection, and predictive analytics.
 
 
-.. |image1| image:: /images/en-us_image_0000001156920845.png
+
+.. |image1| image:: /_static/images/en-us_image_0000001156920845.png
 

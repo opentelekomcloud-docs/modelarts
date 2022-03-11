@@ -5,8 +5,7 @@ When creating a training job, you can select CPU, GPU, or Ascend resources based
 
 ModelArts mounts the disk to the **/cache** directory. You can use this directory to store temporary files. The **/cache** directory shares resources with the code directory. The directory has different capacities for different resource specifications.
 
--  GPU resources
-   
+-  GPU resources 
 
 .. _modelarts_05_0090__en-us_topic_0000001096855431_en-us_topic_0200343601_table9533182215915:
 
@@ -20,8 +19,7 @@ ModelArts mounts the disk to the **/cache** directory. You can use this director
       P100               800G
       ================== ========================
 
--  CPU resources
-   
+-  CPU resources 
 
 .. _modelarts_05_0090__en-us_topic_0000001096855431_en-us_topic_0200343601_table2764175317167:
 
@@ -34,8 +32,7 @@ ModelArts mounts the disk to the **/cache** directory. You can use this director
       8 vCPUs \| 32 GiB  50G
       ================== ========================
 
--  Ascend resources
-   
+-  Ascend resources 
 
 .. _modelarts_05_0090__en-us_topic_0000001096855431_en-us_topic_0200343601_table1652218538206:
 
@@ -46,4 +43,5 @@ ModelArts mounts the disk to the **/cache** directory. You can use this director
       ===================== ========================
       Ascend 910            3T
       ===================== ========================
+
 

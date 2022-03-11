@@ -18,7 +18,7 @@ Specifications for Custom Images Used for Model Management
 
    -  Sample response
 
-      .. code::
+      .. code-block::
 
          {"mnist_result": 7}
 
@@ -28,7 +28,7 @@ Specifications for Custom Images Used for Model Management
 
    -  URI
 
-      .. code::
+      .. code-block::
 
          GET /health
 
@@ -36,12 +36,11 @@ Specifications for Custom Images Used for Model Management
 
    -  Sample response
 
-      .. code::
+      .. code-block::
 
          {"health": "true"}
 
-   -  Status code
-      
+   -  Status code 
 
 .. _modelarts_23_0219__en-us_topic_0212179953_table19701134515351:
 
@@ -66,4 +65,5 @@ Specifications for Custom Images Used for Model Management
 -  **Image dependencies**
 
    To deploy a batch service, install component packages such as Python, JRE/JDK, and ZIP in the image.
+
 

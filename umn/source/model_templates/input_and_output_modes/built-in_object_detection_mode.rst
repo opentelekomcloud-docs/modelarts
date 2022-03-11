@@ -17,17 +17,19 @@ The inference result is returned in JSON format. For details about the fields, s
 
 .. table:: **Table 1** Parameters
 
-   ================= ============ =======================================================================================
-   Field             Type         Description
-   ================= ============ =======================================================================================
-   detection_classes String array List of detected objects, for example, **["flowers","cat"]**
-   detection_boxes   Float array  Coordinates of the bounding box, in the format of |image1|
-   detection_scores  Float array  Confidence scores of detected objects, which are used to measure the detection accuracy
-   ================= ============ =======================================================================================
+   +-------------------+--------------+-----------------------------------------------------------------------------------------+
+   | Field             | Type         | Description                                                                             |
+   +===================+==============+=========================================================================================+
+   | detection_classes | String array | List of detected objects, for example, **["flowers","cat"]**                            |
+   +-------------------+--------------+-----------------------------------------------------------------------------------------+
+   | detection_boxes   | Float array  | Coordinates of the bounding box, in the format of |image2|                              |
+   +-------------------+--------------+-----------------------------------------------------------------------------------------+
+   | detection_scores  | Float array  | Confidence scores of detected objects, which are used to measure the detection accuracy |
+   +-------------------+--------------+-----------------------------------------------------------------------------------------+
 
 The **JSON Schema** of the inference result is as follows:
 
-.. code::
+.. code-block::
 
    {
        "type": "object",
@@ -76,5 +78,8 @@ In this mode, input an image to be processed in the inference request. The infer
    -  On the **Body** tab page, set the request body. Set **key** to **images**, select **File**, select the image to be processed, and click **send** to send your prediction request.
 
 
-.. |image1| image:: /images/en-us_image_0000001110761158.png
+
+.. |image1| image:: /_static/images/en-us_image_0000001110761158.png
+
+.. |image2| image:: /_static/images/en-us_image_0000001110761158.png
 

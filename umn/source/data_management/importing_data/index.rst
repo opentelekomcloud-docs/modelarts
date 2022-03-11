@@ -3,6 +3,7 @@ Importing Data
 ==============
 
 .. toctree::
+   :maxdepth: 1
 
    import_operation
    specifications_for_importing_data_from_an_obs_directory

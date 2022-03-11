@@ -3,6 +3,7 @@ Using Jupyter Notebook
 ======================
 
 .. toctree::
+   :maxdepth: 1
 
    introduction_to_jupyter_notebook
    common_operations_on_jupyter_notebook

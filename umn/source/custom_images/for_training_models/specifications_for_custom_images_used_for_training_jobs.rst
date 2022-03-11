@@ -27,13 +27,13 @@ To facilitate code download, training log output, and log file upload to OBS, Mo
 
 Run the following command to obtain a ModelArts image:
 
-.. code::
+.. code-block::
 
    docker pull <Address for obtaining a basic image>
 
 After customizing an image, upload it to SWR. Make sure that you have created an organization and obtained the password for logging in to SWR. For details, see "Image Management" > "Uploading an Image Through SWR Console" in *Software Repository for Container User Guide*.
 
-.. code::
+.. code-block::
 
    docker push  swr.<region>.xxx.com/<Organization to which the target image belongs>/<Image name>
 
@@ -47,7 +47,7 @@ CPU-based Basic Images
 
 Address for obtaining a basic image
 
-.. code::
+.. code-block::
 
    swr.<region>.xxx.com/modelarts-job-dev-image/custom-cpu-base:1.3
 
@@ -59,12 +59,11 @@ Address for obtaining a basic image
 
 .. table:: **Table 1** Components
 
-   +--------------+------------------------------------------------------------------------------------------------------+
-   | Component    | Description                                                                                          |
-   +==============+======================================================================================================+
-   | run_train.sh | Training boot script. You can download the code directory, run training commands, redirect training  |
-   |              | log output, and upload log files to OBS after training commands are executed.                        |
-   +--------------+------------------------------------------------------------------------------------------------------+
+   +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Component    | Description                                                                                                                                                                       |
+   +==============+===================================================================================================================================================================================+
+   | run_train.sh | Training boot script. You can download the code directory, run training commands, redirect training log output, and upload log files to OBS after training commands are executed. |
+   +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 
@@ -72,31 +71,26 @@ Address for obtaining a basic image
 
 .. table:: **Table 2** Tool list
 
-   +-----------------------------------------------------------+-----------------------------------------------------------+
-   | Tool                                                      | Description                                               |
-   +===========================================================+===========================================================+
-   | utils.sh                                                  | Tool script. The **run_train.sh** script depends on this  |
-   |                                                           | script.                                                   |
-   |                                                           |                                                           |
-   |                                                           | It provides methods such as SK decryption, code directory |
-   |                                                           | download, and log file upload.                            |
-   +-----------------------------------------------------------+-----------------------------------------------------------+
-   | ip_mapper.py                                              | Script for obtaining NIC addresses.                       |
-   |                                                           |                                                           |
-   |                                                           | By default, the IP address of the **ib0** NIC is          |
-   |                                                           | obtained. Training code can use the IP address of the     |
-   |                                                           | **ib0** NIC to accelerate network communications.         |
-   +-----------------------------------------------------------+-----------------------------------------------------------+
-   | dls-downloader.py                                         | OBS download script. The **utils.sh** script depends on   |
-   |                                                           | this script.                                              |
-   +-----------------------------------------------------------+-----------------------------------------------------------+
+   +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Tool                              | Description                                                                                                                                              |
+   +===================================+==========================================================================================================================================================+
+   | utils.sh                          | Tool script. The **run_train.sh** script depends on this script.                                                                                         |
+   |                                   |                                                                                                                                                          |
+   |                                   | It provides methods such as SK decryption, code directory download, and log file upload.                                                                 |
+   +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | ip_mapper.py                      | Script for obtaining NIC addresses.                                                                                                                      |
+   |                                   |                                                                                                                                                          |
+   |                                   | By default, the IP address of the **ib0** NIC is obtained. Training code can use the IP address of the **ib0** NIC to accelerate network communications. |
+   +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | dls-downloader.py                 | OBS download script. The **utils.sh** script depends on this script.                                                                                     |
+   +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 GPU-based Basic Images
 ----------------------
 
 Addresses for obtaining a basic image
 
-.. code::
+.. code-block::
 
    swr.<region>.xxx.com/modelarts-job-dev-image/custom-gpu-cuda9-base:1.3
    swr.<region>.xxx.com/modelarts-job-dev-image/custom-gpu-cuda92-base:1.3
@@ -111,12 +105,11 @@ Addresses for obtaining a basic image
 
 .. table:: **Table 3** Components
 
-   +--------------+------------------------------------------------------------------------------------------------------+
-   | Component    | Description                                                                                          |
-   +==============+======================================================================================================+
-   | run_train.sh | Training boot script. You can download the code directory, run training commands, redirect training  |
-   |              | log output, and upload log files to OBS after training commands are executed.                        |
-   +--------------+------------------------------------------------------------------------------------------------------+
+   +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Component    | Description                                                                                                                                                                       |
+   +==============+===================================================================================================================================================================================+
+   | run_train.sh | Training boot script. You can download the code directory, run training commands, redirect training log output, and upload log files to OBS after training commands are executed. |
+   +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 
@@ -124,22 +117,18 @@ Addresses for obtaining a basic image
 
 .. table:: **Table 4** Tool list
 
-   +-----------------------------------------------------------+-----------------------------------------------------------+
-   | Tool                                                      | Description                                               |
-   +===========================================================+===========================================================+
-   | utils.sh                                                  | Tool script. The **run_train.sh** script depends on this  |
-   |                                                           | script.                                                   |
-   |                                                           |                                                           |
-   |                                                           | It provides methods such as SK decryption, code directory |
-   |                                                           | download, and log file upload.                            |
-   +-----------------------------------------------------------+-----------------------------------------------------------+
-   | ip_mapper.py                                              | Script for obtaining NIC addresses.                       |
-   |                                                           |                                                           |
-   |                                                           | By default, the IP address of the **ib0** NIC is          |
-   |                                                           | obtained. Training code can use the IP address of the     |
-   |                                                           | **ib0** NIC to accelerate network communications.         |
-   +-----------------------------------------------------------+-----------------------------------------------------------+
-   | dls-downloader.py                                         | OBS download script. The **utils.sh** script depends on   |
-   |                                                           | this script.                                              |
-   +-----------------------------------------------------------+-----------------------------------------------------------+
+   +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Tool                              | Description                                                                                                                                              |
+   +===================================+==========================================================================================================================================================+
+   | utils.sh                          | Tool script. The **run_train.sh** script depends on this script.                                                                                         |
+   |                                   |                                                                                                                                                          |
+   |                                   | It provides methods such as SK decryption, code directory download, and log file upload.                                                                 |
+   +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | ip_mapper.py                      | Script for obtaining NIC addresses.                                                                                                                      |
+   |                                   |                                                                                                                                                          |
+   |                                   | By default, the IP address of the **ib0** NIC is obtained. Training code can use the IP address of the **ib0** NIC to accelerate network communications. |
+   +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | dls-downloader.py                 | OBS download script. The **utils.sh** script depends on this script.                                                                                     |
+   +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+
 

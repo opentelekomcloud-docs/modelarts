@@ -3,6 +3,7 @@ Monitoring
 ==========
 
 .. toctree::
+   :maxdepth: 1
 
    modelarts_metrics
    setting_alarm_rules

@@ -10,7 +10,7 @@ Starting Labeling
 
 #. In the dataset list, select the dataset to be labeled based on the labeling type, and click the dataset name to go to the **Dashboard** tab page of the dataset.
 
-   By default, the **Dashboard** tab page of the current dataset version is displayed. If you need to label the dataset of another version, click the **Versions** tab and then click **Set to Current Version** in the right pane. For details, see `Managing Dataset Versions <modelarts_23_0019.html>`__.
+   By default, the **Dashboard** tab page of the current dataset version is displayed. If you need to label the dataset of another version, click the **Versions** tab and then click **Set to Current Version** in the right pane. For details, see `Managing Dataset Versions <../../data_management/managing_dataset_versions.html>`__.
 
 #. On the **Dashboard** page of the dataset, click **Label** in the upper right corner. The dataset details page is displayed. By default, all data of the dataset is displayed on the dataset details page.
 
@@ -30,7 +30,7 @@ On the dataset details page, both unlabeled and labeled video files in the datas
 
 #. Play the video. When the video is played to the time point to be labeled, click the pause button in the progress bar to pause the video to a specific image.
 
-#. In the left pane, select a bounding box. By default, a rectangular box is selected. Drag the mouse to select an object in the video image, enter a new label name in the displayed **Add Label** text box, select a label color, and click **Add** to label the object. Alternatively, select an existing label from the drop-down list and click **Add** to label the object. Label all objects in the image. Multiple labels can be added to an image.The supported bounding boxes are the same as those supported by Object Detection. For details, see `Table 1 <modelarts_23_0012.html#modelarts_23_0012__en-us_topic_0170889732_table165201739119>`__ in `Object Detection <modelarts_23_0012.html>`__.\ **Figure 1** Labeling video files
+#. In the left pane, select a bounding box. By default, a rectangular box is selected. Drag the mouse to select an object in the video image, enter a new label name in the displayed **Add Label** text box, select a label color, and click **Add** to label the object. Alternatively, select an existing label from the drop-down list and click **Add** to label the object. Label all objects in the image. Multiple labels can be added to an image.The supported bounding boxes are the same as those supported by Object Detection. For details, see `Table 1 <../../data_management/labeling_data/object_detection.html#modelarts_23_0012__en-us_topic_0170889732_table165201739119>`__ in `Object Detection <../../data_management/labeling_data/object_detection.html>`__.\ **Figure 1** Labeling video files
    |image1|
 
 #. After the previous image is labeled, click the play button on the progress bar to resume the playback. Then, repeat `3 <#modelarts_23_0282__en-us_topic_0257844727_li993163014399>`__ to complete labeling on the entire video.
@@ -71,12 +71,13 @@ If a tick is displayed in the upper left corner of a video file, the video file 
 If you select **Delete source files**, video files stored in the corresponding OBS directory will be deleted when you delete the selected video files. Deleting source files may affect other dataset versions or datasets using those files. As a result, the page display, training, or inference is abnormal. Deleted data cannot be recovered. Exercise caution when performing this operation.
 
 
-.. |image1| image:: /images/en-us_image_0000001110761112.png
 
-.. |image2| image:: /images/en-us_image_0000001156920985.png
+.. |image1| image:: /_static/images/en-us_image_0000001110761112.png
 
-.. |image3| image:: /images/en-us_image_0000001110921012.png
+.. |image2| image:: /_static/images/en-us_image_0000001156920985.png
 
-.. |image4| image:: /images/en-us_image_0000001156920983.png
+.. |image3| image:: /_static/images/en-us_image_0000001110921012.png
 
-.. |image5| image:: /images/note_3.0-en-us.png
+.. |image4| image:: /_static/images/en-us_image_0000001156920983.png
+
+.. |image5| image:: /_static/images/note_3.0-en-us.png

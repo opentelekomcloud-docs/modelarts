@@ -11,13 +11,13 @@ Prerequisites
 
 -  The ModelArts real-time service is running properly.
 
--  Alarm rules have been configured on the Cloud Eye page. For details, see `Setting Alarm Rules <modelarts_23_0188.html>`__.
+-  Alarm rules have been configured on the Cloud Eye page. For details, see `Setting Alarm Rules <../monitoring/setting_alarm_rules.html>`__.
 -  The real-time service has been properly running for at least 10 minutes.
 -  The monitoring data and graphics are available for a new real-time service after the service runs for at least 10 minutes.
 
 -  Cloud Eye does not display the metrics of a faulty or deleted real-time service. The monitoring metrics can be viewed after the real-time service starts or recovers.
 
-Monitoring data is unavailable without alarm rules configured on Cloud Eye. For details, see `Setting Alarm Rules <modelarts_23_0188.html>`__.
+Monitoring data is unavailable without alarm rules configured on Cloud Eye. For details, see `Setting Alarm Rules <../monitoring/setting_alarm_rules.html>`__.
 
 Procedure
 ---------
@@ -38,7 +38,8 @@ Procedure
    You can view the monitoring data in the recent 1 hour, 3 hours, or 12 hours. To view the monitoring curve of a longer time range, click |image2| to enlarge the graph.
 
 
-.. |image1| image:: /images/en-us_image_0000001110920964.png
 
-.. |image2| image:: /images/en-us_image_0000001110761062.png
+.. |image1| image:: /_static/images/en-us_image_0000001110920964.png
+
+.. |image2| image:: /_static/images/en-us_image_0000001110761062.png
 

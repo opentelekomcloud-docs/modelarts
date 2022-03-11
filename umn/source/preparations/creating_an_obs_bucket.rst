@@ -13,4 +13,5 @@ Procedure
 #. Create a folder for storing data. For details, see "Creating a Folder". For example, create a folder named **flowers** in the created **c-flowers** OBS bucket.
 
 
-.. |image1| image:: /images/note_3.0-en-us.png
+
+.. |image1| image:: /_static/images/note_3.0-en-us.png

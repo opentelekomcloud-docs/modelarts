@@ -11,5 +11,6 @@ ModelArts resolves this issue by deploying a trained model on different devices 
 -  The real-time inference service features high concurrency, low latency, and elastic scaling.
 
 
-.. |image1| image:: /images/en-us_image_0000001110920824.png
+
+.. |image1| image:: /_static/images/en-us_image_0000001110920824.png
 

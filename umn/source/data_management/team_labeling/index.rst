@@ -3,6 +3,7 @@ Team Labeling
 =============
 
 .. toctree::
+   :maxdepth: 1
 
    introduction_to_team_labeling
    team_management

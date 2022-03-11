@@ -12,12 +12,11 @@ This is a built-in input and output mode for predictive analytics. The models us
 
 .. table:: **Table 1** JSON field description
 
-   +-------+----------------+-------------------------------------------------------------------------------------------+
-   | Field | Type           | Description                                                                               |
-   +=======+================+===========================================================================================+
-   | data  | Data structure | Inference data. For details, see `Table                                                   |
-   |       |                | 2 <#modelarts_23_0102__en-us_topic_0172873544_table159187574436>`__.                      |
-   +-------+----------------+-------------------------------------------------------------------------------------------+
+   +-------+----------------+--------------------------------------------------------------------------------------------------------------+
+   | Field | Type           | Description                                                                                                  |
+   +=======+================+==============================================================================================================+
+   | data  | Data structure | Inference data. For details, see `Table 2 <#modelarts_23_0102__en-us_topic_0172873544_table159187574436>`__. |
+   +-------+----------------+--------------------------------------------------------------------------------------------------------------+
 
 
 
@@ -35,7 +34,7 @@ This is a built-in input and output mode for predictive analytics. The models us
 
 The **JSON Schema** of a prediction request is as follows:
 
-.. code::
+.. code-block::
 
    {
        "type": "object",
@@ -66,12 +65,11 @@ The inference result is returned in JSON format. For details about the JSON fiel
 
 .. table:: **Table 3** JSON field description
 
-   +-------+----------------+-------------------------------------------------------------------------------------------+
-   | Field | Type           | Description                                                                               |
-   +=======+================+===========================================================================================+
-   | data  | Data structure | Inference data. For details, see `Table                                                   |
-   |       |                | 4 <#modelarts_23_0102__en-us_topic_0172873544_table196311344469>`__.                      |
-   +-------+----------------+-------------------------------------------------------------------------------------------+
+   +-------+----------------+--------------------------------------------------------------------------------------------------------------+
+   | Field | Type           | Description                                                                                                  |
+   +=======+================+==============================================================================================================+
+   | data  | Data structure | Inference data. For details, see `Table 4 <#modelarts_23_0102__en-us_topic_0172873544_table196311344469>`__. |
+   +-------+----------------+--------------------------------------------------------------------------------------------------------------+
 
 
 
@@ -89,7 +87,7 @@ Similar to **ReqData**, **RespData** is also of the **Object** type and indicate
 
 The **JSON Schema** of a prediction result is as follows:
 
-.. code::
+.. code-block::
 
    {
        "type": "object",
@@ -124,4 +122,5 @@ In this mode, input the data to be predicted in JSON format. The prediction resu
 
    -  On the **Headers** tab page, set **Content-Type** to **application/json** and **X-Auth-Token** to the actual token obtained.
    -  On the **Body** tab page, edit the data to be predicted and click **send** to send your prediction request.
+
 

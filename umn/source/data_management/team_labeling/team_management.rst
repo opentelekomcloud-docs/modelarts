@@ -18,7 +18,7 @@ Adding a Team
 
 #. In the displayed **Add Team** dialog box, enter a team name and description and click **OK**. The labeling team is added.
 
-   The new team is displayed on the **Labeling Teams** page. You can view team details in the right pane. There is no member in the new team. Add members to the new team by referring to `Adding a Member <modelarts_23_0183.html#modelarts_23_0183__en-us_topic_0186456618_section060323818470>`__.
+   The new team is displayed on the **Labeling Teams** page. You can view team details in the right pane. There is no member in the new team. Add members to the new team by referring to `Adding a Member <../../data_management/team_labeling/member_management.html#modelarts_23_0183__en-us_topic_0186456618_section060323818470>`__.
 
 Deleting a Team
 ---------------
@@ -26,4 +26,5 @@ Deleting a Team
 You can delete a team that is no longer used.
 
 On the **Labeling Teams** page, select the target team and click **Delete**. In the dialog box that is displayed, click **OK**.
+
 

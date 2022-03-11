@@ -11,7 +11,8 @@ After code compiling is finished, you can save the entered code as a **.py** fil
    |image2|
 
 
-.. |image1| image:: /images/en-us_image_0000001156920943.png
 
-.. |image2| image:: /images/en-us_image_0000001110761072.png
+.. |image1| image:: /_static/images/en-us_image_0000001156920943.png
+
+.. |image2| image:: /_static/images/en-us_image_0000001110761072.png
 

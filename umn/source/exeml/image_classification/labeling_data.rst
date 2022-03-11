@@ -48,6 +48,7 @@ After labeling data, you can modify the labeled data on the **Labeled** tab page
    -  Deleting a label: Click the deletion icon in the **Operation** column. In the displayed dialog box, select **Delete label**, **Delete label and images with only the label (Do not delete source files)**, or **Delete label and images with only the label (Delete source files)**, and click **OK**.
 
 
-.. |image1| image:: /images/note_3.0-en-us.png
-.. |image2| image:: /images/en-us_image_0000001110760936.png
+
+.. |image1| image:: /_static/images/note_3.0-en-us.png
+.. |image2| image:: /_static/images/en-us_image_0000001110760936.png
 

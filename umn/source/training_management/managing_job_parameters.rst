@@ -39,4 +39,5 @@ Deleting a Training Job Parameter Configuration
    Deleted job parameter configurations cannot be recovered. Therefore, exercise caution when performing this operation.
 
 
-.. |image1| image:: /images/note_3.0-en-us.png
+
+.. |image1| image:: /_static/images/note_3.0-en-us.png

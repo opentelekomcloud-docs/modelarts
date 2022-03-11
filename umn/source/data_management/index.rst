@@ -3,6 +3,7 @@ Data Management
 ===============
 
 .. toctree::
+   :maxdepth: 1
 
    introduction_to_data_management
    creating_a_dataset

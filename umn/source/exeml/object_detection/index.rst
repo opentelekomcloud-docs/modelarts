@@ -3,6 +3,7 @@ Object Detection
 ================
 
 .. toctree::
+   :maxdepth: 1
 
    preparing_data
    creating_a_project

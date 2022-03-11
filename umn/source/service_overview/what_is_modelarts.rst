@@ -42,5 +42,6 @@ Product Advantages
    -  Custom images for custom frameworks and operators
 
 
-.. |image1| image:: /images/en-us_image_0000001110920880.png
+
+.. |image1| image:: /_static/images/en-us_image_0000001110920880.png
 

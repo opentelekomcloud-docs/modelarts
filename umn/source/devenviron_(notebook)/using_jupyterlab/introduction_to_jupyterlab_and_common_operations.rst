@@ -21,7 +21,7 @@ Creating and Opening a Notebook Instance
 
 On the JupyterLab homepage, click an applicable AI engine in the **Notebook** area to create a notebook file with the selected framework.
 
-The AI framework supported by each notebook instance varies according to the working environment. The following figure is only an example. Select an AI framework based on the site requirements. For details about all framework versions and Python versions supported by ModelArts, see `Supported AI Engines <modelarts_23_0033.html#modelarts_23_0033__en-us_topic_0162690357_section191109611479>`__.
+The AI framework supported by each notebook instance varies according to the working environment. The following figure is only an example. Select an AI framework based on the site requirements. For details about all framework versions and Python versions supported by ModelArts, see `Supported AI Engines <../../devenviron_(notebook)/introduction_to_notebook.html#modelarts_23_0033__en-us_topic_0162690357_section191109611479>`__.
 
 | **Figure 2** Selecting an AI engine and creating a notebook instance
 | |image2|
@@ -53,7 +53,7 @@ Uploading a File
 
 On the JupyterLab page, you can click **Upload File** in the upper left corner and select a local file to upload.
 
-The size of the file to be uploaded using this method is limited. If the file size exceeds the limit, use other methods to upload the file. For details, see `Uploading Data to JupyterLab <modelarts_23_0332.html>`__.
+The size of the file to be uploaded using this method is limited. If the file size exceeds the limit, use other methods to upload the file. For details, see `Uploading Data to JupyterLab <../../devenviron_(notebook)/using_jupyterlab/uploading_and_downloading_data/uploading_data_to_jupyterlab.html>`__.
 
 | **Figure 6** Uploading a file
 | |image6|
@@ -78,7 +78,7 @@ To open multiple views, open the file and choose **File** > **New View for Noteb
 Downloading a File to a Local Computer
 --------------------------------------
 
-Files created in JupyterLab can be directly downloaded to a local computer. The size of the file to be downloaded using this method is limited. If the file size exceeds the limit, use other methods to download the file. For details, see `Downloading a File from JupyterLab <modelarts_23_0333.html>`__.
+Files created in JupyterLab can be directly downloaded to a local computer. The size of the file to be downloaded using this method is limited. If the file size exceeds the limit, use other methods to download the file. For details, see `Downloading a File from JupyterLab <../../devenviron_(notebook)/using_jupyterlab/uploading_and_downloading_data/downloading_a_file_from_jupyterlab.html>`__.
 
 In the JupyterLab file list, right-click the file to be downloaded and choose **Download** from the shortcut menu. The file is downloaded to the directory set for your browser.
 
@@ -89,25 +89,23 @@ Common Icons and Plug-ins of JupyterLab
 ---------------------------------------
 
 | **Figure 10** Common icons and plug-ins of JupyterLab
-| |image10|
-  
+| |image10| 
 
 .. _modelarts_23_0209__en-us_topic_0208766071_table17325391430:
 
 .. table:: **Table 1** Icon description
 
-   +-----------+---------------------------------------------------------------------------------------------------------+
-   | Icon      | Description                                                                                             |
-   +===========+=========================================================================================================+
-   | |image19| | Opens the Launcher page. Then you can quickly create notebook instances, consoles, or other files.      |
-   +-----------+---------------------------------------------------------------------------------------------------------+
-   | |image20| | Creates a folder.                                                                                       |
-   +-----------+---------------------------------------------------------------------------------------------------------+
-   | |image21| | Uploads a file. For details, see `Uploading a                                                           |
-   |           | File <#modelarts_23_0209__en-us_topic_0208766071_section172463910383>`__.                               |
-   +-----------+---------------------------------------------------------------------------------------------------------+
-   | |image22| | Updates a folder.                                                                                       |
-   +-----------+---------------------------------------------------------------------------------------------------------+
+   +-----------+-------------------------------------------------------------------------------------------------------------------------+
+   | Icon      | Description                                                                                                             |
+   +===========+=========================================================================================================================+
+   | |image15| | Opens the Launcher page. Then you can quickly create notebook instances, consoles, or other files.                      |
+   +-----------+-------------------------------------------------------------------------------------------------------------------------+
+   | |image16| | Creates a folder.                                                                                                       |
+   +-----------+-------------------------------------------------------------------------------------------------------------------------+
+   | |image17| | Uploads a file. For details, see `Uploading a File <#modelarts_23_0209__en-us_topic_0208766071_section172463910383>`__. |
+   +-----------+-------------------------------------------------------------------------------------------------------------------------+
+   | |image18| | Updates a folder.                                                                                                       |
+   +-----------+-------------------------------------------------------------------------------------------------------------------------+
 
 
 
@@ -115,71 +113,81 @@ Common Icons and Plug-ins of JupyterLab
 
 .. table:: **Table 2** Common plug-ins in the plug-in area
 
-   ========= =====================================================================================================
-   Plug-in   Description
-   ========= =====================================================================================================
-   |image23| Lists files. You can click here to display the list of all files in the notebook instance.
-   |image24| Lists ModelArts examples. You can click any example in the list to view its code and version mapping.
-   |image25| Displays the terminals and kernels that are running in the current instance.
-   |image26| Quick start command.
-   |image27| Displays the tab page listing the files that are being opened.
-   |image28| Document organization.
-   ========= =====================================================================================================
+   +-----------+-------------------------------------------------------------------------------------------------------+
+   | Plug-in   | Description                                                                                           |
+   +===========+=======================================================================================================+
+   | |image25| | Lists files. You can click here to display the list of all files in the notebook instance.            |
+   +-----------+-------------------------------------------------------------------------------------------------------+
+   | |image26| | Lists ModelArts examples. You can click any example in the list to view its code and version mapping. |
+   +-----------+-------------------------------------------------------------------------------------------------------+
+   | |image27| | Displays the terminals and kernels that are running in the current instance.                          |
+   +-----------+-------------------------------------------------------------------------------------------------------+
+   | |image28| | Quick start command.                                                                                  |
+   +-----------+-------------------------------------------------------------------------------------------------------+
+   | |image29| | Displays the tab page listing the files that are being opened.                                        |
+   +-----------+-------------------------------------------------------------------------------------------------------+
+   | |image30| | Document organization.                                                                                |
+   +-----------+-------------------------------------------------------------------------------------------------------+
 
 
-.. |image1| image:: /images/en-us_image_0000001110920930.png
 
-.. |image2| image:: /images/en-us_image_0000001157080871.png
+.. |image1| image:: /_static/images/en-us_image_0000001110920930.png
 
-.. |image3| image:: /images/en-us_image_0000001110920924.png
+.. |image2| image:: /_static/images/en-us_image_0000001157080871.png
 
-.. |image4| image:: /images/en-us_image_0000001156920897.png
+.. |image3| image:: /_static/images/en-us_image_0000001110920924.png
 
-.. |image5| image:: /images/en-us_image_0000001110761020.png
+.. |image4| image:: /_static/images/en-us_image_0000001156920897.png
 
-.. |image6| image:: /images/en-us_image_0000001110920918.png
+.. |image5| image:: /_static/images/en-us_image_0000001110761020.png
 
-.. |image7| image:: /images/en-us_image_0000001157080869.png
+.. |image6| image:: /_static/images/en-us_image_0000001110920918.png
 
-.. |image8| image:: /images/en-us_image_0000001110920916.png
+.. |image7| image:: /_static/images/en-us_image_0000001157080869.png
 
-.. |image9| image:: /images/en-us_image_0000001157080879.png
+.. |image8| image:: /_static/images/en-us_image_0000001110920916.png
 
-.. |image10| image:: /images/en-us_image_0000001110761018.png
+.. |image9| image:: /_static/images/en-us_image_0000001157080879.png
 
-.. |image11| image:: /images/en-us_image_0000001110920920.png
+.. |image10| image:: /_static/images/en-us_image_0000001110761018.png
 
-.. |image12| image:: /images/en-us_image_0000001157080875.png
+.. |image11| image:: /_static/images/en-us_image_0000001110920920.png
 
-.. |image13| image:: /images/en-us_image_0000001156920903.png
+.. |image12| image:: /_static/images/en-us_image_0000001157080875.png
 
-.. |image14| image:: /images/en-us_image_0000001156920893.png
+.. |image13| image:: /_static/images/en-us_image_0000001156920903.png
 
-.. |image15| image:: /images/en-us_image_0000001110920920.png
+.. |image14| image:: /_static/images/en-us_image_0000001156920893.png
 
-.. |image16| image:: /images/en-us_image_0000001157080875.png
+.. |image15| image:: /_static/images/en-us_image_0000001110920920.png
 
-.. |image17| image:: /images/en-us_image_0000001156920903.png
+.. |image16| image:: /_static/images/en-us_image_0000001157080875.png
 
-.. |image18| image:: /images/en-us_image_0000001156920893.png
+.. |image17| image:: /_static/images/en-us_image_0000001156920903.png
 
-.. |image19| image:: /images/en-us_image_0000001110920920.png
+.. |image18| image:: /_static/images/en-us_image_0000001156920893.png
 
-.. |image20| image:: /images/en-us_image_0000001157080875.png
+.. |image19| image:: /_static/images/en-us_image_0000001110920934.png
 
-.. |image21| image:: /images/en-us_image_0000001156920903.png
+.. |image20| image:: /_static/images/en-us_image_0000001110761016.png
 
-.. |image22| image:: /images/en-us_image_0000001156920893.png
+.. |image21| image:: /_static/images/en-us_image_0000001157080873.png
 
-.. |image23| image:: /images/en-us_image_0000001110920934.png
+.. |image22| image:: /_static/images/en-us_image_0000001156920899.png
 
-.. |image24| image:: /images/en-us_image_0000001110761016.png
+.. |image23| image:: /_static/images/en-us_image_0000001156920901.png
 
-.. |image25| image:: /images/en-us_image_0000001157080873.png
+.. |image24| image:: /_static/images/en-us_image_0000001156920887.png
 
-.. |image26| image:: /images/en-us_image_0000001156920899.png
+.. |image25| image:: /_static/images/en-us_image_0000001110920934.png
 
-.. |image27| image:: /images/en-us_image_0000001156920901.png
+.. |image26| image:: /_static/images/en-us_image_0000001110761016.png
 
-.. |image28| image:: /images/en-us_image_0000001156920887.png
+.. |image27| image:: /_static/images/en-us_image_0000001157080873.png
+
+.. |image28| image:: /_static/images/en-us_image_0000001156920899.png
+
+.. |image29| image:: /_static/images/en-us_image_0000001156920901.png
+
+.. |image30| image:: /_static/images/en-us_image_0000001156920887.png
 

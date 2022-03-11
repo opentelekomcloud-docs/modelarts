@@ -8,3 +8,4 @@ Log in to the ModelArts management console. In the left navigation pane, choose 
 -  To stop a notebook instance, locate the row where the notebook instance resides and click **Stop** in the **Operation** column. Only notebook instances in the **Running** state can be stopped.
 -  To start a notebook instance, locate the row where the notebook instance resides and click **Start** in the **Operation** column. Only notebook instances in the **Stopped** state can be started.
 
+

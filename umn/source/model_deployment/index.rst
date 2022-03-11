@@ -3,6 +3,7 @@ Model Deployment
 ================
 
 .. toctree::
+   :maxdepth: 1
 
    introduction_to_model_deployment
    real-time_services/index

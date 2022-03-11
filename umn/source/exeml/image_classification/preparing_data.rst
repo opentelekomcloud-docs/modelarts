@@ -32,7 +32,7 @@ Requirements for Files Uploaded to OBS
 
    -  The dataset for image classification requires storing labeled objects and their label files (in one-to-one relationship with the labeled objects) in the same directory. For example, if the name of the labeled object is **10.jpg**, the name of the label file must be **10.txt**.Example of data files:
 
-      .. code::
+      .. code-block::
 
          ├─<dataset-import-path>
                │      10.jpg
@@ -50,9 +50,10 @@ Requirements for Files Uploaded to OBS
 
       Each row contains only one label.
 
-      .. code::
+      .. code-block::
 
          cat
          dog
          ...
+
 

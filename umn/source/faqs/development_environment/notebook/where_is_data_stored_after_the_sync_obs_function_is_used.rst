@@ -11,9 +11,10 @@ Where Is Data Stored After the Sync OBS Function Is Used?
 
 #. Run the following command to go to the **~/work** directory.
 
-   .. code::
+   .. code-block::
 
       cd work
 
 #. Run the **ls** command in the **~/work** directory to view the files.
+
 

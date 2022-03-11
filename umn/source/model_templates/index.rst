@@ -3,6 +3,7 @@ Model Templates
 ===============
 
 .. toctree::
+   :maxdepth: 1
 
    introduction_to_model_templates
    template_description/index

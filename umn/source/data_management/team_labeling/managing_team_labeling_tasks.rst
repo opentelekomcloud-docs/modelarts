@@ -19,7 +19,7 @@ You can also create a team marking task and assign it to different members in th
 
    -  **Type**: Select a task type, **Team** or **Task Manager**.
 
-   -  **Select Team**: If **Type** is set to **Team**, you need to select a team and members for labeling. The **Select Team** drop-down list lists the labeling teams and members created by the current account. For details about team management, see `Introduction to Team Labeling <modelarts_23_0181.html>`__.
+   -  **Select Team**: If **Type** is set to **Team**, you need to select a team and members for labeling. The **Select Team** drop-down list lists the labeling teams and members created by the current account. For details about team management, see `Introduction to Team Labeling <../../data_management/team_labeling/introduction_to_team_labeling.html>`__.
 
    -  **Select Task Manager**: If **Type** is set to **Task Manager**, you need to select one **Team Manager** member from all teams as the task manager.
 
@@ -39,11 +39,11 @@ After a labeling task is created, the team member to which the task is assigned 
 
 In the email details, click the labeling task link and use your email address and initial password to log in to the labeling platform. After login, change the password. After logging in to the labeling platform, you can view the assigned labeling task and click the task name to go to the labeling page. The labeling method varies depending on the dataset type. For details, see the following:
 
--  `Image Classification <modelarts_23_0011.html#modelarts_23_0011__en-us_topic_0170889731_section888019266174>`__
--  `Object Detection <modelarts_23_0012.html#modelarts_23_0012__en-us_topic_0170889732_section888019266174>`__
--  `Text Classification <modelarts_23_0013.html#modelarts_23_0013__en-us_topic_0170889733_section888019266174>`__
--  `Named Entity Recognition <modelarts_23_0014.html#modelarts_23_0014__en-us_topic_0170889734_section888019266174>`__
--  `Text Triplet <modelarts_23_0211.html#modelarts_23_0211__en-us_topic_0209128667_section888019266174>`__
+-  `Image Classification <../../data_management/labeling_data/image_classification.html#modelarts_23_0011__en-us_topic_0170889731_section888019266174>`__
+-  `Object Detection <../../data_management/labeling_data/object_detection.html#modelarts_23_0012__en-us_topic_0170889732_section888019266174>`__
+-  `Text Classification <../../data_management/labeling_data/text_classification.html#modelarts_23_0013__en-us_topic_0170889733_section888019266174>`__
+-  `Named Entity Recognition <../../data_management/labeling_data/named_entity_recognition.html#modelarts_23_0014__en-us_topic_0170889734_section888019266174>`__
+-  `Text Triplet <../../data_management/labeling_data/text_triplet.html#modelarts_23_0211__en-us_topic_0209128667_section888019266174>`__
 
 On the labeling platform, each member can view the images that are not labeled, to be corrected, rejected, to be reviewed, approved, and accepted. Pay attention to the images rejected by the administrator and the images to be corrected.
 
@@ -89,36 +89,20 @@ Task Acceptance (Administrator)
 
    .. table:: **Table 1** Parameters for finishing acceptance
 
-      +-----------------------------------------------------------+-----------------------------------------------------------+
-      | Parameter                                                 | Description                                               |
-      +===========================================================+===========================================================+
-      | Modifying Labeled Data                                    | -  **Not overwrite**: For the same data, do not overwrite |
-      |                                                           |    the existing data with the labeling result of the      |
-      |                                                           |    current team.                                          |
-      |                                                           | -  **Overlays**: For the same data, overwrite the         |
-      |                                                           |    existing data with the labeling result of the current  |
-      |                                                           |    team. Overwritten data cannot be recovered. Exercise   |
-      |                                                           |    caution when performing this operation.                |
-      +-----------------------------------------------------------+-----------------------------------------------------------+
-      | Acceptance Scope                                          | -  All: all data that has been labeled by the current     |
-      |                                                           |    team, including **Accepted**, **Pending Acceptance**,  |
-      |                                                           |    and **Rejected** data. It refers to all sample files   |
-      |                                                           |    in the dataset.                                        |
-      |                                                           |                                                           |
-      |                                                           | -  All rejects: rejects all data that has been labeled by |
-      |                                                           |    the current team. That is, all labeled data is         |
-      |                                                           |    rejected to the labeling personnel.                    |
-      |                                                           |                                                           |
-      |                                                           | -  Accepted and pending acceptance: accepts the data that |
-      |                                                           |    passes the acceptance or is in the Pending Acceptance  |
-      |                                                           |    state in the sample files and rejects the data that    |
-      |                                                           |    fails the acceptance to the labeling personnel.        |
-      |                                                           |                                                           |
-      |                                                           | -  Accepted: accepts the data that has passed the         |
-      |                                                           |    acceptance in the sample files and rejects the data    |
-      |                                                           |    that is in the Pending Acceptance state or fails the   |
-      |                                                           |    acceptance to the labeling personnel.                  |
-      +-----------------------------------------------------------+-----------------------------------------------------------+
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Parameter                         | Description                                                                                                                                                                                                         |
+      +===================================+=====================================================================================================================================================================================================================+
+      | Modifying Labeled Data            | -  **Not overwrite**: For the same data, do not overwrite the existing data with the labeling result of the current team.                                                                                           |
+      |                                   | -  **Overlays**: For the same data, overwrite the existing data with the labeling result of the current team. Overwritten data cannot be recovered. Exercise caution when performing this operation.                |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Acceptance Scope                  | -  All: all data that has been labeled by the current team, including **Accepted**, **Pending Acceptance**, and **Rejected** data. It refers to all sample files in the dataset.                                    |
+      |                                   |                                                                                                                                                                                                                     |
+      |                                   | -  All rejects: rejects all data that has been labeled by the current team. That is, all labeled data is rejected to the labeling personnel.                                                                        |
+      |                                   |                                                                                                                                                                                                                     |
+      |                                   | -  Accepted and pending acceptance: accepts the data that passes the acceptance or is in the Pending Acceptance state in the sample files and rejects the data that fails the acceptance to the labeling personnel. |
+      |                                   |                                                                                                                                                                                                                     |
+      |                                   | -  Accepted: accepts the data that has passed the acceptance in the sample files and rejects the data that is in the Pending Acceptance state or fails the acceptance to the labeling personnel.                    |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Viewing an Acceptance Report
 ----------------------------
@@ -131,5 +115,6 @@ Deleting a Labeling Task
 On the **Labeling Progress** tab page, click **Delete** in the row where a labeling task to be deleted. After a task is deleted, the labeling details that are not accepted will be lost. Exercise caution when performing this operation. However, the original data in the dataset and the labeled data that has been accepted are still stored in the corresponding OBS bucket.
 
 
-.. |image1| image:: /images/en-us_image_0000001110760934.png
+
+.. |image1| image:: /_static/images/en-us_image_0000001110760934.png
 

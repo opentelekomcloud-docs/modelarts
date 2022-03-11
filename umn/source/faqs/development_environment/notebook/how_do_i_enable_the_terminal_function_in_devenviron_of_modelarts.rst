@@ -7,5 +7,6 @@ How Do I Enable the Terminal Function in DevEnviron of ModelArts?
    |image1|
 
 
-.. |image1| image:: /images/en-us_image_0000001110760910.png
+
+.. |image1| image:: /_static/images/en-us_image_0000001110760910.png
 

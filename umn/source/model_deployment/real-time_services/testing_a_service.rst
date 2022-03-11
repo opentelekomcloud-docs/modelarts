@@ -19,9 +19,9 @@ For the service that you have deployed, you can learn about its input parameters
 The input parameters displayed on the **Usage Guides** tab page depend on the model source that you select.
 
 -  If your model comes from ExeML or a built-in algorithm, the input and output parameters are defined by ModelArts. For details, see the **Usage Guides** tab page. On the **Prediction** tab page, enter the corresponding JSON text or file for service testing.
--  If you use a custom model with the inference code and configuration file compiled by yourself (`Specifications for Compiling the Model Configuration File <modelarts_23_0092.html>`__), the **Usage Guides** tab page only visualizes your data. The following figure shows the mapping between the input parameters displayed on the **Usage Guides** tab page and the configuration file.\ **Figure 1** Mapping between the configuration file and Usage Guides
+-  If you use a custom model with the inference code and configuration file compiled by yourself (`Specifications for Compiling the Model Configuration File <../../model_package_specifications/specifications_for_compiling_the_model_configuration_file.html>`__), the **Usage Guides** tab page only visualizes your data. The following figure shows the mapping between the input parameters displayed on the **Usage Guides** tab page and the configuration file.\ **Figure 1** Mapping between the configuration file and Usage Guides
    |image2|
--  If your model is imported using a model template, the input and output parameters vary with the template. For details, see `Introduction to Model Templates <modelarts_23_0098.html>`__.
+-  If your model is imported using a model template, the input and output parameters vary with the template. For details, see `Introduction to Model Templates <../../model_templates/introduction_to_model_templates.html>`__.
 
 JSON Text Prediction
 --------------------
@@ -36,6 +36,7 @@ File Prediction (Images and Audios)
 #. On the **Real-Time Services** page, click the name of the target service. The service details page is displayed. On the **Prediction** tab page, click **Upload** and select a test file. After the file is uploaded successfully, click **Predict** to perform a prediction test.
 
 
-.. |image1| image:: /images/note_3.0-en-us.png
-.. |image2| image:: /images/en-us_image_0000001156920823.png
+
+.. |image1| image:: /_static/images/note_3.0-en-us.png
+.. |image2| image:: /_static/images/en-us_image_0000001156920823.png
 

@@ -31,7 +31,7 @@ Assume that you want to install Shapely from the terminal of a notebook instance
 
 #. The **Multi-Engine** notebook instance can use multiple engines. By referring to the **README** file in the **/home/ma-user/** path, switch to the installation package of the corresponding engine environment and install Shapely. For example, you can install Shapely from TensorFlow-1.13.1 with the following code:
 
-   .. code::
+   .. code-block::
 
       source /home/ma-user/anaconda3/bin/activate TensorFlow-1.13.1
       pip install shapely
@@ -42,10 +42,11 @@ When you create a ModelArts training job, a new independent running environment 
 
 For example, if you need to use the Shapely dependency in the training job, add the following code to the startup code:
 
-.. code::
+.. code-block::
 
    os.system('pip install Shapely')
    import Shapely
 
 
-.. |image1| image:: /images/note_3.0-en-us.png
+
+.. |image1| image:: /_static/images/note_3.0-en-us.png

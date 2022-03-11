@@ -22,7 +22,7 @@ Solution
 
    -  Create a notebook instance, and use an API to check whether the directory exists. In an existing notebook instance or after creating a new notebook instance, run the following command to check whether the directory exists:
 
-      .. code::
+      .. code-block::
 
          import moxing as mox
          mox.file.exists('obs://obs-test/ModelArts/examples/')
@@ -38,4 +38,5 @@ Solution
    -  If they are not in the same region or the OBS bucket belongs to another account, create a bucket and a folder in OBS that is in the same region as ModelArts using the same account, and upload data to the bucket.
 
 #. In the script of the training job, check whether the API for reading the OBS path in the code file is correct.
+
 

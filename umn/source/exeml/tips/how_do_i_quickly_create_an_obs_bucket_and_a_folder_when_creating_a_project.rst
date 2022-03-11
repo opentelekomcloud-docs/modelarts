@@ -8,12 +8,14 @@ When creating a project, select a training data path. This section describes how
    |image2|
 #. Select the bucket, and click **Create Folder**. In the dialog box that is displayed, enter the folder name and click **OK**.
 
-   - The name cannot contain the following special characters: \\/:\*?"<>\|
-   - The name cannot start or end with a period (.) or slash (/).
-   - The absolute path of a folder cannot exceed 1,023 characters.
-   - Any single slash (/) separates and creates multiple levels of folders at once.
+   -  The name cannot contain the following special characters: \\/:\*?"<>\|
+   -  The name cannot start or end with a period (.) or slash (/).
+   -  The absolute path of a folder cannot exceed 1,023 characters.
+   -  Any single slash (/) separates and creates multiple levels of folders at once.
 
-.. |image1| image:: /images/en-us_image_0000001157080897.png
 
-.. |image2| image:: /images/en-us_image_0000001157080895.png
+
+.. |image1| image:: /_static/images/en-us_image_0000001157080897.png
+
+.. |image2| image:: /_static/images/en-us_image_0000001157080895.png
 

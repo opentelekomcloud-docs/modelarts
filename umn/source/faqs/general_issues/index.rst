@@ -3,6 +3,7 @@ General Issues
 ==============
 
 .. toctree::
+   :maxdepth: 1
 
    what_is_modelarts
    what_are_the_relationships_between_modelarts_and_other_services

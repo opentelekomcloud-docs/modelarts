@@ -1,9 +1,9 @@
 Managing Dataset Versions
 =========================
 
-After labeling data, you can publish the dataset to multiple versions for management. For the published versions, you can view the dataset version updates, set the current version, and delete versions. For details about dataset versions, see `About Dataset Versions <modelarts_23_0018.html#modelarts_23_0018__en-us_topic_0170886812_section38541340654>`__.
+After labeling data, you can publish the dataset to multiple versions for management. For the published versions, you can view the dataset version updates, set the current version, and delete versions. For details about dataset versions, see `About Dataset Versions <../data_management/publishing_a_dataset.html#modelarts_23_0018__en-us_topic_0170886812_section38541340654>`__.
 
-For details about how to publish a new version, see `Publishing a Dataset <modelarts_23_0018.html>`__.
+For details about how to publish a new version, see `Publishing a Dataset <../data_management/publishing_a_dataset.html>`__.
 
 Viewing Dataset Version Updates
 -------------------------------
@@ -37,5 +37,6 @@ Deleting a Dataset Version
    Deleting a dataset version does not remove the original data. Data and its labeling information are still stored in the OBS directory. However, if it is deleted, you cannot manage the dataset versions on the ModelArts management console. Exercise caution when performing this operation.
 
 
-.. |image1| image:: /images/note_3.0-en-us.png
-.. |image2| image:: /images/note_3.0-en-us.png
+
+.. |image1| image:: /_static/images/note_3.0-en-us.png
+.. |image2| image:: /_static/images/note_3.0-en-us.png

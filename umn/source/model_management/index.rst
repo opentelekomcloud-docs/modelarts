@@ -3,6 +3,7 @@ Model Management
 ================
 
 .. toctree::
+   :maxdepth: 1
 
    introduction_to_model_management
    importing_a_model/index

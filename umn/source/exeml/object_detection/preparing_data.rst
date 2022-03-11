@@ -36,104 +36,73 @@ Requirements for Files Uploaded to OBS
 
       Example of data files:
 
-      .. code::
+      .. code-block::
 
-         ├─<dataset-import-path>
-               │      IMG_20180919_114732.jpg
-               │      IMG_20180919_114732.xml
-               │      IMG_20180919_114745.jpg
-               │      IMG_20180919_114745.xml
-               │      IMG_20180919_114945.jpg
+         ├─<dataset-import-path> 
+               │      IMG_20180919_114732.jpg 
+               │      IMG_20180919_114732.xml 
+               │      IMG_20180919_114745.jpg 
+               │      IMG_20180919_114745.xml 
+               │      IMG_20180919_114945.jpg 
                │      IMG_20180919_114945.xml
 
    -  Images in JPG, JPEG, PNG, and BMP formats are supported. When uploading images on the ModelArts console, ensure that the size of an image does not exceed 5 MB and the total size of images to be uploaded in one attempt does not exceed 8 MB. If the data volume is large, use OBS Browser+ to upload images.
 
-   -  A label name can contain a maximum of 32 characters, including letters, digits, hyphens (-), and underscores (_).
-
+   -  A label name can contain a maximum of 32 characters, including letters, digits, hyphens (-), and underscores (_). 
 
 .. _modelarts_21_0009__en-us_topic_0284258838_en-us_topic_0169446158_table18220153119617:
 
       .. table:: **Table 1** PASCAL VOC format description
 
-         +-----------+-----------+-----------------------------------------------------------------------------------------------------------+
-         | Field     | Mandatory | Description                                                                                               |
-         +===========+===========+===========================================================================================================+
-         | folder    | Yes       | Directory where the data source is                                                                        |
-         |           |           | located                                                                                                   |
-         +-----------+-----------+-----------------------------------------------------------------------------------------------------------+
-         | filename  | Yes       | Name of the file to be labeled                                                                            |
-         +-----------+-----------+-----------------------------------------------------------------------------------------------------------+
-         | size      | Yes       | Image pixel                                                                                               |
-         |           |           |                                                                                                           |
-         |           |           | -  **width**: image width. This                                                                           |
-         |           |           |    parameter is mandatory.                                                                                |
-         |           |           | -  **height**: image height. This                                                                         |
-         |           |           |    parameter is mandatory.                                                                                |
-         |           |           | -  **depth**: number of image                                                                             |
-         |           |           |    channels. This parameter is                                                                            |
-         |           |           |    mandatory.                                                                                             |
-         +-----------+-----------+-----------------------------------------------------------------------------------------------------------+
-         | segmented | Yes       | Segmented or not                                                                                          |
-         +-----------+-----------+-----------------------------------------------------------------------------------------------------------+
-         | object    | Yes       | Object detection information.                                                                             |
-         |           |           | Multiple **object{}** functions are                                                                       |
-         |           |           | generated for multiple objects.                                                                           |
-         |           |           |                                                                                                           |
-         |           |           | -  **name**: class of the labeled                                                                         |
-         |           |           |    object. This parameter is                                                                              |
-         |           |           |    mandatory.                                                                                             |
-         |           |           | -  **pose**: shooting angle of the                                                                        |
-         |           |           |    labeled object. This parameter is                                                                      |
-         |           |           |    mandatory.                                                                                             |
-         |           |           | -  **truncated**: whether the labeled                                                                     |
-         |           |           |    object is truncated (**0**                                                                             |
-         |           |           |    indicates that the object is not                                                                       |
-         |           |           |    truncated). This parameter is                                                                          |
-         |           |           |    mandatory.                                                                                             |
-         |           |           | -  **occluded**: whether the labeled                                                                      |
-         |           |           |    object is occluded (**0**                                                                              |
-         |           |           |    indicates that the object is not                                                                       |
-         |           |           |    occluded). This parameter is                                                                           |
-         |           |           |    mandatory.                                                                                             |
-         |           |           | -  **difficult**: whether the labeled                                                                     |
-         |           |           |    object is difficult to identify                                                                        |
-         |           |           |    (**0** indicates that the object                                                                       |
-         |           |           |    is easy to identify). This                                                                             |
-         |           |           |    parameter is mandatory.                                                                                |
-         |           |           | -  **confidence**: confidence score                                                                       |
-         |           |           |    of the labeled object. The value                                                                       |
-         |           |           |    range is 0 to 1. This parameter is                                                                     |
-         |           |           |    optional.                                                                                              |
-         |           |           | -  **bndbox**: bounding box type.                                                                         |
-         |           |           |    This parameter is mandatory. For                                                                       |
-         |           |           |    details about the possible values,                                                                     |
-         |           |           |    see `Table 2 <#modelarts_21_0009__en-us_topic_0284258838_en-us_topic_0169446158_table102211311866>`__. |
-         +-----------+-----------+-----------------------------------------------------------------------------------------------------------+
+         +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | Field                 | Mandatory             | Description                                                                                                                                                                                                  |
+         +=======================+=======================+==============================================================================================================================================================================================================+
+         | folder                | Yes                   | Directory where the data source is located                                                                                                                                                                   |
+         +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | filename              | Yes                   | Name of the file to be labeled                                                                                                                                                                               |
+         +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | size                  | Yes                   | Image pixel                                                                                                                                                                                                  |
+         |                       |                       |                                                                                                                                                                                                              |
+         |                       |                       | -  **width**: image width. This parameter is mandatory.                                                                                                                                                      |
+         |                       |                       | -  **height**: image height. This parameter is mandatory.                                                                                                                                                    |
+         |                       |                       | -  **depth**: number of image channels. This parameter is mandatory.                                                                                                                                         |
+         +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | segmented             | Yes                   | Segmented or not                                                                                                                                                                                             |
+         +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | object                | Yes                   | Object detection information. Multiple **object{}** functions are generated for multiple objects.                                                                                                            |
+         |                       |                       |                                                                                                                                                                                                              |
+         |                       |                       | -  **name**: class of the labeled object. This parameter is mandatory.                                                                                                                                       |
+         |                       |                       | -  **pose**: shooting angle of the labeled object. This parameter is mandatory.                                                                                                                              |
+         |                       |                       | -  **truncated**: whether the labeled object is truncated (**0** indicates that the object is not truncated). This parameter is mandatory.                                                                   |
+         |                       |                       | -  **occluded**: whether the labeled object is occluded (**0** indicates that the object is not occluded). This parameter is mandatory.                                                                      |
+         |                       |                       | -  **difficult**: whether the labeled object is difficult to identify (**0** indicates that the object is easy to identify). This parameter is mandatory.                                                    |
+         |                       |                       | -  **confidence**: confidence score of the labeled object. The value range is 0 to 1. This parameter is optional.                                                                                            |
+         |                       |                       | -  **bndbox**: bounding box type. This parameter is mandatory. For details about the possible values, see `Table 2 <#modelarts_21_0009__en-us_topic_0284258838_en-us_topic_0169446158_table102211311866>`__. |
+         +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
+      
 
 .. _modelarts_21_0009__en-us_topic_0284258838_en-us_topic_0169446158_table102211311866:
 
       .. table:: **Table 2** Description of bounding box types
 
-         +---------------------------------------+---------------------------------------+---------------------------------------+
-         | type                                  | Shape                                 | Labeling Information                  |
-         +=======================================+=======================================+=======================================+
-         | bndbox                                | Rectangle                             | Coordinates of the upper left and     |
-         |                                       |                                       | lower right points                    |
-         |                                       |                                       |                                       |
-         |                                       |                                       | <xmin>100<xmin>                       |
-         |                                       |                                       |                                       |
-         |                                       |                                       | <ymin>100<ymin>                       |
-         |                                       |                                       |                                       |
-         |                                       |                                       | <xmax>200<xmax>                       |
-         |                                       |                                       |                                       |
-         |                                       |                                       | <ymax>200<ymax>                       |
-         +---------------------------------------+---------------------------------------+---------------------------------------+
+         +-----------------------+-----------------------+------------------------------------------------------+
+         | type                  | Shape                 | Labeling Information                                 |
+         +=======================+=======================+======================================================+
+         | bndbox                | Rectangle             | Coordinates of the upper left and lower right points |
+         |                       |                       |                                                      |
+         |                       |                       | <xmin>100<xmin>                                      |
+         |                       |                       |                                                      |
+         |                       |                       | <ymin>100<ymin>                                      |
+         |                       |                       |                                                      |
+         |                       |                       | <xmax>200<xmax>                                      |
+         |                       |                       |                                                      |
+         |                       |                       | <ymax>200<ymax>                                      |
+         +-----------------------+-----------------------+------------------------------------------------------+
 
       Example of the label file in KITTI format:
 
-      .. code::
+      .. code-block::
 
          <annotation>
             <folder>test_data</folder>
@@ -158,4 +127,5 @@ Requirements for Files Uploaded to OBS
                 </bndbox>
             </object>
          </annotation>
+
 

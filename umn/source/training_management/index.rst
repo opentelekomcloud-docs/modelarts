@@ -3,6 +3,7 @@ Training Management
 ===================
 
 .. toctree::
+   :maxdepth: 1
 
    introduction_to_model_training
    creating_a_training_job/index

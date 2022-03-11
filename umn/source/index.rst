@@ -3,6 +3,7 @@ Main Index
 ==========
 
 .. toctree::
+   :maxdepth: 1
 
    service_overview/index
    preparations/index
@@ -20,3 +21,4 @@ Main Index
    permissions_management/index
    monitoring/index
    faqs/index
+   change_history

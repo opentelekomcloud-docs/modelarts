@@ -21,7 +21,8 @@ You can switch to another AI engine environment in the terminal environment of J
    |image2|
 
 
-.. |image1| image:: /images/en-us_image_0000001110920980.png
 
-.. |image2| image:: /images/en-us_image_0000001110761076.png
+.. |image1| image:: /_static/images/en-us_image_0000001110920980.png
+
+.. |image2| image:: /_static/images/en-us_image_0000001110761076.png
 

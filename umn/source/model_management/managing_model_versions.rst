@@ -23,4 +23,5 @@ On the **Model Management > Models** page, click the triangle on the left of the
 A deleted version cannot be recovered. Exercise caution when performing this operation.
 
 
-.. |image1| image:: /images/note_3.0-en-us.png
+
+.. |image1| image:: /_static/images/note_3.0-en-us.png

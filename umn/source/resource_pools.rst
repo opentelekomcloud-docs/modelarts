@@ -10,6 +10,16 @@ When using ModelArts to implement AI Development Lifecycle, you can use two diff
 
 -  **Dedicated Resource Pool**: provides exclusive compute resources, which can be used for model deployment. It delivers higher efficiency and cannot be shared with other users.
 
+   Create a dedicated resource pool and select the dedicated resource pool during AI development. For details about the dedicated resource pool, see the following:
+
+   `Dedicated Resource Pool <#modelarts_23_0076__en-us_topic_0143244658_section6250135125515>`__
+
+   `Creating a Dedicated Resource Pool <#modelarts_23_0076__en-us_topic_0143244658_section4115221610>`__
+
+   `Scaling a Dedicated Resource Pool <#modelarts_23_0076__en-us_topic_0143244658_section1521854122017>`__
+
+   `Deleting a Dedicated Resource Pool <#modelarts_23_0076__en-us_topic_0143244658_section102631431172915>`__
+
 Dedicated Resource Pool
 -----------------------
 
@@ -23,78 +33,55 @@ Creating a Dedicated Resource Pool
 #. Log in to the ModelArts management console and choose **Dedicated Resource Pools** on the left.
 #. On the **Dedicated Resource Pools** page, select **Dedicated for Development/Training** or **Dedicated for Service Deployment**.
 #. Click **Create** in the upper left corner. The page for creating a dedicated resource pool is displayed.
-#. Set the parameters on the page. For details about how to set parameters, see `Table 1 <#modelarts_23_0076__en-us_topic_0143244658_table1073325155617>`__ and `Table 2 <#modelarts_23_0076__en-us_topic_0143244658_table199892206411>`__.
-
+#. Set the parameters on the page. For details about how to set parameters, see `Table 1 <#modelarts_23_0076__en-us_topic_0143244658_table1073325155617>`__ and `Table 2 <#modelarts_23_0076__en-us_topic_0143244658_table199892206411>`__. 
 
 .. _modelarts_23_0076__en-us_topic_0143244658_table1073325155617:
 
-.. table:: **Table 1** Parameters of the **Dedicated for Development/Training** type
+   .. table:: **Table 1** Parameters of the **Dedicated for Development/Training** type
 
-   +----------------+----------------------------------------------------------+
-   | Parameter      | Description                                              |
-   +================+==========================================================+
-   | Resource Type  | The default value is and cannot be changed.              |
-   +----------------+----------------------------------------------------------+
-   | Name           | Name of a dedicated resource pool.                       |
-   |                |                                                          |
-   |                | The value can contain letters, digits, hyphens (-), and  |
-   |                | underscores (_).                                         |
-   +----------------+----------------------------------------------------------+
-   | Description    | Brief description of a dedicated resource pool.          |
-   +----------------+----------------------------------------------------------+
-   | Nodes          | Select the number of nodes in a dedicated resource pool. |
-   |                | More nodes mean higher computing performance.            |
-   +----------------+----------------------------------------------------------+
-   | Specifications | Required specifications. The GPU delivers better         |
-   |                | performance, and the CPU is more cost-effective. If a    |
-   |                | flavor is sold out, you can purchase it again only after |
-   |                | other users delete the resource pool.                    |
-   +----------------+----------------------------------------------------------+
+      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Parameter                         | Description                                                                                                                                                                                           |
+      +===================================+=======================================================================================================================================================================================================+
+      | Resource Type                     | The default value is and cannot be changed.                                                                                                                                                           |
+      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Name                              | Name of a dedicated resource pool.                                                                                                                                                                    |
+      |                                   |                                                                                                                                                                                                       |
+      |                                   | The value can contain letters, digits, hyphens (-), and underscores (_).                                                                                                                              |
+      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Description                       | Brief description of a dedicated resource pool.                                                                                                                                                       |
+      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Nodes                             | Select the number of nodes in a dedicated resource pool. More nodes mean higher computing performance.                                                                                                |
+      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Specifications                    | Required specifications. The GPU delivers better performance, and the CPU is more cost-effective. If a flavor is sold out, you can purchase it again only after other users delete the resource pool. |
+      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
+   
 
 .. _modelarts_23_0076__en-us_topic_0143244658_table199892206411:
 
-.. table:: **Table 2** Parameters of the **Dedicated for Service Deployment** type
+   .. table:: **Table 2** Parameters of the **Dedicated for Service Deployment** type
 
-   +------------------------------+-----------------------------------------------------------+
-   | Parameter                    | Description                                               |
-   +==============================+===========================================================+
-   | Resource Type                | The default value is **Dedicated for Service Deployment** |
-   |                              | and cannot be changed.                                    |
-   +------------------------------+-----------------------------------------------------------+
-   | Name                         | Name of a dedicated resource pool.                        |
-   |                              |                                                           |
-   |                              | The value can contain letters, digits, hyphens (-), and   |
-   |                              | underscores (_).                                          |
-   +------------------------------+-----------------------------------------------------------+
-   | Description                  | Brief description of a dedicated resource pool.           |
-   +------------------------------+-----------------------------------------------------------+
-   | Custom Network Configuration | If you enable **Custom Network Configuration**, the       |
-   |                              | service instance runs on the specified network and can    |
-   |                              | communicate with other cloud service resource instances   |
-   |                              | on the network. If you do not enable **Custom Network     |
-   |                              | Configuration**, ModelArts allocates a dedicated network  |
-   |                              | to each user and isolates users from each other.          |
-   |                              |                                                           |
-   |                              | If you enable **Custom Network Configuration**, set       |
-   |                              | **VPC**, **Subnet**, and **Security Group**. If no        |
-   |                              | network is available, go to the VPC service and create a  |
-   |                              | network. .                                                |
-   +------------------------------+-----------------------------------------------------------+
-   | AZ                           | You can select **Random**, **AZ 1**, **AZ 2**, or **AZ    |
-   |                              | 3** based on site requirements. An AZ is a physical       |
-   |                              | region where resources use independent power supplies and |
-   |                              | networks. AZs are physically isolated but interconnected  |
-   |                              | through an internal network. To enhance workload          |
-   |                              | availability, create nodes in different AZs.              |
-   +------------------------------+-----------------------------------------------------------+
-   | Nodes                        | Select the number of nodes in a dedicated resource pool.  |
-   |                              | More nodes mean higher computing performance.             |
-   +------------------------------+-----------------------------------------------------------+
-   | Specifications               | Required specifications. The GPU delivers better          |
-   |                              | performance.                                              |
-   +------------------------------+-----------------------------------------------------------+
+      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Parameter                         | Description                                                                                                                                                                                                                                                                                                                        |
+      +===================================+====================================================================================================================================================================================================================================================================================================================================+
+      | Resource Type                     | The default value is **Dedicated for Service Deployment** and cannot be changed.                                                                                                                                                                                                                                                   |
+      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Name                              | Name of a dedicated resource pool.                                                                                                                                                                                                                                                                                                 |
+      |                                   |                                                                                                                                                                                                                                                                                                                                    |
+      |                                   | The value can contain letters, digits, hyphens (-), and underscores (_).                                                                                                                                                                                                                                                           |
+      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Description                       | Brief description of a dedicated resource pool.                                                                                                                                                                                                                                                                                    |
+      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Custom Network Configuration      | If you enable **Custom Network Configuration**, the service instance runs on the specified network and can communicate with other cloud service resource instances on the network. If you do not enable **Custom Network Configuration**, ModelArts allocates a dedicated network to each user and isolates users from each other. |
+      |                                   |                                                                                                                                                                                                                                                                                                                                    |
+      |                                   | If you enable **Custom Network Configuration**, set **VPC**, **Subnet**, and **Security Group**. If no network is available, go to the VPC service and create a network. .                                                                                                                                                         |
+      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | AZ                                | You can select **Random**, **AZ 1**, **AZ 2**, or **AZ 3** based on site requirements. An AZ is a physical region where resources use independent power supplies and networks. AZs are physically isolated but interconnected through an internal network. To enhance workload availability, create nodes in different AZs.        |
+      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Nodes                             | Select the number of nodes in a dedicated resource pool. More nodes mean higher computing performance.                                                                                                                                                                                                                             |
+      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Specifications                    | Required specifications. The GPU delivers better performance.                                                                                                                                                                                                                                                                      |
+      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 #. After confirming that the specifications are correct, create a dedicated resource pool as prompted. After a dedicated resource pool is created, its status changes to **Running**.
 
@@ -125,4 +112,4 @@ If a dedicated resource pool is no longer needed during AI service development, 
 #. Go to the dedicated resource pool management page, locate the row that contains the desired dedicated resource pool, and click **Delete** in the **Operation** column.
 #. In the dialog box that is displayed, click **OK**.
 
-.. |image1| image:: /images/note_3.0-en-us.png
+.. |image1| image:: /_static/images/note_3.0-en-us.png
