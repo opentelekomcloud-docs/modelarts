@@ -31,13 +31,11 @@ Deleting a Training Job Parameter Configuration
 -----------------------------------------------
 
 #. Log in to the ModelArts management console. In the left navigation pane, choose **Training Management** > **Training Jobs**. On the displayed page, click the **Job Parameter Mgmt** tab.
-
 #. In the job parameter list, click **Delete** in the **Operation** column in a row.
+#. In the displayed dialog box, click **OK**.
 
-#. In the displayed dialog box, click **OK**.\ |image1|
+   .. note::
 
-   Deleted job parameter configurations cannot be recovered. Therefore, exercise caution when performing this operation.
+      Deleted job parameter configurations cannot be recovered. Therefore, exercise caution when performing this operation.
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png

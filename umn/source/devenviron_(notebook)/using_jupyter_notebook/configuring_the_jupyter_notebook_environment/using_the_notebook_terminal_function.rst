@@ -7,8 +7,11 @@ Enabling the Notebook Terminal Function
 ---------------------------------------
 
 #. In the notebook instance list, click **Open** in the **Operation** column of the target notebook instance to go to the **Jupyter Notebook** page.
-#. On the **Files** tab page of the Jupyter page, click **New** and select **Terminal**. The **Terminal** page is displayed.\ **Figure 1** Going to the Terminal page
-   |image1|
+
+#. On the **Files** tab page of the Jupyter page, click **New** and select **Terminal**. The **Terminal** page is displayed.
+
+   | **Figure 1** Going to the Terminal page
+   | |image1|
 
 Switching Engine Environments on the Terminal
 ---------------------------------------------
@@ -16,9 +19,16 @@ Switching Engine Environments on the Terminal
 You can switch to another AI engine environment in the terminal environment of Jupyter.
 
 #. Create and open a notebook instance or open an existing notebook instance in the notebook instance list.
+
 #. On the **Files** tab page of the Jupyter page, click **New** and select **Terminal**. The **Terminal** page is displayed.
-#. **Figure 2** Output after command execution
-   |image2|
+
+#. 
+
+   .. container::
+   
+
+      | **Figure 2** Output after command execution
+      | |image2|
 
 
 

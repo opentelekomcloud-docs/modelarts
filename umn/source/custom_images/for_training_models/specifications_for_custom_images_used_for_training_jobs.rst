@@ -13,7 +13,7 @@ Specifications
 
 -  To ensure that the log content can be displayed normally, the logs must be standard output.
 -  The default user of a custom image must be the user whose UID is **1101**.
--  Custom images can be developed based on basic ModelArts images. For details about the supported basic images, see `Overview of a Basic Image Package <#modelarts_23_0217__en-us_topic_0212179951_section1126616610513>`__.
+-  Custom images can be developed based on basic ModelArts images. For details about the supported basic images, see `Overview of a Basic Image Package <#modelarts230217enustopic0212179951section1126616610513>`__.
 -  Currently, the ModelArts backend does not support the download of open source installation packages. You are advised to install the dependency packages required for training in the custom image.
 
 Overview of a Basic Image Package
@@ -39,8 +39,8 @@ After customizing an image, upload it to SWR. Make sure that you have created an
 
 Obtain basic images based on chip requirements:
 
--  `CPU-based Basic Images <#modelarts_23_0217__en-us_topic_0212179951_section2357164275019>`__
--  `GPU-based Basic Images <#modelarts_23_0217__en-us_topic_0212179951_section125281544151710>`__
+-  `CPU-based Basic Images <#modelarts230217enustopic0212179951section2357164275019>`__
+-  `GPU-based Basic Images <#modelarts230217enustopic0212179951section125281544151710>`__
 
 CPU-based Basic Images
 ----------------------
@@ -51,11 +51,11 @@ Address for obtaining a basic image
 
    swr.<region>.xxx.com/modelarts-job-dev-image/custom-cpu-base:1.3
 
-`Table 1 <#modelarts_23_0217__en-us_topic_0212179951_table42317014714>`__ and `Table 2 <#modelarts_23_0217__en-us_topic_0212179951_table624501372>`__ list the components and tools used by basic images.
+`Table 1 <#modelarts230217enustopic0212179951table42317014714>`__ and `Table 2 <#modelarts230217enustopic0212179951table624501372>`__ list the components and tools used by basic images.
 
 
 
-.. _modelarts_23_0217__en-us_topic_0212179951_table42317014714:
+.. _modelarts230217enustopic0212179951table42317014714:
 
 .. table:: **Table 1** Components
 
@@ -67,7 +67,7 @@ Address for obtaining a basic image
 
 
 
-.. _modelarts_23_0217__en-us_topic_0212179951_table624501372:
+.. _modelarts230217enustopic0212179951table624501372:
 
 .. table:: **Table 2** Tool list
 
@@ -101,7 +101,7 @@ Addresses for obtaining a basic image
 
 
 
-.. _modelarts_23_0217__en-us_topic_0212179951_table137851182312:
+.. _modelarts230217enustopic0212179951table137851182312:
 
 .. table:: **Table 3** Components
 
@@ -113,7 +113,7 @@ Addresses for obtaining a basic image
 
 
 
-.. _modelarts_23_0217__en-us_topic_0212179951_table135271650237:
+.. _modelarts230217enustopic0212179951table135271650237:
 
 .. table:: **Table 4** Tool list
 

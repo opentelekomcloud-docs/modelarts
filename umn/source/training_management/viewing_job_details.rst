@@ -1,18 +1,18 @@
 Viewing Job Details
 ===================
 
-After a training job finishes, you can manage the training job versions and check whether the training result of the job is satisfactory by viewing the `job details <#modelarts_23_0048__en-us_topic_0171858286_section15518121114018>`__.
+After a training job finishes, you can manage the training job versions and check whether the training result of the job is satisfactory by viewing the `job details <#modelarts230048enustopic0171858286section15518121114018>`__.
 
 Training Job Details
 --------------------
 
 In the left navigation pane of the ModelArts management console, choose **Training Management** > **Training Jobs** to switch to the **Training Jobs** page. In the training job list, click a job name to view the job details.
 
-`Table 1 <#modelarts_23_0048__en-us_topic_0171858286_table43451384323>`__ lists parameters of the training job of each version.
+`Table 1 <#modelarts230048enustopic0171858286table43451384323>`__ lists parameters of the training job of each version.
 
 
 
-.. _modelarts_23_0048__en-us_topic_0171858286_table43451384323:
+.. _modelarts230048enustopic0171858286table43451384323:
 
 .. table:: **Table 1** Training job details
 

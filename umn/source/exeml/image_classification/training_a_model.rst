@@ -7,9 +7,10 @@ Procedure
 ---------
 
 #. On the **ExeML** page, click the name of the project that is successfully created. The **Label Data** tab page is displayed.
-#. On the **Label Data** tab page, click **Train** in the upper right corner. In the displayed **Training Configuration** dialog box, set related parameters. `Table 1 <#modelarts_21_0006__en-us_topic_0284258835_en-us_topic_0169446155_table56110116164>`__ describes the parameters. 
 
-.. _modelarts_21_0006__en-us_topic_0284258835_en-us_topic_0169446155_table56110116164:
+#. On the **Label Data** tab page, click **Train** in the upper right corner. In the displayed **Training Configuration** dialog box, set related parameters. `Table 1 <#modelarts210006enustopic0284258835enustopic0169446155table56110116164>`__ describes the parameters. 
+
+.. _modelarts210006enustopic0284258835enustopic0169446155table56110116164:
 
    .. table:: **Table 1** Parameter description
 
@@ -38,10 +39,12 @@ Procedure
       +---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
 
 #. After configuring training parameters, click **Next** to go to the configuration page, confirm the specifications, and click **Submit** to start auto model training. The training takes a certain period of time. Wait until the training is complete. If you close or exit this page, the system still performs the training operation.
-#. On the **Train Model** tab page, wait until the training status changes from **Running** to **Completed**.
-#. View the training details, such as **Accuracy**, **Evaluation Result**, **Training Parameters**, and **Classification Statistics**. For details about the evaluation result parameters, see `Table 2 <#modelarts_21_0006__en-us_topic_0284258835_en-us_topic_0169446155_table19888201216>`__. 
 
-.. _modelarts_21_0006__en-us_topic_0284258835_en-us_topic_0169446155_table19888201216:
+#. On the **Train Model** tab page, wait until the training status changes from **Running** to **Completed**.
+
+#. View the training details, such as **Accuracy**, **Evaluation Result**, **Training Parameters**, and **Classification Statistics**. For details about the evaluation result parameters, see `Table 2 <#modelarts210006enustopic0284258835enustopic0169446155table19888201216>`__. 
+
+.. _modelarts210006enustopic0284258835enustopic0169446155table19888201216:
 
    .. table:: **Table 2** Evaluation result parameters
 
@@ -57,10 +60,8 @@ Procedure
       | F1 Score  | Harmonic average of the precision and recall of a model. It is used to evaluate the quality of a model. A high F1 score indicates a good model. |
       +-----------+-------------------------------------------------------------------------------------------------------------------------------------------------+
 
-|image1|
+.. note::
 
-An ExeML project supports multiple rounds of training, and each round generates a version. For example, the first training version is **V001 (**\ *xxx*\ **)**, and the next version is **V002 (**\ *xxx*\ **)**. The trained models can be managed by training version. After the trained model meets your requirements, deploy the model as a service.
+   An ExeML project supports multiple rounds of training, and each round generates a version. For example, the first training version is **V001 (**\ *xxx*\ **)**, and the next version is **V002 (**\ *xxx*\ **)**. The trained models can be managed by training version. After the trained model meets your requirements, deploy the model as a service.
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png

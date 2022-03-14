@@ -8,7 +8,7 @@ Description of the Model Training Function
 
 
 
-.. _modelarts_23_0044__en-us_topic_0129633060_table138422031155511:
+.. _modelarts230044enustopic0129633060table138422031155511:
 
 .. table:: **Table 1** Function description
 

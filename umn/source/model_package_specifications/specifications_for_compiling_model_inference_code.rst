@@ -6,9 +6,9 @@ This section describes how to compile model inference code in ModelArts. The fol
 Specifications for Compiling Inference Code
 -------------------------------------------
 
-#. All custom Python code must be inherited from the BaseService class. `Table 1 <#modelarts_23_0093__en-us_topic_0172466150_table55021545175412>`__ lists the import statements of different types of model parent classes. 
+#. All custom Python code must be inherited from the BaseService class. `Table 1 <#modelarts230093enustopic0172466150table55021545175412>`__ lists the import statements of different types of model parent classes. 
 
-.. _modelarts_23_0093__en-us_topic_0172466150_table55021545175412:
+.. _modelarts230093enustopic0172466150table55021545175412:
 
    .. table:: **Table 1** Import statements of the **BaseService** class
 
@@ -34,7 +34,7 @@ Specifications for Compiling Inference Code
 
 #. The following methods can be rewritten: 
 
-.. _modelarts_23_0093__en-us_topic_0172466150_table119897712529:
+.. _modelarts230093enustopic0172466150table119897712529:
 
    .. table:: **Table 2** Methods to be rewritten
 
@@ -52,31 +52,33 @@ Specifications for Compiling Inference Code
       | \_postprocess(self, data)               | Postprocess method, which is called after an inference request is complete and is used to convert the model output to the API output                                                                                                                     |
       +-----------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   |image1|
+   .. note::
 
-   -  You can choose to rewrite the preprocess and postprocess methods to implement preprocessing of the API input and postprocessing of the inference output.
-   -  Rewriting the init method of the BaseService inheritance class may cause a model to run abnormally.
+      -  You can choose to rewrite the preprocess and postprocess methods to implement preprocessing of the API input and postprocessing of the inference output.
+      -  Rewriting the init method of the BaseService inheritance class may cause a model to run abnormally.
 
-#. The attribute that can be used is the local path where the model resides. The attribute name is **self.model_path**. In addition, PySpark-based models can use **self.spark** to obtain the SparkSession object in **customize_service.py**.\ |image2|
+#. The attribute that can be used is the local path where the model resides. The attribute name is **self.model_path**. In addition, PySpark-based models can use **self.spark** to obtain the SparkSession object in **customize_service.py**.
 
-   An absolute path is required for reading files in the inference code. You can obtain the absolute path of the model from the **self.model_path** attribute.
+   .. note::
 
-   -  When TensorFlow, Caffe, or MXNet is used, **self.model_path** indicates the path of the model file. See the following example:
+      An absolute path is required for reading files in the inference code. You can obtain the absolute path of the model from the **self.model_path** attribute.
 
-      .. code-block::
+      -  When TensorFlow, Caffe, or MXNet is used, **self.model_path** indicates the path of the model file. See the following example:
 
-         # Store the label.json file in the model directory. The following information is read:
-         with open(os.path.join(self.model_path, 'label.json')) as f:
-             self.label = json.load(f)
+         .. code-block::
 
-   -  When PyTorch, Scikit_Learn, or PySpark is used, **self.model_path** indicates the path of the model file. See the following example:
+            # Store the label.json file in the model directory. The following information is read:
+            with open(os.path.join(self.model_path, 'label.json')) as f:
+                self.label = json.load(f)
 
-      .. code-block::
+      -  When PyTorch, Scikit_Learn, or PySpark is used, **self.model_path** indicates the path of the model file. See the following example:
 
-         # Store the label.json file in the model directory. The following information is read:
-         dir_path = os.path.dirname(os.path.realpath(self.model_path))
-         with open(os.path.join(dir_path, 'label.json')) as f:
-             self.label = json.load(f)
+         .. code-block::
+
+            # Store the label.json file in the model directory. The following information is read:
+            dir_path = os.path.dirname(os.path.realpath(self.model_path))
+            with open(os.path.join(dir_path, 'label.json')) as f:
+                self.label = json.load(f)
 
 #. Two types of **content-type** APIs can be used for inputting data: **multipart/form-data** and **application/json**
 
@@ -221,7 +223,7 @@ XGBoost Inference Script Example
 Inference Script Example of the Custom Inference Logic
 ------------------------------------------------------
 
-First, define a dependency package in the configuration file. For details, see `Example of a Model Configuration File Using a Custom Dependency Package <../model_package_specifications/specifications_for_compiling_the_model_configuration_file.html#modelarts_23_0092__en-us_topic_0172466149_section119911955122011>`__. Then, use the following code example to implement the loading and inference of the model in **saved_model** format.
+First, define a dependency package in the configuration file. For details, see `Example of a Model Configuration File Using a Custom Dependency Package <../model_package_specifications/specifications_for_compiling_the_model_configuration_file.html#modelarts230092enustopic0172466149section119911955122011>`__. Then, use the following code example to implement the loading and inference of the model in **saved_model** format.
 
 +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------+
 | ::                                | ::                                                                                                                       |
@@ -441,6 +443,3 @@ MindSpore Inference Script Example
 +-----------------------------------+-----------------------------------------------------------------------------------+
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png
-.. |image2| image:: /_static/images/note_3.0-en-us.png

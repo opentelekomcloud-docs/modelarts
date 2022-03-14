@@ -3,23 +3,25 @@ Exporting Data
 
 A dataset includes labeled and unlabeled data. You can select images or filter data based on the filter criteria and export to a new dataset or the specified OBS directory. In addition, you can view the task history to learn about the export records.
 
-|image1|
+.. note::
 
-Only datasets of image classification, object detection, image segmentation, and free format types can be exported.
+   Only datasets of image classification, object detection, image segmentation, and free format types can be exported.
 
--  For image classification datasets, only the label files in TXT format can be exported.
--  For object detection datasets, only XML label files in Pascal VOC format can be exported.
--  For image segmentation datasets, only XML label files in Pascal VOC format and mask images can be exported.
--  For free format datasets, all files of the datasets can be exported.
+   -  For image classification datasets, only the label files in TXT format can be exported.
+   -  For object detection datasets, only XML label files in Pascal VOC format can be exported.
+   -  For image segmentation datasets, only XML label files in Pascal VOC format and mask images can be exported.
+   -  For free format datasets, all files of the datasets can be exported.
 
 Exporting Data to a New Dataset
 -------------------------------
 
 #. Log in to the ModelArts management console. In the left navigation pane, choose **Data Management** > **Datasets**. The **Datasets** page is displayed.
 
-#. In the dataset list, select the dataset of the object detection or image classification type and click the dataset name to go to the **Dashboard** tab page of the dataset.\ |image2|
+#. In the dataset list, select the dataset of the object detection or image classification type and click the dataset name to go to the **Dashboard** tab page of the dataset.
 
-   For a dataset of the free format type, you can click the dataset name to directly access the dataset details page and go to `4 <#modelarts_23_0214__en-us_topic_0209632492_li114071010139>`__.
+   .. note::
+
+      For a dataset of the free format type, you can click the dataset name to directly access the dataset details page and go to `4 <#modelarts230214enustopic0209632492li114071010139>`__.
 
 #. On the **Dashboard** page of the dataset, click **Label** in the upper right corner. The dataset details page is displayed.
 
@@ -42,9 +44,11 @@ Exporting Data to OBS
 
 #. Log in to the ModelArts management console. In the left navigation pane, choose **Data Management** > **Datasets**. The **Datasets** page is displayed.
 
-#. In the dataset list, select the dataset of the object detection or image classification type and click the dataset name to go to the **Dashboard** tab page of the dataset.\ |image3|
+#. In the dataset list, select the dataset of the object detection or image classification type and click the dataset name to go to the **Dashboard** tab page of the dataset.
 
-   For a dataset of the free format type, you can click the dataset name to directly access the dataset details page and go to `4 <#modelarts_23_0214__en-us_topic_0209632492_li2056103713438>`__.
+   .. note::
+
+      For a dataset of the free format type, you can click the dataset name to directly access the dataset details page and go to `4 <#modelarts230214enustopic0209632492li2056103713438>`__.
 
 #. On the **Dashboard** page of the dataset, click **Label** in the upper right corner. The dataset details page is displayed.
 
@@ -64,20 +68,14 @@ Viewing the Task History
 When you export data to a new dataset or OBS, you can view the export task details in the **View Task History** dialog box.
 
 #. Log in to the ModelArts management console. In the left navigation pane, choose **Data Management** > **Datasets**. The **Datasets** page is displayed.
+#. In the dataset list, select the dataset of the object detection or image classification type and click the dataset name to go to the **Dashboard** tab page of the dataset.
 
-#. In the dataset list, select the dataset of the object detection or image classification type and click the dataset name to go to the **Dashboard** tab page of the dataset.\ |image4|
+   .. note::
 
-   For a dataset of the free format type, you can click the dataset name to directly access the dataset details page and go to `4 <#modelarts_23_0214__en-us_topic_0209632492_li19995141771413>`__.
+      For a dataset of the free format type, you can click the dataset name to directly access the dataset details page and go to `4 <#modelarts230214enustopic0209632492li19995141771413>`__.
 
 #. On the **Dashboard** page of the dataset, click **Label** in the upper right corner. The dataset details page is displayed.
-
 #. On the dataset details page, select or filter data to be exported. Click **Export To** and choose **View Task History** from the drop-down list.
-
 #. In the **View Task History** dialog box, view the export task history of the current dataset. Information about **Task ID**, **Created**, **Type**, **Path**, **Total**, and **Status** is included.
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png
-.. |image2| image:: /_static/images/note_3.0-en-us.png
-.. |image3| image:: /_static/images/note_3.0-en-us.png
-.. |image4| image:: /_static/images/note_3.0-en-us.png

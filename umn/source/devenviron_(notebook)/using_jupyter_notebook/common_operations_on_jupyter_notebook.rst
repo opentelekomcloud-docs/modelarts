@@ -35,9 +35,11 @@ Compiling a File
 After a file is created, click the file name to go to the file compilation page.
 
 | **Figure 4** Compiling a file
-| |image4| 
+| |image4|
 
-.. _modelarts_23_0120__en-us_topic_0188347008_table9727162374411:
+
+
+.. _modelarts230120enustopic0188347008table9727162374411:
 
 .. table:: **Table 1** Introduction to the file compilation page
 
@@ -57,7 +59,7 @@ After a file is created, click the file name to go to the file compilation page.
    |                       |                              | -  Raw NBConvert: conversion tool.                                                                                                                                                                                                                                                                                                                                                                                          |
    |                       |                              | -  Heading: Quickly add a MarkDown title.                                                                                                                                                                                                                                                                                                                                                                                   |
    +-----------------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | 4                     | AI engine and Python version | Displays the AI engine and Python version corresponding to the current file. For details about all AI engines and Python versions supported by ModelArts, see `Supported AI Engines <../../devenviron_(notebook)/introduction_to_notebook.html#modelarts_23_0033__en-us_topic_0162690357_section191109611479>`__.                                                                                                           |
+   | 4                     | AI engine and Python version | Displays the AI engine and Python version corresponding to the current file. For details about all AI engines and Python versions supported by ModelArts, see `Supported AI Engines <../../devenviron_(notebook)/introduction_to_notebook.html#modelarts230033enustopic0162690357section191109611479>`__.                                                                                                                   |
    +-----------------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | 5                     | Code cell                    | Each cell has two modes: command mode and editing mode.                                                                                                                                                                                                                                                                                                                                                                     |
    |                       |                              |                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -71,12 +73,14 @@ Deleting a File or Folder
 
 To delete a file or folder from Jupyter Notebook, select the file or folder in the **Files** list and click the **Delete** button.
 
-|image6|
+.. note::
 
-After the file or folder is deleted, click the **Refresh** button in the upper right corner to refresh the Jupyter page and clear the cache.
+   After the file or folder is deleted, click the **Refresh** button in the upper right corner to refresh the Jupyter page and clear the cache.
 
 | **Figure 5** Jupyter page
-| |image7| 
+| |image6|
+
+
 
 .. |image1| image:: /_static/images/en-us_image_0000001110761034.png
 
@@ -88,6 +92,5 @@ After the file or folder is deleted, click the **Refresh** button in the upper r
 
 .. |image5| image:: /_static/images/en-us_image_0000001110920936.png
 
-.. |image6| image:: /_static/images/note_3.0-en-us.png
-.. |image7| image:: /_static/images/en-us_image_0000001110761038.png
+.. |image6| image:: /_static/images/en-us_image_0000001110761038.png
 

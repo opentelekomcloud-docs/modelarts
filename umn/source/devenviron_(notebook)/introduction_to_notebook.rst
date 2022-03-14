@@ -11,13 +11,13 @@ Supported AI Engines
 
 Each development environment supports multiple AI engines that run independently. All supported AI engines can be used in the same notebook instance, and these engines can be switched quickly and conveniently.
 
-|image1|
+.. note::
 
--  Each ModelArts notebook instance can use all supported engines.
+   -  Each ModelArts notebook instance can use all supported engines.
 
 
 
-.. _modelarts_23_0033__en-us_topic_0162690357_table13949522712:
+.. _modelarts230033enustopic0162690357table13949522712:
 
 .. table:: **Table 1** AI engines
 
@@ -58,5 +58,3 @@ Constraints
 -  If the code output is still displayed after you close the page and open it again, use Terminal.
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png

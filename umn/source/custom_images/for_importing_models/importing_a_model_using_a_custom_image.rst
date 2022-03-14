@@ -7,7 +7,7 @@ Prerequisites
 -------------
 
 -  You have created a custom image package based on ModelArts specifications. For details about the specifications you need to comply with when using a custom image to import a model, see `Specifications for Custom Images Used for Importing Models <../../custom_images/for_importing_models/specifications_for_custom_images_used_for_importing_models.html>`__.
--  You have uploaded the custom image to SWR. For details, see `Creating and Uploading a Custom Image <../../custom_images/creating_and_uploading_a_custom_image.html#modelarts_23_0085__en-us_topic_0171858297_section125639162589>`__.
+-  You have uploaded the custom image to SWR. For details, see `Creating and Uploading a Custom Image <../../custom_images/creating_and_uploading_a_custom_image.html#modelarts230085enustopic0171858297section125639162589>`__.
 
 Importing a Model
 -----------------
@@ -20,7 +20,7 @@ Set basic parameters for importing a model according to `Importing a Meta Model 
 
 -  **Configuration File**
 
-   The model configuration file needs to be compiled independently. For details about how to compile the model configuration file, see `Specifications for Compiling the Model Configuration File <../../model_package_specifications/specifications_for_compiling_the_model_configuration_file.html>`__. For details about the configuration file examples of a custom image, see `Example of the Custom Image Model Configuration File <../../model_package_specifications/specifications_for_compiling_the_model_configuration_file.html#modelarts_23_0092__en-us_topic_0172466149_section9113122232018>`__. After editing the model configuration file based on the ModelArts specifications, upload it to OBS or use **Edit online** on the **Import Model** page.
+   The model configuration file needs to be compiled independently. For details about how to compile the model configuration file, see `Specifications for Compiling the Model Configuration File <../../model_package_specifications/specifications_for_compiling_the_model_configuration_file.html>`__. For details about the configuration file examples of a custom image, see `Example of the Custom Image Model Configuration File <../../model_package_specifications/specifications_for_compiling_the_model_configuration_file.html#modelarts230092enustopic0172466149section9113122232018>`__. After editing the model configuration file based on the ModelArts specifications, upload it to OBS or use **Edit online** on the **Import Model** page.
 
 Deploying a Service
 -------------------

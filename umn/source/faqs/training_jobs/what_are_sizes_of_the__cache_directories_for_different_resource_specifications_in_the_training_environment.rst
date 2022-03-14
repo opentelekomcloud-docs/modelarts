@@ -7,7 +7,7 @@ ModelArts mounts the disk to the **/cache** directory. You can use this director
 
 -  GPU resources 
 
-.. _modelarts_05_0090__en-us_topic_0000001096855431_en-us_topic_0200343601_table9533182215915:
+.. _modelarts050090enustopic0000001096855431enustopic0200343601table9533182215915:
 
    .. table:: **Table 1** Capacities of the cache directories for GPU resources
 
@@ -21,7 +21,7 @@ ModelArts mounts the disk to the **/cache** directory. You can use this director
 
 -  CPU resources 
 
-.. _modelarts_05_0090__en-us_topic_0000001096855431_en-us_topic_0200343601_table2764175317167:
+.. _modelarts050090enustopic0000001096855431enustopic0200343601table2764175317167:
 
    .. table:: **Table 2** Capacities of the cache directories for CPU resources
 
@@ -34,7 +34,7 @@ ModelArts mounts the disk to the **/cache** directory. You can use this director
 
 -  Ascend resources 
 
-.. _modelarts_05_0090__en-us_topic_0000001096855431_en-us_topic_0200343601_table1652218538206:
+.. _modelarts050090enustopic0000001096855431enustopic0200343601table1652218538206:
 
    .. table:: **Table 3** Capacities of the cache directories for Ascend resources
 

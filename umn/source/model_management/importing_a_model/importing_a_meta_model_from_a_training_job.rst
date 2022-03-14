@@ -19,9 +19,9 @@ Procedure
 #. Click **Import** in the upper left corner. The **Import** page is displayed.
 #. On the **Import** page, set related parameters.
 
-   a. Set basic information about the model. For details about the parameters, see `Table 1 <#modelarts_23_0054__en-us_topic_0207629475_table19428112584211>`__. 
+   a. Set basic information about the model. For details about the parameters, see `Table 1 <#modelarts230054enustopic0207629475table19428112584211>`__. 
 
-.. _modelarts_23_0054__en-us_topic_0207629475_table19428112584211:
+.. _modelarts230054enustopic0207629475table19428112584211:
 
       .. table:: **Table 1** Parameters of basic model information
 
@@ -37,9 +37,9 @@ Procedure
          | Description | Brief description of the model                                                                                                                                                      |
          +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   b. Select the meta model source and set related parameters. Set **Meta Model Source** based on your application scenario. For details, see `Methods of Importing a Model <../../model_management/introduction_to_model_management.html#modelarts_23_0052__en-us_topic_0171858287_section179419351998>`__. If **Meta Model Source** is set to **Training job**, set other parameters by referring to `Table 2 <#modelarts_23_0054__en-us_topic_0207629475_table104931647171713>`__. 
+   b. Select the meta model source and set related parameters. Set **Meta Model Source** based on your application scenario. For details, see `Methods of Importing a Model <../../model_management/introduction_to_model_management.html#modelarts230052enustopic0171858287section179419351998>`__. If **Meta Model Source** is set to **Training job**, set other parameters by referring to `Table 2 <#modelarts230054enustopic0207629475table104931647171713>`__. 
 
-.. _modelarts_23_0054__en-us_topic_0207629475_table104931647171713:
+.. _modelarts230054enustopic0207629475table104931647171713:
 
       .. table:: **Table 2** Parameters of the meta model source
 

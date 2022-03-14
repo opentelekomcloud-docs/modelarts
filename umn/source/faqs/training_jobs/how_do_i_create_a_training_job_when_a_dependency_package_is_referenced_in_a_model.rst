@@ -3,9 +3,11 @@ How Do I Create a Training Job When a Dependency Package Is Referenced in a Mode
 
 When a model references a dependency package, select a frequently-used framework to create training jobs. In addition, place the required file or installation package in the code directory. The requirements vary based on the dependency package that you use.
 
--  **Open-source installation package**\ |image1|
+-  **Open-source installation package**
 
-   It is not allowed to install the package using the GitHub source code.
+   .. note::
+
+      It is not allowed to install the package using the GitHub source code.
 
    Create a file named **pip-requirements.txt** in the code directory. In this file, specify the name and version of the dependency package in the format of *Package name*\ **==**\ *Version*.
 
@@ -46,5 +48,3 @@ When a model references a dependency package, select a frequently-used framework
       tensorflow-1.8.0-cp36-cp36m-manylinux1_x86_64.whl
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png

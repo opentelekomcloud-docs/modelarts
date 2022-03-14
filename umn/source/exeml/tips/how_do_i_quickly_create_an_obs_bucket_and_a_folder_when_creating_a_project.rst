@@ -4,8 +4,12 @@ How Do I Quickly Create an OBS Bucket and a Folder When Creating a Project?
 When creating a project, select a training data path. This section describes how to quickly create an OBS bucket and folder when you select the training data path.
 
 #. On the page for creating an ExeML project, click |image1| on the right of **Input Dataset Path**. The **Input Dataset Path** dialog box is displayed.
-#. Click **Create Bucket**. The **Create Bucket** page is displayed. For details about how to create a bucket, see **Creating a Bucket** in the *Object Storage Service Console Operation Guide*.\ **Figure 1** Creating an OBS bucket
-   |image2|
+
+#. Click **Create Bucket**. The **Create Bucket** page is displayed. For details about how to create a bucket, see **Creating a Bucket** in the *Object Storage Service Console Operation Guide*.
+
+   | **Figure 1** Creating an OBS bucket
+   | |image2|
+
 #. Select the bucket, and click **Create Folder**. In the dialog box that is displayed, enter the folder name and click **OK**.
 
    -  The name cannot contain the following special characters: \\/:\*?"<>\|

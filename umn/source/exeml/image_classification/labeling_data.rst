@@ -20,12 +20,12 @@ Synchronizing or Adding Images
 On the **ExeML** page, click the project name. The **Label Data** tab page is displayed. When creating a project, you can add images from a local PC or synchronize image data from OBS.
 
 -  **Add Image**: You can quickly add images on a local PC to ModelArts and synchronize the images to the OBS path specified during project creation. Click **Add Image**. In the dialog box that is displayed, click **Add Image** and add images. The total size of all images uploaded in one attempt cannot exceed 8 MB. The size of a single image cannot exceed 5 MB.
-
 -  **Synchronize Data Source**: You can upload images to the OBS directory specified during project creation and click **Synchronize Data Source** to quickly add the images in the OBS directory to ModelArts.
+-  **Delete Image**: You can delete images one by one, or tick **Select Current Page** to delete all images on the page.
 
--  **Delete Image**: You can delete images one by one, or tick **Select Current Page** to delete all images on the page.\ |image1|
+   .. note::
 
-   The deleted images cannot be recovered. Exercise caution when performing this operation.
+      The deleted images cannot be recovered. Exercise caution when performing this operation.
 
 Modifying Labeled Data
 ----------------------
@@ -38,7 +38,7 @@ After labeling data, you can modify the labeled data on the **Labeled** tab page
 
    -  Adding a label: In the **Label** text box, select an existing label, or enter a new label name and click **OK** to add the label to the selected image.
    -  Modifying a label: In the **File Labels** area, click the editing icon in the **Operation** column, enter the correct label name in the text box, and click the check mark icon to complete the modification.
-   -  Deleting a label: In the **Labels of Selected Image** area, click |image2| in the **Operation** column to delete the label.
+   -  Deleting a label: In the **Labels of Selected Image** area, click |image1| in the **Operation** column to delete the label.
 
 -  **Modifying based on labels**
 
@@ -49,6 +49,5 @@ After labeling data, you can modify the labeled data on the **Labeled** tab page
 
 
 
-.. |image1| image:: /_static/images/note_3.0-en-us.png
-.. |image2| image:: /_static/images/en-us_image_0000001110760936.png
+.. |image1| image:: /_static/images/en-us_image_0000001110760936.png
 

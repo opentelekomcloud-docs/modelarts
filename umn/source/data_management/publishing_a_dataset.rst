@@ -25,7 +25,7 @@ Publishing a Dataset
 
 #. In the displayed dialog box, set the parameters and click **OK**. 
 
-.. _modelarts_23_0018__en-us_topic_0170886812_table856411819131:
+.. _modelarts230018enustopic0170886812table856411819131:
 
    .. table:: **Table 1** Parameters for publishing a dataset
 
@@ -36,8 +36,9 @@ Publishing a Dataset
       +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Format                            | Only table datasets support version format setting. Available values are **CSV** and **CarbonData**.                                                                                                                                             |
       |                                   |                                                                                                                                                                                                                                                  |
-      |                                   | NOTE:                                                                                                                                                                                                                                            |
-      |                                   | If the exported CSV file contains any command starting with =, +, -, or @, ModelArts automatically adds the Tab setting and escapes the double quotation marks (") for security purposes.                                                        |
+      |                                   | .. note::                                                                                                                                                                                                                                        |
+      |                                   |                                                                                                                                                                                                                                                  |
+      |                                   |    If the exported CSV file contains any command starting with =, +, -, or @, ModelArts automatically adds the Tab setting and escapes the double quotation marks (") for security purposes.                                                     |
       +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Splitting                         | Only image classification, object detection, text classification, and sound classification datasets support data splitting.                                                                                                                      |
       |                                   |                                                                                                                                                                                                                                                  |

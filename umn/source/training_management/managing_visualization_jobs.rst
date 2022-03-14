@@ -56,10 +56,8 @@ Deleting a Visualization Job
 
 If your visualization job is no longer used, you can delete it to release resources. In the visualization job list, click **Delete** in the **Operation** column to delete the visualization job.
 
-|image1|
+.. note::
 
-A deleted visualized job cannot be recovered. You need to create a new visualization job if you want to use it. Exercise caution when performing this operation.
+   A deleted visualized job cannot be recovered. You need to create a new visualization job if you want to use it. Exercise caution when performing this operation.
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png

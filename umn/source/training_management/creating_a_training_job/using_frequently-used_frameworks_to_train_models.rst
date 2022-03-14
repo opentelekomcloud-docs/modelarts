@@ -25,7 +25,7 @@ ModelArts supports the following AI engines and versions.
 
 
 
-.. _modelarts_23_0238__en-us_topic_0216621183_table1106232165220:
+.. _modelarts230238enustopic0216621183table1106232165220:
 
 .. table:: **Table 1** AI engines supported by training jobs
 
@@ -66,9 +66,9 @@ Creating a Training Job
 
       Specify **Name** and **Description** according to actual requirements.
 
-   b. Set job parameters, including the data source, algorithm source, and more. For details, see `Table 2 <#modelarts_23_0238__en-us_topic_0216621183_table1819364517144>`__. 
+   b. Set job parameters, including the data source, algorithm source, and more. For details, see `Table 2 <#modelarts230238enustopic0216621183table1819364517144>`__. 
 
-.. _modelarts_23_0238__en-us_topic_0216621183_table1819364517144:
+.. _modelarts230238enustopic0216621183table1819364517144:
 
       .. table:: **Table 2** Job parameters
 
@@ -79,7 +79,7 @@ Creating a Training Job
          +-------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
          | Algorithm Source        | Frequently-used       | Select an AI engine and its version and specify **Code Directory** and **Boot File**. The framework selected for the AI engine must be the same as the one you select when compiling training code. For example, if TensorFlow is used in your training code, select TensorFlow when you create a training job.                                                                                                 |
          |                         |                       |                                                                                                                                                                                                                                                                                                                                                                                                                 |
-         |                         |                       | For details about the supported AI engines and versions, see `Frequently-used AI Frameworks for Training Management <#modelarts_23_0238__en-us_topic_0216621183_section12188201115920>`__.                                                                                                                                                                                                                      |
+         |                         |                       | For details about the supported AI engines and versions, see `Frequently-used AI Frameworks for Training Management <#modelarts230238enustopic0216621183section12188201115920>`__.                                                                                                                                                                                                                              |
          |                         |                       |                                                                                                                                                                                                                                                                                                                                                                                                                 |
          |                         |                       | If your model requires Python dependency packages, place the dependency packages and their configuration files in the code directory based on the requirements defined in ModelArts. For details, see `How Do I Create a Training Job When a Dependency Package Is Referenced in a Model? <../../faqs/training_jobs/how_do_i_create_a_training_job_when_a_dependency_package_is_referenced_in_a_model.html>`__. |
          +-------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -92,8 +92,9 @@ Creating a Training Job
          +-------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
          | Training Output Path    | -                     | Select a path for storing the training result.                                                                                                                                                                                                                                                                                                                                                                  |
          |                         |                       |                                                                                                                                                                                                                                                                                                                                                                                                                 |
-         |                         |                       | NOTE:                                                                                                                                                                                                                                                                                                                                                                                                           |
-         |                         |                       | To minimize errors, select an empty directory for **Training Output Path**. Do not select the directory used for storing the dataset for **Training Output Path**.                                                                                                                                                                                                                                              |
+         |                         |                       | .. note::                                                                                                                                                                                                                                                                                                                                                                                                       |
+         |                         |                       |                                                                                                                                                                                                                                                                                                                                                                                                                 |
+         |                         |                       |    To minimize errors, select an empty directory for **Training Output Path**. Do not select the directory used for storing the dataset for **Training Output Path**.                                                                                                                                                                                                                                           |
          +-------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
          | Running Parameter       | -                     | Set the command line parameters in the code based on the algorithm code logic. Make sure that the parameter names are the same as those in the code.                                                                                                                                                                                                                                                            |
          |                         |                       |                                                                                                                                                                                                                                                                                                                                                                                                                 |
@@ -104,7 +105,7 @@ Creating a Training Job
 
    c. Select resources for the training job. 
 
-.. _modelarts_23_0238__en-us_topic_0216621183_table1110144413718:
+.. _modelarts230238enustopic0216621183table1110144413718:
 
       .. table:: **Table 3** Resource parameters
 
@@ -117,8 +118,9 @@ Creating a Training Job
          |                                   |                                                                                                                                                                                                                                                                                          |
          |                                   | The GPU resource delivers better performance, and the CPU resource is more cost effective. If the selected algorithm has been defined to use the CPU or GPU, the resource type is automatically displayed on the page. Select the resource type as required.                             |
          |                                   |                                                                                                                                                                                                                                                                                          |
-         |                                   | NOTE:                                                                                                                                                                                                                                                                                    |
-         |                                   | If GPU resources are used in training code, you must select a GPU cluster when selecting a resource pool. Otherwise, the training job may fail.                                                                                                                                          |
+         |                                   | .. note::                                                                                                                                                                                                                                                                                |
+         |                                   |                                                                                                                                                                                                                                                                                          |
+         |                                   |    If GPU resources are used in training code, you must select a GPU cluster when selecting a resource pool. Otherwise, the training job may fail.                                                                                                                                       |
          +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
          | Specifications                    | Select a resource flavor based on the resource type.                                                                                                                                                                                                                                     |
          +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -129,7 +131,7 @@ Creating a Training Job
 
    d. Configure **Notification** and select whether to save the parameters of the training job. 
 
-.. _modelarts_23_0238__en-us_topic_0216621183_table1217141794320:
+.. _modelarts230238enustopic0216621183table1217141794320:
 
       .. table:: **Table 4** Parameters related to notification and parameter configuration saving
 
@@ -150,12 +152,12 @@ Creating a Training Job
 
    e. After setting the parameters, click **Next**.
 
-#. Confirm that the information is correct on the **Confirm** page that is displayed and click **Submit**. Generally, training jobs run for a period of time, which may be several minutes or tens of minutes depending on the amount of your selected data and resources.\ |image1|
+#. Confirm that the information is correct on the **Confirm** page that is displayed and click **Submit**. Generally, training jobs run for a period of time, which may be several minutes or tens of minutes depending on the amount of your selected data and resources.
 
-   After a training job is created, it is started immediately.
+   .. note::
+
+      After a training job is created, it is started immediately.
 
    You can switch to the training job list to view the basic information about training jobs. In the training job list, **Status** of the newly created training job is **Initializing**. If the status changes to **Successful**, the training job ends and the model generated is stored in the location specified by **Training Output Path**. If the status of a training job changes to **Running failed**, click the name of the training job and view the job logs. Troubleshoot the fault based on the logs.
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png

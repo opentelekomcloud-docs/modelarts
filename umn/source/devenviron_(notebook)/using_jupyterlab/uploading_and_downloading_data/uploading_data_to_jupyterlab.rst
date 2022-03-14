@@ -1,7 +1,7 @@
 Uploading Data to JupyterLab
 ============================
 
-On the **JupyterLab** page, click **Upload Files** to upload a file. For details, see `Uploading a File <../../../devenviron_(notebook)/using_jupyterlab/introduction_to_jupyterlab_and_common_operations.html#modelarts_23_0209__en-us_topic_0208766071_section172463910383>`__ in `Introduction to JupyterLab and Common Operations <../../../devenviron_(notebook)/using_jupyterlab/introduction_to_jupyterlab_and_common_operations.html>`__. If a message is displayed indicating that the size of the files to be uploaded exceeds the upper limit when uploading files to notebook instances or JupyterLab, you can upload the files to OBS and then download them to notebook instances.
+On the **JupyterLab** page, click **Upload Files** to upload a file. For details, see `Uploading a File <../../../devenviron_(notebook)/using_jupyterlab/introduction_to_jupyterlab_and_common_operations.html#modelarts230209enustopic0208766071section172463910383>`__ in `Introduction to JupyterLab and Common Operations <../../../devenviron_(notebook)/using_jupyterlab/introduction_to_jupyterlab_and_common_operations.html>`__. If a message is displayed indicating that the size of the files to be uploaded exceeds the upper limit when uploading files to notebook instances or JupyterLab, you can upload the files to OBS and then download them to notebook instances.
 
 Step 1: Uploading Files to OBS
 ------------------------------
@@ -15,7 +15,9 @@ A notebook instance can be mounted to OBS or EVS as the storage location. The op
 
 -  Downloading files to notebook instances with EVS attached
 
-   -  Use the following MoXing API to synchronize files from OBS to notebook instances.Read an OBS file. For example, if you read the **obs://bucket_name/obs_file.txt** file, the content is returned as strings.
+   -  Use the following MoXing API to synchronize files from OBS to notebook instances.
+
+      Read an OBS file. For example, if you read the **obs://bucket_name/obs_file.txt** file, the content is returned as strings.
 
       +-----------------------------------+---------------------------------------------------------------+
       | ::                                | ::                                                            |
@@ -32,9 +34,11 @@ A notebook instance can be mounted to OBS or EVS as the storage location. The op
       |    2                              |      file_str = f.read()                                           |
       +-----------------------------------+--------------------------------------------------------------------+
 
-   -  Use the OBS API in the ModelArts SDK to download data from OBS to notebook instances.\ |image1|
+   -  Use the OBS API in the ModelArts SDK to download data from OBS to notebook instances.
 
-      If the size of a single file exceeds 5 GB, the file cannot be uploaded in this mode. Use the MoXing API to upload large files.
+      .. note::
+
+         If the size of a single file exceeds 5 GB, the file cannot be uploaded in this mode. Use the MoXing API to upload large files.
 
       Sample code:
 
@@ -51,5 +55,3 @@ A notebook instance can be mounted to OBS or EVS as the storage location. The op
    Upload files to the OBS path specified during notebook instance creation and synchronize the files from OBS to the notebook instances using Sync OBS.
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png

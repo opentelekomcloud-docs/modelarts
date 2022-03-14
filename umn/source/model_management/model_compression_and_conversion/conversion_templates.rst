@@ -3,7 +3,7 @@ Conversion Templates
 
 ModelArts provides the following conversion templates based on different AI frameworks:
 
--  `TF-FrozenGraph-To-Ascend-C32 <#modelarts_23_0110__en-us_topic_0177612243_section47553019134>`__
+-  `TF-FrozenGraph-To-Ascend-C32 <#modelarts230110enustopic0177612243section47553019134>`__
 
 TF-FrozenGraph-To-Ascend-C32
 ----------------------------
@@ -12,7 +12,7 @@ Convert the model trained by the TensorFlow framework and saved in **frozen_grap
 
 
 
-.. _modelarts_23_0110__en-us_topic_0177612243_table397415449135:
+.. _modelarts230110enustopic0177612243table397415449135:
 
 .. table:: **Table 1** Advanced settings of the custom operator conversion template
 
@@ -39,7 +39,7 @@ Convert the model trained by the TensorFlow framework and saved in **saved_model
 
 
 
-.. _modelarts_23_0110__en-us_topic_0177612243_table17573123151414:
+.. _modelarts230110enustopic0177612243table17573123151414:
 
 .. table:: **Table 2** Advanced settings of the custom operator conversion template
 

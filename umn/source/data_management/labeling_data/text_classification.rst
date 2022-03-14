@@ -36,10 +36,15 @@ The dataset details page displays the labeled and unlabeled text files in the da
 Adding Labels
 -------------
 
--  Adding labels on the **Unlabeled** tab page: Click the plus sign (+) next to **Label Set**. On the **Add Label** page that is displayed, add a label name, select a label color, and click **OK**.\ **Figure 2** Adding a label (1)
-   |image2|
--  Adding labels on the **Labeled** tab page: Click the plus sign (+) next to **All Labels**. On the **Add Label** page that is displayed, add a label name, select a label color, and click **OK**.\ **Figure 3** Adding a label (2)
-   |image3|
+-  Adding labels on the **Unlabeled** tab page: Click the plus sign (+) next to **Label Set**. On the **Add Label** page that is displayed, add a label name, select a label color, and click **OK**.
+
+   | **Figure 2** Adding a label (1)
+   | |image2|
+
+-  Adding labels on the **Labeled** tab page: Click the plus sign (+) next to **All Labels**. On the **Add Label** page that is displayed, add a label name, select a label color, and click **OK**.
+
+   | **Figure 3** Adding a label (2)
+   | |image3|
 
 Viewing the Labeled Text
 ------------------------

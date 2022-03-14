@@ -16,7 +16,7 @@ Monitoring Metrics
 
 
 
-.. _modelarts_23_0187__en-us_topic_0198064686_table3293914123812:
+.. _modelarts230187enustopic0198064686table3293914123812:
 
 .. table:: **Table 1** ModelArts metrics
 
@@ -123,7 +123,7 @@ Dimensions
 
 
 
-.. _modelarts_23_0187__en-us_topic_0198064686_table130310173915:
+.. _modelarts230187enustopic0198064686table130310173915:
 
 .. table:: **Table 2** Dimension description
 

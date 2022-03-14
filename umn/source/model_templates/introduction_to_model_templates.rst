@@ -14,9 +14,11 @@ The following uses the template described in `TensorFlow-py36 General Template <
 
    ModelArts also provides three filter criteria: **Type**, **Engine**, and **Environment**, helping you quickly find the desired template. If the three filter criteria cannot meet your requirements, you can enter keywords to search for the target template.
 
-#. For **Model Folder**, select the **model** directory where the model files reside. For details, see `Template Description <../model_templates/index.html>`__.\ |image1|
+#. For **Model Folder**, select the **model** directory where the model files reside. For details, see `Template Description <../model_templates/index.html>`__.
 
-   If a training job is executed for multiple times, different version directories are generated, such as V001 and V002, and the generated models are stored in the **model** folder in different version directories. When selecting model files, specify the **model** folder in the corresponding version directory.
+   .. note::
+
+      If a training job is executed for multiple times, different version directories are generated, such as V001 and V002, and the generated models are stored in the **model** folder in different version directories. When selecting model files, specify the **model** folder in the corresponding version directory.
 
 #. If the default input and output mode of the selected template can be overwritten, you can select an input and output mode based on the model function or application scenario. **Input and Output Mode** is an abstract of the API in **config.json**. It describes the interface provided by the model for external inference. An input and output mode describes one or more APIs, and corresponds to a template.
 
@@ -40,5 +42,3 @@ Supported Input and Output Modes
 -  `Undefined Mode <../model_templates/input_and_output_modes/undefined_mode.html>`__
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png

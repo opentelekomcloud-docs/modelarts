@@ -27,9 +27,13 @@ Labeling Audio Files
 The dataset details page displays the labeled and unlabeled audio files. The **Unlabeled** tab page is displayed by default.
 
 #. In the audio file list on the **Unlabeled** tab page, click the target audio file. In the area on the right, the audio file is displayed. Click |image1| below the audio file to play the audio.
+
 #. In **Speech Content**, enter the speech content.
-#. After entering the content, click **OK** to complete the labeling. The audio file is automatically moved to the **Labeled** tab page.\ **Figure 1** Labeling an audio file
-   |image2|
+
+#. After entering the content, click **OK** to complete the labeling. The audio file is automatically moved to the **Labeled** tab page.
+
+   | **Figure 1** Labeling an audio file
+   | |image2|
 
 Viewing the Labeled Audio Files
 -------------------------------
@@ -65,9 +69,9 @@ You can quickly delete the audio files you want to discard.
 
 On the **Unlabeled** or **Labeled** tab page, select the audio files to be deleted, and then click **Delete File** in the upper left corner. In the displayed dialog box, select or deselect **Delete source files** as required. After confirmation, click **OK** to delete the audio files.
 
-|image3|
+.. note::
 
-If you select **Delete source files**, audio files stored in the corresponding OBS directory will be deleted when you delete the selected audio files. Deleting source files may affect other dataset versions or datasets using those files. As a result, the page display, training, or inference is abnormal. Deleted data cannot be recovered. Exercise caution when performing this operation.
+   If you select **Delete source files**, audio files stored in the corresponding OBS directory will be deleted when you delete the selected audio files. Deleting source files may affect other dataset versions or datasets using those files. As a result, the page display, training, or inference is abnormal. Deleted data cannot be recovered. Exercise caution when performing this operation.
 
 
 
@@ -75,4 +79,3 @@ If you select **Delete source files**, audio files stored in the corresponding O
 
 .. |image2| image:: /_static/images/en-us_image_0000001110920914.png
 
-.. |image3| image:: /_static/images/note_3.0-en-us.png

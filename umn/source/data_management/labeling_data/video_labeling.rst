@@ -30,10 +30,14 @@ On the dataset details page, both unlabeled and labeled video files in the datas
 
 #. Play the video. When the video is played to the time point to be labeled, click the pause button in the progress bar to pause the video to a specific image.
 
-#. In the left pane, select a bounding box. By default, a rectangular box is selected. Drag the mouse to select an object in the video image, enter a new label name in the displayed **Add Label** text box, select a label color, and click **Add** to label the object. Alternatively, select an existing label from the drop-down list and click **Add** to label the object. Label all objects in the image. Multiple labels can be added to an image.The supported bounding boxes are the same as those supported by Object Detection. For details, see `Table 1 <../../data_management/labeling_data/object_detection.html#modelarts_23_0012__en-us_topic_0170889732_table165201739119>`__ in `Object Detection <../../data_management/labeling_data/object_detection.html>`__.\ **Figure 1** Labeling video files
-   |image1|
+#. In the left pane, select a bounding box. By default, a rectangular box is selected. Drag the mouse to select an object in the video image, enter a new label name in the displayed **Add Label** text box, select a label color, and click **Add** to label the object. Alternatively, select an existing label from the drop-down list and click **Add** to label the object. Label all objects in the image. Multiple labels can be added to an image.
 
-#. After the previous image is labeled, click the play button on the progress bar to resume the playback. Then, repeat `3 <#modelarts_23_0282__en-us_topic_0257844727_li993163014399>`__ to complete labeling on the entire video.
+   The supported bounding boxes are the same as those supported by Object Detection. For details, see `Table 1 <../../data_management/labeling_data/object_detection.html#modelarts230012enustopic0170889732table165201739119>`__ in `Object Detection <../../data_management/labeling_data/object_detection.html>`__.
+
+   | **Figure 1** Labeling video files
+   | |image1|
+
+#. After the previous image is labeled, click the play button on the progress bar to resume the playback. Then, repeat `3 <#modelarts230282enustopic0257844727li993163014399>`__ to complete labeling on the entire video.
 
    The labeled time points of the current video are displayed on the right of the page.
 
@@ -66,9 +70,9 @@ On the **All**, **Unlabeled**, or **Labeled** tab page, select the video files t
 
 If a tick is displayed in the upper left corner of a video file, the video file is selected. If no video file is selected on the page, the **Delete File** button is unavailable.
 
-|image5|
+.. note::
 
-If you select **Delete source files**, video files stored in the corresponding OBS directory will be deleted when you delete the selected video files. Deleting source files may affect other dataset versions or datasets using those files. As a result, the page display, training, or inference is abnormal. Deleted data cannot be recovered. Exercise caution when performing this operation.
+   If you select **Delete source files**, video files stored in the corresponding OBS directory will be deleted when you delete the selected video files. Deleting source files may affect other dataset versions or datasets using those files. As a result, the page display, training, or inference is abnormal. Deleted data cannot be recovered. Exercise caution when performing this operation.
 
 
 
@@ -80,4 +84,3 @@ If you select **Delete source files**, video files stored in the corresponding O
 
 .. |image4| image:: /_static/images/en-us_image_0000001156920983.png
 
-.. |image5| image:: /_static/images/note_3.0-en-us.png

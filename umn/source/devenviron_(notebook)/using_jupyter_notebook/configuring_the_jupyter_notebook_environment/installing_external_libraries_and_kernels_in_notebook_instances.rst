@@ -36,17 +36,15 @@ Assume that you want to install Shapely from the terminal of a notebook instance
       source /home/ma-user/anaconda3/bin/activate TensorFlow-1.13.1
       pip install shapely
 
-|image1|
+.. note::
 
-When you create a ModelArts training job, a new independent running environment is started, which is not associated with the packages installed in the Notebook environment. Therefore, add **os.system('pip install xxx')** to the startup code before importing the installation package.
+   When you create a ModelArts training job, a new independent running environment is started, which is not associated with the packages installed in the Notebook environment. Therefore, add **os.system('pip install xxx')** to the startup code before importing the installation package.
 
-For example, if you need to use the Shapely dependency in the training job, add the following code to the startup code:
+   For example, if you need to use the Shapely dependency in the training job, add the following code to the startup code:
 
-.. code-block::
+   .. code-block::
 
-   os.system('pip install Shapely')
-   import Shapely
+      os.system('pip install Shapely')
+      import Shapely
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png

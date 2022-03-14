@@ -8,10 +8,8 @@ If a service is no longer in use, you can delete it to release resources.
    a. For a real-time service, choose **More > Delete** in the **Operation** column to delete it.
    b. For a batch service, click **Delete** in the **Operation** column to delete it.
 
-   |image1|
+   .. note::
 
-   A deleted service cannot be recovered. Exercise caution when performing this operation.
+      A deleted service cannot be recovered. Exercise caution when performing this operation.
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png

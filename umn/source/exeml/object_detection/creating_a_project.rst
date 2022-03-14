@@ -7,10 +7,12 @@ Procedure
 ---------
 
 #. Log in to the ModelArts management console. In the left navigation pane, choose **ExeML**. The **ExeML** page is displayed.
-#. Click **Create Project** in the box of your desired project. The page for creating an ExeML project is displayed.
-#. On the displayed page, set the parameters by referring to `Table 1 <#modelarts_21_0010__en-us_topic_0284258839_en-us_topic_0169446159_en-us_topic_0169446153_table14961618163816>`__. 
 
-.. _modelarts_21_0010__en-us_topic_0284258839_en-us_topic_0169446159_en-us_topic_0169446153_table14961618163816:
+#. Click **Create Project** in the box of your desired project. The page for creating an ExeML project is displayed.
+
+#. On the displayed page, set the parameters by referring to `Table 1 <#modelarts210010enustopic0284258839enustopic0169446159enustopic0169446153table14961618163816>`__. 
+
+.. _modelarts210010enustopic0284258839enustopic0169446159enustopic0169446153table14961618163816:
 
    .. table:: **Table 1** Parameters
 
@@ -38,8 +40,9 @@ Procedure
       +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Output Dataset Path               | Select the OBS path for storing the output dataset.                                                                                                                                                                                                                                          |
       |                                   |                                                                                                                                                                                                                                                                                              |
-      |                                   | NOTE:                                                                                                                                                                                                                                                                                        |
-      |                                   | The output dataset path cannot be the same as the input dataset path or cannot be the subdirectory of the input dataset path. It is a good practice to select an empty directory in **Output Dataset Path**.                                                                                 |
+      |                                   | .. note::                                                                                                                                                                                                                                                                                    |
+      |                                   |                                                                                                                                                                                                                                                                                              |
+      |                                   |    The output dataset path cannot be the same as the input dataset path or cannot be the subdirectory of the input dataset path. It is a good practice to select an empty directory in **Output Dataset Path**.                                                                              |
       +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Label Set                         | -  **Label Name**: Enter a label name. The label name can contain only Chinese characters, letters, digits, underscores (_), and hyphens (-), which contains 1 to 32 characters.                                                                                                             |
       |                                   |                                                                                                                                                                                                                                                                                              |

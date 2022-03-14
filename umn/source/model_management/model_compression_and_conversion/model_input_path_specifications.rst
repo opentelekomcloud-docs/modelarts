@@ -6,7 +6,9 @@ Ascend Chip
 
 The requirements for converting the models run on the Ascend chip are as follows:
 
--  For TensorFlow-based models (in **frozen_graph** or **saved_model** format), the input path must comply with the following specifications during model conversion:**frozen_graph** format
+-  For TensorFlow-based models (in **frozen_graph** or **saved_model** format), the input path must comply with the following specifications during model conversion:
+
+   **frozen_graph** format
 
    .. code-block::
 

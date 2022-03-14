@@ -18,8 +18,10 @@ Log in to the ModelArts management console and create a training job according t
 
    Select **Custom**.
 
-   -  **Image Path**: SWR URL after the image is uploaded to SWR\ **Figure 1** SWR image address
-      |image1|
+   -  **Image Path**: SWR URL after the image is uploaded to SWR
+
+      | **Figure 1** SWR image address
+      | |image1|
 
    -  **Code Directory**: OBS path for storing the training code file.
 
@@ -33,23 +35,23 @@ Log in to the ModelArts management console and create a training job according t
 
       For example, if the OBS path of the training code file is **obs://obs-bucket/new/train.py** and the code directory is **obs://obs-bucket/new/**, the local path of the container is **/home/work/user-job-dir/new/**. The local training code path of the container is **/home/work/user-job-dir/new/train.py**. Then, you can set the boot command to the following: **bash /home/work/run_train.sh python /home/work/user-job-dir/new/train.py {python_file_parameter}**
 
-      |image2|
+      .. note::
 
-      If you create a training job using a custom image, ModelArts allows you to customize the boot command. The following are two basic formats for the boot command:
+         If you create a training job using a custom image, ModelArts allows you to customize the boot command. The following are two basic formats for the boot command:
 
-      **bash /home/work/run_train.sh {UserCommand}**
+         **bash /home/work/run_train.sh {UserCommand}**
 
-      **bash /home/work/run_train.sh [python/bash/..] {file_location} {file_parameter}**
+         **bash /home/work/run_train.sh [python/bash/..] {file_location} {file_parameter}**
 
-      **run_train.sh** is the training boot script. When creating a custom image, you can implement the training boot script or place the training code in the custom image environment in advance to customize the boot command (in the basic formats or any other formats).
+         **run_train.sh** is the training boot script. When creating a custom image, you can implement the training boot script or place the training code in the custom image environment in advance to customize the boot command (in the basic formats or any other formats).
 
 -  **Environment Variable**
 
-   After the container is started, besides the environment variables added by configuring **Environment Variable** during training job creation, `Table 1 <#modelarts_23_0087__en-us_topic_0171858299_table341782301619>`__ lists other environment variables to be loaded. You can determine whether to use these environment variables in your own Python training script, or run the **{python_file_parameter}** command to pass the required parameters.
+   After the container is started, besides the environment variables added by configuring **Environment Variable** during training job creation, `Table 1 <#modelarts230087enustopic0171858299table341782301619>`__ lists other environment variables to be loaded. You can determine whether to use these environment variables in your own Python training script, or run the **{python_file_parameter}** command to pass the required parameters.
 
    
 
-.. _modelarts_23_0087__en-us_topic_0171858299_table341782301619:
+.. _modelarts230087enustopic0171858299table341782301619:
 
    .. table:: **Table 1** Optional environment variables
 
@@ -70,8 +72,9 @@ Log in to the ModelArts management console and create a training job according t
       |                                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
       |                                      | The format of the **HOSTS** environment variable is **hostname:port**. A container can view the **HOSTS** of all containers in the same job, such as **BATCH_CUSTOM0_HOSTS** and **BATCH_CUSTOM1_HOSTS**, varying according to the indexes. If the resource pool is a dedicated resource pool with the **8GPU** specifications, the network type of the container is a host network, and the host IB network can be used to accelerate communications. If other resource pools are used, the network is a container network. |
       |                                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-      |                                      | NOTE:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-      |                                      | When the host IB network is used for communication acceleration, the **ip_mapper.py** tool is required to obtain the IP address of the **ib0** NIC for using the IPoIB feature.                                                                                                                                                                                                                                                                                                                                              |
+      |                                      | .. note::                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+      |                                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+      |                                      |    When the host IB network is used for communication acceleration, the **ip_mapper.py** tool is required to obtain the IP address of the **ib0** NIC for using the IPoIB feature.                                                                                                                                                                                                                                                                                                                                           |
       +--------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 -  **Resource Pool**
@@ -85,13 +88,11 @@ After a custom image is uploaded to SWR, ModelArts is authorized to obtain and r
 
 After the image is checked, the backend starts the custom image container to run the training job. You can view the training status based on the log.
 
-|image3|
+.. note::
 
-After an image is reviewed, the image does not need to be reviewed again when being used to create training jobs again.
+   After an image is reviewed, the image does not need to be reviewed again when being used to create training jobs again.
 
 
 
 .. |image1| image:: /_static/images/en-us_image_0000001156920769.png
 
-.. |image2| image:: /_static/images/note_3.0-en-us.png
-.. |image3| image:: /_static/images/note_3.0-en-us.png

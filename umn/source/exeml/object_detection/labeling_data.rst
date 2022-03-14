@@ -11,7 +11,10 @@ Labeling Images
 ---------------
 
 #. On the **Label Data** tab page, click the **Unlabeled** tab. All unlabeled images are displayed. Click an image to go to the labeling page.
-#. Left-click and drag the mouse to select the area where the target object is located. In the dialog box that is displayed, select the label color, enter the label name, and press **Enter**. After the labeling is complete, the status of the images changes to **Labeled**.More descriptions of data labeling are as follows:
+
+#. Left-click and drag the mouse to select the area where the target object is located. In the dialog box that is displayed, select the label color, enter the label name, and press **Enter**. After the labeling is complete, the status of the images changes to **Labeled**.
+
+   More descriptions of data labeling are as follows:
 
    -  You can click the arrow keys in the upper and lower parts of the image, or press the left and right arrow keys on the keyboard to select another image. Then, repeat the preceding operations to label the image. If an image contains more than one object, you can label all the objects.
    -  You can add multiple labels with different colors for an object detection ExeML project for easy identification. After selecting an object, select a new color and enter a new label name in the dialog box that is displayed to add a new label.
@@ -26,12 +29,12 @@ Synchronizing or Adding Images
 On the **ExeML** page, click the project name. The **Label Data** tab page is displayed. When creating a project, you can add images from a local PC or synchronize image data from OBS.
 
 -  **Add**: You can quickly add images on a local PC to ModelArts and synchronize the images to the OBS path specified during project creation. Click **Add**. In the dialog box that is displayed, click **Add Image** and add images. The total size of all images uploaded in one attempt cannot exceed 8 MB. The size of a single image cannot exceed 5 MB.
-
 -  **Synchronize Data Source**: You can upload images to the OBS directory specified during project creation and click **Synchronize Data Source** to quickly add the images in the OBS directory to ModelArts.
+-  **Delete**: You can delete images one by one, or select **Select Images on Current Page** to delete all images on the page.
 
--  **Delete**: You can delete images one by one, or select **Select Images on Current Page** to delete all images on the page.\ |image1|
+   .. note::
 
-   The deleted images cannot be recovered. Exercise caution when performing this operation.
+      The deleted images cannot be recovered. Exercise caution when performing this operation.
 
 Modifying Labeled Data
 ----------------------
@@ -56,5 +59,3 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
    -  Deleting a label: Click the deletion icon in the **Operation** column. In the displayed dialog box, select the object to be deleted as prompted and click **OK**.
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png

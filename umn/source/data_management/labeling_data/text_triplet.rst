@@ -31,15 +31,21 @@ Labeling Content
 
 The dataset details page displays the labeled and unlabeled text objects in the dataset. The **Unlabeled** tab page is displayed by default.
 
-#. On the **Unlabeled** tab page, the objects to be labeled are listed in the left pane. In the list, click a text object, select the corresponding text content on the right pane, and select an entity name from the displayed entity list to label the content.\ **Figure 1** Labeling an entity
-   |image1|
-#. After labeling multiple entities, click the source entity and target entity in sequence and select a relationship type from the displayed relationship list to label the relationship.\ **Figure 2** Labeling a relationship
-   |image2|
+#. On the **Unlabeled** tab page, the objects to be labeled are listed in the left pane. In the list, click a text object, select the corresponding text content on the right pane, and select an entity name from the displayed entity list to label the content.
+
+   | **Figure 1** Labeling an entity
+   | |image1|
+
+#. After labeling multiple entities, click the source entity and target entity in sequence and select a relationship type from the displayed relationship list to label the relationship.
+
+   | **Figure 2** Labeling a relationship
+   | |image2|
+
 #. After all objects are labeled, click **Save Current Page** at the bottom of the page.
 
-|image3|
+.. note::
 
-You cannot modify the labels of a dataset in the text triplet type on the labeling page. Instead, click **Edit** to enter the **Modify Dataset** page and modify the **Entity Label** and **Relationship Label**.
+   You cannot modify the labels of a dataset in the text triplet type on the labeling page. Instead, click **Edit** to enter the **Modify Dataset** page and modify the **Entity Label** and **Relationship Label**.
 
 Modifying Labeled Data
 ----------------------
@@ -79,4 +85,3 @@ The background of the selected text is blue. If no text is selected on the page,
 
 .. |image2| image:: /_static/images/en-us_image_0000001110920874.png
 
-.. |image3| image:: /_static/images/note_3.0-en-us.png

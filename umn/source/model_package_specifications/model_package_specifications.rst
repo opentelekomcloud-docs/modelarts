@@ -5,10 +5,12 @@ When you import models in **Model Management**, if the meta model is imported fr
 
 -  The model package must contain the **model** directory. The **model** directory stores the model file, model configuration file, and model inference code.
 -  The model configuration file must exist and its name is fixed to **config.json**. There exists only one model configuration file. For details about how to compile the model configuration file, see `Specifications for Compiling the Model Configuration File <../model_package_specifications/specifications_for_compiling_the_model_configuration_file.html>`__.
--  The model inference code file is optional. If this file is required, the file name is fixed to **customize_service.py**. There must be one and only one such file. For details about how to compile the model inference code, see `Specifications for Compiling Model Inference Code <../model_package_specifications/specifications_for_compiling_model_inference_code.html>`__.\ |image1|
+-  The model inference code file is optional. If this file is required, the file name is fixed to **customize_service.py**. There must be one and only one such file. For details about how to compile the model inference code, see `Specifications for Compiling Model Inference Code <../model_package_specifications/specifications_for_compiling_model_inference_code.html>`__.
 
-   -  The **.py** file on which **customize_service.py** depends can be directly stored in the **model** directory. Use the Python import mode to import the custom package.
-   -  The other files on which **customize_service.py** depends can be stored in the **model** directory. You must use absolute paths to access these files. For more details, see `Obtaining an Absolute Path <../model_package_specifications/specifications_for_compiling_model_inference_code.html#modelarts_23_0093__en-us_topic_0172466150_li135956421288>`__.
+   .. note::
+
+      -  The **.py** file on which **customize_service.py** depends can be directly stored in the **model** directory. Use the Python import mode to import the custom package.
+      -  The other files on which **customize_service.py** depends can be stored in the **model** directory. You must use absolute paths to access these files. For more details, see `Obtaining an Absolute Path <../model_package_specifications/specifications_for_compiling_model_inference_code.html#modelarts230093enustopic0172466150li135956421288>`__.
 
 ModelArts also provides custom script examples of common AI engines. For details, see `Examples of Custom Scripts <../examples_of_custom_scripts/tensorflow.html>`__.
 
@@ -98,7 +100,9 @@ Model Package Example
       |   │  ├──config.json (Mandatory) Model configuration file. The file name is fixed to config.json. Only one model configuration file is supported.
       |   │  ├──customize_service.py (Optional) Model inference code. The file name is fixed to customize_service.py. Only one model inference code file exists. The files on which customize_service.py depends can be directly stored in the model directory.
 
--  Structure of the Caffe-based model packageWhen publishing the model, you only need to specify the **resnet** directory.
+-  Structure of the Caffe-based model package
+
+   When publishing the model, you only need to specify the **resnet** directory.
 
    .. code-block::
 
@@ -111,7 +115,9 @@ Model Package Example
       |   |   |── config.json (Mandatory) Model configuration file. The file name is fixed to config.json. Only one model configuration file is supported.
       |   |   |── customize_service.py  (Optional) Model inference code. The file name is fixed to customize_service.py. Only one model inference code file exists. The files on which customize_service.py depends can be directly stored in the model directory. 
 
--  Structure of the XGBoost-based model packageWhen publishing the model, you only need to specify the **resnet** directory.
+-  Structure of the XGBoost-based model package
+
+   When publishing the model, you only need to specify the **resnet** directory.
 
    .. code-block::
 
@@ -123,7 +129,9 @@ Model Package Example
       |   |   |── config.json (Mandatory) Model configuration file. The file name is fixed to config.json. Only one model configuration file is supported.
       |   |   |── customize_service.py  (Optional) Model inference code. The file name is fixed to customize_service.py. Only one model inference code file exists. The files on which customize_service.py depends can be directly stored in the model directory. 
 
--  Structure of the Scikit_Learn-based model packageWhen publishing the model, you only need to specify the **resnet** directory.
+-  Structure of the Scikit_Learn-based model package
+
+   When publishing the model, you only need to specify the **resnet** directory.
 
    .. code-block::
 
@@ -136,5 +144,3 @@ Model Package Example
       |   |   |── customize_service.py  (Optional) Model inference code. The file name is fixed to customize_service.py. Only one model inference code file exists. The files on which customize_service.py depends can be directly stored in the model directory. 
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png

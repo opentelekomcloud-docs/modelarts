@@ -6,12 +6,12 @@ ModelArts uses OBS to store data and model backups and snapshots, achieving secu
 Procedure
 ---------
 
-#. Log in to OBS Console and create an OBS bucket. For details, see "Creating a Bucket". For example, create an OBS bucket named **c-flowers**.\ |image1|
+#. Log in to OBS Console and create an OBS bucket. For details, see "Creating a Bucket". For example, create an OBS bucket named **c-flowers**.
 
-   The created OBS bucket and ModelArts are in the same region.
+   .. note::
+
+      The created OBS bucket and ModelArts are in the same region.
 
 #. Create a folder for storing data. For details, see "Creating a Folder". For example, create a folder named **flowers** in the created **c-flowers** OBS bucket.
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png

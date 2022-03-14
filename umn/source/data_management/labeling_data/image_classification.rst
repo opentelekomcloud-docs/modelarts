@@ -75,7 +75,9 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
 
    Modifying a label: In the **File Labels** area, click the edit icon in the **Operation** column, enter the correct label name in the text box, and click the check mark to complete the modification.
 
-   | Deleting a label: In the **File Labels** area, click the delete icon in the **Operation** column to delete the label. This operation deletes only the labels added to the selected image.\ **Figure 1** Modifying a label
+   Deleting a label: In the **File Labels** area, click the delete icon in the **Operation** column to delete the label. This operation deletes only the labels added to the selected image.
+
+   | **Figure 1** Modifying a label
    | |image1|
 
 -  **Modifying based on labels**
@@ -114,9 +116,9 @@ On the **All**, **Unlabeled**, or **Labeled** tab page, select the images to be 
 
 If a tick is displayed in the upper left corner of an image, the image is selected. If no image is selected on the page, the **Delete** button is unavailable.
 
-|image3|
+.. note::
 
-If you select **Delete source files**, images stored in the corresponding OBS directory will be deleted when you delete the selected images. Deleting source files may affect other dataset versions or datasets using those files. As a result, the page display, training, or inference is abnormal. Deleted data cannot be recovered. Exercise caution when performing this operation.
+   If you select **Delete source files**, images stored in the corresponding OBS directory will be deleted when you delete the selected images. Deleting source files may affect other dataset versions or datasets using those files. As a result, the page display, training, or inference is abnormal. Deleted data cannot be recovered. Exercise caution when performing this operation.
 
 
 
@@ -124,4 +126,3 @@ If you select **Delete source files**, images stored in the corresponding OBS di
 
 .. |image2| image:: /_static/images/en-us_image_0000001157080983.png
 
-.. |image3| image:: /_static/images/note_3.0-en-us.png

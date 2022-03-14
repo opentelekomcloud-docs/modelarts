@@ -42,7 +42,7 @@ Specifications for Custom Images Used for Model Management
 
    -  Status code 
 
-.. _modelarts_23_0219__en-us_topic_0212179953_table19701134515351:
+.. _modelarts230219enustopic0212179953table19701134515351:
 
       .. table:: **Table 1** Status code
 

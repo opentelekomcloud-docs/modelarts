@@ -23,7 +23,7 @@ Model Management Functions
 
 
 
-.. _modelarts_23_0052__en-us_topic_0171858287_table129381852171817:
+.. _modelarts230052enustopic0171858287table129381852171817:
 
 .. table:: **Table 1** Model management functions
 

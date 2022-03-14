@@ -3,9 +3,9 @@ How Do I Perform Incremental Training in an ExeML Project?
 
 Each round of training generates a training version in an ExeML project. If a training result is unsatisfactory (for example, if the precision is not good enough), you can add high-quality data or add or delete labels, and perform training again.
 
-|image1|
+.. note::
 
--  For better training results, use high-quality data for incremental training to improve data labeling performance.
+   -  For better training results, use high-quality data for incremental training to improve data labeling performance.
 
 Incremental Training Procedure
 ------------------------------
@@ -23,5 +23,3 @@ Incremental Training Procedure
    After the settings are complete, click **Yes** to start incremental training. The system automatically switches to the **Train Model** page. After the training is complete, you can view the training details, such as training precision, evaluation result, and training parameters.
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png

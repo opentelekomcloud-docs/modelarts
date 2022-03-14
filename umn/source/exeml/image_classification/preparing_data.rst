@@ -30,7 +30,9 @@ Requirements for Files Uploaded to OBS
 -  If you need to upload images to be labeled in advance, create an empty folder and save the images in the folder. An example of the image directory structure is **/bucketName/data-cat/cat.jpg**.
 -  If you want to upload labeled images to the OBS bucket, upload them according to the following specifications:
 
-   -  The dataset for image classification requires storing labeled objects and their label files (in one-to-one relationship with the labeled objects) in the same directory. For example, if the name of the labeled object is **10.jpg**, the name of the label file must be **10.txt**.Example of data files:
+   -  The dataset for image classification requires storing labeled objects and their label files (in one-to-one relationship with the labeled objects) in the same directory. For example, if the name of the labeled object is **10.jpg**, the name of the label file must be **10.txt**.
+
+      Example of data files:
 
       .. code-block::
 

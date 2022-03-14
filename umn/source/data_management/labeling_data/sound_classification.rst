@@ -41,11 +41,11 @@ The dataset details page displays the labeled and unlabeled audio files. The **U
 
    b. The selected audio files are automatically moved to the **Labeled** tab page. On the **Unlabeled** tab page, the labeling information is updated along with the labeling process, including the added label names and the number of audio files corresponding to each label.
 
-   |image2|
+   .. note::
 
-   **Shortcut key description**: After specifying a shortcut key for a label, you can select an audio file and press the shortcut key to add a label for the audio file. Example: Specify **1** as the shortcut key for the **aa** label. Select one or more files and press **1** during data labeling. A message is displayed, asking you whether to label the files with **aa**. Click **OK**.
+      **Shortcut key description**: After specifying a shortcut key for a label, you can select an audio file and press the shortcut key to add a label for the audio file. Example: Specify **1** as the shortcut key for the **aa** label. Select one or more files and press **1** during data labeling. A message is displayed, asking you whether to label the files with **aa**. Click **OK**.
 
-   Each label has a shortcut key. A shortcut key cannot be specified for different labels. Shortcut keys can greatly improve the labeling efficiency.
+      Each label has a shortcut key. A shortcut key cannot be specified for different labels. Shortcut keys can greatly improve the labeling efficiency.
 
 Viewing the Labeled Audio Files
 -------------------------------
@@ -69,7 +69,7 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
    On the dataset details page, click the **Labeled** tab. The information about all labels is displayed on the right.
 
    | **Figure 1** Information about all labels
-   | |image3|
+   | |image2|
 
    -  Modifying a label: Click the editing icon in the **Operation** column. In the dialog box that is displayed, enter the new label name and click **OK**. After the modification, the new label applies to the audio files that contain the original label.
    -  Deleting a label: Click the deletion icon in the **Operation** column. In the displayed dialog box, select the object to be deleted as prompted and click **OK**.
@@ -98,15 +98,13 @@ On the **Unlabeled** or **Labeled** tab page, select the audio files to be delet
 
 If a tick is displayed in the upper right corner of an audio file, the audio file is selected. If no audio file is selected on the page, the **Delete File** button is unavailable.
 
-|image4|
+.. note::
 
-If you select **Delete source files**, audio files stored in the corresponding OBS directory will be deleted when you delete the selected audio files. Deleting source files may affect other dataset versions or datasets using those files. As a result, the page display, training, or inference is abnormal. Deleted data cannot be recovered. Exercise caution when performing this operation.
+   If you select **Delete source files**, audio files stored in the corresponding OBS directory will be deleted when you delete the selected audio files. Deleting source files may affect other dataset versions or datasets using those files. As a result, the page display, training, or inference is abnormal. Deleted data cannot be recovered. Exercise caution when performing this operation.
 
 
 
 .. |image1| image:: /_static/images/en-us_image_0000001157080893.png
 
-.. |image2| image:: /_static/images/note_3.0-en-us.png
-.. |image3| image:: /_static/images/en-us_image_0000001110761044.png
+.. |image2| image:: /_static/images/en-us_image_0000001110761044.png
 
-.. |image4| image:: /_static/images/note_3.0-en-us.png

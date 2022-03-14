@@ -4,23 +4,23 @@ Built-in Predictive Analytics Mode
 Input
 -----
 
-This is a built-in input and output mode for predictive analytics. The models using this mode are identified as predictive analytics models. The prediction request path is **/**, the request protocol is **HTTP**, the request method is **POST**, and **Content-Type** is **application/json**. The request body is in JSON format. For details about the JSON fields, see `Table 1 <#modelarts_23_0102__en-us_topic_0172873544_table101531747125712>`__. Before selecting this mode, ensure that your model can process the input data in **JSON Schema** format.
+This is a built-in input and output mode for predictive analytics. The models using this mode are identified as predictive analytics models. The prediction request path is **/**, the request protocol is **HTTP**, the request method is **POST**, and **Content-Type** is **application/json**. The request body is in JSON format. For details about the JSON fields, see `Table 1 <#modelarts230102enustopic0172873544table101531747125712>`__. Before selecting this mode, ensure that your model can process the input data in **JSON Schema** format.
 
 
 
-.. _modelarts_23_0102__en-us_topic_0172873544_table101531747125712:
+.. _modelarts230102enustopic0172873544table101531747125712:
 
 .. table:: **Table 1** JSON field description
 
-   +-------+----------------+--------------------------------------------------------------------------------------------------------------+
-   | Field | Type           | Description                                                                                                  |
-   +=======+================+==============================================================================================================+
-   | data  | Data structure | Inference data. For details, see `Table 2 <#modelarts_23_0102__en-us_topic_0172873544_table159187574436>`__. |
-   +-------+----------------+--------------------------------------------------------------------------------------------------------------+
+   +-------+----------------+------------------------------------------------------------------------------------------------------+
+   | Field | Type           | Description                                                                                          |
+   +=======+================+======================================================================================================+
+   | data  | Data structure | Inference data. For details, see `Table 2 <#modelarts230102enustopic0172873544table159187574436>`__. |
+   +-------+----------------+------------------------------------------------------------------------------------------------------+
 
 
 
-.. _modelarts_23_0102__en-us_topic_0172873544_table159187574436:
+.. _modelarts230102enustopic0172873544table159187574436:
 
 .. table:: **Table 2** **Data** description
 
@@ -57,23 +57,23 @@ The **JSON Schema** of a prediction request is as follows:
 Output
 ------
 
-The inference result is returned in JSON format. For details about the JSON fields, see `Table 3 <#modelarts_23_0102__en-us_topic_0172873544_table49621346461>`__.
+The inference result is returned in JSON format. For details about the JSON fields, see `Table 3 <#modelarts230102enustopic0172873544table49621346461>`__.
 
 
 
-.. _modelarts_23_0102__en-us_topic_0172873544_table49621346461:
+.. _modelarts230102enustopic0172873544table49621346461:
 
 .. table:: **Table 3** JSON field description
 
-   +-------+----------------+--------------------------------------------------------------------------------------------------------------+
-   | Field | Type           | Description                                                                                                  |
-   +=======+================+==============================================================================================================+
-   | data  | Data structure | Inference data. For details, see `Table 4 <#modelarts_23_0102__en-us_topic_0172873544_table196311344469>`__. |
-   +-------+----------------+--------------------------------------------------------------------------------------------------------------+
+   +-------+----------------+------------------------------------------------------------------------------------------------------+
+   | Field | Type           | Description                                                                                          |
+   +=======+================+======================================================================================================+
+   | data  | Data structure | Inference data. For details, see `Table 4 <#modelarts230102enustopic0172873544table196311344469>`__. |
+   +-------+----------------+------------------------------------------------------------------------------------------------------+
 
 
 
-.. _modelarts_23_0102__en-us_topic_0172873544_table196311344469:
+.. _modelarts230102enustopic0172873544table196311344469:
 
 .. table:: **Table 4** **Data** description
 

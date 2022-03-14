@@ -6,11 +6,11 @@ Supported AI frameworks and versions of ModelArts vary slightly based on the dev
 Development Environment
 -----------------------
 
-Notebook instances in the development environment support different AI engines and versions based on specific work environments (that is, different Python versions). After creating a notebook instance in the corresponding work environment, create a file based on the corresponding version in `Table 1 <#modelarts_05_0128__en-us_topic_0246510446_table4362414101>`__. ModelArts notebook instances support multiple engines. That is, a notebook instance can use all supported engines. Different engines can be switched quickly and conveniently.
+Notebook instances in the development environment support different AI engines and versions based on specific work environments (that is, different Python versions). After creating a notebook instance in the corresponding work environment, create a file based on the corresponding version in `Table 1 <#modelarts050128enustopic0246510446table4362414101>`__. ModelArts notebook instances support multiple engines. That is, a notebook instance can use all supported engines. Different engines can be switched quickly and conveniently.
 
 
 
-.. _modelarts_05_0128__en-us_topic_0246510446_table4362414101:
+.. _modelarts050128enustopic0246510446table4362414101:
 
 .. table:: **Table 1** AI engines
 
@@ -43,7 +43,7 @@ Supported AI engines and versions when creating training jobs are as follows:
 
 
 
-.. _modelarts_05_0128__en-us_topic_0246510446_table97515527121:
+.. _modelarts050128enustopic0246510446table97515527121:
 
 .. table:: **Table 2** AI engines supported by training jobs
 
@@ -78,7 +78,7 @@ For imported models and model inference is completed on ModelArts, supported eng
 
 
 
-.. _modelarts_05_0128__en-us_topic_0246510446_table195551745191318:
+.. _modelarts050128enustopic0246510446table195551745191318:
 
 .. table:: **Table 3** Supported AI engines and their runtime
 

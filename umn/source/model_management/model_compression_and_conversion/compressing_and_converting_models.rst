@@ -31,9 +31,9 @@ Deleting a Model Compression/Conversion Task
 
 You can delete unnecessary conversion tasks. However, tasks in the **Running** or **Initializing** status cannot be deleted.
 
-|image1|
+.. note::
 
-Deleted tasks cannot be recovered. Exercise caution when performing this operation.
+   Deleted tasks cannot be recovered. Exercise caution when performing this operation.
 
 -  Deleting a single task:
 
@@ -44,5 +44,3 @@ Deleted tasks cannot be recovered. Exercise caution when performing this operati
    On the **Compression/Conversion** page, select multiple tasks to be deleted and click **Delete** in the upper left corner.
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png

@@ -25,7 +25,9 @@ Granting Permissions to Federated Users
 You can use IAM to create an IdP and create rules for the IdP to convert federated users into IAM users who have specified permissions to access cloud resources.
 
 | **Figure 2** Principles of identity conversion for federated users
-| |image2| 
+| |image2|
+
+
 
 .. |image1| image:: /_static/images/en-us_image_0000001156920871.png
 

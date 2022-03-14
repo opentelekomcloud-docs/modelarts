@@ -14,7 +14,7 @@ Currently, you can use ExeML to quickly create image classification, and object 
 ExeML Usage Process
 -------------------
 
-With ModelArts ExeML, you can develop AI models without coding. You only need to upload data, create a project, label the data, publish training, and deploy the trained model. Up to 100 ExeML projects can be created. For details, see `Figure 1 <#modelarts_21_0001__en-us_topic_0284258830_en-us_topic_0169445434_fig3917183328>`__.
+With ModelArts ExeML, you can develop AI models without coding. You only need to upload data, create a project, label the data, publish training, and deploy the trained model. Up to 100 ExeML projects can be created. For details, see `Figure 1 <#modelarts210001enustopic0284258830enustopic0169445434fig3917183328>`__.
 
 | **Figure 1** Usage process of ExeML
 | |image1|

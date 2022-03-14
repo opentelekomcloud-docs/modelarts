@@ -9,7 +9,7 @@ AI engine: MindSpore; Environment: Python 3.5; Input and output mode: undefined 
 Template Input
 --------------
 
-The template input is the OM-based model package stored on OBS. Ensure that the OBS directory you use and ModelArts are in the same region. For details about model package requirements, see `Model Package Example <#modelarts_23_0254__en-us_topic_0235925353_section1761262493211>`__.
+The template input is the OM-based model package stored on OBS. Ensure that the OBS directory you use and ModelArts are in the same region. For details about model package requirements, see `Model Package Example <#modelarts230254enustopic0235925353section1761262493211>`__.
 
 Input and Output Mode
 ---------------------

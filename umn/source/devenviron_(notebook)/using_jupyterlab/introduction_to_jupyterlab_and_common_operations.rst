@@ -11,17 +11,22 @@ Opening JupyterLab
 ------------------
 
 #. Log in to the ModelArts management console. In the left navigation pane, choose **DevEnviron > Notebooks** to switch to the **Notebooks** page.
+
 #. Select a notebook instance in the **Running** state and click **Open** in the **Operation** column to access the notebook instance.
+
 #. On the **Jupyter** page, click **Open JupyterLab** in the upper right corner to access the JupyterLab page of the notebook instance.
-#. The **Launcher** page is automatically displayed. You can use all open-source functions. For details, see `JupyterLab Documentation <https://jupyterlab.readthedocs.io/en/stable/>`__.\ **Figure 1** JupyterLab homepage
-   |image1|
+
+#. The **Launcher** page is automatically displayed. You can use all open-source functions. For details, see `JupyterLab Documentation <https://jupyterlab.readthedocs.io/en/stable/>`__.
+
+   | **Figure 1** JupyterLab homepage
+   | |image1|
 
 Creating and Opening a Notebook Instance
 ----------------------------------------
 
 On the JupyterLab homepage, click an applicable AI engine in the **Notebook** area to create a notebook file with the selected framework.
 
-The AI framework supported by each notebook instance varies according to the working environment. The following figure is only an example. Select an AI framework based on the site requirements. For details about all framework versions and Python versions supported by ModelArts, see `Supported AI Engines <../../devenviron_(notebook)/introduction_to_notebook.html#modelarts_23_0033__en-us_topic_0162690357_section191109611479>`__.
+The AI framework supported by each notebook instance varies according to the working environment. The following figure is only an example. Select an AI framework based on the site requirements. For details about all framework versions and Python versions supported by ModelArts, see `Supported AI Engines <../../devenviron_(notebook)/introduction_to_notebook.html#modelarts230033enustopic0162690357section191109611479>`__.
 
 | **Figure 2** Selecting an AI engine and creating a notebook instance
 | |image2|
@@ -89,27 +94,29 @@ Common Icons and Plug-ins of JupyterLab
 ---------------------------------------
 
 | **Figure 10** Common icons and plug-ins of JupyterLab
-| |image10| 
+| |image10|
 
-.. _modelarts_23_0209__en-us_topic_0208766071_table17325391430:
+
+
+.. _modelarts230209enustopic0208766071table17325391430:
 
 .. table:: **Table 1** Icon description
 
-   +-----------+-------------------------------------------------------------------------------------------------------------------------+
-   | Icon      | Description                                                                                                             |
-   +===========+=========================================================================================================================+
-   | |image15| | Opens the Launcher page. Then you can quickly create notebook instances, consoles, or other files.                      |
-   +-----------+-------------------------------------------------------------------------------------------------------------------------+
-   | |image16| | Creates a folder.                                                                                                       |
-   +-----------+-------------------------------------------------------------------------------------------------------------------------+
-   | |image17| | Uploads a file. For details, see `Uploading a File <#modelarts_23_0209__en-us_topic_0208766071_section172463910383>`__. |
-   +-----------+-------------------------------------------------------------------------------------------------------------------------+
-   | |image18| | Updates a folder.                                                                                                       |
-   +-----------+-------------------------------------------------------------------------------------------------------------------------+
+   +-----------+-----------------------------------------------------------------------------------------------------------------+
+   | Icon      | Description                                                                                                     |
+   +===========+=================================================================================================================+
+   | |image15| | Opens the Launcher page. Then you can quickly create notebook instances, consoles, or other files.              |
+   +-----------+-----------------------------------------------------------------------------------------------------------------+
+   | |image16| | Creates a folder.                                                                                               |
+   +-----------+-----------------------------------------------------------------------------------------------------------------+
+   | |image17| | Uploads a file. For details, see `Uploading a File <#modelarts230209enustopic0208766071section172463910383>`__. |
+   +-----------+-----------------------------------------------------------------------------------------------------------------+
+   | |image18| | Updates a folder.                                                                                               |
+   +-----------+-----------------------------------------------------------------------------------------------------------------+
 
 
 
-.. _modelarts_23_0209__en-us_topic_0208766071_table8147032134415:
+.. _modelarts230209enustopic0208766071table8147032134415:
 
 .. table:: **Table 2** Common plug-ins in the plug-in area
 

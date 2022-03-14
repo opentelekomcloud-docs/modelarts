@@ -32,9 +32,9 @@ Creating a Training Job
 
       Specify **Name** and **Description** according to actual requirements.
 
-   b. Set job parameters, including the data source, algorithm source, and more. For details, see `Table 1 <#modelarts_23_0239__en-us_topic_0216621184_table1819364517144>`__. 
+   b. Set job parameters, including the data source, algorithm source, and more. For details, see `Table 1 <#modelarts230239enustopic0216621184table1819364517144>`__. 
 
-.. _modelarts_23_0239__en-us_topic_0216621184_table1819364517144:
+.. _modelarts230239enustopic0216621184table1819364517144:
 
       .. table:: **Table 1** Job parameters
 
@@ -58,8 +58,9 @@ Creating a Training Job
          +-------------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
          | Training Output Path    | -                     | Storage path of the training result                                                                                                                                                                                                                                                                                                                                                |
          |                         |                       |                                                                                                                                                                                                                                                                                                                                                                                    |
-         |                         |                       | NOTE:                                                                                                                                                                                                                                                                                                                                                                              |
-         |                         |                       | To minimize errors, select an empty directory for **Training Output Path**. Do not select the directory used for storing the dataset for **Training Output Path**.                                                                                                                                                                                                                 |
+         |                         |                       | .. note::                                                                                                                                                                                                                                                                                                                                                                          |
+         |                         |                       |                                                                                                                                                                                                                                                                                                                                                                                    |
+         |                         |                       |    To minimize errors, select an empty directory for **Training Output Path**. Do not select the directory used for storing the dataset for **Training Output Path**.                                                                                                                                                                                                              |
          +-------------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
          | Environment Variable    | -                     | Add environment variables based on your image file. This parameter is optional. You can click **Add Environment Variable** to add multiple variable parameters.                                                                                                                                                                                                                    |
          +-------------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -68,7 +69,7 @@ Creating a Training Job
 
    c. Select resources for the training job. 
 
-.. _modelarts_23_0239__en-us_topic_0216621184_table8958315124918:
+.. _modelarts230239enustopic0216621184table8958315124918:
 
       .. table:: **Table 2** Resource parameters
 
@@ -88,7 +89,7 @@ Creating a Training Job
 
    d. Configure **Notification** and select whether to save the parameters of the training job. 
 
-.. _modelarts_23_0239__en-us_topic_0216621184_table1217141794320:
+.. _modelarts230239enustopic0216621184table1217141794320:
 
       .. table:: **Table 3** Parameters related to notification and parameter configuration saving
 
@@ -115,11 +116,9 @@ Creating a Training Job
 
    After the image is checked, the background starts the custom image container to run the custom image training job. You can switch to the training job list to view the basic information about training jobs. In the training job list, **Status** of the newly created training job is **Initializing**. If the status changes to **Successful**, the training job ends and the model generated is stored in the location specified by **Training Output Path**. If the status of a training job changes to **Running failed**. Click the name of the training job and view the job logs. Troubleshoot the fault based on the logs.
 
-   |image1|
+   .. note::
 
-   -  After an image is reviewed, the image does not need to be reviewed again when being used to create training jobs again.
-   -  The default user of a custom image must be the user whose UID is **1101**.
+      -  After an image is reviewed, the image does not need to be reviewed again when being used to create training jobs again.
+      -  The default user of a custom image must be the user whose UID is **1101**.
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png

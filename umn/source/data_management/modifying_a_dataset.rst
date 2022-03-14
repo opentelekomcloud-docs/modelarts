@@ -17,9 +17,9 @@ Modifying the Basic Information About a Dataset
 
    Alternatively, you can click the dataset name to go to the **Dashboard** tab page of the dataset, and click **Modify** in the upper right corner.
 
-#. Modify basic information about the dataset and then click **OK**. Refer to `Table 1 <#modelarts_23_0020__en-us_topic_0170886811_table151481125214>`__ for details. 
+#. Modify basic information about the dataset and then click **OK**. Refer to `Table 1 <#modelarts230020enustopic0170886811table151481125214>`__ for details. 
 
-.. _modelarts_23_0020__en-us_topic_0170886811_table151481125214:
+.. _modelarts230020enustopic0170886811table151481125214:
 
    .. table:: **Table 1** Parameters
 

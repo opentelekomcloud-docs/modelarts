@@ -3,9 +3,9 @@ Specifications for Importing the Manifest File
 
 The manifest file defines the mapping between labeling objects and content. The **Manifest file** import mode means that the manifest file is used for dataset import. The manifest file can be imported from OBS. When importing a manifest file from OBS, ensure that the current user has the permissions to access the directory housing the manifest file.
 
-|image1|
+.. note::
 
-There are many requirements on the Manifest file compilation. Import new data from OBS. Generally, Manifest file import is used for data migration of ModelArts in different regions or using different accounts. If you have labeled data in a region using ModelArts, you can obtain the manifest file of the published dataset from the output path. Then you can import the dataset using the manifest file to ModelArts of other regions or accounts. The imported data carries the labeling information and does not need to be labeled again, improving development efficiency.
+   There are many requirements on the Manifest file compilation. Import new data from OBS. Generally, Manifest file import is used for data migration of ModelArts in different regions or using different accounts. If you have labeled data in a region using ModelArts, you can obtain the manifest file of the published dataset from the output path. Then you can import the dataset using the manifest file to ModelArts of other regions or accounts. The imported data carries the labeling information and does not need to be labeled again, improving development efficiency.
 
 The manifest file that contains information about the original file and labeling can be used in labeling, training, and inference scenarios. The manifest file that contains only information about the original file can be used in inference scenarios or used to generate an unlabeled dataset. The manifest file must meet the following requirements:
 
@@ -57,34 +57,34 @@ Image Classification
 
 
 
-.. _modelarts_23_0009__en-us_topic_0170886817_table598984218223:
+.. _modelarts230009enustopic0170886817table598984218223:
 
 .. table:: **Table 1** Parameters
 
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter             | Mandatory             | Description                                                                                                                                                                                                                                  |
-   +=======================+=======================+==============================================================================================================================================================================================================================================+
-   | source                | Yes                   | URI of an object to be labeled. For details about data source types and examples, see `Table 2 <#modelarts_23_0009__en-us_topic_0170886817_table9303122642318>`__.                                                                           |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | usage                 | No                    | By default, the parameter value is left blank. Possible values are as follows:                                                                                                                                                               |
-   |                       |                       |                                                                                                                                                                                                                                              |
-   |                       |                       | -  **TRAIN**: The object is used for training.                                                                                                                                                                                               |
-   |                       |                       | -  **EVAL**: The object is used for evaluation.                                                                                                                                                                                              |
-   |                       |                       | -  **TEST**: The object is used for testing.                                                                                                                                                                                                 |
-   |                       |                       | -  **INFERENCE**: The object is used for inference.                                                                                                                                                                                          |
-   |                       |                       |                                                                                                                                                                                                                                              |
-   |                       |                       | If the parameter value is left blank, the user decides how to use the object.                                                                                                                                                                |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | id                    | No                    | Sample ID exported from the system. You do not need to set this parameter when importing the sample.                                                                                                                                         |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | annotation            | No                    | If the parameter value is left blank, the object is not labeled. The value of **annotation** consists of an object list. For details about the parameters, see `Table 3 <#modelarts_23_0009__en-us_topic_0170886817_table48141825192716>`__. |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | inference-loc         | No                    | This parameter is available when the file is generated by the inference service, indicating the location of the inference result file.                                                                                                       |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter             | Mandatory             | Description                                                                                                                                                                                                                          |
+   +=======================+=======================+======================================================================================================================================================================================================================================+
+   | source                | Yes                   | URI of an object to be labeled. For details about data source types and examples, see `Table 2 <#modelarts230009enustopic0170886817table9303122642318>`__.                                                                           |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | usage                 | No                    | By default, the parameter value is left blank. Possible values are as follows:                                                                                                                                                       |
+   |                       |                       |                                                                                                                                                                                                                                      |
+   |                       |                       | -  **TRAIN**: The object is used for training.                                                                                                                                                                                       |
+   |                       |                       | -  **EVAL**: The object is used for evaluation.                                                                                                                                                                                      |
+   |                       |                       | -  **TEST**: The object is used for testing.                                                                                                                                                                                         |
+   |                       |                       | -  **INFERENCE**: The object is used for inference.                                                                                                                                                                                  |
+   |                       |                       |                                                                                                                                                                                                                                      |
+   |                       |                       | If the parameter value is left blank, the user decides how to use the object.                                                                                                                                                        |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | id                    | No                    | Sample ID exported from the system. You do not need to set this parameter when importing the sample.                                                                                                                                 |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | annotation            | No                    | If the parameter value is left blank, the object is not labeled. The value of **annotation** consists of an object list. For details about the parameters, see `Table 3 <#modelarts230009enustopic0170886817table48141825192716>`__. |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | inference-loc         | No                    | This parameter is available when the file is generated by the inference service, indicating the location of the inference result file.                                                                                               |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 
-.. _modelarts_23_0009__en-us_topic_0170886817_table9303122642318:
+.. _modelarts230009enustopic0170886817table9303122642318:
 
 .. table:: **Table 2** Data source types
 
@@ -97,7 +97,7 @@ Image Classification
 
 
 
-.. _modelarts_23_0009__en-us_topic_0170886817_table48141825192716:
+.. _modelarts230009enustopic0170886817table48141825192716:
 
 .. table:: **Table 3** **annotation** objects
 
@@ -148,49 +148,49 @@ Image Segmentation
        "sample-type": 0
    }
 
--  The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#modelarts_23_0009__en-us_topic_0170886817_section260132417144>`__. For details, see `Table 1 <#modelarts_23_0009__en-us_topic_0170886817_table598984218223>`__.
+-  The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#modelarts230009enustopic0170886817section260132417144>`__. For details, see `Table 1 <#modelarts230009enustopic0170886817table598984218223>`__.
 -  **annotation-loc** indicates the path for saving the label file. This parameter is mandatory for image segmentation and object detection but optional for other labeling types.
 -  **annotation-format** indicates the format of the label file. This parameter is optional. The default value is **PASCAL VOC**. Only **PASCAL VOC** is supported.
 -  **sample-type** indicates a sample format. Value **0** indicates image, **1** text, **2** audio, **4** table, and **6** video.
 
 
 
-.. _modelarts_23_0009__en-us_topic_0170886817_table1516151991311:
+.. _modelarts230009enustopic0170886817table1516151991311:
 
 .. table:: **Table 4** PASCAL VOC format parameters
 
-   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter             | Mandatory             | Description                                                                                                                                                                           |
-   +=======================+=======================+=======================================================================================================================================================================================+
-   | folder                | Yes                   | Directory where the data source is located                                                                                                                                            |
-   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | filename              | Yes                   | Name of the file to be labeled                                                                                                                                                        |
-   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | size                  | Yes                   | Image pixel                                                                                                                                                                           |
-   |                       |                       |                                                                                                                                                                                       |
-   |                       |                       | -  **width**: image width. This parameter is mandatory.                                                                                                                               |
-   |                       |                       | -  **height**: image height. This parameter is mandatory.                                                                                                                             |
-   |                       |                       | -  **depth**: number of image channels. This parameter is mandatory.                                                                                                                  |
-   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | segmented             | Yes                   | Segmented or not                                                                                                                                                                      |
-   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | mask_source           | No                    | Segmentation mask path                                                                                                                                                                |
-   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | object                | Yes                   | Object detection information. Multiple **object{}** functions are generated for multiple objects.                                                                                     |
-   |                       |                       |                                                                                                                                                                                       |
-   |                       |                       | -  **name**: class of the labeled content. This parameter is mandatory.                                                                                                               |
-   |                       |                       | -  **pose**: shooting angle of the labeled content. This parameter is mandatory.                                                                                                      |
-   |                       |                       | -  **truncated**: whether the labeled content is truncated (**0** indicates that the content is not truncated). This parameter is mandatory.                                          |
-   |                       |                       | -  **occluded**: whether the labeled content is occluded (**0** indicates that the content is not occluded). This parameter is mandatory.                                             |
-   |                       |                       | -  **difficult**: whether the labeled object is difficult to identify (**0** indicates that the object is easy to identify). This parameter is mandatory.                             |
-   |                       |                       | -  **confidence**: confidence score of the labeled object. The value ranges from 0 to 1. This parameter is optional.                                                                  |
-   |                       |                       | -  **bndbox**: bounding box type. This parameter is mandatory. For details about the possible values, see `Table 5 <#modelarts_23_0009__en-us_topic_0170886817_table181711917139>`__. |
-   |                       |                       | -  **mask_color**: label color, which is represented by the RGB value. This parameter is mandatory.                                                                                   |
-   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter             | Mandatory             | Description                                                                                                                                                                   |
+   +=======================+=======================+===============================================================================================================================================================================+
+   | folder                | Yes                   | Directory where the data source is located                                                                                                                                    |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | filename              | Yes                   | Name of the file to be labeled                                                                                                                                                |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | size                  | Yes                   | Image pixel                                                                                                                                                                   |
+   |                       |                       |                                                                                                                                                                               |
+   |                       |                       | -  **width**: image width. This parameter is mandatory.                                                                                                                       |
+   |                       |                       | -  **height**: image height. This parameter is mandatory.                                                                                                                     |
+   |                       |                       | -  **depth**: number of image channels. This parameter is mandatory.                                                                                                          |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | segmented             | Yes                   | Segmented or not                                                                                                                                                              |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | mask_source           | No                    | Segmentation mask path                                                                                                                                                        |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | object                | Yes                   | Object detection information. Multiple **object{}** functions are generated for multiple objects.                                                                             |
+   |                       |                       |                                                                                                                                                                               |
+   |                       |                       | -  **name**: class of the labeled content. This parameter is mandatory.                                                                                                       |
+   |                       |                       | -  **pose**: shooting angle of the labeled content. This parameter is mandatory.                                                                                              |
+   |                       |                       | -  **truncated**: whether the labeled content is truncated (**0** indicates that the content is not truncated). This parameter is mandatory.                                  |
+   |                       |                       | -  **occluded**: whether the labeled content is occluded (**0** indicates that the content is not occluded). This parameter is mandatory.                                     |
+   |                       |                       | -  **difficult**: whether the labeled object is difficult to identify (**0** indicates that the object is easy to identify). This parameter is mandatory.                     |
+   |                       |                       | -  **confidence**: confidence score of the labeled object. The value ranges from 0 to 1. This parameter is optional.                                                          |
+   |                       |                       | -  **bndbox**: bounding box type. This parameter is mandatory. For details about the possible values, see `Table 5 <#modelarts230009enustopic0170886817table181711917139>`__. |
+   |                       |                       | -  **mask_color**: label color, which is represented by the RGB value. This parameter is mandatory.                                                                           |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 
-.. _modelarts_23_0009__en-us_topic_0170886817_table181711917139:
+.. _modelarts230009enustopic0170886817table181711917139:
 
 .. table:: **Table 5** Bounding box types
 
@@ -289,7 +289,7 @@ Text Classification
            } ]
    }
 
-The **content** parameter indicates the text to be labeled (in UTF-8 encoding format, which can be Chinese). The other parameters are the same as those described in `Image Classification <#modelarts_23_0009__en-us_topic_0170886817_section260132417144>`__. For details, see `Table 1 <#modelarts_23_0009__en-us_topic_0170886817_table598984218223>`__.
+The **content** parameter indicates the text to be labeled (in UTF-8 encoding format, which can be Chinese). The other parameters are the same as those described in `Image Classification <#modelarts230009enustopic0170886817section260132417144>`__. For details, see `Table 1 <#modelarts230009enustopic0170886817table598984218223>`__.
 
 Named Entity Recognition
 ------------------------
@@ -323,13 +323,13 @@ Named Entity Recognition
        ]
    }
 
-The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#modelarts_23_0009__en-us_topic_0170886817_section260132417144>`__. For details, see `Table 1 <#modelarts_23_0009__en-us_topic_0170886817_table598984218223>`__.
+The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#modelarts230009enustopic0170886817section260132417144>`__. For details, see `Table 1 <#modelarts230009enustopic0170886817table598984218223>`__.
 
-`Table 6 <#modelarts_23_0009__en-us_topic_0170886817_table8486339124912>`__ describes the property parameters. For example, if you want to extract **Michael** from **"source":"content://Michael Jordan"**, the value of **start_index** is **0** and that of **end_index** is **7**.
+`Table 6 <#modelarts230009enustopic0170886817table8486339124912>`__ describes the property parameters. For example, if you want to extract **Michael** from **"source":"content://Michael Jordan"**, the value of **start_index** is **0** and that of **end_index** is **7**.
 
 
 
-.. _modelarts_23_0009__en-us_topic_0170886817_table8486339124912:
+.. _modelarts230009enustopic0170886817table8486339124912:
 
 .. table:: **Table 6** Description of **property** parameters
 
@@ -397,13 +397,13 @@ Text Triplet
        ]
    }
 
-The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#modelarts_23_0009__en-us_topic_0170886817_section260132417144>`__. For details, see `Table 1 <#modelarts_23_0009__en-us_topic_0170886817_table598984218223>`__.
+The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#modelarts230009enustopic0170886817section260132417144>`__. For details, see `Table 1 <#modelarts230009enustopic0170886817table598984218223>`__.
 
-`Table 5 property parameters <#modelarts_23_0009__en-us_topic_0170886817_table134893213914>`__ describes the **property** parameters. **@modelarts:start_index** and **@modelarts:end_index** are the same as those of named entity recognition. For example, when **source** is set to **content://"Three Body" is a series of long science fiction novels created by Liu Cix.**, **Liu Cix** is an entity person, **Three Body** is an entity book, the person is the author of the book, and the book is works of the person.
+`Table 5 property parameters <#modelarts230009enustopic0170886817table134893213914>`__ describes the **property** parameters. **@modelarts:start_index** and **@modelarts:end_index** are the same as those of named entity recognition. For example, when **source** is set to **content://"Three Body" is a series of long science fiction novels created by Liu Cix.**, **Liu Cix** is an entity person, **Three Body** is an entity book, the person is the author of the book, and the book is works of the person.
 
 
 
-.. _modelarts_23_0009__en-us_topic_0170886817_table134893213914:
+.. _modelarts230009enustopic0170886817table134893213914:
 
 .. table:: **Table 7** Description of **property** parameters
 
@@ -437,45 +437,45 @@ Object Detection
            }]
    }
 
--  The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#modelarts_23_0009__en-us_topic_0170886817_section260132417144>`__. For details, see `Table 1 <#modelarts_23_0009__en-us_topic_0170886817_table598984218223>`__.
+-  The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#modelarts230009enustopic0170886817section260132417144>`__. For details, see `Table 1 <#modelarts230009enustopic0170886817table598984218223>`__.
 -  **annotation-loc** indicates the path for saving the label file. This parameter is mandatory for object detection and image segmentation but optional for other labeling types.
 -  **annotation-format** indicates the format of the label file. This parameter is optional. The default value is **PASCAL VOC**. Only **PASCAL VOC** is supported.
 
 
 
-.. _modelarts_23_0009__en-us_topic_0170886817_table77167388472:
+.. _modelarts230009enustopic0170886817table77167388472:
 
 .. table:: **Table 8** PASCAL VOC format parameters
 
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter             | Mandatory             | Description                                                                                                                                                                            |
-   +=======================+=======================+========================================================================================================================================================================================+
-   | folder                | Yes                   | Directory where the data source is located                                                                                                                                             |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | filename              | Yes                   | Name of the file to be labeled                                                                                                                                                         |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | size                  | Yes                   | Image pixel                                                                                                                                                                            |
-   |                       |                       |                                                                                                                                                                                        |
-   |                       |                       | -  **width**: image width. This parameter is mandatory.                                                                                                                                |
-   |                       |                       | -  **height**: image height. This parameter is mandatory.                                                                                                                              |
-   |                       |                       | -  **depth**: number of image channels. This parameter is mandatory.                                                                                                                   |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | segmented             | Yes                   | Segmented or not                                                                                                                                                                       |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | object                | Yes                   | Object detection information. Multiple **object{}** functions are generated for multiple objects.                                                                                      |
-   |                       |                       |                                                                                                                                                                                        |
-   |                       |                       | -  **name**: class of the labeled content. This parameter is mandatory.                                                                                                                |
-   |                       |                       | -  **pose**: shooting angle of the labeled content. This parameter is mandatory.                                                                                                       |
-   |                       |                       | -  **truncated**: whether the labeled content is truncated (**0** indicates that the content is not truncated). This parameter is mandatory.                                           |
-   |                       |                       | -  **occluded**: whether the labeled content is occluded (**0** indicates that the content is not occluded). This parameter is mandatory.                                              |
-   |                       |                       | -  **difficult**: whether the labeled object is difficult to identify (**0** indicates that the object is easy to identify). This parameter is mandatory.                              |
-   |                       |                       | -  **confidence**: confidence score of the labeled object. The value ranges from 0 to 1. This parameter is optional.                                                                   |
-   |                       |                       | -  **bndbox**: bounding box type. This parameter is mandatory. For details about the possible values, see `Table 9 <#modelarts_23_0009__en-us_topic_0170886817_table1770752310500>`__. |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter             | Mandatory             | Description                                                                                                                                                                    |
+   +=======================+=======================+================================================================================================================================================================================+
+   | folder                | Yes                   | Directory where the data source is located                                                                                                                                     |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | filename              | Yes                   | Name of the file to be labeled                                                                                                                                                 |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | size                  | Yes                   | Image pixel                                                                                                                                                                    |
+   |                       |                       |                                                                                                                                                                                |
+   |                       |                       | -  **width**: image width. This parameter is mandatory.                                                                                                                        |
+   |                       |                       | -  **height**: image height. This parameter is mandatory.                                                                                                                      |
+   |                       |                       | -  **depth**: number of image channels. This parameter is mandatory.                                                                                                           |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | segmented             | Yes                   | Segmented or not                                                                                                                                                               |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | object                | Yes                   | Object detection information. Multiple **object{}** functions are generated for multiple objects.                                                                              |
+   |                       |                       |                                                                                                                                                                                |
+   |                       |                       | -  **name**: class of the labeled content. This parameter is mandatory.                                                                                                        |
+   |                       |                       | -  **pose**: shooting angle of the labeled content. This parameter is mandatory.                                                                                               |
+   |                       |                       | -  **truncated**: whether the labeled content is truncated (**0** indicates that the content is not truncated). This parameter is mandatory.                                   |
+   |                       |                       | -  **occluded**: whether the labeled content is occluded (**0** indicates that the content is not occluded). This parameter is mandatory.                                      |
+   |                       |                       | -  **difficult**: whether the labeled object is difficult to identify (**0** indicates that the object is easy to identify). This parameter is mandatory.                      |
+   |                       |                       | -  **confidence**: confidence score of the labeled object. The value ranges from 0 to 1. This parameter is optional.                                                           |
+   |                       |                       | -  **bndbox**: bounding box type. This parameter is mandatory. For details about the possible values, see `Table 9 <#modelarts230009enustopic0170886817table1770752310500>`__. |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 
-.. _modelarts_23_0009__en-us_topic_0170886817_table1770752310500:
+.. _modelarts230009enustopic0170886817table1770752310500:
 
 .. table:: **Table 9** Description of bounding box types
 
@@ -643,7 +643,7 @@ Sound Classification
        ]
    }
 
-The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#modelarts_23_0009__en-us_topic_0170886817_section260132417144>`__. For details, see `Table 1 <#modelarts_23_0009__en-us_topic_0170886817_table598984218223>`__.
+The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#modelarts230009enustopic0170886817section260132417144>`__. For details, see `Table 1 <#modelarts230009enustopic0170886817table598984218223>`__.
 
 Speech Labeling
 ---------------
@@ -664,7 +664,7 @@ Speech Labeling
        ]
    }
 
--  The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#modelarts_23_0009__en-us_topic_0170886817_section260132417144>`__. For details, see `Table 1 <#modelarts_23_0009__en-us_topic_0170886817_table598984218223>`__.
+-  The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#modelarts230009enustopic0170886817section260132417144>`__. For details, see `Table 1 <#modelarts230009enustopic0170886817table598984218223>`__.
 -  The **@modelarts:content** parameter in **property** indicates speech labeling. The data type is **String**.
 
 Speech Paragraph Labeling
@@ -704,10 +704,11 @@ Speech Paragraph Labeling
        ]
    }
 
--  The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#modelarts_23_0009__en-us_topic_0170886817_section260132417144>`__. For details, see `Table 1 <#modelarts_23_0009__en-us_topic_0170886817_table598984218223>`__.
--  `Table 10 <#modelarts_23_0009__en-us_topic_0170886817_table1151144815513>`__ describes the **property** parameters. 
+-  The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#modelarts230009enustopic0170886817section260132417144>`__. For details, see `Table 1 <#modelarts230009enustopic0170886817table598984218223>`__.
 
-.. _modelarts_23_0009__en-us_topic_0170886817_table1151144815513:
+-  `Table 10 <#modelarts230009enustopic0170886817table1151144815513>`__ describes the **property** parameters. 
+
+.. _modelarts230009enustopic0170886817table1151144815513:
 
    .. table:: **Table 10** Description of **property** parameters
 
@@ -751,14 +752,14 @@ Video Labeling
        "sample-type": 0
    }
 
--  The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#modelarts_23_0009__en-us_topic_0170886817_section260132417144>`__. For details, see `Table 1 <#modelarts_23_0009__en-us_topic_0170886817_table598984218223>`__.
+-  The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#modelarts230009enustopic0170886817section260132417144>`__. For details, see `Table 1 <#modelarts230009enustopic0170886817table598984218223>`__.
 -  **annotation-loc** indicates the path for saving the label file. This parameter is mandatory for object detection but optional for other labeling types.
 -  **annotation-format** indicates the format of the label file. This parameter is optional. The default value is **PASCAL VOC**. Only **PASCAL VOC** is supported.
 -  **sample-type** indicates a sample format. Value **0** indicates image, **1** text, **2** audio, **4** table, and **6** video.
 
 
 
-.. _modelarts_23_0009__en-us_topic_0170886817_table178351411132818:
+.. _modelarts230009enustopic0170886817table178351411132818:
 
 .. table:: **Table 11** **property** parameters
 
@@ -774,39 +775,39 @@ Video Labeling
 
 
 
-.. _modelarts_23_0009__en-us_topic_0170886817_table259920384918:
+.. _modelarts230009enustopic0170886817table259920384918:
 
 .. table:: **Table 12** PASCAL VOC format parameters
 
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter             | Mandatory             | Description                                                                                                                                                                            |
-   +=======================+=======================+========================================================================================================================================================================================+
-   | folder                | Yes                   | Directory where the data source is located                                                                                                                                             |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | filename              | Yes                   | Name of the file to be labeled                                                                                                                                                         |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | size                  | Yes                   | Image pixel                                                                                                                                                                            |
-   |                       |                       |                                                                                                                                                                                        |
-   |                       |                       | -  **width**: image width. This parameter is mandatory.                                                                                                                                |
-   |                       |                       | -  **height**: image height. This parameter is mandatory.                                                                                                                              |
-   |                       |                       | -  **depth**: number of image channels. This parameter is mandatory.                                                                                                                   |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | segmented             | Yes                   | Segmented or not                                                                                                                                                                       |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | object                | Yes                   | Object detection information. Multiple **object{}** functions are generated for multiple objects.                                                                                      |
-   |                       |                       |                                                                                                                                                                                        |
-   |                       |                       | -  **name**: class of the labeled content. This parameter is mandatory.                                                                                                                |
-   |                       |                       | -  **pose**: shooting angle of the labeled content. This parameter is mandatory.                                                                                                       |
-   |                       |                       | -  **truncated**: whether the labeled content is truncated (**0** indicates that the content is not truncated). This parameter is mandatory.                                           |
-   |                       |                       | -  **occluded**: whether the labeled content is occluded (**0** indicates that the content is not occluded). This parameter is mandatory.                                              |
-   |                       |                       | -  **difficult**: whether the labeled object is difficult to identify (**0** indicates that the object is easy to identify). This parameter is mandatory.                              |
-   |                       |                       | -  **confidence**: confidence score of the labeled object. The value ranges from 0 to 1. This parameter is optional.                                                                   |
-   |                       |                       | -  **bndbox**: bounding box type. This parameter is mandatory. For details about the possible values, see `Table 13 <#modelarts_23_0009__en-us_topic_0170886817_table869624041814>`__. |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter             | Mandatory             | Description                                                                                                                                                                    |
+   +=======================+=======================+================================================================================================================================================================================+
+   | folder                | Yes                   | Directory where the data source is located                                                                                                                                     |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | filename              | Yes                   | Name of the file to be labeled                                                                                                                                                 |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | size                  | Yes                   | Image pixel                                                                                                                                                                    |
+   |                       |                       |                                                                                                                                                                                |
+   |                       |                       | -  **width**: image width. This parameter is mandatory.                                                                                                                        |
+   |                       |                       | -  **height**: image height. This parameter is mandatory.                                                                                                                      |
+   |                       |                       | -  **depth**: number of image channels. This parameter is mandatory.                                                                                                           |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | segmented             | Yes                   | Segmented or not                                                                                                                                                               |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | object                | Yes                   | Object detection information. Multiple **object{}** functions are generated for multiple objects.                                                                              |
+   |                       |                       |                                                                                                                                                                                |
+   |                       |                       | -  **name**: class of the labeled content. This parameter is mandatory.                                                                                                        |
+   |                       |                       | -  **pose**: shooting angle of the labeled content. This parameter is mandatory.                                                                                               |
+   |                       |                       | -  **truncated**: whether the labeled content is truncated (**0** indicates that the content is not truncated). This parameter is mandatory.                                   |
+   |                       |                       | -  **occluded**: whether the labeled content is occluded (**0** indicates that the content is not occluded). This parameter is mandatory.                                      |
+   |                       |                       | -  **difficult**: whether the labeled object is difficult to identify (**0** indicates that the object is easy to identify). This parameter is mandatory.                      |
+   |                       |                       | -  **confidence**: confidence score of the labeled object. The value ranges from 0 to 1. This parameter is optional.                                                           |
+   |                       |                       | -  **bndbox**: bounding box type. This parameter is mandatory. For details about the possible values, see `Table 13 <#modelarts230009enustopic0170886817table869624041814>`__. |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 
-.. _modelarts_23_0009__en-us_topic_0170886817_table869624041814:
+.. _modelarts230009enustopic0170886817table869624041814:
 
 .. table:: **Table 13** Bounding box types
 
@@ -956,5 +957,3 @@ Example:
    </annotation>
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png

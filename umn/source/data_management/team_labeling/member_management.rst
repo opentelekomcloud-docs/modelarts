@@ -18,8 +18,12 @@ Adding a Member
 
    An email address uniquely identifies a team member. Different members cannot use the same email address. The email address you enter will be recorded and saved in ModelArts. It is used only for ModelArts team labeling. After a member is deleted, the email address will also be deleted.
 
-   | Possible values of **Role** are **Labeler**, **Reviewer**, and **Team Manager**. Only one **Team Manager** can be set.\ **Figure 1** Adding a member
-   | |image1| **Figure 2** Adding a member
+   Possible values of **Role** are **Labeler**, **Reviewer**, and **Team Manager**. Only one **Team Manager** can be set.
+
+   | **Figure 1** Adding a member
+   | |image1|
+
+   | **Figure 2** Adding a member
    | |image2|
 
    Information about the added member is displayed in the **Team Details** area.

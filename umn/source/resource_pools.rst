@@ -12,13 +12,13 @@ When using ModelArts to implement AI Development Lifecycle, you can use two diff
 
    Create a dedicated resource pool and select the dedicated resource pool during AI development. For details about the dedicated resource pool, see the following:
 
-   `Dedicated Resource Pool <#modelarts_23_0076__en-us_topic_0143244658_section6250135125515>`__
+   `Dedicated Resource Pool <#modelarts230076enustopic0143244658section6250135125515>`__
 
-   `Creating a Dedicated Resource Pool <#modelarts_23_0076__en-us_topic_0143244658_section4115221610>`__
+   `Creating a Dedicated Resource Pool <#modelarts230076enustopic0143244658section4115221610>`__
 
-   `Scaling a Dedicated Resource Pool <#modelarts_23_0076__en-us_topic_0143244658_section1521854122017>`__
+   `Scaling a Dedicated Resource Pool <#modelarts230076enustopic0143244658section1521854122017>`__
 
-   `Deleting a Dedicated Resource Pool <#modelarts_23_0076__en-us_topic_0143244658_section102631431172915>`__
+   `Deleting a Dedicated Resource Pool <#modelarts230076enustopic0143244658section102631431172915>`__
 
 Dedicated Resource Pool
 -----------------------
@@ -31,11 +31,14 @@ Creating a Dedicated Resource Pool
 ----------------------------------
 
 #. Log in to the ModelArts management console and choose **Dedicated Resource Pools** on the left.
-#. On the **Dedicated Resource Pools** page, select **Dedicated for Development/Training** or **Dedicated for Service Deployment**.
-#. Click **Create** in the upper left corner. The page for creating a dedicated resource pool is displayed.
-#. Set the parameters on the page. For details about how to set parameters, see `Table 1 <#modelarts_23_0076__en-us_topic_0143244658_table1073325155617>`__ and `Table 2 <#modelarts_23_0076__en-us_topic_0143244658_table199892206411>`__. 
 
-.. _modelarts_23_0076__en-us_topic_0143244658_table1073325155617:
+#. On the **Dedicated Resource Pools** page, select **Dedicated for Development/Training** or **Dedicated for Service Deployment**.
+
+#. Click **Create** in the upper left corner. The page for creating a dedicated resource pool is displayed.
+
+#. Set the parameters on the page. For details about how to set parameters, see `Table 1 <#modelarts230076enustopic0143244658table1073325155617>`__ and `Table 2 <#modelarts230076enustopic0143244658table199892206411>`__. 
+
+.. _modelarts230076enustopic0143244658table1073325155617:
 
    .. table:: **Table 1** Parameters of the **Dedicated for Development/Training** type
 
@@ -57,7 +60,7 @@ Creating a Dedicated Resource Pool
 
    
 
-.. _modelarts_23_0076__en-us_topic_0143244658_table199892206411:
+.. _modelarts230076enustopic0143244658table199892206411:
 
    .. table:: **Table 2** Parameters of the **Dedicated for Service Deployment** type
 
@@ -105,11 +108,9 @@ Deleting a Dedicated Resource Pool
 
 If a dedicated resource pool is no longer needed during AI service development, you can delete the resource pool to release resources.
 
-|image1|
+.. note::
 
--  After a dedicated resource pool is deleted, the training jobs, notebook instances, and deployment that depend on the resource pool are unavailable. A dedicated resource pool cannot be restored after being deleted. Exercise caution when deleting a dedicated resource pool.
+   -  After a dedicated resource pool is deleted, the training jobs, notebook instances, and deployment that depend on the resource pool are unavailable. A dedicated resource pool cannot be restored after being deleted. Exercise caution when deleting a dedicated resource pool.
 
 #. Go to the dedicated resource pool management page, locate the row that contains the desired dedicated resource pool, and click **Delete** in the **Operation** column.
 #. In the dialog box that is displayed, click **OK**.
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png

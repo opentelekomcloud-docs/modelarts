@@ -24,10 +24,12 @@ A fine-grained policy consists of the policy version (the **Version** field) and
 
       The value can be one or more resource operations.
 
-      The value format is *Service name*:*Resource type*:*Action*, for example, **modelarts:exemlProject:create**.\ |image1|
+      The value format is *Service name*:*Resource type*:*Action*, for example, **modelarts:exemlProject:create**.
 
-      -  *Service name*: service name. Only lowercase letters are supported, for example, **modelarts**.
-      -  *Resource type* and *Action*: The values are case-insensitive, and the wildcard (*) are allowed. A wildcard (*) can represent all or part of information about resource types and actions for the specific service.
+      .. note::
+
+         -  *Service name*: service name. Only lowercase letters are supported, for example, **modelarts**.
+         -  *Resource type* and *Action*: The values are case-insensitive, and the wildcard (*) are allowed. A wildcard (*) can represent all or part of information about resource types and actions for the specific service.
 
 Example Policies
 ----------------
@@ -71,9 +73,11 @@ Authentication Logic
 IAM authenticates users according to the permissions that the users have been granted. The authentication logic is as follows:
 
 | **Figure 1** Authentication logic
-| |image2| |image3|
+| |image1|
 
-The actions in each policy bear the OR relationship.
+.. note::
+
+   The actions in each policy bear the OR relationship.
 
 #. A user accesses the system and makes an operation request.
 #. The system evaluates all the permissions policies assigned to the user.
@@ -83,7 +87,5 @@ The actions in each policy bear the OR relationship.
 
 
 
-.. |image1| image:: /_static/images/note_3.0-en-us.png
-.. |image2| image:: /_static/images/en-us_image_0000001110920802.png
+.. |image1| image:: /_static/images/en-us_image_0000001110920802.png
 
-.. |image3| image:: /_static/images/note_3.0-en-us.png

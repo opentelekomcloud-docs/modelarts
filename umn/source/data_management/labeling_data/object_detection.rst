@@ -47,32 +47,34 @@ Labeling Images (Manually)
 
 The dataset details page provides the **Labeled** and **Unlabeled** tabs. The **All** tab page is displayed by default.
 
-#. On the **Unlabeled** tab page, click an image. The image labeling page is displayed. For details about how to use common buttons on the **Labeled** tab page, see `Table 2 <#modelarts_23_0012__en-us_topic_0170889732_table194471512463>`__.
+#. On the **Unlabeled** tab page, click an image. The image labeling page is displayed. For details about how to use common buttons on the **Labeled** tab page, see `Table 2 <#modelarts230012enustopic0170889732table194471512463>`__.
 
-#. In the left tool bar, select a proper labeling shape. The default labeling shape is a rectangle. In this example, the rectangle is used for labeling.\ |image1|
+#. In the left tool bar, select a proper labeling shape. The default labeling shape is a rectangle. In this example, the rectangle is used for labeling.
 
-   On the left of the page, multiple tools are provided for you to label images. However, you can use only one tool at a time.
+   .. note::
+
+      On the left of the page, multiple tools are provided for you to label images. However, you can use only one tool at a time.
 
    
 
-.. _modelarts_23_0012__en-us_topic_0170889732_table165201739119:
+.. _modelarts230012enustopic0170889732table165201739119:
 
    .. table:: **Table 1** Supported bounding box
 
       +-----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Icon      | Description                                                                                                                                                                                                                                                                                     |
       +===========+=================================================================================================================================================================================================================================================================================================+
-      | |image8|  | Rectangle. Click the edge of the upper left corner of the object to be labeled. A rectangle will be displayed. Drag the rectangle to cover the object and click to label the object.                                                                                                            |
+      | |image7|  | Rectangle. Click the edge of the upper left corner of the object to be labeled. A rectangle will be displayed. Drag the rectangle to cover the object and click to label the object.                                                                                                            |
       +-----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | |image9|  | Polygon. In the area where the object to be labeled is located, click to label a point, move the mouse and click multiple points along the edge of the object, and then click the first point again. All the points form a polygon. Therefore, the object to be labeled is in the bounding box. |
+      | |image8|  | Polygon. In the area where the object to be labeled is located, click to label a point, move the mouse and click multiple points along the edge of the object, and then click the first point again. All the points form a polygon. Therefore, the object to be labeled is in the bounding box. |
       +-----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | |image10| | Circle. Click the center point of an object, and move the mouse to draw a circle to cover the object and click to label the object.                                                                                                                                                             |
+      | |image9|  | Circle. Click the center point of an object, and move the mouse to draw a circle to cover the object and click to label the object.                                                                                                                                                             |
       +-----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | |image11| | Straight line. Click to specify the start and end points of an object, and move the mouse to draw a straight line to cover the object and click to label the object.                                                                                                                            |
+      | |image10| | Straight line. Click to specify the start and end points of an object, and move the mouse to draw a straight line to cover the object and click to label the object.                                                                                                                            |
       +-----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | |image12| | Dotted line. Click to specify the start and end points of an object, and move the mouse to draw a dotted line to cover the object and click to label the object.                                                                                                                                |
+      | |image11| | Dotted line. Click to specify the start and end points of an object, and move the mouse to draw a dotted line to cover the object and click to label the object.                                                                                                                                |
       +-----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | |image13| | Point. Click the object in an image to label a point.                                                                                                                                                                                                                                           |
+      | |image12| | Point. Click the object in an image to label a point.                                                                                                                                                                                                                                           |
       +-----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 #. In the **Add Label** text box, enter a new label name, select the label color, and click **Add**. Alternatively, select an existing label from the drop-down list.
@@ -85,30 +87,30 @@ The dataset details page provides the **Labeled** and **Unlabeled** tabs. The **
 
 
 
-.. _modelarts_23_0012__en-us_topic_0170889732_table194471512463:
+.. _modelarts230012enustopic0170889732table194471512463:
 
 .. table:: **Table 2** Common icons on the labeling page
 
    +-----------+-----------------------------------------------------------------------------------------------------------------------------------------+
    | Icon      | Description                                                                                                                             |
    +===========+=========================================================================================================================================+
-   | |image23| | Cancel the previous operation.                                                                                                          |
+   | |image22| | Cancel the previous operation.                                                                                                          |
    +-----------+-----------------------------------------------------------------------------------------------------------------------------------------+
-   | |image24| | Redo the previous operation.                                                                                                            |
+   | |image23| | Redo the previous operation.                                                                                                            |
    +-----------+-----------------------------------------------------------------------------------------------------------------------------------------+
-   | |image25| | Zoom in an image.                                                                                                                       |
+   | |image24| | Zoom in an image.                                                                                                                       |
    +-----------+-----------------------------------------------------------------------------------------------------------------------------------------+
-   | |image26| | Zoom out an image.                                                                                                                      |
+   | |image25| | Zoom out an image.                                                                                                                      |
    +-----------+-----------------------------------------------------------------------------------------------------------------------------------------+
-   | |image27| | Delete all bounding boxes on the current image.                                                                                         |
+   | |image26| | Delete all bounding boxes on the current image.                                                                                         |
    +-----------+-----------------------------------------------------------------------------------------------------------------------------------------+
-   | |image28| | Display or hide a bounding box. You can perform this operation only on a labeled image.                                                 |
+   | |image27| | Display or hide a bounding box. You can perform this operation only on a labeled image.                                                 |
    +-----------+-----------------------------------------------------------------------------------------------------------------------------------------+
-   | |image29| | Drag a bounding box to another position or drag the edge of the bounding box to resize it.                                              |
+   | |image28| | Drag a bounding box to another position or drag the edge of the bounding box to resize it.                                              |
    +-----------+-----------------------------------------------------------------------------------------------------------------------------------------+
-   | |image30| | Reset. After dragging a bounding box, you can click this button to quickly restore the bounding box to its original shape and position. |
+   | |image29| | Reset. After dragging a bounding box, you can click this button to quickly restore the bounding box to its original shape and position. |
    +-----------+-----------------------------------------------------------------------------------------------------------------------------------------+
-   | |image31| | Display the labeled image in full screen.                                                                                               |
+   | |image30| | Display the labeled image in full screen.                                                                                               |
    +-----------+-----------------------------------------------------------------------------------------------------------------------------------------+
 
 Viewing Labeled Images
@@ -132,7 +134,7 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
       After deleting the label, click **Back to Data Labeling Preview** in the upper left corner of the page to exit the labeling page. In the dialog box that is displayed, save the modification. After all labels of an image are deleted, the image is displayed on the **Unlabeled** tab page.
 
       | **Figure 1** Editing an object detection label
-      | |image32|
+      | |image31|
 
 -  **Modifying based on labels**
 
@@ -142,7 +144,7 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
    -  Deleting a label: Click the deletion icon in the **Operation** column to delete a label.
 
    | **Figure 2** All labels for object detection
-   | |image33|
+   | |image32|
 
 Adding Images
 -------------
@@ -170,75 +172,73 @@ On the **All**, **Unlabeled**, or **Labeled** tab page, select the images to be 
 
 If a tick is displayed in the upper left corner of an image, the image is selected. If no image is selected on the page, the **Delete** button is unavailable.
 
-|image34|
+.. note::
 
-If you select **Delete source files**, images stored in the OBS directory will be deleted accordingly. This operation may affect other dataset versions or datasets using those files, for example, leading to an error in page display, training, or inference. Deleted data cannot be recovered. Exercise caution when performing this operation.
+   If you select **Delete source files**, images stored in the OBS directory will be deleted accordingly. This operation may affect other dataset versions or datasets using those files, for example, leading to an error in page display, training, or inference. Deleted data cannot be recovered. Exercise caution when performing this operation.
 
 
 
-.. |image1| image:: /_static/images/note_3.0-en-us.png
-.. |image2| image:: /_static/images/en-us_image_0000001156920971.png
+.. |image1| image:: /_static/images/en-us_image_0000001156920971.png
 
-.. |image3| image:: /_static/images/en-us_image_0000001156920969.png
+.. |image2| image:: /_static/images/en-us_image_0000001156920969.png
 
-.. |image4| image:: /_static/images/en-us_image_0000001157080923.png
+.. |image3| image:: /_static/images/en-us_image_0000001157080923.png
 
-.. |image5| image:: /_static/images/en-us_image_0000001110761098.png
+.. |image4| image:: /_static/images/en-us_image_0000001110761098.png
 
-.. |image6| image:: /_static/images/en-us_image_0000001110920992.png
+.. |image5| image:: /_static/images/en-us_image_0000001110920992.png
 
-.. |image7| image:: /_static/images/en-us_image_0000001110920994.png
+.. |image6| image:: /_static/images/en-us_image_0000001110920994.png
 
-.. |image8| image:: /_static/images/en-us_image_0000001156920971.png
+.. |image7| image:: /_static/images/en-us_image_0000001156920971.png
 
-.. |image9| image:: /_static/images/en-us_image_0000001156920969.png
+.. |image8| image:: /_static/images/en-us_image_0000001156920969.png
 
-.. |image10| image:: /_static/images/en-us_image_0000001157080923.png
+.. |image9| image:: /_static/images/en-us_image_0000001157080923.png
 
-.. |image11| image:: /_static/images/en-us_image_0000001110761098.png
+.. |image10| image:: /_static/images/en-us_image_0000001110761098.png
 
-.. |image12| image:: /_static/images/en-us_image_0000001110920992.png
+.. |image11| image:: /_static/images/en-us_image_0000001110920992.png
 
-.. |image13| image:: /_static/images/en-us_image_0000001110920994.png
+.. |image12| image:: /_static/images/en-us_image_0000001110920994.png
 
-.. |image14| image:: /_static/images/en-us_image_0000001110920996.png
+.. |image13| image:: /_static/images/en-us_image_0000001110920996.png
 
-.. |image15| image:: /_static/images/en-us_image_0000001110920984.png
+.. |image14| image:: /_static/images/en-us_image_0000001110920984.png
 
-.. |image16| image:: /_static/images/en-us_image_0000001110761082.png
+.. |image15| image:: /_static/images/en-us_image_0000001110761082.png
 
-.. |image17| image:: /_static/images/en-us_image_0000001110920982.png
+.. |image16| image:: /_static/images/en-us_image_0000001110920982.png
 
-.. |image18| image:: /_static/images/en-us_image_0000001156920959.png
+.. |image17| image:: /_static/images/en-us_image_0000001156920959.png
 
-.. |image19| image:: /_static/images/en-us_image_0000001110921000.png
+.. |image18| image:: /_static/images/en-us_image_0000001110921000.png
 
-.. |image20| image:: /_static/images/en-us_image_0000001110761080.png
+.. |image19| image:: /_static/images/en-us_image_0000001110761080.png
 
-.. |image21| image:: /_static/images/en-us_image_0000001110921004.png
+.. |image20| image:: /_static/images/en-us_image_0000001110921004.png
 
-.. |image22| image:: /_static/images/en-us_image_0000001110920978.png
+.. |image21| image:: /_static/images/en-us_image_0000001110920978.png
 
-.. |image23| image:: /_static/images/en-us_image_0000001110920996.png
+.. |image22| image:: /_static/images/en-us_image_0000001110920996.png
 
-.. |image24| image:: /_static/images/en-us_image_0000001110920984.png
+.. |image23| image:: /_static/images/en-us_image_0000001110920984.png
 
-.. |image25| image:: /_static/images/en-us_image_0000001110761082.png
+.. |image24| image:: /_static/images/en-us_image_0000001110761082.png
 
-.. |image26| image:: /_static/images/en-us_image_0000001110920982.png
+.. |image25| image:: /_static/images/en-us_image_0000001110920982.png
 
-.. |image27| image:: /_static/images/en-us_image_0000001156920959.png
+.. |image26| image:: /_static/images/en-us_image_0000001156920959.png
 
-.. |image28| image:: /_static/images/en-us_image_0000001110921000.png
+.. |image27| image:: /_static/images/en-us_image_0000001110921000.png
 
-.. |image29| image:: /_static/images/en-us_image_0000001110761080.png
+.. |image28| image:: /_static/images/en-us_image_0000001110761080.png
 
-.. |image30| image:: /_static/images/en-us_image_0000001110921004.png
+.. |image29| image:: /_static/images/en-us_image_0000001110921004.png
 
-.. |image31| image:: /_static/images/en-us_image_0000001110920978.png
+.. |image30| image:: /_static/images/en-us_image_0000001110920978.png
 
-.. |image32| image:: /_static/images/en-us_image_0000001157080933.png
+.. |image31| image:: /_static/images/en-us_image_0000001157080933.png
 
-.. |image33| image:: /_static/images/en-us_image_0000001157080935.png
+.. |image32| image:: /_static/images/en-us_image_0000001157080935.png
 
-.. |image34| image:: /_static/images/note_3.0-en-us.png

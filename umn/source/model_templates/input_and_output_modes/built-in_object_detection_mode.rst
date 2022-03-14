@@ -9,11 +9,11 @@ This is a built-in input and output mode for object detection. The models using 
 Output
 ------
 
-The inference result is returned in JSON format. For details about the fields, see `Table 1 <#modelarts_23_0100__en-us_topic_0172873542_table101531747125712>`__.
+The inference result is returned in JSON format. For details about the fields, see `Table 1 <#modelarts230100enustopic0172873542table101531747125712>`__.
 
 
 
-.. _modelarts_23_0100__en-us_topic_0172873542_table101531747125712:
+.. _modelarts230100enustopic0172873542table101531747125712:
 
 .. table:: **Table 1** Parameters
 
