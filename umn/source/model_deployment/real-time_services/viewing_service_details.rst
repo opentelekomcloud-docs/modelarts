@@ -179,8 +179,11 @@ Customized settings can be used in the following scenarios:
          | [xyz]     | Match any single character contained in a character set. For example, **[abc]** can match **a** in **plain**.                                               |
          +-----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-      | **Figure 1** Traffic distribution by user
-      | |image2|
+      .. figure:: /_static/images/en-us_image_0000001157080859.png
+         :alt: **Figure 1** Traffic distribution by user
+      
+
+         **Figure 1** Traffic distribution by user
 
 -  If multiple versions of a real-time service are deployed for dark launch, customized settings can be used to access different versions through the header.
 
@@ -207,8 +210,11 @@ Customized settings can be used in the following scenarios:
 
          #HEADER_testheader matches 'mock.*'
 
-      | **Figure 2** Using the header to access different versions
-      | |image3|
+      .. figure:: /_static/images/en-us_image_0000001110920910.png
+         :alt: **Figure 2** Using the header to access different versions
+      
+
+         **Figure 2** Using the header to access different versions
 
 -  If a real-time service version supports different running configurations, you can use **Setting Name** and **Setting Value** to specify customized running parameters so that different users can use different running configurations.
 
@@ -216,16 +222,13 @@ Customized settings can be used in the following scenarios:
 
    When user A accesses the model, the user uses configuration A. When user B accesses the model, the user uses configuration B. When matching a running configuration, ModelArts adds a header to the request and also the customized running parameters specified by **Setting Name** and **Setting Value**.
 
-   | **Figure 3** Customized running parameters added for a customized configuration rule
-   | |image4|
+   .. figure:: /_static/images/en-us_image_0000001110761010.png
+      :alt: **Figure 3** Customized running parameters added for a customized configuration rule
+   
+
+      **Figure 3** Customized running parameters added for a customized configuration rule
 
 
 
 .. |image1| image:: /_static/images/en-us_image_0000001110920912.png
-
-.. |image2| image:: /_static/images/en-us_image_0000001157080859.png
-
-.. |image3| image:: /_static/images/en-us_image_0000001110920910.png
-
-.. |image4| image:: /_static/images/en-us_image_0000001110761010.png
 

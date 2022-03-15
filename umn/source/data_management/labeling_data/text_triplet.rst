@@ -33,13 +33,19 @@ The dataset details page displays the labeled and unlabeled text objects in the 
 
 #. On the **Unlabeled** tab page, the objects to be labeled are listed in the left pane. In the list, click a text object, select the corresponding text content on the right pane, and select an entity name from the displayed entity list to label the content.
 
-   | **Figure 1** Labeling an entity
-   | |image1|
+   .. figure:: /_static/images/en-us_image_0000001110760968.png
+      :alt: **Figure 1** Labeling an entity
+   
+
+      **Figure 1** Labeling an entity
 
 #. After labeling multiple entities, click the source entity and target entity in sequence and select a relationship type from the displayed relationship list to label the relationship.
 
-   | **Figure 2** Labeling a relationship
-   | |image2|
+   .. figure:: /_static/images/en-us_image_0000001110920874.png
+      :alt: **Figure 2** Labeling a relationship
+   
+
+      **Figure 2** Labeling a relationship
 
 #. After all objects are labeled, click **Save Current Page** at the bottom of the page.
 
@@ -79,9 +85,4 @@ You can quickly delete the files you want to discard.
 
 The background of the selected text is blue. If no text is selected on the page, the **Delete** button is unavailable.
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0000001110760968.png
-
-.. |image2| image:: /_static/images/en-us_image_0000001110920874.png
 

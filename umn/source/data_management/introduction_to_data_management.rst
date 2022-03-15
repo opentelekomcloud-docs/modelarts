@@ -38,8 +38,11 @@ ModelArts supports datasets of images, audio, text, tables, videos, and other ty
 
    -  Free format: manages data in any format. Labeling is not available for data of the free format type. The free format type is applicable to scenarios where labeling is not required or developers customize labeling. If your dataset needs to contain data in multiple formats or your data format does not meet the requirements of other types of datasets, you can select a dataset in free format.
 
-      | **Figure 1** Example of a dataset in free format
-      | |image1|
+      .. figure:: /_static/images/en-us_image_0000001156920919.png
+         :alt: **Figure 1** Example of a dataset in free format
+      
+
+         **Figure 1** Example of a dataset in free format
 
 Dataset Management Process and Functions
 ----------------------------------------
@@ -88,7 +91,4 @@ Dataset Management Process and Functions
    | `Deleting a Dataset <../data_management/deleting_a_dataset.html>`__                                     | Delete a dataset to release resources.                                                                                                                                                      |
    +---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0000001156920919.png
 

@@ -7,8 +7,11 @@ When creating a project, select a training data path. This section describes how
 
 #. Click **Create Bucket**. The **Create Bucket** page is displayed. For details about how to create a bucket, see **Creating a Bucket** in the *Object Storage Service Console Operation Guide*.
 
-   | **Figure 1** Creating an OBS bucket
-   | |image2|
+   .. figure:: /_static/images/en-us_image_0000001157080895.png
+      :alt: **Figure 1** Creating an OBS bucket
+
+
+      **Figure 1** Creating an OBS bucket
 
 #. Select the bucket, and click **Create Folder**. In the dialog box that is displayed, enter the folder name and click **OK**.
 
@@ -20,6 +23,4 @@ When creating a project, select a training data path. This section describes how
 
 
 .. |image1| image:: /_static/images/en-us_image_0000001157080897.png
-
-.. |image2| image:: /_static/images/en-us_image_0000001157080895.png
 

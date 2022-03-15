@@ -3,8 +3,11 @@ Functions
 
 AI engineers face challenges in the installation and configuration of various AI tools, data preparation, and model training. To address these challenges, the one-stop AI development platform ModelArts is provided. The platform integrates data preparation, algorithm development, model training, and model deployment into the production environment, allowing AI engineers to perform one-stop AI development.
 
-| **Figure 1** Function overview
-| |image1|
+.. figure:: /_static/images/en-us_image_0000001156920845.png
+   :alt: **Figure 1** Function overview
+
+
+   **Figure 1** Function overview
 
 ModelArts has the following features:
 
@@ -24,7 +27,4 @@ ModelArts has the following features:
 
    Enables model building without coding and supports image classification, object detection, and predictive analytics.
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0000001156920845.png
 

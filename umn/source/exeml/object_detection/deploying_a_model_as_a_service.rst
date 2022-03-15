@@ -53,8 +53,11 @@ Testing a Service
          | detection_scores  | Confidence of each detection box                                                                                                                                                     |
          +-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-      | **Figure 1** Illustration for coordinates of four points of a detection box
-      | |image1|
+      .. figure:: /_static/images/en-us_image_0000001157080853.png
+         :alt: **Figure 1** Illustration for coordinates of four points of a detection box
+      
+
+         **Figure 1** Illustration for coordinates of four points of a detection box
 
       .. note::
 
@@ -62,7 +65,4 @@ Testing a Service
 
          If you enable the auto stop function, the service automatically stops after the specified time and no fee is generated.
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0000001157080853.png
 

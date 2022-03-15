@@ -16,8 +16,11 @@ ExeML Usage Process
 
 With ModelArts ExeML, you can develop AI models without coding. You only need to upload data, create a project, label the data, publish training, and deploy the trained model. Up to 100 ExeML projects can be created. For details, see `Figure 1 <#modelarts210001enustopic0284258830enustopic0169445434fig3917183328>`__.
 
-| **Figure 1** Usage process of ExeML
-| |image1|
+.. figure:: /_static/images/en-us_image_0000001110921482.png
+   :alt: **Figure 1** Usage process of ExeML
+
+
+   **Figure 1** Usage process of ExeML
 
 ExeML Projects
 --------------
@@ -30,7 +33,4 @@ ExeML Projects
 
    An object detection project aims to identify the class and location of objects in images. You only need to add images and label objects in the images with proper bounding boxes. The labled images will be used as the training set for creating a model. The model can identify multiple objects and count the number of objects in a single image, as well as inspect employees' dress code and perform unattended inspection of article placement.
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0000001110921482.png
 

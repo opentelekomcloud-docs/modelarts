@@ -14,8 +14,11 @@ ModelArts supports the entire development process, including data processing, an
 
 ModelArts supports various AI application scenarios, such as image classification and object detection.
 
-| **Figure 1** ModelArts architecture
-| |image1|
+.. figure:: /_static/images/en-us_image_0000001110920880.png
+   :alt: **Figure 1** ModelArts architecture
+
+
+   **Figure 1** ModelArts architecture
 
 Product Advantages
 ------------------
@@ -41,7 +44,4 @@ Product Advantages
    -  Exclusive use of dedicated resources
    -  Custom images for custom frameworks and operators
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0000001110920880.png
 

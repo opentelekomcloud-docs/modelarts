@@ -49,8 +49,11 @@ On the labeling platform, each member can view the images that are not labeled, 
 
 If the Reviewer role is assigned for a team labeling task, the labeling result needs to be reviewed. After the labeling result is reviewed, it is submitted to the administrator for acceptance.
 
-| **Figure 1** Labeling platform
-| |image1|
+.. figure:: /_static/images/en-us_image_0000001110760934.png
+   :alt: **Figure 1** Labeling platform
+
+
+   **Figure 1** Labeling platform
 
 Task Acceptance (Administrator)
 -------------------------------
@@ -114,7 +117,4 @@ Deleting a Labeling Task
 
 On the **Labeling Progress** tab page, click **Delete** in the row where a labeling task to be deleted. After a task is deleted, the labeling details that are not accepted will be lost. Exercise caution when performing this operation. However, the original data in the dataset and the labeled data that has been accepted are still stored in the corresponding OBS bucket.
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0000001110760934.png
 

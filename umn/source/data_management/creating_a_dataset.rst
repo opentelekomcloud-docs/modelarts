@@ -18,13 +18,19 @@ Procedure
 
    a. Set the basic information, the name and description of the dataset.
 
-      | **Figure 1** Basic information about a dataset
-      | |image1|
+      .. figure:: /_static/images/en-us_image_0000001157080905.png
+         :alt: **Figure 1** Basic information about a dataset
+      
+
+         **Figure 1** Basic information about a dataset
 
    b. Select a labeling scene and type as required. For details about the types supported by ModelArts, see `Dataset Types <../data_management/introduction_to_data_management.html#modelarts230003enustopic0171496996section51771731153811>`__.
 
-      | **Figure 2** Selecting a labeling scene and type
-      | |image2|
+      .. figure:: /_static/images/en-us_image_0000001110761058.png
+         :alt: **Figure 2** Selecting a labeling scene and type
+      
+
+         **Figure 2** Selecting a labeling scene and type
 
    c. Set the parameters based on the dataset type. For details, see the parameters of the following dataset types:
 
@@ -42,8 +48,11 @@ Procedure
 Images (Image Classification, Object Detection, and Image Segmentation)
 -----------------------------------------------------------------------
 
-| **Figure 3** Parameters of datasets for image classification and object detection
-| |image3|
+.. figure:: /_static/images/en-us_image_0000001157080911.png
+   :alt: **Figure 3** Parameters of datasets for image classification and object detection
+
+
+   **Figure 3** Parameters of datasets for image classification and object detection
 
 
 
@@ -82,8 +91,11 @@ Images (Image Classification, Object Detection, and Image Segmentation)
 Audio (Sound Classification, Speech Labeling, and Speech Paragraph Labeling)
 ----------------------------------------------------------------------------
 
-| **Figure 4** Parameters of datasets for sound classification, speech labeling, and speech paragraph labeling
-| |image4|
+.. figure:: /_static/images/en-us_image_0000001157080903.png
+   :alt: **Figure 4** Parameters of datasets for sound classification, speech labeling, and speech paragraph labeling
+
+
+   **Figure 4** Parameters of datasets for sound classification, speech labeling, and speech paragraph labeling
 
 
 
@@ -136,8 +148,11 @@ Audio (Sound Classification, Speech Labeling, and Speech Paragraph Labeling)
 Text (Text Classification, Named Entity Recognition, and Text Triplet)
 ----------------------------------------------------------------------
 
-| **Figure 5** Parameters of datasets for text classification, named entity recognition, and text triplet
-| |image5|
+.. figure:: /_static/images/en-us_image_0000001110920960.png
+   :alt: **Figure 5** Parameters of datasets for text classification, named entity recognition, and text triplet
+
+
+   **Figure 5** Parameters of datasets for text classification, named entity recognition, and text triplet
 
 
 
@@ -171,7 +186,7 @@ Text (Text Classification, Named Entity Recognition, and Text Triplet)
    |                                                                  | -  **Entity Label**: Set the label name and label color. You can click the plus sign (+) on the right of the color area to add multiple labels.                                                                                                                                                                                                                                                                                 |
    |                                                                  | -  **Relationship Label**: a relationship between two entities. Set the source entity and target entity. Therefore, add at least two entity labels before adding a relationship label.                                                                                                                                                                                                                                          |
    |                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-   |                                                                  | |image6|                                                                                                                                                                                                                                                                                                                                                                                                                        |
+   |                                                                  | |image1|                                                                                                                                                                                                                                                                                                                                                                                                                        |
    +------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Team Labeling                                                    | Enable or disable team labeling.                                                                                                                                                                                                                                                                                                                                                                                                |
    |                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                                 |
@@ -257,8 +272,11 @@ Table
 Video
 -----
 
-| **Figure 6** Parameters of datasets of the video type
-| |image7|
+.. figure:: /_static/images/en-us_image_0000001157080907.png
+   :alt: **Figure 6** Parameters of datasets of the video type
+
+
+   **Figure 6** Parameters of datasets of the video type
 
 
 
@@ -287,8 +305,11 @@ Video
 Other (Free Format)
 -------------------
 
-| **Figure 7** Parameters of datasets of the free format type
-| |image8|
+.. figure:: /_static/images/en-us_image_0000001156920933.png
+   :alt: **Figure 7** Parameters of datasets of the free format type
+
+
+   **Figure 7** Parameters of datasets of the free format type
 
 
 
@@ -310,19 +331,5 @@ Other (Free Format)
 
 
 
-.. |image1| image:: /_static/images/en-us_image_0000001157080905.png
-
-.. |image2| image:: /_static/images/en-us_image_0000001110761058.png
-
-.. |image3| image:: /_static/images/en-us_image_0000001157080911.png
-
-.. |image4| image:: /_static/images/en-us_image_0000001157080903.png
-
-.. |image5| image:: /_static/images/en-us_image_0000001110920960.png
-
-.. |image6| image:: /_static/images/en-us_image_0000001156920935.png
-
-.. |image7| image:: /_static/images/en-us_image_0000001157080907.png
-
-.. |image8| image:: /_static/images/en-us_image_0000001156920933.png
+.. |image1| image:: /_static/images/en-us_image_0000001156920935.png
 

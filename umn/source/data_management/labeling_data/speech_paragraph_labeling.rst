@@ -30,8 +30,11 @@ The dataset details page displays the labeled and unlabeled audio files. The **U
 
 #. Select an audio segment based on the content being played, and enter the audio file label and content in the **Speech Content** text box.
 
-   | **Figure 1** Labeling an audio file
-   | |image2|
+   .. figure:: /_static/images/en-us_image_0000001157080965.png
+      :alt: **Figure 1** Labeling an audio file
+   
+
+      **Figure 1** Labeling an audio file
 
 #. After entering the content, click **OK** to complete the labeling. The audio file is automatically moved to the **Labeled** tab page.
 
@@ -46,7 +49,7 @@ Modifying Labeled Data
 After labeling data, you can modify labeled data on the **Labeled** tab page.
 
 -  Modifying a label: On the dataset details page, click the **Labeled** tab, and select the audio file to be modified from the audio file list. In the **Speech Content** area, modify **Label** and **Content**, and click **OK** to complete the modification.
--  Deleting a label: Click |image3| in the **Operation** column of the target number to delete the label of the audio segment. Alternatively, you can click the cross (x) icon above the labeled audio file to delete the label. Then click **OK**.
+-  Deleting a label: Click |image2| in the **Operation** column of the target number to delete the label of the audio segment. Alternatively, you can click the cross (x) icon above the labeled audio file to delete the label. Then click **OK**.
 
 Adding Audio Files
 ------------------
@@ -78,7 +81,5 @@ On the **Unlabeled** or **Labeled** tab page, select the audio files to be delet
 
 .. |image1| image:: /_static/images/en-us_image_0000001110761012.png
 
-.. |image2| image:: /_static/images/en-us_image_0000001157080965.png
-
-.. |image3| image:: /_static/images/en-us_image_0000001156920989.png
+.. |image2| image:: /_static/images/en-us_image_0000001156920989.png
 

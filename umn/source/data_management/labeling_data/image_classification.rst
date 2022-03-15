@@ -77,8 +77,11 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
 
    Deleting a label: In the **File Labels** area, click the delete icon in the **Operation** column to delete the label. This operation deletes only the labels added to the selected image.
 
-   | **Figure 1** Modifying a label
-   | |image1|
+   .. figure:: /_static/images/en-us_image_0000001156921011.png
+      :alt: **Figure 1** Modifying a label
+   
+
+      **Figure 1** Modifying a label
 
 -  **Modifying based on labels**
 
@@ -87,8 +90,11 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
    -  Modifying a label: Click the editing icon in the **Operation** column. In the dialog box that is displayed, enter the new label name and click **OK**. After the modification, the images that have been added with the label use the new label name.
    -  Deleting a label: Click the deletion icon in the **Operation** column. In the displayed dialog box, select **Delete label**, **Delete label and images with only the label (Do not delete source files)**, or **Delete label and images with only the label (Delete source files)**, and click **OK**.
 
-   | **Figure 2** Information about all labels
-   | |image2|
+   .. figure:: /_static/images/en-us_image_0000001157080983.png
+      :alt: **Figure 2** Information about all labels
+   
+
+      **Figure 2** Information about all labels
 
 Adding Images
 -------------
@@ -120,9 +126,4 @@ If a tick is displayed in the upper left corner of an image, the image is select
 
    If you select **Delete source files**, images stored in the corresponding OBS directory will be deleted when you delete the selected images. Deleting source files may affect other dataset versions or datasets using those files. As a result, the page display, training, or inference is abnormal. Deleted data cannot be recovered. Exercise caution when performing this operation.
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0000001156921011.png
-
-.. |image2| image:: /_static/images/en-us_image_0000001157080983.png
 

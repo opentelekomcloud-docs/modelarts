@@ -20,8 +20,11 @@ Log in to the ModelArts management console and create a training job according t
 
    -  **Image Path**: SWR URL after the image is uploaded to SWR
 
-      | **Figure 1** SWR image address
-      | |image1|
+      .. figure:: /_static/images/en-us_image_0000001156920769.png
+         :alt: **Figure 1** SWR image address
+      
+
+         **Figure 1** SWR image address
 
    -  **Code Directory**: OBS path for storing the training code file.
 
@@ -92,7 +95,4 @@ After the image is checked, the backend starts the custom image container to run
 
    After an image is reviewed, the image does not need to be reviewed again when being used to create training jobs again.
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0000001156920769.png
 

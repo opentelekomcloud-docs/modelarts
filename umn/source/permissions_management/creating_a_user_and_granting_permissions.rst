@@ -72,8 +72,11 @@ Authentication Logic
 
 IAM authenticates users according to the permissions that the users have been granted. The authentication logic is as follows:
 
-| **Figure 1** Authentication logic
-| |image1|
+.. figure:: /_static/images/en-us_image_0000001110920802.png
+   :alt: **Figure 1** Authentication logic
+
+
+   **Figure 1** Authentication logic
 
 .. note::
 
@@ -85,7 +88,4 @@ IAM authenticates users according to the permissions that the users have been gr
 #. If no explicit deny is found, the system looks for allow permissions that would apply to the request. If the system finds an explicit allow permission that applies, it returns a decision of **Allow**, and the authentication ends.
 #. If no explicit allow permission is found, the system returns a decision of **Deny**, and the authentication ends.
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0000001110920802.png
 

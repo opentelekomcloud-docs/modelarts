@@ -133,8 +133,11 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
 
       After deleting the label, click **Back to Data Labeling Preview** in the upper left corner of the page to exit the labeling page. In the dialog box that is displayed, save the modification. After all labels of an image are deleted, the image is displayed on the **Unlabeled** tab page.
 
-      | **Figure 1** Editing an object detection label
-      | |image31|
+      .. figure:: /_static/images/en-us_image_0000001157080933.png
+         :alt: **Figure 1** Editing an object detection label
+      
+
+         **Figure 1** Editing an object detection label
 
 -  **Modifying based on labels**
 
@@ -143,8 +146,11 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
    -  Modifying a label: Click the edit icon in the **Operation** column. In the dialog box that is displayed, enter the new label name, select the new label color, and click **OK**. After the modification, the images that have been added with the label use the new label name.
    -  Deleting a label: Click the deletion icon in the **Operation** column to delete a label.
 
-   | **Figure 2** All labels for object detection
-   | |image32|
+   .. figure:: /_static/images/en-us_image_0000001157080935.png
+      :alt: **Figure 2** All labels for object detection
+   
+
+      **Figure 2** All labels for object detection
 
 Adding Images
 -------------
@@ -237,8 +243,4 @@ If a tick is displayed in the upper left corner of an image, the image is select
 .. |image29| image:: /_static/images/en-us_image_0000001110921004.png
 
 .. |image30| image:: /_static/images/en-us_image_0000001110920978.png
-
-.. |image31| image:: /_static/images/en-us_image_0000001157080933.png
-
-.. |image32| image:: /_static/images/en-us_image_0000001157080935.png
 

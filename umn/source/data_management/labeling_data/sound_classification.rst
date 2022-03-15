@@ -68,8 +68,11 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
 
    On the dataset details page, click the **Labeled** tab. The information about all labels is displayed on the right.
 
-   | **Figure 1** Information about all labels
-   | |image2|
+   .. figure:: /_static/images/en-us_image_0000001110761044.png
+      :alt: **Figure 1** Information about all labels
+   
+
+      **Figure 1** Information about all labels
 
    -  Modifying a label: Click the editing icon in the **Operation** column. In the dialog box that is displayed, enter the new label name and click **OK**. After the modification, the new label applies to the audio files that contain the original label.
    -  Deleting a label: Click the deletion icon in the **Operation** column. In the displayed dialog box, select the object to be deleted as prompted and click **OK**.
@@ -105,6 +108,4 @@ If a tick is displayed in the upper right corner of an audio file, the audio fil
 
 
 .. |image1| image:: /_static/images/en-us_image_0000001157080893.png
-
-.. |image2| image:: /_static/images/en-us_image_0000001110761044.png
 

@@ -22,8 +22,11 @@ The input parameters displayed on the **Usage Guides** tab page depend on the mo
 
 -  If you use a custom model with the inference code and configuration file compiled by yourself (`Specifications for Compiling the Model Configuration File <../../model_package_specifications/specifications_for_compiling_the_model_configuration_file.html>`__), the **Usage Guides** tab page only visualizes your data. The following figure shows the mapping between the input parameters displayed on the **Usage Guides** tab page and the configuration file.
 
-   | **Figure 1** Mapping between the configuration file and Usage Guides
-   | |image1|
+   .. figure:: /_static/images/en-us_image_0000001156920823.png
+      :alt: **Figure 1** Mapping between the configuration file and Usage Guides
+   
+
+      **Figure 1** Mapping between the configuration file and Usage Guides
 
 -  If your model is imported using a model template, the input and output parameters vary with the template. For details, see `Introduction to Model Templates <../../model_templates/introduction_to_model_templates.html>`__.
 
@@ -39,7 +42,4 @@ File Prediction (Images and Audios)
 #. Log in to the ModelArts management console and choose **Service Deployment** > **Real-Time Services**.
 #. On the **Real-Time Services** page, click the name of the target service. The service details page is displayed. On the **Prediction** tab page, click **Upload** and select a test file. After the file is uploaded successfully, click **Predict** to perform a prediction test.
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0000001156920823.png
 

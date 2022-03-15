@@ -21,10 +21,10 @@ CPU-based notebook instances do not use CUDA. Therefore, the following operation
 
       sudo ln -snf /usr/local/cuda-10.0 cuda
 
-   | **Figure 1** Example of switching the CUDA version
-   | |image1|
+   .. figure:: /_static/images/en-us_image_0000001156920929.png
+      :alt: **Figure 1** Example of switching the CUDA version
+   
 
+      **Figure 1** Example of switching the CUDA version
 
-
-.. |image1| image:: /_static/images/en-us_image_0000001156920929.png
 

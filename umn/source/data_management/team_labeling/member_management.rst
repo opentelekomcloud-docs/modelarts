@@ -20,11 +20,17 @@ Adding a Member
 
    Possible values of **Role** are **Labeler**, **Reviewer**, and **Team Manager**. Only one **Team Manager** can be set.
 
-   | **Figure 1** Adding a member
-   | |image1|
+   .. figure:: /_static/images/en-us_image_0000001156920939.png
+      :alt: **Figure 1** Adding a member
+   
 
-   | **Figure 2** Adding a member
-   | |image2|
+      **Figure 1** Adding a member
+
+   .. figure:: /_static/images/en-us_image_0000001157081267.png
+      :alt: **Figure 2** Adding a member
+   
+
+      **Figure 2** Adding a member
 
    Information about the added member is displayed in the **Team Details** area.
 
@@ -52,9 +58,4 @@ Deleting Members
 
    In the **Team Details** area, select members to be deleted and click **Delete**. In the dialog box that is displayed, click **OK**.
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0000001156920939.png
-
-.. |image2| image:: /_static/images/en-us_image_0000001157081267.png
 

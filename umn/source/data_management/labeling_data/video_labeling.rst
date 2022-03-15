@@ -34,15 +34,21 @@ On the dataset details page, both unlabeled and labeled video files in the datas
 
    The supported bounding boxes are the same as those supported by Object Detection. For details, see `Table 1 <../../data_management/labeling_data/object_detection.html#modelarts230012enustopic0170889732table165201739119>`__ in `Object Detection <../../data_management/labeling_data/object_detection.html>`__.
 
-   | **Figure 1** Labeling video files
-   | |image1|
+   .. figure:: /_static/images/en-us_image_0000001110761112.png
+      :alt: **Figure 1** Labeling video files
+   
+
+      **Figure 1** Labeling video files
 
 #. After the previous image is labeled, click the play button on the progress bar to resume the playback. Then, repeat `3 <#modelarts230282enustopic0257844727li993163014399>`__ to complete labeling on the entire video.
 
    The labeled time points of the current video are displayed on the right of the page.
 
-   | **Figure 2** File labels
-   | |image2|
+   .. figure:: /_static/images/en-us_image_0000001156920985.png
+      :alt: **Figure 2** File labels
+   
+
+      **Figure 2** File labels
 
 #. Click **Back to Data Labeling Preview** in the upper left corner of the page. The dataset details page is displayed, and the labeled video file is displayed on the **Labeled** tab page.
 
@@ -51,15 +57,18 @@ Modifying Labeled Data
 
 After labeling data, you can delete labeled data on the **Labeled** tab page.
 
--  Click |image3| in the **Operation** column of the target number to delete the label of the video segment. Alternatively, you can click the cross (x) icon above the labeled video file to delete the label. Then click **OK**.
+-  Click |image1| in the **Operation** column of the target number to delete the label of the video segment. Alternatively, you can click the cross (x) icon above the labeled video file to delete the label. Then click **OK**.
 
 On the **Labeled** tab page, click the target video file. In the **All Labels** area on the right of the labeling page, click the triangle icon on the right of the time point to view details. You can modify or delete a label.
 
 -  Modifying a label: Click the edit icon on the right of a label to modify the label name.
 -  Deleting a label: Click the delete icon on the right of a label to delete the label. If you click the delete icon on the right of the image time, all labels on the image are deleted.
 
-| **Figure 3** Modifying labeled data
-| |image4|
+.. figure:: /_static/images/en-us_image_0000001156920983.png
+   :alt: **Figure 3** Modifying labeled data
+
+
+   **Figure 3** Modifying labeled data
 
 Deleting a Video File
 ---------------------
@@ -76,11 +85,5 @@ If a tick is displayed in the upper left corner of a video file, the video file 
 
 
 
-.. |image1| image:: /_static/images/en-us_image_0000001110761112.png
-
-.. |image2| image:: /_static/images/en-us_image_0000001156920985.png
-
-.. |image3| image:: /_static/images/en-us_image_0000001110921012.png
-
-.. |image4| image:: /_static/images/en-us_image_0000001156920983.png
+.. |image1| image:: /_static/images/en-us_image_0000001110921012.png
 

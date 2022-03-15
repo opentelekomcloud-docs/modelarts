@@ -32,13 +32,19 @@ Adding Labels
 
 -  Adding labels on the **Unlabeled** tab page: Click the plus sign (+) next to **Label Set**. On the **Add Label** page that is displayed, add a label name, select a label color, and click **OK**.
 
-   | **Figure 1** Adding a named entity label (1)
-   | |image1|
+   .. figure:: /_static/images/en-us_image_0000001156921015.png
+      :alt: **Figure 1** Adding a named entity label (1)
+   
+
+      **Figure 1** Adding a named entity label (1)
 
 -  Adding labels on the **Labeled** tab page: Click the plus sign (+) next to **All Labels**. On the **Add Label** page that is displayed, add a label name, select a label color, and click **OK**.
 
-   | **Figure 2** Adding a named entity label (2)
-   | |image2|
+   .. figure:: /_static/images/en-us_image_0000001156921017.png
+      :alt: **Figure 2** Adding a named entity label (2)
+   
+
+      **Figure 2** Adding a named entity label (2)
 
 Viewing the Labeled Text
 ------------------------
@@ -56,7 +62,7 @@ On the dataset details page, click the **Labeled** tab, and modify the text info
 
    On the dataset details page, click the **Labeled** tab, and select the text to be modified from the text list.
 
-   Manual deletion: In the text list, click the text. When the text background turns blue, the text is selected. On the right of the page, click |image3| above a text label to delete the label.
+   Manual deletion: In the text list, click the text. When the text background turns blue, the text is selected. On the right of the page, click |image1| above a text label to delete the label.
 
 -  **Modifying based on labels**
 
@@ -90,9 +96,5 @@ The background of the selected text is blue.
 
 
 
-.. |image1| image:: /_static/images/en-us_image_0000001156921015.png
-
-.. |image2| image:: /_static/images/en-us_image_0000001156921017.png
-
-.. |image3| image:: /_static/images/en-us_image_0000001110761148.png
+.. |image1| image:: /_static/images/en-us_image_0000001110761148.png
 

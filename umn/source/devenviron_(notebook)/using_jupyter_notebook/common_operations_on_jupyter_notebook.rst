@@ -10,32 +10,44 @@ In the notebook instance list, locate the row where the target notebook instance
 
 Two tab pages are available on the **Jupyter Notebook** page: **Files** and **Running**.
 
-| **Figure 1** Jupyter Notebook
-| |image1|
+.. figure:: /_static/images/en-us_image_0000001110761034.png
+   :alt: **Figure 1** Jupyter Notebook
+
+
+   **Figure 1** Jupyter Notebook
 
 Selecting Different AI Engines to Create Files
 ----------------------------------------------
 
 Open a notebook instance and go to the **Jupyter Notebook** page. On the **Files** tab page, click **New** in the upper right corner, select the required AI engine, and create a file for encoding.
 
-| **Figure 2** Selecting different AI engines
-| |image2|
+.. figure:: /_static/images/en-us_image_0000001157080885.png
+   :alt: **Figure 2** Selecting different AI engines
+
+
+   **Figure 2** Selecting different AI engines
 
 Uploading a File
 ----------------
 
 Open a notebook instance and go to the **Jupyter Notebook** page. On the **Files** tab page, click **Upload** in the upper right corner to select a file from the local PC and upload it.
 
-| **Figure 3** Uploading a file
-| |image3|
+.. figure:: /_static/images/en-us_image_0000001110920940.png
+   :alt: **Figure 3** Uploading a file
+
+
+   **Figure 3** Uploading a file
 
 Compiling a File
 ----------------
 
 After a file is created, click the file name to go to the file compilation page.
 
-| **Figure 4** Compiling a file
-| |image4|
+.. figure:: /_static/images/en-us_image_0000001110920938.png
+   :alt: **Figure 4** Compiling a file
+
+
+   **Figure 4** Compiling a file
 
 
 
@@ -65,7 +77,7 @@ After a file is created, click the file name to go to the file compilation page.
    |                       |                              |                                                                                                                                                                                                                                                                                                                                                                                                                             |
    |                       |                              | The blue bar on the left indicates the command mode, and the green bar indicates the editing mode (in this mode, the cursor exists in the cell and you can write code). In command mode, you can press **Enter** or click the code box to enter the editing mode. In editing mode, you can press **ESC** or click the left area of the code box to enter the command mode.                                                  |
    |                       |                              |                                                                                                                                                                                                                                                                                                                                                                                                                             |
-   |                       |                              | |image5|                                                                                                                                                                                                                                                                                                                                                                                                                    |
+   |                       |                              | |image1|                                                                                                                                                                                                                                                                                                                                                                                                                    |
    +-----------------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Deleting a File or Folder
@@ -77,20 +89,13 @@ To delete a file or folder from Jupyter Notebook, select the file or folder in t
 
    After the file or folder is deleted, click the **Refresh** button in the upper right corner to refresh the Jupyter page and clear the cache.
 
-| **Figure 5** Jupyter page
-| |image6|
+.. figure:: /_static/images/en-us_image_0000001110761038.png
+   :alt: **Figure 5** Jupyter page
+
+
+   **Figure 5** Jupyter page
 
 
 
-.. |image1| image:: /_static/images/en-us_image_0000001110761034.png
-
-.. |image2| image:: /_static/images/en-us_image_0000001157080885.png
-
-.. |image3| image:: /_static/images/en-us_image_0000001110920940.png
-
-.. |image4| image:: /_static/images/en-us_image_0000001110920938.png
-
-.. |image5| image:: /_static/images/en-us_image_0000001110920936.png
-
-.. |image6| image:: /_static/images/en-us_image_0000001110761038.png
+.. |image1| image:: /_static/images/en-us_image_0000001110920936.png
 

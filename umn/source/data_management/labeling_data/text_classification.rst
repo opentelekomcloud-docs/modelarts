@@ -28,8 +28,11 @@ The dataset details page displays the labeled and unlabeled text files in the da
 
    You can repeat this operation to select objects and add labels to the objects.
 
-   | **Figure 1** Labeling for text classification
-   | |image1|
+   .. figure:: /_static/images/en-us_image_0000001110760906.png
+      :alt: **Figure 1** Labeling for text classification
+   
+
+      **Figure 1** Labeling for text classification
 
 #. After all objects are labeled, click **Save Current Page** at the bottom of the page to complete labeling text files on the **Unlabeled** tab page.
 
@@ -38,13 +41,19 @@ Adding Labels
 
 -  Adding labels on the **Unlabeled** tab page: Click the plus sign (+) next to **Label Set**. On the **Add Label** page that is displayed, add a label name, select a label color, and click **OK**.
 
-   | **Figure 2** Adding a label (1)
-   | |image2|
+   .. figure:: /_static/images/en-us_image_0000001157080759.png
+      :alt: **Figure 2** Adding a label (1)
+   
+
+      **Figure 2** Adding a label (1)
 
 -  Adding labels on the **Labeled** tab page: Click the plus sign (+) next to **All Labels**. On the **Add Label** page that is displayed, add a label name, select a label color, and click **OK**.
 
-   | **Figure 3** Adding a label (2)
-   | |image3|
+   .. figure:: /_static/images/en-us_image_0000001110760912.png
+      :alt: **Figure 3** Adding a label (2)
+   
+
+      **Figure 3** Adding a label (2)
 
 Viewing the Labeled Text
 ------------------------
@@ -60,7 +69,7 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
 
    On the dataset details page, click the **Labeled** tab, and select the text to be modified from the text list.
 
-   In the text list, click the text. When the text background turns blue, the text is selected. If a text file has multiple labels, you can click |image4| above a label to delete the label.
+   In the text list, click the text. When the text background turns blue, the text is selected. If a text file has multiple labels, you can click |image1| above a label to delete the label.
 
 -  **Modifying based on labels**
 
@@ -98,11 +107,5 @@ The background of the selected text is blue.
 
 
 
-.. |image1| image:: /_static/images/en-us_image_0000001110760906.png
-
-.. |image2| image:: /_static/images/en-us_image_0000001157080759.png
-
-.. |image3| image:: /_static/images/en-us_image_0000001110760912.png
-
-.. |image4| image:: /_static/images/en-us_image_0000001110760908.png
+.. |image1| image:: /_static/images/en-us_image_0000001110760908.png
 

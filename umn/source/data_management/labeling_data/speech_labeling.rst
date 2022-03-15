@@ -32,8 +32,11 @@ The dataset details page displays the labeled and unlabeled audio files. The **U
 
 #. After entering the content, click **OK** to complete the labeling. The audio file is automatically moved to the **Labeled** tab page.
 
-   | **Figure 1** Labeling an audio file
-   | |image2|
+   .. figure:: /_static/images/en-us_image_0000001110920914.png
+      :alt: **Figure 1** Labeling an audio file
+   
+
+      **Figure 1** Labeling an audio file
 
 Viewing the Labeled Audio Files
 -------------------------------
@@ -76,6 +79,4 @@ On the **Unlabeled** or **Labeled** tab page, select the audio files to be delet
 
 
 .. |image1| image:: /_static/images/en-us_image_0000001110761012.png
-
-.. |image2| image:: /_static/images/en-us_image_0000001110920914.png
 

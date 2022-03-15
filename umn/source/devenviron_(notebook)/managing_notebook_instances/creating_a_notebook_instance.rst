@@ -22,8 +22,11 @@ Creating a Notebook Instance
 
    a. Enter the basic information about the notebook instance, including the name, description, and whether to automatically stop the notebook instance. For details about the parameters, see `Table 1 <#modelarts230034enustopic0162690358table1669535791517>`__.
 
-      | **Figure 1** Basic information about a notebook instance
-      | |image1|
+      .. figure:: /_static/images/en-us_image_0000001156920885.png
+         :alt: **Figure 1** Basic information about a notebook instance
+      
+
+         **Figure 1** Basic information about a notebook instance
 
       
 
@@ -89,7 +92,4 @@ Creating a Notebook Instance
 
    Switch to the notebook instance list. **Status** of the notebook instance being created is **Starting**. If **Status** of the notebook instance changes to **Running**, the notebook instance has been created.
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0000001156920885.png
 
