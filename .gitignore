@@ -28,3 +28,5 @@ releasenotes/build
 .ropeproject
 test.py
 .vscode
+umn/build
+api-ref/build
