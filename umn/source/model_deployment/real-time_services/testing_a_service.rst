@@ -3,8 +3,8 @@ Testing a Service
 
 After a model is deployed as a real-time service, you can debug code or add files for testing on the **Prediction** tab page. Based on the input request (JSON text or file) defined by the model, the service can be tested in either of the following ways:
 
-#. `JSON Text Prediction <#modelarts230062enustopic0165025306section15840106121611>`__: If the input type of the model of the deployed service is JSON text, that is, the input does not contain files, you can enter the JSON code on the **Prediction** tab page for service testing.
-#. `File Prediction (Images and Audios) <#modelarts230062enustopic0165025306section1666533761611>`__: If the input type of the model of the deployed service is file, including images, audios, and videos, you can add images on the **Prediction** tab page for service testing.
+#. `JSON Text Prediction <#json-text-prediction>`__: If the input type of the model of the deployed service is JSON text, that is, the input does not contain files, you can enter the JSON code on the **Prediction** tab page for service testing.
+#. `File Prediction (Images and Audios) <#file-prediction-(images-and-audios)>`__: If the input type of the model of the deployed service is file, including images, audios, and videos, you can add images on the **Prediction** tab page for service testing.
 
 .. note::
 

@@ -3,7 +3,7 @@ Conversion Templates
 
 ModelArts provides the following conversion templates based on different AI frameworks:
 
--  `TF-FrozenGraph-To-Ascend-C32 <#modelarts230110enustopic0177612243section47553019134>`__
+-  `TF-FrozenGraph-To-Ascend-C32 <#tf-frozengraph-to-ascend-c32>`__
 
 TF-FrozenGraph-To-Ascend-C32
 ----------------------------

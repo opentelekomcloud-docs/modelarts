@@ -13,7 +13,7 @@ Specifications
 
 -  To ensure that the log content can be displayed normally, the logs must be standard output.
 -  The default user of a custom image must be the user whose UID is **1101**.
--  Custom images can be developed based on basic ModelArts images. For details about the supported basic images, see `Overview of a Basic Image Package <#modelarts230217enustopic0212179951section1126616610513>`__.
+-  Custom images can be developed based on basic ModelArts images. For details about the supported basic images, see `Overview of a Basic Image Package <#overview-of-a-basic-image-package>`__.
 -  Currently, the ModelArts backend does not support the download of open source installation packages. You are advised to install the dependency packages required for training in the custom image.
 
 Overview of a Basic Image Package
@@ -39,8 +39,8 @@ After customizing an image, upload it to SWR. Make sure that you have created an
 
 Obtain basic images based on chip requirements:
 
--  `CPU-based Basic Images <#modelarts230217enustopic0212179951section2357164275019>`__
--  `GPU-based Basic Images <#modelarts230217enustopic0212179951section125281544151710>`__
+-  `CPU-based Basic Images <#cpu-based-basic-images>`__
+-  `GPU-based Basic Images <#gpu-based-basic-images>`__
 
 CPU-based Basic Images
 ----------------------

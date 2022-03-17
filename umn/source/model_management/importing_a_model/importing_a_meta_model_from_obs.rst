@@ -102,7 +102,7 @@ Procedure
          | Description | Brief description of the model                                                                                                                                                      |
          +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   b. Select the meta model source and set related parameters. **Meta Model Source** has four options based on the scenario. For details, see `Methods of Importing a Model <../../model_management/introduction_to_model_management.html#modelarts230052enustopic0171858287section179419351998>`__. Set **Meta Model Source** to **OBS**. For details about the parameters, see `Table 3 <#modelarts230207enustopic0207629478table1631162916535>`__.
+   b. Select the meta model source and set related parameters. **Meta Model Source** has four options based on the scenario. For details, see `Methods of Importing a Model <../../model_management/introduction_to_model_management.html#methods-of-importing-a-model>`__. Set **Meta Model Source** to **OBS**. For details about the parameters, see `Table 3 <#modelarts230207enustopic0207629478table1631162916535>`__.
 
       For the meta model imported from OBS, you need to compile the inference code and configuration file by referring to `Model Package Specifications <../../model_package_specifications/model_package_specifications.html>`__ and place the inference code and configuration files in the **model** folder storing the meta model. If the selected directory does not contain the corresponding inference code and configuration files, the model cannot be imported.
 

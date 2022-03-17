@@ -1,7 +1,7 @@
 Managing Dataset Versions
 =========================
 
-After labeling data, you can publish the dataset to multiple versions for management. For the published versions, you can view the dataset version updates, set the current version, and delete versions. For details about dataset versions, see `About Dataset Versions <../data_management/publishing_a_dataset.html#modelarts230018enustopic0170886812section38541340654>`__.
+After labeling data, you can publish the dataset to multiple versions for management. For the published versions, you can view the dataset version updates, set the current version, and delete versions. For details about dataset versions, see `About Dataset Versions <../data_management/publishing_a_dataset.html#about-dataset-versions>`__.
 
 For details about how to publish a new version, see `Publishing a Dataset <../data_management/publishing_a_dataset.html>`__.
 

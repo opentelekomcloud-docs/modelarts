@@ -12,13 +12,13 @@ When using ModelArts to implement AI Development Lifecycle, you can use two diff
 
    Create a dedicated resource pool and select the dedicated resource pool during AI development. For details about the dedicated resource pool, see the following:
 
-   `Dedicated Resource Pool <#modelarts230076enustopic0143244658section6250135125515>`__
+   `Dedicated Resource Pool <#dedicated-resource-pool>`__
 
-   `Creating a Dedicated Resource Pool <#modelarts230076enustopic0143244658section4115221610>`__
+   `Creating a Dedicated Resource Pool <#creating-a-dedicated-resource-pool>`__
 
-   `Scaling a Dedicated Resource Pool <#modelarts230076enustopic0143244658section1521854122017>`__
+   `Scaling a Dedicated Resource Pool <#scaling-a-dedicated-resource-pool>`__
 
-   `Deleting a Dedicated Resource Pool <#modelarts230076enustopic0143244658section102631431172915>`__
+   `Deleting a Dedicated Resource Pool <#deleting-a-dedicated-resource-pool>`__
 
 Dedicated Resource Pool
 -----------------------

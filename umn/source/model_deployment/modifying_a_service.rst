@@ -3,9 +3,9 @@ Modifying a Service
 
 For a deployed service, you can modify its basic information to match service changes. You can modify the basic information about a service in either of the following ways:
 
-`Method 1: Modify Service Information on the Service Management Page <#modelarts230071enustopic0172547189section6987155265816>`__
+`Method 1: Modify Service Information on the Service Management Page <#method-1:-modify-service-information-on-the-service-management-page>`__
 
-`Method 2: Modify Service Information on the Service Details Page <#modelarts230071enustopic0172547189section12604201617210>`__
+`Method 2: Modify Service Information on the Service Details Page <#method-2:-modify-service-information-on-the-service-details-page>`__
 
 Prerequisites
 -------------

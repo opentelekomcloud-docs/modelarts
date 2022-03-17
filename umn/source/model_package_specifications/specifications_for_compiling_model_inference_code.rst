@@ -223,7 +223,7 @@ XGBoost Inference Script Example
 Inference Script Example of the Custom Inference Logic
 ------------------------------------------------------
 
-First, define a dependency package in the configuration file. For details, see `Example of a Model Configuration File Using a Custom Dependency Package <../model_package_specifications/specifications_for_compiling_the_model_configuration_file.html#modelarts230092enustopic0172466149section119911955122011>`__. Then, use the following code example to implement the loading and inference of the model in **saved_model** format.
+First, define a dependency package in the configuration file. For details, see `Example of a Model Configuration File Using a Custom Dependency Package <../model_package_specifications/specifications_for_compiling_the_model_configuration_file.html#example-of-a-model-configuration-file-using-a-custom-dependency-package>`__. Then, use the following code example to implement the loading and inference of the model in **saved_model** format.
 
 +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------+
 | ::                                | ::                                                                                                                       |

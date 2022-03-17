@@ -37,7 +37,7 @@ Procedure
          | Description | Brief description of the model                                                                                                                                                      |
          +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   b. Select the meta model source and set related parameters. Set **Meta Model Source** based on your application scenario. For details, see `Methods of Importing a Model <../../model_management/introduction_to_model_management.html#modelarts230052enustopic0171858287section179419351998>`__. If **Meta Model Source** is set to **Training job**, set other parameters by referring to `Table 2 <#modelarts230054enustopic0207629475table104931647171713>`__. 
+   b. Select the meta model source and set related parameters. Set **Meta Model Source** based on your application scenario. For details, see `Methods of Importing a Model <../../model_management/introduction_to_model_management.html#methods-of-importing-a-model>`__. If **Meta Model Source** is set to **Training job**, set other parameters by referring to `Table 2 <#modelarts230054enustopic0207629475table104931647171713>`__. 
 
 .. _modelarts230054enustopic0207629475table104931647171713:
 

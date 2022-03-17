@@ -35,7 +35,7 @@ Procedure
          | Description | Brief description of the model                                                                                                                                                      |
          +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   b. Select the meta model source and set related parameters. **Meta Model Source** has four options based on the scenario. For details, see `Methods of Importing a Model <../../model_management/introduction_to_model_management.html#modelarts230052enustopic0171858287section179419351998>`__. Set **Meta Model Source** to **Container image**. For details about the parameters, see `Table 2 <#modelarts230206enustopic0207629477table104931647171713>`__. 
+   b. Select the meta model source and set related parameters. **Meta Model Source** has four options based on the scenario. For details, see `Methods of Importing a Model <../../model_management/introduction_to_model_management.html#methods-of-importing-a-model>`__. Set **Meta Model Source** to **Container image**. For details about the parameters, see `Table 2 <#modelarts230206enustopic0207629477table104931647171713>`__. 
 
 .. _modelarts230206enustopic0207629477table104931647171713:
 

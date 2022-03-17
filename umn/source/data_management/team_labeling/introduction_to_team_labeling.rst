@@ -18,7 +18,7 @@ How to Enable Team Labeling
 
       **Figure 1** Enabling during dataset creation
 
--  If team labeling is not enabled for a dataset that has been created, create a team labeling task to enable team labeling. For details about how to create a team labeling task, see `Creating Team Labeling Tasks <../../data_management/team_labeling/managing_team_labeling_tasks.html#modelarts230210enustopic0209053802section72262410214>`__.
+-  If team labeling is not enabled for a dataset that has been created, create a team labeling task to enable team labeling. For details about how to create a team labeling task, see `Creating Team Labeling Tasks <../../data_management/team_labeling/managing_team_labeling_tasks.html#creating-team-labeling-tasks>`__.
 
    .. figure:: /_static/images/en-us_image_0000001156921451.png
       :alt: **Figure 2** Creating a team labeling task in a dataset list

@@ -1,7 +1,7 @@
 Viewing Job Details
 ===================
 
-After a training job finishes, you can manage the training job versions and check whether the training result of the job is satisfactory by viewing the `job details <#modelarts230048enustopic0171858286section15518121114018>`__.
+After a training job finishes, you can manage the training job versions and check whether the training result of the job is satisfactory by viewing the `job details <#training-job-details>`__.
 
 Training Job Details
 --------------------

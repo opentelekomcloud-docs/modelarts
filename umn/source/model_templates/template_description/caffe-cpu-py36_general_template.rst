@@ -9,7 +9,7 @@ AI engine: CPU-based Caffe 1.0; Environment: Python 3.6; Input and output mode: 
 Template Input
 --------------
 
-The template input is the Caffe-based model package stored on OBS. Ensure that the OBS directory you use and ModelArts are in the same region. For details about model package requirements, see `Model Package Example <#modelarts230169enustopic0193596270section164016197320>`__.
+The template input is the Caffe-based model package stored on OBS. Ensure that the OBS directory you use and ModelArts are in the same region. For details about model package requirements, see `Model Package Example <#model-package-example>`__.
 
 Input and Output Mode
 ---------------------

@@ -39,11 +39,11 @@ After a labeling task is created, the team member to which the task is assigned 
 
 In the email details, click the labeling task link and use your email address and initial password to log in to the labeling platform. After login, change the password. After logging in to the labeling platform, you can view the assigned labeling task and click the task name to go to the labeling page. The labeling method varies depending on the dataset type. For details, see the following:
 
--  `Image Classification <../../data_management/labeling_data/image_classification.html#modelarts230011enustopic0170889731section888019266174>`__
--  `Object Detection <../../data_management/labeling_data/object_detection.html#modelarts230012enustopic0170889732section888019266174>`__
--  `Text Classification <../../data_management/labeling_data/text_classification.html#modelarts230013enustopic0170889733section888019266174>`__
--  `Named Entity Recognition <../../data_management/labeling_data/named_entity_recognition.html#modelarts230014enustopic0170889734section888019266174>`__
--  `Text Triplet <../../data_management/labeling_data/text_triplet.html#modelarts230211enustopic0209128667section888019266174>`__
+-  `Image Classification <../../data_management/labeling_data/image_classification.html#labeling-images-(manually)>`__
+-  `Object Detection <../../data_management/labeling_data/object_detection.html#labeling-images-(manually)>`__
+-  `Text Classification <../../data_management/labeling_data/text_classification.html#labeling-content>`__
+-  `Named Entity Recognition <../../data_management/labeling_data/named_entity_recognition.html#labeling-content>`__
+-  `Text Triplet <../../data_management/labeling_data/text_triplet.html#labeling-content>`__
 
 On the labeling platform, each member can view the images that are not labeled, to be corrected, rejected, to be reviewed, approved, and accepted. Pay attention to the images rejected by the administrator and the images to be corrected.
 

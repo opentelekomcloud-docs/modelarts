@@ -148,7 +148,7 @@ Image Segmentation
        "sample-type": 0
    }
 
--  The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#modelarts230009enustopic0170886817section260132417144>`__. For details, see `Table 1 <#modelarts230009enustopic0170886817table598984218223>`__.
+-  The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#image-classification>`__. For details, see `Table 1 <#modelarts230009enustopic0170886817table598984218223>`__.
 -  **annotation-loc** indicates the path for saving the label file. This parameter is mandatory for image segmentation and object detection but optional for other labeling types.
 -  **annotation-format** indicates the format of the label file. This parameter is optional. The default value is **PASCAL VOC**. Only **PASCAL VOC** is supported.
 -  **sample-type** indicates a sample format. Value **0** indicates image, **1** text, **2** audio, **4** table, and **6** video.
@@ -289,7 +289,7 @@ Text Classification
            } ]
    }
 
-The **content** parameter indicates the text to be labeled (in UTF-8 encoding format, which can be Chinese). The other parameters are the same as those described in `Image Classification <#modelarts230009enustopic0170886817section260132417144>`__. For details, see `Table 1 <#modelarts230009enustopic0170886817table598984218223>`__.
+The **content** parameter indicates the text to be labeled (in UTF-8 encoding format, which can be Chinese). The other parameters are the same as those described in `Image Classification <#image-classification>`__. For details, see `Table 1 <#modelarts230009enustopic0170886817table598984218223>`__.
 
 Named Entity Recognition
 ------------------------
@@ -323,7 +323,7 @@ Named Entity Recognition
        ]
    }
 
-The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#modelarts230009enustopic0170886817section260132417144>`__. For details, see `Table 1 <#modelarts230009enustopic0170886817table598984218223>`__.
+The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#image-classification>`__. For details, see `Table 1 <#modelarts230009enustopic0170886817table598984218223>`__.
 
 `Table 6 <#modelarts230009enustopic0170886817table8486339124912>`__ describes the property parameters. For example, if you want to extract **Michael** from **"source":"content://Michael Jordan"**, the value of **start_index** is **0** and that of **end_index** is **7**.
 
@@ -397,7 +397,7 @@ Text Triplet
        ]
    }
 
-The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#modelarts230009enustopic0170886817section260132417144>`__. For details, see `Table 1 <#modelarts230009enustopic0170886817table598984218223>`__.
+The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#image-classification>`__. For details, see `Table 1 <#modelarts230009enustopic0170886817table598984218223>`__.
 
 `Table 5 property parameters <#modelarts230009enustopic0170886817table134893213914>`__ describes the **property** parameters. **@modelarts:start_index** and **@modelarts:end_index** are the same as those of named entity recognition. For example, when **source** is set to **content://"Three Body" is a series of long science fiction novels created by Liu Cix.**, **Liu Cix** is an entity person, **Three Body** is an entity book, the person is the author of the book, and the book is works of the person.
 
@@ -437,7 +437,7 @@ Object Detection
            }]
    }
 
--  The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#modelarts230009enustopic0170886817section260132417144>`__. For details, see `Table 1 <#modelarts230009enustopic0170886817table598984218223>`__.
+-  The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#image-classification>`__. For details, see `Table 1 <#modelarts230009enustopic0170886817table598984218223>`__.
 -  **annotation-loc** indicates the path for saving the label file. This parameter is mandatory for object detection and image segmentation but optional for other labeling types.
 -  **annotation-format** indicates the format of the label file. This parameter is optional. The default value is **PASCAL VOC**. Only **PASCAL VOC** is supported.
 
@@ -643,7 +643,7 @@ Sound Classification
        ]
    }
 
-The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#modelarts230009enustopic0170886817section260132417144>`__. For details, see `Table 1 <#modelarts230009enustopic0170886817table598984218223>`__.
+The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#image-classification>`__. For details, see `Table 1 <#modelarts230009enustopic0170886817table598984218223>`__.
 
 Speech Labeling
 ---------------
@@ -664,7 +664,7 @@ Speech Labeling
        ]
    }
 
--  The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#modelarts230009enustopic0170886817section260132417144>`__. For details, see `Table 1 <#modelarts230009enustopic0170886817table598984218223>`__.
+-  The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#image-classification>`__. For details, see `Table 1 <#modelarts230009enustopic0170886817table598984218223>`__.
 -  The **@modelarts:content** parameter in **property** indicates speech labeling. The data type is **String**.
 
 Speech Paragraph Labeling
@@ -704,7 +704,7 @@ Speech Paragraph Labeling
        ]
    }
 
--  The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#modelarts230009enustopic0170886817section260132417144>`__. For details, see `Table 1 <#modelarts230009enustopic0170886817table598984218223>`__.
+-  The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#image-classification>`__. For details, see `Table 1 <#modelarts230009enustopic0170886817table598984218223>`__.
 
 -  `Table 10 <#modelarts230009enustopic0170886817table1151144815513>`__ describes the **property** parameters. 
 
@@ -752,7 +752,7 @@ Video Labeling
        "sample-type": 0
    }
 
--  The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#modelarts230009enustopic0170886817section260132417144>`__. For details, see `Table 1 <#modelarts230009enustopic0170886817table598984218223>`__.
+-  The parameters such as **source**, **usage**, and **annotation** are the same as those described in `Image Classification <#image-classification>`__. For details, see `Table 1 <#modelarts230009enustopic0170886817table598984218223>`__.
 -  **annotation-loc** indicates the path for saving the label file. This parameter is mandatory for object detection but optional for other labeling types.
 -  **annotation-format** indicates the format of the label file. This parameter is optional. The default value is **PASCAL VOC**. Only **PASCAL VOC** is supported.
 -  **sample-type** indicates a sample format. Value **0** indicates image, **1** text, **2** audio, **4** table, and **6** video.
