@@ -149,3 +149,10 @@ html_title = "Model Arts UMN"
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'madoc'
+
+latex_documents = [
+    ('index',
+     'umn-modelarts.tex',
+     u'%s User Manual Documentation' % project,
+     u'OpenTelekomCloud', 'manual'),
+]
