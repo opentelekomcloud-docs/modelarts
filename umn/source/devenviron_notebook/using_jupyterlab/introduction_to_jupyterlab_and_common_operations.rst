@@ -29,7 +29,7 @@ Creating and Opening a Notebook Instance
 
 On the JupyterLab homepage, click an applicable AI engine in the **Notebook** area to create a notebook file with the selected framework.
 
-The AI framework supported by each notebook instance varies according to the working environment. The following figure is only an example. Select an AI framework based on the site requirements. For details about all framework versions and Python versions supported by ModelArts, see `Supported AI Engines <../../devenviron_(notebook)/introduction_to_notebook.html#supported-ai-engines>`__.
+The AI framework supported by each notebook instance varies according to the working environment. The following figure is only an example. Select an AI framework based on the site requirements. For details about all framework versions and Python versions supported by ModelArts, see `Supported AI Engines <../../devenviron_notebook/introduction_to_notebook.html#supported-ai-engines>`__.
 
 .. figure:: /_static/images/en-us_image_0000001157080871.png
    :alt: **Figure 2** Selecting an AI engine and creating a notebook instance
@@ -73,7 +73,7 @@ Uploading a File
 
 On the JupyterLab page, you can click **Upload File** in the upper left corner and select a local file to upload.
 
-The size of the file to be uploaded using this method is limited. If the file size exceeds the limit, use other methods to upload the file. For details, see `Uploading Data to JupyterLab <../../devenviron_(notebook)/using_jupyterlab/uploading_and_downloading_data/uploading_data_to_jupyterlab.html>`__.
+The size of the file to be uploaded using this method is limited. If the file size exceeds the limit, use other methods to upload the file. For details, see `Uploading Data to JupyterLab <../../devenviron_notebook/using_jupyterlab/uploading_and_downloading_data/uploading_data_to_jupyterlab.html>`__.
 
 .. figure:: /_static/images/en-us_image_0000001110920918.png
    :alt: **Figure 6** Uploading a file
@@ -107,7 +107,7 @@ To open multiple views, open the file and choose **File** > **New View for Noteb
 Downloading a File to a Local Computer
 --------------------------------------
 
-Files created in JupyterLab can be directly downloaded to a local computer. The size of the file to be downloaded using this method is limited. If the file size exceeds the limit, use other methods to download the file. For details, see `Downloading a File from JupyterLab <../../devenviron_(notebook)/using_jupyterlab/uploading_and_downloading_data/downloading_a_file_from_jupyterlab.html>`__.
+Files created in JupyterLab can be directly downloaded to a local computer. The size of the file to be downloaded using this method is limited. If the file size exceeds the limit, use other methods to download the file. For details, see `Downloading a File from JupyterLab <../../devenviron_notebook/using_jupyterlab/uploading_and_downloading_data/downloading_a_file_from_jupyterlab.html>`__.
 
 In the JupyterLab file list, right-click the file to be downloaded and choose **Download** from the shortcut menu. The file is downloaded to the directory set for your browser.
 

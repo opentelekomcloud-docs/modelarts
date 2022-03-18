@@ -8,4 +8,4 @@ Real-Time Services
    deploying_a_model_as_a_real-time_service
    viewing_service_details
    testing_a_service
-   accessing_a_real-time_service_(token-based_authentication)
+   accessing_a_real-time_service_token-based_authentication
