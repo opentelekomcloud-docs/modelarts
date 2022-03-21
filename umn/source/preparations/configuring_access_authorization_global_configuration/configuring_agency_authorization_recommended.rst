@@ -19,7 +19,7 @@ Before You Start
 -  IAM user
 
    -  If the agency has been authorized, you can view the authorization information on the **Settings** page.
-   -  If an IAM user has not obtained the authorization, ModelArts will display a message indicating that the user has not been authorized when the user accesses the **Add Authorization** page. In this case, contact the administrator of the IAM user to add authorization. Alternatively, you can `use access keys for authorization <../../preparations/configuring_access_authorization_(global_configuration)/configuring_access_key_authorization.html>`__.
+   -  If an IAM user has not obtained the authorization, ModelArts will display a message indicating that the user has not been authorized when the user accesses the **Add Authorization** page. In this case, contact the administrator of the IAM user to add authorization. Alternatively, you can `use access keys for authorization <../../preparations/configuring_access_authorization_global_configuration/configuring_access_key_authorization.html>`__.
 
 -  When configuring an agency, you can use an automatically created agency. For details, see `Automatically Creating an IAM Agency <#automatically-creating-an-iam-agency>`__. You can also configure an agency. For example, you can configure an IAM user with the agency valid for only one day.
 

@@ -9,7 +9,7 @@ Main Index
    preparations/index
    exeml/index
    data_management/index
-   devenviron_(notebook)/index
+   devenviron_notebook/index
    training_management/index
    model_management/index
    model_deployment/index

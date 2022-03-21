@@ -6,5 +6,5 @@ Configuring Access Authorization (Global Configuration)
    :maxdepth: 1
 
    overview
-   configuring_agency_authorization_(recommended)
+   configuring_agency_authorization_recommended
    configuring_access_key_authorization
