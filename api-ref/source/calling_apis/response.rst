@@ -55,7 +55,7 @@ Similar to a request, a response also has a header, for example, **Content-type*
    |                       | Default value: hour                                                                                                                                                                                                            |                       |
    +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
 
-`Figure 1 <#modelarts030003enustopic0171310283enustopic0170917209enustopic0168405765fig4865141011511>`__ shows the response header fields for the API used to obtain a user token.
+Figure 1 shows the response header fields for the API used to obtain a user token.
 
 **x-subject-token** is the desired user token. This token can then be used to authenticate the calling of other APIs.
 

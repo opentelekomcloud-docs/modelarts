@@ -3,9 +3,9 @@ Accessing a Real-Time Service (Token-based Authentication)
 
 If a real-time service is in the **Running** state, the real-time service has been deployed successfully. This service provides a standard RESTful API for users to call. Before integrating the API to the production environment, commission the API. You can use either of the following methods to send an inference request to the real-time service:
 
-`Method 1: Use GUI-based Software for Inference (Postman) <#method-1:-use-gui-based-software-for-inference-(postman)>`__ (Postman is recommended for Windows.)
+`Method 1: Use GUI-based Software for Inference (Postman) <#method-1--use-gui-based-software-for-inference-(postman)>`__ (Postman is recommended for Windows.)
 
-`Method 2: Run the cURL Command to Send an Inference Request <#method-2:-run-the-curl-command-to-send-an-inference-request>`__ (curl commands are recommended for Linux.)
+`Method 2: Run the cURL Command to Send an Inference Request <#method-2--run-the-curl-command-to-send-an-inference-request>`__ (curl commands are recommended for Linux.)
 
 Method 1: Use GUI-based Software for Inference (Postman)
 --------------------------------------------------------
