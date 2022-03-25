@@ -24,7 +24,7 @@ html_theme_options = {
     "sidebar_mode": "toctree"
 }
 otcdocs_auto_name = False
-project = 'ModelArts Service'
+project = 'ModelArts'
 otcdocs_repo_name = 'opentelekomcloud-docs/modelarts'
 
 
