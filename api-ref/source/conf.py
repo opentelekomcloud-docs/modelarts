@@ -14,7 +14,7 @@ import os
 import sys
 
 extensions = [
-    'os_api_ref',
+    'otc_api_ref',
     'otcdocstheme'
 ]
 
@@ -157,3 +157,10 @@ pygments_style = 'native'
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'madoc'
+
+latex_documents = [
+    ('index',
+     'api-ref-modelarts.tex',
+     u'%s API Reference Documentation' % project,
+     u'OpenTelekomCloud', 'manual'),
+]
