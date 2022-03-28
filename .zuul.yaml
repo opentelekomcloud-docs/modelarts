@@ -3,6 +3,7 @@
     merge-mode: squash-merge
     default-branch: main
     templates:
+      - api-ref-hc-jobs
       - umn-hc-jobs
     check:
       jobs:
