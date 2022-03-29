@@ -14,7 +14,7 @@ The following uses the template described in `TensorFlow-py36 General Template <
 
    ModelArts also provides three filter criteria: **Type**, **Engine**, and **Environment**, helping you quickly find the desired template. If the three filter criteria cannot meet your requirements, you can enter keywords to search for the target template.
 
-#. For **Model Folder**, select the **model** directory where the model files reside. For details, see `Template Description <../model_templates/index.html>`__.
+#. For **Model Folder**, select the **model** directory where the model files reside. For details, see `Template Description <../model_templates/template_description/index.html>`__.
 
    .. note::
 
@@ -22,7 +22,7 @@ The following uses the template described in `TensorFlow-py36 General Template <
 
 #. If the default input and output mode of the selected template can be overwritten, you can select an input and output mode based on the model function or application scenario. **Input and Output Mode** is an abstract of the API in **config.json**. It describes the interface provided by the model for external inference. An input and output mode describes one or more APIs, and corresponds to a template.
 
-   For details about the supported input and output modes, see `Input and Output Modes <../model_templates/index.html>`__.
+   For details about the supported input and output modes, see `Input and Output Modes <../model_templates/input_and_output_modes/index.html>`__.
 
 Supported Templates
 -------------------

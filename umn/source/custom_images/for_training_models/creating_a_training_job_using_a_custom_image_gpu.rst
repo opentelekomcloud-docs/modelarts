@@ -12,7 +12,7 @@ Prerequisites
 Creating a Training Job
 -----------------------
 
-Log in to the ModelArts management console and create a training job according to `Creating a Training Job <../../training_management/index.html>`__. When using a custom image to create a job, pay attention to the settings of **Algorithm Source**, **Environment Variable**, and **Resource Pool**.
+Log in to the ModelArts management console and create a training job according to `Creating a Training Job <../../training_management/creating_a_training_job/index.html>`__. When using a custom image to create a job, pay attention to the settings of **Algorithm Source**, **Environment Variable**, and **Resource Pool**.
 
 -  **Algorithm Source**
 
