@@ -1,3 +1,5 @@
+.. _dataset_version_management:
+
 ==========================
 Dataset Version Management
 ==========================

@@ -1,3 +1,5 @@
+.. _label_task_management:
+
 ========================
 Labeling Task Management
 ========================

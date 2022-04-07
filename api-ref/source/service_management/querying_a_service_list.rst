@@ -1,3 +1,5 @@
+.. _modelarts_03_0083:
+
 Querying a Service List
 =======================
 
@@ -11,21 +13,17 @@ URI
 
 GET /v1/{project_id}/services
 
-`Table 1 <#modelarts030083enustopic0129882800table16518993181628>`__ describes the required parameters. 
+:ref:`Table 1 <modelarts_03_0083__en-us_topic_0129882800_table16518993181628>` describes the required parameters.
 
-.. _modelarts030083enustopic0129882800table16518993181628:
+.. _modelarts_03_0083__en-us_topic_0129882800_table16518993181628:
 
 .. table:: **Table 1** Parameters
 
-   +------------+-----------+--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter  | Mandatory | Type   | Description                                                                                                                                                                      |
-   +============+===========+========+==================================================================================================================================================================================+
-   | project_id | Yes       | String | Project ID. For details about how to obtain the project ID, see `Obtaining a Project ID and Name <../common_parameters/obtaining_a_project_id_and_name.html#modelarts030147>`__. |
-   +------------+-----------+--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-
-.. _modelarts030083enustopic0129882800table69015539276:
+   +------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------+
+   | Parameter  | Mandatory | Type   | Description                                                                                                                 |
+   +============+===========+========+=============================================================================================================================+
+   | project_id | Yes       | String | Project ID. For details about how to obtain the project ID, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`. |
+   +------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------+
 
 .. table:: **Table 2** Parameters
 
@@ -63,9 +61,9 @@ None
 Response Body
 -------------
 
-`Table 3 <#modelarts030083enustopic0129882800table6357123816292>`__ describes the response parameters. 
+:ref:`Table 3 <modelarts_03_0083__en-us_topic_0129882800_table6357123816292>` describes the response parameters.
 
-.. _modelarts030083enustopic0129882800table6357123816292:
+.. _modelarts_03_0083__en-us_topic_0129882800_table6357123816292:
 
 .. table:: **Table 3** Parameters
 
@@ -76,12 +74,10 @@ Response Body
    +-------------+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
    | count       | Integer           | Number of services in the query result. If **offset** and **limit** are not set, the values of **count** and **total_count** are the same. |
    +-------------+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
-   | services    | **service** array | Collection of the queried services. For details, see `Table 4 <#modelarts030083enustopic0129882800table799523318302>`__.                   |
+   | services    | **service** array | Collection of the queried services. For details, see :ref:`Table 4 <modelarts_03_0083__en-us_topic_0129882800_table799523318302>`.         |
    +-------------+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _modelarts030083enustopic0129882800table799523318302:
+.. _modelarts_03_0083__en-us_topic_0129882800_table799523318302:
 
 .. table:: **Table 4** **service** parameters
 
@@ -129,7 +125,7 @@ Response Body
    +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | shared_count                | Number                | Number of subscribed services                                                                                                                                                                                                     |
    +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | schedule                    | **schedule** array    | Service scheduling. For details, see `Table 5 <#modelarts030083enustopic0129882800table1892915349285>`__.                                                                                                                         |
+   | schedule                    | **schedule** array    | Service scheduling. For details, see :ref:`Table 5 <modelarts_03_0083__en-us_topic_0129882800_table1892915349285>`.                                                                                                               |
    +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | due_time                    | number                | Time when a real-time service automatically stops, in milliseconds calculated from 1970.1.1 0:0:0 UTC.                                                                                                                            |
    +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -144,9 +140,7 @@ Response Body
    | additional_properties       | Map<String, Object>   | Additional service attribute. If this parameter is not set, no value is returned.                                                                                                                                                 |
    +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _modelarts030083enustopic0129882800table1892915349285:
+.. _modelarts_03_0083__en-us_topic_0129882800_table1892915349285:
 
 .. table:: **Table 5** **schedule** parameters
 
@@ -247,6 +241,4 @@ The following shows how to query model services.
 Status Code
 -----------
 
-For details about the status code, see `Table 1 <../common_parameters/status_code.html#modelarts030094enustopic0132773864table1450010510213>`__.
-
-
+For details about the status code, see :ref:`Table 1 <modelarts_03_0094__en-us_topic_0132773864_table1450010510213>`.

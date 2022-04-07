@@ -1,3 +1,5 @@
+.. _GetAuthorizations:
+
 Viewing an Authorization List
 =============================
 
@@ -13,11 +15,11 @@ GET /v2/{project_id}/authorizations
 
 .. table:: **Table 1** Path parameters
 
-   +------------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter  | Mandatory | Type   | Description                                                                                                                                           |
-   +============+===========+========+=======================================================================================================================================================+
-   | project_id | Yes       | String | Project ID. For details about how to obtain a project ID, see `Obtaining a Project ID <../common_parameters/obtaining_a_project_id_and_name.html>`__. |
-   +------------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +------------+-----------+--------+------------------------------------------------------------------------------------------------------------------+
+   | Parameter  | Mandatory | Type   | Description                                                                                                      |
+   +============+===========+========+==================================================================================================================+
+   | project_id | Yes       | String | Project ID. For details about how to obtain a project ID, see :ref:`Obtaining a Project ID <modelarts_03_0147>`. |
+   +------------+-----------+--------+------------------------------------------------------------------------------------------------------------------+
 
 .. table:: **Table 2** Query parameters
 
@@ -61,30 +63,24 @@ Response Parameters
 
 **Status code: 200**
 
-
-
-.. _GetAuthorizationsresponseAuthorizationListResponse:
-
 .. table:: **Table 3** Response body parameters
 
-   +-------------+----------------------------------------------------------------------------------------------+---------------------------------+
-   | Parameter   | Type                                                                                         | Description                     |
-   +=============+==============================================================================================+=================================+
-   | total_count | Number                                                                                       | Authorization information.      |
-   +-------------+----------------------------------------------------------------------------------------------+---------------------------------+
-   | auth        | Array of `AuthorizationResponse <#getauthorizationsresponseauthorizationresponse>`__ objects | Authorization information list. |
-   +-------------+----------------------------------------------------------------------------------------------+---------------------------------+
+   +-------------+---------------------------------------------------------------------------------------------------+---------------------------------+
+   | Parameter   | Type                                                                                              | Description                     |
+   +=============+===================================================================================================+=================================+
+   | total_count | Number                                                                                            | Authorization information.      |
+   +-------------+---------------------------------------------------------------------------------------------------+---------------------------------+
+   | auth        | Array of :ref:`AuthorizationResponse <getauthorizations__response_authorizationresponse>` objects | Authorization information list. |
+   +-------------+---------------------------------------------------------------------------------------------------+---------------------------------+
 
-
-
-.. _GetAuthorizationsresponseAuthorizationResponse:
+.. _getauthorizations__response_authorizationresponse:
 
 .. table:: **Table 4** AuthorizationResponse
 
    +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter             | Type                  | Description                                                                                                                                        |
    +=======================+=======================+====================================================================================================================================================+
-   | user_id               | String                | User ID. For details about how to obtain a user ID, see `Obtaining a User ID <../common_parameters/obtaining_a_username_and_id.html>`__.           |
+   | user_id               | String                | User ID. For details about how to obtain a user ID, see :ref:`Obtaining a User ID <modelarts_03_0006>`.                                            |
    |                       |                       |                                                                                                                                                    |
    |                       |                       | If **user_id** is set to **all**, all IAM users are authorized. If some IAM users have been authorized, the authorization setting will be updated. |
    |                       |                       |                                                                                                                                                    |
@@ -143,10 +139,6 @@ OK
 Status Codes
 ------------
 
-
-
-.. _GetAuthorizationsstatuscode:
-
 =========== ============
 Status Code Description
 =========== ============
@@ -160,6 +152,4 @@ Status Code Description
 Error Codes
 -----------
 
-See `Error Codes <../common_parameters/error_codes.html>`__.
-
-
+See :ref:`Error Codes <modelarts_03_0095>`.

@@ -1,3 +1,5 @@
+.. _data_import:
+
 ================
 Data Import Task
 ================

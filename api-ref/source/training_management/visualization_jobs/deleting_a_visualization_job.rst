@@ -1,29 +1,31 @@
+.. _modelarts_03_0068:
+
 Deleting a Visualization Job
 ============================
 
 Function
 --------
 
-This API is used to delete a visualization job. Calling this API is an asynchronous operation. The job status can be obtained by calling the APIs described in `Querying a Visualization Job List <../../training_management/visualization_jobs/querying_a_visualization_job_list.html#modelarts030065>`__ and `Querying the Details About a Visualization Job <../../training_management/visualization_jobs/querying_the_details_about_a_visualization_job.html#modelarts030066>`__.
+This API is used to delete a visualization job. Calling this API is an asynchronous operation. The job status can be obtained by calling the APIs described in :ref:`Querying a Visualization Job List <modelarts_03_0065>` and :ref:`Querying the Details About a Visualization Job <modelarts_03_0066>`.
 
 URI
 ---
 
 DELETE /v1/{project_id}/visualization-jobs/{job_id}
 
-`Table 1 <#modelarts030068enustopic0131202686table20736351173356>`__ describes the required parameters. 
+:ref:`Table 1 <modelarts_03_0068__en-us_topic_0131202686_table20736351173356>` describes the required parameters.
 
-.. _modelarts030068enustopic0131202686table20736351173356:
+.. _modelarts_03_0068__en-us_topic_0131202686_table20736351173356:
 
 .. table:: **Table 1** Parameter description
 
-   +------------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter  | Mandatory | Type   | Description                                                                                                                                                                         |
-   +============+===========+========+=====================================================================================================================================================================================+
-   | project_id | Yes       | String | Project ID. For details about how to obtain the project ID, see `Obtaining a Project ID and Name <../../common_parameters/obtaining_a_project_id_and_name.html#modelarts030147>`__. |
-   +------------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | job_id     | Yes       | String | ID of a visualization job                                                                                                                                                           |
-   +------------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------+
+   | Parameter  | Mandatory | Type   | Description                                                                                                                 |
+   +============+===========+========+=============================================================================================================================+
+   | project_id | Yes       | String | Project ID. For details about how to obtain the project ID, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`. |
+   +------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------+
+   | job_id     | Yes       | String | ID of a visualization job                                                                                                   |
+   +------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------+
 
 Request Body
 ------------
@@ -33,25 +35,25 @@ None
 Response Body
 -------------
 
-`Table 2 <#modelarts030068enustopic0131202686table9370583111247>`__ describes the response parameters. 
+:ref:`Table 2 <modelarts_03_0068__en-us_topic_0131202686_table9370583111247>` describes the response parameters.
 
-.. _modelarts030068enustopic0131202686table9370583111247:
+.. _modelarts_03_0068__en-us_topic_0131202686_table9370583111247:
 
 .. table:: **Table 2** Parameter description
 
-   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------+
-   | Parameter             | Type                  | Description                                                                                                   |
-   +=======================+=======================+===============================================================================================================+
-   | is_success            | Boolean               | Whether the request is successful                                                                             |
-   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------+
-   | error_code            | String                | Error code of a failed API call. For details, see `Error Codes <../../common_parameters/error_codes.html>`__. |
-   |                       |                       |                                                                                                               |
-   |                       |                       | This parameter is not included when the API call succeeds.                                                    |
-   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------+
-   | error_message         | String                | Error message of a failed API call.                                                                           |
-   |                       |                       |                                                                                                               |
-   |                       |                       | This parameter is not included when the API call succeeds.                                                    |
-   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                                               |
+   +=======================+=======================+===========================================================================================+
+   | is_success            | Boolean               | Whether the request is successful                                                         |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------+
+   | error_code            | String                | Error code of a failed API call. For details, see :ref:`Error Codes <modelarts_03_0095>`. |
+   |                       |                       |                                                                                           |
+   |                       |                       | This parameter is not included when the API call succeeds.                                |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------+
+   | error_message         | String                | Error message of a failed API call.                                                       |
+   |                       |                       |                                                                                           |
+   |                       |                       | This parameter is not included when the API call succeeds.                                |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------+
 
 Samples
 -------
@@ -85,6 +87,4 @@ The following shows how to delete the visualization job whose ID is 10.
 Status Code
 -----------
 
-For details about the status code, see `Table 1 <../../common_parameters/status_code.html#modelarts030094enustopic0132773864table1450010510213>`__.
-
-
+For details about the status code, see :ref:`Table 1 <modelarts_03_0094__en-us_topic_0132773864_table1450010510213>`.

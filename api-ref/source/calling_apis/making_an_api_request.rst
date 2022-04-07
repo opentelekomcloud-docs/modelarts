@@ -1,7 +1,11 @@
+.. _modelarts_03_0005:
+
 Making an API Request
 =====================
 
 This section describes the structure of a REST API request, and uses the IAM API for obtaining a user token as an example to demonstrate how to call an API. The obtained token can then be used to authenticate the calling of other APIs.
+
+.. _modelarts_03_0005__en-us_topic_0129435569_en-us_topic_0170917207_en-us_topic_0168405763_section1849899574:
 
 Request URI
 -----------
@@ -10,10 +14,6 @@ The format of a request URI is as follows:
 
 **{URI-scheme} :// {Endpoint} / {resource-path} ? {query-string}**
 
-
-
-.. _modelarts030005enustopic0129435569enustopic0170917207enustopic0168405763table442645372610:
-
 .. table:: **Table 1** Request URI
 
    +---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -21,7 +21,7 @@ The format of a request URI is as follows:
    +===============+=====================================================================================================================================================================================================================================================================+
    | URI-scheme    | Protocol used to transmit requests. All APIs use HTTPS.                                                                                                                                                                                                             |
    +---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Endpoint      | Domain name or IP address of the server for the REST service endpoint. The endpoint varies depending on services in different regions. It can be obtained in `Endpoints <../before_you_start/endpoints.html>`__.                                                    |
+   | Endpoint      | Domain name or IP address of the server for the REST service endpoint. The endpoint varies depending on services in different regions. It can be obtained in :ref:`Endpoints <modelarts_03_0141>`.                                                                  |
    +---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | resource-path | Access path of an API for performing a specified operation. Obtain the path from the URI of an API. For example, the **resource-path** of the API used to obtain a user token is **/v3/auth/tokens**.                                                               |
    +---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -43,14 +43,10 @@ Request Methods
 
 The HTTP protocol defines the following request methods that can be used to send a request to the server:
 
-
-
-.. _modelarts030005enustopic0129435569enustopic0113746487table1961229113819:
-
 .. table:: **Table 2** HTTP methods
 
    +-----------------------------------+----------------------------------------------------------------------------+
-   | **Method**                        | **Description**                                                            |
+   | Method                            | Description                                                                |
    +===================================+============================================================================+
    | GET                               | Requests the server to return specified resources.                         |
    +-----------------------------------+----------------------------------------------------------------------------+
@@ -78,11 +74,9 @@ Request Header
 
 You can also add additional header fields to a request, such as the fields required by a specified URI or HTTP method. For example, to request for the authentication information, add **Content-Type**, which specifies the request body type.
 
-`Table 3 <#modelarts030005enustopic0129435569table139019272562>`__ describes the common request header fields to be added to the request.
+:ref:`Table 3 <modelarts_03_0005__en-us_topic_0129435569_table139019272562>` describes the common request header fields to be added to the request.
 
-
-
-.. _modelarts030005enustopic0129435569table139019272562:
+.. _modelarts_03_0005__en-us_topic_0129435569_table139019272562:
 
 .. table:: **Table 3** Common request header fields
 
@@ -134,7 +128,7 @@ The body of a request is often sent in a structured format as specified in the C
 
 The request body varies between APIs. Some APIs do not require the request body, such as the APIs requested using the GET and DELETE methods.
 
-If an API is used to obtain a user token, the request parameters and parameter description can be obtained from the API request. The following provides an example request with a body included. Replace *user_name*, *domain_name*, and *user_password* with the actual username, account name, and login password, respectively. **project_name** is the project name. For details, see `Obtaining a Username <../common_parameters/obtaining_a_username_and_id.html#modelarts030006>`__, `Obtaining an Account Name and ID <../common_parameters/obtaining_an_account_name_and_id.html#modelarts030148>`__, and `Obtaining a Project Name <../common_parameters/obtaining_a_project_id_and_name.html#modelarts030147>`__.
+If an API is used to obtain a user token, the request parameters and parameter description can be obtained from the API request. The following provides an example request with a body included. Replace *user_name*, *domain_name*, and *user_password* with the actual username, account name, and login password, respectively. **project_name** is the project name. For details, see :ref:`Obtaining a Username <modelarts_03_0006>`, :ref:`Obtaining an Account Name and ID <modelarts_03_0148>`, and :ref:`Obtaining a Project Name <modelarts_03_0147>`.
 
 .. note::
 
@@ -167,5 +161,3 @@ If an API is used to obtain a user token, the request parameters and parameter d
    }
 
 If all data required for the API request is available, you can send the request to call the API through `curl <https://curl.haxx.se/>`__, `Postman <https://www.getpostman.com/>`__, or coding. In the response to the API used to obtain a user token, **x-subject-token** is the desired user token. This token can then be used to authenticate the calling of other APIs.
-
-

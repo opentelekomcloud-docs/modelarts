@@ -1,3 +1,5 @@
+.. _auto_task:
+
 ================
 Intelligent Task
 ================

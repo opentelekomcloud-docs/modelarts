@@ -1,3 +1,5 @@
+.. _GetWorkforceSamplingTask:
+
 Querying the Report of a Team Labeling Acceptance Task
 ======================================================
 
@@ -13,15 +15,15 @@ GET /v2/{project_id}/datasets/{dataset_id}/workforce-tasks/{workforce_task_id}/a
 
 .. table:: **Table 1** Path parameters
 
-   +-------------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter         | Mandatory | Type   | Description                                                                                                                                                |
-   +===================+===========+========+============================================================================================================================================================+
-   | dataset_id        | Yes       | String | Dataset ID.                                                                                                                                                |
-   +-------------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | project_id        | Yes       | String | Project ID. For details about how to obtain the project ID, see `Obtaining a Project ID <../../common_parameters/obtaining_a_project_id_and_name.html>`__. |
-   +-------------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | workforce_task_id | Yes       | String | ID of a team labeling task.                                                                                                                                |
-   +-------------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-------------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
+   | Parameter         | Mandatory | Type   | Description                                                                                                        |
+   +===================+===========+========+====================================================================================================================+
+   | dataset_id        | Yes       | String | Dataset ID.                                                                                                        |
+   +-------------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
+   | project_id        | Yes       | String | Project ID. For details about how to obtain the project ID, see :ref:`Obtaining a Project ID <modelarts_03_0147>`. |
+   +-------------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
+   | workforce_task_id | Yes       | String | ID of a team labeling task.                                                                                        |
+   +-------------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
 
 .. table:: **Table 2** Query parameters
 
@@ -41,23 +43,17 @@ Response Parameters
 
 **Status code: 200**
 
-
-
-.. _GetWorkforceSamplingTaskresponseCheckWorkforceSamplingTaskResp:
-
 .. table:: **Table 3** Response body parameters
 
-   +----------------+-----------------------------------------------------------------------------+----------------------------------+
-   | Parameter      | Type                                                                        | Description                      |
-   +================+=============================================================================+==================================+
-   | checking_stats | `CheckTaskStats <#getworkforcesamplingtaskresponsechecktaskstats>`__ object | Real-time acceptance statistics. |
-   +----------------+-----------------------------------------------------------------------------+----------------------------------+
-   | total_stats    | `CheckTaskStats <#getworkforcesamplingtaskresponsechecktaskstats>`__ object | Historical statistics.           |
-   +----------------+-----------------------------------------------------------------------------+----------------------------------+
+   +----------------+----------------------------------------------------------------------------------+----------------------------------+
+   | Parameter      | Type                                                                             | Description                      |
+   +================+==================================================================================+==================================+
+   | checking_stats | :ref:`CheckTaskStats <getworkforcesamplingtask__response_checktaskstats>` object | Real-time acceptance statistics. |
+   +----------------+----------------------------------------------------------------------------------+----------------------------------+
+   | total_stats    | :ref:`CheckTaskStats <getworkforcesamplingtask__response_checktaskstats>` object | Historical statistics.           |
+   +----------------+----------------------------------------------------------------------------------+----------------------------------+
 
-
-
-.. _GetWorkforceSamplingTaskresponseCheckTaskStats:
+.. _getworkforcesamplingtask__response_checktaskstats:
 
 .. table:: **Table 4** CheckTaskStats
 
@@ -115,10 +111,6 @@ OK
 Status Codes
 ------------
 
-
-
-.. _GetWorkforceSamplingTaskstatuscode:
-
 =========== ============
 Status Code Description
 =========== ============
@@ -131,6 +123,4 @@ Status Code Description
 Error Codes
 -----------
 
-See `Error Codes <../../common_parameters/error_codes.html>`__.
-
-
+See :ref:`Error Codes <modelarts_03_0095>`.

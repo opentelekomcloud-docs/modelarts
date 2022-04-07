@@ -1,3 +1,5 @@
+.. _CreateModelArtsAgency:
+
 Creating a ModelArts Agency
 ===========================
 
@@ -13,18 +15,14 @@ POST /v2/{project_id}/agency
 
 .. table:: **Table 1** Path parameters
 
-   +------------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter  | Mandatory | Type   | Description                                                                                                                                           |
-   +============+===========+========+=======================================================================================================================================================+
-   | project_id | Yes       | String | Project ID. For details about how to obtain a project ID, see `Obtaining a Project ID <../common_parameters/obtaining_a_project_id_and_name.html>`__. |
-   +------------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +------------+-----------+--------+------------------------------------------------------------------------------------------------------------------+
+   | Parameter  | Mandatory | Type   | Description                                                                                                      |
+   +============+===========+========+==================================================================================================================+
+   | project_id | Yes       | String | Project ID. For details about how to obtain a project ID, see :ref:`Obtaining a Project ID <modelarts_03_0147>`. |
+   +------------+-----------+--------+------------------------------------------------------------------------------------------------------------------+
 
 Request Parameters
 ------------------
-
-
-
-.. _CreateModelArtsAgencyrequestCreateModelArtsAgencyRequest:
 
 .. table:: **Table 2** Request body parameters
 
@@ -76,10 +74,6 @@ OK
 Status Codes
 ------------
 
-
-
-.. _CreateModelArtsAgencystatuscode:
-
 =========== ============
 Status Code Description
 =========== ============
@@ -93,6 +87,4 @@ Status Code Description
 Error Codes
 -----------
 
-See `Error Codes <../common_parameters/error_codes.html>`__.
-
-
+See :ref:`Error Codes <modelarts_03_0095>`.

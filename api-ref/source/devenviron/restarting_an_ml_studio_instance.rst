@@ -1,3 +1,5 @@
+.. _modelarts_03_0152:
+
 Restarting an ML Studio Instance
 ================================
 
@@ -11,30 +13,26 @@ URI
 
 POST /v1/{project_id}/demanager/instances/{instance_id}/action
 
-`Table 1 <#modelarts030152enustopic0181453353table569625523811>`__ describes the required parameters.
+:ref:`Table 1 <modelarts_03_0152__en-us_topic_0181453353_table569625523811>` describes the required parameters.
 
-
-
-.. _modelarts030152enustopic0181453353table569625523811:
+.. _modelarts_03_0152__en-us_topic_0181453353_table569625523811:
 
 .. table:: **Table 1** Parameter description
 
-   +-------------+-----------+--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter   | Mandatory | Type   | Description                                                                                                                                                                      |
-   +=============+===========+========+==================================================================================================================================================================================+
-   | project_id  | Yes       | String | Project ID. For details about how to obtain the project ID, see `Obtaining a Project ID and Name <../common_parameters/obtaining_a_project_id_and_name.html#modelarts030147>`__. |
-   +-------------+-----------+--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | instance_id | Yes       | String | Instance ID                                                                                                                                                                      |
-   +-------------+-----------+--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------+
+   | Parameter   | Mandatory | Type   | Description                                                                                                                 |
+   +=============+===========+========+=============================================================================================================================+
+   | project_id  | Yes       | String | Project ID. For details about how to obtain the project ID, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`. |
+   +-------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------+
+   | instance_id | Yes       | String | Instance ID                                                                                                                 |
+   +-------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------+
 
 Request Body
 ------------
 
-`Table 2 <#modelarts030152enustopic0181453353table46411941555>`__ describes the request parameters.
+:ref:`Table 2 <modelarts_03_0152__en-us_topic_0181453353_table46411941555>` describes the request parameters.
 
-
-
-.. _modelarts030152enustopic0181453353table46411941555:
+.. _modelarts_03_0152__en-us_topic_0181453353_table46411941555:
 
 .. table:: **Table 2** Parameter description
 
@@ -47,11 +45,9 @@ Request Body
 Response Body
 -------------
 
-`Table 3 <#modelarts030152enustopic0181453353table1399617427385>`__ describes the response parameters.
+:ref:`Table 3 <modelarts_03_0152__en-us_topic_0181453353_table1399617427385>` describes the response parameters.
 
-
-
-.. _modelarts030152enustopic0181453353table1399617427385:
+.. _modelarts_03_0152__en-us_topic_0181453353_table1399617427385:
 
 .. table:: **Table 3** Parameter description
 
@@ -87,6 +83,4 @@ The following shows how to restart the ML Studio instance whose ID is **47cf4ff3
 Status Code
 -----------
 
-For details about the status code, see `Status Code <../common_parameters/status_code.html#modelarts030094>`__.
-
-
+For details about the status code, see :ref:`Status Code <modelarts_03_0094>`.

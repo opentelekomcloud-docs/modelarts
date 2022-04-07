@@ -1,3 +1,5 @@
+.. _SyncDataSourceState:
+
 Querying the Status of a Dataset Synchronization Task
 =====================================================
 
@@ -13,13 +15,13 @@ GET /v2/{project_id}/datasets/{dataset_id}/sync-data/status
 
 .. table:: **Table 1** Path parameters
 
-   +------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter  | Mandatory | Type   | Description                                                                                                                                                |
-   +============+===========+========+============================================================================================================================================================+
-   | dataset_id | Yes       | String | Dataset ID.                                                                                                                                                |
-   +------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | project_id | Yes       | String | Project ID. For details about how to obtain the project ID, see `Obtaining a Project ID <../../common_parameters/obtaining_a_project_id_and_name.html>`__. |
-   +------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
+   | Parameter  | Mandatory | Type   | Description                                                                                                        |
+   +============+===========+========+====================================================================================================================+
+   | dataset_id | Yes       | String | Dataset ID.                                                                                                        |
+   +------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
+   | project_id | Yes       | String | Project ID. For details about how to obtain the project ID, see :ref:`Obtaining a Project ID <modelarts_03_0147>`. |
+   +------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
 
 Request Parameters
 ------------------
@@ -30,10 +32,6 @@ Response Parameters
 -------------------
 
 **Status code: 200**
-
-
-
-.. _SyncDataSourceStateresponseSyncDataSourceStatusResp:
 
 .. table:: **Table 2** Response body parameters
 
@@ -99,10 +97,6 @@ OK
 Status Codes
 ------------
 
-
-
-.. _SyncDataSourceStatestatuscode:
-
 =========== ============
 Status Code Description
 =========== ============
@@ -115,6 +109,4 @@ Status Code Description
 Error Codes
 -----------
 
-See `Error Codes <../../common_parameters/error_codes.html>`__.
-
-
+See :ref:`Error Codes <modelarts_03_0095>`.

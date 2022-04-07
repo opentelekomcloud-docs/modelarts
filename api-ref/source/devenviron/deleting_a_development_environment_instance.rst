@@ -1,3 +1,5 @@
+.. _modelarts_03_0114:
+
 Deleting a Development Environment Instance
 ===========================================
 
@@ -11,19 +13,19 @@ URI
 
 DELETE /v1/{project_id}/demanager/instances/{instance_id}
 
-`Table 1 <#modelarts030114enustopic0136223953table569625523811>`__ describes the required parameters. 
+:ref:`Table 1 <modelarts_03_0114__en-us_topic_0136223953_table569625523811>` describes the required parameters.
 
-.. _modelarts030114enustopic0136223953table569625523811:
+.. _modelarts_03_0114__en-us_topic_0136223953_table569625523811:
 
 .. table:: **Table 1** Parameter description
 
-   +-------------+-----------+--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter   | Mandatory | Type   | Description                                                                                                                                                                      |
-   +=============+===========+========+==================================================================================================================================================================================+
-   | project_id  | Yes       | String | Project ID. For details about how to obtain the project ID, see `Obtaining a Project ID and Name <../common_parameters/obtaining_a_project_id_and_name.html#modelarts030147>`__. |
-   +-------------+-----------+--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | instance_id | Yes       | String | Instance ID                                                                                                                                                                      |
-   +-------------+-----------+--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------+
+   | Parameter   | Mandatory | Type   | Description                                                                                                                 |
+   +=============+===========+========+=============================================================================================================================+
+   | project_id  | Yes       | String | Project ID. For details about how to obtain the project ID, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`. |
+   +-------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------+
+   | instance_id | Yes       | String | Instance ID                                                                                                                 |
+   +-------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------+
 
 Request Body
 ------------
@@ -33,11 +35,9 @@ None
 Response Body
 -------------
 
-`Table 2 <#modelarts030114enustopic0136223953table14581542113111>`__ describes the response parameters.
+:ref:`Table 2 <modelarts_03_0114__en-us_topic_0136223953_table14581542113111>` describes the response parameters.
 
-
-
-.. _modelarts030114enustopic0136223953table14581542113111:
+.. _modelarts_03_0114__en-us_topic_0136223953_table14581542113111:
 
 .. table:: **Table 2** Parameter description
 
@@ -78,6 +78,4 @@ The following shows how to delete instance **6fa459ea-ee8a-3ca4-894e-db77e160355
 Status Code
 -----------
 
-For details about the status code, see `Status Code <../common_parameters/status_code.html#modelarts030094>`__.
-
-
+For details about the status code, see :ref:`Status Code <modelarts_03_0094>`.

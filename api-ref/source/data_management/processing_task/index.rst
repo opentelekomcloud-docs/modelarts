@@ -1,3 +1,5 @@
+.. _process_task:
+
 ===============
 Processing Task
 ===============

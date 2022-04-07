@@ -1,3 +1,5 @@
+.. _workforce_process_management:
+
 ================================
 Team Labeling Process Management
 ================================

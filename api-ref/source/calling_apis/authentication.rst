@@ -1,3 +1,5 @@
+.. _modelarts_03_0004:
+
 Authentication
 ==============
 
@@ -15,7 +17,7 @@ Token-based Authentication
 
 A token specifies temporary permissions in a computer system. During API authentication using a token, the token is added to requests to get permissions for calling the API.
 
-In `Making an API Request <../calling_apis/making_an_api_request.html#modelarts030005>`__, the process of calling the API used to obtain a user token is described.
+In :ref:`Making an API Request <modelarts_03_0005>`, the process of calling the API used to obtain a user token is described.
 
 .. code-block::
 
@@ -90,7 +92,11 @@ Decompress the downloaded package and reference the obtained JAR files as depend
 
 #. Download and decompress the demo project.
 
-#. Import the demo project to Eclipse.
+#. .. _modelarts_03_0004__en-us_topic_0129435566_li94791126103617:
+
+   Import the demo project to Eclipse.
+
+   .. _modelarts_03_0004__en-us_topic_0129435566_fig10881944183710:
 
    .. figure:: /_static/images/en-us_image_0150917346.gif
       :alt: **Figure 1** Selecting Existing Projects into Workspace
@@ -98,11 +104,15 @@ Decompress the downloaded package and reference the obtained JAR files as depend
 
       **Figure 1** Selecting Existing Projects into Workspace
 
+   .. _modelarts_03_0004__en-us_topic_0129435566_fig15961458113717:
+
    .. figure:: /_static/images/en-us_image_0150917350.gif
       :alt: **Figure 2** Selecting the demo project
    
 
       **Figure 2** Selecting the demo project
+
+   .. _modelarts_03_0004__en-us_topic_0129435566_fig74501929113815:
 
    .. figure:: /_static/images/en-us_image_0150917353.gif
       :alt: **Figure 3** Structure of the demo project
@@ -112,7 +122,7 @@ Decompress the downloaded package and reference the obtained JAR files as depend
 
 #. Sign the request.
 
-   The request signing method is integrated in the JAR files imported in `3 <#modelarts030004enustopic0129435566li94791126103617>`__. The request needs to be signed before it is sent. The signature will then be added as part of the HTTP header to the request.
+   The request signing method is integrated in the JAR files imported in :ref:`3 <modelarts_03_0004__en-us_topic_0129435566_li94791126103617>`. The request needs to be signed before it is sent. The signature will then be added as part of the HTTP header to the request.
 
    The demo code is classified into the following classes to demonstrate signing and sending the HTTP request:
 
@@ -182,8 +192,6 @@ Decompress the downloaded package and reference the obtained JAR files as depend
       In the **Package Explorer** area on the left, right-click **Demo.java** and choose **Run AS** > **Java Application** from the shortcut menu to run the demo code.
 
       You can view the API call logs on the console.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0150916848.gif
 

@@ -1,3 +1,5 @@
+.. _GetProcessorTaskItems:
+
 Querying the Algorithm Type for Data Processing
 ===============================================
 
@@ -13,11 +15,11 @@ GET /v2/{project_id}/processor-tasks/items
 
 .. table:: **Table 1** Path parameters
 
-   +------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter  | Mandatory | Type   | Description                                                                                                                                                |
-   +============+===========+========+============================================================================================================================================================+
-   | project_id | Yes       | String | Project ID. For details about how to obtain the project ID, see `Obtaining a Project ID <../../common_parameters/obtaining_a_project_id_and_name.html>`__. |
-   +------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
+   | Parameter  | Mandatory | Type   | Description                                                                                                        |
+   +============+===========+========+====================================================================================================================+
+   | project_id | Yes       | String | Project ID. For details about how to obtain the project ID, see :ref:`Obtaining a Project ID <modelarts_03_0147>`. |
+   +------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
 
 Request Parameters
 ------------------
@@ -29,23 +31,17 @@ Response Parameters
 
 **Status code: 200**
 
-
-
-.. _GetProcessorTaskItemsresponseGetProcessorTaskItemsResp:
-
 .. table:: **Table 2** Response body parameters
 
-   +-----------+------------------------------------------------------------------------------------------+----------------------+
-   | Parameter | Type                                                                                     | Description          |
-   +===========+==========================================================================================+======================+
-   | items     | Array of `ProcessorTaskItem <#getprocessortaskitemsresponseprocessortaskitem>`__ objects | Algorithm type list. |
-   +-----------+------------------------------------------------------------------------------------------+----------------------+
-   | total     | Integer                                                                                  | Total number.        |
-   +-----------+------------------------------------------------------------------------------------------+----------------------+
+   +-----------+-----------------------------------------------------------------------------------------------+----------------------+
+   | Parameter | Type                                                                                          | Description          |
+   +===========+===============================================================================================+======================+
+   | items     | Array of :ref:`ProcessorTaskItem <getprocessortaskitems__response_processortaskitem>` objects | Algorithm type list. |
+   +-----------+-----------------------------------------------------------------------------------------------+----------------------+
+   | total     | Integer                                                                                       | Total number.        |
+   +-----------+-----------------------------------------------------------------------------------------------+----------------------+
 
-
-
-.. _GetProcessorTaskItemsresponseProcessorTaskItem:
+.. _getprocessortaskitems__response_processortaskitem:
 
 .. table:: **Table 3** ProcessorTaskItem
 
@@ -99,10 +95,6 @@ OK
 Status Codes
 ------------
 
-
-
-.. _GetProcessorTaskItemsstatuscode:
-
 =========== ============
 Status Code Description
 =========== ============
@@ -115,6 +107,4 @@ Status Code Description
 Error Codes
 -----------
 
-See `Error Codes <../../common_parameters/error_codes.html>`__.
-
-
+See :ref:`Error Codes <modelarts_03_0095>`.

@@ -1,3 +1,5 @@
+.. _workspace:
+
 ====================
 Workspace Management
 ====================
