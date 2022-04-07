@@ -1,3 +1,5 @@
+.. _modelarts_23_0325:
+
 Opening a Notebook Instance
 ===========================
 
@@ -19,7 +21,5 @@ Code Development
 
 ModelArts provides two environments for code development: Jupyter Notebook and JupyterLab.
 
--  `Jupyter Notebook <../../devenviron_notebook/using_jupyter_notebook/introduction_to_jupyter_notebook.html>`__: a web-based application for interactive computing. It can be applied to full-process computing: development, documentation, running code, and presenting results.
--  `JupyterLab <../../devenviron_notebook/using_jupyterlab/introduction_to_jupyterlab_and_common_operations.html>`__: an interactive development environment. It is a next-generation product of Jupyter Notebook. JupyterLab enables you to compile notebooks, operate terminals, edit MarkDown text, open interaction modes, and view CSV files and images.
-
-
+-  :ref:`Jupyter Notebook <modelarts_23_0326>`: a web-based application for interactive computing. It can be applied to full-process computing: development, documentation, running code, and presenting results.
+-  :ref:`JupyterLab <modelarts_23_0209>`: an interactive development environment. It is a next-generation product of Jupyter Notebook. JupyterLab enables you to compile notebooks, operate terminals, edit MarkDown text, open interaction modes, and view CSV files and images.

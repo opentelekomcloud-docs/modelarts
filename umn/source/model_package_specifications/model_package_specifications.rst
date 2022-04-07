@@ -1,18 +1,20 @@
+.. _modelarts_23_0091:
+
 Model Package Specifications
 ============================
 
 When you import models in **Model Management**, if the meta model is imported from OBS or a container image, the model package must meet the following specifications:
 
 -  The model package must contain the **model** directory. The **model** directory stores the model file, model configuration file, and model inference code.
--  The model configuration file must exist and its name is fixed to **config.json**. There exists only one model configuration file. For details about how to compile the model configuration file, see `Specifications for Compiling the Model Configuration File <../model_package_specifications/specifications_for_compiling_the_model_configuration_file.html>`__.
--  The model inference code file is optional. If this file is required, the file name is fixed to **customize_service.py**. There must be one and only one such file. For details about how to compile the model inference code, see `Specifications for Compiling Model Inference Code <../model_package_specifications/specifications_for_compiling_model_inference_code.html>`__.
+-  The model configuration file must exist and its name is fixed to **config.json**. There exists only one model configuration file. For details about how to compile the model configuration file, see :ref:`Specifications for Compiling the Model Configuration File <modelarts_23_0092>`.
+-  The model inference code file is optional. If this file is required, the file name is fixed to **customize_service.py**. There must be one and only one such file. For details about how to compile the model inference code, see :ref:`Specifications for Compiling Model Inference Code <modelarts_23_0093>`.
 
    .. note::
 
       -  The **.py** file on which **customize_service.py** depends can be directly stored in the **model** directory. Use the Python import mode to import the custom package.
-      -  The other files on which **customize_service.py** depends can be stored in the **model** directory. You must use absolute paths to access these files. For more details, see `Obtaining an Absolute Path <../model_package_specifications/specifications_for_compiling_model_inference_code.html#modelarts230093enustopic0172466150li135956421288>`__.
+      -  The other files on which **customize_service.py** depends can be stored in the **model** directory. You must use absolute paths to access these files. For more details, see :ref:`Obtaining an Absolute Path <modelarts_23_0093__en-us_topic_0172466150_li135956421288>`.
 
-ModelArts also provides custom script examples of common AI engines. For details, see `Examples of Custom Scripts <../examples_of_custom_scripts/tensorflow.html>`__.
+ModelArts also provides custom script examples of common AI engines. For details, see :ref:`Examples of Custom Scripts <modelarts_23_0173>`.
 
 Model Package Example
 ---------------------
@@ -142,5 +144,3 @@ Model Package Example
       |   |   |── *.m (Mandatory): Model file whose extension name is .m
       |   |   |── config.json (Mandatory) Model configuration file. The file name is fixed to config.json. Only one model configuration file is supported.
       |   |   |── customize_service.py  (Optional) Model inference code. The file name is fixed to customize_service.py. Only one model inference code file exists. The files on which customize_service.py depends can be directly stored in the model directory. 
-
-

@@ -1,3 +1,5 @@
+.. _modelarts_23_0207:
+
 Importing a Meta Model from OBS
 ===============================
 
@@ -6,9 +8,9 @@ In scenarios where frequently-used frameworks are used for model development and
 Prerequisites
 -------------
 
--  The model has been developed and trained, and the type and version of the AI engine it uses is supported by ModelArts. Common engines supported by ModelArts and their runtime ranges are described as follows: 
+-  The model has been developed and trained, and the type and version of the AI engine it uses is supported by ModelArts. Common engines supported by ModelArts and their runtime ranges are described as follows:
 
-.. _modelarts230207enustopic0207629478table108792813184:
+   .. _modelarts_23_0207__en-us_topic_0207629478_table108792813184:
 
    .. table:: **Table 1** Supported AI engines and their runtime
 
@@ -69,7 +71,7 @@ Prerequisites
       | MindSpore             | ms1.1-python3.7-c76     | MindSpore 1.1.1 is used.                                                                                                                                                                                                                                                                   |
       +-----------------------+-------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
--  The imported model, inference code, and configuration file must comply with the requirements of ModelArts. For details, see `Model Package Specifications <../../model_package_specifications/model_package_specifications.html>`__, `Specifications for Compiling the Model Configuration File <../../model_package_specifications/specifications_for_compiling_the_model_configuration_file.html>`__, and `Specifications for Compiling Model Inference Code <../../model_package_specifications/specifications_for_compiling_model_inference_code.html>`__.
+-  The imported model, inference code, and configuration file must comply with the requirements of ModelArts. For details, see :ref:`Model Package Specifications <modelarts_23_0091>`, :ref:`Specifications for Compiling the Model Configuration File <modelarts_23_0092>`, and :ref:`Specifications for Compiling Model Inference Code <modelarts_23_0093>`.
 
 -  The model package that has completed training, inference code, and configuration file have been uploaded to the OBS directory.
 
@@ -84,9 +86,9 @@ Procedure
 #. Click **Import** in the upper left corner. The **Import** page is displayed.
 #. On the **Import** page, set related parameters.
 
-   a. Set basic information about the model. For details about the parameters, see `Table 2 <#modelarts230207enustopic0207629478table19428112584211>`__. 
+   a. Set basic information about the model. For details about the parameters, see :ref:`Table 2 <modelarts_23_0207__en-us_topic_0207629478_table19428112584211>`.
 
-.. _modelarts230207enustopic0207629478table19428112584211:
+      .. _modelarts_23_0207__en-us_topic_0207629478_table19428112584211:
 
       .. table:: **Table 2** Parameters of basic model information
 
@@ -102,13 +104,11 @@ Procedure
          | Description | Brief description of the model                                                                                                                                                      |
          +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   b. Select the meta model source and set related parameters. **Meta Model Source** has four options based on the scenario. For details, see `Methods of Importing a Model <../../model_management/introduction_to_model_management.html#methods-of-importing-a-model>`__. Set **Meta Model Source** to **OBS**. For details about the parameters, see `Table 3 <#modelarts230207enustopic0207629478table1631162916535>`__.
+   b. Select the meta model source and set related parameters. **Meta Model Source** has four options based on the scenario. For details, see :ref:`Methods of Importing a Model <modelarts_23_0052__en-us_topic_0171858287_section179419351998>`. Set **Meta Model Source** to **OBS**. For details about the parameters, see :ref:`Table 3 <modelarts_23_0207__en-us_topic_0207629478_table1631162916535>`.
 
-      For the meta model imported from OBS, you need to compile the inference code and configuration file by referring to `Model Package Specifications <../../model_package_specifications/model_package_specifications.html>`__ and place the inference code and configuration files in the **model** folder storing the meta model. If the selected directory does not contain the corresponding inference code and configuration files, the model cannot be imported.
+      For the meta model imported from OBS, you need to compile the inference code and configuration file by referring to :ref:`Model Package Specifications <modelarts_23_0091>` and place the inference code and configuration files in the **model** folder storing the meta model. If the selected directory does not contain the corresponding inference code and configuration files, the model cannot be imported.
 
-      
-
-.. _modelarts230207enustopic0207629478table1631162916535:
+      .. _modelarts_23_0207__en-us_topic_0207629478_table1631162916535:
 
       .. table:: **Table 3** Parameters of the meta model source
 
@@ -140,9 +140,7 @@ Procedure
 Follow-Up Procedure
 -------------------
 
--  `Model Deployment <../../model_deployment/introduction_to_model_deployment.html>`__: On the **Models** page, click the triangle next to a model name to view all versions of the model. Locate the row that contains the target version, click **Deploy** in the **Operation** column, and select the deployment type configured when importing the model from the drop-down list. On the **Deploy** page, set parameters by referring to `Introduction to Model Deployment <../../model_deployment/introduction_to_model_deployment.html>`__.
-
-
+-  **:ref:`Model Deployment <modelarts_23_0058>`**: On the **Models** page, click the triangle next to a model name to view all versions of the model. Locate the row that contains the target version, click **Deploy** in the **Operation** column, and select the deployment type configured when importing the model from the drop-down list. On the **Deploy** page, set parameters by referring to :ref:`Introduction to Model Deployment <modelarts_23_0058>`.
 
 .. |image1| image:: /_static/images/en-us_image_0000001156920973.png
 

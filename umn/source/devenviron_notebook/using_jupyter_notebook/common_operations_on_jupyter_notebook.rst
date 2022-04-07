@@ -1,3 +1,5 @@
+.. _modelarts_23_0120:
+
 Common Operations on Jupyter Notebook
 =====================================
 
@@ -10,6 +12,8 @@ In the notebook instance list, locate the row where the target notebook instance
 
 Two tab pages are available on the **Jupyter Notebook** page: **Files** and **Running**.
 
+.. _modelarts_23_0120__en-us_topic_0188347008_fig13203124195913:
+
 .. figure:: /_static/images/en-us_image_0000001110761034.png
    :alt: **Figure 1** Jupyter Notebook
 
@@ -20,6 +24,8 @@ Selecting Different AI Engines to Create Files
 ----------------------------------------------
 
 Open a notebook instance and go to the **Jupyter Notebook** page. On the **Files** tab page, click **New** in the upper right corner, select the required AI engine, and create a file for encoding.
+
+.. _modelarts_23_0120__en-us_topic_0188347008_fig8224175513165:
 
 .. figure:: /_static/images/en-us_image_0000001157080885.png
    :alt: **Figure 2** Selecting different AI engines
@@ -32,6 +38,8 @@ Uploading a File
 
 Open a notebook instance and go to the **Jupyter Notebook** page. On the **Files** tab page, click **Upload** in the upper right corner to select a file from the local PC and upload it.
 
+.. _modelarts_23_0120__en-us_topic_0188347008_fig89015882019:
+
 .. figure:: /_static/images/en-us_image_0000001110920940.png
    :alt: **Figure 3** Uploading a file
 
@@ -43,15 +51,13 @@ Compiling a File
 
 After a file is created, click the file name to go to the file compilation page.
 
+.. _modelarts_23_0120__en-us_topic_0188347008_fig65191088443:
+
 .. figure:: /_static/images/en-us_image_0000001110920938.png
    :alt: **Figure 4** Compiling a file
 
 
    **Figure 4** Compiling a file
-
-
-
-.. _modelarts230120enustopic0188347008table9727162374411:
 
 .. table:: **Table 1** Introduction to the file compilation page
 
@@ -71,7 +77,7 @@ After a file is created, click the file name to go to the file compilation page.
    |                       |                              | -  Raw NBConvert: conversion tool.                                                                                                                                                                                                                                                                                                                                                                                          |
    |                       |                              | -  Heading: Quickly add a MarkDown title.                                                                                                                                                                                                                                                                                                                                                                                   |
    +-----------------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | 4                     | AI engine and Python version | Displays the AI engine and Python version corresponding to the current file. For details about all AI engines and Python versions supported by ModelArts, see `Supported AI Engines <../../devenviron_notebook/introduction_to_notebook.html#supported-ai-engines>`__.                                                                                                                                                      |
+   | 4                     | AI engine and Python version | Displays the AI engine and Python version corresponding to the current file. For details about all AI engines and Python versions supported by ModelArts, see :ref:`Supported AI Engines <modelarts_23_0033__en-us_topic_0162690357_section191109611479>`.                                                                                                                                                                  |
    +-----------------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | 5                     | Code cell                    | Each cell has two modes: command mode and editing mode.                                                                                                                                                                                                                                                                                                                                                                     |
    |                       |                              |                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -89,13 +95,13 @@ To delete a file or folder from Jupyter Notebook, select the file or folder in t
 
    After the file or folder is deleted, click the **Refresh** button in the upper right corner to refresh the Jupyter page and clear the cache.
 
+.. _modelarts_23_0120__en-us_topic_0188347008_fig10721575216:
+
 .. figure:: /_static/images/en-us_image_0000001110761038.png
    :alt: **Figure 5** Jupyter page
 
 
    **Figure 5** Jupyter page
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0000001110920936.png
 

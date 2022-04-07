@@ -1,3 +1,5 @@
+.. _modelarts_23_0345:
+
 Image Segmentation
 ==================
 
@@ -20,7 +22,7 @@ Starting Labeling
 
 #. In the dataset list, select the dataset to be labeled based on the labeling type, and click the dataset name to go to the **Dashboard** tab page of the dataset.
 
-   By default, the **Dashboard** tab page of the current dataset version is displayed. If you need to label the dataset of another version, click the **Versions** tab and then click **Set to Current Version** in the right pane. For details, see `Managing Dataset Versions <../../data_management/managing_dataset_versions.html>`__.
+   By default, the **Dashboard** tab page of the current dataset version is displayed. If you need to label the dataset of another version, click the **Versions** tab and then click **Set to Current Version** in the right pane. For details, see :ref:`Managing Dataset Versions <modelarts_23_0019>`.
 
 #. On the **Dashboard** page of the dataset, click **Label** in the upper right corner. The dataset details page is displayed. By default, all data of the dataset is displayed on the dataset details page.
 
@@ -51,15 +53,17 @@ Manually Labeling Images
 
 The dataset details page provides the **Labeled** and **Unlabeled** tabs. The **All** tab page is displayed by default.
 
-#. On the **Unlabeled** tab page, click an image. The system automatically directs you to the page for labeling the image. For details about how to use common buttons on this page, see `Table 2 <#modelarts230345enustopic0000001126398947table194471512463>`__.
+#. On the **Unlabeled** tab page, click an image. The system automatically directs you to the page for labeling the image. For details about how to use common buttons on this page, see :ref:`Table 2 <modelarts_23_0345__en-us_topic_0000001126398947_table194471512463>`.
 
 #. Select a labeling method.
 
-   On the labeling page, common `labeling methods <#modelarts230345enustopic0000001126398947table165201739119>`__ and `buttons <#modelarts230345enustopic0000001126398947table194471512463>`__ are provided in the toolbar. By default, polygon labeling is selected. Use polygon or point labeling as needed.
+   On the labeling page, common :ref:`labeling methods <modelarts_23_0345__en-us_topic_0000001126398947_table165201739119>` and :ref:`buttons <modelarts_23_0345__en-us_topic_0000001126398947_table194471512463>` are provided in the toolbar. By default, polygon labeling is selected. Use polygon or point labeling as needed.
 
    .. note::
 
       After you select a method to label the first image, the labeling method automatically applies to subsequent images.
+
+   .. _modelarts_23_0345__en-us_topic_0000001126398947_fig1362531203220:
 
    .. figure:: /_static/images/en-us_image_0000001110920986.png
       :alt: **Figure 1** Toolbar
@@ -67,9 +71,7 @@ The dataset details page provides the **Labeled** and **Unlabeled** tabs. The **
 
       **Figure 1** Toolbar
 
-   
-
-.. _modelarts230345enustopic0000001126398947table165201739119:
+   .. _modelarts_23_0345__en-us_topic_0000001126398947_table165201739119:
 
    .. table:: **Table 1** Labeling methods
 
@@ -81,9 +83,7 @@ The dataset details page provides the **Labeled** and **Unlabeled** tabs. The **
       | |image4| | Point labeling. Label the top, bottom, leftmost, and rightmost points on the object contour. The system will infer the outline of the object based on the labeled points.                                                                                                                                      |
       +----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   
-
-.. _modelarts230345enustopic0000001126398947table194471512463:
+   .. _modelarts_23_0345__en-us_topic_0000001126398947_table194471512463:
 
    .. table:: **Table 2** Toolbar buttons
 
@@ -115,6 +115,8 @@ The dataset details page provides the **Labeled** and **Unlabeled** tabs. The **
 
    After labeling an image, click an image that has not been labeled in the image list below to label the new image.
 
+   .. _modelarts_23_0345__en-us_topic_0000001126398947_fig16575195124518:
+
    .. figure:: /_static/images/en-us_image_0000001110761086.gif
       :alt: **Figure 2** Labeling an object outline
    
@@ -142,6 +144,8 @@ On the dataset details page, click the **Labeled** tab and then the image to be 
 -  Deleting a label: In the **Labeling** area, click the deletion icon to delete a label from the image. After all labels of an image are deleted, the image is displayed on the **Unlabeled** tab page.
 
 After the labeling information is modified, click **Back to Data Labeling Preview** in the upper left part of the page to exit the labeling page. In the dialog box that is displayed, click **OK** to save the modification.
+
+.. _modelarts_23_0345__en-us_topic_0000001126398947_en-us_topic_0170889732_fig16709173213107:
 
 .. figure:: /_static/images/en-us_image_0000001156920955.gif
    :alt: **Figure 3** Editing image labeling information
@@ -178,8 +182,6 @@ If a tick is displayed in the upper left corner of an image, the image is select
 .. note::
 
    If you select **Delete source files**, images stored in the corresponding OBS directory will be deleted when you delete the selected images. Deleting source files may affect other dataset versions or datasets using those files. As a result, the page display, training, or inference is abnormal. Deleted data cannot be recovered. Exercise caution when performing this operation.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0000001110920998.png
 

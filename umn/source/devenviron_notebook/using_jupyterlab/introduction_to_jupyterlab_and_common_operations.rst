@@ -1,3 +1,5 @@
+.. _modelarts_23_0209:
+
 Introduction to JupyterLab and Common Operations
 ================================================
 
@@ -18,6 +20,8 @@ Opening JupyterLab
 
 #. The **Launcher** page is automatically displayed. You can use all open-source functions. For details, see `JupyterLab Documentation <https://jupyterlab.readthedocs.io/en/stable/>`__.
 
+   .. _modelarts_23_0209__en-us_topic_0208766071_fig1727316104710:
+
    .. figure:: /_static/images/en-us_image_0000001110920930.png
       :alt: **Figure 1** JupyterLab homepage
    
@@ -29,7 +33,9 @@ Creating and Opening a Notebook Instance
 
 On the JupyterLab homepage, click an applicable AI engine in the **Notebook** area to create a notebook file with the selected framework.
 
-The AI framework supported by each notebook instance varies according to the working environment. The following figure is only an example. Select an AI framework based on the site requirements. For details about all framework versions and Python versions supported by ModelArts, see `Supported AI Engines <../../devenviron_notebook/introduction_to_notebook.html#supported-ai-engines>`__.
+The AI framework supported by each notebook instance varies according to the working environment. The following figure is only an example. Select an AI framework based on the site requirements. For details about all framework versions and Python versions supported by ModelArts, see :ref:`Supported AI Engines <modelarts_23_0033__en-us_topic_0162690357_section191109611479>`.
+
+.. _modelarts_23_0209__en-us_topic_0208766071_fig812525717438:
 
 .. figure:: /_static/images/en-us_image_0000001157080871.png
    :alt: **Figure 2** Selecting an AI engine and creating a notebook instance
@@ -38,6 +44,8 @@ The AI framework supported by each notebook instance varies according to the wor
    **Figure 2** Selecting an AI engine and creating a notebook instance
 
 The created notebook file is displayed in the navigation pane on the left.
+
+.. _modelarts_23_0209__en-us_topic_0208766071_fig6910322104612:
 
 .. figure:: /_static/images/en-us_image_0000001110920924.png
    :alt: **Figure 3** Creating a notebook file
@@ -54,6 +62,8 @@ On the JupyterLab homepage, click an applicable AI engine in the **Console** are
 
 The AI framework supported by each notebook instance varies according to the working environment. The following figure is only an example. Select an AI framework based on the site requirements.
 
+.. _modelarts_23_0209__en-us_topic_0208766071_fig146903307496:
+
 .. figure:: /_static/images/en-us_image_0000001156920897.png
    :alt: **Figure 4** Selecting an AI engine and creating a console
 
@@ -62,18 +72,24 @@ The AI framework supported by each notebook instance varies according to the wor
 
 After the file is created, the console page is displayed.
 
+.. _modelarts_23_0209__en-us_topic_0208766071_fig12167335121119:
+
 .. figure:: /_static/images/en-us_image_0000001110761020.png
    :alt: **Figure 5** Creating a notebook file (console)
 
 
    **Figure 5** Creating a notebook file (console)
 
+.. _modelarts_23_0209__en-us_topic_0208766071_section172463910383:
+
 Uploading a File
 ----------------
 
 On the JupyterLab page, you can click **Upload File** in the upper left corner and select a local file to upload.
 
-The size of the file to be uploaded using this method is limited. If the file size exceeds the limit, use other methods to upload the file. For details, see `Uploading Data to JupyterLab <../../devenviron_notebook/using_jupyterlab/uploading_and_downloading_data/uploading_data_to_jupyterlab.html>`__.
+The size of the file to be uploaded using this method is limited. If the file size exceeds the limit, use other methods to upload the file. For details, see :ref:`Uploading Data to JupyterLab <modelarts_23_0332>`.
+
+.. _modelarts_23_0209__en-us_topic_0208766071_fig162661614164017:
 
 .. figure:: /_static/images/en-us_image_0000001110920918.png
    :alt: **Figure 6** Uploading a file
@@ -88,6 +104,8 @@ JupyterLab allows you to open multiple notebook instances or files (such as HTML
 
 Using JupyterLab, you can customize the display of multiple files. In the file display area on the right, you can drag a file to adjust its position. Multiple files can be concurrently displayed.
 
+.. _modelarts_23_0209__en-us_topic_0208766071_fig6301121132215:
+
 .. figure:: /_static/images/en-us_image_0000001157080869.png
    :alt: **Figure 7** Customized display of multiple files
 
@@ -98,6 +116,8 @@ When writing code in a notebook instance, you can create multiple views of a fil
 
 To open multiple views, open the file and choose **File** > **New View for Notebook**.
 
+.. _modelarts_23_0209__en-us_topic_0208766071_fig9122203643213:
+
 .. figure:: /_static/images/en-us_image_0000001110920916.png
    :alt: **Figure 8** Multiple views of a file
 
@@ -107,9 +127,11 @@ To open multiple views, open the file and choose **File** > **New View for Noteb
 Downloading a File to a Local Computer
 --------------------------------------
 
-Files created in JupyterLab can be directly downloaded to a local computer. The size of the file to be downloaded using this method is limited. If the file size exceeds the limit, use other methods to download the file. For details, see `Downloading a File from JupyterLab <../../devenviron_notebook/using_jupyterlab/uploading_and_downloading_data/downloading_a_file_from_jupyterlab.html>`__.
+Files created in JupyterLab can be directly downloaded to a local computer. The size of the file to be downloaded using this method is limited. If the file size exceeds the limit, use other methods to download the file. For details, see :ref:`Downloading a File from JupyterLab <modelarts_23_0333>`.
 
 In the JupyterLab file list, right-click the file to be downloaded and choose **Download** from the shortcut menu. The file is downloaded to the directory set for your browser.
+
+.. _modelarts_23_0209__en-us_topic_0208766071_fig115128616340:
 
 .. figure:: /_static/images/en-us_image_0000001157080879.png
    :alt: **Figure 9** Downloading a file
@@ -120,33 +142,27 @@ In the JupyterLab file list, right-click the file to be downloaded and choose **
 Common Icons and Plug-ins of JupyterLab
 ---------------------------------------
 
+.. _modelarts_23_0209__en-us_topic_0208766071_fig18661212194314:
+
 .. figure:: /_static/images/en-us_image_0000001110761018.png
    :alt: **Figure 10** Common icons and plug-ins of JupyterLab
 
 
    **Figure 10** Common icons and plug-ins of JupyterLab
 
-
-
-.. _modelarts230209enustopic0208766071table17325391430:
-
 .. table:: **Table 1** Icon description
 
-   +----------+----------------------------------------------------------------------------------------------------+
-   | Icon     | Description                                                                                        |
-   +==========+====================================================================================================+
-   | |image5| | Opens the Launcher page. Then you can quickly create notebook instances, consoles, or other files. |
-   +----------+----------------------------------------------------------------------------------------------------+
-   | |image6| | Creates a folder.                                                                                  |
-   +----------+----------------------------------------------------------------------------------------------------+
-   | |image7| | Uploads a file. For details, see `Uploading a File <#uploading-a-file>`__.                         |
-   +----------+----------------------------------------------------------------------------------------------------+
-   | |image8| | Updates a folder.                                                                                  |
-   +----------+----------------------------------------------------------------------------------------------------+
-
-
-
-.. _modelarts230209enustopic0208766071table8147032134415:
+   +----------+---------------------------------------------------------------------------------------------------------------------------+
+   | Icon     | Description                                                                                                               |
+   +==========+===========================================================================================================================+
+   | |image5| | Opens the Launcher page. Then you can quickly create notebook instances, consoles, or other files.                        |
+   +----------+---------------------------------------------------------------------------------------------------------------------------+
+   | |image6| | Creates a folder.                                                                                                         |
+   +----------+---------------------------------------------------------------------------------------------------------------------------+
+   | |image7| | Uploads a file. For details, see :ref:`Uploading a File <modelarts_23_0209__en-us_topic_0208766071_section172463910383>`. |
+   +----------+---------------------------------------------------------------------------------------------------------------------------+
+   | |image8| | Updates a folder.                                                                                                         |
+   +----------+---------------------------------------------------------------------------------------------------------------------------+
 
 .. table:: **Table 2** Common plug-ins in the plug-in area
 
@@ -165,8 +181,6 @@ Common Icons and Plug-ins of JupyterLab
    +-----------+-------------------------------------------------------------------------------------------------------+
    | |image20| | Document organization.                                                                                |
    +-----------+-------------------------------------------------------------------------------------------------------+
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0000001110920920.png
 

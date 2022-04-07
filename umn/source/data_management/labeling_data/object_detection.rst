@@ -1,3 +1,5 @@
+.. _modelarts_23_0012:
+
 Object Detection
 ================
 
@@ -16,7 +18,7 @@ Labeling the Dataset
 
 #. In the dataset list, click the dataset to be labeled based on the labeling type. The **Dashboard** tab page of the dataset is displayed.
 
-   By default, the **Dashboard** tab page of the current dataset version is displayed. To label the dataset of another version, click the **Versions** tab and then click **Set to Current Version** in the right pane. For details, see `Managing Dataset Versions <../../data_management/managing_dataset_versions.html>`__.
+   By default, the **Dashboard** tab page of the current dataset version is displayed. To label the dataset of another version, click the **Versions** tab and then click **Set to Current Version** in the right pane. For details, see :ref:`Managing Dataset Versions <modelarts_23_0019>`.
 
 #. On the **Dashboard** page of the dataset, click **Label** in the upper right corner. The dataset details page is displayed. By default, all data of the dataset is displayed on the dataset details page.
 
@@ -42,12 +44,14 @@ The following filter criteria are supported. You can set one or more filter crit
 -  **File Name** or **Path**: Filter files by file name or file storage path.
 -  **Labeled By**: Select the name of the user who performs the labeling operation.
 
+.. _modelarts_23_0012__en-us_topic_0170889732_section888019266174:
+
 Labeling Images (Manually)
 --------------------------
 
 The dataset details page provides the **Labeled** and **Unlabeled** tabs. The **All** tab page is displayed by default.
 
-#. On the **Unlabeled** tab page, click an image. The image labeling page is displayed. For details about how to use common buttons on the **Labeled** tab page, see `Table 2 <#modelarts230012enustopic0170889732table194471512463>`__.
+#. On the **Unlabeled** tab page, click an image. The image labeling page is displayed. For details about how to use common buttons on the **Labeled** tab page, see :ref:`Table 2 <modelarts_23_0012__en-us_topic_0170889732_table194471512463>`.
 
 #. In the left tool bar, select a proper labeling shape. The default labeling shape is a rectangle. In this example, the rectangle is used for labeling.
 
@@ -55,9 +59,7 @@ The dataset details page provides the **Labeled** and **Unlabeled** tabs. The **
 
       On the left of the page, multiple tools are provided for you to label images. However, you can use only one tool at a time.
 
-   
-
-.. _modelarts230012enustopic0170889732table165201739119:
+   .. _modelarts_23_0012__en-us_topic_0170889732_table165201739119:
 
    .. table:: **Table 1** Supported bounding box
 
@@ -85,9 +87,7 @@ The dataset details page provides the **Labeled** and **Unlabeled** tabs. The **
 
    The selected image is automatically moved to the **Labeled** tab page. On the **Unlabeled** and **All** tab pages, the labeling information is updated along with the labeling process, including the added label names and the number of images for each label.
 
-
-
-.. _modelarts230012enustopic0170889732table194471512463:
+.. _modelarts_23_0012__en-us_topic_0170889732_table194471512463:
 
 .. table:: **Table 2** Common icons on the labeling page
 
@@ -133,6 +133,8 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
 
       After deleting the label, click **Back to Data Labeling Preview** in the upper left corner of the page to exit the labeling page. In the dialog box that is displayed, save the modification. After all labels of an image are deleted, the image is displayed on the **Unlabeled** tab page.
 
+      .. _modelarts_23_0012__en-us_topic_0170889732_en-us_topic_0170889732_fig16709173213107:
+
       .. figure:: /_static/images/en-us_image_0000001157080933.png
          :alt: **Figure 1** Editing an object detection label
       
@@ -145,6 +147,8 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
 
    -  Modifying a label: Click the edit icon in the **Operation** column. In the dialog box that is displayed, enter the new label name, select the new label color, and click **OK**. After the modification, the images that have been added with the label use the new label name.
    -  Deleting a label: Click the deletion icon in the **Operation** column to delete a label.
+
+   .. _modelarts_23_0012__en-us_topic_0170889732_en-us_topic_0170889732_fig19495403277:
 
    .. figure:: /_static/images/en-us_image_0000001157080935.png
       :alt: **Figure 2** All labels for object detection
@@ -181,8 +185,6 @@ If a tick is displayed in the upper left corner of an image, the image is select
 .. note::
 
    If you select **Delete source files**, images stored in the OBS directory will be deleted accordingly. This operation may affect other dataset versions or datasets using those files, for example, leading to an error in page display, training, or inference. Deleted data cannot be recovered. Exercise caution when performing this operation.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0000001156920971.png
 

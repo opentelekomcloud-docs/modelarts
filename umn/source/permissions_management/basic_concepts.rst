@@ -1,3 +1,5 @@
+.. _modelarts_23_0078:
+
 Basic Concepts
 ==============
 
@@ -7,5 +9,3 @@ IAM supports two types of policies:
 
 -  Default policies: Define the common permissions preset in the system, which are typically read-only or management permissions for cloud services such as ModelArts. Default policies can be used only for authorization and cannot be edited or modified.
 -  Custom policies: Define the permissions created and managed by users and are the extension and supplement of default policies.
-
-

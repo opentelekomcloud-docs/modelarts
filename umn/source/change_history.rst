@@ -1,9 +1,7 @@
+.. _modelarts_04_0099:
+
 Change History
 ==============
-
-
-
-.. _modelarts040099enustopic0135264638enustopic0135264638table4331195115321:
 
 =========== ===================================
 Released On Description

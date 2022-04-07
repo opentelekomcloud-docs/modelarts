@@ -1,3 +1,5 @@
+.. _modelarts_23_0015:
+
 Sound Classification
 ====================
 
@@ -10,7 +12,7 @@ Starting Labeling
 
 #. In the dataset list, select the dataset to be labeled based on the labeling type, and click the dataset name to go to the **Dashboard** tab page of the dataset.
 
-   By default, the **Dashboard** tab page of the current dataset version is displayed. If you need to label the dataset of another version, click the **Versions** tab and then click **Set to Current Version** in the right pane. For details, see `Managing Dataset Versions <../../data_management/managing_dataset_versions.html>`__.
+   By default, the **Dashboard** tab page of the current dataset version is displayed. If you need to label the dataset of another version, click the **Versions** tab and then click **Set to Current Version** in the right pane. For details, see :ref:`Managing Dataset Versions <modelarts_23_0019>`.
 
 #. On the **Dashboard** page of the dataset, click **Label** in the upper right corner. The dataset details page is displayed. By default, all data of the dataset is displayed on the dataset details page.
 
@@ -68,6 +70,8 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
 
    On the dataset details page, click the **Labeled** tab. The information about all labels is displayed on the right.
 
+   .. _modelarts_23_0015__en-us_topic_0170889735_fig19495403277:
+
    .. figure:: /_static/images/en-us_image_0000001110761044.png
       :alt: **Figure 1** Information about all labels
    
@@ -104,8 +108,6 @@ If a tick is displayed in the upper right corner of an audio file, the audio fil
 .. note::
 
    If you select **Delete source files**, audio files stored in the corresponding OBS directory will be deleted when you delete the selected audio files. Deleting source files may affect other dataset versions or datasets using those files. As a result, the page display, training, or inference is abnormal. Deleted data cannot be recovered. Exercise caution when performing this operation.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0000001157080893.png
 

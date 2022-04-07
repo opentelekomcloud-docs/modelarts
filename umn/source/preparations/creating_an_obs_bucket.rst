@@ -1,3 +1,5 @@
+.. _modelarts_08_0003:
+
 Creating an OBS Bucket
 ======================
 
@@ -13,5 +15,3 @@ Procedure
       The created OBS bucket and ModelArts are in the same region.
 
 #. Create a folder for storing data. For details, see "Creating a Folder". For example, create a folder named **flowers** in the created **c-flowers** OBS bucket.
-
-

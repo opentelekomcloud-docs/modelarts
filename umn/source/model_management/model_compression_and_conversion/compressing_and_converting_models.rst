@@ -1,3 +1,5 @@
+.. _modelarts_23_0107:
+
 Compressing and Converting Models
 =================================
 
@@ -14,10 +16,10 @@ Constraints
 
 -  Only Ascend chips are supported for model conversion.
 -  Only Caffe and TensorFlow models can be converted. For a TensorFlow model, the input data type is of the INT32, BOOL, UINT8, or FLOAT type.
--  ModelArts provides conversion templates for you to choose. For details about the supported templates, see `Conversion Templates <../../model_management/model_compression_and_conversion/conversion_templates.html>`__.
+-  ModelArts provides conversion templates for you to choose. For details about the supported templates, see :ref:`Conversion Templates <modelarts_23_0110>`.
 -  The **.tflite** and TensorRT formats support fewer operators and quantization operators. Therefore, some models may fail to be converted. If the conversion fails, view the log dialog box or check error logs in the conversion output directory.
 -  An OBS directory must be specified in compression/conversion tasks. Ensure that the OBS directory you use and ModelArts are in the same region.
--  When importing the converted model to ModelArts, you need to use the `model template <../../model_management/importing_a_model/importing_a_meta_model_from_a_template.html>`__.
+-  When importing the converted model to ModelArts, you need to use the :ref:`model template <modelarts_23_0205>`.
 -  For a TensorFlow model, the FrozenGraphDef and SavedModel formats are supported. If a model is in the SavedModel format, the model is converted to the FrozenGraphDef format and then to the OM format.
 -  Inputs with dynamic shapes are not supported, for example, NHWC = [?,?,?,3]. A fixed value needs to be specified during model conversion.
 -  The input can be up to 4-dimensional. Operators involving dimension changes (such as reshape and expanddim) cannot output five dimensions.
@@ -42,5 +44,3 @@ You can delete unnecessary conversion tasks. However, tasks in the **Running** o
 -  Deleting a batch of tasks:
 
    On the **Compression/Conversion** page, select multiple tasks to be deleted and click **Delete** in the upper left corner.
-
-

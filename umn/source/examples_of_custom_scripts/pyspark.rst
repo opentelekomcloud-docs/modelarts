@@ -1,3 +1,5 @@
+.. _modelarts_23_0178:
+
 PySpark
 =======
 
@@ -32,7 +34,7 @@ Training and Saving a Model
 |    23                             |    model.save("/tmp/spark_model")                                                        |
 +-----------------------------------+------------------------------------------------------------------------------------------+
 
-After the model is saved, it must be uploaded to the OBS directory before being published. The **config.json** configuration and **customize_service.py** must be contained during publishing. For details about the definition method, see `Model Package Specifications <../model_package_specifications/model_package_specifications.html>`__.
+After the model is saved, it must be uploaded to the OBS directory before being published. The **config.json** configuration and **customize_service.py** must be contained during publishing. For details about the definition method, see :ref:`Model Package Specifications <modelarts_23_0091>`.
 
 Inference Code
 --------------
@@ -86,5 +88,3 @@ Inference Code
 |    44                             |            predict_result = json.loads(predict_str)                                                  |
 |    45                             |            return predict_result                                                                     |
 +-----------------------------------+------------------------------------------------------------------------------------------------------+
-
-

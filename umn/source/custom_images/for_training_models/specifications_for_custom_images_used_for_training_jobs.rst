@@ -1,3 +1,5 @@
+.. _modelarts_23_0217:
+
 Specifications for Custom Images Used for Training Jobs
 =======================================================
 
@@ -13,8 +15,10 @@ Specifications
 
 -  To ensure that the log content can be displayed normally, the logs must be standard output.
 -  The default user of a custom image must be the user whose UID is **1101**.
--  Custom images can be developed based on basic ModelArts images. For details about the supported basic images, see `Overview of a Basic Image Package <#overview-of-a-basic-image-package>`__.
+-  Custom images can be developed based on basic ModelArts images. For details about the supported basic images, see :ref:`Overview of a Basic Image Package <modelarts_23_0217__en-us_topic_0212179951_section1126616610513>`.
 -  Currently, the ModelArts backend does not support the download of open source installation packages. You are advised to install the dependency packages required for training in the custom image.
+
+.. _modelarts_23_0217__en-us_topic_0212179951_section1126616610513:
 
 Overview of a Basic Image Package
 ---------------------------------
@@ -39,8 +43,10 @@ After customizing an image, upload it to SWR. Make sure that you have created an
 
 Obtain basic images based on chip requirements:
 
--  `CPU-based Basic Images <#cpu-based-basic-images>`__
--  `GPU-based Basic Images <#gpu-based-basic-images>`__
+-  :ref:`CPU-based Basic Images <modelarts_23_0217__en-us_topic_0212179951_section2357164275019>`
+-  :ref:`GPU-based Basic Images <modelarts_23_0217__en-us_topic_0212179951_section125281544151710>`
+
+.. _modelarts_23_0217__en-us_topic_0212179951_section2357164275019:
 
 CPU-based Basic Images
 ----------------------
@@ -51,11 +57,9 @@ Address for obtaining a basic image
 
    swr.<region>.xxx.com/modelarts-job-dev-image/custom-cpu-base:1.3
 
-`Table 1 <#modelarts230217enustopic0212179951table42317014714>`__ and `Table 2 <#modelarts230217enustopic0212179951table624501372>`__ list the components and tools used by basic images.
+:ref:`Table 1 <modelarts_23_0217__en-us_topic_0212179951_table42317014714>` and :ref:`Table 2 <modelarts_23_0217__en-us_topic_0212179951_table624501372>` list the components and tools used by basic images.
 
-
-
-.. _modelarts230217enustopic0212179951table42317014714:
+.. _modelarts_23_0217__en-us_topic_0212179951_table42317014714:
 
 .. table:: **Table 1** Components
 
@@ -65,9 +69,7 @@ Address for obtaining a basic image
    | run_train.sh | Training boot script. You can download the code directory, run training commands, redirect training log output, and upload log files to OBS after training commands are executed. |
    +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _modelarts230217enustopic0212179951table624501372:
+.. _modelarts_23_0217__en-us_topic_0212179951_table624501372:
 
 .. table:: **Table 2** Tool list
 
@@ -85,6 +87,8 @@ Address for obtaining a basic image
    | dls-downloader.py                 | OBS download script. The **utils.sh** script depends on this script.                                                                                     |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
+.. _modelarts_23_0217__en-us_topic_0212179951_section125281544151710:
+
 GPU-based Basic Images
 ----------------------
 
@@ -99,10 +103,6 @@ Addresses for obtaining a basic image
    swr.<region>.xxx.com/modelarts-job-dev-image/custom-base-cuda10.1-cp36-ubuntu18.04-x86:1.1
    swr.<region>.xxx.com/modelarts-job-dev-image/custom-base-cuda10.2-cp36-ubuntu18.04-x86:1.1
 
-
-
-.. _modelarts230217enustopic0212179951table137851182312:
-
 .. table:: **Table 3** Components
 
    +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -110,10 +110,6 @@ Addresses for obtaining a basic image
    +==============+===================================================================================================================================================================================+
    | run_train.sh | Training boot script. You can download the code directory, run training commands, redirect training log output, and upload log files to OBS after training commands are executed. |
    +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-
-.. _modelarts230217enustopic0212179951table135271650237:
 
 .. table:: **Table 4** Tool list
 
@@ -130,5 +126,3 @@ Addresses for obtaining a basic image
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
    | dls-downloader.py                 | OBS download script. The **utils.sh** script depends on this script.                                                                                     |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-

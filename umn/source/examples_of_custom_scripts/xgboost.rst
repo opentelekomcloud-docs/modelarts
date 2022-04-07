@@ -1,3 +1,5 @@
+.. _modelarts_23_0177:
+
 XGBoost
 =======
 
@@ -38,7 +40,7 @@ Training and Saving a Model
 |    29                             |    model.save_model('/tmp/xgboost.m')                                                             |
 +-----------------------------------+---------------------------------------------------------------------------------------------------+
 
-After the model is saved, it must be uploaded to the OBS directory before being published. The **config.json** and **customize_service.py** files must be contained during publishing. For details about the definition method, see `Model Package Specifications <../model_package_specifications/model_package_specifications.html>`__.
+After the model is saved, it must be uploaded to the OBS directory before being published. The **config.json** and **customize_service.py** files must be contained during publishing. For details about the definition method, see :ref:`Model Package Specifications <modelarts_23_0091>`.
 
 Inference Code
 --------------
@@ -77,5 +79,3 @@ Inference Code
            for element in data:
                resp_data.append({"predictresult": element})
            return resp_data
-
-

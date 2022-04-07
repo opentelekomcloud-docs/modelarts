@@ -1,3 +1,5 @@
+.. _modelarts_21_0006:
+
 Training a Model
 ================
 
@@ -8,9 +10,9 @@ Procedure
 
 #. On the **ExeML** page, click the name of the project that is successfully created. The **Label Data** tab page is displayed.
 
-#. On the **Label Data** tab page, click **Train** in the upper right corner. In the displayed **Training Configuration** dialog box, set related parameters. `Table 1 <#modelarts210006enustopic0284258835enustopic0169446155table56110116164>`__ describes the parameters. 
+#. On the **Label Data** tab page, click **Train** in the upper right corner. In the displayed **Training Configuration** dialog box, set related parameters. :ref:`Table 1 <modelarts_21_0006__en-us_topic_0284258835_en-us_topic_0169446155_table56110116164>` describes the parameters.
 
-.. _modelarts210006enustopic0284258835enustopic0169446155table56110116164:
+   .. _modelarts_21_0006__en-us_topic_0284258835_en-us_topic_0169446155_table56110116164:
 
    .. table:: **Table 1** Parameter description
 
@@ -42,9 +44,9 @@ Procedure
 
 #. On the **Train Model** tab page, wait until the training status changes from **Running** to **Completed**.
 
-#. View the training details, such as **Accuracy**, **Evaluation Result**, **Training Parameters**, and **Classification Statistics**. For details about the evaluation result parameters, see `Table 2 <#modelarts210006enustopic0284258835enustopic0169446155table19888201216>`__. 
+#. View the training details, such as **Accuracy**, **Evaluation Result**, **Training Parameters**, and **Classification Statistics**. For details about the evaluation result parameters, see :ref:`Table 2 <modelarts_21_0006__en-us_topic_0284258835_en-us_topic_0169446155_table19888201216>`.
 
-.. _modelarts210006enustopic0284258835enustopic0169446155table19888201216:
+   .. _modelarts_21_0006__en-us_topic_0284258835_en-us_topic_0169446155_table19888201216:
 
    .. table:: **Table 2** Evaluation result parameters
 
@@ -63,5 +65,3 @@ Procedure
 .. note::
 
    An ExeML project supports multiple rounds of training, and each round generates a version. For example, the first training version is **V001 (**\ *xxx*\ **)**, and the next version is **V002 (**\ *xxx*\ **)**. The trained models can be managed by training version. After the trained model meets your requirements, deploy the model as a service.
-
-

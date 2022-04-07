@@ -1,3 +1,5 @@
+.. _modelarts_05_0161:
+
 How Do I Describe the Dependencies Between Installation Packages and Model Configuration Files When a Model Is Imported?
 ========================================================================================================================
 
@@ -57,5 +59,3 @@ Example:
            }]
        }
    ]
-
-

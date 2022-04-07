@@ -1,3 +1,5 @@
+.. _modelarts_23_0211:
+
 Text Triplet
 ============
 
@@ -22,9 +24,11 @@ Starting Labeling
 
 #. In the dataset list, select the dataset to be labeled based on the labeling type, and click the dataset name to go to the **Dashboard** tab page of the dataset.
 
-   By default, the **Dashboard** tab page of the current dataset version is displayed. If you need to label the dataset of another version, click the **Versions** tab and then click **Set to Current Version** in the right pane. For details, see `Managing Dataset Versions <../../data_management/managing_dataset_versions.html>`__.
+   By default, the **Dashboard** tab page of the current dataset version is displayed. If you need to label the dataset of another version, click the **Versions** tab and then click **Set to Current Version** in the right pane. For details, see :ref:`Managing Dataset Versions <modelarts_23_0019>`.
 
 #. On the **Dashboard** page of the dataset, click **Label** in the upper right corner. The dataset details page is displayed. By default, all data of the dataset is displayed on the dataset details page.
+
+.. _modelarts_23_0211__en-us_topic_0209128667_section888019266174:
 
 Labeling Content
 ----------------
@@ -33,6 +37,8 @@ The dataset details page displays the labeled and unlabeled text objects in the 
 
 #. On the **Unlabeled** tab page, the objects to be labeled are listed in the left pane. In the list, click a text object, select the corresponding text content on the right pane, and select an entity name from the displayed entity list to label the content.
 
+   .. _modelarts_23_0211__en-us_topic_0209128667_fig127381972311:
+
    .. figure:: /_static/images/en-us_image_0000001110760968.png
       :alt: **Figure 1** Labeling an entity
    
@@ -40,6 +46,8 @@ The dataset details page displays the labeled and unlabeled text objects in the 
       **Figure 1** Labeling an entity
 
 #. After labeling multiple entities, click the source entity and target entity in sequence and select a relationship type from the displayed relationship list to label the relationship.
+
+   .. _modelarts_23_0211__en-us_topic_0209128667_fig16874184518477:
 
    .. figure:: /_static/images/en-us_image_0000001110920874.png
       :alt: **Figure 2** Labeling a relationship
@@ -84,5 +92,3 @@ You can quickly delete the files you want to discard.
 -  On the **Labeled** tab page, select the text to be deleted and click **Delete**. Alternatively, you can tick **Select Images on Current Page** to select all text objects on the current page and click **Delete** in the upper left corner.
 
 The background of the selected text is blue. If no text is selected on the page, the **Delete** button is unavailable.
-
-

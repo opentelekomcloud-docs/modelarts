@@ -1,3 +1,5 @@
+.. _modelarts_23_0021:
+
 Deleting a Dataset
 ==================
 
@@ -16,5 +18,3 @@ Procedure
    .. note::
 
       After a dataset is deleted, some functions such as dataset version management become unavailable. Exercise caution when performing this operation. However, the original data and labeling data of the dataset are still stored in OBS.
-
-

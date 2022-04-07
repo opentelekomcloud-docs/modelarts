@@ -1,3 +1,5 @@
+.. _modelarts_23_0188:
+
 Setting Alarm Rules
 ===================
 
@@ -22,5 +24,3 @@ Procedure
 #. Select a real-time service for which you want to create an alarm rule and click **Create Alarm Rule** in the **Operation** column.
 #. On the **Create Alarm Rule** page, create an alarm rule for ModelArts real-time services and models as prompted.
 #. After the setting is complete, click **Create**. When an alarm that meets the rule is generated, the system automatically sends a notification.
-
-

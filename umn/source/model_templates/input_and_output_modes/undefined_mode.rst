@@ -1,3 +1,5 @@
+.. _modelarts_23_0103:
+
 Undefined Mode
 ==============
 
@@ -20,5 +22,3 @@ Sample Request
 --------------
 
 The undefined mode has no specific sample request because the input and output of the request are entirely determined by the model.
-
-

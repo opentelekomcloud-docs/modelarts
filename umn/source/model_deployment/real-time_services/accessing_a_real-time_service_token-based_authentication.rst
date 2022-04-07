@@ -1,11 +1,15 @@
+.. _modelarts_23_0063:
+
 Accessing a Real-Time Service (Token-based Authentication)
 ==========================================================
 
 If a real-time service is in the **Running** state, the real-time service has been deployed successfully. This service provides a standard RESTful API for users to call. Before integrating the API to the production environment, commission the API. You can use either of the following methods to send an inference request to the real-time service:
 
-`Method 1: Use GUI-based Software for Inference (Postman) <#method-1--use-gui-based-software-for-inference-(postman)>`__ (Postman is recommended for Windows.)
+:ref:`Method 1: Use GUI-based Software for Inference (Postman) <modelarts_23_0063__en-us_topic_0165025308_section959354162911>` (Postman is recommended for Windows.)
 
-`Method 2: Run the cURL Command to Send an Inference Request <#method-2--run-the-curl-command-to-send-an-inference-request>`__ (curl commands are recommended for Linux.)
+:ref:`Method 2: Run the cURL Command to Send an Inference Request <modelarts_23_0063__en-us_topic_0165025308_section104131434203114>` (curl commands are recommended for Linux.)
+
+.. _modelarts_23_0063__en-us_topic_0165025308_section959354162911:
 
 Method 1: Use GUI-based Software for Inference (Postman)
 --------------------------------------------------------
@@ -50,6 +54,8 @@ Method 1: Use GUI-based Software for Inference (Postman)
    -  Inference result using file input: The field values in the return result vary with the model.
    -  Inference result using text input: The request body contains **meta** and **data**. If the request contains **uuid**, **uuid** will be returned in the response. Otherwise, **uuid** is left blank. **data** contains a **resp_data** array for the inference results of one or multiple pieces of input data. The parameters of each result are determined by the model, for example, **sepal_length** and **predictresult** in this example.
 
+.. _modelarts_23_0063__en-us_topic_0165025308_section104131434203114:
+
 Method 2: Run the cURL Command to Send an Inference Request
 -----------------------------------------------------------
 
@@ -79,5 +85,3 @@ The command for sending inference requests can be input as a file or text.
       curl -k -d '{"data":{"req_data":[{"sepal_length":3,"sepal_width":1,"petal_length":2.2,"petal_width":4}]}}' -H 'X-Auth-Token:MIISkAY***80T9wHQ==' -H 'Content-type: application/json' -X POST https://modelarts-infers-1.xxx/v1/infers/eb3e0c54-3dfa-4750-af0c-95c45e5d3e83
 
    **-d** indicates the text input of the request body.
-
-

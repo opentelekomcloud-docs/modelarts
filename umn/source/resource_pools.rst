@@ -1,3 +1,5 @@
+.. _modelarts_23_0076:
+
 Resource Pools
 ==============
 
@@ -12,13 +14,15 @@ When using ModelArts to implement AI Development Lifecycle, you can use two diff
 
    Create a dedicated resource pool and select the dedicated resource pool during AI development. For details about the dedicated resource pool, see the following:
 
-   `Dedicated Resource Pool <#dedicated-resource-pool>`__
+   :ref:`Dedicated Resource Pool <modelarts_23_0076__en-us_topic_0143244658_section6250135125515>`
 
-   `Creating a Dedicated Resource Pool <#creating-a-dedicated-resource-pool>`__
+   :ref:`Creating a Dedicated Resource Pool <modelarts_23_0076__en-us_topic_0143244658_section4115221610>`
 
-   `Scaling a Dedicated Resource Pool <#scaling-a-dedicated-resource-pool>`__
+   :ref:`Scaling a Dedicated Resource Pool <modelarts_23_0076__en-us_topic_0143244658_section1521854122017>`
 
-   `Deleting a Dedicated Resource Pool <#deleting-a-dedicated-resource-pool>`__
+   :ref:`Deleting a Dedicated Resource Pool <modelarts_23_0076__en-us_topic_0143244658_section102631431172915>`
+
+.. _modelarts_23_0076__en-us_topic_0143244658_section6250135125515:
 
 Dedicated Resource Pool
 -----------------------
@@ -26,6 +30,8 @@ Dedicated Resource Pool
 -  Dedicated resource pools can be used in the following jobs and tasks: notebook instances, training, TensorBoard, and deployment.
 -  Dedicated resource pools are classified into two types: **Dedicated for Development/Training** and **Dedicated for Service Deployment**. The **Dedicated for Development/Training** type can be used only for notebook instances, training, and TensorBoard. The **Dedicated for Service Deployment** type can be used only for model deployment.
 -  Dedicated resource pools are available only when they are in the **Running** status. If a dedicated resource pool is unavailable or abnormal, rectify the fault before using it.
+
+.. _modelarts_23_0076__en-us_topic_0143244658_section4115221610:
 
 Creating a Dedicated Resource Pool
 ----------------------------------
@@ -36,9 +42,9 @@ Creating a Dedicated Resource Pool
 
 #. Click **Create** in the upper left corner. The page for creating a dedicated resource pool is displayed.
 
-#. Set the parameters on the page. For details about how to set parameters, see `Table 1 <#modelarts230076enustopic0143244658table1073325155617>`__ and `Table 2 <#modelarts230076enustopic0143244658table199892206411>`__. 
+#. Set the parameters on the page. For details about how to set parameters, see :ref:`Table 1 <modelarts_23_0076__en-us_topic_0143244658_table1073325155617>` and :ref:`Table 2 <modelarts_23_0076__en-us_topic_0143244658_table199892206411>`.
 
-.. _modelarts230076enustopic0143244658table1073325155617:
+   .. _modelarts_23_0076__en-us_topic_0143244658_table1073325155617:
 
    .. table:: **Table 1** Parameters of the **Dedicated for Development/Training** type
 
@@ -58,9 +64,7 @@ Creating a Dedicated Resource Pool
       | Specifications                    | Required specifications. The GPU delivers better performance, and the CPU is more cost-effective. If a flavor is sold out, you can purchase it again only after other users delete the resource pool. |
       +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   
-
-.. _modelarts230076enustopic0143244658table199892206411:
+   .. _modelarts_23_0076__en-us_topic_0143244658_table199892206411:
 
    .. table:: **Table 2** Parameters of the **Dedicated for Service Deployment** type
 
@@ -88,6 +92,8 @@ Creating a Dedicated Resource Pool
 
 #. After confirming that the specifications are correct, create a dedicated resource pool as prompted. After a dedicated resource pool is created, its status changes to **Running**.
 
+.. _modelarts_23_0076__en-us_topic_0143244658_section1521854122017:
+
 Scaling a Dedicated Resource Pool
 ---------------------------------
 
@@ -102,6 +108,8 @@ The procedure for scaling is as follows:
    -  During capacity reduction, delete the target nodes in the **Operation** column. To reduce one node, you need to switch off the node in **Node List** to delete the node.
 
 #. Click **Submit**. After the request is submitted, the dedicated resource pool management page is displayed.
+
+.. _modelarts_23_0076__en-us_topic_0143244658_section102631431172915:
 
 Deleting a Dedicated Resource Pool
 ----------------------------------

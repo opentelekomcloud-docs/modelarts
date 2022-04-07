@@ -1,3 +1,5 @@
+.. _modelarts_23_0067:
+
 Viewing the Batch Service Prediction Result
 ===========================================
 
@@ -17,8 +19,6 @@ Procedure
    -  If images are entered, a result file is generated for each image in the *Image name*\ **\__result.txt** format, for example, **IMG_20180919_115016.jpg_result.txt**.
    -  If audio files are entered, a result file is generated for each audio file in the *Audio file name*\ **\__result.txt** format, for example, **1-36929-A-47.wav_result.txt**.
    -  If table data is entered, the result file is generated in the *Table name*\ **\__result.txt** format, for example, **train.csv_result.txt**.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0000001157080919.png
 

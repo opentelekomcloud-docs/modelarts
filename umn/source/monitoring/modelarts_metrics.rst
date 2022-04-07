@@ -1,3 +1,5 @@
+.. _modelarts_23_0187:
+
 ModelArts Metrics
 =================
 
@@ -13,10 +15,6 @@ SYS.ModelArts
 
 Monitoring Metrics
 ------------------
-
-
-
-.. _modelarts230187enustopic0198064686table3293914123812:
 
 .. table:: **Table 1** ModelArts metrics
 
@@ -121,10 +119,6 @@ Monitoring Metrics
 Dimensions
 ----------
 
-
-
-.. _modelarts230187enustopic0198064686table130310173915:
-
 .. table:: **Table 2** Dimension description
 
    ========== ====================
@@ -133,5 +127,3 @@ Dimensions
    service_id Real-time service ID
    model_id   Model ID
    ========== ====================
-
-

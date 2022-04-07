@@ -1,3 +1,5 @@
+.. _modelarts_23_0049:
+
 Managing Job Parameters
 =======================
 
@@ -37,5 +39,3 @@ Deleting a Training Job Parameter Configuration
    .. note::
 
       Deleted job parameter configurations cannot be recovered. Therefore, exercise caution when performing this operation.
-
-

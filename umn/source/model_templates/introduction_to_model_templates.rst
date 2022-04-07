@@ -1,3 +1,5 @@
+.. _modelarts_23_0098:
+
 Introduction to Model Templates
 ===============================
 
@@ -6,7 +8,7 @@ Because the configurations of models with the same functions are similar, ModelA
 Using a Template
 ----------------
 
-The following uses the template described in `TensorFlow-py36 General Template <../model_templates/template_description/tensorflow-py36_general_template.html>`__ as an example. Upload the TensorFlow model package to OBS before using the template. Store the model files in the **model** directory. When creating a model using this template, you need to select the **model** directory.
+The following uses the template described in :ref:`TensorFlow-py36 General Template <modelarts_23_0162>` as an example. Upload the TensorFlow model package to OBS before using the template. Store the model files in the **model** directory. When creating a model using this template, you need to select the **model** directory.
 
 #. On the **Import Model** page, set **Meta Model Source** to **Template**.
 
@@ -14,7 +16,7 @@ The following uses the template described in `TensorFlow-py36 General Template <
 
    ModelArts also provides three filter criteria: **Type**, **Engine**, and **Environment**, helping you quickly find the desired template. If the three filter criteria cannot meet your requirements, you can enter keywords to search for the target template.
 
-#. For **Model Folder**, select the **model** directory where the model files reside. For details, see `Template Description <../model_templates/template_description/index.html>`__.
+#. For **Model Folder**, select the **model** directory where the model files reside. For details, see :ref:`Template Description <modelarts_23_0118>`.
 
    .. note::
 
@@ -22,23 +24,25 @@ The following uses the template described in `TensorFlow-py36 General Template <
 
 #. If the default input and output mode of the selected template can be overwritten, you can select an input and output mode based on the model function or application scenario. **Input and Output Mode** is an abstract of the API in **config.json**. It describes the interface provided by the model for external inference. An input and output mode describes one or more APIs, and corresponds to a template.
 
-   For details about the supported input and output modes, see `Input and Output Modes <../model_templates/input_and_output_modes/index.html>`__.
+   For details about the supported input and output modes, see :ref:`Input and Output Modes <modelarts_23_0099>`.
+
+.. _modelarts_23_0098__en-us_topic_0172873520_section44801025155417:
 
 Supported Templates
 -------------------
 
--  `TensorFlow-py36 General Template <../model_templates/template_description/tensorflow-py36_general_template.html>`__
--  `MXNet-py36 General Template <../model_templates/template_description/mxnet-py36_general_template.html>`__
--  `PyTorch-py36 General Template <../model_templates/template_description/pytorch-py36_general_template.html>`__
--  `Caffe-CPU-py36 General Template <../model_templates/template_description/caffe-cpu-py36_general_template.html>`__
--  `Caffe-GPU-py36 General Template <../model_templates/template_description/caffe-gpu-py36_general_template.html>`__
+-  :ref:`TensorFlow-py36 General Template <modelarts_23_0162>`
+-  :ref:`MXNet-py36 General Template <modelarts_23_0164>`
+-  :ref:`PyTorch-py36 General Template <modelarts_23_0166>`
+-  :ref:`Caffe-CPU-py36 General Template <modelarts_23_0169>`
+-  :ref:`Caffe-GPU-py36 General Template <modelarts_23_0170>`
+
+.. _modelarts_23_0098__en-us_topic_0172873520_section737759781:
 
 Supported Input and Output Modes
 --------------------------------
 
--  `Built-in Object Detection Mode <../model_templates/input_and_output_modes/built-in_object_detection_mode.html>`__
--  `Built-in Image Processing Mode <../model_templates/input_and_output_modes/built-in_image_processing_mode.html>`__
--  `Built-in Predictive Analytics Mode <../model_templates/input_and_output_modes/built-in_predictive_analytics_mode.html>`__
--  `Undefined Mode <../model_templates/input_and_output_modes/undefined_mode.html>`__
-
-
+-  :ref:`Built-in Object Detection Mode <modelarts_23_0100>`
+-  :ref:`Built-in Image Processing Mode <modelarts_23_0101>`
+-  :ref:`Built-in Predictive Analytics Mode <modelarts_23_0102>`
+-  :ref:`Undefined Mode <modelarts_23_0103>`

@@ -1,3 +1,5 @@
+.. _modelarts_23_0182:
+
 Team Management
 ===============
 
@@ -7,7 +9,9 @@ Background
 ----------
 
 -  An account can have a maximum of 10 teams.
--  An account must have at least one team to enable team labeling for datasets. If the account has no team, add a team by referring to `Adding a Team <#adding-a-team>`__.
+-  An account must have at least one team to enable team labeling for datasets. If the account has no team, add a team by referring to :ref:`Adding a Team <modelarts_23_0182__en-us_topic_0186456617_section165361815383>`.
+
+.. _modelarts_23_0182__en-us_topic_0186456617_section165361815383:
 
 Adding a Team
 -------------
@@ -18,7 +22,7 @@ Adding a Team
 
 #. In the displayed **Add Team** dialog box, enter a team name and description and click **OK**. The labeling team is added.
 
-   The new team is displayed on the **Labeling Teams** page. You can view team details in the right pane. There is no member in the new team. Add members to the new team by referring to `Adding a Member <../../data_management/team_labeling/member_management.html#adding-a-member>`__.
+   The new team is displayed on the **Labeling Teams** page. You can view team details in the right pane. There is no member in the new team. Add members to the new team by referring to :ref:`Adding a Member <modelarts_23_0183__en-us_topic_0186456618_section060323818470>`.
 
 Deleting a Team
 ---------------
@@ -26,5 +30,3 @@ Deleting a Team
 You can delete a team that is no longer used.
 
 On the **Labeling Teams** page, select the target team and click **Delete**. In the dialog box that is displayed, click **OK**.
-
-

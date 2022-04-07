@@ -1,3 +1,5 @@
+.. _modelarts_05_0081:
+
 Where Is Data Stored After the Sync OBS Function Is Used?
 =========================================================
 
@@ -16,5 +18,3 @@ Where Is Data Stored After the Sync OBS Function Is Used?
       cd work
 
 #. Run the **ls** command in the **~/work** directory to view the files.
-
-

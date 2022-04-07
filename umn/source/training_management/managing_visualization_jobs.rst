@@ -1,3 +1,5 @@
+.. _modelarts_23_0050:
+
 Managing Visualization Jobs
 ===========================
 
@@ -59,5 +61,3 @@ If your visualization job is no longer used, you can delete it to release resour
 .. note::
 
    A deleted visualized job cannot be recovered. You need to create a new visualization job if you want to use it. Exercise caution when performing this operation.
-
-

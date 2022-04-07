@@ -1,3 +1,5 @@
+.. _modelarts_23_0072:
+
 Starting or Stopping a Service
 ==============================
 
@@ -16,5 +18,3 @@ You can stop services in the **Running** or **Alarm** status. Services in the **
 
 #. Log in to the ModelArts management console and choose **Service Deployment** from the left navigation pane. Go to the service management page of the target service. Click **Stop** in the **Operation** column to stop the target service.
 #. Log in to the ModelArts management console and choose **Service Deployment** from the left navigation pane. Go to the service management page of the target service. Click the name of the target service. The service details page is displayed. Click **Stop** in the upper right corner of the page to stop the service.
-
-

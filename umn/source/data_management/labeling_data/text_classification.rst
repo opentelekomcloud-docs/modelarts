@@ -1,3 +1,5 @@
+.. _modelarts_23_0013:
+
 Text Classification
 ===================
 
@@ -15,9 +17,11 @@ Starting Labeling
 
 #. In the dataset list, select the dataset to be labeled based on the labeling type, and click the dataset name to go to the **Dashboard** tab page of the dataset.
 
-   By default, the **Dashboard** tab page of the current dataset version is displayed. If you need to label the dataset of another version, click the **Versions** tab and then click **Set to Current Version** in the right pane. For details, see `Managing Dataset Versions <../../data_management/managing_dataset_versions.html>`__.
+   By default, the **Dashboard** tab page of the current dataset version is displayed. If you need to label the dataset of another version, click the **Versions** tab and then click **Set to Current Version** in the right pane. For details, see :ref:`Managing Dataset Versions <modelarts_23_0019>`.
 
 #. On the **Dashboard** page of the dataset, click **Label** in the upper right corner. The dataset details page is displayed. By default, all data of the dataset is displayed on the dataset details page.
+
+.. _modelarts_23_0013__en-us_topic_0170889733_section888019266174:
 
 Labeling Content
 ----------------
@@ -27,6 +31,8 @@ The dataset details page displays the labeled and unlabeled text files in the da
 #. On the **Unlabeled** tab page, the objects to be labeled are listed in the left pane. In the list, click the text object to be labeled, and select a label in the **Label Set** area in the right pane. Multiple labels can be added to a labeling object.
 
    You can repeat this operation to select objects and add labels to the objects.
+
+   .. _modelarts_23_0013__en-us_topic_0170889733_fig127381972311:
 
    .. figure:: /_static/images/en-us_image_0000001110760906.png
       :alt: **Figure 1** Labeling for text classification
@@ -41,6 +47,8 @@ Adding Labels
 
 -  Adding labels on the **Unlabeled** tab page: Click the plus sign (+) next to **Label Set**. On the **Add Label** page that is displayed, add a label name, select a label color, and click **OK**.
 
+   .. _modelarts_23_0013__en-us_topic_0170889733_fig162371842293:
+
    .. figure:: /_static/images/en-us_image_0000001157080759.png
       :alt: **Figure 2** Adding a label (1)
    
@@ -48,6 +56,8 @@ Adding Labels
       **Figure 2** Adding a label (1)
 
 -  Adding labels on the **Labeled** tab page: Click the plus sign (+) next to **All Labels**. On the **Add Label** page that is displayed, add a label name, select a label color, and click **OK**.
+
+   .. _modelarts_23_0013__en-us_topic_0170889733_fig1418544013104:
 
    .. figure:: /_static/images/en-us_image_0000001110760912.png
       :alt: **Figure 3** Adding a label (2)
@@ -104,8 +114,6 @@ You can quickly delete the files you want to discard.
 -  On the **Labeled** tab page, select the text to be deleted and click **Delete**. Alternatively, you can tick **Select Images on Current Page** to select all text objects on the current page and click **Delete** in the upper left corner.
 
 The background of the selected text is blue.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0000001110760908.png
 

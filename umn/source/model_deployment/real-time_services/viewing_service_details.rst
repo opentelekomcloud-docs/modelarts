@@ -1,3 +1,5 @@
+.. _modelarts_23_0061:
+
 Viewing Service Details
 =======================
 
@@ -7,45 +9,43 @@ After a model is deployed as a real-time service, you can access the service pag
 
 #. On the **Real-Time Services** page, click the name of the target service. The service details page is displayed.
 
-   You can view the service name and status. For details, see `Table 1 <#modelarts230061enustopic0165025305table54131529105213>`__.
+   You can view the service name and status. For details, see :ref:`Table 1 <modelarts_23_0061__en-us_topic_0165025305_table54131529105213>`.
 
-   
-
-.. _modelarts230061enustopic0165025305table54131529105213:
+   .. _modelarts_23_0061__en-us_topic_0165025305_table54131529105213:
 
    .. table:: **Table 1** Real-time service parameters
 
-      +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Parameter                         | Description                                                                                                                                                                                                                                                                                               |
-      +===================================+===========================================================================================================================================================================================================================================================================================================+
-      | Name                              | Name of the real-time service.                                                                                                                                                                                                                                                                            |
-      +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Status                            | Current status of the real-time service.                                                                                                                                                                                                                                                                  |
-      +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Source                            | Model source of the real-time service.                                                                                                                                                                                                                                                                    |
-      +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Failed Calls/Total Calls          | Number of service calls, which is counted from the time when the service was created.                                                                                                                                                                                                                     |
-      |                                   |                                                                                                                                                                                                                                                                                                           |
-      |                                   | If the number of models is changed or a service is invoked when a model is not ready, the number of calls is not counted.                                                                                                                                                                                 |
-      +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Network Configuration             | Customized network configuration of the used dedicated resource pool.                                                                                                                                                                                                                                     |
-      +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Description                       | Service description, which can be edited after you click the edit button on the right side.                                                                                                                                                                                                               |
-      +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Custom Settings                   | Customized configurations based on real-time service versions. This allows version-based traffic distribution policies and configurations. Enable this option and click **View Settings** to customize the settings. For details, see `Modifying Customized Settings <#modifying-customized-settings>`__. |
-      +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Data Collection                   | Enable this option to store the data generated when the real-time service is invoked to a specified OBS path.                                                                                                                                                                                             |
-      +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Filter                            | Enable this option so that the system automatically identifies hard examples in all sample data.                                                                                                                                                                                                          |
-      +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Synchronize Data                  | Synchronize the collected data to a dataset for centralized management and utilization.                                                                                                                                                                                                                   |
-      +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Traffic Limit                     | Maximum number of times a service can be accessed within a second.                                                                                                                                                                                                                                        |
-      +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Parameter                         | Description                                                                                                                                                                                                                                                                                                                                 |
+      +===================================+=============================================================================================================================================================================================================================================================================================================================================+
+      | Name                              | Name of the real-time service.                                                                                                                                                                                                                                                                                                              |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Status                            | Current status of the real-time service.                                                                                                                                                                                                                                                                                                    |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Source                            | Model source of the real-time service.                                                                                                                                                                                                                                                                                                      |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Failed Calls/Total Calls          | Number of service calls, which is counted from the time when the service was created.                                                                                                                                                                                                                                                       |
+      |                                   |                                                                                                                                                                                                                                                                                                                                             |
+      |                                   | If the number of models is changed or a service is invoked when a model is not ready, the number of calls is not counted.                                                                                                                                                                                                                   |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Network Configuration             | Customized network configuration of the used dedicated resource pool.                                                                                                                                                                                                                                                                       |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Description                       | Service description, which can be edited after you click the edit button on the right side.                                                                                                                                                                                                                                                 |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Custom Settings                   | Customized configurations based on real-time service versions. This allows version-based traffic distribution policies and configurations. Enable this option and click **View Settings** to customize the settings. For details, see :ref:`Modifying Customized Settings <modelarts_23_0061__en-us_topic_0165025305_section242152442020>`. |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Data Collection                   | Enable this option to store the data generated when the real-time service is invoked to a specified OBS path.                                                                                                                                                                                                                               |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Filter                            | Enable this option so that the system automatically identifies hard examples in all sample data.                                                                                                                                                                                                                                            |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Synchronize Data                  | Synchronize the collected data to a dataset for centralized management and utilization.                                                                                                                                                                                                                                                     |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Traffic Limit                     | Maximum number of times a service can be accessed within a second.                                                                                                                                                                                                                                                                          |
+      +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-#. You can switch between tabs on the details page of a real-time service to view more details. For details, see `Table 2 <#modelarts230061enustopic0165025305table62441712183917>`__. 
+#. You can switch between tabs on the details page of a real-time service to view more details. For details, see :ref:`Table 2 <modelarts_23_0061__en-us_topic_0165025305_table62441712183917>`.
 
-.. _modelarts230061enustopic0165025305table62441712183917:
+   .. _modelarts_23_0061__en-us_topic_0165025305_table62441712183917:
 
    .. table:: **Table 2** Service details
 
@@ -54,7 +54,7 @@ After a model is deployed as a real-time service, you can access the service pag
       +===================================+=====================================================================================================================================================================================+
       | Usage Guides                      | Displays the API address, model information, input parameters, and output parameters. You can click |image1| to copy the API address to call the service.                           |
       +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Prediction                        | Performs a prediction test on the real-time service. For details, see `Testing a Service <../../model_deployment/real-time_services/testing_a_service.html>`__.                     |
+      | Prediction                        | Performs a prediction test on the real-time service. For details, see :ref:`Testing a Service <modelarts_23_0062>`.                                                                 |
       +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Configuration Updates             | Displays **Existing Configuration** and **Historical Updates**.                                                                                                                     |
       |                                   |                                                                                                                                                                                     |
@@ -71,6 +71,8 @@ After a model is deployed as a real-time service, you can access the service pag
       |                                   | -  You can select the start time and end time when defining the time segment.                                                                                                       |
       +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
+.. _modelarts_23_0061__en-us_topic_0165025305_section242152442020:
+
 Modifying Customized Settings
 -----------------------------
 
@@ -81,10 +83,6 @@ You can configure different settings with customized running parameters for diff
 The priorities of customized configuration rules are in descending order. You can change the priorities by dragging the sequence of customized configuration rules.
 
 After a rule is matched, the system will no longer match subsequent rules. A maximum of 10 configuration rules can be configured.
-
-
-
-.. _modelarts230061enustopic0165025305table569619576249:
 
 .. table:: **Table 3** Parameters for **Custom Settings**
 
@@ -106,9 +104,7 @@ After a rule is matched, the system will no longer match subsequent rules. A max
 
 Customized settings can be used in the following scenarios:
 
--  If multiple versions of a real-time service are deployed for dark launch, customized settings can be used to distribute traffic by user. 
-
-.. _modelarts230061enustopic0165025305table19377505490:
+-  If multiple versions of a real-time service are deployed for dark launch, customized settings can be used to distribute traffic by user.
 
    .. table:: **Table 4** Built-in variables
 
@@ -151,10 +147,6 @@ Customized settings can be used in the following scenarios:
 
          #DOMAIN_NAME matches 'op.*'
 
-      
-
-.. _modelarts230061enustopic0165025305table52770525547:
-
       .. table:: **Table 5** Common regular expressions
 
          +-----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -178,6 +170,8 @@ Customized settings can be used in the following scenarios:
          +-----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
          | [xyz]     | Match any single character contained in a character set. For example, **[abc]** can match **a** in **plain**.                                               |
          +-----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+      .. _modelarts_23_0061__en-us_topic_0165025305_fig19860141184710:
 
       .. figure:: /_static/images/en-us_image_0000001157080859.png
          :alt: **Figure 1** Traffic distribution by user
@@ -210,6 +204,8 @@ Customized settings can be used in the following scenarios:
 
          #HEADER_testheader matches 'mock.*'
 
+      .. _modelarts_23_0061__en-us_topic_0165025305_fig386192143714:
+
       .. figure:: /_static/images/en-us_image_0000001110920910.png
          :alt: **Figure 2** Using the header to access different versions
       
@@ -222,13 +218,13 @@ Customized settings can be used in the following scenarios:
 
    When user A accesses the model, the user uses configuration A. When user B accesses the model, the user uses configuration B. When matching a running configuration, ModelArts adds a header to the request and also the customized running parameters specified by **Setting Name** and **Setting Value**.
 
+   .. _modelarts_23_0061__en-us_topic_0165025305_fig913111016189:
+
    .. figure:: /_static/images/en-us_image_0000001110761010.png
       :alt: **Figure 3** Customized running parameters added for a customized configuration rule
    
 
       **Figure 3** Customized running parameters added for a customized configuration rule
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0000001110920912.png
 

@@ -1,3 +1,5 @@
+.. _modelarts_23_0101:
+
 Built-in Image Processing Mode
 ==============================
 
@@ -21,5 +23,3 @@ In this mode, input an image to be processed in the inference request. The respo
 -  Using Postman to call a RESTful API for prediction
 
    After a model is deployed as a service, you can obtain the API URL on the **Usage Guides** tab page of the service details page. On the **Body** tab page, set the request body. Set **key** to **images**, select **File**, select the image to be processed, and click **send** to send your prediction request.
-
-

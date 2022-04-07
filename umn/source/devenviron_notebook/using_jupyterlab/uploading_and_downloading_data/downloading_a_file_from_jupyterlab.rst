@@ -1,3 +1,5 @@
+.. _modelarts_23_0333:
+
 Downloading a File from JupyterLab
 ==================================
 
@@ -27,5 +29,3 @@ Notebook Instances Using OBS Storage
 For notebook instances that use OBS storage, you can use OBS or the ModelArts SDK to download files from OBS to a local PC.
 
 Use OBS for download.
-
-

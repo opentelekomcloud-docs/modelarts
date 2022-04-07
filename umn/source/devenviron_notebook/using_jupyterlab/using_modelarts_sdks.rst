@@ -1,3 +1,5 @@
+.. _modelarts_23_0335:
+
 Using ModelArts SDKs
 ====================
 
@@ -60,5 +62,3 @@ Example Code
    |    4                              |    predictor_instance = Predictor(session, service_id="input your service_id") |
    |    5                              |    predictor_info_resp = predictor_instance.get_service_info()                 |
    +-----------------------------------+--------------------------------------------------------------------------------+
-
-
