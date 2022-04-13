@@ -1,3 +1,5 @@
+.. _modelarts_23_0087:
+
 Creating a Training Job Using a Custom Image (GPU)
 ==================================================
 
@@ -6,19 +8,21 @@ After creating and uploading a custom image to SWR, you can use the image to cre
 Prerequisites
 -------------
 
--  You have created a custom image package based on ModelArts specifications. For details about the specifications you need to comply with when using a custom image to create training jobs, see `Specifications for Custom Images Used for Training Jobs <../../custom_images/for_training_models/specifications_for_custom_images_used_for_training_jobs.html>`__.
--  You have uploaded the custom image to SWR. For details, see `Creating and Uploading a Custom Image <../../custom_images/creating_and_uploading_a_custom_image.html>`__.
+-  You have created a custom image package based on ModelArts specifications. For details about the specifications you need to comply with when using a custom image to create training jobs, see :ref:`Specifications for Custom Images Used for Training Jobs <modelarts_23_0217>`.
+-  You have uploaded the custom image to SWR. For details, see :ref:`Creating and Uploading a Custom Image <modelarts_23_0085>`.
 
 Creating a Training Job
 -----------------------
 
-Log in to the ModelArts management console and create a training job according to `Creating a Training Job <../../training_management/creating_a_training_job/index.html>`__. When using a custom image to create a job, pay attention to the settings of **Algorithm Source**, **Environment Variable**, and **Resource Pool**.
+Log in to the ModelArts management console and create a training job according to :ref:`Creating a Training Job <modelarts_23_0235>`. When using a custom image to create a job, pay attention to the settings of **Algorithm Source**, **Environment Variable**, and **Resource Pool**.
 
 -  **Algorithm Source**
 
    Select **Custom**.
 
    -  **Image Path**: SWR URL after the image is uploaded to SWR
+
+      .. _modelarts_23_0087__en-us_topic_0171858299_fig1610311596365:
 
       .. figure:: /_static/images/en-us_image_0000001156920769.png
          :alt: **Figure 1** SWR image address
@@ -50,11 +54,9 @@ Log in to the ModelArts management console and create a training job according t
 
 -  **Environment Variable**
 
-   After the container is started, besides the environment variables added by configuring **Environment Variable** during training job creation, `Table 1 <#modelarts230087enustopic0171858299table341782301619>`__ lists other environment variables to be loaded. You can determine whether to use these environment variables in your own Python training script, or run the **{python_file_parameter}** command to pass the required parameters.
+   After the container is started, besides the environment variables added by configuring **Environment Variable** during training job creation, :ref:`Table 1 <modelarts_23_0087__en-us_topic_0171858299_table341782301619>` lists other environment variables to be loaded. You can determine whether to use these environment variables in your own Python training script, or run the **{python_file_parameter}** command to pass the required parameters.
 
-   
-
-.. _modelarts230087enustopic0171858299table341782301619:
+   .. _modelarts_23_0087__en-us_topic_0171858299_table341782301619:
 
    .. table:: **Table 1** Optional environment variables
 
@@ -87,12 +89,10 @@ Log in to the ModelArts management console and create a training job according t
 Running a Training Job Created Using a Custom Image
 ---------------------------------------------------
 
-After a custom image is uploaded to SWR, ModelArts is authorized to obtain and run the image by default when you create a training job using the custom image. When a custom image is run for the first time, the image is checked first. For details about the check, see `Specifications for Custom Images Used for Training Jobs <../../custom_images/for_training_models/specifications_for_custom_images_used_for_training_jobs.html>`__. The check failure cause is outputted in the log, and you can modify the image based on the log.
+After a custom image is uploaded to SWR, ModelArts is authorized to obtain and run the image by default when you create a training job using the custom image. When a custom image is run for the first time, the image is checked first. For details about the check, see :ref:`Specifications for Custom Images Used for Training Jobs <modelarts_23_0217>`. The check failure cause is outputted in the log, and you can modify the image based on the log.
 
 After the image is checked, the backend starts the custom image container to run the training job. You can view the training status based on the log.
 
 .. note::
 
    After an image is reviewed, the image does not need to be reviewed again when being used to create training jobs again.
-
-

@@ -1,3 +1,5 @@
+.. _modelarts_23_0017:
+
 Speech Paragraph Labeling
 =========================
 
@@ -10,7 +12,7 @@ Starting Labeling
 
 #. In the dataset list, select the dataset to be labeled based on the labeling type, and click the dataset name to go to the **Dashboard** tab page of the dataset.
 
-   By default, the **Dashboard** tab page of the current dataset version is displayed. If you need to label the dataset of another version, click the **Versions** tab and then click **Set to Current Version** in the right pane. For details, see `Managing Dataset Versions <../../data_management/managing_dataset_versions.html>`__.
+   By default, the **Dashboard** tab page of the current dataset version is displayed. If you need to label the dataset of another version, click the **Versions** tab and then click **Set to Current Version** in the right pane. For details, see :ref:`Managing Dataset Versions <modelarts_23_0019>`.
 
 #. On the **Dashboard** page of the dataset, click **Label** in the upper right corner. The dataset details page is displayed. By default, all data of the dataset is displayed on the dataset details page.
 
@@ -29,6 +31,8 @@ The dataset details page displays the labeled and unlabeled audio files. The **U
 #. In the audio file list on the **Unlabeled** tab page, click the target audio file. In the area on the right, the audio file is displayed. Click |image1| below the audio file to play the audio.
 
 #. Select an audio segment based on the content being played, and enter the audio file label and content in the **Speech Content** text box.
+
+   .. _modelarts_23_0017__en-us_topic_0170889737_fig116336410274:
 
    .. figure:: /_static/images/en-us_image_0000001157080965.png
       :alt: **Figure 1** Labeling an audio file
@@ -76,8 +80,6 @@ On the **Unlabeled** or **Labeled** tab page, select the audio files to be delet
 .. note::
 
    If you select **Delete source files**, audio files stored in the corresponding OBS directory will be deleted when you delete the selected audio files. Deleting source files may affect other dataset versions or datasets using those files. As a result, the page display, training, or inference is abnormal. Deleted data cannot be recovered. Exercise caution when performing this operation.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0000001110761012.png
 

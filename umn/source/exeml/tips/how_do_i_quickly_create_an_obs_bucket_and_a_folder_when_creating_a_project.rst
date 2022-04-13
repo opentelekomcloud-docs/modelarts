@@ -1,3 +1,5 @@
+.. _modelarts_21_0031:
+
 How Do I Quickly Create an OBS Bucket and a Folder When Creating a Project?
 ===========================================================================
 
@@ -6,6 +8,8 @@ When creating a project, select a training data path. This section describes how
 #. On the page for creating an ExeML project, click |image1| on the right of **Input Dataset Path**. The **Input Dataset Path** dialog box is displayed.
 
 #. Click **Create Bucket**. The **Create Bucket** page is displayed. For details about how to create a bucket, see **Creating a Bucket** in the *Object Storage Service Console Operation Guide*.
+
+   .. _modelarts_21_0031__en-us_topic_0284258862_en-us_topic_0219614203_fig1365441355315:
 
    .. figure:: /_static/images/en-us_image_0000001157080895.png
       :alt: **Figure 1** Creating an OBS bucket
@@ -19,8 +23,6 @@ When creating a project, select a training data path. This section describes how
    -  The name cannot start or end with a period (.) or slash (/).
    -  The absolute path of a folder cannot exceed 1,023 characters.
    -  Any single slash (/) separates and creates multiple levels of folders at once.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0000001157080897.png
 

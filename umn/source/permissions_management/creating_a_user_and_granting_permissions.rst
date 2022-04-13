@@ -1,3 +1,5 @@
+.. _modelarts_23_0079:
+
 Creating a User and Granting Permissions
 ========================================
 
@@ -72,6 +74,8 @@ Authentication Logic
 
 IAM authenticates users according to the permissions that the users have been granted. The authentication logic is as follows:
 
+.. _modelarts_23_0079__en-us_topic_0285383428_en-us_topic_0270979573_fig4148178111014:
+
 .. figure:: /_static/images/en-us_image_0000001110920802.png
    :alt: **Figure 1** Authentication logic
 
@@ -87,5 +91,3 @@ IAM authenticates users according to the permissions that the users have been gr
 #. In these policies, the system looks for explicit deny permissions. If the system finds an explicit deny that applies, it returns a decision of **Deny**, and the authentication ends.
 #. If no explicit deny is found, the system looks for allow permissions that would apply to the request. If the system finds an explicit allow permission that applies, it returns a decision of **Allow**, and the authentication ends.
 #. If no explicit allow permission is found, the system returns a decision of **Deny**, and the authentication ends.
-
-

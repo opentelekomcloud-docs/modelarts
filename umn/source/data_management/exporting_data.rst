@@ -1,3 +1,5 @@
+.. _modelarts_23_0214:
+
 Exporting Data
 ==============
 
@@ -21,11 +23,13 @@ Exporting Data to a New Dataset
 
    .. note::
 
-      For a dataset of the free format type, you can click the dataset name to directly access the dataset details page and go to `4 <#modelarts230214enustopic0209632492li114071010139>`__.
+      For a dataset of the free format type, you can click the dataset name to directly access the dataset details page and go to :ref:`4 <modelarts_23_0214__en-us_topic_0209632492_li114071010139>`.
 
 #. On the **Dashboard** page of the dataset, click **Label** in the upper right corner. The dataset details page is displayed.
 
-#. On the dataset details page, select or filter data to be exported. Click **Export To** and choose **New Dataset** from the drop-down list.
+#. .. _modelarts_23_0214__en-us_topic_0209632492_li114071010139:
+
+   On the dataset details page, select or filter data to be exported. Click **Export To** and choose **New Dataset** from the drop-down list.
 
 #. In the displayed **Export to New Dataset** dialog box, enter the related information and click **OK**.
 
@@ -48,11 +52,13 @@ Exporting Data to OBS
 
    .. note::
 
-      For a dataset of the free format type, you can click the dataset name to directly access the dataset details page and go to `4 <#modelarts230214enustopic0209632492li2056103713438>`__.
+      For a dataset of the free format type, you can click the dataset name to directly access the dataset details page and go to :ref:`4 <modelarts_23_0214__en-us_topic_0209632492_li2056103713438>`.
 
 #. On the **Dashboard** page of the dataset, click **Label** in the upper right corner. The dataset details page is displayed.
 
-#. On the dataset details page, select or filter data to be exported. Click **Export To** and choose **OBS** from the drop-down list.
+#. .. _modelarts_23_0214__en-us_topic_0209632492_li2056103713438:
+
+   On the dataset details page, select or filter data to be exported. Click **Export To** and choose **OBS** from the drop-down list.
 
 #. In the displayed **Export to OBS** dialog box, enter the related information and click **OK**.
 
@@ -68,14 +74,17 @@ Viewing the Task History
 When you export data to a new dataset or OBS, you can view the export task details in the **View Task History** dialog box.
 
 #. Log in to the ModelArts management console. In the left navigation pane, choose **Data Management** > **Datasets**. The **Datasets** page is displayed.
+
 #. In the dataset list, select the dataset of the object detection or image classification type and click the dataset name to go to the **Dashboard** tab page of the dataset.
 
    .. note::
 
-      For a dataset of the free format type, you can click the dataset name to directly access the dataset details page and go to `4 <#modelarts230214enustopic0209632492li19995141771413>`__.
+      For a dataset of the free format type, you can click the dataset name to directly access the dataset details page and go to :ref:`4 <modelarts_23_0214__en-us_topic_0209632492_li19995141771413>`.
 
 #. On the **Dashboard** page of the dataset, click **Label** in the upper right corner. The dataset details page is displayed.
-#. On the dataset details page, select or filter data to be exported. Click **Export To** and choose **View Task History** from the drop-down list.
+
+#. .. _modelarts_23_0214__en-us_topic_0209632492_li19995141771413:
+
+   On the dataset details page, select or filter data to be exported. Click **Export To** and choose **View Task History** from the drop-down list.
+
 #. In the **View Task History** dialog box, view the export task history of the current dataset. Information about **Task ID**, **Created**, **Type**, **Path**, **Total**, and **Status** is included.
-
-

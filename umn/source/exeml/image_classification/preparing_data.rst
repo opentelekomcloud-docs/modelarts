@@ -1,3 +1,5 @@
+.. _modelarts_21_0003:
+
 Preparing Data
 ==============
 
@@ -57,5 +59,3 @@ Requirements for Files Uploaded to OBS
          cat
          dog
          ...
-
-

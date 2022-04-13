@@ -1,3 +1,5 @@
+.. _modelarts_01_0010:
+
 Introduction to the AI Development Lifecycle
 ============================================
 
@@ -17,6 +19,8 @@ Basic Process of AI Development
 -------------------------------
 
 The basic process of AI development includes the following steps: determining an objective, preparing data, and training, evaluating, and deploying a model.
+
+.. _modelarts_01_0010__en-us_topic_0284258735_en-us_topic_0168462752_fig1553185024113:
 
 .. figure:: /_static/images/en-us_image_0000001110921016.png
    :alt: **Figure 1** AI development process
@@ -47,5 +51,3 @@ The basic process of AI development includes the following steps: determining an
 #. **Deploy the model.**
 
    Model development and training are based on existing data (which may be test data). After a satisfactory model is obtained, the model needs to be formally applied to actual data or newly generated data for prediction, evaluation, and visualization. The findings can then be reported to decision makers in an intuitive way, helping them develop the right business strategies.
-
-

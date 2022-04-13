@@ -1,7 +1,9 @@
+.. _modelarts_23_0332:
+
 Uploading Data to JupyterLab
 ============================
 
-On the **JupyterLab** page, click **Upload Files** to upload a file. For details, see `Uploading a File <../../../devenviron_notebook/using_jupyterlab/introduction_to_jupyterlab_and_common_operations.html#uploading-a-file>`__ in `Introduction to JupyterLab and Common Operations <../../../devenviron_notebook/using_jupyterlab/introduction_to_jupyterlab_and_common_operations.html>`__. If a message is displayed indicating that the size of the files to be uploaded exceeds the upper limit when uploading files to notebook instances or JupyterLab, you can upload the files to OBS and then download them to notebook instances.
+On the **JupyterLab** page, click **Upload Files** to upload a file. For details, see :ref:`Uploading a File <modelarts_23_0209__en-us_topic_0208766071_section172463910383>` in :ref:`Introduction to JupyterLab and Common Operations <modelarts_23_0209>`. If a message is displayed indicating that the size of the files to be uploaded exceeds the upper limit when uploading files to notebook instances or JupyterLab, you can upload the files to OBS and then download them to notebook instances.
 
 Step 1: Uploading Files to OBS
 ------------------------------
@@ -53,5 +55,3 @@ A notebook instance can be mounted to OBS or EVS as the storage location. The op
 -  Downloading files to notebook instances using OBS for data storage
 
    Upload files to the OBS path specified during notebook instance creation and synchronize the files from OBS to the notebook instances using Sync OBS.
-
-

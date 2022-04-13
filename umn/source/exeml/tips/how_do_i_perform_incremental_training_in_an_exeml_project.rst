@@ -1,3 +1,5 @@
+.. _modelarts_21_0033:
+
 How Do I Perform Incremental Training in an ExeML Project?
 ==========================================================
 
@@ -21,5 +23,3 @@ Incremental Training Procedure
 #. After all images are labeled, click **Train** in the upper right corner. In the **Training Configuration** dialog box that is displayed, set **Incremental Training Version** to the training version that has been completed to perform incremental training based on this version. Set other parameters as prompted.
 
    After the settings are complete, click **Yes** to start incremental training. The system automatically switches to the **Train Model** page. After the training is complete, you can view the training details, such as training precision, evaluation result, and training parameters.
-
-

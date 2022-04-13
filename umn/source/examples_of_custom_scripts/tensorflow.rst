@@ -1,3 +1,5 @@
+.. _modelarts_23_0173:
+
 TensorFlow
 ==========
 
@@ -401,5 +403,3 @@ Inference Code (Keras and tf APIs)
 |    37                             |                    infer_output["mnist_result"].append(result.index(max(result)))                                                       |
 |    38                             |            return infer_output                                                                                                          |
 +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-
-

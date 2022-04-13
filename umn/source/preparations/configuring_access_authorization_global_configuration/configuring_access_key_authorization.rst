@@ -1,3 +1,5 @@
+.. _modelarts_08_0002:
+
 Configuring Access Key Authorization
 ====================================
 
@@ -26,5 +28,3 @@ Adding an Access Key
 #. Select **I have read and agree to the ModelArts Service Statement** and click **Agree**.
 
    After the configuration is complete, you can view the access key configurations of an account or IAM user on the **Settings** page.
-
-

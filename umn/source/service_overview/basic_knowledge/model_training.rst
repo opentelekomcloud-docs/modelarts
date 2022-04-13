@@ -1,3 +1,5 @@
+.. _modelarts_01_0014:
+
 Model Training
 ==============
 
@@ -34,5 +36,3 @@ ModelArts High-Performance Distributed Training Optimization
 -  Distributed high-performance communication libraries (NStack and HCCL)
 -  Distributed data-model hybrid parallel
 -  Training data compression and multi-level caching
-
-

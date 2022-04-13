@@ -1,3 +1,5 @@
+.. _modelarts_23_0014:
+
 Named Entity Recognition
 ========================
 
@@ -12,9 +14,11 @@ Starting Labeling
 
 #. In the dataset list, select the dataset to be labeled based on the labeling type, and click the dataset name to go to the **Dashboard** tab page of the dataset.
 
-   By default, the **Dashboard** tab page of the current dataset version is displayed. If you need to label the dataset of another version, click the **Versions** tab and then click **Set to Current Version** in the right pane. For details, see `Managing Dataset Versions <../../data_management/managing_dataset_versions.html>`__.
+   By default, the **Dashboard** tab page of the current dataset version is displayed. If you need to label the dataset of another version, click the **Versions** tab and then click **Set to Current Version** in the right pane. For details, see :ref:`Managing Dataset Versions <modelarts_23_0019>`.
 
 #. On the **Dashboard** page of the dataset, click **Label** in the upper right corner. The dataset details page is displayed. By default, all data of the dataset is displayed on the dataset details page.
+
+.. _modelarts_23_0014__en-us_topic_0170889734_section888019266174:
 
 Labeling Content
 ----------------
@@ -32,6 +36,8 @@ Adding Labels
 
 -  Adding labels on the **Unlabeled** tab page: Click the plus sign (+) next to **Label Set**. On the **Add Label** page that is displayed, add a label name, select a label color, and click **OK**.
 
+   .. _modelarts_23_0014__en-us_topic_0170889734_fig162371842293:
+
    .. figure:: /_static/images/en-us_image_0000001156921015.png
       :alt: **Figure 1** Adding a named entity label (1)
    
@@ -39,6 +45,8 @@ Adding Labels
       **Figure 1** Adding a named entity label (1)
 
 -  Adding labels on the **Labeled** tab page: Click the plus sign (+) next to **All Labels**. On the **Add Label** page that is displayed, add a label name, select a label color, and click **OK**.
+
+   .. _modelarts_23_0014__en-us_topic_0170889734_fig1418544013104:
 
    .. figure:: /_static/images/en-us_image_0000001156921017.png
       :alt: **Figure 2** Adding a named entity label (2)
@@ -93,8 +101,6 @@ You can quickly delete the files you want to discard.
 -  On the **Labeled** tab page, select the text to be deleted and click **Delete**. Alternatively, you can tick **Select Images on Current Page** to select all text objects on the current page and click **Delete** in the upper left corner.
 
 The background of the selected text is blue.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0000001110761148.png
 

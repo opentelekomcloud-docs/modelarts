@@ -1,3 +1,5 @@
+.. _modelarts_21_0005:
+
 Labeling Data
 =============
 
@@ -46,8 +48,6 @@ After labeling data, you can modify the labeled data on the **Labeled** tab page
 
    -  Modifying a label: Click the editing icon in the **Operation** column. In the dialog box that is displayed, enter the new label name and click **OK**. After the modification, the images that have been added with the label use the new label name.
    -  Deleting a label: Click the deletion icon in the **Operation** column. In the displayed dialog box, select **Delete label**, **Delete label and images with only the label (Do not delete source files)**, or **Delete label and images with only the label (Delete source files)**, and click **OK**.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0000001110760936.png
 

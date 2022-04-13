@@ -1,7 +1,11 @@
+.. _modelarts_23_0018:
+
 Publishing a Dataset
 ====================
 
 ModelArts distinguishes data of the same source according to versions labeled at different time, which facilitates the selection of dataset versions during subsequent model building and development. After labeling the data, you can publish the dataset to generate a new dataset version.
+
+.. _modelarts_23_0018__en-us_topic_0170886812_section38541340654:
 
 About Dataset Versions
 ----------------------
@@ -23,9 +27,7 @@ Publishing a Dataset
 
    Alternatively, you can click the dataset name to go to the **Dashboard** tab page of the dataset, and click **Publish** in the upper right corner.
 
-#. In the displayed dialog box, set the parameters and click **OK**. 
-
-.. _modelarts230018enustopic0170886812table856411819131:
+#. In the displayed dialog box, set the parameters and click **OK**.
 
    .. table:: **Table 1** Parameters for publishing a dataset
 
@@ -85,5 +87,3 @@ The following uses object detection as an example. If a manifest file is importe
                |-- VersionMame2
                    ...
                |-- ...
-
-

@@ -1,3 +1,5 @@
+.. _modelarts_05_0063:
+
 How Do I Create a Training Job When a Dependency Package Is Referenced in a Model?
 ==================================================================================
 
@@ -46,5 +48,3 @@ When a model references a dependency package, select a frequently-used framework
 
       numpy-1.15.4-cp36-cp36m-manylinux1_x86_64.whl
       tensorflow-1.8.0-cp36-cp36m-manylinux1_x86_64.whl
-
-

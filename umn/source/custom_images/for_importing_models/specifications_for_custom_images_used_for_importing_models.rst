@@ -1,3 +1,5 @@
+.. _modelarts_23_0219:
+
 Specifications for Custom Images Used for Importing Models
 ==========================================================
 
@@ -40,9 +42,7 @@ Specifications for Custom Images Used for Model Management
 
          {"health": "true"}
 
-   -  Status code 
-
-.. _modelarts230219enustopic0212179953table19701134515351:
+   -  Status code
 
       .. table:: **Table 1** Status code
 
@@ -65,5 +65,3 @@ Specifications for Custom Images Used for Model Management
 -  **Image dependencies**
 
    To deploy a batch service, install component packages such as Python, JRE/JDK, and ZIP in the image.
-
-

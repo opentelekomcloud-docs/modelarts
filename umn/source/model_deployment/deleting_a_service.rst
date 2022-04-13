@@ -1,3 +1,5 @@
+.. _modelarts_23_0073:
+
 Deleting a Service
 ==================
 
@@ -11,5 +13,3 @@ If a service is no longer in use, you can delete it to release resources.
    .. note::
 
       A deleted service cannot be recovered. Exercise caution when performing this operation.
-
-

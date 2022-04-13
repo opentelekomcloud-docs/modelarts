@@ -1,3 +1,5 @@
+.. _modelarts_23_0011:
+
 Image Classification
 ====================
 
@@ -15,7 +17,7 @@ Starting Labeling
 
 #. In the dataset list, select the dataset to be labeled based on the labeling type, and click the dataset name to go to the **Dashboard** tab page of the dataset.
 
-   By default, the **Dashboard** tab page of the current dataset version is displayed. If you need to label the dataset of another version, click the **Versions** tab and then click **Set to Current Version** in the right pane. For details, see `Managing Dataset Versions <../../data_management/managing_dataset_versions.html>`__.
+   By default, the **Dashboard** tab page of the current dataset version is displayed. If you need to label the dataset of another version, click the **Versions** tab and then click **Set to Current Version** in the right pane. For details, see :ref:`Managing Dataset Versions <modelarts_23_0019>`.
 
 #. On the **Dashboard** page of the dataset, click **Label** in the upper right corner. The dataset details page is displayed. By default, all data of the dataset is displayed on the dataset details page.
 
@@ -41,6 +43,8 @@ The following filter criteria are supported. You can set one or more filter crit
 -  **File Name** or **Path**: Filter files by file name or file storage path.
 -  **Labeled By**: Select the name of the user who performs the labeling operation.
 
+.. _modelarts_23_0011__en-us_topic_0170889731_section888019266174:
+
 Labeling Images (Manually)
 --------------------------
 
@@ -55,7 +59,7 @@ The dataset details page displays images on the **All**, **Labeled**, and **Unla
 
    a. In the label adding area on the right, set the label in the **Label** text box.
 
-      Click the **Label** text box and select an existing label from the drop-down list. If the existing labels cannot meet the requirements, you can go to the page for `modifying the dataset <../../data_management/modifying_a_dataset.html>`__ and add labels.
+      Click the **Label** text box and select an existing label from the drop-down list. If the existing labels cannot meet the requirements, you can go to the page for :ref:`modifying the dataset <modelarts_23_0020>` and add labels.
 
    b. Confirm the **Labels of Selected Image** information and click **OK**. The selected image is automatically moved to the **Labeled** tab page. On the **Unlabeled** and **All** tab pages, the labeling information is updated along with the labeling process, including the added label names and the number of images for each label.
 
@@ -77,6 +81,8 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
 
    Deleting a label: In the **File Labels** area, click the delete icon in the **Operation** column to delete the label. This operation deletes only the labels added to the selected image.
 
+   .. _modelarts_23_0011__en-us_topic_0170889731_en-us_topic_0170889731_fig171368141175:
+
    .. figure:: /_static/images/en-us_image_0000001156921011.png
       :alt: **Figure 1** Modifying a label
    
@@ -89,6 +95,8 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
 
    -  Modifying a label: Click the editing icon in the **Operation** column. In the dialog box that is displayed, enter the new label name and click **OK**. After the modification, the images that have been added with the label use the new label name.
    -  Deleting a label: Click the deletion icon in the **Operation** column. In the displayed dialog box, select **Delete label**, **Delete label and images with only the label (Do not delete source files)**, or **Delete label and images with only the label (Delete source files)**, and click **OK**.
+
+   .. _modelarts_23_0011__en-us_topic_0170889731_en-us_topic_0170889731_fig19495403277:
 
    .. figure:: /_static/images/en-us_image_0000001157080983.png
       :alt: **Figure 2** Information about all labels
@@ -125,5 +133,3 @@ If a tick is displayed in the upper left corner of an image, the image is select
 .. note::
 
    If you select **Delete source files**, images stored in the corresponding OBS directory will be deleted when you delete the selected images. Deleting source files may affect other dataset versions or datasets using those files. As a result, the page display, training, or inference is abnormal. Deleted data cannot be recovered. Exercise caution when performing this operation.
-
-

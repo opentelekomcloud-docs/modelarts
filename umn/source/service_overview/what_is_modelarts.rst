@@ -1,3 +1,5 @@
+.. _modelarts_01_0001:
+
 What Is ModelArts?
 ==================
 
@@ -13,6 +15,8 @@ Product Architecture
 ModelArts supports the entire development process, including data processing, and model training, management, and deployment.
 
 ModelArts supports various AI application scenarios, such as image classification and object detection.
+
+.. _modelarts_01_0001__en-us_topic_0284258732_en-us_topic_0129423679_fig19821028175912:
 
 .. figure:: /_static/images/en-us_image_0000001110920880.png
    :alt: **Figure 1** ModelArts architecture
@@ -43,5 +47,3 @@ Product Advantages
    -  Popular GPUs
    -  Exclusive use of dedicated resources
    -  Custom images for custom frameworks and operators
-
-

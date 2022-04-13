@@ -1,3 +1,5 @@
+.. _modelarts_23_0109:
+
 Model Output Path Description
 =============================
 
@@ -13,5 +15,3 @@ The following describes the output path of the model run on the Ascend chip afte
       |
       |---xxxx.om           Converted model to run on the Ascend chip. The model file name extension is .om.
       |---job_log.txt       Conversion log file
-
-

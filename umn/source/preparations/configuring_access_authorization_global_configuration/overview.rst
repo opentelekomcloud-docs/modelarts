@@ -1,3 +1,5 @@
+.. _modelarts_08_0005:
+
 Overview
 ========
 
@@ -19,5 +21,3 @@ Precautions
 -  Agency authorization grants ModelArts permissions on dependent services, such as OBS and SWR. If the OBS permissions are not configured for an IAM user, the user still does not have the permission to operate the services.
 -  For users who have used ModelArts before, access key authorization has been configured and does not need to be configured again. However, you are advised to use agency authorization again.
 -  For new users, use agency authorization.
-
-

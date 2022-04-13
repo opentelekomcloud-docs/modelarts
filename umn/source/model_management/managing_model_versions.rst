@@ -1,3 +1,5 @@
+.. _modelarts_23_0055:
+
 Managing Model Versions
 =======================
 
@@ -21,5 +23,3 @@ On the **Model Management > Models** page, click the triangle on the left of the
 .. note::
 
    A deleted version cannot be recovered. Exercise caution when performing this operation.
-
-

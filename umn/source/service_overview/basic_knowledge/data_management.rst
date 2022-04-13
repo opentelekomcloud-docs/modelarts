@@ -1,3 +1,5 @@
+.. _modelarts_01_0012:
+
 Data Management
 ===============
 
@@ -8,5 +10,3 @@ Team labeling enables multiple members to label a dataset, improving labeling ef
 For large-scale team labeling, ModelArts provides team management, personnel management, and data management to implement the entire process, from project creation, allocation, management, labeling, to acceptance. For small-scale labeling by individuals and small teams, ModelArts provides an easy-to-use labeling tool to minimize project management costs.
 
 In addition, the labeling platform ensures data security. User data is used only within the authorized scope. The labeling object allocation policy ensures user data privacy and implements data anonymization.
-
-

@@ -1,9 +1,13 @@
+.. _modelarts_23_0183:
+
 Member Management
 =================
 
 There is no member in a new team. You need to add members who will participate in a team labeling task.
 
 A maximum of 100 members can be added to a team. If there are more than 100 members, add them to different teams for better management.
+
+.. _modelarts_23_0183__en-us_topic_0186456618_section060323818470:
 
 Adding a Member
 ---------------
@@ -20,11 +24,15 @@ Adding a Member
 
    Possible values of **Role** are **Labeler**, **Reviewer**, and **Team Manager**. Only one **Team Manager** can be set.
 
+   .. _modelarts_23_0183__en-us_topic_0186456618_fig2095294217492:
+
    .. figure:: /_static/images/en-us_image_0000001156920939.png
       :alt: **Figure 1** Adding a member
    
 
       **Figure 1** Adding a member
+
+   .. _modelarts_23_0183__en-us_topic_0186456618_fig2953352181118:
 
    .. figure:: /_static/images/en-us_image_0000001157081267.png
       :alt: **Figure 2** Adding a member
@@ -57,5 +65,3 @@ Deleting Members
 -  **Batch Deletion**
 
    In the **Team Details** area, select members to be deleted and click **Delete**. In the dialog box that is displayed, click **OK**.
-
-

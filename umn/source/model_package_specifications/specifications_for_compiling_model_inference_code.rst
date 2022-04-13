@@ -1,3 +1,5 @@
+.. _modelarts_23_0093:
+
 Specifications for Compiling Model Inference Code
 =================================================
 
@@ -6,9 +8,9 @@ This section describes how to compile model inference code in ModelArts. The fol
 Specifications for Compiling Inference Code
 -------------------------------------------
 
-#. All custom Python code must be inherited from the BaseService class. `Table 1 <#modelarts230093enustopic0172466150table55021545175412>`__ lists the import statements of different types of model parent classes. 
+#. All custom Python code must be inherited from the BaseService class. :ref:`Table 1 <modelarts_23_0093__en-us_topic_0172466150_table55021545175412>` lists the import statements of different types of model parent classes.
 
-.. _modelarts230093enustopic0172466150table55021545175412:
+   .. _modelarts_23_0093__en-us_topic_0172466150_table55021545175412:
 
    .. table:: **Table 1** Import statements of the **BaseService** class
 
@@ -32,9 +34,7 @@ Specifications for Compiling Inference Code
       | MindSpore    | SingleNodeService       | from model_service.model_service import SingleNodeService              |
       +--------------+-------------------------+------------------------------------------------------------------------+
 
-#. The following methods can be rewritten: 
-
-.. _modelarts230093enustopic0172466150table119897712529:
+#. The following methods can be rewritten:
 
    .. table:: **Table 2** Methods to be rewritten
 
@@ -57,7 +57,9 @@ Specifications for Compiling Inference Code
       -  You can choose to rewrite the preprocess and postprocess methods to implement preprocessing of the API input and postprocessing of the inference output.
       -  Rewriting the init method of the BaseService inheritance class may cause a model to run abnormally.
 
-#. The attribute that can be used is the local path where the model resides. The attribute name is **self.model_path**. In addition, PySpark-based models can use **self.spark** to obtain the SparkSession object in **customize_service.py**.
+#. .. _modelarts_23_0093__en-us_topic_0172466150_li135956421288:
+
+   The attribute that can be used is the local path where the model resides. The attribute name is **self.model_path**. In addition, PySpark-based models can use **self.spark** to obtain the SparkSession object in **customize_service.py**.
 
    .. note::
 
@@ -223,7 +225,7 @@ XGBoost Inference Script Example
 Inference Script Example of the Custom Inference Logic
 ------------------------------------------------------
 
-First, define a dependency package in the configuration file. For details, see `Example of a Model Configuration File Using a Custom Dependency Package <../model_package_specifications/specifications_for_compiling_the_model_configuration_file.html#example-of-a-model-configuration-file-using-a-custom-dependency-package>`__. Then, use the following code example to implement the loading and inference of the model in **saved_model** format.
+First, define a dependency package in the configuration file. For details, see :ref:`Example of a Model Configuration File Using a Custom Dependency Package <modelarts_23_0092__en-us_topic_0172466149_section119911955122011>`. Then, use the following code example to implement the loading and inference of the model in **saved_model** format.
 
 +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------+
 | ::                                | ::                                                                                                                       |
@@ -441,5 +443,3 @@ MindSpore Inference Script Example
 |    90                             |        def _postprocess(self, inference_result):                                  |
 |    91                             |            return str(inference_result)                                           |
 +-----------------------------------+-----------------------------------------------------------------------------------+
-
-

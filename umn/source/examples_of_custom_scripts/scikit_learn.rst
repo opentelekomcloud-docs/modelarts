@@ -1,3 +1,5 @@
+.. _modelarts_23_0179:
+
 Scikit Learn
 ============
 
@@ -23,7 +25,7 @@ Training and Saving a Model
 |    14                             |    joblib.dump(logisticRegression, '/tmp/sklearn.m')                 |
 +-----------------------------------+----------------------------------------------------------------------+
 
-After the model is saved, it must be uploaded to the OBS directory before being published. The **config.json** and **customize_service.py** files must be contained during publishing. For details about the definition method, see `Model Package Specifications <../model_package_specifications/model_package_specifications.html>`__.
+After the model is saved, it must be uploaded to the OBS directory before being published. The **config.json** and **customize_service.py** files must be contained during publishing. For details about the definition method, see :ref:`Model Package Specifications <modelarts_23_0091>`.
 
 Inference Code
 --------------
@@ -64,5 +66,3 @@ Inference Code
 |    31                             |                resp_data.append({"predictresult": element})                        |
 |    32                             |            return resp_data                                                        |
 +-----------------------------------+------------------------------------------------------------------------------------+
-
-

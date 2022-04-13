@@ -1,3 +1,5 @@
+.. _modelarts_01_0011:
+
 Basic Concepts of AI Development
 ================================
 
@@ -29,8 +31,6 @@ Clustering involves grouping a set of objects in such a way that objects in the 
 |image3|
 
 Clustering analyzes data objects and produces class labels. Objects are grouped based on the maximized and minimized similarities to form clusters. In this way, objects in the same cluster are more similar to each other than to those in other clusters.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0000001110920858.png
 

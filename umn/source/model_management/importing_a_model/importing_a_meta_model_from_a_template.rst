@@ -1,3 +1,5 @@
+.. _modelarts_23_0205:
+
 Importing a Meta Model from a Template
 ======================================
 
@@ -6,8 +8,8 @@ Because the configurations of models with the same functions are similar, ModelA
 Background
 ----------
 
--  Because the configurations of models with the same functions are similar, ModelArts integrates the configurations of such models into a common template. By using this template, you can easily and quickly import the model. For details about the template, see `Introduction to Model Templates <../../model_templates/introduction_to_model_templates.html>`__.
--  For details about the supported templates, see `Supported Templates <../../model_templates/introduction_to_model_templates.html#supported-templates>`__. For details about the input and output modes of each template, see `Supported Input and Output Modes <../../model_templates/introduction_to_model_templates.html#supported-input-and-output-modes>`__.
+-  Because the configurations of models with the same functions are similar, ModelArts integrates the configurations of such models into a common template. By using this template, you can easily and quickly import the model. For details about the template, see :ref:`Introduction to Model Templates <modelarts_23_0098>`.
+-  For details about the supported templates, see :ref:`Supported Templates <modelarts_23_0098__en-us_topic_0172873520_section44801025155417>`. For details about the input and output modes of each template, see :ref:`Supported Input and Output Modes <modelarts_23_0098__en-us_topic_0172873520_section737759781>`.
 -  Ensure that you have uploaded the model to OBS based on the model package specifications of the corresponding template.
 -  The OBS directory you use and ModelArts are in the same region.
 
@@ -18,9 +20,9 @@ Procedure
 #. Click **Import** in the upper left corner. The **Import** page is displayed.
 #. On the **Import** page, set related parameters.
 
-   a. Set basic information about the model. For details about the parameters, see `Table 1 <#modelarts230205enustopic0207629476table83985217130>`__. 
+   a. Set basic information about the model. For details about the parameters, see :ref:`Table 1 <modelarts_23_0205__en-us_topic_0207629476_table83985217130>`.
 
-.. _modelarts230205enustopic0207629476table83985217130:
+      .. _modelarts_23_0205__en-us_topic_0207629476_table83985217130:
 
       .. table:: **Table 1** Parameters of basic model information
 
@@ -36,9 +38,9 @@ Procedure
          | Description | Brief description of the model                                                                                                                                                      |
          +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   b. Select the meta model source and set related parameters. Set **Meta Model Source** based on your application scenario. For details, see `Methods of Importing a Model <../../model_management/introduction_to_model_management.html#methods-of-importing-a-model>`__.If **Meta Model Source** is set to **Template**, set other parameters by referring to `Table 2 <#modelarts230205enustopic0207629476table104931647171713>`__. 
+   b. Select the meta model source and set related parameters. Set **Meta Model Source** based on your application scenario. For details, see :ref:`Methods of Importing a Model <modelarts_23_0052__en-us_topic_0171858287_section179419351998>`.If **Meta Model Source** is set to **Template**, set other parameters by referring to :ref:`Table 2 <modelarts_23_0205__en-us_topic_0207629476_table104931647171713>`.
 
-.. _modelarts230205enustopic0207629476table104931647171713:
+      .. _modelarts_23_0205__en-us_topic_0207629476_table104931647171713:
 
       .. table:: **Table 2** Parameters of the meta model source
 
@@ -47,7 +49,7 @@ Procedure
          +===================================+================================================================================================================================================================================================================================================================================================================================================================================================================================+
          | Model Template                    | Select a template from the existing ModelArts template list .                                                                                                                                                                                                                                                                                                                                                                  |
          |                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                |
-         |                                   | ModelArts also provides three filter criteria: **Type**, **Engine**, and **Environment**, helping you quickly find the desired template. If the three filter criteria cannot meet your requirements, you can enter keywords to search for the target template. For details about the supported templates, see `Supported Templates <../../model_templates/introduction_to_model_templates.html#supported-templates>`__.        |
+         |                                   | ModelArts also provides three filter criteria: **Type**, **Engine**, and **Environment**, helping you quickly find the desired template. If the three filter criteria cannot meet your requirements, you can enter keywords to search for the target template. For details about the supported templates, see :ref:`Supported Templates <modelarts_23_0098__en-us_topic_0172873520_section44801025155417>`.                    |
          +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
          | Model Directory                   | OBS path where a model is saved. Select an OBS path for storing the model based on the input requirements of the selected model template.                                                                                                                                                                                                                                                                                      |
          |                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                |
@@ -57,7 +59,7 @@ Procedure
          +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
          | Input and Output Mode             | If the default input and output mode of the selected template can be overwritten, you can select an input and output mode based on the model function or application scenario. **Input and Output Mode** is an abstract of the API (**apis**) in **config.json**. It describes the interface provided by the model for external inference. An input and output mode describes one or more APIs, and corresponds to a template. |
          |                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                |
-         |                                   | For details about the supported input and output modes, see `Supported Input and Output Modes <../../model_templates/introduction_to_model_templates.html#supported-input-and-output-modes>`__.                                                                                                                                                                                                                                |
+         |                                   | For details about the supported input and output modes, see :ref:`Supported Input and Output Modes <modelarts_23_0098__en-us_topic_0172873520_section737759781>`.                                                                                                                                                                                                                                                              |
          +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
          | Deployment Type                   | After the model is imported, select the service type that the model is deployed. When deploying a service, you can only deploy the service type selected here. For example, if you only select **Real-time services** here, you can only deploy real-time services after importing the model.                                                                                                                                  |
          +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -74,6 +76,4 @@ Procedure
 Follow-Up Procedure
 -------------------
 
--  `Model Deployment <../../model_deployment/introduction_to_model_deployment.html>`__: On the **Models** page, click the triangle next to a model name to view all versions of the model. Locate the row that contains the target version, click **Deploy** in the **Operation** column, and select the deployment type configured when importing the model from the drop-down list. On the **Deploy** page, set parameters by referring to `Introduction to Model Deployment <../../model_deployment/introduction_to_model_deployment.html>`__.
-
-
+-  **:ref:`Model Deployment <modelarts_23_0058>`**: On the **Models** page, click the triangle next to a model name to view all versions of the model. Locate the row that contains the target version, click **Deploy** in the **Operation** column, and select the deployment type configured when importing the model from the drop-down list. On the **Deploy** page, set parameters by referring to :ref:`Introduction to Model Deployment <modelarts_23_0058>`.

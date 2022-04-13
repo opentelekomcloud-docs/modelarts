@@ -1,3 +1,5 @@
+.. _modelarts_21_0032:
+
 How Do I View the Added Data in an ExeML Project?
 =================================================
 
@@ -26,5 +28,3 @@ Synchronizing Data to ModelArts
 #. On the **Label Data** page, click **Synchronize Data Source**.
 
    It takes several minutes to complete data synchronization. After the synchronization is complete, the new data is synchronized to the **Unlabeled** or **Labeled** tab page.
-
-

@@ -1,3 +1,5 @@
+.. _modelarts_23_0040:
+
 Installing External Libraries and Kernels in Notebook Instances
 ===============================================================
 
@@ -46,5 +48,3 @@ Assume that you want to install Shapely from the terminal of a notebook instance
 
       os.system('pip install Shapely')
       import Shapely
-
-

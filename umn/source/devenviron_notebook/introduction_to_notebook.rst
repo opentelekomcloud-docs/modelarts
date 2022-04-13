@@ -1,3 +1,5 @@
+.. _modelarts_23_0033:
+
 Introduction to Notebook
 ========================
 
@@ -5,6 +7,8 @@ ModelArts integrates the open-source Jupyter Notebook and JupyterLab to provide 
 
 -  Jupyter Notebook is an interactive notebook. For details about how to perform operations on Jupyter Notebook, see `Jupyter Notebook Documentation <https://jupyter.org/documentation>`__.
 -  JupyterLab is an interactive development environment. It is a next-generation product of Jupyter Notebook. JupyterLab enables you to compile notebooks, operate terminals, edit MarkDown text, open interaction modes, and view CSV files and images. For details about how to perform operations on JupyterLab, see `JupyterLab Documentation <https://jupyterlab.readthedocs.io/en/stable/>`__.
+
+.. _modelarts_23_0033__en-us_topic_0162690357_section191109611479:
 
 Supported AI Engines
 --------------------
@@ -14,10 +18,6 @@ Each development environment supports multiple AI engines that run independently
 .. note::
 
    -  Each ModelArts notebook instance can use all supported engines.
-
-
-
-.. _modelarts230033enustopic0162690357table13949522712:
 
 .. table:: **Table 1** AI engines
 
@@ -48,7 +48,7 @@ Constraints
 
 -  For security purposes, the root permission is not granted to the notebook instances integrated in ModelArts. You can use the non-privileged user **jovyan** or **ma-user** (using **Multi-Engine**) to perform operations. Therefore, you cannot use **apt-get** to install the OS software.
 -  Notebook instances support only standalone training under the current AI engine framework. If you need to use distributed training, use ModelArts training jobs and specify multiple nodes in the resource pool.
--  ModelArts DevEnviron does not support apt-get. You can use a `custom image <../custom_images/introduction_to_custom_images.html>`__ to train a model.
+-  ModelArts DevEnviron does not support apt-get. You can use a :ref:`custom image <modelarts_23_0084>` to train a model.
 -  Notebook instances do not support GUI-related libraries, such as PyQt.
 -  Notebook instances created using Ascend specifications cannot be attached to EVS disks.
 -  Notebook instances cannot be connected to DWS and database services.
@@ -56,5 +56,3 @@ Constraints
 -  DevEnviron does not support TensorBoard. Use the visualization job function under **Training Jobs**.
 -  After a notebook instance is created, you cannot modify its specifications. For example, you cannot change the CPU specifications to GPU specifications or change the work environment. Therefore, select the specifications required by the service when creating a notebook instance, or save your code and data to OBS in a timely manner during development so that you can quickly upload the code and data to a new notebook instance.
 -  If the code output is still displayed after you close the page and open it again, use Terminal.
-
-

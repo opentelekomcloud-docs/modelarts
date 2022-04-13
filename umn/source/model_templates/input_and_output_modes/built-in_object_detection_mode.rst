@@ -1,3 +1,5 @@
+.. _modelarts_23_0100:
+
 Built-in Object Detection Mode
 ==============================
 
@@ -9,11 +11,9 @@ This is a built-in input and output mode for object detection. The models using 
 Output
 ------
 
-The inference result is returned in JSON format. For details about the fields, see `Table 1 <#modelarts230100enustopic0172873542table101531747125712>`__.
+The inference result is returned in JSON format. For details about the fields, see :ref:`Table 1 <modelarts_23_0100__en-us_topic_0172873542_table101531747125712>`.
 
-
-
-.. _modelarts230100enustopic0172873542table101531747125712:
+.. _modelarts_23_0100__en-us_topic_0172873542_table101531747125712:
 
 .. table:: **Table 1** Parameters
 
@@ -76,8 +76,6 @@ In this mode, input an image to be processed in the inference request. The infer
    -  On the **Headers** tab page, set **Content-Type** to **multipart/form-data** and **X-Auth-Token** to the actual token obtained.
 
    -  On the **Body** tab page, set the request body. Set **key** to **images**, select **File**, select the image to be processed, and click **send** to send your prediction request.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0000001110761158.png
 

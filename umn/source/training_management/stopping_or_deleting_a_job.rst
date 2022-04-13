@@ -1,3 +1,5 @@
+.. _modelarts_23_0159:
+
 Stopping or Deleting a Job
 ==========================
 
@@ -18,5 +20,3 @@ If an existing training job is no longer used, you can delete it.
 For a training job in the **Running**, **Successful**, **Running failed**, **Canceled**, or **Deploying** state, click **Delete** in the **Operation** column to delete it.
 
 If you have selected **Save Training Parameters** for a deleted training job, the job's parameter settings will be saved to the **Job Parameter Mgmt** page.
-
-

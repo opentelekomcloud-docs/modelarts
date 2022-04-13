@@ -1,7 +1,11 @@
+.. _modelarts_23_0210:
+
 Managing Team Labeling Tasks
 ============================
 
 For datasets with team labeling enabled, you can create team labeling tasks and assign the labeling tasks to different teams so that team members can complete the labeling tasks together. During data labeling, members can initiate acceptance, continue acceptance, and view acceptance reports.
+
+.. _modelarts_23_0210__en-us_topic_0209053802_section72262410214:
 
 Creating Team Labeling Tasks
 ----------------------------
@@ -19,7 +23,7 @@ You can also create a team marking task and assign it to different members in th
 
    -  **Type**: Select a task type, **Team** or **Task Manager**.
 
-   -  **Select Team**: If **Type** is set to **Team**, you need to select a team and members for labeling. The **Select Team** drop-down list lists the labeling teams and members created by the current account. For details about team management, see `Introduction to Team Labeling <../../data_management/team_labeling/introduction_to_team_labeling.html>`__.
+   -  **Select Team**: If **Type** is set to **Team**, you need to select a team and members for labeling. The **Select Team** drop-down list lists the labeling teams and members created by the current account. For details about team management, see :ref:`Introduction to Team Labeling <modelarts_23_0181>`.
 
    -  **Select Task Manager**: If **Type** is set to **Task Manager**, you need to select one **Team Manager** member from all teams as the task manager.
 
@@ -39,15 +43,17 @@ After a labeling task is created, the team member to which the task is assigned 
 
 In the email details, click the labeling task link and use your email address and initial password to log in to the labeling platform. After login, change the password. After logging in to the labeling platform, you can view the assigned labeling task and click the task name to go to the labeling page. The labeling method varies depending on the dataset type. For details, see the following:
 
--  `Image Classification <../../data_management/labeling_data/image_classification.html#labeling-images-(manually)>`__
--  `Object Detection <../../data_management/labeling_data/object_detection.html#labeling-images-(manually)>`__
--  `Text Classification <../../data_management/labeling_data/text_classification.html#labeling-content>`__
--  `Named Entity Recognition <../../data_management/labeling_data/named_entity_recognition.html#labeling-content>`__
--  `Text Triplet <../../data_management/labeling_data/text_triplet.html#labeling-content>`__
+-  :ref:`Image Classification <modelarts_23_0011__en-us_topic_0170889731_section888019266174>`
+-  :ref:`Object Detection <modelarts_23_0012__en-us_topic_0170889732_section888019266174>`
+-  :ref:`Text Classification <modelarts_23_0013__en-us_topic_0170889733_section888019266174>`
+-  :ref:`Named Entity Recognition <modelarts_23_0014__en-us_topic_0170889734_section888019266174>`
+-  :ref:`Text Triplet <modelarts_23_0211__en-us_topic_0209128667_section888019266174>`
 
 On the labeling platform, each member can view the images that are not labeled, to be corrected, rejected, to be reviewed, approved, and accepted. Pay attention to the images rejected by the administrator and the images to be corrected.
 
 If the Reviewer role is assigned for a team labeling task, the labeling result needs to be reviewed. After the labeling result is reviewed, it is submitted to the administrator for acceptance.
+
+.. _modelarts_23_0210__en-us_topic_0209053802_fig13465256141515:
 
 .. figure:: /_static/images/en-us_image_0000001110760934.png
    :alt: **Figure 1** Labeling platform
@@ -86,10 +92,6 @@ Task Acceptance (Administrator)
 
    Once the labeled data is accepted, team members cannot modify the labeling information. Only the dataset creator can modify the labeling information.
 
-   
-
-.. _modelarts230210enustopic0209053802table1372918217370:
-
    .. table:: **Table 1** Parameters for finishing acceptance
 
       +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -116,5 +118,3 @@ Deleting a Labeling Task
 ------------------------
 
 On the **Labeling Progress** tab page, click **Delete** in the row where a labeling task to be deleted. After a task is deleted, the labeling details that are not accepted will be lost. Exercise caution when performing this operation. However, the original data in the dataset and the labeled data that has been accepted are still stored in the corresponding OBS bucket.
-
-
