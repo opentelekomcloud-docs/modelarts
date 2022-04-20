@@ -1,3 +1,5 @@
+.. _workforce_worker_management:
+
 ===============================
 Labeling Team Member Management
 ===============================

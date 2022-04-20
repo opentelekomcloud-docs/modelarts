@@ -1,3 +1,5 @@
+.. _modelarts_03_0401:
+
 Creating a Training Job Using the TensorFlow Framework
 ======================================================
 
@@ -8,21 +10,21 @@ This section describes how to train a model on ModelArts by calling a series of 
 
 The process for creating a training job using the TensorFlow framework is as follows:
 
-#. Call the API in `Authentication <../calling_apis/authentication.html#modelarts030004>`__ to obtain the user token, which will be put into the request header for authentication in a subsequent request.
-#. Call the API in `Querying Job Resource Specifications <../training_management/resource_and_engine_specifications/querying_job_resource_specifications.html#modelarts030072>`__ to obtain the resource flavors available for training jobs.
-#. Call the API in `Querying Job Engine Specifications <../training_management/resource_and_engine_specifications/querying_job_engine_specifications.html#modelarts030073>`__ to view the engine types and versions available for training jobs.
-#. Call the API in `Creating a Training Job <../training_management/training_jobs/creating_a_training_job.html#modelarts030045>`__ to create a training job.
-#. Call the API in `Querying the Details About a Training Job Version <../training_management/training_jobs/querying_the_details_about_a_training_job_version.html#modelarts030047>`__ to query the details about the training job based on the job ID.
-#. Call the API in `Obtaining the Name of a Training Job Log File <../training_management/training_jobs/obtaining_the_name_of_a_training_job_log_file.html#modelarts030054>`__ to obtain the name of the training job log file.
-#. Call the API in `Querying Training Job Logs <../training_management/training_jobs/querying_training_job_logs.html#modelarts030149>`__ to view the log details of the training job.
-#. Call the API in `Deleting a Training Job <../training_management/training_jobs/deleting_a_training_job.html#modelarts030053>`__ to delete the training job if it is no longer needed.
+#. Call the API in :ref:`Authentication <modelarts_03_0004>` to obtain the user token, which will be put into the request header for authentication in a subsequent request.
+#. Call the API in :ref:`Querying Job Resource Specifications <modelarts_03_0072>` to obtain the resource flavors available for training jobs.
+#. Call the API in :ref:`Querying Job Engine Specifications <modelarts_03_0073>` to view the engine types and versions available for training jobs.
+#. Call the API in :ref:`Creating a Training Job <modelarts_03_0045>` to create a training job.
+#. Call the API in :ref:`Querying the Details About a Training Job Version <modelarts_03_0047>` to query the details about the training job based on the job ID.
+#. Call the API in :ref:`Obtaining the Name of a Training Job Log File <modelarts_03_0054>` to obtain the name of the training job log file.
+#. Call the API in :ref:`Querying Training Job Logs <modelarts_03_0149>` to view the log details of the training job.
+#. Call the API in :ref:`Deleting a Training Job <modelarts_03_0053>` to delete the training job if it is no longer needed.
 
 Prerequisites
 -------------
 
--  You have obtained the endpoints of and `ModelArts <../before_you_start/endpoints.html>`__.
+-  You have obtained the endpoints of and :ref:`ModelArts <modelarts_03_0141>`.
 -  You have located the region where the service is deployed and obtained .
--  You have obtained the project ID. For details, see `Obtaining a Project ID and Name <../common_parameters/obtaining_a_project_id_and_name.html#modelarts030147>`__.
+-  You have obtained the project ID. For details, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`.
 -  You have prepared the training code for TensorFlow. For example, you have stored the boot file **train_mnist_tf.py** in the **/test-modelarts/mnist-tensorflow-code/** directory of OBS.
 -  You have prepared a dataset for the training job. For example, you have stored a training dataset in the **/test-modelarts/dataset-mnist/** directory of OBS.
 -  You have created the output path of the training job, for example, **/test-modelarts/mnist-model/output/**.
@@ -30,7 +32,9 @@ Prerequisites
 Procedure
 ---------
 
-#. Call the API in `Authentication <../calling_apis/authentication.html#modelarts030004>`__ to obtain the user token.
+#. .. _modelarts_03_0401__en-us_topic_0000001073831232_li1438114133315:
+
+   Call the API in :ref:`Authentication <modelarts_03_0004>` to obtain the user token.
 
    a. Request body:
 
@@ -78,7 +82,9 @@ Procedure
 
          x-subject-token →MIIZmgYJKoZIhvcNAQcCoIIZizCCGYcCAQExDTALBglghkgBZQMEAgEwgXXXXXX...
 
-#. Call the API in `Querying Job Resource Specifications <../training_management/resource_and_engine_specifications/querying_job_resource_specifications.html#modelarts030072>`__ to obtain the resource flavors available for training jobs.
+#. .. _modelarts_03_0401__en-us_topic_0000001073831232_li384513468342:
+
+   Call the API in :ref:`Querying Job Resource Specifications <modelarts_03_0072>` to obtain the resource flavors available for training jobs.
 
    a. Request body:
 
@@ -90,7 +96,7 @@ Procedure
 
       -  Replace **ma_endpoint** with the ModelArts endpoint.
       -  Replace **project_id** with the project ID of the user.
-      -  Set **X-auth-Token** to the token obtained in `1 <#modelarts030401enustopic0000001073831232li1438114133315>`__.
+      -  Set **X-auth-Token** to the token obtained in :ref:`1 <modelarts_03_0401__en-us_topic_0000001073831232_li1438114133315>`.
 
    b. The status code **200 OK** is returned. The response body is as follows:
 
@@ -133,7 +139,9 @@ Procedure
       -  Select and record the flavor type required for creating the training job based on the **spec_code** field. This section uses **modelarts.vm.cpu.8u** as an example and records the value of the **max_num** field as **1**.
       -  The **no_resource** field is used to determine whether resources are sufficient. Value **false** indicates that resources are available.
 
-#. Call the API in `Querying Job Engine Specifications <../training_management/resource_and_engine_specifications/querying_job_engine_specifications.html#modelarts030073>`__ to view the engine types and versions available for training jobs.
+#. .. _modelarts_03_0401__en-us_topic_0000001073831232_li12845104623418:
+
+   Call the API in :ref:`Querying Job Engine Specifications <modelarts_03_0073>` to view the engine types and versions available for training jobs.
 
    a. Request body:
 
@@ -145,7 +153,7 @@ Procedure
 
       -  Replace **ma_endpoint** with the ModelArts endpoint.
       -  Replace **project_id** with the project ID of the user.
-      -  Set **X-auth-Token** to the token obtained in `1 <#modelarts030401enustopic0000001073831232li1438114133315>`__.
+      -  Set **X-auth-Token** to the token obtained in :ref:`1 <modelarts_03_0401__en-us_topic_0000001073831232_li1438114133315>`.
 
    b. The status code **200 OK** is returned. The response body is as follows:
 
@@ -185,7 +193,9 @@ Procedure
 
       Select the engine flavor required for creating a training job based on the **engine_name** and **engine_version** fields and record **engine_id**. This section describes how to create a job based on the TensorFlow engine. Record **engine_id** as **4**.
 
-#. Call the API in `Creating a Training Job <../training_management/training_jobs/creating_a_training_job.html#modelarts030045>`__ to create a training job named **jobtest_TF** based on the TensorFlow framework.
+#. .. _modelarts_03_0401__en-us_topic_0000001073831232_li5845144683416:
+
+   Call the API in :ref:`Creating a Training Job <modelarts_03_0045>` to create a training job named **jobtest_TF** based on the TensorFlow framework.
 
    a. Request body:
 
@@ -230,8 +240,8 @@ Procedure
       Set the italic fields in bold based on the site requirements.
 
       -  Set **job_name** and **job_desc** to the name and description of the training job.
-      -  Set **worker_server_num** and **code** to the values of **max_num** and **spec_code** obtained in `2 <#modelarts030401enustopic0000001073831232li384513468342>`__.
-      -  Set **engine_id** to the engine ID obtained in `3 <#modelarts030401enustopic0000001073831232li12845104623418>`__.
+      -  Set **worker_server_num** and **code** to the values of **max_num** and **spec_code** obtained in :ref:`2 <modelarts_03_0401__en-us_topic_0000001073831232_li384513468342>`.
+      -  Set **engine_id** to the engine ID obtained in :ref:`3 <modelarts_03_0401__en-us_topic_0000001073831232_li12845104623418>`.
       -  Set **train_url** to the output directory of the training job.
       -  Set **app_url** and **boot_file_url** to the code directory and code boot file of the training job, respectively.
       -  Set **data_url** to the dataset directory used by the training job.
@@ -254,7 +264,7 @@ Procedure
       -  Record the values of **job_id** (training job ID) and **version_id** (training job version ID) for future use.
       -  The value of **status** is **1**, indicating that the training job is being initialized.
 
-#. Call the API in `Querying the Details About a Training Job Version <../training_management/training_jobs/querying_the_details_about_a_training_job_version.html#modelarts030047>`__ to query the details about the training job based on the job ID.
+#. Call the API in :ref:`Querying the Details About a Training Job Version <modelarts_03_0047>` to query the details about the training job based on the job ID.
 
    a. Request body:
 
@@ -264,8 +274,8 @@ Procedure
 
       Set the italic fields in bold based on the site requirements.
 
-      -  Replace *567524* with the value of **job_id** recorded in `4 <#modelarts030401enustopic0000001073831232li5845144683416>`__.
-      -  Replace *1108482* with the value of **version_id** recorded in `4 <#modelarts030401enustopic0000001073831232li5845144683416>`__.
+      -  Replace *567524* with the value of **job_id** recorded in :ref:`4 <modelarts_03_0401__en-us_topic_0000001073831232_li5845144683416>`.
+      -  Replace *1108482* with the value of **version_id** recorded in :ref:`4 <modelarts_03_0401__en-us_topic_0000001073831232_li5845144683416>`.
 
    b. The status code **200 OK** is returned. The response body is as follows:
 
@@ -379,7 +389,9 @@ Procedure
 
       You can learn about the version details of the training job based on the response. The value of **status** is **10**, indicating that the training job is successful.
 
-#. Call the API in `Obtaining the Name of a Training Job Log File <../training_management/training_jobs/obtaining_the_name_of_a_training_job_log_file.html#modelarts030054>`__ to obtain the name of the training job log file.
+#. .. _modelarts_03_0401__en-us_topic_0000001073831232_li52217241518:
+
+   Call the API in :ref:`Obtaining the Name of a Training Job Log File <modelarts_03_0054>` to obtain the name of the training job log file.
 
    a. Request body:
 
@@ -402,7 +414,7 @@ Procedure
 
       Only one log file named **job-jobtest-tf.0** exists.
 
-#. Call the API in `Querying Training Job Logs <../training_management/training_jobs/querying_training_job_logs.html#modelarts030149>`__ to query details about eight rows in the training job log file.
+#. Call the API in :ref:`Querying Training Job Logs <modelarts_03_0149>` to query details about eight rows in the training job log file.
 
    a. Request body:
 
@@ -412,7 +424,7 @@ Procedure
 
       Set the italic fields in bold based on the site requirements.
 
-      -  Set **log_file** to the name of the log file obtained in `6 <#modelarts030401enustopic0000001073831232li52217241518>`__.
+      -  Set **log_file** to the name of the log file obtained in :ref:`6 <modelarts_03_0401__en-us_topic_0000001073831232_li52217241518>`.
       -  Set **lines** to the rows to be obtained in the log file.
       -  Set **order** to the log query direction.
 
@@ -428,7 +440,7 @@ Procedure
            "content": "Done exporting!\n\n[Modelarts Service Log]Training completed.\n\n[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/jobtest_TF.log\n\n[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/jobtest_TF.log\n\n[ModelArts Service Log]modelarts-pipe: will write log file /tmp/log/jobtest_TF.log\n\n[ModelArts Service Log]modelarts-pipe: param for max log length: 1073741824\n\n[ModelArts Service Log]modelarts-pipe: param for whether exit on overflow: 0\n\n[ModelArts Service Log]modelarts-pipe: total length: 23303\n"
          }
 
-#. Call the API in `Deleting a Training Job <../training_management/training_jobs/deleting_a_training_job.html#modelarts030053>`__ to delete the training job if it is no longer needed.
+#. Call the API in :ref:`Deleting a Training Job <modelarts_03_0053>` to delete the training job if it is no longer needed.
 
    a. Request body:
 
@@ -445,5 +457,3 @@ Procedure
          {
            "is_success": true
          }
-
-

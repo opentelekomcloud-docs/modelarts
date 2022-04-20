@@ -1,3 +1,5 @@
+.. _modelarts_03_0003:
+
 Response
 ========
 
@@ -6,7 +8,7 @@ After sending a request, you will receive a response, including the status code,
 Status Code
 -----------
 
-A status code is a group of digits, ranging from 1\ *xx* to 5\ *xx*. It indicates the status of a request. For more information, see `Status Code <../common_parameters/status_code.html#modelarts030094>`__.
+A status code is a group of digits, ranging from 1\ *xx* to 5\ *xx*. It indicates the status of a request. For more information, see :ref:`Status Code <modelarts_03_0094>`.
 
 For example, if status code **201** is returned for calling the API used to obtain a user token, the request is successful.
 
@@ -14,10 +16,6 @@ Response Header
 ---------------
 
 Similar to a request, a response also has a header, for example, **Content-type**.
-
-
-
-.. _modelarts030003enustopic0171310283table14216843:
 
 .. table:: **Table 1** Common response header fields
 
@@ -55,9 +53,11 @@ Similar to a request, a response also has a header, for example, **Content-type*
    |                       | Default value: hour                                                                                                                                                                                                            |                       |
    +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
 
-Figure 1 shows the response header fields for the API used to obtain a user token.
+:ref:`Figure 1 <modelarts_03_0003__en-us_topic_0171310283_en-us_topic_0170917209_en-us_topic_0168405765_fig4865141011511>` shows the response header fields for the API used to obtain a user token.
 
 **x-subject-token** is the desired user token. This token can then be used to authenticate the calling of other APIs.
+
+.. _modelarts_03_0003__en-us_topic_0171310283_en-us_topic_0170917209_en-us_topic_0168405765_fig4865141011511:
 
 .. figure:: /_static/images/en-us_image_0171113090.png
    :alt: **Figure 1** Header fields of the response to the request for obtaining a user token
@@ -96,6 +96,4 @@ If an error occurs during API calling, an error code and a message will be displ
        "error_code": "AS.0001"
    }
 
-In the error response body, **error_code** is an error code, and **error_message** provides information about the error. For more details, see `Error Codes <../common_parameters/error_codes.html>`__.
-
-
+In the error response body, **error_code** is an error code, and **error_message** provides information about the error. For more details, see :ref:`Error Codes <modelarts_03_0095>`.

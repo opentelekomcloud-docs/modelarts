@@ -1,3 +1,5 @@
+.. _modelarts_03_0082:
+
 Deploying a Model as a Service
 ==============================
 
@@ -11,24 +13,24 @@ URI
 
 POST /v1/{project_id}/services
 
-`Table 1 <#modelarts030082enustopic0129882788table16518993181628>`__ describes the required parameters. 
+:ref:`Table 1 <modelarts_03_0082__en-us_topic_0129882788_table16518993181628>` describes the required parameters.
 
-.. _modelarts030082enustopic0129882788table16518993181628:
+.. _modelarts_03_0082__en-us_topic_0129882788_table16518993181628:
 
 .. table:: **Table 1** Parameters
 
-   +------------+-----------+--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter  | Mandatory | Type   | Description                                                                                                                                                                      |
-   +============+===========+========+==================================================================================================================================================================================+
-   | project_id | Yes       | String | Project ID. For details about how to obtain the project ID, see `Obtaining a Project ID and Name <../common_parameters/obtaining_a_project_id_and_name.html#modelarts030147>`__. |
-   +------------+-----------+--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------+
+   | Parameter  | Mandatory | Type   | Description                                                                                                                 |
+   +============+===========+========+=============================================================================================================================+
+   | project_id | Yes       | String | Project ID. For details about how to obtain the project ID, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`. |
+   +------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------+
 
 Request Body
 ------------
 
-`Table 2 <#modelarts030082enustopic0129882788table37462542238>`__ describes the request parameters. 
+:ref:`Table 2 <modelarts_03_0082__en-us_topic_0129882788_table37462542238>` describes the request parameters.
 
-.. _modelarts030082enustopic0129882788table37462542238:
+.. _modelarts_03_0082__en-us_topic_0129882788_table37462542238:
 
 .. table:: **Table 2** Parameters
 
@@ -63,38 +65,30 @@ Request Body
    +-------------------+-----------------+--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | config            | Yes             | **config** array corresponding to **infer_type** | Model running configuration. If **infer_type** is **batch**, you can configure only one model. If **infer_type** is **real-time**, you can configure multiple models and assign weights based on service requirements. However, the versions of these models cannot be the same.                                                                                                                                                                                                                                                 |
    +-------------------+-----------------+--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | schedule          | No              | **schedule** array                               | Service scheduling configuration, which can be configured only for real-time services. By default, this parameter is not used. Services run for a long time. For details, see `Table 5 <#modelarts030082enustopic0129882788table1892915349285>`__.                                                                                                                                                                                                                                                                               |
+   | schedule          | No              | **schedule** array                               | Service scheduling configuration, which can be configured only for real-time services. By default, this parameter is not used. Services run for a long time. For details, see :ref:`Table 5 <modelarts_03_0082__en-us_topic_0129882788_table1892915349285>`.                                                                                                                                                                                                                                                                     |
    +-------------------+-----------------+--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-
-.. _modelarts030082enustopic0129882788table6841887256:
 
 .. table:: **Table 3** **config** parameters of **real-time**
 
-   +-----------------+-----------------+---------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type                      | Description                                                                                                                                                            |
-   +=================+=================+===========================+========================================================================================================================================================================+
-   | model_id        | Yes             | String                    | Model ID                                                                                                                                                               |
-   +-----------------+-----------------+---------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | weight          | Yes             | Integer                   | Traffic weight allocated to a model. This parameter is mandatory only when **infer_type** is set to **real-time**. The sum of the weights must be 100.                 |
-   +-----------------+-----------------+---------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | specification   | Yes             | String                    | Resource specifications. Select specifications based on service requirements.                                                                                          |
-   +-----------------+-----------------+---------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | custom_spec     | No              | **custom_spec** structure | Custom specifications. Set this parameter when you use a dedicated resource pool. For details, see `Table 6 <#modelarts030082enustopic0129882788table134334512416>`__. |
-   +-----------------+-----------------+---------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | instance_count  | Yes             | Integer                   | Number of instances deployed in a model. The value must be greater than 0.                                                                                             |
-   +-----------------+-----------------+---------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | envs            | No              | Map<String, String>       | (Optional) Environment variable key-value pair required for running a model. By default, this parameter is left blank.                                                 |
-   |                 |                 |                           |                                                                                                                                                                        |
-   |                 |                 |                           | To ensure data security, do not enter sensitive information, such as plaintext passwords, in environment variables.                                                    |
-   +-----------------+-----------------+---------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | cluster_id      | No              | string                    | ID of a dedicated resource pool. By default, this parameter is left blank, indicating that no dedicated resource pool is used.                                         |
-   +-----------------+-----------------+---------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-
-.. _modelarts030082enustopic0129882788table6420928063:
+   +-----------------+-----------------+---------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type                      | Description                                                                                                                                                                      |
+   +=================+=================+===========================+==================================================================================================================================================================================+
+   | model_id        | Yes             | String                    | Model ID                                                                                                                                                                         |
+   +-----------------+-----------------+---------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | weight          | Yes             | Integer                   | Traffic weight allocated to a model. This parameter is mandatory only when **infer_type** is set to **real-time**. The sum of the weights must be 100.                           |
+   +-----------------+-----------------+---------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | specification   | Yes             | String                    | Resource specifications. Select specifications based on service requirements.                                                                                                    |
+   +-----------------+-----------------+---------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | custom_spec     | No              | **custom_spec** structure | Custom specifications. Set this parameter when you use a dedicated resource pool. For details, see :ref:`Table 6 <modelarts_03_0082__en-us_topic_0129882788_table134334512416>`. |
+   +-----------------+-----------------+---------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | instance_count  | Yes             | Integer                   | Number of instances deployed in a model. The value must be greater than 0.                                                                                                       |
+   +-----------------+-----------------+---------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | envs            | No              | Map<String, String>       | (Optional) Environment variable key-value pair required for running a model. By default, this parameter is left blank.                                                           |
+   |                 |                 |                           |                                                                                                                                                                                  |
+   |                 |                 |                           | To ensure data security, do not enter sensitive information, such as plaintext passwords, in environment variables.                                                              |
+   +-----------------+-----------------+---------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | cluster_id      | No              | string                    | ID of a dedicated resource pool. By default, this parameter is left blank, indicating that no dedicated resource pool is used.                                                   |
+   +-----------------+-----------------+---------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. table:: **Table 4** **config** parameters of **batch**
 
@@ -131,9 +125,7 @@ Request Body
    |                 |                 |                     | The index must be a positive integer starting from 0. If the value of index does not comply with the rule, this parameter is ignored in the request. After the mapping rule is configured, the corresponding CSV data must be separated by commas (,).                                                                                    |
    +-----------------+-----------------+---------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _modelarts030082enustopic0129882788table1892915349285:
+.. _modelarts_03_0082__en-us_topic_0129882788_table1892915349285:
 
 .. table:: **Table 5** **schedule** parameters
 
@@ -151,9 +143,7 @@ Request Body
    | duration        | Yes             | Integer         | Value that maps to the time unit. For example, if the task stops after two hours, set **time_unit** to **HOURS** and **duration** to **2**. |
    +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _modelarts030082enustopic0129882788table134334512416:
+.. _modelarts_03_0082__en-us_topic_0129882788_table134334512416:
 
 .. table:: **Table 6** **custom_spec** parameters
 
@@ -172,9 +162,9 @@ Request Body
 Response Body
 -------------
 
-`Table 7 <#modelarts030082enustopic0129882788table95112832610>`__ describes the response parameters. 
+:ref:`Table 7 <modelarts_03_0082__en-us_topic_0129882788_table95112832610>` describes the response parameters.
 
-.. _modelarts030082enustopic0129882788table95112832610:
+.. _modelarts_03_0082__en-us_topic_0129882788_table95112832610:
 
 .. table:: **Table 7** Parameters
 
@@ -316,6 +306,4 @@ The following shows how to deploy different types of services.
 Status Code
 -----------
 
-For details about the status code, see `Table 1 <../common_parameters/status_code.html#modelarts030094enustopic0132773864table1450010510213>`__.
-
-
+For details about the status code, see :ref:`Table 1 <modelarts_03_0094__en-us_topic_0132773864_table1450010510213>`.

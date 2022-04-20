@@ -1,11 +1,11 @@
+.. _modelarts_03_0074:
+
 Job Statuses
 ============
 
-`Table 1 <#modelarts030074enustopic0131326476enustopic0105159288table21749790153351>`__ describes the job statuses.
+:ref:`Table 1 <modelarts_03_0074__en-us_topic_0131326476_en-us_topic_0105159288_table21749790153351>` describes the job statuses.
 
-
-
-.. _modelarts030074enustopic0131326476enustopic0105159288table21749790153351:
+.. _modelarts_03_0074__en-us_topic_0131326476_en-us_topic_0105159288_table21749790153351:
 
 .. table:: **Table 1** Job statuses
 
@@ -56,5 +56,3 @@ Job Statuses
    +--------------+-----------------------------------------------------------------+
    | 21           | JOBSTAT_CHECK_FAILED: Failed to review the job.                 |
    +--------------+-----------------------------------------------------------------+
-
-

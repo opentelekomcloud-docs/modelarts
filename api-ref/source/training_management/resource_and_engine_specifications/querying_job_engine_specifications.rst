@@ -1,3 +1,5 @@
+.. _modelarts_03_0073:
+
 Querying Job Engine Specifications
 ==================================
 
@@ -13,21 +15,17 @@ URI
 
 GET /v1/{project_id}/job/ai-engines
 
-`Table 1 <#modelarts030073enustopic0131307648table6017292495443>`__ describes the required parameters. 
+:ref:`Table 1 <modelarts_03_0073__en-us_topic_0131307648_table6017292495443>` describes the required parameters.
 
-.. _modelarts030073enustopic0131307648table6017292495443:
+.. _modelarts_03_0073__en-us_topic_0131307648_table6017292495443:
 
 .. table:: **Table 1** Parameters
 
-   +------------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter  | Mandatory | Type   | Description                                                                                                                                                                         |
-   +============+===========+========+=====================================================================================================================================================================================+
-   | project_id | Yes       | String | Project ID. For details about how to obtain the project ID, see `Obtaining a Project ID and Name <../../common_parameters/obtaining_a_project_id_and_name.html#modelarts030147>`__. |
-   +------------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-
-.. _modelarts030073enustopic0131307648table2918868102420:
+   +------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------+
+   | Parameter  | Mandatory | Type   | Description                                                                                                                 |
+   +============+===========+========+=============================================================================================================================+
+   | project_id | Yes       | String | Project ID. For details about how to obtain the project ID, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`. |
+   +------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------+
 
 .. table:: **Table 2** Parameters
 
@@ -45,31 +43,29 @@ None
 Response Body
 -------------
 
-`Table 3 <#modelarts030073enustopic0131307648table41713500151328>`__ describes the response parameters. 
+:ref:`Table 3 <modelarts_03_0073__en-us_topic_0131307648_table41713500151328>` describes the response parameters.
 
-.. _modelarts030073enustopic0131307648table41713500151328:
+.. _modelarts_03_0073__en-us_topic_0131307648_table41713500151328:
 
 .. table:: **Table 3** Parameters
 
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter             | Type                  | Description                                                                                                                      |
-   +=======================+=======================+==================================================================================================================================+
-   | is_success            | Boolean               | Whether the request is successful                                                                                                |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------+
-   | error_message         | String                | Error message of a failed API call.                                                                                              |
-   |                       |                       |                                                                                                                                  |
-   |                       |                       | This parameter is not included when the API call succeeds.                                                                       |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------+
-   | error_code            | String                | Error code of a failed API call. For details, see `Error Codes <../../common_parameters/error_codes.html>`__.                    |
-   |                       |                       |                                                                                                                                  |
-   |                       |                       | This parameter is not included when the API call succeeds.                                                                       |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------+
-   | engines               | **engines** array     | List of engine specifications attributes. For details, see `Table 4 <#modelarts030073enustopic0131307648table21589744151355>`__. |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                                                                                                |
+   +=======================+=======================+============================================================================================================================================+
+   | is_success            | Boolean               | Whether the request is successful                                                                                                          |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+   | error_message         | String                | Error message of a failed API call.                                                                                                        |
+   |                       |                       |                                                                                                                                            |
+   |                       |                       | This parameter is not included when the API call succeeds.                                                                                 |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+   | error_code            | String                | Error code of a failed API call. For details, see :ref:`Error Codes <modelarts_03_0095>`.                                                  |
+   |                       |                       |                                                                                                                                            |
+   |                       |                       | This parameter is not included when the API call succeeds.                                                                                 |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
+   | engines               | **engines** array     | List of engine specifications attributes. For details, see :ref:`Table 4 <modelarts_03_0073__en-us_topic_0131307648_table21589744151355>`. |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _modelarts030073enustopic0131307648table21589744151355:
+.. _modelarts_03_0073__en-us_topic_0131307648_table21589744151355:
 
 .. table:: **Table 4** **engines** parameters
 
@@ -133,6 +129,4 @@ The following shows how to query the engine specifications of a training job.
 Status Code
 -----------
 
-For details about the status code, see `Table 1 <../../common_parameters/status_code.html#modelarts030094enustopic0132773864table1450010510213>`__.
-
-
+For details about the status code, see :ref:`Table 1 <modelarts_03_0094__en-us_topic_0132773864_table1450010510213>`.

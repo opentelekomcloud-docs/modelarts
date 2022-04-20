@@ -1,3 +1,5 @@
+.. _UpdateLabel:
+
 Updating a Label by Label Names
 ===============================
 
@@ -13,15 +15,15 @@ PUT /v2/{project_id}/datasets/{dataset_id}/data-annotations/labels/{label_name}
 
 .. table:: **Table 1** Path parameters
 
-   +------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter  | Mandatory | Type   | Description                                                                                                                                                |
-   +============+===========+========+============================================================================================================================================================+
-   | dataset_id | Yes       | String | Dataset ID.                                                                                                                                                |
-   +------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | label_name | Yes       | String | Label name.                                                                                                                                                |
-   +------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | project_id | Yes       | String | Project ID. For details about how to obtain the project ID, see `Obtaining a Project ID <../../common_parameters/obtaining_a_project_id_and_name.html>`__. |
-   +------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
+   | Parameter  | Mandatory | Type   | Description                                                                                                        |
+   +============+===========+========+====================================================================================================================+
+   | dataset_id | Yes       | String | Dataset ID.                                                                                                        |
+   +------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
+   | label_name | Yes       | String | Label name.                                                                                                        |
+   +------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
+   | project_id | Yes       | String | Project ID. For details about how to obtain the project ID, see :ref:`Obtaining a Project ID <modelarts_03_0147>`. |
+   +------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
 
 .. table:: **Table 2** Query parameters
 
@@ -53,10 +55,6 @@ PUT /v2/{project_id}/datasets/{dataset_id}/data-annotations/labels/{label_name}
 
 Request Parameters
 ------------------
-
-
-
-.. _UpdateLabelrequestUpdateLabelReq:
 
 .. table:: **Table 3** Request body parameters
 
@@ -94,10 +92,6 @@ Response Parameters
 -------------------
 
 **Status code: 204**
-
-
-
-.. _UpdateLabelresponseUpdateLabelResp:
 
 .. table:: **Table 4** Response body parameters
 
@@ -140,10 +134,6 @@ No Content
 Status Codes
 ------------
 
-
-
-.. _UpdateLabelstatuscode:
-
 =========== ============
 Status Code Description
 =========== ============
@@ -156,6 +146,4 @@ Status Code Description
 Error Codes
 -----------
 
-See `Error Codes <../../common_parameters/error_codes.html>`__.
-
-
+See :ref:`Error Codes <modelarts_03_0095>`.

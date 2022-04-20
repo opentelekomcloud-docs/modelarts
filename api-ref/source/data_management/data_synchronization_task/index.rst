@@ -1,3 +1,5 @@
+.. _data_sync:
+
 =========================
 Data Synchronization Task
 =========================

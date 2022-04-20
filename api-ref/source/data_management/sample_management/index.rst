@@ -1,3 +1,5 @@
+.. _sample_management:
+
 =================
 Sample Management
 =================

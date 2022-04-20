@@ -1,3 +1,5 @@
+.. _modelarts_03_0115:
+
 Managing a Development Environment Instance
 ===========================================
 
@@ -11,26 +13,26 @@ URI
 
 POST /v1/{project_id}/demanager/instances/{instance_id}/action
 
-`Table 1 <#modelarts030115enustopic0136223954table569625523811>`__ describes the required parameters. 
+:ref:`Table 1 <modelarts_03_0115__en-us_topic_0136223954_table569625523811>` describes the required parameters.
 
-.. _modelarts030115enustopic0136223954table569625523811:
+.. _modelarts_03_0115__en-us_topic_0136223954_table569625523811:
 
 .. table:: **Table 1** Parameters
 
-   +-------------+-----------+--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter   | Mandatory | Type   | Description                                                                                                                                                                      |
-   +=============+===========+========+==================================================================================================================================================================================+
-   | project_id  | Yes       | String | Project ID. For details about how to obtain the project ID, see `Obtaining a Project ID and Name <../common_parameters/obtaining_a_project_id_and_name.html#modelarts030147>`__. |
-   +-------------+-----------+--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | instance_id | Yes       | String | Instance ID                                                                                                                                                                      |
-   +-------------+-----------+--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------+
+   | Parameter   | Mandatory | Type   | Description                                                                                                                 |
+   +=============+===========+========+=============================================================================================================================+
+   | project_id  | Yes       | String | Project ID. For details about how to obtain the project ID, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`. |
+   +-------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------+
+   | instance_id | Yes       | String | Instance ID                                                                                                                 |
+   +-------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------+
 
 Request Body
 ------------
 
-`Table 2 <#modelarts030115enustopic0136223954table46411941555>`__ describes the request parameters. 
+:ref:`Table 2 <modelarts_03_0115__en-us_topic_0136223954_table46411941555>` describes the request parameters.
 
-.. _modelarts030115enustopic0136223954table46411941555:
+.. _modelarts_03_0115__en-us_topic_0136223954_table46411941555:
 
 .. table:: **Table 2** Parameters
 
@@ -46,11 +48,9 @@ Request Body
 Response Body
 -------------
 
-`Table 3 <#modelarts030115enustopic0136223954table14581542113111>`__ describes the response parameters.
+:ref:`Table 3 <modelarts_03_0115__en-us_topic_0136223954_table14581542113111>` describes the response parameters.
 
-
-
-.. _modelarts030115enustopic0136223954table14581542113111:
+.. _modelarts_03_0115__en-us_topic_0136223954_table14581542113111:
 
 .. table:: **Table 3** Parameters
 
@@ -95,6 +95,4 @@ The following shows how to start instance **6fa459ea-ee8a-3ca4-894e-db77e160355e
 Status Code
 -----------
 
-For details about the status code, see `Status Code <../common_parameters/status_code.html#modelarts030094>`__.
-
-
+For details about the status code, see :ref:`Status Code <modelarts_03_0094>`.

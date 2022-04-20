@@ -1,3 +1,5 @@
+.. _manual_annotation_management:
+
 ===============
 Manual Labeling
 ===============

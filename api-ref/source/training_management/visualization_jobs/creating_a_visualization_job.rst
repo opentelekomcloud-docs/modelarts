@@ -1,3 +1,5 @@
+.. _modelarts_03_0064:
+
 Creating a Visualization Job
 ============================
 
@@ -6,33 +8,31 @@ Function
 
 This API is used to create a visualization job.
 
-Calling this API is an asynchronous operation. The job status can be obtained by calling the APIs described in `Querying a Visualization Job List <../../training_management/visualization_jobs/querying_a_visualization_job_list.html#modelarts030065>`__ and `Querying the Details About a Visualization Job <../../training_management/visualization_jobs/querying_the_details_about_a_visualization_job.html#modelarts030066>`__.
+Calling this API is an asynchronous operation. The job status can be obtained by calling the APIs described in :ref:`Querying a Visualization Job List <modelarts_03_0065>` and :ref:`Querying the Details About a Visualization Job <modelarts_03_0066>`.
 
 URI
 ---
 
 POST /v1/{project_id}/visualization-jobs
 
-`Table 1 <#modelarts030064enustopic0131202682table569625523811>`__ describes the required parameters. 
+:ref:`Table 1 <modelarts_03_0064__en-us_topic_0131202682_table569625523811>` describes the required parameters.
 
-.. _modelarts030064enustopic0131202682table569625523811:
+.. _modelarts_03_0064__en-us_topic_0131202682_table569625523811:
 
 .. table:: **Table 1** Parameters
 
-   +------------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter  | Mandatory | Type   | Description                                                                                                                                                                         |
-   +============+===========+========+=====================================================================================================================================================================================+
-   | project_id | Yes       | String | Project ID. For details about how to obtain the project ID, see `Obtaining a Project ID and Name <../../common_parameters/obtaining_a_project_id_and_name.html#modelarts030147>`__. |
-   +------------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------+
+   | Parameter  | Mandatory | Type   | Description                                                                                                                 |
+   +============+===========+========+=============================================================================================================================+
+   | project_id | Yes       | String | Project ID. For details about how to obtain the project ID, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`. |
+   +------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------+
 
 Request Body
 ------------
 
-`Table 2 <#modelarts030064enustopic0131202682table196759327241>`__ describes the request parameters.
+:ref:`Table 2 <modelarts_03_0064__en-us_topic_0131202682_table196759327241>` describes the request parameters.
 
-
-
-.. _modelarts030064enustopic0131202682table196759327241:
+.. _modelarts_03_0064__en-us_topic_0131202682_table196759327241:
 
 .. table:: **Table 2** Parameters
 
@@ -52,10 +52,6 @@ Request Body
    | schedule  | No        | JSON   | Automatic stop setting                                                                                                                         |
    +-----------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _modelarts030064enustopic0131202682table18319659123214:
-
 .. table:: **Table 3** **flavor** parameters
 
    +-----------+-----------+--------+---------------------------------------------------------------------------------------------------------------+
@@ -63,10 +59,6 @@ Request Body
    +===========+===========+========+===============================================================================================================+
    | code      | Yes       | String | Resource specification code of a visualization job. You can obtain the code through the **flavor** parameter. |
    +-----------+-----------+--------+---------------------------------------------------------------------------------------------------------------+
-
-
-
-.. _modelarts030064enustopic0131202682table3694202918279:
 
 .. table:: **Table 4** **schedule** parameters
 
@@ -83,35 +75,33 @@ Request Body
 Response Body
 -------------
 
-`Table 5 <#modelarts030064enustopic0131202682table28681002612>`__ describes the response parameters.
+:ref:`Table 5 <modelarts_03_0064__en-us_topic_0131202682_table28681002612>` describes the response parameters.
 
-
-
-.. _modelarts030064enustopic0131202682table28681002612:
+.. _modelarts_03_0064__en-us_topic_0131202682_table28681002612:
 
 .. table:: **Table 5** Parameters
 
-   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter             | Type                  | Description                                                                                                                                            |
-   +=======================+=======================+========================================================================================================================================================+
-   | error_message         | String                | Error message of a failed API call.                                                                                                                    |
-   |                       |                       |                                                                                                                                                        |
-   |                       |                       | This parameter is not included when the API call succeeds.                                                                                             |
-   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | error_code            | String                | Error code of a failed API call. For details, see `Error Codes <../../common_parameters/error_codes.html>`__.                                          |
-   |                       |                       |                                                                                                                                                        |
-   |                       |                       | This parameter is not included when the API call succeeds.                                                                                             |
-   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | job_id                | Long                  | ID of a visualization job                                                                                                                              |
-   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | job_name              | String                | Name of a visualization job                                                                                                                            |
-   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | status                | Integer               | Status of a visualization job. For details about the job statuses, see `Job Statuses <../../training_management/job_statuses.html#modelarts030074>`__. |
-   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | create_time           | Long                  | Time when a visualization job is created, in timestamp format                                                                                          |
-   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | service_url           | String                | Endpoint of a visualization job                                                                                                                        |
-   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                                                                     |
+   +=======================+=======================+=================================================================================================================+
+   | error_message         | String                | Error message of a failed API call.                                                                             |
+   |                       |                       |                                                                                                                 |
+   |                       |                       | This parameter is not included when the API call succeeds.                                                      |
+   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------+
+   | error_code            | String                | Error code of a failed API call. For details, see :ref:`Error Codes <modelarts_03_0095>`.                       |
+   |                       |                       |                                                                                                                 |
+   |                       |                       | This parameter is not included when the API call succeeds.                                                      |
+   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------+
+   | job_id                | Long                  | ID of a visualization job                                                                                       |
+   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------+
+   | job_name              | String                | Name of a visualization job                                                                                     |
+   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------+
+   | status                | Integer               | Status of a visualization job. For details about the job statuses, see :ref:`Job Statuses <modelarts_03_0074>`. |
+   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------+
+   | create_time           | Long                  | Time when a visualization job is created, in timestamp format                                                   |
+   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------+
+   | service_url           | String                | Endpoint of a visualization job                                                                                 |
+   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------+
 
 Samples
 -------
@@ -162,6 +152,4 @@ The following shows how to create a visualization job whose name is **visualizat
 Status Code
 -----------
 
-For details about the status code, see `Table 1 <../../common_parameters/status_code.html#modelarts030094enustopic0132773864table1450010510213>`__.
-
-
+For details about the status code, see :ref:`Table 1 <modelarts_03_0094__en-us_topic_0132773864_table1450010510213>`.

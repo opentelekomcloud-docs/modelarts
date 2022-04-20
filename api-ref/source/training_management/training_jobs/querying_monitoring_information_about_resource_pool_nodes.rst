@@ -1,3 +1,5 @@
+.. _modelarts_03_0151:
+
 Querying Monitoring Information About Resource Pool Nodes
 =========================================================
 
@@ -11,9 +13,9 @@ URI
 
 GET /v1/{project_id}/pools/{pool_id}/nodes/{node_ip}/metric-statistic
 
-`Table 1 <#modelarts030151enustopic0188079989table4442765616454>`__ describes the required parameters. 
+:ref:`Table 1 <modelarts_03_0151__en-us_topic_0188079989_table4442765616454>` describes the required parameters.
 
-.. _modelarts030151enustopic0188079989table4442765616454:
+.. _modelarts_03_0151__en-us_topic_0188079989_table4442765616454:
 
 .. table:: **Table 1** Parameter description
 
@@ -30,9 +32,9 @@ GET /v1/{project_id}/pools/{pool_id}/nodes/{node_ip}/metric-statistic
 Request Body
 ------------
 
-`Table 2 <#modelarts030151enustopic0188079989table87520312215>`__ describes the request parameters. 
+:ref:`Table 2 <modelarts_03_0151__en-us_topic_0188079989_table87520312215>` describes the request parameters.
 
-.. _modelarts030151enustopic0188079989table87520312215:
+.. _modelarts_03_0151__en-us_topic_0188079989_table87520312215:
 
 .. table:: **Table 2** Parameter description
 
@@ -61,31 +63,29 @@ Request Body
 Response Body
 -------------
 
-`Table 3 <#modelarts030151enustopic0188079989table1414514116749>`__ describes the response parameters. 
+:ref:`Table 3 <modelarts_03_0151__en-us_topic_0188079989_table1414514116749>` describes the response parameters.
 
-.. _modelarts030151enustopic0188079989table1414514116749:
+.. _modelarts_03_0151__en-us_topic_0188079989_table1414514116749:
 
 .. table:: **Table 3** Parameter description
 
-   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter             | Type                  | Description                                                                                                                                                             |
-   +=======================+=======================+=========================================================================================================================================================================+
-   | error_message         | String                | Error message of a failed API call.                                                                                                                                     |
-   |                       |                       |                                                                                                                                                                         |
-   |                       |                       | This parameter is not included when the API call succeeds.                                                                                                              |
-   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | error_code            | String                | Indicates the error code when the API fails to be called. Error code of a failed API call. For details, see `Error Codes <../../common_parameters/error_codes.html>`__. |
-   |                       |                       |                                                                                                                                                                         |
-   |                       |                       | This parameter is not included when the API call succeeds.                                                                                                              |
-   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | metrics               | Json Array            | Metric monitoring details. For details, see `Table 4 <#modelarts030151enustopic0188079989table8361164171810>`__.                                                        |
-   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | interval              | Integer               | Query interval, in minutes.                                                                                                                                             |
-   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                                                                                                         |
+   +=======================+=======================+=====================================================================================================================================================+
+   | error_message         | String                | Error message of a failed API call.                                                                                                                 |
+   |                       |                       |                                                                                                                                                     |
+   |                       |                       | This parameter is not included when the API call succeeds.                                                                                          |
+   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | error_code            | String                | Indicates the error code when the API fails to be called. Error code of a failed API call. For details, see :ref:`Error Codes <modelarts_03_0095>`. |
+   |                       |                       |                                                                                                                                                     |
+   |                       |                       | This parameter is not included when the API call succeeds.                                                                                          |
+   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | metrics               | Json Array            | Metric monitoring details. For details, see :ref:`Table 4 <modelarts_03_0151__en-us_topic_0188079989_table8361164171810>`.                          |
+   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | interval              | Integer               | Query interval, in minutes.                                                                                                                         |
+   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _modelarts030151enustopic0188079989table8361164171810:
+.. _modelarts_03_0151__en-us_topic_0188079989_table8361164171810:
 
 .. table:: **Table 4** metrics data structure
 
@@ -135,6 +135,4 @@ The following example queries monitoring information about node **192.168.1.1** 
 Status Code
 -----------
 
-For details about the status code, see `Status Code <../../common_parameters/status_code.html#modelarts030094>`__.
-
-
+For details about the status code, see :ref:`Status Code <modelarts_03_0094>`.

@@ -1,3 +1,5 @@
+.. _CreateAuthorization:
+
 Configuring Authorization
 =========================
 
@@ -13,25 +15,21 @@ POST /v2/{project_id}/authorizations
 
 .. table:: **Table 1** Path parameters
 
-   +------------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter  | Mandatory | Type   | Description                                                                                                                                           |
-   +============+===========+========+=======================================================================================================================================================+
-   | project_id | Yes       | String | Project ID. For details about how to obtain a project ID, see `Obtaining a Project ID <../common_parameters/obtaining_a_project_id_and_name.html>`__. |
-   +------------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +------------+-----------+--------+------------------------------------------------------------------------------------------------------------------+
+   | Parameter  | Mandatory | Type   | Description                                                                                                      |
+   +============+===========+========+==================================================================================================================+
+   | project_id | Yes       | String | Project ID. For details about how to obtain a project ID, see :ref:`Obtaining a Project ID <modelarts_03_0147>`. |
+   +------------+-----------+--------+------------------------------------------------------------------------------------------------------------------+
 
 Request Parameters
 ------------------
-
-
-
-.. _CreateAuthorizationrequestAuthorizationRequest:
 
 .. table:: **Table 2** Request body parameters
 
    +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter       | Mandatory       | Type            | Description                                                                                                                                        |
    +=================+=================+=================+====================================================================================================================================================+
-   | user_id         | No              | String          | User ID. For details about how to obtain a user ID, see `Obtaining a User ID <../common_parameters/obtaining_a_username_and_id.html>`__.           |
+   | user_id         | No              | String          | User ID. For details about how to obtain a user ID, see :ref:`Obtaining a User ID <modelarts_03_0006>`.                                            |
    |                 |                 |                 |                                                                                                                                                    |
    |                 |                 |                 | If **user_id** is set to **all**, all IAM users are authorized. If some IAM users have been authorized, the authorization setting will be updated. |
    |                 |                 |                 |                                                                                                                                                    |
@@ -92,10 +90,6 @@ OK
 Status Codes
 ------------
 
-
-
-.. _CreateAuthorizationstatuscode:
-
 =========== ============
 Status Code Description
 =========== ============
@@ -109,6 +103,4 @@ Status Code Description
 Error Codes
 -----------
 
-See `Error Codes <../common_parameters/error_codes.html>`__.
-
-
+See :ref:`Error Codes <modelarts_03_0095>`.

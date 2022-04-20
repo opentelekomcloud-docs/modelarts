@@ -1,3 +1,5 @@
+.. _UpdateWorkspaceQuotas:
+
 Modifying a Workspace Quota
 ===========================
 
@@ -13,32 +15,26 @@ PUT /v1/{project_id}/workspaces/{workspace_id}/quotas
 
 .. table:: **Table 1** Path parameters
 
-   +--------------+-----------+--------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter    | Mandatory | Type   | Description                                                                                                                                             |
-   +==============+===========+========+=========================================================================================================================================================+
-   | project_id   | Yes       | String | Project ID. For details about how to obtain the project ID, see `Obtaining a Project ID <../common_parameters/obtaining_a_project_id_and_name.html>`__. |
-   +--------------+-----------+--------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | workspace_id | Yes       | String | Workspace ID.                                                                                                                                           |
-   +--------------+-----------+--------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +--------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
+   | Parameter    | Mandatory | Type   | Description                                                                                                        |
+   +==============+===========+========+====================================================================================================================+
+   | project_id   | Yes       | String | Project ID. For details about how to obtain the project ID, see :ref:`Obtaining a Project ID <modelarts_03_0147>`. |
+   +--------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
+   | workspace_id | Yes       | String | Workspace ID.                                                                                                      |
+   +--------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
 
 Request Parameters
 ------------------
 
-
-
-.. _UpdateWorkspaceQuotasrequestupdateWorkspaceQuotasReq:
-
 .. table:: **Table 2** Request body parameters
 
-   +-----------+-----------+-------------------------------------------------------------------+----------------+
-   | Parameter | Mandatory | Type                                                              | Description    |
-   +===========+===========+===================================================================+================+
-   | quotas    | Yes       | Array of `quotas <#updateworkspacequotasrequestquotas>`__ objects | List of quotas |
-   +-----------+-----------+-------------------------------------------------------------------+----------------+
+   +-----------+-----------+------------------------------------------------------------------------+----------------+
+   | Parameter | Mandatory | Type                                                                   | Description    |
+   +===========+===========+========================================================================+================+
+   | quotas    | Yes       | Array of :ref:`quotas <updateworkspacequotas__request_quotas>` objects | List of quotas |
+   +-----------+-----------+------------------------------------------------------------------------+----------------+
 
-
-
-.. _UpdateWorkspaceQuotasrequestquotas:
+.. _updateworkspacequotas__request_quotas:
 
 .. table:: **Table 3** quotas
 
@@ -55,21 +51,15 @@ Response Parameters
 
 **Status code: 200**
 
-
-
-.. _UpdateWorkspaceQuotasresponseupdateWorkspaceQuotasResp:
-
 .. table:: **Table 4** Response body parameters
 
-   +-----------+--------------------------------------------------------------------+----------------+
-   | Parameter | Type                                                               | Description    |
-   +===========+====================================================================+================+
-   | quotas    | Array of `quotas <#updateworkspacequotasresponsequotas>`__ objects | List of quotas |
-   +-----------+--------------------------------------------------------------------+----------------+
+   +-----------+-------------------------------------------------------------------------+----------------+
+   | Parameter | Type                                                                    | Description    |
+   +===========+=========================================================================+================+
+   | quotas    | Array of :ref:`quotas <updateworkspacequotas__response_quotas>` objects | List of quotas |
+   +-----------+-------------------------------------------------------------------------+----------------+
 
-
-
-.. _UpdateWorkspaceQuotasresponsequotas:
+.. _updateworkspacequotas__response_quotas:
 
 .. table:: **Table 5** quotas
 
@@ -138,10 +128,6 @@ OK
 Status Codes
 ------------
 
-
-
-.. _UpdateWorkspaceQuotasstatuscode:
-
 =========== ===================
 Status Code Description
 =========== ===================
@@ -154,6 +140,4 @@ Status Code Description
 Error Codes
 -----------
 
-See `Error Codes <../common_parameters/error_codes.html>`__.
-
-
+See :ref:`Error Codes <modelarts_03_0095>`.

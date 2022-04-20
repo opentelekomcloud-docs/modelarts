@@ -1,3 +1,5 @@
+.. _ListAllWorkers:
+
 Querying the List of All Labeling Team Members
 ==============================================
 
@@ -13,11 +15,11 @@ GET /v2/{project_id}/workforces/workers
 
 .. table:: **Table 1** Path parameters
 
-   +------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter  | Mandatory | Type   | Description                                                                                                                                                |
-   +============+===========+========+============================================================================================================================================================+
-   | project_id | Yes       | String | Project ID. For details about how to obtain the project ID, see `Obtaining a Project ID <../../common_parameters/obtaining_a_project_id_and_name.html>`__. |
-   +------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
+   | Parameter  | Mandatory | Type   | Description                                                                                                        |
+   +============+===========+========+====================================================================================================================+
+   | project_id | Yes       | String | Project ID. For details about how to obtain the project ID, see :ref:`Obtaining a Project ID <modelarts_03_0147>`. |
+   +------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
 
 .. table:: **Table 2** Query parameters
 
@@ -59,23 +61,17 @@ Response Parameters
 
 **Status code: 200**
 
-
-
-.. _ListAllWorkersresponseListWorkersResp:
-
 .. table:: **Table 3** Response body parameters
 
-   +--------------+-------------------------------------------------------------+---------------------------------------------+
-   | Parameter    | Type                                                        | Description                                 |
-   +==============+=============================================================+=============================================+
-   | total_number | Integer                                                     | Total number of labeling team members.      |
-   +--------------+-------------------------------------------------------------+---------------------------------------------+
-   | workers      | Array of `Worker <#listallworkersresponseworker>`__ objects | Labeling team members list queried by page. |
-   +--------------+-------------------------------------------------------------+---------------------------------------------+
+   +--------------+------------------------------------------------------------------+---------------------------------------------+
+   | Parameter    | Type                                                             | Description                                 |
+   +==============+==================================================================+=============================================+
+   | total_number | Integer                                                          | Total number of labeling team members.      |
+   +--------------+------------------------------------------------------------------+---------------------------------------------+
+   | workers      | Array of :ref:`Worker <listallworkers__response_worker>` objects | Labeling team members list queried by page. |
+   +--------------+------------------------------------------------------------------+---------------------------------------------+
 
-
-
-.. _ListAllWorkersresponseWorker:
+.. _listallworkers__response_worker:
 
 .. table:: **Table 4** Worker
 
@@ -159,10 +155,6 @@ OK
 Status Codes
 ------------
 
-
-
-.. _ListAllWorkersstatuscode:
-
 =========== ============
 Status Code Description
 =========== ============
@@ -175,6 +167,4 @@ Status Code Description
 Error Codes
 -----------
 
-See `Error Codes <../../common_parameters/error_codes.html>`__.
-
-
+See :ref:`Error Codes <modelarts_03_0095>`.
