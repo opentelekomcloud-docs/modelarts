@@ -1,3 +1,5 @@
+:original_name: modelarts_08_0007.html
+
 .. _modelarts_08_0007:
 
 Configuring Agency Authorization (Recommended)

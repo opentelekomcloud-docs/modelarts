@@ -1,3 +1,5 @@
+:original_name: modelarts_01_0001.html
+
 .. _modelarts_01_0001:
 
 What Is ModelArts?

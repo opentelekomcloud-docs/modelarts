@@ -1,3 +1,5 @@
+:original_name: modelarts_01_0015.html
+
 .. _modelarts_01_0015:
 
 Model Deployment

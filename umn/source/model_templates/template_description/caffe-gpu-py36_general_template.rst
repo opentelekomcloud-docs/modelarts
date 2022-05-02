@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0170.html
+
 .. _modelarts_23_0170:
 
 Caffe-GPU-py36 General Template

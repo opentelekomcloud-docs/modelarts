@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0108.html
+
 .. _modelarts_23_0108:
 
 Model Input Path Specifications

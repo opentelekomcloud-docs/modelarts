@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0109.html
+
 .. _modelarts_23_0109:
 
 Model Output Path Description

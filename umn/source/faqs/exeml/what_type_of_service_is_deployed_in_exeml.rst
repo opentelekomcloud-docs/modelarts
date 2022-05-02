@@ -1,3 +1,5 @@
+:original_name: modelarts_05_0008.html
+
 .. _modelarts_05_0008:
 
 What Type of Service Is Deployed in ExeML?

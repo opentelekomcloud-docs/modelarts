@@ -1,3 +1,5 @@
+:original_name: modelarts_05_0124.html
+
 .. _modelarts_05_0124:
 
 How Do I Import a Model Downloaded from OBS to ModelArts?

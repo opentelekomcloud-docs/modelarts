@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0034.html
+
 .. _modelarts_23_0034:
 
 Creating a Notebook Instance

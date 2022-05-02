@@ -1,3 +1,5 @@
+:original_name: modelarts_05_0005.html
+
 .. _modelarts_05_0005:
 
 What Should I Do When the Train Button Is Unavailable After I Create an Image Classification Project and Label the Images?

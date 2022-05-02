@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0206.html
+
 .. _modelarts_23_0206:
 
 Importing a Meta Model from a Container Image

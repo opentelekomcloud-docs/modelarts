@@ -1,3 +1,5 @@
+:original_name: modelarts_21_0010.html
+
 .. _modelarts_21_0010:
 
 Creating a Project

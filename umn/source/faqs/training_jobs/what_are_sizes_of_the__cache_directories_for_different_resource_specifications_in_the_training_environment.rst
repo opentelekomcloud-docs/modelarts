@@ -1,3 +1,5 @@
+:original_name: modelarts_05_0090.html
+
 .. _modelarts_05_0090:
 
 What Are Sizes of the /cache Directories for Different Resource Specifications in the Training Environment?

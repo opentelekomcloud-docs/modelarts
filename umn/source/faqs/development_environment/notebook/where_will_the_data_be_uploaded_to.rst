@@ -1,3 +1,5 @@
+:original_name: modelarts_05_0045.html
+
 .. _modelarts_05_0045:
 
 Where Will the Data Be Uploaded to?

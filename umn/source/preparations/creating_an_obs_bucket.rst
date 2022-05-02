@@ -1,3 +1,5 @@
+:original_name: modelarts_08_0003.html
+
 .. _modelarts_08_0003:
 
 Creating an OBS Bucket

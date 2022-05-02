@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0048.html
+
 .. _modelarts_23_0048:
 
 Viewing Job Details

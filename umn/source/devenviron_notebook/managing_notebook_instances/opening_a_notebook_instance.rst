@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0325.html
+
 .. _modelarts_23_0325:
 
 Opening a Notebook Instance

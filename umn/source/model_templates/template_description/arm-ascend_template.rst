@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0254.html
+
 .. _modelarts_23_0254:
 
 Arm-Ascend Template

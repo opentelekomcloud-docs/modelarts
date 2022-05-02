@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0188.html
+
 .. _modelarts_23_0188:
 
 Setting Alarm Rules
