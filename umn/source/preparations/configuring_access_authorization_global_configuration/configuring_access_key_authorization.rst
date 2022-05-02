@@ -1,3 +1,5 @@
+:original_name: modelarts_08_0002.html
+
 .. _modelarts_08_0002:
 
 Configuring Access Key Authorization

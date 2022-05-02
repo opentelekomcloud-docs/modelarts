@@ -1,3 +1,5 @@
+:original_name: modelarts_01_0010.html
+
 .. _modelarts_01_0010:
 
 Introduction to the AI Development Lifecycle

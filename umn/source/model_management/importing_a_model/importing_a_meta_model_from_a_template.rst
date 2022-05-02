@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0205.html
+
 .. _modelarts_23_0205:
 
 Importing a Meta Model from a Template

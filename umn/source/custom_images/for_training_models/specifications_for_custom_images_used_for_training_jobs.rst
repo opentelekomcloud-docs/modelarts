@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0217.html
+
 .. _modelarts_23_0217:
 
 Specifications for Custom Images Used for Training Jobs

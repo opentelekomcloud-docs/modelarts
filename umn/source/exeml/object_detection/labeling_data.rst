@@ -1,3 +1,5 @@
+:original_name: modelarts_21_0011.html
+
 .. _modelarts_21_0011:
 
 Labeling Data

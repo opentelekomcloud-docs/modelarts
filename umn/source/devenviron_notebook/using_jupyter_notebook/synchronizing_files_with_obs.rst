@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0038.html
+
 .. _modelarts_23_0038:
 
 Synchronizing Files with OBS

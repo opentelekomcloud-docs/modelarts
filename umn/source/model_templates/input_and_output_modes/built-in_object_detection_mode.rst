@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0100.html
+
 .. _modelarts_23_0100:
 
 Built-in Object Detection Mode

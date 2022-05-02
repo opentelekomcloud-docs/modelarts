@@ -1,3 +1,5 @@
+:original_name: modelarts_05_0003.html
+
 .. _modelarts_05_0003:
 
 What Are the Relationships Between ModelArts and Other Services

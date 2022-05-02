@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0102.html
+
 .. _modelarts_23_0102:
 
 Built-in Predictive Analytics Mode

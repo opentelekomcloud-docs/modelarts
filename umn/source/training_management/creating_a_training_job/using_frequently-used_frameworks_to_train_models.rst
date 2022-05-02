@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0238.html
+
 .. _modelarts_23_0238:
 
 Using Frequently-used Frameworks to Train Models

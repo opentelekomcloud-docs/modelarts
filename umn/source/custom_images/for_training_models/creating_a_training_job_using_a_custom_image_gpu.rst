@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0087.html
+
 .. _modelarts_23_0087:
 
 Creating a Training Job Using a Custom Image (GPU)

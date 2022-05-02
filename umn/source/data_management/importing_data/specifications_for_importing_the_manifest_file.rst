@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0009.html
+
 .. _modelarts_23_0009:
 
 Specifications for Importing the Manifest File

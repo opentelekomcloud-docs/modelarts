@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0040.html
+
 .. _modelarts_23_0040:
 
 Installing External Libraries and Kernels in Notebook Instances

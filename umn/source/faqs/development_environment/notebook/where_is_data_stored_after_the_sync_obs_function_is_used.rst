@@ -1,3 +1,5 @@
+:original_name: modelarts_05_0081.html
+
 .. _modelarts_05_0081:
 
 Where Is Data Stored After the Sync OBS Function Is Used?

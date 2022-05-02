@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0120.html
+
 .. _modelarts_23_0120:
 
 Common Operations on Jupyter Notebook

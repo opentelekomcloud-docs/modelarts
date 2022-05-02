@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0282.html
+
 .. _modelarts_23_0282:
 
 Video Labeling

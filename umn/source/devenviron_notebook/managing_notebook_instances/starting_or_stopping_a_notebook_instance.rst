@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0041.html
+
 .. _modelarts_23_0041:
 
 Starting or Stopping a Notebook Instance

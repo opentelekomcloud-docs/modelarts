@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0239.html
+
 .. _modelarts_23_0239:
 
 Using Custom Images to Train Models

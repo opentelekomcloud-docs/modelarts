@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0067.html
+
 .. _modelarts_23_0067:
 
 Viewing the Batch Service Prediction Result
