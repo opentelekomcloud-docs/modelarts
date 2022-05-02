@@ -1,3 +1,5 @@
+:original_name: modelarts_05_0006.html
+
 .. _modelarts_05_0006:
 
 Can I Add Multiple Labels to an Image for an Object Detection Project?

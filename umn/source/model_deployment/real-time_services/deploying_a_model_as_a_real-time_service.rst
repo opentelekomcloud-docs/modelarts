@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0060.html
+
 .. _modelarts_23_0060:
 
 Deploying a Model as a Real-Time Service

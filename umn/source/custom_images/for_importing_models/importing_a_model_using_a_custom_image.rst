@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0086.html
+
 .. _modelarts_23_0086:
 
 Importing a Model Using a Custom Image

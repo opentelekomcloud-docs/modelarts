@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0091.html
+
 .. _modelarts_23_0091:
 
 Model Package Specifications

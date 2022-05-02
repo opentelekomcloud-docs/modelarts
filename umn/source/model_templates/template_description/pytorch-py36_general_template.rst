@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0166.html
+
 .. _modelarts_23_0166:
 
 PyTorch-py36 General Template

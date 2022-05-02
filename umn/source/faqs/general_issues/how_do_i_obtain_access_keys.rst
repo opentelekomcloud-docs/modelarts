@@ -1,3 +1,5 @@
+:original_name: modelarts_05_0004.html
+
 .. _modelarts_05_0004:
 
 How Do I Obtain Access Keys?

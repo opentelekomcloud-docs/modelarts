@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0164.html
+
 .. _modelarts_23_0164:
 
 MXNet-py36 General Template

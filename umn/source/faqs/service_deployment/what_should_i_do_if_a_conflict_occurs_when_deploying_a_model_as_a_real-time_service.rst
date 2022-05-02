@@ -1,3 +1,5 @@
+:original_name: modelarts_05_0100.html
+
 .. _modelarts_05_0100:
 
 What Should I Do If a Conflict Occurs When Deploying a Model As a Real-Time Service?

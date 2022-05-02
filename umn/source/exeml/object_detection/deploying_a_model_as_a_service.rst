@@ -1,3 +1,5 @@
+:original_name: modelarts_21_0013.html
+
 .. _modelarts_21_0013:
 
 Deploying a Model as a Service

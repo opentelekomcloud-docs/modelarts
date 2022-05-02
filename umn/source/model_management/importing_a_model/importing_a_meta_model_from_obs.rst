@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0207.html
+
 .. _modelarts_23_0207:
 
 Importing a Meta Model from OBS

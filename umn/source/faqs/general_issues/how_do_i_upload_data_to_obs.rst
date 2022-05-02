@@ -1,3 +1,5 @@
+:original_name: modelarts_05_0013.html
+
 .. _modelarts_05_0013:
 
 How Do I Upload Data to OBS?

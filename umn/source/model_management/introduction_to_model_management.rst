@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0052.html
+
 .. _modelarts_23_0052:
 
 Introduction to Model Management

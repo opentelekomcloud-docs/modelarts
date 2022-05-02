@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0107.html
+
 .. _modelarts_23_0107:
 
 Compressing and Converting Models

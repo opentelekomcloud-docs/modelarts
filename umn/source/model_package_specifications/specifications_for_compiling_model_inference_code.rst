@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0093.html
+
 .. _modelarts_23_0093:
 
 Specifications for Compiling Model Inference Code

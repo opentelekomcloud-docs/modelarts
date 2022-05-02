@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0117.html
+
 .. _modelarts_23_0117:
 
 Using the Notebook Terminal Function

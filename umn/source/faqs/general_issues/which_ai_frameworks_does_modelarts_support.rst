@@ -1,3 +1,5 @@
+:original_name: modelarts_05_0128.html
+
 .. _modelarts_05_0128:
 
 Which AI Frameworks Does ModelArts Support?

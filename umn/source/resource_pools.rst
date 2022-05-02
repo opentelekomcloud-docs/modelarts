@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0076.html
+
 .. _modelarts_23_0076:
 
 Resource Pools

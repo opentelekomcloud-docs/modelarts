@@ -1,3 +1,5 @@
+:original_name: modelarts_05_0071.html
+
 .. _modelarts_05_0071:
 
 How Do I Enable the Terminal Function in DevEnviron of ModelArts?
