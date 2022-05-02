@@ -1,3 +1,5 @@
+:original_name: DeleteDatasetVersion.html
+
 .. _DeleteDatasetVersion:
 
 Deleting a Dataset Labeling Version
@@ -40,7 +42,7 @@ Example Requests
 
 Deleting a Dataset Labeling Version
 
-.. code-block::
+.. code-block:: text
 
    DELETE https://{endpoint}/v2/{project_id}/datasets/{dataset_id}/versions/{version_id}
 

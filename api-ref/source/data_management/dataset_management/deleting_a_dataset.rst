@@ -1,3 +1,5 @@
+:original_name: DeleteDataset.html
+
 .. _DeleteDataset:
 
 Deleting a Dataset
@@ -38,7 +40,7 @@ Example Requests
 
 Deleting a Dataset
 
-.. code-block::
+.. code-block:: text
 
    DELETE https://{endpoint}/v2/{project_id}/datasets/{dataset_id}
 

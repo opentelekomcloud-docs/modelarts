@@ -1,3 +1,5 @@
+:original_name: GetProcessorTaskItems.html
+
 .. _GetProcessorTaskItems:
 
 Querying the Algorithm Type for Data Processing
@@ -58,7 +60,7 @@ Example Requests
 
 Querying the List of the Algorithm Type for Data Processing
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/processor-tasks/items
 

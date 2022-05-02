@@ -1,3 +1,5 @@
+:original_name: ListDatasetVersions.html
+
 .. _ListDatasetVersions:
 
 Querying the Dataset Version List
@@ -383,7 +385,7 @@ Example Requests
 
 Querying the Version List of a Specific Dataset
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/datasets/{dataset_id}/versions
 

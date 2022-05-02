@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0141.html
+
 .. _modelarts_03_0141:
 
 Endpoints

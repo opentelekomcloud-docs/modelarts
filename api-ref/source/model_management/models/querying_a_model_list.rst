@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0077.html
+
 .. _modelarts_03_0077:
 
 Querying a Model List
@@ -169,7 +171,7 @@ The following shows how to query models.
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       GET    https://endpoint/v1/{project_id}/models
 

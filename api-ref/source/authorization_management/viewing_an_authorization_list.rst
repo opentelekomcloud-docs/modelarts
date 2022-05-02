@@ -1,3 +1,5 @@
+:original_name: GetAuthorizations.html
+
 .. _GetAuthorizations:
 
 Viewing an Authorization List
@@ -112,7 +114,7 @@ Example Requests
 
 View an authorization list.
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/authorizations
 

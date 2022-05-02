@@ -1,3 +1,5 @@
+:original_name: ListWorkspaces.html
+
 .. _ListWorkspaces:
 
 Querying a Workspace List
@@ -128,7 +130,7 @@ Example Requests
 
 Querying a Workspace List
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v1/{project_id}/workspaces?limit=2&offset=3&sort_by=name&order=desc&enterprise_project_id=0
 

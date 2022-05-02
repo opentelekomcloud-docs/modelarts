@@ -1,3 +1,5 @@
+:original_name: UpdateWorker.html
+
 .. _UpdateWorker:
 
 Updating a Labeling Team Member

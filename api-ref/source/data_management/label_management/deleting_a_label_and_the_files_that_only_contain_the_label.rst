@@ -1,3 +1,5 @@
+:original_name: DeleteLabelAndSamples.html
+
 .. _DeleteLabelAndSamples:
 
 Deleting a Label and the Files that Only Contain the Label
@@ -90,7 +92,7 @@ Example Requests
 
 Deleting a Label and the Files that Only Contain the Label
 
-.. code-block::
+.. code-block:: text
 
    DELETE https://{endpoint}/v2/{project_id}/datasets/WxCREuCkBSAlQr9xrde/data-annotations/labels/%E8%8D%89%E8%8E%93
 

@@ -1,3 +1,5 @@
+:original_name: DescribeSample.html
+
 .. _DescribeSample:
 
 Querying Details About a Sample
@@ -489,7 +491,7 @@ Example Requests
 
 Querying Details About a Sample
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/datasets/{dataset_id}/data-annotations/samples/{sample_id}
 

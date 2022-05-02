@@ -1,3 +1,5 @@
+:original_name: DeleteProcessorTask.html
+
 .. _DeleteProcessorTask:
 
 Deleting a Processing Task
@@ -38,7 +40,7 @@ Example Requests
 
 Deleting a Data Processing Task
 
-.. code-block::
+.. code-block:: text
 
    DELETE https://{endpoint}/v2/{project_id}/processor-tasks/{task_id}
 

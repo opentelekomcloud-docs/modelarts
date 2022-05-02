@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0155.html
+
 .. _modelarts_03_0155:
 
 Querying Service Event Logs
@@ -102,7 +104,7 @@ The following example queries event information of the service whose ID is **35d
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       GET    https://endpoint/v1/{project_id}/services/{service_id}/events
 

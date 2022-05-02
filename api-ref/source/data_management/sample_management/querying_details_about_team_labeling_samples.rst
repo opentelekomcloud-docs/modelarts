@@ -1,3 +1,5 @@
+:original_name: DescribeWorkforceTaskSample.html
+
 .. _DescribeWorkforceTaskSample:
 
 Querying Details About Team Labeling Samples
@@ -491,7 +493,7 @@ Example Requests
 
 Querying Details About Team Labeling Samples
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/datasets/{dataset_id}/workforce-tasks/{workforce_task_id}/data-annotations/samples/{sample_id}
 

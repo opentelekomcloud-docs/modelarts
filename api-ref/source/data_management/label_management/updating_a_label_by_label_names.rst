@@ -1,3 +1,5 @@
+:original_name: UpdateLabel.html
+
 .. _UpdateLabel:
 
 Updating a Label by Label Names

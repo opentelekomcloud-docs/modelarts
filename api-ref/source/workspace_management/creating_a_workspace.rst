@@ -1,3 +1,5 @@
+:original_name: CreateWorkspace.html
+
 .. _CreateWorkspace:
 
 Creating a Workspace
@@ -126,7 +128,7 @@ Example Requests
 
 Creating a Workspace
 
-.. code-block::
+.. code-block:: text
 
    POST https://{endpoint}/v1/{project_id}/workspaces
 

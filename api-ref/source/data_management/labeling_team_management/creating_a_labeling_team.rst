@@ -1,3 +1,5 @@
+:original_name: CreateWorkforce.html
+
 .. _CreateWorkforce:
 
 Creating a Labeling Team

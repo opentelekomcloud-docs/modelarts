@@ -1,3 +1,5 @@
+:original_name: DescribeProcessorTask.html
+
 .. _DescribeProcessorTask:
 
 Querying Details About a Processing Task
@@ -190,7 +192,7 @@ Example Requests
 
 Querying Details About a Data Processing Task
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/processor-tasks/{task_id}
 

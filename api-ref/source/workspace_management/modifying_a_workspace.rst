@@ -1,3 +1,5 @@
+:original_name: UpdateWorkspace.html
+
 .. _UpdateWorkspace:
 
 Modifying a Workspace
@@ -78,7 +80,7 @@ Example Requests
 
 Modifying a Workspace
 
-.. code-block::
+.. code-block:: text
 
    PUT  https://{endpoint}/v1/{project_id}/workspaces/{workspace_id}
 

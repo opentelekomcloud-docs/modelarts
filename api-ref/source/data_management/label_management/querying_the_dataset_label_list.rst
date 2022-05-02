@@ -1,3 +1,5 @@
+:original_name: ListLabels.html
+
 .. _ListLabels:
 
 Querying the Dataset Label List
@@ -157,7 +159,7 @@ Example Requests
 
 Querying All Labels of a Dataset
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/datasets/WxCREuCkBSAlQr9xrde/data-annotations/labels
 

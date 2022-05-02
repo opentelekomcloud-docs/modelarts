@@ -1,3 +1,5 @@
+:original_name: ListWorkspaceQuotas.html
+
 .. _ListWorkspaceQuotas:
 
 Querying a Workspace Quota
@@ -74,7 +76,7 @@ Example Requests
 
 Querying Workspace Quotas
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v1/{project_id}/workspaces/{workspace_id}/quotas
 

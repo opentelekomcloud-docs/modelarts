@@ -1,3 +1,5 @@
+:original_name: DescDataset.html
+
 .. _DescDataset:
 
 Querying Details About a Dataset
@@ -753,7 +755,7 @@ Example Requests
 
 Querying Details About a Dataset
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/datasets/{dataset_id}
 
