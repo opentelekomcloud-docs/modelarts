@@ -1,3 +1,5 @@
+:original_name: ListWorkforces.html
+
 .. _ListWorkforces:
 
 Querying the Labeling Team List
@@ -94,7 +96,7 @@ Example Requests
 
 Querying the Labeling Team List
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/workforces
 

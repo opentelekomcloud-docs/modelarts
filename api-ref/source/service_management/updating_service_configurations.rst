@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0086.html
+
 .. _modelarts_03_0086:
 
 Updating Service Configurations
@@ -133,7 +135,7 @@ The following shows how to update a real-time service.
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       PUT    https://endpoint/v1/{project_id}/services/{service_id}
       {

@@ -1,3 +1,5 @@
+:original_name: DeleteWorkspace.html
+
 .. _DeleteWorkspace:
 
 Deleting a Workspace
@@ -46,7 +48,7 @@ Example Requests
 
 Deleting a Workspace
 
-.. code-block::
+.. code-block:: text
 
    DELETE https://{endpoint}/v1/{project_id}/workspaces/{workspace_id}
 

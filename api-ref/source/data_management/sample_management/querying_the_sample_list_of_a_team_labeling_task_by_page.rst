@@ -1,3 +1,5 @@
+:original_name: ListWorkforceTaskSamples.html
+
 .. _ListWorkforceTaskSamples:
 
 Querying the Sample List of a Team Labeling Task by Page
@@ -533,7 +535,7 @@ Example Requests
 
 Querying the Sample List of a Team Labeling Task by Page
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/datasets/{dataset_id}/workforce-tasks/{workforce_task_id}/data-annotations/samples
 

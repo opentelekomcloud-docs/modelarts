@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0046.html
+
 .. _modelarts_03_0046:
 
 Querying a Training Job List
@@ -117,7 +119,7 @@ The following shows how to query training jobs whose status is **7** and whose n
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       GET    https://endpoint/v1/{project_id}/training-jobs?status=7&per_page=10&page=1&sortBy=job_name&order=asc&search_content=job
 

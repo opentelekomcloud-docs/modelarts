@@ -1,3 +1,5 @@
+:original_name: ListSamples.html
+
 .. _ListSamples:
 
 Querying the Sample List
@@ -565,7 +567,7 @@ Example Requests
 
 Querying the Sample List by Page
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/datasets/{dataset_id}/data-annotations/samples
 

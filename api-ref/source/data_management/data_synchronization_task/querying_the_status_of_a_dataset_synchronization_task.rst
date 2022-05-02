@@ -1,3 +1,5 @@
+:original_name: SyncDataSourceState.html
+
 .. _SyncDataSourceState:
 
 Querying the Status of a Dataset Synchronization Task
@@ -76,7 +78,7 @@ Example Requests
 
 Obtaining the Status of a Dataset Synchronization
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/datasets/{dataset_id}/sync-data/status
 

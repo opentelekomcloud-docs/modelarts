@@ -1,3 +1,5 @@
+:original_name: SyncDataSource.html
+
 .. _SyncDataSource:
 
 Synchronizing a Dataset
@@ -38,7 +40,7 @@ Example Requests
 
 Synchronizing a Dataset
 
-.. code-block::
+.. code-block:: text
 
    POST https://{endpoint}/v2/{project_id}/datasets/{dataset_id}/sync-data
 

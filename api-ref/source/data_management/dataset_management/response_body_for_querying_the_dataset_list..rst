@@ -1,3 +1,5 @@
+:original_name: ListDatasets.html
+
 .. _ListDatasets:
 
 Response body for querying the dataset list.
@@ -863,7 +865,7 @@ Example Requests
 
 Querying the Dataset List
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/datasets?offset=0&limit=10&sort_by=create_time&order=desc&dataset_type=0&file_preview=true
 

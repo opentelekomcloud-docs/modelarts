@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0076.html
+
 .. _modelarts_03_0076:
 
 Importing a Model
@@ -243,7 +245,7 @@ The following shows how to import a model whose name is **mnist**, version is **
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       POST    https://endpoint/v1/{project_id}/models
       {

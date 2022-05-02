@@ -1,3 +1,5 @@
+:original_name: DescWorkforce.html
+
 .. _DescWorkforce:
 
 Querying Details About a Labeling Team
@@ -58,7 +60,7 @@ Example Requests
 
 Querying Details About a Labeling Team
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/workforces/{workforce_id}
 

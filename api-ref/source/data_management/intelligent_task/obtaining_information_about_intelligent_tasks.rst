@@ -1,3 +1,5 @@
+:original_name: AutoAnnotationProgress.html
+
 .. _AutoAnnotationProgress:
 
 Obtaining Information About Intelligent Tasks
@@ -863,7 +865,7 @@ Example Requests
 
 Obtaining Information About an Auto Labeling (Active Learning) Task
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/datasets/{dataset_id}/tasks/{task_id}
 

@@ -1,3 +1,5 @@
+:original_name: DeleteWorkforceTask.html
+
 .. _DeleteWorkforceTask:
 
 Deleting a Team Labeling Task
@@ -40,7 +42,7 @@ Example Requests
 
 Deleting a Team Labeling Task
 
-.. code-block::
+.. code-block:: text
 
    DELETE https://{endpoint}/v2/{project_id}/datasets/{dataset_id}/workforce-tasks/{workforce_task_id}
 

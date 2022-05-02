@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0054.html
+
 .. _modelarts_03_0054:
 
 Obtaining the Name of a Training Job Log File
@@ -64,7 +66,7 @@ The following shows how to obtain the log files of the job whose **job_id** is *
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       GET    https://endpoint/v1/{project_id}/training-jobs/10/versions/10/log/file-names
 

@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0082.html
+
 .. _modelarts_03_0082:
 
 Deploying a Model as a Service
@@ -183,7 +185,7 @@ The following shows how to deploy different types of services.
 
 -  Sample request: Creating a real-time service
 
-   .. code-block::
+   .. code-block:: text
 
       POST    https://endpoint/v1/{project_id}/services
       {

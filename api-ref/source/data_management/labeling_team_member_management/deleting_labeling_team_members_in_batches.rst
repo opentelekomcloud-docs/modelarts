@@ -1,3 +1,5 @@
+:original_name: DeleteWorkers.html
+
 .. _DeleteWorkers:
 
 Deleting Labeling Team Members in Batches

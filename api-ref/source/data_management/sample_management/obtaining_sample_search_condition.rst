@@ -1,3 +1,5 @@
+:original_name: ListSearch.html
+
 .. _ListSearch:
 
 Obtaining Sample Search Condition
@@ -153,7 +155,7 @@ Example Requests
 
 Obtaining Sample Search Condition
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/datasets/{dataset_id}/data-annotations/search-condition
 

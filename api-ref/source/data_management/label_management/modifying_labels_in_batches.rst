@@ -1,3 +1,5 @@
+:original_name: UpdateLabels.html
+
 .. _UpdateLabels:
 
 Modifying Labels in Batches

@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0051.html
+
 .. _modelarts_03_0051:
 
 Stopping a Training Job
@@ -66,7 +68,7 @@ The following shows how to stop a version of the job whose **job_id** is **10** 
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       POST   https://endpoint/v1/{project_id}/training-jobs/10/versions/10/stop
 

@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0065.html
+
 .. _modelarts_03_0065:
 
 Querying a Visualization Job List
@@ -117,7 +119,7 @@ The following shows how to query the top 10 visualization jobs that are being de
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       GET https://endpoint/v1/{project_id}/visualization-jobs ?status=7&per_page=10&page=1&sortBy=status&order=asc& search_content=job_name
 
