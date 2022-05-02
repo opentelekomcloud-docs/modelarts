@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0084.html
+
 .. _modelarts_03_0084:
 
 Querying the Details About a Service
@@ -271,7 +273,7 @@ The following shows how to query the details about a real-time service based on 
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       GET    https://endpoint/v1/{project_id}/services/{service_id}
 

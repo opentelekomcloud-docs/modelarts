@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0049.html
+
 .. _modelarts_03_0049:
 
 Querying a List of Training Job Versions
@@ -329,7 +331,7 @@ The following shows how to query the job version details on the first page when 
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       GET    https://endpoint/v1/{project_id}/training-jobs/10/versions?per_page=5&page=1
 

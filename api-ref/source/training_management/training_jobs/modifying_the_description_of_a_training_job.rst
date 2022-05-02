@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0052.html
+
 .. _modelarts_03_0052:
 
 Modifying the Description of a Training Job
@@ -70,7 +72,7 @@ The following shows how to modify the description of the job whose **job_id** is
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       PUT    https://endpoint/v1/{project_id}/training-jobs/10
       {

@@ -1,3 +1,5 @@
+:original_name: StartWorkforceSamplingTask.html
+
 .. _StartWorkforceSamplingTask:
 
 Creating a Team Labeling Acceptance Task

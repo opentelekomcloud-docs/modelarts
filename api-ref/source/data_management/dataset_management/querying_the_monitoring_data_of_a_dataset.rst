@@ -1,3 +1,5 @@
+:original_name: GetDatasetMetrics.html
+
 .. _GetDatasetMetrics:
 
 Querying the Monitoring Data of a Dataset
@@ -58,7 +60,7 @@ Example Requests
 
 Querying the Monitoring Data of a Dataset
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/datasets/{dataset_id}/metrics
 

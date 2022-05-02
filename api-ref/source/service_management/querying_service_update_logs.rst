@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0088.html
+
 .. _modelarts_03_0088:
 
 Querying Service Update Logs
@@ -139,7 +141,7 @@ The following shows how to query the update logs of the real-time service whose 
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       GET    https://endpoint/v1/{project_id}/services/xxxxxx/logs
 

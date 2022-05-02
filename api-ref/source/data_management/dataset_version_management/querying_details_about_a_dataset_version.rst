@@ -1,3 +1,5 @@
+:original_name: DescribeDatasetVersion.html
+
 .. _DescribeDatasetVersion:
 
 Querying Details About a Dataset Version
@@ -345,7 +347,7 @@ Example Requests
 
 Querying Details About a Dataset Version
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/datasets/{dataset_id}/versions/{version_id}
 

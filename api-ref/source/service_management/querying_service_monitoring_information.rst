@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0087.html
+
 .. _modelarts_03_0087:
 
 Querying Service Monitoring Information
@@ -84,7 +86,7 @@ The following shows how to query the monitoring information about a real-time se
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       GET    https://endpoint/v1/{project_id}/services/{service_id}/monitor
 

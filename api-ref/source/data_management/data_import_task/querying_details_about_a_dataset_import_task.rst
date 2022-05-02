@@ -1,3 +1,5 @@
+:original_name: DescImportTask.html
+
 .. _DescImportTask:
 
 Querying Details About a Dataset Import Task
@@ -215,7 +217,7 @@ Example Requests
 
 Querying Details About an Import Task
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/datasets/{dataset_id}/import-tasks/{task_id}
 

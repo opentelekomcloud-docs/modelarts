@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0083.html
+
 .. _modelarts_03_0083:
 
 Querying a Service List
@@ -165,7 +167,7 @@ The following shows how to query model services.
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       GET    https://endpoint/v1/{project_id}/services
 

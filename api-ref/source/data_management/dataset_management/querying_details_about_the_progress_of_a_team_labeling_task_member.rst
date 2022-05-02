@@ -1,3 +1,5 @@
+:original_name: GetWorkforceTaskMetrics.html
+
 .. _GetWorkforceTaskMetrics:
 
 Querying Details About the Progress of a Team Labeling Task Member
@@ -48,7 +50,7 @@ Example Requests
 
 Querying Details About the Progress of a Team Labeling Task Member
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/datasets/{dataset_id}/workforce-tasks/{workforce_task_id}/metrics
 

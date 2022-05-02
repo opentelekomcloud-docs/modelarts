@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0062.html
+
 .. _modelarts_03_0062:
 
 Querying the Details About a Training Job Configuration
@@ -218,7 +220,7 @@ The following shows how to query the details about the job configuration named *
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       GET    https://endpoint/v1/{project_id}/training-job-configs/config123
 

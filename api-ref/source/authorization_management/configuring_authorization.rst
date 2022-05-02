@@ -1,3 +1,5 @@
+:original_name: CreateAuthorization.html
+
 .. _CreateAuthorization:
 
 Configuring Authorization
@@ -64,7 +66,7 @@ Example Requests
 
 Upload authorization.
 
-.. code-block::
+.. code-block:: text
 
    POST https://{endpoint}/v2/{project_id}/authorizations
 

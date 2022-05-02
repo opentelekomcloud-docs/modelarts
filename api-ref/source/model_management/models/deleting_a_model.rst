@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0079.html
+
 .. _modelarts_03_0079:
 
 Deleting a Model
@@ -76,7 +78,7 @@ The following shows how to delete the model whose ID is **023e90be-7e2a-4169-bab
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       DELETE    https://endpoint/v1/{project_id}/models/023e90be-7e2a-4169-bab4-1bc34ff0ca45?cascade=true
 

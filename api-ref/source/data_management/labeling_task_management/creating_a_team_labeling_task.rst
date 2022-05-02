@@ -1,3 +1,5 @@
+:original_name: CreateWorkforceTask.html
+
 .. _CreateWorkforceTask:
 
 Creating a Team Labeling Task
