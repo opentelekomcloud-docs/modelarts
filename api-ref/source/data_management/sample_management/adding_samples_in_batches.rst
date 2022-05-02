@@ -1,3 +1,5 @@
+:original_name: UploadSamplesJson.html
+
 .. _UploadSamplesJson:
 
 Adding Samples in Batches

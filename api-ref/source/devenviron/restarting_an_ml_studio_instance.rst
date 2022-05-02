@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0152.html
+
 .. _modelarts_03_0152:
 
 Restarting an ML Studio Instance

@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0067.html
+
 .. _modelarts_03_0067:
 
 Modifying the Description of a Visualization Job
@@ -72,7 +74,7 @@ The following shows how to modify the description of the visualization job whose
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       PUT https://endpoint/v1/{project_id}/visualization-jobs/10
       {

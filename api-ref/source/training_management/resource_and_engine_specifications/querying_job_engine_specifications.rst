@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0073.html
+
 .. _modelarts_03_0073:
 
 Querying Job Engine Specifications
@@ -96,7 +98,7 @@ The following shows how to query the engine specifications of a training job.
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       GET    https://endpoint/v1/{project_id}/job/ai-engines?job_type=train
 

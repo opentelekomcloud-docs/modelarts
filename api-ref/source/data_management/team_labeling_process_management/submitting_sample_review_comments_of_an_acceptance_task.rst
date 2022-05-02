@@ -1,3 +1,5 @@
+:original_name: AcceptSamples.html
+
 .. _AcceptSamples:
 
 Submitting Sample Review Comments of an Acceptance Task

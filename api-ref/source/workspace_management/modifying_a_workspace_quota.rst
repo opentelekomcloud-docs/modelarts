@@ -1,3 +1,5 @@
+:original_name: UpdateWorkspaceQuotas.html
+
 .. _UpdateWorkspaceQuotas:
 
 Modifying a Workspace Quota
@@ -90,7 +92,7 @@ Example Requests
 
 Modifying Workspace Quotas
 
-.. code-block::
+.. code-block:: text
 
    PUT  https://{endpoint}/v1/{project_id}/workspaces/{workspace_id}/quotas
 

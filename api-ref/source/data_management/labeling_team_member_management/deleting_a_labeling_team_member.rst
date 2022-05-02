@@ -1,3 +1,5 @@
+:original_name: DeleteWorker.html
+
 .. _DeleteWorker:
 
 Deleting a Labeling Team Member
@@ -40,7 +42,7 @@ Example Requests
 
 Deleting a Labeling Team Member
 
-.. code-block::
+.. code-block:: text
 
    DELETE https://{endpoint}/v2/{project_id}/workforces/{workforce_id}/workers/{worker_id}
 

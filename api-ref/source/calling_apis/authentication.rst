@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0004.html
+
 .. _modelarts_03_0004:
 
 Authentication

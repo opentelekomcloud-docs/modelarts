@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0045.html
+
 .. _modelarts_03_0045:
 
 Creating a Training Job
@@ -208,7 +210,7 @@ Samples
 
    -  Sample request
 
-      .. code-block::
+      .. code-block:: text
 
          POST    https://endpoint/v1/{project_id}/training-jobs
          {
@@ -242,7 +244,7 @@ Samples
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       POST    https://endpoint/v1/{project_id}/training-jobs
       {
@@ -271,7 +273,7 @@ Samples
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       POST    https://endpoint/v1/{project_id}/training-jobs
       {

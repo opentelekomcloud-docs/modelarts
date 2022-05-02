@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0147.html
+
 .. _modelarts_03_0147:
 
 Obtaining a Project ID and Name

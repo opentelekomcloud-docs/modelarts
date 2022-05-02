@@ -1,3 +1,5 @@
+:original_name: CreateModelArtsAgency.html
+
 .. _CreateModelArtsAgency:
 
 Creating a ModelArts Agency
@@ -50,7 +52,7 @@ Example Requests
 
 Create a ModelArts agency.
 
-.. code-block::
+.. code-block:: text
 
    POST https://{endpoint}/v2/{project_id}/agency
 

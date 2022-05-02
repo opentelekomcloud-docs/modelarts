@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0061.html
+
 .. _modelarts_03_0061:
 
 Deleting a Training Job Configuration
@@ -60,7 +62,7 @@ The following shows how to delete the job configuration named **test-trainconfig
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       DELETE    https://endpoint/v1/{project_id}/training-job-configs/test-trainconfig
 

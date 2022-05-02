@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0050.html
+
 .. _modelarts_03_0050:
 
 Creating a Version of a Training Job
@@ -151,7 +153,7 @@ Samples
 
    -  Sample request
 
-      .. code-block::
+      .. code-block:: text
 
          POST    https://endpoint/v1/{project_id}/training-jobs/10/versions/
          {

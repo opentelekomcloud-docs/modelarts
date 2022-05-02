@@ -1,3 +1,5 @@
+:original_name: DeleteAuthorizations.html
+
 .. _DeleteAuthorizations:
 
 Deleting Authorization
@@ -44,7 +46,7 @@ Example Requests
 
 Delete the authorization of a specified user.
 
-.. code-block::
+.. code-block:: text
 
    DELETE https://{endpoint}/v2/{project_id}/authorizations?user_id=****d80fb058844ae8b82aa66d9fe****
 

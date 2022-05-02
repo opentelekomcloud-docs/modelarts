@@ -1,3 +1,5 @@
+:original_name: UpdateWorkforceSamplingTask.html
+
 .. _UpdateWorkforceSamplingTask:
 
 Updating the Status of a Team Labeling Acceptance Task

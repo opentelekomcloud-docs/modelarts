@@ -1,3 +1,5 @@
+:original_name: UpdateWorkforceTask.html
+
 .. _UpdateWorkforceTask:
 
 Updating a Team Labeling Task

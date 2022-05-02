@@ -1,3 +1,5 @@
+:original_name: GetExportTasksStatusOfDataset.html
+
 .. _GetExportTasksStatusOfDataset:
 
 Querying the Dataset Export Task List
@@ -362,7 +364,7 @@ Example Requests
 
 Querying the Export Task List by Page
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/datasets/{dataset_id}/export-tasks
 

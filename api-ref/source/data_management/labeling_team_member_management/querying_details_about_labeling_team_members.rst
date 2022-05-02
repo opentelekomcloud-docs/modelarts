@@ -1,3 +1,5 @@
+:original_name: DescWorker.html
+
 .. _DescWorker:
 
 Querying Details About Labeling Team Members
@@ -78,7 +80,7 @@ Example Requests
 
 Querying Details About Labeling Team Members
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/workforces/{workforce_id}/workers/{worker_id}
 

@@ -1,3 +1,5 @@
+:original_name: UpdateWorkforceTaskSamples.html
+
 .. _UpdateWorkforceTaskSamples:
 
 Updating Labels of Team Labeling Samples in Batches

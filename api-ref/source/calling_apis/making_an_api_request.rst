@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0005.html
+
 .. _modelarts_03_0005:
 
 Making an API Request
@@ -65,7 +67,7 @@ The HTTP protocol defines the following request methods that can be used to send
 
 For example, in the case of the API used to obtain a user token, the request method is POST. The request is as follows:
 
-.. code-block::
+.. code-block:: text
 
    POST https://{iam-endpoint}/v3/auth/tokens
 
@@ -116,7 +118,7 @@ You can also add additional header fields to a request, such as the fields requi
 
 The API for obtaining a user token does not require authentication. Therefore, this API only requires adding the **Content-Type** field. The request with the added **Content-Type** header is as follows:
 
-.. code-block::
+.. code-block:: text
 
    POST https://{iam-endpoint}/v3/auth/tokens
    Content-Type: application/json

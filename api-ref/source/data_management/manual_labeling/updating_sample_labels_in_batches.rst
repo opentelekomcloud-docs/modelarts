@@ -1,3 +1,5 @@
+:original_name: UpdateSamples.html
+
 .. _UpdateSamples:
 
 Updating Sample Labels in Batches

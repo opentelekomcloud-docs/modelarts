@@ -1,3 +1,5 @@
+:original_name: ListWorkforceTaskStats.html
+
 .. _ListWorkforceTaskStats:
 
 Querying Details About Team Labeling Task Statistics
@@ -230,7 +232,7 @@ Example Requests
 
 Querying Statistics on Unapproved Samples of a Team Labeling Task
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/datasets/WxCREuCkBSAlQr9xrde/workforce-tasks/tY330MHxV9dqIPVaTRM/data-annotations/stats?sample_state=__unreviewed__
 

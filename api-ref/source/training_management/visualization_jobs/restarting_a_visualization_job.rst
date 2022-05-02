@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0070.html
+
 .. _modelarts_03_0070:
 
 Restarting a Visualization Job
@@ -62,7 +64,7 @@ The following shows how to restart the visualization job whose ID is 10.
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       POST    https://endpoint/v1/{project_id}/visualization-jobs/10/restart
 

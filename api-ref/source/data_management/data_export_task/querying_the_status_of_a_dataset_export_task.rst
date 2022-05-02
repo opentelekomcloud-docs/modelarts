@@ -1,3 +1,5 @@
+:original_name: GetExportTaskStatusOfDataset.html
+
 .. _GetExportTaskStatusOfDataset:
 
 Querying the Status of a Dataset Export Task
@@ -284,7 +286,7 @@ Example Requests
 
 Querying the Status of an Export Task (Exporting Data to OBS)
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/datasets/{dataset_id}/export-tasks/{task_id}
 

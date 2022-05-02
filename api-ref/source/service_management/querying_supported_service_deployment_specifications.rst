@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0200.html
+
 .. _modelarts_03_0200:
 
 Querying Supported Service Deployment Specifications
@@ -78,7 +80,7 @@ Samples
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       GET    https://endpoint/v1/{project_id}/services/specifications
 

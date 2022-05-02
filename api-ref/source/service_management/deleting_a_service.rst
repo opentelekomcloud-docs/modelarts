@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0089.html
+
 .. _modelarts_03_0089:
 
 Deleting a Service
@@ -11,7 +13,7 @@ This API is used to delete a model service. You can delete your own services onl
 URI
 ---
 
-.. code-block::
+.. code-block:: text
 
    DELETE /v1/{project_id}/services/{service_id}
 
@@ -46,7 +48,7 @@ The following shows how to delete the model service whose ID is **xxxxxx**.
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       DELETE    https://endpoint/v1/{project_id}/services/xxxxxx
 

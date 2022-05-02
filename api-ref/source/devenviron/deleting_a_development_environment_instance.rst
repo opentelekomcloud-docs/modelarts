@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0114.html
+
 .. _modelarts_03_0114:
 
 Deleting a Development Environment Instance
@@ -54,7 +56,7 @@ The following shows how to delete instance **6fa459ea-ee8a-3ca4-894e-db77e160355
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       DELETE https://endpoint/v1/{project_id}/demanager/instances/6fa459ea-ee8a-3ca4-894e-db77e160355e
 

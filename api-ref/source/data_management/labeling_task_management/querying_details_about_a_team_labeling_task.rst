@@ -1,3 +1,5 @@
+:original_name: DescWorkforceTask.html
+
 .. _DescWorkforceTask:
 
 Querying Details About a Team Labeling Task
@@ -584,7 +586,7 @@ Example Requests
 
 Querying Details About a Team Labeling Task
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/datasets/{dataset_id}/workforce-tasks/{workforce_task_id}
 

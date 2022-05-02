@@ -1,3 +1,5 @@
+:original_name: DeleteProcessorTaskVersion.html
+
 .. _DeleteProcessorTaskVersion:
 
 Deleting a Data Processing Task Version
@@ -40,7 +42,7 @@ Example Requests
 
 Deleting a Data Processing Task Version
 
-.. code-block::
+.. code-block:: text
 
    DELETE https://{endpoint}/v2/{project_id}/processor-tasks/{task_id}/versions/{version_id}
 

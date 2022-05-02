@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0000001147936839.html
+
 .. _en-us_topic_0000001147936839:
 
 Querying the Statuses and GPU Quantity of All Job Versions
@@ -119,7 +121,7 @@ Query training jobs in batches.
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       GET    https://endpoint/v1/{project_id}/training-jobs/versions
 

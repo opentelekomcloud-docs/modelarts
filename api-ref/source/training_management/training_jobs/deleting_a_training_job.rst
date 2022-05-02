@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0053.html
+
 .. _modelarts_03_0053:
 
 Deleting a Training Job
@@ -64,7 +66,7 @@ The following shows how to delete the job whose **job_id** is **10**.
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       DELETE    https://endpoint/v1/{project_id}/training-jobs/10
 
