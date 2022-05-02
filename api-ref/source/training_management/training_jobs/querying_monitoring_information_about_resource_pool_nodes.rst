@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0151.html
+
 .. _modelarts_03_0151:
 
 Querying Monitoring Information About Resource Pool Nodes
@@ -104,7 +106,7 @@ The following example queries monitoring information about node **192.168.1.1** 
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       GET    https://endpoint/v1/{project_id}/pools/poolabcd/nodes/192.168.1.1/metric-statistic
 

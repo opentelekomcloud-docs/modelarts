@@ -1,3 +1,5 @@
+:original_name: UpdateProcessorTask.html
+
 .. _UpdateProcessorTask:
 
 Updating a Processing Task

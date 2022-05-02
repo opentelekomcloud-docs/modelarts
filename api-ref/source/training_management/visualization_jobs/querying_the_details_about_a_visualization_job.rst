@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0066.html
+
 .. _modelarts_03_0066:
 
 Querying the Details About a Visualization Job
@@ -78,7 +80,7 @@ The following shows how to query the visualization job whose ID is 10.
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       GET https://endpoint/v1/{project_id}/visualization-jobs/10
 

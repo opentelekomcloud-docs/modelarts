@@ -1,3 +1,5 @@
+:original_name: GetWorkforceSamplingTask.html
+
 .. _GetWorkforceSamplingTask:
 
 Querying the Report of a Team Labeling Acceptance Task
@@ -79,7 +81,7 @@ Example Requests
 
 Querying the Report of a Team Labeling Acceptance Task
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/datasets/{dataset_id}/workforce-tasks/{workforce_task_id}/acceptance/report
 

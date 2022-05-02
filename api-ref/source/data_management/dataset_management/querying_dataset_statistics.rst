@@ -1,3 +1,5 @@
+:original_name: ListStats.html
+
 .. _ListStats:
 
 Querying Dataset Statistics
@@ -236,7 +238,7 @@ Example Requests
 
 Querying Dataset Statistics
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/datasets/WxCREuCkBSAlQr9xrde/data-annotations/stats
 

@@ -1,3 +1,5 @@
+:original_name: ListAllWorkers.html
+
 .. _ListAllWorkers:
 
 Querying the List of All Labeling Team Members
@@ -116,7 +118,7 @@ Example Requests
 
 Querying All Labeling Team Administrators
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/workforces/workers??role=2
 

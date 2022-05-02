@@ -1,3 +1,5 @@
+:original_name: ShowWorkspaceInfo.html
+
 .. _ShowWorkspaceInfo:
 
 Querying Details About a Workspace
@@ -94,7 +96,7 @@ Example Requests
 
 Querying Details About a Workspace
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v1/{project_id}/workspaces/{workspace_id}
 

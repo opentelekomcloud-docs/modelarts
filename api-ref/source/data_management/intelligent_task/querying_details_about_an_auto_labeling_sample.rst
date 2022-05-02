@@ -1,3 +1,5 @@
+:original_name: DescribeAutoAnnotationSample.html
+
 .. _DescribeAutoAnnotationSample:
 
 Querying Details About an Auto Labeling Sample
@@ -447,7 +449,7 @@ Example Requests
 
 Querying Details About an Auto Labeling Sample
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/datasets/{dataset_id}/auto-annotations/samples/{sample_id}
 

@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0149.html
+
 .. _modelarts_03_0149:
 
 Querying Training Job Logs
@@ -91,7 +93,7 @@ The following shows how to query the logs contained in **log1.log** of the job w
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       GET    https://endpoint/v1/{project_id}/training-jobs/10/versions/10/aom-log?log_file=log1.log&base_line= 1551252759254000002&lines=50&order=desc
 

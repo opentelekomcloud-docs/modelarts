@@ -1,3 +1,5 @@
+:original_name: DeleteLabels.html
+
 .. _DeleteLabels:
 
 Deleting Labels in Batches

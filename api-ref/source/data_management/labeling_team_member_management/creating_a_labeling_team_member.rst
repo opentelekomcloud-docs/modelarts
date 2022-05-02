@@ -1,3 +1,5 @@
+:original_name: CreateWorker.html
+
 .. _CreateWorker:
 
 Creating a Labeling Team Member

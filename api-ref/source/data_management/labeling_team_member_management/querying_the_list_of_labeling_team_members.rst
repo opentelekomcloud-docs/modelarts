@@ -1,3 +1,5 @@
+:original_name: ListWorkers.html
+
 .. _ListWorkers:
 
 Querying the List of Labeling Team Members
@@ -110,7 +112,7 @@ Example Requests
 
 Querying the List of Labeling Team Members
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/workforces/{workforce_id}/workers
 

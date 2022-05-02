@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0060.html
+
 .. _modelarts_03_0060:
 
 Modifying a Training Job Configuration
@@ -125,7 +127,7 @@ Samples
 
    -  Sample request
 
-      .. code-block::
+      .. code-block:: text
 
          PUT    https://endpoint/v1/{project_id}/training-job-configs/config
 

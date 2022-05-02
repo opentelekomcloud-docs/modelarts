@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0048.html
+
 .. _modelarts_03_0048:
 
 Deleting a Version of a Training Job
@@ -62,7 +64,7 @@ Samples
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       DELETE    https://endpoint/v1/{project_id}/training-jobs/10/versions/10
 

@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0148.html
+
 .. _modelarts_03_0148:
 
 Obtaining an Account Name and ID

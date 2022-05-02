@@ -1,3 +1,5 @@
+:original_name: UpdateWorkforce.html
+
 .. _UpdateWorkforce:
 
 Updating a Labeling Team

@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0006.html
+
 .. _modelarts_03_0006:
 
 Obtaining a Username and ID

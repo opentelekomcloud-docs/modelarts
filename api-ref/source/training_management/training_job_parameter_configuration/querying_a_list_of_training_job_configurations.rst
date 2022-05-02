@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0059.html
+
 .. _modelarts_03_0059:
 
 Querying a List of Training Job Configurations
@@ -108,7 +110,7 @@ Samples
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       GET    https://endpoint/v1/{project_id}/training-job-configs?per_page=10&page=1&sortBy=create_time&order=asc&search_content=configname
 

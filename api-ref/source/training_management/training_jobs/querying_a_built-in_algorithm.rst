@@ -1,3 +1,5 @@
+:original_name: modelarts_03_0056.html
+
 .. _modelarts_03_0056:
 
 Querying a Built-in Algorithm
@@ -133,7 +135,7 @@ The following shows how to query the algorithm whose name contains **configname*
 
 -  Sample request
 
-   .. code-block::
+   .. code-block:: text
 
       GET https://endpoint//v1/{project_id}/built-in-algorithms?per_page=10&page=1&sortBy=engine&order=asc&search_content=model
 

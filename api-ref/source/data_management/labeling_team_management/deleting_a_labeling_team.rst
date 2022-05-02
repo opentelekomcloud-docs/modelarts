@@ -1,3 +1,5 @@
+:original_name: DeleteWorkforce.html
+
 .. _DeleteWorkforce:
 
 Deleting a Labeling Team
@@ -74,7 +76,7 @@ Example Requests
 
 Deleting a Labeling Team
 
-.. code-block::
+.. code-block:: text
 
    DELETE https://{endpoint}/v2/{project_id}/workforces/{workforce_id}
 

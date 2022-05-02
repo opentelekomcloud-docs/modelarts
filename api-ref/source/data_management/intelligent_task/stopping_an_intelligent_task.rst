@@ -1,3 +1,5 @@
+:original_name: StopAutoAnnotation.html
+
 .. _StopAutoAnnotation:
 
 Stopping an Intelligent Task
@@ -40,7 +42,7 @@ Example Requests
 
 Stopping Auto Labeling, One-Click Model Deployment, or Auto Grouping Tasks
 
-.. code-block::
+.. code-block:: text
 
    POST https://{endpoint}/v2/{project_id}/datasets/{dataset_id}/tasks/{task_id}/stop
 

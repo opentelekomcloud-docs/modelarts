@@ -1,3 +1,5 @@
+:original_name: DeleteSamples.html
+
 .. _DeleteSamples:
 
 Deleting Samples in Batches
