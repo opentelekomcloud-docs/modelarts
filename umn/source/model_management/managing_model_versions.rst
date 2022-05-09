@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0055.html
+
 .. _modelarts_23_0055:
 
 Managing Model Versions

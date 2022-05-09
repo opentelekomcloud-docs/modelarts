@@ -1,3 +1,5 @@
+:original_name: modelarts_05_0018.html
+
 .. _modelarts_05_0018:
 
 What Are Image Classification and Object Detection?

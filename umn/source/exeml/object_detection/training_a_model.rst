@@ -1,3 +1,5 @@
+:original_name: modelarts_21_0012.html
+
 .. _modelarts_21_0012:
 
 Training a Model

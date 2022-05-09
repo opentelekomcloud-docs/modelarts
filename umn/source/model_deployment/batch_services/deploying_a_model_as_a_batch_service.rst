@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0066.html
+
 .. _modelarts_23_0066:
 
 Deploying a Model as a Batch Service

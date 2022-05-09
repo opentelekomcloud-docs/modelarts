@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0211.html
+
 .. _modelarts_23_0211:
 
 Text Triplet

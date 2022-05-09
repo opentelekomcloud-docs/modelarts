@@ -1,3 +1,5 @@
+:original_name: modelarts_21_0031.html
+
 .. _modelarts_21_0031:
 
 How Do I Quickly Create an OBS Bucket and a Folder When Creating a Project?

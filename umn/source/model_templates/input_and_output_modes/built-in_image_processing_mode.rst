@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0101.html
+
 .. _modelarts_23_0101:
 
 Built-in Image Processing Mode

@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0050.html
+
 .. _modelarts_23_0050:
 
 Managing Visualization Jobs

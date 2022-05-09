@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0062.html
+
 .. _modelarts_23_0062:
 
 Testing a Service

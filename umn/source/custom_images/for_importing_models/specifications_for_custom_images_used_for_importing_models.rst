@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0219.html
+
 .. _modelarts_23_0219:
 
 Specifications for Custom Images Used for Importing Models
@@ -30,7 +32,7 @@ Specifications for Custom Images Used for Model Management
 
    -  URI
 
-      .. code-block::
+      .. code-block:: text
 
          GET /health
 

@@ -1,3 +1,5 @@
+:original_name: modelarts_05_0103.html
+
 .. _modelarts_05_0103:
 
 Why Does Data Fail to Be Imported Using the Manifest File?

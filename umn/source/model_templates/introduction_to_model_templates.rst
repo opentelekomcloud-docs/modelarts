@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0098.html
+
 .. _modelarts_23_0098:
 
 Introduction to Model Templates

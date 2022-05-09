@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0054.html
+
 .. _modelarts_23_0054:
 
 Importing a Meta Model from a Training Job

@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0280.html
+
 .. _modelarts_23_0280:
 
 Switching the CUDA Version on the Terminal Page of a GPU-based Notebook Instance

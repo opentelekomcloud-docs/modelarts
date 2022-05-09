@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0092.html
+
 .. _modelarts_23_0092:
 
 Specifications for Compiling the Model Configuration File

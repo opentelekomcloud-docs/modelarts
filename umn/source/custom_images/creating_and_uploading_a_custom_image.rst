@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0085.html
+
 .. _modelarts_23_0085:
 
 Creating and Uploading a Custom Image

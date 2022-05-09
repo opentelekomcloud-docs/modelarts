@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0042.html
+
 .. _modelarts_23_0042:
 
 Deleting a Notebook Instance

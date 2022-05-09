@@ -1,3 +1,5 @@
+:original_name: modelarts_23_0014.html
+
 .. _modelarts_23_0014:
 
 Named Entity Recognition
