@@ -26,7 +26,7 @@ Procedure
 
       .. figure:: /_static/images/en-us_image_0000001157080905.png
          :alt: **Figure 1** Basic information about a dataset
-      
+
 
          **Figure 1** Basic information about a dataset
 
@@ -36,7 +36,7 @@ Procedure
 
       .. figure:: /_static/images/en-us_image_0000001110761058.png
          :alt: **Figure 2** Selecting a labeling scene and type
-      
+
 
          **Figure 2** Selecting a labeling scene and type
 

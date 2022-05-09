@@ -38,7 +38,7 @@ The dataset details page displays the labeled and unlabeled text files in the da
 
    .. figure:: /_static/images/en-us_image_0000001110760906.png
       :alt: **Figure 1** Labeling for text classification
-   
+
 
       **Figure 1** Labeling for text classification
 
@@ -53,7 +53,7 @@ Adding Labels
 
    .. figure:: /_static/images/en-us_image_0000001157080759.png
       :alt: **Figure 2** Adding a label (1)
-   
+
 
       **Figure 2** Adding a label (1)
 
@@ -63,7 +63,7 @@ Adding Labels
 
    .. figure:: /_static/images/en-us_image_0000001110760912.png
       :alt: **Figure 3** Adding a label (2)
-   
+
 
       **Figure 3** Adding a label (2)
 

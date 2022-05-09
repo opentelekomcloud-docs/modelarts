@@ -87,7 +87,7 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
 
    .. figure:: /_static/images/en-us_image_0000001156921011.png
       :alt: **Figure 1** Modifying a label
-   
+
 
       **Figure 1** Modifying a label
 
@@ -102,7 +102,7 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
 
    .. figure:: /_static/images/en-us_image_0000001157080983.png
       :alt: **Figure 2** Information about all labels
-   
+
 
       **Figure 2** Information about all labels
 

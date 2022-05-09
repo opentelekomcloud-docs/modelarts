@@ -42,10 +42,10 @@ Requirements for Files Uploaded to OBS
 
          ├─<dataset-import-path>
                │      10.jpg
-               │      10.txt    
-               │      11.jpg 
+               │      10.txt
+               │      11.jpg
                │      11.txt
-               │      12.jpg 
+               │      12.jpg
                │      12.txt
 
    -  Images in JPG, JPEG, PNG, and BMP formats are supported. When uploading images on the ModelArts management console, ensure that the size of an image does not exceed 5 MB and the total size of images to be uploaded in one attempt does not exceed 8 MB. If the data volume is large, use OBS Browser+ to upload images.

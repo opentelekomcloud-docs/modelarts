@@ -285,7 +285,7 @@ Text Classification
                "type": "modelarts/text_classification",
                "name": " positive",
                "annotated-by": "human",
-               "creation-time": "2019-01-23 11:30:30"        
+               "creation-time": "2019-01-23 11:30:30"
            } ]
    }
 
@@ -435,7 +435,7 @@ Object Detection
                "annotation-loc": "s3://path/to/annotation1.xml",
                "annotation-format":"PASCAL VOC",
                "annotated-by":"human",
-               "creation-time":"2019-01-23 11:30:30"                
+               "creation-time":"2019-01-23 11:30:30"
            }]
    }
 
@@ -597,7 +597,7 @@ Example:
           <truncated>0</truncated>
           <occluded>0</occluded>
           <difficult>0</difficult>
-          
+
           <polygon>
               <x1>373</x1>
               <y1>264</y1>
@@ -632,14 +632,14 @@ Sound Classification
 
    {
    "source":
-   "s3://path/to/pets.wav", 
+   "s3://path/to/pets.wav",
        "annotation": [
            {
                "type": "modelarts/audio_classification",
-               "name":"cat",    
+               "name":"cat",
                "annotated-by":"human",
                "creation-time":"2019-01-23 11:30:30"
-           } 
+           }
        ]
    }
 
@@ -681,14 +681,14 @@ Speech Paragraph Labeling
        "usage":"TRAIN",
        "annotation":[
            {
-              
+
    "type":"modelarts/audio_segmentation",
                "property":{
                    "@modelarts:start_time":"00:01:10.123",
                    "@modelarts:end_time":"00:01:15.456",
-                  
+
                    "@modelarts:source":"Tom",
-                  
+
                    "@modelarts:content":"How are you?"
                },
               "annotated-by":"human",
