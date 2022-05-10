@@ -66,7 +66,7 @@ The following shows how to stop the visualization job whose ID is 10.
 
    .. code-block:: text
 
-      POST    https://endpoint/v1/{project_id}/visualization-jobs/10/stop 
+      POST    https://endpoint/v1/{project_id}/visualization-jobs/10/stop
 
 -  Successful sample response
 

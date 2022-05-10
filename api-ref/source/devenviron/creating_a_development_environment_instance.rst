@@ -624,7 +624,7 @@ The following shows how to create the **notebook-instance** instance with ID **P
               "provision": {
                   "annotations": {
                       "category": "Multi-Engine 1.0",
-                      
+
                       "type": "system"
                   },
                   "spec": {

@@ -232,7 +232,7 @@ The following shows how to query the details about the job configuration named *
           "spec_code": "modelarts.vm.gpu.v100",
           "user_image_url": "100.125.5.235:20202/jobmng/custom-cpu-base:1.0",
           "user_command": "bash -x /home/work/run_train.sh python /home/work/user-job-dir/app/mnist/mnist_softmax.py --data_url /home/work/user-job-dir/app/mnist_data",
-          
+
           "dataset_version_id": "2ff0d6ba-c480-45ae-be41-09a8369bfc90",
           "engine_name": "TensorFlow",
           "is_success": true,

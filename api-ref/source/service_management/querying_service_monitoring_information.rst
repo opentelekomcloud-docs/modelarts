@@ -97,7 +97,7 @@ The following shows how to query the monitoring information about a real-time se
       {
           "service_id": "xxx",
           "service_name": "mnist",
-          "monitors": 
+          "monitors":
           [{
               "model_id": "xxxx",
               "model_name": "minst",

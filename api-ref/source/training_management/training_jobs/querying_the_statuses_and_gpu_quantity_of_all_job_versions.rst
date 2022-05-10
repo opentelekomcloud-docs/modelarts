@@ -130,7 +130,7 @@ Query training jobs in batches.
    .. code-block::
 
       {
-          versions:[  
+          versions:[
               {
                   "version_id": 1485,
                   "version_name": "trainjob-3f47",

@@ -263,19 +263,19 @@ The following shows how to query details about a model based on the model ID.
       "model_status": "published",
       "execution_code": "https://testmodel.obs.xxxx.com/customize_service.py",
       "image_address": "100.125.5.235:20202/models/10eb0091-887f-4839-9929-cbc884f1e20e:1.0.0",
-      "input_params": [{           
-           "url": "/",           
-           "method": "post",           
-           "protocol": "http",           
-           "param_name": "data",           
-           "param_type": "object",           
+      "input_params": [{
+           "url": "/",
+           "method": "post",
+           "protocol": "http",
+           "param_name": "data",
+           "param_type": "object",
            "param_desc": "{\"type\":\"object\",\"properties\":{\"req_data\":{\"items\":[{\"type\":\"object\",\"properties\":{}}],\"type\":\"array\"}}}"       }],
-      "output_params": [{           
-           "url": "/",           
-           "method": "post",           
-           "protocol": "http",           
-           "param_name": "data",           
-           "param_type": "object",           
+      "output_params": [{
+           "url": "/",
+           "method": "post",
+           "protocol": "http",
+           "param_name": "data",
+           "param_type": "object",
            "param_desc": "{\"type\":\"object\",\"properties\":{\"resp_data\":{\"type\":\"array\",\"items\":[{\"type\":\"object\",\"properties\":{}}]}}}"       }],
       "dependencies": [{
           "installer": "pip",

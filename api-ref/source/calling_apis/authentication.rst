@@ -102,7 +102,7 @@ Decompress the downloaded package and reference the obtained JAR files as depend
 
    .. figure:: /_static/images/en-us_image_0150917346.gif
       :alt: **Figure 1** Selecting Existing Projects into Workspace
-   
+
 
       **Figure 1** Selecting Existing Projects into Workspace
 
@@ -110,7 +110,7 @@ Decompress the downloaded package and reference the obtained JAR files as depend
 
    .. figure:: /_static/images/en-us_image_0150917350.gif
       :alt: **Figure 2** Selecting the demo project
-   
+
 
       **Figure 2** Selecting the demo project
 
@@ -118,7 +118,7 @@ Decompress the downloaded package and reference the obtained JAR files as depend
 
    .. figure:: /_static/images/en-us_image_0150917353.gif
       :alt: **Figure 3** Structure of the demo project
-   
+
 
       **Figure 3** Structure of the demo project
 
