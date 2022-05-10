@@ -444,7 +444,7 @@ The following shows how to obtain the details about instance **6fa459ea-ee8a-3ca
               "name": "Multi-Engine 1.0 (python3)-gpu",
               "provision": {
                   "annotations": {
-                      "category": "Multi-Engine 1.0 (python3)", 
+                      "category": "Multi-Engine 1.0 (python3)",
                       "type": "system"
                   },
                   "spec": {

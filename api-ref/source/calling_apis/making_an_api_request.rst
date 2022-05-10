@@ -138,7 +138,7 @@ If an API is used to obtain a user token, the request parameters and parameter d
 
 .. code-block::
 
-   POST https://{iam-endpoint}/v3/auth/tokens 
+   POST https://{iam-endpoint}/v3/auth/tokens
    Content-Type:application/json
    {
      "auth": {

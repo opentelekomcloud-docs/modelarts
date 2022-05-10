@@ -17,6 +17,6 @@ When you call APIs, certain requests require the account name and ID. To obtain 
 
    .. figure:: /_static/images/en-us_image_0000001126894914.png
       :alt: **Figure 1** Viewing the account name and ID
-   
+
 
       **Figure 1** Viewing the account name and ID

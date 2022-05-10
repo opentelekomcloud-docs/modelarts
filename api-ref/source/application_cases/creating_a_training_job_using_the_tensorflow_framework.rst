@@ -54,17 +54,17 @@ Procedure
                "methods": ["password"],
                "password": {
                  "user": {
-                   "name": "username", 
+                   "name": "username",
                    "password": "**********",
                    "domain": {
-                     "name": "domainname"  
+                     "name": "domainname"
                    }
                  }
                }
              },
              "scope": {
                "project": {
-                 "name": ""  
+                 "name": ""
                }
              }
            }

@@ -25,6 +25,6 @@ Basic Concepts
 
    .. figure:: /_static/images/en-us_image_0171392261.gif
       :alt: **Figure 1** Project isolation model
-   
+
 
       **Figure 1** Project isolation model
