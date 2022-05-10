@@ -15,20 +15,9 @@ Opening JupyterLab
 ------------------
 
 #. Log in to the ModelArts management console. In the left navigation pane, choose **DevEnviron > Notebooks** to switch to the **Notebooks** page.
-
 #. Select a notebook instance in the **Running** state and click **Open** in the **Operation** column to access the notebook instance.
-
 #. On the **Jupyter** page, click **Open JupyterLab** in the upper right corner to access the JupyterLab page of the notebook instance.
-
 #. The **Launcher** page is automatically displayed. You can use all open-source functions. For details, see `JupyterLab Documentation <https://jupyterlab.readthedocs.io/en/stable/>`__.
-
-   .. _modelarts_23_0209__en-us_topic_0208766071_fig1727316104710:
-
-   .. figure:: /_static/images/en-us_image_0000001110920930.png
-      :alt: **Figure 1** JupyterLab homepage
-
-
-      **Figure 1** JupyterLab homepage
 
 Creating and Opening a Notebook Instance
 ----------------------------------------
@@ -37,23 +26,7 @@ On the JupyterLab homepage, click an applicable AI engine in the **Notebook** ar
 
 The AI framework supported by each notebook instance varies according to the working environment. The following figure is only an example. Select an AI framework based on the site requirements. For details about all framework versions and Python versions supported by ModelArts, see :ref:`Supported AI Engines <modelarts_23_0033__en-us_topic_0162690357_section191109611479>`.
 
-.. _modelarts_23_0209__en-us_topic_0208766071_fig812525717438:
-
-.. figure:: /_static/images/en-us_image_0000001157080871.png
-   :alt: **Figure 2** Selecting an AI engine and creating a notebook instance
-
-
-   **Figure 2** Selecting an AI engine and creating a notebook instance
-
 The created notebook file is displayed in the navigation pane on the left.
-
-.. _modelarts_23_0209__en-us_topic_0208766071_fig6910322104612:
-
-.. figure:: /_static/images/en-us_image_0000001110920924.png
-   :alt: **Figure 3** Creating a notebook file
-
-
-   **Figure 3** Creating a notebook file
 
 Creating a Notebook File and Opening the Console
 ------------------------------------------------
@@ -64,23 +37,15 @@ On the JupyterLab homepage, click an applicable AI engine in the **Console** are
 
 The AI framework supported by each notebook instance varies according to the working environment. The following figure is only an example. Select an AI framework based on the site requirements.
 
-.. _modelarts_23_0209__en-us_topic_0208766071_fig146903307496:
-
-.. figure:: /_static/images/en-us_image_0000001156920897.png
-   :alt: **Figure 4** Selecting an AI engine and creating a console
-
-
-   **Figure 4** Selecting an AI engine and creating a console
-
 After the file is created, the console page is displayed.
 
 .. _modelarts_23_0209__en-us_topic_0208766071_fig12167335121119:
 
 .. figure:: /_static/images/en-us_image_0000001110761020.png
-   :alt: **Figure 5** Creating a notebook file (console)
+   :alt: **Figure 1** Creating a notebook file (console)
 
 
-   **Figure 5** Creating a notebook file (console)
+   **Figure 1** Creating a notebook file (console)
 
 .. _modelarts_23_0209__en-us_topic_0208766071_section172463910383:
 
@@ -94,10 +59,10 @@ The size of the file to be uploaded using this method is limited. If the file si
 .. _modelarts_23_0209__en-us_topic_0208766071_fig162661614164017:
 
 .. figure:: /_static/images/en-us_image_0000001110920918.png
-   :alt: **Figure 6** Uploading a file
+   :alt: **Figure 2** Uploading a file
 
 
-   **Figure 6** Uploading a file
+   **Figure 2** Uploading a file
 
 Editing a File
 --------------
@@ -109,10 +74,10 @@ Using JupyterLab, you can customize the display of multiple files. In the file d
 .. _modelarts_23_0209__en-us_topic_0208766071_fig6301121132215:
 
 .. figure:: /_static/images/en-us_image_0000001157080869.png
-   :alt: **Figure 7** Customized display of multiple files
+   :alt: **Figure 3** Customized display of multiple files
 
 
-   **Figure 7** Customized display of multiple files
+   **Figure 3** Customized display of multiple files
 
 When writing code in a notebook instance, you can create multiple views of a file to synchronously edit the file and view the execution result in real time.
 
@@ -121,10 +86,10 @@ To open multiple views, open the file and choose **File** > **New View for Noteb
 .. _modelarts_23_0209__en-us_topic_0208766071_fig9122203643213:
 
 .. figure:: /_static/images/en-us_image_0000001110920916.png
-   :alt: **Figure 8** Multiple views of a file
+   :alt: **Figure 4** Multiple views of a file
 
 
-   **Figure 8** Multiple views of a file
+   **Figure 4** Multiple views of a file
 
 Downloading a File to a Local Computer
 --------------------------------------
@@ -136,10 +101,10 @@ In the JupyterLab file list, right-click the file to be downloaded and choose **
 .. _modelarts_23_0209__en-us_topic_0208766071_fig115128616340:
 
 .. figure:: /_static/images/en-us_image_0000001157080879.png
-   :alt: **Figure 9** Downloading a file
+   :alt: **Figure 5** Downloading a file
 
 
-   **Figure 9** Downloading a file
+   **Figure 5** Downloading a file
 
 Common Icons and Plug-ins of JupyterLab
 ---------------------------------------
@@ -147,10 +112,10 @@ Common Icons and Plug-ins of JupyterLab
 .. _modelarts_23_0209__en-us_topic_0208766071_fig18661212194314:
 
 .. figure:: /_static/images/en-us_image_0000001110761018.png
-   :alt: **Figure 10** Common icons and plug-ins of JupyterLab
+   :alt: **Figure 6** Common icons and plug-ins of JupyterLab
 
 
-   **Figure 10** Common icons and plug-ins of JupyterLab
+   **Figure 6** Common icons and plug-ins of JupyterLab
 
 .. table:: **Table 1** Icon description
 

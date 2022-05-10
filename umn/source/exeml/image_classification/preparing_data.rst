@@ -10,12 +10,12 @@ Before using ModelArts ExeML to build a model, upload data to an OBS bucket.
 Uploading Data to OBS
 ---------------------
 
-This operation uses the OBS console to upload data. For more information about how to create a bucket and upload files, see Creating a Bucket and Uploading an Object.
+This operation uses the OBS console to upload data. For more information about how to create a bucket and upload files, see `Creating a Bucket <https://docs.otc.t-systems.com/en-us/usermanual/obs/obs_03_0306.html>`__ and `Uploading a File <https://docs.otc.t-systems.com/en-us/usermanual/obs/obs_03_0307.html>`__.
 
 Perform the following operations to import data to the dataset for model training and building.
 
-#. Log in to OBS Console and create a bucket.
-#. Upload the local data to the OBS bucket. If you have a large amount of data, use OBS Browser+ to upload data or folders. The uploaded data must meet the dataset requirements of the ExeML project.
+#. Log in to OBS Console and `create a bucket <https://docs.otc.t-systems.com/en-us/usermanual/obs/obs_03_0306.html>`__.
+#. `Upload the local data <https://docs.otc.t-systems.com/en-us/usermanual/obs/obs_03_0307.html>`__ to the OBS bucket. If you have a large amount of data, use OBS Browser+ to upload data or folders. The uploaded data must meet the dataset requirements of the ExeML project.
 
 Requirements on Datasets
 ------------------------

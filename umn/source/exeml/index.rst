@@ -10,4 +10,5 @@ ExeML
    introduction_to_exeml
    image_classification/index
    object_detection/index
+   predictive_analytics/index
    tips/index

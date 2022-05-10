@@ -7,6 +7,8 @@ Main Index
 
    service_overview/index
    preparations/index
+   getting_started_with_modelarts
+   quick_start/index
    exeml/index
    data_management/index
    devenviron_notebook/index
@@ -20,5 +22,6 @@ Main Index
    examples_of_custom_scripts/index
    permissions_management/index
    monitoring/index
+   audit_logs/index
    faqs/index
    change_history

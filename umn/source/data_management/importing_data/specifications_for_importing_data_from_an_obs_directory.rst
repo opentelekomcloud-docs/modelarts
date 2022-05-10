@@ -282,28 +282,3 @@ Example:
            1.wav
            2.wav
            3.wav
-
-.. _modelarts_23_0008__en-us_topic_0170886816_section1171862514918:
-
-Table
------
-
-You can import data from OBS.
-
-Import description:
-
-#. The prerequisite for successful import is that the schema of the data source must be the same as that specified during dataset creation. The schema indicates column names and types of a table. Once specified during dataset creation, the values cannot be changed.
-#. If the data format is invalid, the data is set to null values. For details, see :ref:`Table 4 <modelarts_23_0004__en-us_topic_0170886809_table1916832104917>`.
-#. When a CSV file is imported from OBS, the data type is not verified, but the number of columns must be the same as that in the schema of the dataset.
-
--  From OBS
-
-   CSV files can be imported from OBS. You need to select the directory where the files are stored. The number of columns in the CSV file must be the same as that in the dataset schema. The schema of the CSV file can be automatically obtained.
-
-   .. code-block::
-
-      ├─dataset-import-example
-      │      table_import_1.csv
-      │      table_import_2.csv
-      │      table_import_3.csv
-      │      table_import_4.csv

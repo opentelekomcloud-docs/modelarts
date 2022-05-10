@@ -11,7 +11,7 @@ Prerequisites
 -------------
 
 -  You have created a custom image package based on ModelArts specifications. For details about the specifications you need to comply with when using a custom image to create training jobs, see :ref:`Specifications for Custom Images Used for Training Jobs <modelarts_23_0217>`.
--  You have uploaded the custom image to SWR. For details, see :ref:`Creating and Uploading a Custom Image <modelarts_23_0085>`.
+-  You have uploaded the custom image to SWR. For details, see .
 
 Creating a Training Job
 -----------------------

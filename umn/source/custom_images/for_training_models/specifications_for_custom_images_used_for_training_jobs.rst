@@ -18,7 +18,6 @@ Specifications
 -  To ensure that the log content can be displayed normally, the logs must be standard output.
 -  The default user of a custom image must be the user whose UID is **1101**.
 -  Custom images can be developed based on basic ModelArts images. For details about the supported basic images, see :ref:`Overview of a Basic Image Package <modelarts_23_0217__en-us_topic_0212179951_section1126616610513>`.
--  Currently, the ModelArts backend does not support the download of open source installation packages. You are advised to install the dependency packages required for training in the custom image.
 
 .. _modelarts_23_0217__en-us_topic_0212179951_section1126616610513:
 
@@ -37,18 +36,13 @@ Run the following command to obtain a ModelArts image:
 
    docker pull <Address for obtaining a basic image>
 
-After customizing an image, upload it to SWR. Make sure that you have created an organization and obtained the password for logging in to SWR. For details, see "Image Management" > "Uploading an Image Through SWR Console" in *Software Repository for Container User Guide*.
+After customizing an image, upload it to SWR. Make sure that you have created an organization and obtained the password for logging in to SWR. For details, see .
 
 .. code-block::
 
    docker push  swr.<region>.xxx.com/<Organization to which the target image belongs>/<Image name>
 
 Obtain basic images based on chip requirements:
-
--  :ref:`CPU-based Basic Images <modelarts_23_0217__en-us_topic_0212179951_section2357164275019>`
--  :ref:`GPU-based Basic Images <modelarts_23_0217__en-us_topic_0212179951_section125281544151710>`
-
-.. _modelarts_23_0217__en-us_topic_0212179951_section2357164275019:
 
 CPU-based Basic Images
 ----------------------
@@ -59,11 +53,19 @@ Address for obtaining a basic image
 
    swr.<region>.xxx.com/modelarts-job-dev-image/custom-cpu-base:1.3
 
-:ref:`Table 1 <modelarts_23_0217__en-us_topic_0212179951_table42317014714>` and :ref:`Table 2 <modelarts_23_0217__en-us_topic_0212179951_table624501372>` list the components and tools used by basic images.
+.. table:: **Table 1** Optional parameters
+
+   ========= ============== ===============================
+   Parameter Optional Value Description
+   ========= ============== ===============================
+   <region>  eu-de          Region where the image resides.
+   ========= ============== ===============================
+
+:ref:`Table 2 <modelarts_23_0217__en-us_topic_0212179951_table42317014714>` and :ref:`Table 3 <modelarts_23_0217__en-us_topic_0212179951_table624501372>` list the components and tools used by basic images.
 
 .. _modelarts_23_0217__en-us_topic_0212179951_table42317014714:
 
-.. table:: **Table 1** Components
+.. table:: **Table 2** Components
 
    +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Component    | Description                                                                                                                                                                       |
@@ -73,7 +75,7 @@ Address for obtaining a basic image
 
 .. _modelarts_23_0217__en-us_topic_0212179951_table624501372:
 
-.. table:: **Table 2** Tool list
+.. table:: **Table 3** Tool list
 
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Tool                              | Description                                                                                                                                              |
@@ -89,23 +91,57 @@ Address for obtaining a basic image
    | dls-downloader.py                 | OBS download script. The **utils.sh** script depends on this script.                                                                                     |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _modelarts_23_0217__en-us_topic_0212179951_section125281544151710:
-
 GPU-based Basic Images
 ----------------------
 
-Addresses for obtaining a basic image
+-  Image of the CUDA 10.0, 10.1, or 10.2 version, using Ubuntu 18.04 as the basic image and with MoXing pre-installed by default
 
-.. code-block::
+   .. code-block::
 
-   swr.<region>.xxx.com/modelarts-job-dev-image/custom-gpu-cuda9-base:1.3
-   swr.<region>.xxx.com/modelarts-job-dev-image/custom-gpu-cuda92-base:1.3
-   swr.<region>.xxx.com/modelarts-job-dev-image/custom-gpu-cuda10-cudnn74-base:1.1-4
-   swr.<region>.xxx.com/modelarts-job-dev-image/custom-base-cuda10.0-cp36-ubuntu18.04-x86:1.1
-   swr.<region>.xxx.com/modelarts-job-dev-image/custom-base-cuda10.1-cp36-ubuntu18.04-x86:1.1
-   swr.<region>.xxx.com/modelarts-job-dev-image/custom-base-cuda10.2-cp36-ubuntu18.04-x86:1.1
+      swr.<region>.xxx.com/modelarts-job-dev-image/custom-base-<cuda version>-<python version>-<os>-<arch>:<image tag>
 
-.. table:: **Table 3** Components
+-  Image of the CUDA 8, 9, or 92 version, with MoXing pre-installed by default
+
+   .. code-block::
+
+      swr.<region>.xxx.com/modelarts-job-dev-image/custom-gpu-<cuda version>-inner-moxing-<python version>:<image tag>
+
+-  Image of the CUDA 8, 9, or 92 version
+
+   .. code-block::
+
+      swr.<region>.xxx.com/modelarts-job-dev-image/custom-gpu-<cuda version>-base:<image tag>
+
+   .. table:: **Table 4** Optional parameters
+
+      +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------+
+      | Parameter             | Possible Value        | Description                                                                                                         |
+      +=======================+=======================+=====================================================================================================================+
+      | <region>              | eu-de                 | Region where the image resides.                                                                                     |
+      +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------+
+      | <cuda version>        | -  cuda92             | CUDA version installed in the image                                                                                 |
+      |                       | -  cuda9              |                                                                                                                     |
+      |                       | -  cuda8              | .. note::                                                                                                           |
+      |                       | -  cuda10.0           |                                                                                                                     |
+      |                       | -  cuda10.1           |    Check the CUDA version. After the version is specified, it cannot be changed. Otherwise, the training will fail. |
+      |                       | -  cuda10.2           |                                                                                                                     |
+      +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------+
+      | <image tag>           | -  1.1                | Image version                                                                                                       |
+      |                       | -  1.3                |                                                                                                                     |
+      |                       |                       | -  Version 1.3 available for CUDA 8, 9, or 92 version                                                               |
+      |                       |                       | -  Version 1.1 available for CUDA 10.0, 10.1, or 10.2 version                                                       |
+      +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------+
+      | python version        | -  cp27               | Python environment                                                                                                  |
+      |                       | -  cp36               |                                                                                                                     |
+      +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------+
+      | os                    | ubuntu18.04           | Operating system                                                                                                    |
+      +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------+
+      | arch                  | x86                   | Architecture                                                                                                        |
+      +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------+
+
+:ref:`Table 2 <modelarts_23_0217__en-us_topic_0212179951_table42317014714>` and :ref:`Table 3 <modelarts_23_0217__en-us_topic_0212179951_table624501372>` list the components and tools used by basic images.
+
+.. table:: **Table 5** Components
 
    +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Component    | Description                                                                                                                                                                       |
@@ -113,7 +149,7 @@ Addresses for obtaining a basic image
    | run_train.sh | Training boot script. You can download the code directory, run training commands, redirect training log output, and upload log files to OBS after training commands are executed. |
    +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. table:: **Table 4** Tool list
+.. table:: **Table 6** Tool list
 
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Tool                              | Description                                                                                                                                              |

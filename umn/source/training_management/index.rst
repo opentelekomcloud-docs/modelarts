@@ -8,6 +8,7 @@ Training Management
    :maxdepth: 1
 
    introduction_to_model_training
+   built-in_algorithms/index
    creating_a_training_job/index
    stopping_or_deleting_a_job
    managing_training_job_versions

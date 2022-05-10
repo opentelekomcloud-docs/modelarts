@@ -8,5 +8,6 @@ Creating a Training Job
    :maxdepth: 1
 
    introduction_to_training_jobs
+   using_built-in_algorithms_to_train_models
    using_frequently-used_frameworks_to_train_models
    using_custom_images_to_train_models

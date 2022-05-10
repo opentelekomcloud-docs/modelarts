@@ -33,6 +33,14 @@ Exporting Data to a New Dataset
 
    On the dataset details page, select or filter data to be exported. Click **Export To** and choose **New Dataset** from the drop-down list.
 
+   .. _modelarts_23_0214__en-us_topic_0209632492_fig159113538243:
+
+   .. figure:: /_static/images/en-us_image_0000001278010765.png
+      :alt: **Figure 1** Selecting or filtering images to be exported
+
+
+      **Figure 1** Selecting or filtering images to be exported
+
 #. In the displayed **Export to New Dataset** dialog box, enter the related information and click **OK**.
 
    **Name**: name of the new dataset
@@ -42,6 +50,14 @@ Exporting Data to a New Dataset
    **Output Path**: output path of the new dataset, that is, the output path after labeling is complete. The output path cannot be the same as the storage path, and the output path cannot be a subdirectory of the storage path.
 
    **Export Content**: The options are **Export the selected samples** and **Export all samples meeting filtering criteria**.
+
+   .. _modelarts_23_0214__en-us_topic_0209632492_fig27297149260:
+
+   .. figure:: /_static/images/en-us_image_0000001298006289.png
+      :alt: **Figure 2** Exporting to a new dataset
+
+
+      **Figure 2** Exporting to a new dataset
 
 #. After the data is exported, you can view the new dataset in the dataset list.
 
@@ -62,11 +78,27 @@ Exporting Data to OBS
 
    On the dataset details page, select or filter data to be exported. Click **Export To** and choose **OBS** from the drop-down list.
 
+   .. _modelarts_23_0214__fig1759015234918:
+
+   .. figure:: /_static/images/en-us_image_0000001251806154.png
+      :alt: **Figure 3** Selecting or filtering images to be exported
+
+
+      **Figure 3** Selecting or filtering images to be exported
+
 #. In the displayed **Export to OBS** dialog box, enter the related information and click **OK**.
 
    **Storage Path**: path where the data to be exported is stored. You are advised not to save data to the input or output path of the current dataset.
 
    **Export Content**: The options are **Export the selected samples** and **Export all samples meeting filtering criteria**.
+
+   .. _modelarts_23_0214__en-us_topic_0209632492_fig113474264283:
+
+   .. figure:: /_static/images/en-us_image_0000001251646390.png
+      :alt: **Figure 4** Exporting to OBS
+
+
+      **Figure 4** Exporting to OBS
 
 #. After the data is exported, you can view it in the specified path.
 

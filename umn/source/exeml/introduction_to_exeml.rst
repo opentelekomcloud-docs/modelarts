@@ -38,3 +38,7 @@ ExeML Projects
 -  **Object Detection**
 
    An object detection project aims to identify the class and location of objects in images. You only need to add images and label objects in the images with proper bounding boxes. The labled images will be used as the training set for creating a model. The model can identify multiple objects and count the number of objects in a single image, as well as inspect employees' dress code and perform unattended inspection of article placement.
+
+-  **Predictive Analytics**
+
+   A predictive analytics project is an automated model training application for structured data, which can classify or predict structured data. It can be used for user profile analysis and targeted marketing, as well as predictive maintenance of manufacturing equipment based on real-time data to identify equipment faults.

@@ -39,7 +39,15 @@ Procedure
          | Description | Brief description of the model                                                                                                                                                      |
          +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   b. Select the meta model source and set related parameters. **Meta Model Source** has four options based on the scenario. For details, see :ref:`Methods of Importing a Model <modelarts_23_0052__en-us_topic_0171858287_section179419351998>`. Set **Meta Model Source** to **Container image**. For details about the parameters, see :ref:`Table 2 <modelarts_23_0206__en-us_topic_0207629477_table104931647171713>`.
+   b. Select the meta model source and set related parameters. **Meta Model Source** has four options based on the scenario. For details, see . Set **Meta Model Source** to **Container image**. For details about the parameters, see :ref:`Table 2 <modelarts_23_0206__en-us_topic_0207629477_table104931647171713>`.
+
+      .. _modelarts_23_0206__en-us_topic_0207629477_fig1439115419105:
+
+      .. figure:: /_static/images/en-us_image_0000001110761156.png
+         :alt: **Figure 1** Setting Meta Model Source to Container image
+
+
+         **Figure 1** Setting Meta Model Source to Container image
 
       .. _modelarts_23_0206__en-us_topic_0207629477_table104931647171713:
 
@@ -68,7 +76,15 @@ Procedure
       -  **Min. Inference Specs**: If your model requires certain resources to complete inference, you can configure this parameter to set the minimum specifications required for normal inference after the model is deployed as a service. In later versions, the system will allocate resources based on the inference specifications in service deployment. You can also modify the specifications as required during deployment. Note that the specifications configured here are valid only when real-time services are deployed and the dedicated resource pool is used.
       -  **Model Description**: To help other model developers better understand and use your models, provide model descriptions. Click **Add Model Description** and then set the document name and URL. A maximum of three model descriptions are supported.
 
-   d. Check the information and click **Next**. The model is imported.
+      .. _modelarts_23_0206__en-us_topic_0207629477_fig0931452413:
+
+      .. figure:: /_static/images/en-us_image_0000001157081005.png
+         :alt: **Figure 2** Setting the inference specifications and model description
+
+
+         **Figure 2** Setting the inference specifications and model description
+
+   d. Check the information and click **Create Now**. The model is imported.
 
       In the model list, you can view the imported model and its version. When the model status changes to **Normal**, the model is successfully imported. On this page, you can create new versions, quickly deploy models, publish models to the market, and perform other operations.
 

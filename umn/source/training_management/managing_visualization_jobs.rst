@@ -26,7 +26,7 @@ To ensure that the **summary** file is generated in the training result, you nee
 
 -  Using the MindSpore engine:
 
-   MindSpore allows you to save data to the **summary** log file and display the data on the GUI. For details, see the `MindSpore official website <https://www.mindspore.cn/mindinsight/docs/en/r1.3/summary_record.html>`__.
+   MindSpore allows you to save data to the **summary** log file and display the data on the GUI. For details, see the `MindSpore official website <https://www.mindspore.cn/mindinsight/docs/en/master/summary_record.html>`__.
 
 Creating a Visualization Job
 ----------------------------
@@ -40,6 +40,16 @@ Creating a Visualization Job
    -  **Training Output Path**: Select the training output path specified when the training job is created.
    -  **Auto Stop**: Enable or disable the auto stop function. The options are **1 hour later**, **2 hours later**, **4 hours later**, **6 hours later**, and **Custom**. If you select **Custom**, you can enter any integer within 1 to 24 hours in the textbox on the right.
 
+   .. _modelarts_23_0050__en-us_topic_0284258942_en-us_topic_0129633062_fig14903345401:
+
+   .. figure:: /_static/images/en-us_image_0000001110920888.png
+      :alt: **Figure 1** Creating a visualization job
+
+
+      **Figure 1** Creating a visualization job
+
+#. Click **Next**.
+
 #. After confirming the specifications, click **Next**.
 
    In the visualization job list, when the status changes to **Running**, the virtualization job has been created. You can click the name of the visualization job to view its details.
@@ -49,10 +59,18 @@ Opening a Visualization Job
 
 In the visualization job list, click the name of the target visualization job. The **TensorBoard** page is displayed. Only the visualization job in the **Running** status can be opened.
 
+.. _modelarts_23_0050__en-us_topic_0284258942_en-us_topic_0129633062_fig10383193183613:
+
+.. figure:: /_static/images/en-us_image_0000001110760988.jpg
+   :alt: **Figure 2** TensorBoard page
+
+
+   **Figure 2** TensorBoard page
+
 Running or Stopping a Visualization Job
 ---------------------------------------
 
--  **Stopping a visualization job**: In the visualization job list, click **Stop** in the **Operation** column to stop the visualization job.
+-  **Stopping a visualization job**: You can stop a running visualization job to stop billing when it is no longer needed. In the visualization job list, click **Stop** in the **Operation** column to stop the visualization job.
 -  **Running a visualization job**: You can run and use a visualization job in the **Canceled** status again. In the visualization job list, click **Run** in the **Operation** column to run the visualization job.
 
 Deleting a Visualization Job

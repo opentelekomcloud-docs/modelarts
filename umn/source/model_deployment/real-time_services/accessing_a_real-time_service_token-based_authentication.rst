@@ -21,6 +21,9 @@ Method 1: Use GUI-based Software for Inference (Postman)
 #. Set parameters on Postman. The following uses image classification as an example.
 
    -  Select a POST task and copy the API URL to the POST text box. To obtain the API URL of the real-time service, switch to the **Usage Guides** tab on the page providing details about the real-time service. On the **Headers** tab page, set **Key** to **X-Auth-Token** and **Value** to the obtained token.
+
+      For details about how to obtain a token, see `Obtaining a User Token <https://docs.otc.t-systems.com/en-us/api/iam/en-us_topic_0057845583.html>`__.
+
    -  On the **Body** tab page, file input and text input are available.
 
       -  **File input**
@@ -71,7 +74,7 @@ The command for sending inference requests can be input as a file or text.
 
    -  **-k** indicates that SSL websites can be accessed without using a security certificate.
    -  **-F** indicates file input. In this example, the parameter name is **images**, which can be changed as required. The image storage path follows **@**.
-   -  **-H** indicates the header of the POST command. **X-Auth-Token** is the **KEY** value on the **Headers** page. *Token value* indicates the obtained token. For details about how to obtain the token, see .
+   -  **-H** indicates the header of the POST command. **X-Auth-Token** is the **KEY** value on the **Headers** page. *Token value* indicates the obtained token.
    -  **POST** is followed by the API URL of the real-time service.
 
    The following is an example of the cURL command for inference with file input:

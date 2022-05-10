@@ -168,6 +168,14 @@ In addition to automatically synchronizing data from **Input Dataset Path**, you
 
    After the images are selected, their thumbnails and sizes are displayed on the **Add** page.
 
+   .. _modelarts_23_0345__en-us_topic_0000001126398947_en-us_topic_0170889731_fig84261928608:
+
+   .. figure:: /_static/images/en-us_image_0000001156920963.png
+      :alt: **Figure 4** Adding images
+
+
+      **Figure 4** Adding images
+
 #. On the **Add** page, click **OK**.
 
    The images you have added will be automatically displayed in the image list on the **Unlabeled** tab page. In addition, the images are automatically saved to the OBS directory specified by **Input Dataset Path**.

@@ -11,16 +11,7 @@ Enabling the Notebook Terminal Function
 ---------------------------------------
 
 #. In the notebook instance list, click **Open** in the **Operation** column of the target notebook instance to go to the **Jupyter Notebook** page.
-
 #. On the **Files** tab page of the Jupyter page, click **New** and select **Terminal**. The **Terminal** page is displayed.
-
-   .. _modelarts_23_0117__en-us_topic_0190535990_fig98166612210:
-
-   .. figure:: /_static/images/en-us_image_0000001110920980.png
-      :alt: **Figure 1** Going to the Terminal page
-
-
-      **Figure 1** Going to the Terminal page
 
 Switching Engine Environments on the Terminal
 ---------------------------------------------
@@ -31,10 +22,12 @@ You can switch to another AI engine environment in the terminal environment of J
 
 #. On the **Files** tab page of the Jupyter page, click **New** and select **Terminal**. The **Terminal** page is displayed.
 
-#. .. _modelarts_23_0117__en-us_topic_0190535990_fig161667313101:
+#. View **README** in the current directory to obtain your required information. For example, to switch to **TensorFlow-1.8**, run the **source /home/ma-user/anaconda3/bin/activate TensorFlow-1.8** command. To exist the environment, run the **source deactivate** command.
+
+   .. _modelarts_23_0117__en-us_topic_0190535990_fig161667313101:
 
    .. figure:: /_static/images/en-us_image_0000001110761076.png
-      :alt: **Figure 2** Output after command execution
+      :alt: **Figure 1** Output after command execution
 
 
-      **Figure 2** Output after command execution
+      **Figure 1** Output after command execution

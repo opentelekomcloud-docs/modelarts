@@ -36,9 +36,9 @@ The dataset details page displays the labeled and unlabeled audio files. The **U
 
 #. After entering the content, click **OK** to complete the labeling. The audio file is automatically moved to the **Labeled** tab page.
 
-   .. _modelarts_23_0016__en-us_topic_0170889736_fig1525911501178:
+   .. _modelarts_23_0016__en-us_topic_0170889736_fig515472935613:
 
-   .. figure:: /_static/images/en-us_image_0000001110920914.png
+   .. figure:: /_static/images/en-us_image_0000001157080861.png
       :alt: **Figure 1** Labeling an audio file
 
 
