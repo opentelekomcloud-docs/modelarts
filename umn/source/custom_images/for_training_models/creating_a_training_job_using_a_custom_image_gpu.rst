@@ -28,7 +28,7 @@ Log in to the ModelArts management console and create a training job according t
 
       .. figure:: /_static/images/en-us_image_0000001156920769.png
          :alt: **Figure 1** SWR image address
-      
+
 
          **Figure 1** SWR image address
 

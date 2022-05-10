@@ -68,16 +68,16 @@ Example Custom Policies of ModelArts
 
    .. code-block::
 
-      { 
-            "Version": "1.1", 
-            "Statement": [ 
-                  { 
-                "Effect": "Deny", 
-                        "Action": [ 
-                              "modelarts:exemlProject:delete" 
-                        ] 
-                  } 
-            ] 
+      {
+            "Version": "1.1",
+            "Statement": [
+                  {
+                "Effect": "Deny",
+                        "Action": [
+                              "modelarts:exemlProject:delete"
+                        ]
+                  }
+            ]
       }
 
 -  Example: Allowing users to use only development environments
@@ -86,21 +86,21 @@ Example Custom Policies of ModelArts
 
    .. code-block::
 
-      { 
-          "Version": "1.1", 
-          "Statement": [ 
+      {
+          "Version": "1.1",
+          "Statement": [
 
-              { 
-                  "Effect": "Allow", 
-                  "Action": [ 
-                      "modelarts:notebook:list", 
+              {
+                  "Effect": "Allow",
+                  "Action": [
+                      "modelarts:notebook:list",
                       "modelarts:notebook:create" ,
                       "modelarts:notebook:get" ,
                       "modelarts:notebook:update" ,
                       "modelarts:notebook:delete" ,
                       "modelarts:notebook:action" ,
-                      "modelarts:notebook:access" 
-                  ] 
-              } 
-          ] 
+                      "modelarts:notebook:access"
+                  ]
+              }
+          ]
       }

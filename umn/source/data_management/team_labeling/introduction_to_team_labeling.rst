@@ -20,7 +20,7 @@ How to Enable Team Labeling
 
    .. figure:: /_static/images/en-us_image_0000001157080899.png
       :alt: **Figure 1** Enabling during dataset creation
-   
+
 
       **Figure 1** Enabling during dataset creation
 
@@ -30,7 +30,7 @@ How to Enable Team Labeling
 
    .. figure:: /_static/images/en-us_image_0000001156921451.png
       :alt: **Figure 2** Creating a team labeling task in a dataset list
-   
+
 
       **Figure 2** Creating a team labeling task in a dataset list
 
@@ -38,7 +38,7 @@ How to Enable Team Labeling
 
    .. figure:: /_static/images/en-us_image_0000001110761582.png
       :alt: **Figure 3** Creating a team labeling task
-   
+
 
       **Figure 3** Creating a team labeling task
 
@@ -46,7 +46,7 @@ How to Enable Team Labeling
 
    .. figure:: /_static/images/en-us_image_0000001110761054.png
       :alt: **Figure 4** Creating a team labeling task on the dataset details page
-   
+
 
       **Figure 4** Creating a team labeling task on the dataset details page
 

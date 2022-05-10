@@ -44,7 +44,7 @@ On the dataset details page, both unlabeled and labeled video files in the datas
 
    .. figure:: /_static/images/en-us_image_0000001110761112.png
       :alt: **Figure 1** Labeling video files
-   
+
 
       **Figure 1** Labeling video files
 
@@ -56,7 +56,7 @@ On the dataset details page, both unlabeled and labeled video files in the datas
 
    .. figure:: /_static/images/en-us_image_0000001156920985.png
       :alt: **Figure 2** File labels
-   
+
 
       **Figure 2** File labels
 

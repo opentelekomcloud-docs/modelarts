@@ -177,7 +177,7 @@ Customized settings can be used in the following scenarios:
 
       .. figure:: /_static/images/en-us_image_0000001157080859.png
          :alt: **Figure 1** Traffic distribution by user
-      
+
 
          **Figure 1** Traffic distribution by user
 
@@ -210,7 +210,7 @@ Customized settings can be used in the following scenarios:
 
       .. figure:: /_static/images/en-us_image_0000001110920910.png
          :alt: **Figure 2** Using the header to access different versions
-      
+
 
          **Figure 2** Using the header to access different versions
 
@@ -224,7 +224,7 @@ Customized settings can be used in the following scenarios:
 
    .. figure:: /_static/images/en-us_image_0000001110761010.png
       :alt: **Figure 3** Customized running parameters added for a customized configuration rule
-   
+
 
       **Figure 3** Customized running parameters added for a customized configuration rule
 

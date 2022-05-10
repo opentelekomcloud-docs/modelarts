@@ -42,7 +42,7 @@ Adding Labels
 
    .. figure:: /_static/images/en-us_image_0000001156921015.png
       :alt: **Figure 1** Adding a named entity label (1)
-   
+
 
       **Figure 1** Adding a named entity label (1)
 
@@ -52,7 +52,7 @@ Adding Labels
 
    .. figure:: /_static/images/en-us_image_0000001156921017.png
       :alt: **Figure 2** Adding a named entity label (2)
-   
+
 
       **Figure 2** Adding a named entity label (2)
 

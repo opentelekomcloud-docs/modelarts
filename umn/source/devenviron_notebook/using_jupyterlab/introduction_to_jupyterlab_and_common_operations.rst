@@ -26,7 +26,7 @@ Opening JupyterLab
 
    .. figure:: /_static/images/en-us_image_0000001110920930.png
       :alt: **Figure 1** JupyterLab homepage
-   
+
 
       **Figure 1** JupyterLab homepage
 

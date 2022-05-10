@@ -69,7 +69,7 @@ The dataset details page provides the **Labeled** and **Unlabeled** tabs. The **
 
    .. figure:: /_static/images/en-us_image_0000001110920986.png
       :alt: **Figure 1** Toolbar
-   
+
 
       **Figure 1** Toolbar
 
@@ -121,7 +121,7 @@ The dataset details page provides the **Labeled** and **Unlabeled** tabs. The **
 
    .. figure:: /_static/images/en-us_image_0000001110761086.gif
       :alt: **Figure 2** Labeling an object outline
-   
+
 
       **Figure 2** Labeling an object outline
 

@@ -43,7 +43,7 @@ The dataset details page displays the labeled and unlabeled text objects in the 
 
    .. figure:: /_static/images/en-us_image_0000001110760968.png
       :alt: **Figure 1** Labeling an entity
-   
+
 
       **Figure 1** Labeling an entity
 
@@ -53,7 +53,7 @@ The dataset details page displays the labeled and unlabeled text objects in the 
 
    .. figure:: /_static/images/en-us_image_0000001110920874.png
       :alt: **Figure 2** Labeling a relationship
-   
+
 
       **Figure 2** Labeling a relationship
 

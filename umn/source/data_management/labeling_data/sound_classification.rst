@@ -76,7 +76,7 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
 
    .. figure:: /_static/images/en-us_image_0000001110761044.png
       :alt: **Figure 1** Information about all labels
-   
+
 
       **Figure 1** Information about all labels
 

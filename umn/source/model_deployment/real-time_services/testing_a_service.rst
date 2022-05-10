@@ -30,7 +30,7 @@ The input parameters displayed on the **Usage Guides** tab page depend on the mo
 
    .. figure:: /_static/images/en-us_image_0000001156920823.png
       :alt: **Figure 1** Mapping between the configuration file and Usage Guides
-   
+
 
       **Figure 1** Mapping between the configuration file and Usage Guides
 

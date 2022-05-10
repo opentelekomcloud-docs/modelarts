@@ -59,7 +59,7 @@ Testing a Service
 
       .. figure:: /_static/images/en-us_image_0000001157080853.png
          :alt: **Figure 1** Illustration for coordinates of four points of a detection box
-      
+
 
          **Figure 1** Illustration for coordinates of four points of a detection box
 

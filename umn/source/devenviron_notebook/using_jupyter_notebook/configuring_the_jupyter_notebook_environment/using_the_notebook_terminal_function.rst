@@ -18,7 +18,7 @@ Enabling the Notebook Terminal Function
 
    .. figure:: /_static/images/en-us_image_0000001110920980.png
       :alt: **Figure 1** Going to the Terminal page
-   
+
 
       **Figure 1** Going to the Terminal page
 
@@ -35,6 +35,6 @@ You can switch to another AI engine environment in the terminal environment of J
 
    .. figure:: /_static/images/en-us_image_0000001110761076.png
       :alt: **Figure 2** Output after command execution
-   
+
 
       **Figure 2** Output after command execution
