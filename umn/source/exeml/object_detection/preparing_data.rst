@@ -42,12 +42,12 @@ Requirements for Files Uploaded to OBS
 
       .. code-block::
 
-         ├─<dataset-import-path> 
-               │      IMG_20180919_114732.jpg 
-               │      IMG_20180919_114732.xml 
-               │      IMG_20180919_114745.jpg 
-               │      IMG_20180919_114745.xml 
-               │      IMG_20180919_114945.jpg 
+         ├─<dataset-import-path>
+               │      IMG_20180919_114732.jpg
+               │      IMG_20180919_114732.xml
+               │      IMG_20180919_114745.jpg
+               │      IMG_20180919_114745.xml
+               │      IMG_20180919_114945.jpg
                │      IMG_20180919_114945.xml
 
    -  Images in JPG, JPEG, PNG, and BMP formats are supported. When uploading images on the ModelArts console, ensure that the size of an image does not exceed 5 MB and the total size of images to be uploaded in one attempt does not exceed 8 MB. If the data volume is large, use OBS Browser+ to upload images.

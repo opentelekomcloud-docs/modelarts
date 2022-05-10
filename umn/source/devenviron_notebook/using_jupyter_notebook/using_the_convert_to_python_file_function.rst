@@ -19,7 +19,7 @@ After code compiling is finished, you can save the entered code as a **.py** fil
 
    .. figure:: /_static/images/en-us_image_0000001156920943.png
       :alt: **Figure 1** Convert to Python File
-   
+
 
       **Figure 1** Convert to Python File
 
@@ -29,6 +29,6 @@ After code compiling is finished, you can save the entered code as a **.py** fil
 
    .. figure:: /_static/images/en-us_image_0000001110761072.png
       :alt: **Figure 2** Setting and saving the configuration
-   
+
 
       **Figure 2** Setting and saving the configuration

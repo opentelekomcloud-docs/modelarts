@@ -79,13 +79,13 @@ The following uses object detection as an example. If a manifest file is importe
 
 .. code-block::
 
-   |-- user-specified-output-path 
-       |-- DatasetName-datasetId 
-           |-- annotation 
-               |-- VersionMame1 
-                   |-- VersionMame1.manifest 
+   |-- user-specified-output-path
+       |-- DatasetName-datasetId
+           |-- annotation
+               |-- VersionMame1
+                   |-- VersionMame1.manifest
                    |-- annotation
-                      |-- file1.xml 
+                      |-- file1.xml
                |-- VersionMame2
                    ...
                |-- ...

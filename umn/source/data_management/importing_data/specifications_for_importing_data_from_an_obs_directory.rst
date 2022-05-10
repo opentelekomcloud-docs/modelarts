@@ -26,15 +26,15 @@ Image Classification
 
       .. code-block::
 
-         dataset-import-example 
-         ├─Cat 
-         │      10.jpg 
-         │      11.jpg 
-         │      12.jpg 
-         │ 
-         └─Dog 
-                 1.jpg 
-                 2.jpg 
+         dataset-import-example
+         ├─Cat
+         │      10.jpg
+         │      11.jpg
+         │      12.jpg
+         │
+         └─Dog
+                 1.jpg
+                 2.jpg
                  3.jpg
 
    -  If **.txt** files exist in the directory, the content in the **.txt** files is used as the image label. This mode is better than the previous one.
@@ -43,18 +43,18 @@ Image Classification
 
       .. code-block::
 
-         dataset-import-example 
+         dataset-import-example
          ├─import-dir-1
          │      10.jpg
-         │      10.txt    
-         │      11.jpg 
+         │      10.txt
+         │      11.jpg
          │      11.txt
-         │      12.jpg 
+         │      12.jpg
          │      12.txt
          └─import-dir-2
-                 1.jpg 
+                 1.jpg
                  1.txt
-                 2.jpg 
+                 2.jpg
                  2.txt
 
       The following shows a label file for a single label, for example, the **1.txt** file:
@@ -85,12 +85,12 @@ Object Detection
 
    .. code-block::
 
-      ├─dataset-import-example 
-      │      IMG_20180919_114732.jpg 
-      │      IMG_20180919_114732.xml 
-      │      IMG_20180919_114745.jpg 
-      │      IMG_20180919_114745.xml 
-      │      IMG_20180919_114945.jpg 
+      ├─dataset-import-example
+      │      IMG_20180919_114732.jpg
+      │      IMG_20180919_114732.xml
+      │      IMG_20180919_114745.jpg
+      │      IMG_20180919_114745.xml
+      │      IMG_20180919_114945.jpg
       │      IMG_20180919_114945.xml
 
    A label file example is as follows:
@@ -155,12 +155,12 @@ Image Segmentation
 
    .. code-block::
 
-      ├─dataset-import-example 
-      │      IMG_20180919_114732.jpg 
-      │      IMG_20180919_114732.xml 
-      │      IMG_20180919_114745.jpg 
-      │      IMG_20180919_114745.xml 
-      │      IMG_20180919_114945.jpg 
+      ├─dataset-import-example
+      │      IMG_20180919_114732.jpg
+      │      IMG_20180919_114732.xml
+      │      IMG_20180919_114745.jpg
+      │      IMG_20180919_114745.xml
+      │      IMG_20180919_114945.jpg
       │      IMG_20180919_114945.xml
 
    A label file example is as follows:
@@ -244,7 +244,7 @@ Text classification supports two import modes.
 
       positive
       negative
-      negative 
+      negative
       positive
 
    The data format requires users to store labeled objects and their label files (in one-to-one relationship with the labeled objects) in the same directory. For example, if the name of the labeled object file is **COMMENTS_20180919_114745.txt**, the name of the label file must be **COMMENTS \_20180919_114745_result.txt**.
@@ -253,12 +253,12 @@ Text classification supports two import modes.
 
    .. code-block::
 
-      ├─dataset-import-example 
-      │      COMMENTS_20180919_114732.txt 
-      │      COMMENTS _20180919_114732_result.txt 
-      │      COMMENTS _20180919_114745.txt 
-      │      COMMENTS _20180919_114745_result.txt 
-      │      COMMENTS _20180919_114945.txt 
+      ├─dataset-import-example
+      │      COMMENTS_20180919_114732.txt
+      │      COMMENTS _20180919_114732_result.txt
+      │      COMMENTS _20180919_114745.txt
+      │      COMMENTS _20180919_114745_result.txt
+      │      COMMENTS _20180919_114945.txt
       │      COMMENTS _20180919_114945_result.txt
 
 .. _modelarts_23_0008__en-us_topic_0170886816_section1683314458578:
@@ -272,15 +272,15 @@ Example:
 
 .. code-block::
 
-   dataset-import-example 
-   ├─Cat 
-   │      10.wav 
-   │      11.wav 
-   │      12.wav 
-   │ 
-   └─Dog 
-           1.wav 
-           2.wav 
+   dataset-import-example
+   ├─Cat
+   │      10.wav
+   │      11.wav
+   │      12.wav
+   │
+   └─Dog
+           1.wav
+           2.wav
            3.wav
 
 .. _modelarts_23_0008__en-us_topic_0170886816_section1171862514918:
@@ -302,8 +302,8 @@ Import description:
 
    .. code-block::
 
-      ├─dataset-import-example 
-      │      table_import_1.csv 
+      ├─dataset-import-example
+      │      table_import_1.csv
       │      table_import_2.csv
       │      table_import_3.csv
       │      table_import_4.csv

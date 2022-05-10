@@ -30,7 +30,7 @@ Creating a Notebook Instance
 
       .. figure:: /_static/images/en-us_image_0000001156920885.png
          :alt: **Figure 1** Basic information about a notebook instance
-      
+
 
          **Figure 1** Basic information about a notebook instance
 

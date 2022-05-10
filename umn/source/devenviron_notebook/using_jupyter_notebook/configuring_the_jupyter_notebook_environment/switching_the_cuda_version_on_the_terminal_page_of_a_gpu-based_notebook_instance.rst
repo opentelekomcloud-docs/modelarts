@@ -29,6 +29,6 @@ CPU-based notebook instances do not use CUDA. Therefore, the following operation
 
    .. figure:: /_static/images/en-us_image_0000001156920929.png
       :alt: **Figure 1** Example of switching the CUDA version
-   
+
 
       **Figure 1** Example of switching the CUDA version

@@ -139,7 +139,7 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
 
       .. figure:: /_static/images/en-us_image_0000001157080933.png
          :alt: **Figure 1** Editing an object detection label
-      
+
 
          **Figure 1** Editing an object detection label
 
@@ -154,7 +154,7 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
 
    .. figure:: /_static/images/en-us_image_0000001157080935.png
       :alt: **Figure 2** All labels for object detection
-   
+
 
       **Figure 2** All labels for object detection
 

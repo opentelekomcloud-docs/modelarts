@@ -42,33 +42,33 @@ Example Policies
 
    .. code-block::
 
-      { 
-            "Version": "1.1", 
-            "Statement": [ 
-                  { 
-                "Effect": "Deny", 
-                        "Action": [ 
-                              "modelarts:exemlProject:delete" 
-                        ] 
-                  } 
-            ] 
+      {
+            "Version": "1.1",
+            "Statement": [
+                  {
+                "Effect": "Deny",
+                        "Action": [
+                              "modelarts:exemlProject:delete"
+                        ]
+                  }
+            ]
       }
 
 -  A policy can define multiple permissions, such as the permissions to delete an ExeML version and an ExeML project.
 
    .. code-block::
 
-      { 
-          "Version": "1.1", 
-          "Statement": [ 
-              { 
-                  "Effect": "Allow", 
-                  "Action": [ 
-                      "modelarts:exemlProjectVersion:delete", 
-                      "modelarts:exemlProject:delete" 
-                  ] 
-              } 
-          ] 
+      {
+          "Version": "1.1",
+          "Statement": [
+              {
+                  "Effect": "Allow",
+                  "Action": [
+                      "modelarts:exemlProjectVersion:delete",
+                      "modelarts:exemlProject:delete"
+                  ]
+              }
+          ]
       }
 
 Authentication Logic
