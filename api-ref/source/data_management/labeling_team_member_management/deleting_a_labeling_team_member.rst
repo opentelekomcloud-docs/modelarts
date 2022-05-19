@@ -15,7 +15,7 @@ URI
 
 DELETE /v2/{project_id}/workforces/{workforce_id}/workers/{worker_id}
 
-.. table:: **Table 1** Path parameters
+.. table:: **Table 1** Path Parameters
 
    +--------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
    | Parameter    | Mandatory | Type   | Description                                                                                                        |

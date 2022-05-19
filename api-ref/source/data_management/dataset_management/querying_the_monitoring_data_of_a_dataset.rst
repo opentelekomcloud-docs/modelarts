@@ -15,7 +15,7 @@ URI
 
 GET /v2/{project_id}/datasets/{dataset_id}/metrics
 
-.. table:: **Table 1** Path parameters
+.. table:: **Table 1** Path Parameters
 
    +------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
    | Parameter  | Mandatory | Type   | Description                                                                                                        |
@@ -25,7 +25,7 @@ GET /v2/{project_id}/datasets/{dataset_id}/metrics
    | project_id | Yes       | String | Project ID. For details about how to obtain the project ID, see :ref:`Obtaining a Project ID <modelarts_03_0147>`. |
    +------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
 
-.. table:: **Table 2** Query parameters
+.. table:: **Table 2** Query Parameters
 
    +-------------------+-----------+--------+-------------------------------------------+
    | Parameter         | Mandatory | Type   | Description                               |

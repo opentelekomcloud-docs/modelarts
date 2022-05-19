@@ -23,13 +23,13 @@ POST /v1/{project_id}/training-jobs/{job_id}/versions
 
 .. table:: **Table 1** Parameters
 
-   +------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------+
-   | Parameter  | Mandatory | Type   | Description                                                                                                                 |
-   +============+===========+========+=============================================================================================================================+
-   | project_id | Yes       | String | Project ID. For details about how to obtain the project ID, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`. |
-   +------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------+
-   | job_id     | Yes       | Long   | ID of a training job                                                                                                        |
-   +------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------+
+   +------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
+   | Parameter  | Mandatory | Type   | Description                                                                                                        |
+   +============+===========+========+====================================================================================================================+
+   | project_id | Yes       | String | Project ID. For details about how to obtain the project ID, see :ref:`Obtaining a Project ID <modelarts_03_0147>`. |
+   +------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
+   | job_id     | Yes       | Long   | ID of a training job                                                                                               |
+   +------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
 
 Request Body
 ------------
@@ -40,13 +40,15 @@ Request Body
 
 .. table:: **Table 2** Request parameters
 
-   +-----------+-----------+--------+------------------------------------------------------------------------------------------------------------------------+
-   | Parameter | Mandatory | Type   | Description                                                                                                            |
-   +===========+===========+========+========================================================================================================================+
-   | job_desc  | No        | String | Description of a training job. The value is a string of 0 to 256 characters. By default, this parameter is left blank. |
-   +-----------+-----------+--------+------------------------------------------------------------------------------------------------------------------------+
-   | config    | Yes       | JSON   | Parameters for creating a training job                                                                                 |
-   +-----------+-----------+--------+------------------------------------------------------------------------------------------------------------------------+
+   +-----------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter | Mandatory | Type   | Description                                                                                                                             |
+   +===========+===========+========+=========================================================================================================================================+
+   | job_desc  | No        | String | Description of a training job. The value must contain 0 to 256 characters. By default, this parameter is left blank.                    |
+   +-----------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------------------+
+   | config    | Yes       | Object | Parameters for creating a training job For details, see :ref:`Table 3 <modelarts_03_0050__en-us_topic_0131276316_table24411850104213>`. |
+   +-----------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------------------+
+
+.. _modelarts_03_0050__en-us_topic_0131276316_table24411850104213:
 
 .. table:: **Table 3** **config** parameters
 
@@ -61,11 +63,11 @@ Request Body
    +--------------------+-----------+---------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | parameter          | No        | Array<Object> | Running parameters of a training job. It is a collection of label-value pairs. For details, see the sample request. This parameter is a container environment variable when a training job uses a custom image. For details, see :ref:`Table 5 <modelarts_03_0050__en-us_topic_0131276316_table1267642234716>`. |
    +--------------------+-----------+---------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | data_url           | Yes       | String        | OBS URL of the dataset required by a training job. By default, this parameter is left blank. For example, **/usr/data/**. This parameter cannot be used together with **data_source** or **dataset_id** and **dataset_version_id**. However, one of the parameters must exist.                                  |
+   | data_url           | No        | String        | OBS URL of the dataset required by a training job. By default, this parameter is left blank. For example, **/usr/data/**. This parameter cannot be used together with **data_source** or **dataset_id** and **dataset_version_id**. However, one of the parameters must exist.                                  |
    +--------------------+-----------+---------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | dataset_id         | Yes       | String        | Dataset ID of a training job. This parameter must be used together with **dataset_version_id**, but cannot be used together with **data_url** or **data_source**.                                                                                                                                               |
+   | dataset_id         | No        | String        | Dataset ID of a training job. This parameter must be used together with **dataset_version_id**, but cannot be used together with **data_url** or **data_source**.                                                                                                                                               |
    +--------------------+-----------+---------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | dataset_version_id | Yes       | String        | Dataset version ID of a training job. This parameter must be used together with **dataset_id**, but cannot be used together with **data_url** or **data_source**.                                                                                                                                               |
+   | dataset_version_id | No        | String        | Dataset version ID of a training job. This parameter must be used together with **dataset_id**, but cannot be used together with **data_url** or **data_source**.                                                                                                                                               |
    +--------------------+-----------+---------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | data_source        | No        | JSON Array    | Dataset of a training job. This parameter cannot be used with **data_url**, **dataset_id**, or **dataset_version_id**. For details, see :ref:`Table 4 <modelarts_03_0050__en-us_topic_0131276316_table8406183645819>`.                                                                                          |
    +--------------------+-----------+---------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -93,13 +95,13 @@ Request Body
    +-----------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter       | Mandatory | Type   | Description                                                                                                                                    |
    +=================+===========+========+================================================================================================================================================+
-   | dataset_id      | Yes       | String | Dataset ID of a training job. This parameter must be used together with **dataset_version_id**, but cannot be used together with **data_url**. |
+   | dataset_id      | No        | String | Dataset ID of a training job. This parameter must be used together with **dataset_version_id**, but cannot be used together with **data_url**. |
    +-----------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------+
-   | dataset_version | Yes       | String | Dataset version ID of a training job. This parameter must be used together with **dataset_id**, but cannot be used together with **data_url**. |
+   | dataset_version | No        | String | Dataset version ID of a training job. This parameter must be used together with **dataset_id**, but cannot be used together with **data_url**. |
    +-----------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------+
-   | type            | Yes       | String | Dataset type. The value can be **obs** or **dataset**. **obs** and **dataset** cannot be used at the same time.                                |
+   | type            | No        | String | Dataset type. The value can be **obs** or **dataset**. **obs** and **dataset** cannot be used at the same time.                                |
    +-----------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------+
-   | data_url        | Yes       | String | OBS bucket path. This parameter cannot be used together with **dataset_id** or **dataset_version**.                                            |
+   | data_url        | No        | String | OBS bucket path. This parameter cannot be used together with **dataset_id** or **dataset_version**.                                            |
    +-----------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. _modelarts_03_0050__en-us_topic_0131276316_table1267642234716:
@@ -210,3 +212,8 @@ Status Code
 -----------
 
 For details about the status code, see :ref:`Status Code <modelarts_03_0094>`.
+
+Error Codes
+-----------
+
+See :ref:`Error Codes <modelarts_03_0095>`.

@@ -23,7 +23,7 @@ Basic Concepts
 
    .. _modelarts_03_0143__en-us_topic_0171316292_en-us_topic_0170640577_en-us_topic_0169294976_fig1189614168311:
 
-   .. figure:: /_static/images/en-us_image_0171392261.gif
+   .. figure:: /_static/images/en-us_image_0000001254415793.gif
       :alt: **Figure 1** Project isolation model
 
 

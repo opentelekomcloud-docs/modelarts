@@ -19,6 +19,3 @@ Training Jobs
    obtaining_the_name_of_a_training_job_log_file
    querying_a_built-in_algorithm
    querying_training_job_logs
-   querying_monitoring_information_about_a_single_container_of_a_job
-   querying_monitoring_information_about_resource_pool_nodes
-   querying_the_statuses_and_gpu_quantity_of_all_job_versions

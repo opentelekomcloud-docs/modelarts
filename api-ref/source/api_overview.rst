@@ -14,10 +14,10 @@ Data Management APIs
 
 Data management APIs include the APIs for managing datasets, dataset versions, samples, and labels. Use these APIs to create datasets and label data. For details, see :ref:`Data Management APIs <modelarts_03_0299>`.
 
-Development Environment APIs
-----------------------------
+DevEnviron APIs
+---------------
 
-.. table:: **Table 1** Development environment APIs
+.. table:: **Table 1** DevEnviron APIs
 
    +--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
    | API                                                                                        | Description                                                                |
@@ -26,7 +26,7 @@ Development Environment APIs
    +--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
    | :ref:`Querying a List of Development Environment Instances <modelarts_03_0111>`            | Query the development environment instances that meet the search criteria. |
    +--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
-   | :ref:`Querying the Details About a Development Environment Instance <modelarts_03_0112>`   | Query the details about a development environment instance.                |
+   | :ref:`Querying Details About a Development Environment Instance <modelarts_03_0112>`       | Query the details about a development environment instance.                |
    +--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
    | :ref:`Modifying the Description of a Development Environment Instance <modelarts_03_0113>` | Modify the description of a development environment instance.              |
    +--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
@@ -140,6 +140,8 @@ Service Management APIs
    | :ref:`Deleting a Service <modelarts_03_0089>`                                   | Delete a model service.                                                                                                      |
    +---------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Querying Supported Service Deployment Specifications <modelarts_03_0200>` | Query supported service deployment specifications.                                                                           |
+   +---------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Querying Dedicated Resource Pools <modelarts_03_0201>`                    | Query dedicated resource pools.                                                                                              |
    +---------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
 
 Authorization Management APIs

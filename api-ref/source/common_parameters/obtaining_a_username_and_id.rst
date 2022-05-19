@@ -9,13 +9,13 @@ When you call APIs, certain requests require the username and ID. To obtain a us
 
 #. Log in to the management console after registration.
 
-#. In the upper right corner, click your account avatar icon and choose **My Settings** from the drop-down list.
+#. Hover the cursor on the username and choose **My Credentials** from the drop-down list.
 
-   On the **My Settings** page, view the username and ID.
+   On the **My Credentials** page, view the username and ID.
 
-   .. _modelarts_03_0006__en-us_topic_0000001124853294_fig173616433916:
+   .. _modelarts_03_0006__fig106591844293:
 
-   .. figure:: /_static/images/en-us_image_0000001126895190.png
+   .. figure:: /_static/images/en-us_image_0000001298629861.png
       :alt: **Figure 1** Viewing the username and ID
 
 

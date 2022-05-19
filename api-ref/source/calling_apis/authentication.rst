@@ -49,7 +49,7 @@ In :ref:`Making an API Request <modelarts_03_0005>`, the process of calling the 
 
 After a token is obtained, the **X-Auth-Token** header field must be added to requests to specify the token when calling other APIs. For example, if the token is **ABCDEFJ....**, **X-Auth-Token: ABCDEFJ....** can be added to a request as follows:
 
-.. code-block::
+.. code-block:: text
 
    POST https://{endpoint}/v1/{project_id}/services
    Content-Type: application/json
@@ -70,6 +70,10 @@ The following uses a demo project to show how to sign a request and use an HTTP 
 
 Download the demo project at https://github.com/api-gate-way/SdkDemo.
 
+.. note::
+
+   ModelArts is a regional service. Specify the project ID when calling the API. Therefore, before running the demo project, add the project ID (**X-Project-Id**) in line 110 of access() in **AccessServicelmpl.java**. For details about how to obtain a project ID, see :ref:`Obtaining a Project ID <modelarts_03_0147>`.
+
 If you do not need the demo project, visit the following URL to download the API Gateway signing SDK:
 
 Obtain the API Gateway signing SDK from the enterprise administrator.
@@ -80,17 +84,9 @@ Decompress the downloaded package and reference the obtained JAR files as depend
 
 #. Generate an AK/SK. (If an AK/SK file has already been obtained, skip this step and locate the downloaded AK/SK file. Generally, the file name will be **credentials.csv**.)
 
-   a. Log in to ManageOne Operation Portal.
-   b. In the upper right corner of the page, click your account avatar and choose **My Settings** from the drop-down list.
-   c. On the **My Settings** page, the **Project List** tab page is displayed by default. Click the **Manage Access Key** tab page.
-   d. Click **Add Access Key** to create an AK/SK pair.
-   e. Click **OK**. The certificate is automatically downloaded.
-   f. After the certificate is downloaded, obtain the AK and SK information from the **credentials** file.
-
-      .. important::
-
-         -  Only two access keys can be added for each user.
-         -  To ensure access key security, access keys are automatically downloaded only when they are generated for the first time and cannot be obtained from the management console later. Keep them properly.
+   a. Log in to the console, enter the **My Credentials** page, and choose **Access Keys** > **Create Access Key**.
+   b. In the **Create Access Key** dialog box that is displayed, use the login password for verification.
+   c. Click **OK**, open the **credentials.csv** file, and save the key file as prompted. The access key file is saved in the default downloads folder of the browser. Then, the access key (**Access Key Id** and **Secret Access Key**) is obtained.
 
 #. Download and decompress the demo project.
 
@@ -100,7 +96,7 @@ Decompress the downloaded package and reference the obtained JAR files as depend
 
    .. _modelarts_03_0004__en-us_topic_0129435566_fig10881944183710:
 
-   .. figure:: /_static/images/en-us_image_0150917346.gif
+   .. figure:: /_static/images/en-us_image_0000001209775802.gif
       :alt: **Figure 1** Selecting Existing Projects into Workspace
 
 
@@ -108,7 +104,7 @@ Decompress the downloaded package and reference the obtained JAR files as depend
 
    .. _modelarts_03_0004__en-us_topic_0129435566_fig15961458113717:
 
-   .. figure:: /_static/images/en-us_image_0150917350.gif
+   .. figure:: /_static/images/en-us_image_0000001254535753.gif
       :alt: **Figure 2** Selecting the demo project
 
 
@@ -116,7 +112,7 @@ Decompress the downloaded package and reference the obtained JAR files as depend
 
    .. _modelarts_03_0004__en-us_topic_0129435566_fig74501929113815:
 
-   .. figure:: /_static/images/en-us_image_0150917353.gif
+   .. figure:: /_static/images/en-us_image_0000001254215795.gif
       :alt: **Figure 3** Structure of the demo project
 
 
@@ -146,7 +142,7 @@ Decompress the downloaded package and reference the obtained JAR files as depend
 
    b. Edit the **main()** method in the Demo.java file, and replace the bold text with actual values.
 
-      As shown in the following code, if you use other methods such as POST, PUT, and DELETE, see the corresponding comment. Replace the values of **region**, **serviceName**, **ak**, **sk**, and **url**. The URL for obtaining the VPC is used in the sample project. Replace it with the actual URL. Contact the administrator to obtain the endpoint.
+      As shown in the following code, if you use other methods such as POST, PUT, and DELETE, see the corresponding comment. Replace the values of **region**, **serviceName**, **ak**, **sk**, and **url**. The URL for obtaining the VPC is used in the sample project. Replace it with the actual URL. Contact the system administrator to obtain the endpoint.
 
       .. code-block::
 
@@ -195,5 +191,5 @@ Decompress the downloaded package and reference the obtained JAR files as depend
 
       You can view the API call logs on the console.
 
-.. |image1| image:: /_static/images/en-us_image_0150916848.gif
+.. |image1| image:: /_static/images/en-us_image_0000001209615816.gif
 
