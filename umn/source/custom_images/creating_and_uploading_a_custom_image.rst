@@ -24,6 +24,6 @@ Creating and Uploading a Custom Image
 
 #. Purchase a cloud server or use a local host to set up the Docker environment.
 #. Obtain the basic image from the local environment.
-#. Compile a Dockerfile based on your requirements to build a custom image. For details about how to efficiently compile a Dockerfile, see *SoftWare Repository for Container Best Practices*.
+#. Compile a Dockerfile based on your requirements to build a custom image. For details about how to efficiently compile a Dockerfile, see .
 
-4. After customizing an image, upload the image to SWR by referring to "Uploading an Image Through a Docker Client" in *Software Repository for Container User Guide*.
+4. After customizing an image, upload the image to SWR by referring to .

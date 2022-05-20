@@ -20,19 +20,25 @@ Input Parameters
 
 For the service that you have deployed, you can learn about its input parameters of the service, that is, the input request type mentioned above, on the **Usage Guides** tab page of the service details page.
 
-The input parameters displayed on the **Usage Guides** tab page depend on the model source that you select.
+.. _modelarts_23_0062__en-us_topic_0165025306_fig1572694782018:
 
--  If your model comes from ExeML or a built-in algorithm, the input and output parameters are defined by ModelArts. For details, see the **Usage Guides** tab page. On the **Prediction** tab page, enter the corresponding JSON text or file for service testing.
+.. figure:: /_static/images/en-us_image_0000001234603134.png
+   :alt: **Figure 1** Viewing the Usage Guides tab page
+
+
+   **Figure 1** Viewing the Usage Guides tab page
+
+The input parameters displayed on the **Usage Guides** tab page depend on the model source that you select.
 
 -  If you use a custom model with the inference code and configuration file compiled by yourself (:ref:`Specifications for Compiling the Model Configuration File <modelarts_23_0092>`), the **Usage Guides** tab page only visualizes your data. The following figure shows the mapping between the input parameters displayed on the **Usage Guides** tab page and the configuration file.
 
-   .. _modelarts_23_0062__en-us_topic_0165025306_fig668522620125:
+   .. _modelarts_23_0062__en-us_topic_0165025306_fig490445912554:
 
-   .. figure:: /_static/images/en-us_image_0000001156920823.png
-      :alt: **Figure 1** Mapping between the configuration file and Usage Guides
+   .. figure:: /_static/images/en-us_image_0000001157080793.png
+      :alt: **Figure 2** Mapping between the configuration file and Usage Guides
 
 
-      **Figure 1** Mapping between the configuration file and Usage Guides
+      **Figure 2** Mapping between the configuration file and Usage Guides
 
 -  If your model is imported using a model template, the input and output parameters vary with the template. For details, see :ref:`Introduction to Model Templates <modelarts_23_0098>`.
 
@@ -42,7 +48,16 @@ JSON Text Prediction
 --------------------
 
 #. Log in to the ModelArts management console and choose **Service Deployment** > **Real-Time Services**.
+
 #. On the **Real-Time Services** page, click the name of the target service. The service details page is displayed. On the **Prediction** tab page, enter the prediction code and click **Predict** to perform prediction.
+
+   .. _modelarts_23_0062__en-us_topic_0165025306_fig5888151295414:
+
+   .. figure:: /_static/images/en-us_image_0000001157080799.png
+      :alt: **Figure 3** Prediction code
+
+
+      **Figure 3** Prediction code
 
 .. _modelarts_23_0062__en-us_topic_0165025306_section1666533761611:
 
@@ -50,4 +65,13 @@ File Prediction (Images and Audios)
 -----------------------------------
 
 #. Log in to the ModelArts management console and choose **Service Deployment** > **Real-Time Services**.
+
 #. On the **Real-Time Services** page, click the name of the target service. The service details page is displayed. On the **Prediction** tab page, click **Upload** and select a test file. After the file is uploaded successfully, click **Predict** to perform a prediction test.
+
+   .. _modelarts_23_0062__fig1890161215152:
+
+   .. figure:: /_static/images/en-us_image_0000001165916474.png
+      :alt: **Figure 4** Image prediction
+
+
+      **Figure 4** Image prediction

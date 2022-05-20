@@ -10,13 +10,21 @@ Because the configurations of models with the same functions are similar, ModelA
 Using a Template
 ----------------
 
-The following uses the template described in :ref:`TensorFlow-py36 General Template <modelarts_23_0162>` as an example. Upload the TensorFlow model package to OBS before using the template. Store the model files in the **model** directory. When creating a model using this template, you need to select the **model** directory.
+The following uses the template described in as an example. Upload the TensorFlow model package to OBS before using the template. Store the model files in the **model** directory. When creating a model using this template, you need to select the **model** directory.
 
 #. On the **Import Model** page, set **Meta Model Source** to **Template**.
 
-#. In the **Template** area, select **TensorFlow-py36 general template**.
+#. In the **Template** area, select .
 
    ModelArts also provides three filter criteria: **Type**, **Engine**, and **Environment**, helping you quickly find the desired template. If the three filter criteria cannot meet your requirements, you can enter keywords to search for the target template.
+
+   .. _modelarts_23_0098__en-us_topic_0172873520_fig1120624113509:
+
+   .. figure:: /_static/images/en-us_image_0000001278010777.png
+      :alt: **Figure 1** Selecting a template
+
+
+      **Figure 1** Selecting a template
 
 #. For **Model Folder**, select the **model** directory where the model files reside. For details, see :ref:`Template Description <modelarts_23_0118>`.
 
@@ -33,11 +41,16 @@ The following uses the template described in :ref:`TensorFlow-py36 General Templ
 Supported Templates
 -------------------
 
+-  :ref:`TensorFlow-py27 General Template <modelarts_23_0161>`
 -  :ref:`TensorFlow-py36 General Template <modelarts_23_0162>`
--  :ref:`MXNet-py36 General Template <modelarts_23_0164>`
--  :ref:`PyTorch-py36 General Template <modelarts_23_0166>`
--  :ref:`Caffe-CPU-py36 General Template <modelarts_23_0169>`
--  :ref:`Caffe-GPU-py36 General Template <modelarts_23_0170>`
+-  :ref:`MXNet-py27 General Template <modelarts_23_0163>`
+-  :ref:`MXNet-py37 General Template <modelarts_23_0164>`
+-  :ref:`PyTorch-py27 General Template <modelarts_23_0165>`
+-  :ref:`PyTorch-py37 General Template <modelarts_23_0166>`
+-  :ref:`Caffe-CPU-py27 General Template <modelarts_23_0167>`
+-  :ref:`Caffe-GPU-py27 General Template <modelarts_23_0168>`
+-  :ref:`Caffe-CPU-py37 General Template <modelarts_23_0169>`
+-  :ref:`Caffe-CPU-py37 General Template <modelarts_23_0169>`
 
 .. _modelarts_23_0098__en-us_topic_0172873520_section737759781:
 

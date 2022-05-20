@@ -8,7 +8,7 @@ Starting or Stopping a Service
 Starting a Service
 ------------------
 
-You can start services in the **Successful**, **Abnormal**, or **Stopped** status. Services in the **Deploying** status cannot be started. You can start a service in either of the following ways:
+You can start services in the **Successful**, **Abnormal**, or **Stopped** status. Services in the **Deploying** status cannot be started. A service is billed when it is started and in the **Running** state.You can start a service in either of the following ways:
 
 #. Log in to the ModelArts management console and choose **Service Deployment** from the left navigation pane. Go to the service management page of the target service. Click **Start** in the **Operation** column to start the target service.
 #. Log in to the ModelArts management console and choose **Service Deployment** from the left navigation pane. Go to the service management page of the target service. Click the name of the target service. The service details page is displayed. Click **Start** in the upper right corner of the page to start the service.

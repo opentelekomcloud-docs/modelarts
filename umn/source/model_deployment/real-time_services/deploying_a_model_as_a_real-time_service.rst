@@ -9,7 +9,7 @@ After a model is prepared, you can deploy the model as a real-time service and p
 
 .. note::
 
-   A maximum of 20 real-time services can be deployed by a user.
+   A maximum of one real-time service can be deployed.
 
 Prerequisites
 -------------
@@ -42,6 +42,14 @@ Procedure
          +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
          | Description                       | Brief description of the real-time service.                                                                                                                                                                    |
          +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+      .. _modelarts_23_0060__en-us_topic_0165025304_fig1173181111421:
+
+      .. figure:: /_static/images/en-us_image_0000001233970662.png
+         :alt: **Figure 1** Basic information about deploying a model as a real-time service
+
+
+         **Figure 1** Basic information about deploying a model as a real-time service
 
    b. Enter key information including the resource pool and model configurations. For details, see :ref:`Table 2 <modelarts_23_0060__en-us_topic_0165025304_table10352134481117>`.
 
@@ -83,25 +91,19 @@ Procedure
 
       .. table:: **Table 3** Supported specifications
 
-         +------------------------------------------------+-------------------------------------------------------------------------------------------+
-         | Specifications                                 | Description                                                                               |
-         +================================================+===========================================================================================+
-         | ExeML specifications (CPU)                     | Only be used by models trained in ExeML projects.                                         |
-         |                                                |                                                                                           |
-         | ExeML specifications (GPU)                     |                                                                                           |
-         +------------------------------------------------+-------------------------------------------------------------------------------------------+
-         | CPU: 2 vCPUs \| 8 GiB                          | Suitable for models with only CPU loads.                                                  |
-         +------------------------------------------------+-------------------------------------------------------------------------------------------+
-         | CPU: 8 vCPUs \| 64 GiB GPU: 1 x V100           | Suitable for running GPU models.                                                          |
-         +------------------------------------------------+-------------------------------------------------------------------------------------------+
-         | CPU: 8 vCPUs \| 32 GiB GPU: 1 x T4             | Suitable for models requiring CPU and GPU (NVIDIA T4) resources.                          |
-         +------------------------------------------------+-------------------------------------------------------------------------------------------+
-         | Arm: 3 vCPUs \| 6 GiB Ascend: 1 x Ascend 310   | Carrying one Ascend 310 chip, suitable for models requiring Ascend 310 chip resources.    |
-         +------------------------------------------------+-------------------------------------------------------------------------------------------+
-         | Ascend: 1 x Ascend 910 CPU: 24 vCPUs \| 96 GiB | Carrying one Ascend 910 chip, suitable for models requiring Ascend 910 chip resources.    |
-         +------------------------------------------------+-------------------------------------------------------------------------------------------+
-         | Ascend: 8 Ascend 910 CPU: 192 vCPUs \| 720 GiB | Carrying eight Ascend 910 chips, suitable for models requiring Ascend 910 chip resources. |
-         +------------------------------------------------+-------------------------------------------------------------------------------------------+
+         ==================================== ================================
+         Specifications                       Description
+         ==================================== ================================
+         CPU: 8 vCPUs \| 64 GiB GPU: 1 x V100 Suitable for running GPU models.
+         ==================================== ================================
+
+      .. _modelarts_23_0060__en-us_topic_0165025304_fig13702918114313:
+
+      .. figure:: /_static/images/en-us_image_0000001234129978.png
+         :alt: **Figure 2** Setting model information
+
+
+         **Figure 2** Setting model information
 
 #. After confirming the entered information, complete service deployment as prompted. Generally, service deployment jobs run for a period of time, which may be several minutes or tens of minutes depending on the amount of your selected data and resources.
 

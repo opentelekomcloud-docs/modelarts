@@ -31,29 +31,27 @@ ModelArts supports the following AI engines and versions.
 
 .. table:: **Table 1** AI engines supported by training jobs
 
-   +-----------------------+----------------+---------------------+----------------+-----------------------------------+----------------------------------+
-   | Environment           | Supported Chip | System Architecture | System Version | AI Engine and Version             | Supported CUDA or Ascend Version |
-   +=======================+================+=====================+================+===================================+==================================+
-   | TensorFlow            | CPU and GPU    | x86_64              | Ubuntu 16.04   | TF-1.13.1-python3.6               | CUDA 10.0                        |
-   +-----------------------+----------------+---------------------+----------------+-----------------------------------+----------------------------------+
-   |                       |                |                     |                | TF-2.1.0-python3.6                | CUDA 10.1                        |
-   +-----------------------+----------------+---------------------+----------------+-----------------------------------+----------------------------------+
-   | Caffe                 | CPU and GPU    | x86_64              | Ubuntu 16.04   | Caffe-1.0.0-python2.7             | CUDA 8.0                         |
-   +-----------------------+----------------+---------------------+----------------+-----------------------------------+----------------------------------+
-   | Spark_MLlib           | CPU            | x86_64              | Ubuntu 16.04   | Spark-2.3.2-python3.6             | N/A                              |
-   +-----------------------+----------------+---------------------+----------------+-----------------------------------+----------------------------------+
-   | XGBoost-Sklearn       | CPU            | x86_64              | Ubuntu 16.04   | Scikit_Learn-0.18.1-python3.6     | N/A                              |
-   +-----------------------+----------------+---------------------+----------------+-----------------------------------+----------------------------------+
-   | PyTorch               | CPU and GPU    | x86_64              | Ubuntu 16.04   | PyTorch-1.3.0-python3.6           | CUDA 10.0                        |
-   +-----------------------+----------------+---------------------+----------------+-----------------------------------+----------------------------------+
-   |                       |                |                     |                | PyTorch-1.4.0-python3.6           | CUDA 10.1                        |
-   +-----------------------+----------------+---------------------+----------------+-----------------------------------+----------------------------------+
-   | Ascend-Powered-Engine | Ascend 910     | AArch64             | EulerOS 2.8    | Mindspore-1.1.1-python3.7-aarch64 | C76                              |
-   +-----------------------+----------------+---------------------+----------------+-----------------------------------+----------------------------------+
-   |                       |                |                     |                | TF-1.15-python3.7-aarch64         | C76                              |
-   +-----------------------+----------------+---------------------+----------------+-----------------------------------+----------------------------------+
-   | MindSpore-GPU         | CPU and GPU    | x86_64              | Ubuntu 18.04   | MindSpore-1.1.0-python3.7         | CUDA 10.1                        |
-   +-----------------------+----------------+---------------------+----------------+-----------------------------------+----------------------------------+
+   +-----------------+----------------+---------------------+----------------+-------------------------------+----------------------------------+
+   | Environment     | Supported Chip | System Architecture | System Version | AI Engine and Version         | Supported CUDA or Ascend Version |
+   +=================+================+=====================+================+===============================+==================================+
+   | TensorFlow      | CPU and GPU    | x86_64              | Ubuntu 16.04   | TF-1.13.1-python3.6           | CUDA 10.0                        |
+   +-----------------+----------------+---------------------+----------------+-------------------------------+----------------------------------+
+   |                 |                |                     |                | TF-1.8.0-python3.6            | CUDA 9.0                         |
+   +-----------------+----------------+---------------------+----------------+-------------------------------+----------------------------------+
+   |                 |                |                     |                | TF-2.1.0-python3.6            | CUDA 10.1                        |
+   +-----------------+----------------+---------------------+----------------+-------------------------------+----------------------------------+
+   | Caffe           | CPU and GPU    | x86_64              | Ubuntu 16.04   | Caffe-1.0.0-python2.7         | CUDA 8.0                         |
+   +-----------------+----------------+---------------------+----------------+-------------------------------+----------------------------------+
+   | Spark_MLlib     | CPU            | x86_64              | Ubuntu 16.04   | Spark-2.3.2-python3.6         | N/A                              |
+   +-----------------+----------------+---------------------+----------------+-------------------------------+----------------------------------+
+   | XGBoost-Sklearn | CPU            | x86_64              | Ubuntu 16.04   | Scikit_Learn-0.18.1-python3.6 | N/A                              |
+   +-----------------+----------------+---------------------+----------------+-------------------------------+----------------------------------+
+   | PyTorch         | CPU and GPU    | x86_64              | Ubuntu 16.04   | PyTorch-1.3.0-python3.6       | CUDA 10.0                        |
+   +-----------------+----------------+---------------------+----------------+-------------------------------+----------------------------------+
+   |                 |                |                     |                | PyTorch-1.0.0-python3.6       | CUDA 9.0                         |
+   +-----------------+----------------+---------------------+----------------+-------------------------------+----------------------------------+
+   | MXNet           | CPU/GPU        | x86_64              | Ubuntu16.04    | MXNet-1.2.1-python3.6         | CUDA 9.0                         |
+   +-----------------+----------------+---------------------+----------------+-------------------------------+----------------------------------+
 
 Creating a Training Job
 -----------------------
@@ -68,44 +66,66 @@ Creating a Training Job
 
       Specify **Name** and **Description** according to actual requirements.
 
+      .. _modelarts_23_0238__en-us_topic_0216621183_fig1172523919113:
+
+      .. figure:: /_static/images/en-us_image_0000001110761022.png
+         :alt: **Figure 1** Setting basic information about the training job
+
+
+         **Figure 1** Setting basic information about the training job
+
    b. Set job parameters, including the data source, algorithm source, and more. For details, see :ref:`Table 2 <modelarts_23_0238__en-us_topic_0216621183_table1819364517144>`.
+
+      .. _modelarts_23_0238__en-us_topic_0216621183_fig1395314355136:
+
+      .. figure:: /_static/images/en-us_image_0000001156920895.png
+         :alt: **Figure 2** **Frequently-used** as the algorithm source
+
+
+         **Figure 2** **Frequently-used** as the algorithm source
 
       .. _modelarts_23_0238__en-us_topic_0216621183_table1819364517144:
 
       .. table:: **Table 2** Job parameters
 
-         +-------------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-         | Parameter               | Sub-Parameter         | Description                                                                                                                                                                                                                                                                                                          |
-         +=========================+=======================+======================================================================================================================================================================================================================================================================================================================+
-         | One-Click Configuration | -                     | If you have saved job parameter configurations in ModelArts, click **One-Click Configuration** and select an existing job parameter configuration as prompted to quickly complete parameter setting for the job.                                                                                                     |
-         +-------------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-         | Algorithm Source        | Frequently-used       | Select an AI engine and its version and specify **Code Directory** and **Boot File**. The framework selected for the AI engine must be the same as the one you select when compiling training code. For example, if TensorFlow is used in your training code, select TensorFlow when you create a training job.      |
-         |                         |                       |                                                                                                                                                                                                                                                                                                                      |
-         |                         |                       | For details about the supported AI engines and versions, see :ref:`Frequently-used AI Frameworks for Training Management <modelarts_23_0238__en-us_topic_0216621183_section12188201115920>`.                                                                                                                         |
-         |                         |                       |                                                                                                                                                                                                                                                                                                                      |
-         |                         |                       | If your model requires Python dependency packages, place the dependency packages and their configuration files in the code directory based on the requirements defined in ModelArts. For details, see :ref:`How Do I Create a Training Job When a Dependency Package Is Referenced in a Model? <modelarts_05_0063>`. |
-         +-------------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-         | Data Source             | Dataset               | Select an available dataset and its version from the ModelArts **Data Management** module.                                                                                                                                                                                                                           |
-         |                         |                       |                                                                                                                                                                                                                                                                                                                      |
-         |                         |                       | -  **Dataset**: Select an existing dataset from the drop-down list. If no dataset is available in ModelArts, no result will be displayed in the drop-down list.                                                                                                                                                      |
-         |                         |                       | -  **Version**: Select a version according to the **Dataset** setting.                                                                                                                                                                                                                                               |
-         +-------------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-         |                         | Data path             | Select the training data from your OBS bucket. On the right of the **Data path** text box, click **Select**. In the dialog box that is displayed, select an OBS folder for storing data.                                                                                                                             |
-         +-------------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-         | Training Output Path    | -                     | Select a path for storing the training result.                                                                                                                                                                                                                                                                       |
-         |                         |                       |                                                                                                                                                                                                                                                                                                                      |
-         |                         |                       | .. note::                                                                                                                                                                                                                                                                                                            |
-         |                         |                       |                                                                                                                                                                                                                                                                                                                      |
-         |                         |                       |    To minimize errors, select an empty directory for **Training Output Path**. Do not select the directory used for storing the dataset for **Training Output Path**.                                                                                                                                                |
-         +-------------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-         | Running Parameter       | -                     | Set the command line parameters in the code based on the algorithm code logic. Make sure that the parameter names are the same as those in the code.                                                                                                                                                                 |
-         |                         |                       |                                                                                                                                                                                                                                                                                                                      |
-         |                         |                       | For example, **train_steps = 10000**, where **train_steps** is a passing parameter in code.                                                                                                                                                                                                                          |
-         +-------------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-         | Job Log Path            | -                     | Select a path for storing log files generated during job running.                                                                                                                                                                                                                                                    |
-         +-------------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+         +-------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | Parameter               | Sub-Parameter         | Description                                                                                                                                                                                                                                                                                                     |
+         +=========================+=======================+=================================================================================================================================================================================================================================================================================================================+
+         | One-Click Configuration | -                     | If you have saved job parameter configurations in ModelArts, click **One-Click Configuration** and select an existing job parameter configuration as prompted to quickly complete parameter setting for the job.                                                                                                |
+         +-------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | Algorithm Source        | Frequently-used       | Select an AI engine and its version and specify **Code Directory** and **Boot File**. The framework selected for the AI engine must be the same as the one you select when compiling training code. For example, if TensorFlow is used in your training code, select TensorFlow when you create a training job. |
+         |                         |                       |                                                                                                                                                                                                                                                                                                                 |
+         |                         |                       | For details about the supported AI engines and versions, see :ref:`Frequently-used AI Frameworks for Training Management <modelarts_23_0238__en-us_topic_0216621183_section12188201115920>`.                                                                                                                    |
+         +-------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | Data Source             | Dataset               | Select an available dataset and its version from the ModelArts **Data Management** module.                                                                                                                                                                                                                      |
+         |                         |                       |                                                                                                                                                                                                                                                                                                                 |
+         |                         |                       | -  **Dataset**: Select an existing dataset from the drop-down list. If no dataset is available in ModelArts, no result will be displayed in the drop-down list.                                                                                                                                                 |
+         |                         |                       | -  **Version**: Select a version according to the **Dataset** setting.                                                                                                                                                                                                                                          |
+         +-------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+         |                         | Data path             | Select the training data from your OBS bucket. On the right of the **Data path** text box, click **Select**. In the dialog box that is displayed, select an OBS folder for storing data.                                                                                                                        |
+         +-------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | Training Output Path    | -                     | Select a path for storing the training result.                                                                                                                                                                                                                                                                  |
+         |                         |                       |                                                                                                                                                                                                                                                                                                                 |
+         |                         |                       | .. note::                                                                                                                                                                                                                                                                                                       |
+         |                         |                       |                                                                                                                                                                                                                                                                                                                 |
+         |                         |                       |    To minimize errors, select an empty directory for **Training Output Path**. Do not select the directory used for storing the dataset for **Training Output Path**.                                                                                                                                           |
+         +-------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | Running Parameter       | -                     | Set the command line parameters in the code based on the algorithm code logic. Make sure that the parameter names are the same as those in the code.                                                                                                                                                            |
+         |                         |                       |                                                                                                                                                                                                                                                                                                                 |
+         |                         |                       | For example, **train_steps = 10000**, where **train_steps** is a passing parameter in code.                                                                                                                                                                                                                     |
+         +-------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | Job Log Path            | -                     | Select a path for storing log files generated during job running.                                                                                                                                                                                                                                               |
+         +-------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
    c. Select resources for the training job.
+
+      .. _modelarts_23_0238__en-us_topic_0216621183_fig178681530173311:
+
+      .. figure:: /_static/images/en-us_image_0000001110920922.png
+         :alt: **Figure 3** Selecting resources for the training job
+
+
+         **Figure 3** Selecting resources for the training job
 
       .. table:: **Table 3** Resource parameters
 
@@ -113,6 +133,8 @@ Creating a Training Job
          | Parameter                         | Description                                                                                                                                                                                                                                                                              |
          +===================================+==========================================================================================================================================================================================================================================================================================+
          | Resource Pool                     | Select resource pools for the job.                                                                                                                                                                                                                                                       |
+         |                                   |                                                                                                                                                                                                                                                                                          |
+         |                                   | CPU- and GPU-based public resource pools are supported. Their application scenarios and charges are different.                                                                                                                                                                           |
          +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
          | Type                              | If **Resource Pool** is set to **Public resource pools**, select a resource type. Available resource types are **CPU** and **GPU**.                                                                                                                                                      |
          |                                   |                                                                                                                                                                                                                                                                                          |
@@ -129,28 +151,27 @@ Creating a Training Job
          |                                   | When **Frequently-used** of **Algorithm Source** is set to **Caffe**, only standalone training is supported, that is, **Compute Nodes** must be set to **1**. For other options of **Frequently-used**, you can select the standalone or distributed mode based on service requirements. |
          +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   d. Configure **Notification** and select whether to save the parameters of the training job.
+   d. Select whether to save the parameters of the training job.
 
-      .. table:: **Table 4** Parameters related to notification and parameter configuration saving
+      .. _modelarts_23_0238__en-us_topic_0216621183_fig18968101012274:
+
+      .. figure:: /_static/images/en-us_image_0000001110761028.png
+         :alt: **Figure 4** Setting training job parameters
+
+
+         **Figure 4** Setting training job parameters
+
+      .. table:: **Table 4** Parameters related to parameter configuration saving
 
          +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
          | Parameter                         | Description                                                                                                                                                                                                                                                                                    |
          +===================================+================================================================================================================================================================================================================================================================================================+
-         | Notification                      | Select the resource pool status to be monitored from the event list, and SMN sends a notification message when the event occurs.                                                                                                                                                               |
-         |                                   |                                                                                                                                                                                                                                                                                                |
-         |                                   | This parameter is optional. You can choose whether to enable subscription based on actual requirements. If you enable subscription, set the following parameters as required:                                                                                                                  |
-         |                                   |                                                                                                                                                                                                                                                                                                |
-         |                                   | -  **Topic**: indicates the topic name. You can create a topic on the SMN console.                                                                                                                                                                                                             |
-         |                                   | -  **Event**: indicates the event to be subscribed to. The options are **OnJobRunning**, **OnJobSucceeded**, and **OnJobFailed**, indicating that training is in progress, successful, and failed, respectively.                                                                               |
-         +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
          | Saving Training Parameters        | If you select this option, the parameter settings of the current job will be saved to facilitate subsequent job creation.                                                                                                                                                                      |
          |                                   |                                                                                                                                                                                                                                                                                                |
          |                                   | Select **Save Training Parameters** and specify **Configuration Name** and **Description**. After a training job is created, you can switch to the **Job Parameters** tab page to view your saved job parameter settings. For details, see :ref:`Managing Job Parameters <modelarts_23_0049>`. |
          +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   e. After setting the parameters, click **Next**.
-
-#. Confirm that the information is correct on the **Confirm** page that is displayed and click **Submit**. Generally, training jobs run for a period of time, which may be several minutes or tens of minutes depending on the amount of your selected data and resources.
+#. Confirm that the information is correct and click **Submit**. Generally, training jobs run for a period of time, which may be several minutes or tens of minutes depending on the amount of your selected data and resources.
 
    .. note::
 

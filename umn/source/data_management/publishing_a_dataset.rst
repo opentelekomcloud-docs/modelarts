@@ -55,6 +55,14 @@ Publishing a Dataset
       | Description                       | Description of the current dataset version.                                                                                                                                                                                                      |
       +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
+   .. _modelarts_23_0018__en-us_topic_0170886812_fig0400181520353:
+
+   .. figure:: /_static/images/en-us_image_0000001277931137.png
+      :alt: **Figure 1** Publishing a dataset
+
+
+      **Figure 1** Publishing a dataset
+
    After the version is published, you can go to the **Version Manager** tab page to view the detailed information. By default, the system sets the latest version to the current directory.
 
 Directory Structure of Related Files After the Dataset Is Published

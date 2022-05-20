@@ -19,9 +19,7 @@ A notebook instance can be mounted to OBS or EVS as the storage location. The op
 
 -  Downloading files to notebook instances with EVS attached
 
-   -  Use the following MoXing API to synchronize files from OBS to notebook instances.
-
-      Read an OBS file. For example, if you read the **obs://bucket_name/obs_file.txt** file, the content is returned as strings.
+   -  Read an OBS file. For example, if you read the **obs://bucket_name/obs_file.txt** file, the content is returned as strings.
 
       +-----------------------------------+---------------------------------------------------------------+
       | ::                                | ::                                                            |
@@ -38,7 +36,7 @@ A notebook instance can be mounted to OBS or EVS as the storage location. The op
       |    2                              |      file_str = f.read()                                           |
       +-----------------------------------+--------------------------------------------------------------------+
 
-   -  Use the OBS API in the ModelArts SDK to download data from OBS to notebook instances.
+   -  Use the OBS API in the ModelArts SDK to download data to notebook instances.
 
       .. note::
 

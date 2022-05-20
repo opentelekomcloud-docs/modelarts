@@ -10,7 +10,7 @@ FAQs
    general_issues/index
    exeml/index
    data_management/index
-   development_environment/index
+   notebook/index
    training_jobs/index
    model_management/index
    service_deployment/index

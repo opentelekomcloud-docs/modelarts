@@ -20,8 +20,6 @@ Starting Labeling
 
 #. On the **Dashboard** page of the dataset, click **Label** in the upper right corner. The dataset details page is displayed. By default, all data of the dataset is displayed on the dataset details page.
 
-.. _modelarts_23_0014__en-us_topic_0170889734_section888019266174:
-
 Labeling Content
 ----------------
 
@@ -31,6 +29,14 @@ The dataset details page displays the labeled and unlabeled text files in the da
 
    You can repeat this operation to select objects and add labels to the objects.
 
+   .. _modelarts_23_0014__en-us_topic_0170889734_fig1281513105431:
+
+   .. figure:: /_static/images/en-us_image_0000001157080991.png
+      :alt: **Figure 1** Labeling for named entity recognition
+
+
+      **Figure 1** Labeling for named entity recognition
+
 #. Click **Save Current Page** in the lower part of the page to complete the labeling.
 
 Adding Labels
@@ -38,23 +44,31 @@ Adding Labels
 
 -  Adding labels on the **Unlabeled** tab page: Click the plus sign (+) next to **Label Set**. On the **Add Label** page that is displayed, add a label name, select a label color, and click **OK**.
 
-   .. _modelarts_23_0014__en-us_topic_0170889734_fig162371842293:
+   .. _modelarts_23_0014__en-us_topic_0170889734_fig99911654448:
 
-   .. figure:: /_static/images/en-us_image_0000001156921015.png
-      :alt: **Figure 1** Adding a named entity label (1)
+   .. figure:: /_static/images/en-us_image_0000001110921046.png
+      :alt: **Figure 2** Adding a named entity label (1)
 
 
-      **Figure 1** Adding a named entity label (1)
+      **Figure 2** Adding a named entity label (1)
 
 -  Adding labels on the **Labeled** tab page: Click the plus sign (+) next to **All Labels**. On the **Add Label** page that is displayed, add a label name, select a label color, and click **OK**.
 
-   .. _modelarts_23_0014__en-us_topic_0170889734_fig1418544013104:
+   .. _modelarts_23_0014__en-us_topic_0170889734_fig542633694419:
 
-   .. figure:: /_static/images/en-us_image_0000001156921017.png
-      :alt: **Figure 2** Adding a named entity label (2)
+   .. figure:: /_static/images/en-us_image_0000001110921048.png
+      :alt: **Figure 3** Adding a named entity label (2)
 
 
-      **Figure 2** Adding a named entity label (2)
+      **Figure 3** Adding a named entity label (2)
+
+   .. _modelarts_23_0014__en-us_topic_0170889734_fig2357151414455:
+
+   .. figure:: /_static/images/en-us_image_0000001110921044.png
+      :alt: **Figure 4** Adding a named entity label
+
+
+      **Figure 4** Adding a named entity label
 
 Viewing the Labeled Text
 ------------------------
@@ -91,6 +105,14 @@ In addition to automatically synchronizing data from **Input Dataset Path**, you
 #. In the displayed **Add File** dialog box, set the parameters as required and then select the file to be uploaded.
 
    Select one or more files to be uploaded in the local environment. Only **.txt** and **.csv** files are supported. The total size of files uploaded at a time cannot exceed 8 MB.
+
+   .. _modelarts_23_0014__en-us_topic_0170889734_fig4494454154518:
+
+   .. figure:: /_static/images/en-us_image_0000001157080995.png
+      :alt: **Figure 5** Adding files
+
+
+      **Figure 5** Adding files
 
 #. In the **Add File** dialog box, click **Upload**. The files you add will be automatically displayed on the **Unlabeled** tab page.
 

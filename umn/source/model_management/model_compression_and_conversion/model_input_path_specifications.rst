@@ -5,8 +5,10 @@
 Model Input Path Specifications
 ===============================
 
-Ascend Chip
------------
+During model conversion, the model input directory must comply with certain specifications. This section describes how to upload your model package to OBS.
+
+Ascend Chip(coming soon)
+------------------------
 
 The requirements for converting the models run on the Ascend chip are as follows:
 

@@ -67,10 +67,6 @@ There are two import modes: **OBS path** and **Manifest file**.
    |                           |                                                                                                                                              |                                                                                                                                                  |
    |                           |                                                                                                                                              | Follow the format specifications described in :ref:`Text Triplet <modelarts_23_0009__en-us_topic_0170886817_section29512198>`.                   |
    +---------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Table                     | Supported                                                                                                                                    | N/A                                                                                                                                              |
-   |                           |                                                                                                                                              |                                                                                                                                                  |
-   |                           | Follow the format specifications described in :ref:`Table <modelarts_23_0008__en-us_topic_0170886816_section1171862514918>`.                 |                                                                                                                                                  |
-   +---------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
    | Video                     | N/A                                                                                                                                          | Supported                                                                                                                                        |
    |                           |                                                                                                                                              |                                                                                                                                                  |
    |                           |                                                                                                                                              | Follow the format specifications described in :ref:`Video Labeling <modelarts_23_0009__en-us_topic_0170886817_section1269454020180>`.            |
@@ -91,6 +87,14 @@ The parameters on the GUI for data import vary according to the dataset type. Th
 
 #. In the **Import** dialog box, set **Import Mode** to **OBS path** and set **OBS path** to the path for storing data. Then click **OK**.
 
+   .. _modelarts_23_0006__en-us_topic_0171025430_fig1391710401912:
+
+   .. figure:: /_static/images/en-us_image_0000001233970650.png
+      :alt: **Figure 1** Importing the dataset to an OBS path
+
+
+      **Figure 1** Importing the dataset to an OBS path
+
    After the data import is successful, the data is automatically synchronized to the dataset. On the **Datasets** page, you can click the dataset name to view its details and label the data.
 
 Importing Data from a Manifest File
@@ -110,5 +114,13 @@ The parameters on the GUI for data import vary according to the dataset type. Th
    -  **Manifest file**: Select the OBS path for storing the manifest file.
    -  **Import by Label**: The system automatically obtains the labels of the dataset. You can click **Add Label** to add a label or click the deletion icon on the right to delete a label. This field is optional. After importing a dataset, you can add or delete labels during data labeling.
    -  **Import labels**: If this parameter is selected, the labels defined in the manifest file are imported to the ModelArts dataset.
+
+   .. _modelarts_23_0006__en-us_topic_0171025430_fig1260617211526:
+
+   .. figure:: /_static/images/en-us_image_0000001234129946.png
+      :alt: **Figure 2** Importing the dataset
+
+
+      **Figure 2** Importing the dataset
 
    After the data import is successful, the data is automatically synchronized to the dataset. On the **Datasets** page, you can click the dataset name to go to the **Dashboard** tab page of the dataset, and click **Label** in the upper right corner. On the displayed dataset details page, view detailed data and label data.

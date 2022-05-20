@@ -16,4 +16,3 @@ Data Management
    publishing_a_dataset
    deleting_a_dataset
    managing_dataset_versions
-   team_labeling/index

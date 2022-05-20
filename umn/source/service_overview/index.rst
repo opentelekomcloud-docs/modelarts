@@ -11,4 +11,5 @@ Service Overview
    functions
    basic_knowledge/index
    related_services
+   how_do_i_access_modelarts
    permissions_management

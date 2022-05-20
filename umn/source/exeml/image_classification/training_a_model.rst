@@ -14,6 +14,14 @@ Procedure
 
 #. On the **Label Data** tab page, click **Train** in the upper right corner. In the displayed **Training Configuration** dialog box, set related parameters. :ref:`Table 1 <modelarts_21_0006__en-us_topic_0284258835_en-us_topic_0169446155_table56110116164>` describes the parameters.
 
+   .. _modelarts_21_0006__en-us_topic_0284258835_en-us_topic_0169446155_fig162101622135815:
+
+   .. figure:: /_static/images/en-us_image_0000001157080771.png
+      :alt: **Figure 1** Setting training parameters
+
+
+      **Figure 1** Setting training parameters
+
    .. _modelarts_21_0006__en-us_topic_0284258835_en-us_topic_0169446155_table56110116164:
 
    .. table:: **Table 1** Parameter description
@@ -37,12 +45,12 @@ Procedure
       +---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
       | Instance Flavor                 | Select the resource specifications used for training. By default, the following specifications are supported:                                                                                                                                                                                         | **ExeML (GPU)**                 |
       |                                 |                                                                                                                                                                                                                                                                                                       |                                 |
-      |                                 | -  **Compute-intensive instance (GPU)**                                                                                                                                                                                                                                                               |                                 |
+      |                                 | -  **Compute-intensive 1 instance (GPU)**: This flavor is billed on a pay-per-use basis.                                                                                                                                                                                                              |                                 |
       |                                 |                                                                                                                                                                                                                                                                                                       |                                 |
       |                                 | The compute flavors are for reference only. Obtain the flavors on the management console.                                                                                                                                                                                                             |                                 |
       +---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+
 
-#. After configuring training parameters, click **Next** to go to the configuration page, confirm the specifications, and click **Submit** to start auto model training. The training takes a certain period of time. Wait until the training is complete. If you close or exit this page, the system still performs the training operation.
+#. After configuring training parameters, click **Yes** to start auto model training. The training takes a certain period of time. Wait until the training is complete. If you close or exit this page, the system still performs the training operation.
 
 #. On the **Train Model** tab page, wait until the training status changes from **Running** to **Completed**.
 

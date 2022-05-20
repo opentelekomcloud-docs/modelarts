@@ -59,8 +59,6 @@ Configuring Authorization
 Automatically Creating an IAM Agency
 ------------------------------------
 
-The following provides the details about the agency automatically created by ModelArts.
-
 -  **Agency Name**: For a cloud account, the agency name is **modelarts_agency**. For an IAM user, the agency name is **ma_agency_<IAM username>**.
 -  **Agency Type**: Select **Cloud service**.
 -  **Cloud Service**: Select **ModelArts**.

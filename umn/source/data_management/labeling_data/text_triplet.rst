@@ -19,6 +19,22 @@ Before labeling, ensure that the **Entity Label** and **Relationship Label** of 
 
 For example, if two entities are labeled as **Place**, you cannot add any relationship label between them. If a relationship label cannot be added, a red cross is displayed.
 
+.. _modelarts_23_0211__en-us_topic_0209128667_fig145576513485:
+
+.. figure:: /_static/images/en-us_image_0000001157080821.png
+   :alt: **Figure 1** Example of entity and relationship labels
+
+
+   **Figure 1** Example of entity and relationship labels
+
+.. _modelarts_23_0211__en-us_topic_0209128667_fig656185315485:
+
+.. figure:: /_static/images/en-us_image_0000001157080819.png
+   :alt: **Figure 2** Failure of adding a relationship label
+
+
+   **Figure 2** Failure of adding a relationship label
+
 Starting Labeling
 -----------------
 
@@ -30,8 +46,6 @@ Starting Labeling
 
 #. On the **Dashboard** page of the dataset, click **Label** in the upper right corner. The dataset details page is displayed. By default, all data of the dataset is displayed on the dataset details page.
 
-.. _modelarts_23_0211__en-us_topic_0209128667_section888019266174:
-
 Labeling Content
 ----------------
 
@@ -39,23 +53,23 @@ The dataset details page displays the labeled and unlabeled text objects in the 
 
 #. On the **Unlabeled** tab page, the objects to be labeled are listed in the left pane. In the list, click a text object, select the corresponding text content on the right pane, and select an entity name from the displayed entity list to label the content.
 
-   .. _modelarts_23_0211__en-us_topic_0209128667_fig127381972311:
+   .. _modelarts_23_0211__en-us_topic_0209128667_fig845175419492:
 
-   .. figure:: /_static/images/en-us_image_0000001110760968.png
-      :alt: **Figure 1** Labeling an entity
+   .. figure:: /_static/images/en-us_image_0000001156920847.png
+      :alt: **Figure 3** Labeling an entity
 
 
-      **Figure 1** Labeling an entity
+      **Figure 3** Labeling an entity
 
 #. After labeling multiple entities, click the source entity and target entity in sequence and select a relationship type from the displayed relationship list to label the relationship.
 
-   .. _modelarts_23_0211__en-us_topic_0209128667_fig16874184518477:
+   .. _modelarts_23_0211__en-us_topic_0209128667_fig1112651155015:
 
-   .. figure:: /_static/images/en-us_image_0000001110920874.png
-      :alt: **Figure 2** Labeling a relationship
+   .. figure:: /_static/images/en-us_image_0000001157080823.png
+      :alt: **Figure 4** Labeling a relationship
 
 
-      **Figure 2** Labeling a relationship
+      **Figure 4** Labeling a relationship
 
 #. After all objects are labeled, click **Save Current Page** at the bottom of the page.
 
@@ -70,7 +84,23 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
 
 On the dataset details page, click the **Labeled** tab. Select a text object in the left pane and the right pane displays the detailed label information. You can move your cursor to the entity or relationship label, and right-click to delete it. You can also click the source entity and target entity in sequence to add a relationship label.
 
+.. _modelarts_23_0211__en-us_topic_0209128667_fig1989017392518:
+
+.. figure:: /_static/images/en-us_image_0000001110760966.png
+   :alt: **Figure 5** Modifying a label in the text
+
+
+   **Figure 5** Modifying a label in the text
+
 You can click **Delete Labels on Current Item** at the bottom of the page to delete all labels in the selected text object.
+
+.. _modelarts_23_0211__en-us_topic_0209128667_fig15856154165212:
+
+.. figure:: /_static/images/en-us_image_0000001110920872.png
+   :alt: **Figure 6** Deleting current labels
+
+
+   **Figure 6** Deleting current labels
 
 Adding a File
 -------------
@@ -82,6 +112,14 @@ In addition to automatically synchronizing data from **Input Dataset Path**, you
 #. In the **Add File** dialog box that is displayed, select the files to be uploaded.
 
    Select one or more files to be uploaded in the local environment. Only **.txt** and **.csv** files are supported. The total size of files uploaded at a time cannot exceed 8 MB.
+
+   .. _modelarts_23_0211__en-us_topic_0209128667_fig4494454154518:
+
+   .. figure:: /_static/images/en-us_image_0000001156920843.png
+      :alt: **Figure 7** Adding a file
+
+
+      **Figure 7** Adding a file
 
 #. In the **Add File** dialog box, click **Upload**. The files you add will be automatically displayed in the **Labeling Objects** list on the **Unlabeled** tab page.
 

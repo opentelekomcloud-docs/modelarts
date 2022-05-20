@@ -51,6 +51,14 @@ The dataset details page displays the labeled and unlabeled audio files. The **U
 
       Each label has a shortcut key. A shortcut key cannot be specified for different labels. Shortcut keys can greatly improve the labeling efficiency.
 
+   .. _modelarts_23_0015__en-us_topic_0170889735_fig4264182145418:
+
+   .. figure:: /_static/images/en-us_image_0000001110761046.png
+      :alt: **Figure 1** Adding an audio label
+
+
+      **Figure 1** Adding an audio label
+
 Viewing the Labeled Audio Files
 -------------------------------
 
@@ -72,13 +80,13 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
 
    On the dataset details page, click the **Labeled** tab. The information about all labels is displayed on the right.
 
-   .. _modelarts_23_0015__en-us_topic_0170889735_fig19495403277:
+   .. _modelarts_23_0015__en-us_topic_0170889735_fig15568123335413:
 
-   .. figure:: /_static/images/en-us_image_0000001110761044.png
-      :alt: **Figure 1** Information about all labels
+   .. figure:: /_static/images/en-us_image_0000001110761048.png
+      :alt: **Figure 2** Information about all labels
 
 
-      **Figure 1** Information about all labels
+      **Figure 2** Information about all labels
 
    -  Modifying a label: Click the editing icon in the **Operation** column. In the dialog box that is displayed, enter the new label name and click **OK**. After the modification, the new label applies to the audio files that contain the original label.
    -  Deleting a label: Click the deletion icon in the **Operation** column. In the displayed dialog box, select the object to be deleted as prompted and click **OK**.

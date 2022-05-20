@@ -12,7 +12,7 @@ ModelArts integrates the open-source Jupyter Notebook. After creating a notebook
 Notebook Kernel
 ---------------
 
--  A notebook kernel is an independent code execution environment. ModelArts Notebook supports multiple kernel types, such as TensorFlow 1.13.1 and PyTorch 1.0. A code execution environment contains the pre-installed and commissioned AI engines and dependencies.
+-  A notebook kernel is an independent code execution environment. ModelArts Notebook supports multiple kernel types. A code execution environment contains the pre-installed and commissioned AI engines and dependencies.
 -  When a kernel is selected to open a notebook instance, an IPython process is started at the backend of the notebook instance as the running environment to execute the code and command input on the page.
 -  Each kernel type contains an independent Conda running environment to ensure that the AI engines are independent of each other. For example, if the Keras library is updated in a kernel of the TensorFlow type, the kernel of the MindSpore type will not be affected.
 

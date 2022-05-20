@@ -27,7 +27,7 @@ Editing a Job Parameter Configuration
 
 #. In the job parameter configuration list, click **Edit** in the **Operation** column in a row.
 
-#. On the displayed page, modify related parameters by referring to "Creating a Training Job" and click **OK** to save the job parameter settings.
+#. On the displayed page, modify related parameters by referring to :ref:`Creating a Training Job <modelarts_23_0046>` and click **OK** to save the job parameter settings.
 
    In the existing job parameter settings, the job name cannot be changed.
 
