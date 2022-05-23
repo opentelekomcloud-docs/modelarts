@@ -19,7 +19,7 @@ GET /v1/{project_id}/services/specifications
    +---------------------+-----------+---------+------------------------------------------------------------------------------------------------------------------------------+
    | Parameter           | Mandatory | Type    | Description                                                                                                                  |
    +=====================+===========+=========+==============================================================================================================================+
-   | project_id          | Yes       | String  | Project ID. For details about how to obtain the project ID, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`.  |
+   | project_id          | Yes       | String  | Project ID. For details about how to obtain the project ID, see :ref:`Obtaining a Project ID <modelarts_03_0147>`.           |
    +---------------------+-----------+---------+------------------------------------------------------------------------------------------------------------------------------+
    | is_personal_cluster | No        | Boolean | Whether to query the service deployment specifications supported by dedicated resource pool. The default value is **false**. |
    +---------------------+-----------+---------+------------------------------------------------------------------------------------------------------------------------------+
@@ -91,8 +91,8 @@ Samples
       {
           "specifications": [
               {
-                  "specification": "modelarts.vm.gpu.p4",
-                  "billing_spec": "modelarts.vm.gpu.p4",
+                  "specification": "modelarts.vm.gpu.p4" "modelarts.vm.gpu.v100",
+                  "billing_spec": "modelarts.vm.gpu.p4" "modelarts.vm.gpu.v100",
                   "is_open": true,
                   "spec_status": "normal",
                   "is_free": false,
@@ -106,3 +106,8 @@ Status Code
 -----------
 
 For details about the status code, see :ref:`Table 1 <modelarts_03_0094__en-us_topic_0132773864_table1450010510213>`.
+
+Error Codes
+-----------
+
+See :ref:`Error Codes <modelarts_03_0095>`.

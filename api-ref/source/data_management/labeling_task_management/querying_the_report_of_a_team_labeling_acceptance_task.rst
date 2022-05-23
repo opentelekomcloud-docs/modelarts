@@ -15,7 +15,7 @@ URI
 
 GET /v2/{project_id}/datasets/{dataset_id}/workforce-tasks/{workforce_task_id}/acceptance/report
 
-.. table:: **Table 1** Path parameters
+.. table:: **Table 1** Path Parameters
 
    +-------------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
    | Parameter         | Mandatory | Type   | Description                                                                                                        |
@@ -27,7 +27,7 @@ GET /v2/{project_id}/datasets/{dataset_id}/workforce-tasks/{workforce_task_id}/a
    | workforce_task_id | Yes       | String | ID of a team labeling task.                                                                                        |
    +-------------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
 
-.. table:: **Table 2** Query parameters
+.. table:: **Table 2** Query Parameters
 
    ================ ========= ====== =====================================
    Parameter        Mandatory Type   Description

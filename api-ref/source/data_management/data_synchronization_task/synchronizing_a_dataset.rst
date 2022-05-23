@@ -15,7 +15,7 @@ URI
 
 POST /v2/{project_id}/datasets/{dataset_id}/sync-data
 
-.. table:: **Table 1** Path parameters
+.. table:: **Table 1** Path Parameters
 
    +------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
    | Parameter  | Mandatory | Type   | Description                                                                                                        |

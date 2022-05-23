@@ -21,20 +21,13 @@ GET /v1/{project_id}/demanager/instances?de_type={de_type}&provision_type={provi
 
 .. table:: **Table 1** Parameters
 
-   +------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------+
-   | Parameter  | Mandatory | Type   | Description                                                                                                                 |
-   +============+===========+========+=============================================================================================================================+
-   | project_id | Yes       | String | Project ID. For details about how to obtain the project ID, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`. |
-   +------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------+
+   +------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
+   | Parameter  | Mandatory | Type   | Description                                                                                                        |
+   +============+===========+========+====================================================================================================================+
+   | project_id | Yes       | String | Project ID. For details about how to obtain the project ID, see :ref:`Obtaining a Project ID <modelarts_03_0147>`. |
+   +------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
 
-Request Body
-------------
-
-:ref:`Table 2 <modelarts_03_0111__en-us_topic_0136223950_table92801116194411>` describes the request parameters.
-
-.. _modelarts_03_0111__en-us_topic_0136223950_table92801116194411:
-
-.. table:: **Table 2** Parameters
+.. table:: **Table 2** **query** parameters
 
    +-----------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter       | Mandatory       | Type            | Description                                                                                                                              |
@@ -72,8 +65,13 @@ Request Body
    +-----------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------+
    | ai_project      | No              | String          | AI project ID                                                                                                                            |
    +-----------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------+
-   | pool_id         | No              | String          | ID of a dedicated resource pool. This parameter can be used to query information about all instances in a dedicated resource pool.       |
+   | pool_id         | No              | String          | ID of a dedicated resource pool. This parameter can be used to obtain all instances in a dedicated resource pool.                        |
    +-----------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------+
+
+Request Body
+------------
+
+None
 
 Response Body
 -------------
@@ -619,3 +617,8 @@ Status Code
 -----------
 
 For details about the status code, see :ref:`Status Code <modelarts_03_0094>`.
+
+Error Codes
+-----------
+
+See :ref:`Error Codes <modelarts_03_0095>`.

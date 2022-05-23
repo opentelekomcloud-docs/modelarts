@@ -20,5 +20,3 @@ Data Management
    data_import_task/index
    data_export_task/index
    data_synchronization_task/index
-   intelligent_task/index
-   processing_task/index

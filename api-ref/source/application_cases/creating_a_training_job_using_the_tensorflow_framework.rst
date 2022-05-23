@@ -26,7 +26,7 @@ Prerequisites
 
 -  You have obtained the endpoints of and :ref:`ModelArts <modelarts_03_0141>`.
 -  You have located the region where the service is deployed and obtained .
--  You have obtained the project ID. For details, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`.
+-  You have obtained the project ID. For details, see :ref:`Obtaining a Project ID <modelarts_03_0147>`.
 -  You have prepared the training code for TensorFlow. For example, you have stored the boot file **train_mnist_tf.py** in the **/test-modelarts/mnist-tensorflow-code/** directory of OBS.
 -  You have prepared a dataset for the training job. For example, you have stored a training dataset in the **/test-modelarts/dataset-mnist/** directory of OBS.
 -  You have created the output path of the training job, for example, **/test-modelarts/mnist-model/output/**.

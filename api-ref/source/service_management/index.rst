@@ -16,3 +16,4 @@ Service Management
    querying_service_event_logs
    deleting_a_service
    querying_supported_service_deployment_specifications
+   querying_dedicated_resource_pools

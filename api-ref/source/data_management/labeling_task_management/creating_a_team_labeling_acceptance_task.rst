@@ -15,7 +15,7 @@ URI
 
 POST /v2/{project_id}/datasets/{dataset_id}/workforce-tasks/{workforce_task_id}/acceptance
 
-.. table:: **Table 1** Path parameters
+.. table:: **Table 1** Path Parameters
 
    +-------------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
    | Parameter         | Mandatory | Type   | Description                                                                                                        |
