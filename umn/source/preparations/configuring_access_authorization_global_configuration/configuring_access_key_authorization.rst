@@ -27,6 +27,11 @@ Adding an Access Key
    -  **AK**: Enter the value of the **Access Key Id** field in the key file.
    -  **SK**: Enter the value of the **Secret Access Key** field in the key file.
 
+   |image1|
+
 #. Select **I have read and agree to the ModelArts Service Statement** and click **Agree**.
 
    After the configuration is complete, you can view the access key configurations of an account or IAM user on the **Settings** page.
+
+.. |image1| image:: /_static/images/en-us_image_0000001156920825.png
+
