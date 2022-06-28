@@ -79,7 +79,7 @@ Object Detection
 
 -  The simple mode of object detection requires users store labeled objects and their label files (in one-to-one relationship with the labeled objects) in the same directory. For example, if the name of the labeled object file is **IMG_20180919_114745.jpg**, the name of the label file must be **IMG_20180919_114745.xml**.
 
-   The label files for object detection must be in PASCAL VOC format. For details about the format, see :ref:`Table 8 <modelarts_23_0009__en-us_topic_0170886817_table77167388472>`.
+   The label files for object detection must be in PASCAL VOC format. For details about the format, see :ref:`Table 6 <modelarts_23_0009__en-us_topic_0170886817_table77167388472>`.
 
    Example:
 
@@ -95,119 +95,50 @@ Object Detection
 
    A label file example is as follows:
 
-   +-----------------------------------+-----------------------------------------------------------+
-   | ::                                | ::                                                        |
-   |                                   |                                                           |
-   |     1                             |    <?xml version="1.0" encoding="UTF-8" standalone="no"?> |
-   |     2                             |    <annotation>                                           |
-   |     3                             |        <folder>NA</folder>                                |
-   |     4                             |        <filename>bike_1_1593531469339.png</filename>      |
-   |     5                             |        <source>                                           |
-   |     6                             |            <database>Unknown</database>                   |
-   |     7                             |        </source>                                          |
-   |     8                             |        <size>                                             |
-   |     9                             |            <width>554</width>                             |
-   |    10                             |            <height>606</height>                           |
-   |    11                             |            <depth>3</depth>                               |
-   |    12                             |        </size>                                            |
-   |    13                             |        <segmented>0</segmented>                           |
-   |    14                             |        <object>                                           |
-   |    15                             |            <name>Dog</name>                               |
-   |    16                             |            <pose>Unspecified</pose>                       |
-   |    17                             |            <truncated>0</truncated>                       |
-   |    18                             |            <difficult>0</difficult>                       |
-   |    19                             |            <occluded>0</occluded>                         |
-   |    20                             |            <bndbox>                                       |
-   |    21                             |                <xmin>279</xmin>                           |
-   |    22                             |                <ymin>52</ymin>                            |
-   |    23                             |                <xmax>474</xmax>                           |
-   |    24                             |                <ymax>278</ymax>                           |
-   |    25                             |            </bndbox>                                      |
-   |    26                             |        </object>                                          |
-   |    27                             |        <object>                                           |
-   |    28                             |            <name>Cat</name>                               |
-   |    29                             |            <pose>Unspecified</pose>                       |
-   |    30                             |            <truncated>0</truncated>                       |
-   |    31                             |            <difficult>0</difficult>                       |
-   |    32                             |            <occluded>0</occluded>                         |
-   |    33                             |            <bndbox>                                       |
-   |    34                             |                <xmin>279</xmin>                           |
-   |    35                             |                <ymin>198</ymin>                           |
-   |    36                             |                <xmax>456</xmax>                           |
-   |    37                             |                <ymax>421</ymax>                           |
-   |    38                             |            </bndbox>                                      |
-   |    39                             |        </object>                                          |
-   |    40                             |    </annotation>                                          |
-   +-----------------------------------+-----------------------------------------------------------+
+   .. code-block::
+
+      <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+      <annotation>
+          <folder>NA</folder>
+          <filename>bike_1_1593531469339.png</filename>
+          <source>
+              <database>Unknown</database>
+          </source>
+          <size>
+              <width>554</width>
+              <height>606</height>
+              <depth>3</depth>
+          </size>
+          <segmented>0</segmented>
+          <object>
+              <name>Dog</name>
+              <pose>Unspecified</pose>
+              <truncated>0</truncated>
+              <difficult>0</difficult>
+              <occluded>0</occluded>
+              <bndbox>
+                  <xmin>279</xmin>
+                  <ymin>52</ymin>
+                  <xmax>474</xmax>
+                  <ymax>278</ymax>
+              </bndbox>
+          </object>
+          <object>
+              <name>Cat</name>
+              <pose>Unspecified</pose>
+              <truncated>0</truncated>
+              <difficult>0</difficult>
+              <occluded>0</occluded>
+              <bndbox>
+                  <xmin>279</xmin>
+                  <ymin>198</ymin>
+                  <xmax>456</xmax>
+                  <ymax>421</ymax>
+              </bndbox>
+          </object>
+      </annotation>
 
 -  Only images in JPG, JPEG, PNG, and BMP formats are supported. The size of a single image cannot exceed 5 MB, and the total size of all images uploaded at a time cannot exceed 8 MB.
-
-.. _modelarts_23_0008__en-us_topic_0170886816_section1363851815518:
-
-Image Segmentation
-------------------
-
--  The simple mode of image segmentation requires users store labeled objects and their label files (in one-to-one relationship with the labeled objects) in the same directory. For example, if the name of the labeled object file is **IMG_20180919_114746.jpg**, the name of the label file must be **IMG_20180919_114746.xml**.
-
-   Fields **mask_source** and **mask_color** are added to the label file in PASCAL VOC format. For details about the format, see :ref:`Table 4 <modelarts_23_0009__en-us_topic_0170886817_table1516151991311>`.
-
-   Example:
-
-   .. code-block::
-
-      ├─dataset-import-example
-      │      IMG_20180919_114732.jpg
-      │      IMG_20180919_114732.xml
-      │      IMG_20180919_114745.jpg
-      │      IMG_20180919_114745.xml
-      │      IMG_20180919_114945.jpg
-      │      IMG_20180919_114945.xml
-
-   A label file example is as follows:
-
-   +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-   | ::                                | ::                                                                                                                                      |
-   |                                   |                                                                                                                                         |
-   |     1                             |    <?xml version="1.0" encoding="UTF-8" standalone="no"?>                                                                               |
-   |     2                             |    <annotation>                                                                                                                         |
-   |     3                             |        <folder>NA</folder>                                                                                                              |
-   |     4                             |        <filename>image_0006.jpg</filename>                                                                                              |
-   |     5                             |        <source>                                                                                                                         |
-   |     6                             |            <database>Unknown</database>                                                                                                 |
-   |     7                             |        </source>                                                                                                                        |
-   |     8                             |        <size>                                                                                                                           |
-   |     9                             |            <width>230</width>                                                                                                           |
-   |    10                             |            <height>300</height>                                                                                                         |
-   |    11                             |            <depth>3</depth>                                                                                                             |
-   |    12                             |        </size>                                                                                                                          |
-   |    13                             |        <segmented>1</segmented>                                                                                                         |
-   |    14                             |        <mask_source>obs://xianao/out/dataset-8153-Jmf5ylLjRmSacj9KevS/annotation/V001/segmentationClassRaw/image_0006.png</mask_source> |
-   |    15                             |        <object>                                                                                                                         |
-   |    16                             |            <name>bike</name>                                                                                                            |
-   |    17                             |            <pose>Unspecified</pose>                                                                                                     |
-   |    18                             |            <truncated>0</truncated>                                                                                                     |
-   |    19                             |            <difficult>0</difficult>                                                                                                     |
-   |    20                             |            <mask_color>193,243,53</mask_color>                                                                                          |
-   |    21                             |            <occluded>0</occluded>                                                                                                       |
-   |    22                             |            <polygon>                                                                                                                    |
-   |    23                             |                <x1>71</x1>                                                                                                              |
-   |    24                             |                <y1>48</y1>                                                                                                              |
-   |    25                             |                <x2>75</x2>                                                                                                              |
-   |    26                             |                <y2>73</y2>                                                                                                              |
-   |    27                             |                <x3>49</x3>                                                                                                              |
-   |    28                             |                <y3>69</y3>                                                                                                              |
-   |    29                             |                <x4>68</x4>                                                                                                              |
-   |    30                             |                <y4>92</y4>                                                                                                              |
-   |    31                             |                <x5>90</x5>                                                                                                              |
-   |    32                             |                <y5>101</y5>                                                                                                             |
-   |    33                             |                <x6>45</x6>                                                                                                              |
-   |    34                             |                <y6>110</y6>                                                                                                             |
-   |    35                             |                <x7>71</x7>                                                                                                              |
-   |    36                             |                <y7>48</y7>                                                                                                              |
-   |    37                             |            </polygon>                                                                                                                   |
-   |    38                             |        </object>                                                                                                                        |
-   |    39                             |    </annotation>                                                                                                                        |
-   +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
 
 .. _modelarts_23_0008__en-us_topic_0170886816_section163641141195713:
 

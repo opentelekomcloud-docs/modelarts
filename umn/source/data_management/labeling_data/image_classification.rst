@@ -45,6 +45,8 @@ The following filter criteria are supported. You can set one or more filter crit
 -  **File Name** or **Path**: Filter files by file name or file storage path.
 -  **Labeled By**: Select the name of the user who performs the labeling operation.
 
+.. _modelarts_23_0011__en-us_topic_0170889731_section888019266174:
+
 Labeling Images (Manually)
 --------------------------
 

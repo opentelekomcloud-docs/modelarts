@@ -21,20 +21,16 @@ A notebook instance can be mounted to OBS or EVS as the storage location. The op
 
    -  Read an OBS file. For example, if you read the **obs://bucket_name/obs_file.txt** file, the content is returned as strings.
 
-      +-----------------------------------+---------------------------------------------------------------+
-      | ::                                | ::                                                            |
-      |                                   |                                                               |
-      |    1                              |    file_str = mox.file.read('obs://bucket_name/obs_file.txt') |
-      +-----------------------------------+---------------------------------------------------------------+
+      .. code-block::
+
+         file_str = mox.file.read('obs://bucket_name/obs_file.txt')
 
       You can also open the file object and read data from it. Both methods are equivalent.
 
-      +-----------------------------------+--------------------------------------------------------------------+
-      | ::                                | ::                                                                 |
-      |                                   |                                                                    |
-      |    1                              |    with mox.file.File('obs://bucket_name/obs_file.txt', 'r') as f: |
-      |    2                              |      file_str = f.read()                                           |
-      +-----------------------------------+--------------------------------------------------------------------+
+      .. code-block::
+
+         with mox.file.File('obs://bucket_name/obs_file.txt', 'r') as f:
+           file_str = f.read()
 
    -  Use the OBS API in the ModelArts SDK to download data to notebook instances.
 
@@ -44,13 +40,11 @@ A notebook instance can be mounted to OBS or EVS as the storage location. The op
 
       Sample code:
 
-      +-----------------------------------+--------------------------------------------------------------------------------------------------+
-      | ::                                | ::                                                                                               |
-      |                                   |                                                                                                  |
-      |    1                              |    from modelarts.session import Session                                                         |
-      |    2                              |    session = Session()                                                                           |
-      |    3                              |    session.download_data(bucket_path="/bucket-name/dir1/sdk.txt", path="/home/user/sdk/obs.txt") |
-      +-----------------------------------+--------------------------------------------------------------------------------------------------+
+      .. code-block::
+
+         from modelarts.session import Session
+         session = Session()
+         session.download_data(bucket_path="/bucket-name/dir1/sdk.txt", path="/home/user/sdk/obs.txt")
 
 -  Downloading files to notebook instances using OBS for data storage
 

@@ -8,39 +8,39 @@ XGBoost
 Training and Saving a Model
 ---------------------------
 
-+-----------------------------------+---------------------------------------------------------------------------------------------------+
-| ::                                | ::                                                                                                |
-|                                   |                                                                                                   |
-|     1                             |    import pandas as pd                                                                            |
-|     2                             |    import xgboost as xgb                                                                          |
-|     3                             |    from sklearn.model_selection import train_test_split                                           |
-|     4                             |                                                                                                   |
-|     5                             |    # Prepare training data and setting parameters                                                 |
-|     6                             |    iris = pd.read_csv('/data/iris.csv')                                                           |
-|     7                             |    X = iris.drop(['virginica'],axis=1)                                                            |
-|     8                             |    y = iris[['virginica']]                                                                        |
-|     9                             |    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1234565) |
-|    10                             |    params = {                                                                                     |
-|    11                             |        'booster': 'gbtree',                                                                       |
-|    12                             |        'objective': 'multi:softmax',                                                              |
-|    13                             |        'num_class': 3,                                                                            |
-|    14                             |        'gamma': 0.1,                                                                              |
-|    15                             |        'max_depth': 6,                                                                            |
-|    16                             |        'lambda': 2,                                                                               |
-|    17                             |        'subsample': 0.7,                                                                          |
-|    18                             |        'colsample_bytree': 0.7,                                                                   |
-|    19                             |        'min_child_weight': 3,                                                                     |
-|    20                             |        'silent': 1,                                                                               |
-|    21                             |        'eta': 0.1,                                                                                |
-|    22                             |        'seed': 1000,                                                                              |
-|    23                             |        'nthread': 4,                                                                              |
-|    24                             |    }                                                                                              |
-|    25                             |    plst = params.items()                                                                          |
-|    26                             |    dtrain = xgb.DMatrix(X_train, y_train)                                                         |
-|    27                             |    num_rounds = 500                                                                               |
-|    28                             |    model = xgb.train(plst, dtrain, num_rounds)                                                    |
-|    29                             |    model.save_model('/tmp/xgboost.m')                                                             |
-+-----------------------------------+---------------------------------------------------------------------------------------------------+
+.. code-block::
+
+   import pandas as pd
+   import xgboost as xgb
+   from sklearn.model_selection import train_test_split
+
+   # Prepare training data and setting parameters
+   iris = pd.read_csv('/home/ma-user/work/iris.csv')
+   X = iris.drop(['variety'],axis=1)
+   y = iris[['variety']]
+   X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1234565)
+   params = {
+       'booster': 'gbtree',
+       'objective': 'multi:softmax',
+       'num_class': 3,
+       'gamma': 0.1,
+       'max_depth': 6,
+       'lambda': 2,
+       'subsample': 0.7,
+       'colsample_bytree': 0.7,
+       'min_child_weight': 3,
+       'silent': 1,
+       'eta': 0.1,
+       'seed': 1000,
+       'nthread': 4,
+   }
+   plst = params.items()
+   dtrain = xgb.DMatrix(X_train, y_train)
+   num_rounds = 500
+   model = xgb.train(plst, dtrain, num_rounds)
+   model.save_model('/tmp/xgboost.m')
+
+Before training, download the **iris.csv** dataset, decompress it, and upload it to the **/home/ma-user/work/** directory of the notebook instance. Download the **iris.csv** dataset from https://gist.github.com/netj/8836201.
 
 After the model is saved, it must be uploaded to the OBS directory before being published. The **config.json** and **customize_service.py** files must be contained during publishing. For details about the definition method, see :ref:`Model Package Specifications <modelarts_23_0091>`.
 

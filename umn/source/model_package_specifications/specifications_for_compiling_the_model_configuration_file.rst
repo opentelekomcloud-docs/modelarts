@@ -198,113 +198,109 @@ The following code uses the TensorFlow engine as an example. You can modify the 
 
 -  Model output
 
-   +-----------------------------------+-----------------------------------------+
-   | ::                                | ::                                      |
-   |                                   |                                         |
-   |     1                             |    ```                                  |
-   |     2                             |    {                                    |
-   |     3                             |        "detection_classes": [           |
-   |     4                             |            "face",                      |
-   |     5                             |            "arm"                        |
-   |     6                             |        ],                               |
-   |     7                             |        "detection_boxes": [             |
-   |     8                             |            [                            |
-   |     9                             |                33.6,                    |
-   |    10                             |                42.6,                    |
-   |    11                             |                104.5,                   |
-   |    12                             |                203.4                    |
-   |    13                             |            ],                           |
-   |    14                             |            [                            |
-   |    15                             |                103.1,                   |
-   |    16                             |                92.8,                    |
-   |    17                             |                765.6,                   |
-   |    18                             |                945.7                    |
-   |    19                             |            ]                            |
-   |    20                             |        ],                               |
-   |    21                             |        "detection_scores": [0.99, 0.73] |
-   |    22                             |    }                                    |
-   |    23                             |    ```                                  |
-   +-----------------------------------+-----------------------------------------+
+   .. code-block::
+
+      ```
+      {
+          "detection_classes": [
+              "face",
+              "arm"
+          ],
+          "detection_boxes": [
+              [
+                  33.6,
+                  42.6,
+                  104.5,
+                  203.4
+              ],
+              [
+                  103.1,
+                  92.8,
+                  765.6,
+                  945.7
+              ]
+          ],
+          "detection_scores": [0.99, 0.73]
+      }
+      ```
 
 -  Configuration file
 
-   +-----------------------------------+-------------------------------------------------------+
-   | ::                                | ::                                                    |
-   |                                   |                                                       |
-   |     1                             |    ```                                                |
-   |     2                             |    {                                                  |
-   |     3                             |        "model_type": "TensorFlow",                    |
-   |     4                             |        "model_algorithm": "object_detection",         |
-   |     5                             |        "metrics": {                                   |
-   |     6                             |            "f1": 0.345294,                            |
-   |     7                             |            "accuracy": 0.462963,                      |
-   |     8                             |            "precision": 0.338977,                     |
-   |     9                             |            "recall": 0.351852                         |
-   |    10                             |        },                                             |
-   |    11                             |        "apis": [{                                     |
-   |    12                             |            "protocol": "http",                        |
-   |    13                             |            "url": "/",                                |
-   |    14                             |            "method": "post",                          |
-   |    15                             |            "request": {                               |
-   |    16                             |                "Content-type": "multipart/form-data", |
-   |    17                             |                "data": {                              |
-   |    18                             |                    "type": "object",                  |
-   |    19                             |                    "properties": {                    |
-   |    20                             |                        "images": {                    |
-   |    21                             |                            "type": "file"             |
-   |    22                             |                        }                              |
-   |    23                             |                    }                                  |
-   |    24                             |                }                                      |
-   |    25                             |            },                                         |
-   |    26                             |            "response": {                              |
-   |    27                             |                "Content-type": "multipart/form-data", |
-   |    28                             |                "data": {                              |
-   |    29                             |                    "type": "object",                  |
-   |    30                             |                    "properties": {                    |
-   |    31                             |                        "detection_classes": {         |
-   |    32                             |                            "type": "array",           |
-   |    33                             |                            "items": [{                |
-   |    34                             |                                "type": "string"       |
-   |    35                             |                            }]                         |
-   |    36                             |                        },                             |
-   |    37                             |                        "detection_boxes": {           |
-   |    38                             |                            "type": "array",           |
-   |    39                             |                            "items": [{                |
-   |    40                             |                                "type": "array",       |
-   |    41                             |                                "minItems": 4,         |
-   |    42                             |                                "maxItems": 4,         |
-   |    43                             |                                "items": [{            |
-   |    44                             |                                    "type": "number"   |
-   |    45                             |                                }]                     |
-   |    46                             |                            }]                         |
-   |    47                             |                        },                             |
-   |    48                             |                        "detection_scores": {          |
-   |    49                             |                            "type": "array",           |
-   |    50                             |                            "items": [{                |
-   |    51                             |                                "type": "number"       |
-   |    52                             |                            }]                         |
-   |    53                             |                        }                              |
-   |    54                             |                    }                                  |
-   |    55                             |                }                                      |
-   |    56                             |            }                                          |
-   |    57                             |        }],                                            |
-   |    58                             |        "dependencies": [{                             |
-   |    59                             |            "installer": "pip",                        |
-   |    60                             |            "packages": [{                             |
-   |    61                             |                    "restraint": "EXACT",              |
-   |    62                             |                    "package_version": "1.15.0",       |
-   |    63                             |                    "package_name": "numpy"            |
-   |    64                             |                },                                     |
-   |    65                             |                {                                      |
-   |    66                             |                    "restraint": "EXACT",              |
-   |    67                             |                    "package_version": "5.2.0",        |
-   |    68                             |                    "package_name": "Pillow"           |
-   |    69                             |                }                                      |
-   |    70                             |            ]                                          |
-   |    71                             |        }]                                             |
-   |    72                             |    }                                                  |
-   |    73                             |    ```                                                |
-   +-----------------------------------+-------------------------------------------------------+
+   .. code-block::
+
+      ```
+      {
+          "model_type": "TensorFlow",
+          "model_algorithm": "object_detection",
+          "metrics": {
+              "f1": 0.345294,
+              "accuracy": 0.462963,
+              "precision": 0.338977,
+              "recall": 0.351852
+          },
+          "apis": [{
+              "protocol": "http",
+              "url": "/",
+              "method": "post",
+              "request": {
+                  "Content-type": "multipart/form-data",
+                  "data": {
+                      "type": "object",
+                      "properties": {
+                          "images": {
+                              "type": "file"
+                          }
+                      }
+                  }
+              },
+              "response": {
+                  "Content-type": "multipart/form-data",
+                  "data": {
+                      "type": "object",
+                      "properties": {
+                          "detection_classes": {
+                              "type": "array",
+                              "items": [{
+                                  "type": "string"
+                              }]
+                          },
+                          "detection_boxes": {
+                              "type": "array",
+                              "items": [{
+                                  "type": "array",
+                                  "minItems": 4,
+                                  "maxItems": 4,
+                                  "items": [{
+                                      "type": "number"
+                                  }]
+                              }]
+                          },
+                          "detection_scores": {
+                              "type": "array",
+                              "items": [{
+                                  "type": "number"
+                              }]
+                          }
+                      }
+                  }
+              }
+          }],
+          "dependencies": [{
+              "installer": "pip",
+              "packages": [{
+                      "restraint": "EXACT",
+                      "package_version": "1.15.0",
+                      "package_name": "numpy"
+                  },
+                  {
+                      "restraint": "EXACT",
+                      "package_version": "5.2.0",
+                      "package_name": "Pillow"
+                  }
+              ]
+          }]
+      }
+      ```
 
 Example of the Image Classification Model Configuration File
 ------------------------------------------------------------
@@ -319,95 +315,91 @@ The following code uses the TensorFlow engine as an example. You can modify the 
 
 -  Model output
 
-   +-----------------------------------+-------------------------------------+
-   | ::                                | ::                                  |
-   |                                   |                                     |
-   |    1                              |    ```                              |
-   |    2                              |    {                                |
-   |    3                              |        "predicted_label": "flower", |
-   |    4                              |        "scores": [                  |
-   |    5                              |           ["rose", 0.99],           |
-   |    6                              |           ["begonia", 0.01]         |
-   |    7                              |        ]                            |
-   |    8                              |    }                                |
-   |    9                              |    ```                              |
-   +-----------------------------------+-------------------------------------+
+   .. code-block::
+
+      ```
+      {
+          "predicted_label": "flower",
+          "scores": [
+             ["rose", 0.99],
+             ["begonia", 0.01]
+          ]
+      }
+      ```
 
 -  Configuration file
 
-   +-----------------------------------+---------------------------------------------------------+
-   | ::                                | ::                                                      |
-   |                                   |                                                         |
-   |     1                             |    ```                                                  |
-   |     2                             |    {                                                    |
-   |     3                             |        "model_type": "TensorFlow",                      |
-   |     4                             |        "model_algorithm": "image_classification",       |
-   |     5                             |        "metrics": {                                     |
-   |     6                             |            "f1": 0.345294,                              |
-   |     7                             |            "accuracy": 0.462963,                        |
-   |     8                             |            "precision": 0.338977,                       |
-   |     9                             |            "recall": 0.351852                           |
-   |    10                             |        },                                               |
-   |    11                             |        "apis": [{                                       |
-   |    12                             |            "protocol": "http",                          |
-   |    13                             |            "url": "/",                                  |
-   |    14                             |            "method": "post",                            |
-   |    15                             |            "request": {                                 |
-   |    16                             |                "Content-type": "multipart/form-data",   |
-   |    17                             |                "data": {                                |
-   |    18                             |                    "type": "object",                    |
-   |    19                             |                    "properties": {                      |
-   |    20                             |                        "images": {                      |
-   |    21                             |                            "type": "file"               |
-   |    22                             |                        }                                |
-   |    23                             |                    }                                    |
-   |    24                             |                }                                        |
-   |    25                             |            },                                           |
-   |    26                             |            "response": {                                |
-   |    27                             |                "Content-type": "multipart/form-data",   |
-   |    28                             |                "data": {                                |
-   |    29                             |                    "type": "object",                    |
-   |    30                             |                    "properties": {                      |
-   |    31                             |                        "predicted_label": {             |
-   |    32                             |                            "type": "string"             |
-   |    33                             |                        },                               |
-   |    34                             |                        "scores": {                      |
-   |    35                             |                            "type": "array",             |
-   |    36                             |                            "items": [{                  |
-   |    37                             |                                "type": "array",         |
-   |    38                             |                                "minItems": 2,           |
-   |    39                             |                                "maxItems": 2,           |
-   |    40                             |                                "items": [               |
-   |    41                             |                                    {                    |
-   |    42                             |                                        "type": "string" |
-   |    43                             |                                    },                   |
-   |    44                             |                                    {                    |
-   |    45                             |                                        "type": "number" |
-   |    46                             |                                    }                    |
-   |    47                             |                                ]                        |
-   |    48                             |                            }]                           |
-   |    49                             |                        }                                |
-   |    50                             |                    }                                    |
-   |    51                             |                }                                        |
-   |    52                             |            }                                            |
-   |    53                             |        }],                                              |
-   |    54                             |        "dependencies": [{                               |
-   |    55                             |            "installer": "pip",                          |
-   |    56                             |            "packages": [{                               |
-   |    57                             |                    "restraint": "ATLEAST",              |
-   |    58                             |                    "package_version": "1.15.0",         |
-   |    59                             |                    "package_name": "numpy"              |
-   |    60                             |                },                                       |
-   |    61                             |                {                                        |
-   |    62                             |                    "restraint": "",                     |
-   |    63                             |                    "package_version": "",               |
-   |    64                             |                    "package_name": "Pillow"             |
-   |    65                             |                }                                        |
-   |    66                             |            ]                                            |
-   |    67                             |        }]                                               |
-   |    68                             |    }                                                    |
-   |    69                             |    ```                                                  |
-   +-----------------------------------+---------------------------------------------------------+
+   .. code-block::
+
+      ```
+      {
+          "model_type": "TensorFlow",
+          "model_algorithm": "image_classification",
+          "metrics": {
+              "f1": 0.345294,
+              "accuracy": 0.462963,
+              "precision": 0.338977,
+              "recall": 0.351852
+          },
+          "apis": [{
+              "protocol": "http",
+              "url": "/",
+              "method": "post",
+              "request": {
+                  "Content-type": "multipart/form-data",
+                  "data": {
+                      "type": "object",
+                      "properties": {
+                          "images": {
+                              "type": "file"
+                          }
+                      }
+                  }
+              },
+              "response": {
+                  "Content-type": "multipart/form-data",
+                  "data": {
+                      "type": "object",
+                      "properties": {
+                          "predicted_label": {
+                              "type": "string"
+                          },
+                          "scores": {
+                              "type": "array",
+                              "items": [{
+                                  "type": "array",
+                                  "minItems": 2,
+                                  "maxItems": 2,
+                                  "items": [
+                                      {
+                                          "type": "string"
+                                      },
+                                      {
+                                          "type": "number"
+                                      }
+                                  ]
+                              }]
+                          }
+                      }
+                  }
+              }
+          }],
+          "dependencies": [{
+              "installer": "pip",
+              "packages": [{
+                      "restraint": "ATLEAST",
+                      "package_version": "1.15.0",
+                      "package_name": "numpy"
+                  },
+                  {
+                      "restraint": "",
+                      "package_version": "",
+                      "package_name": "Pillow"
+                  }
+              ]
+          }]
+      }
+      ```
 
 Example of the Predictive Analytics Model Configuration File
 ------------------------------------------------------------
@@ -416,141 +408,135 @@ The following code uses the TensorFlow engine as an example. You can modify the 
 
 -  Model input
 
-   +-----------------------------------+--------------------------------------------+
-   | ::                                | ::                                         |
-   |                                   |                                            |
-   |     1                             |    ```                                     |
-   |     2                             |    {                                       |
-   |     3                             |        "data": {                           |
-   |     4                             |            "req_data": [                   |
-   |     5                             |                {                           |
-   |     6                             |                    "buying_price": "high", |
-   |     7                             |                    "maint_price": "high",  |
-   |     8                             |                    "doors": "2",           |
-   |     9                             |                    "persons": "2",         |
-   |    10                             |                    "lug_boot": "small",    |
-   |    11                             |                    "safety": "low",        |
-   |    12                             |                    "acceptability": "acc"  |
-   |    13                             |                },                          |
-   |    14                             |                {                           |
-   |    15                             |                    "buying_price": "high", |
-   |    16                             |                    "maint_price": "high",  |
-   |    17                             |                    "doors": "2",           |
-   |    18                             |                    "persons": "2",         |
-   |    19                             |                    "lug_boot": "small",    |
-   |    20                             |                    "safety": "low",        |
-   |    21                             |                    "acceptability": "acc"  |
-   |    22                             |                }                           |
-   |    23                             |            ]                               |
-   |    24                             |        }                                   |
-   |    25                             |    }                                       |
-   |    26                             |    ```                                     |
-   +-----------------------------------+--------------------------------------------+
+   .. code-block::
+
+      ```
+      {
+          "data": {
+              "req_data": [
+                  {
+                      "buying_price": "high",
+                      "maint_price": "high",
+                      "doors": "2",
+                      "persons": "2",
+                      "lug_boot": "small",
+                      "safety": "low",
+                      "acceptability": "acc"
+                  },
+                  {
+                      "buying_price": "high",
+                      "maint_price": "high",
+                      "doors": "2",
+                      "persons": "2",
+                      "lug_boot": "small",
+                      "safety": "low",
+                      "acceptability": "acc"
+                  }
+              ]
+          }
+      }
+      ```
 
 -  Model output
 
-   +-----------------------------------+----------------------------------------------+
-   | ::                                | ::                                           |
-   |                                   |                                              |
-   |     1                             |    ```                                       |
-   |     2                             |    {                                         |
-   |     3                             |        "data": {                             |
-   |     4                             |            "resp_data": [                    |
-   |     5                             |                {                             |
-   |     6                             |                    "predict_result": "unacc" |
-   |     7                             |                },                            |
-   |     8                             |                {                             |
-   |     9                             |                    "predict_result": "unacc" |
-   |    10                             |                }                             |
-   |    11                             |            ]                                 |
-   |    12                             |        }                                     |
-   |    13                             |    }                                         |
-   |    14                             |    ```                                       |
-   +-----------------------------------+----------------------------------------------+
+   .. code-block::
+
+      ```
+      {
+          "data": {
+              "resp_data": [
+                  {
+                      "predict_result": "unacc"
+                  },
+                  {
+                      "predict_result": "unacc"
+                  }
+              ]
+          }
+      }
+      ```
 
 -  Configuration file
 
-   +-----------------------------------+------------------------------------------------------------------+
-   | ::                                | ::                                                               |
-   |                                   |                                                                  |
-   |     1                             |    ```                                                           |
-   |     2                             |    {                                                             |
-   |     3                             |        "model_type": "TensorFlow",                               |
-   |     4                             |        "model_algorithm": "predict_analysis",                    |
-   |     5                             |        "metrics": {                                              |
-   |     6                             |            "f1": 0.345294,                                       |
-   |     7                             |            "accuracy": 0.462963,                                 |
-   |     8                             |            "precision": 0.338977,                                |
-   |     9                             |            "recall": 0.351852                                    |
-   |    10                             |        },                                                        |
-   |    11                             |        "apis": [                                                 |
-   |    12                             |            {                                                     |
-   |    13                             |                "protocol": "http",                               |
-   |    14                             |                "url": "/",                                       |
-   |    15                             |                "method": "post",                                 |
-   |    16                             |                "request": {                                      |
-   |    17                             |                    "Content-type": "application/json",           |
-   |    18                             |                    "data": {                                     |
-   |    19                             |                        "type": "object",                         |
-   |    20                             |                        "properties": {                           |
-   |    21                             |                            "data": {                             |
-   |    22                             |                                "type": "object",                 |
-   |    23                             |                                "properties": {                   |
-   |    24                             |                                    "req_data": {                 |
-   |    25                             |                                        "items": [                |
-   |    26                             |                                            {                     |
-   |    27                             |                                                "type": "object", |
-   |    28                             |                                                "properties": {   |
-   |    29                             |                                                }                 |
-   |    30                             |                                            }],                   |
-   |    31                             |                                        "type": "array"           |
-   |    32                             |                                    }                             |
-   |    33                             |                                }                                 |
-   |    34                             |                            }                                     |
-   |    35                             |                        }                                         |
-   |    36                             |                    }                                             |
-   |    37                             |                },                                                |
-   |    38                             |                "response": {                                     |
-   |    39                             |                    "Content-type": "multipart/form-data",        |
-   |    40                             |                    "data": {                                     |
-   |    41                             |                        "type": "object",                         |
-   |    42                             |                        "properties": {                           |
-   |    43                             |                            "data": {                             |
-   |    44                             |                                "type": "object",                 |
-   |    45                             |                                "properties": {                   |
-   |    46                             |                                    "resp_data": {                |
-   |    47                             |                                        "type": "array",          |
-   |    48                             |                                        "items": [                |
-   |    49                             |                                            {                     |
-   |    50                             |                                                "type": "object", |
-   |    51                             |                                                "properties": {   |
-   |    52                             |                                                }                 |
-   |    53                             |                                            }]                    |
-   |    54                             |                                    }                             |
-   |    55                             |                                }                                 |
-   |    56                             |                            }                                     |
-   |    57                             |                        }                                         |
-   |    58                             |                    }                                             |
-   |    59                             |                }                                                 |
-   |    60                             |            }],                                                   |
-   |    61                             |        "dependencies": [                                         |
-   |    62                             |            {                                                     |
-   |    63                             |                "installer": "pip",                               |
-   |    64                             |                "packages": [                                     |
-   |    65                             |                    {                                             |
-   |    66                             |                        "restraint": "EXACT",                     |
-   |    67                             |                        "package_version": "1.15.0",              |
-   |    68                             |                        "package_name": "numpy"                   |
-   |    69                             |                    },                                            |
-   |    70                             |                    {                                             |
-   |    71                             |                        "restraint": "EXACT",                     |
-   |    72                             |                        "package_version": "5.2.0",               |
-   |    73                             |                        "package_name": "Pillow"                  |
-   |    74                             |                    }]                                            |
-   |    75                             |            }]                                                    |
-   |    76                             |    }                                                             |
-   |    77                             |    ```                                                           |
-   +-----------------------------------+------------------------------------------------------------------+
+   .. code-block::
+
+      ```
+      {
+          "model_type": "TensorFlow",
+          "model_algorithm": "predict_analysis",
+          "metrics": {
+              "f1": 0.345294,
+              "accuracy": 0.462963,
+              "precision": 0.338977,
+              "recall": 0.351852
+          },
+          "apis": [
+              {
+                  "protocol": "http",
+                  "url": "/",
+                  "method": "post",
+                  "request": {
+                      "Content-type": "application/json",
+                      "data": {
+                          "type": "object",
+                          "properties": {
+                              "data": {
+                                  "type": "object",
+                                  "properties": {
+                                      "req_data": {
+                                          "items": [
+                                              {
+                                                  "type": "object",
+                                                  "properties": {
+                                                  }
+                                              }],
+                                          "type": "array"
+                                      }
+                                  }
+                              }
+                          }
+                      }
+                  },
+                  "response": {
+                      "Content-type": "multipart/form-data",
+                      "data": {
+                          "type": "object",
+                          "properties": {
+                              "data": {
+                                  "type": "object",
+                                  "properties": {
+                                      "resp_data": {
+                                          "type": "array",
+                                          "items": [
+                                              {
+                                                  "type": "object",
+                                                  "properties": {
+                                                  }
+                                              }]
+                                      }
+                                  }
+                              }
+                          }
+                      }
+                  }
+              }],
+          "dependencies": [
+              {
+                  "installer": "pip",
+                  "packages": [
+                      {
+                          "restraint": "EXACT",
+                          "package_version": "1.15.0",
+                          "package_name": "numpy"
+                      },
+                      {
+                          "restraint": "EXACT",
+                          "package_version": "5.2.0",
+                          "package_name": "Pillow"
+                      }]
+              }]
+      }
+      ```
 
 .. _modelarts_23_0092__en-us_topic_0172466149_section9113122232018:
 
@@ -559,67 +545,65 @@ Example of the Custom Image Model Configuration File
 
 The model input and output are similar to those in :ref:`Example of the Object Detection Model Configuration File <modelarts_23_0092__en-us_topic_0172466149_section218715919415>`.
 
-+-----------------------------------+---------------------------------------------------------+
-| ::                                | ::                                                      |
-|                                   |                                                         |
-|     1                             |    {                                                    |
-|     2                             |        "model_algorithm": "image_classification",       |
-|     3                             |        "model_type": "Image",                           |
-|     4                             |                                                         |
-|     5                             |        "metrics": {                                     |
-|     6                             |            "f1": 0.345294,                              |
-|     7                             |            "accuracy": 0.462963,                        |
-|     8                             |            "precision": 0.338977,                       |
-|     9                             |            "recall": 0.351852                           |
-|    10                             |        },                                               |
-|    11                             |        "apis": [{                                       |
-|    12                             |            "protocol": "http",                          |
-|    13                             |            "url": "/",                                  |
-|    14                             |            "method": "post",                            |
-|    15                             |            "request": {                                 |
-|    16                             |                "Content-type": "multipart/form-data",   |
-|    17                             |                "data": {                                |
-|    18                             |                    "type": "object",                    |
-|    19                             |                    "properties": {                      |
-|    20                             |                        "images": {                      |
-|    21                             |                            "type": "file"               |
-|    22                             |                        }                                |
-|    23                             |                    }                                    |
-|    24                             |                }                                        |
-|    25                             |            },                                           |
-|    26                             |            "response": {                                |
-|    27                             |                "Content-type": "multipart/form-data",   |
-|    28                             |                "data": {                                |
-|    29                             |                    "type": "object",                    |
-|    30                             |                    "required": [                        |
-|    31                             |                        "predicted_label",               |
-|    32                             |                        "scores"                         |
-|    33                             |                    ],                                   |
-|    34                             |                    "properties": {                      |
-|    35                             |                        "predicted_label": {             |
-|    36                             |                            "type": "string"             |
-|    37                             |                        },                               |
-|    38                             |                        "scores": {                      |
-|    39                             |                            "type": "array",             |
-|    40                             |                            "items": [{                  |
-|    41                             |                                "type": "array",         |
-|    42                             |                                "minItems": 2,           |
-|    43                             |                                "maxItems": 2,           |
-|    44                             |                                "items": [{              |
-|    45                             |                                        "type": "string" |
-|    46                             |                                    },                   |
-|    47                             |                                    {                    |
-|    48                             |                                        "type": "number" |
-|    49                             |                                    }                    |
-|    50                             |                                ]                        |
-|    51                             |                            }]                           |
-|    52                             |                        }                                |
-|    53                             |                    }                                    |
-|    54                             |                }                                        |
-|    55                             |            }                                            |
-|    56                             |        }]                                               |
-|    57                             |    }                                                    |
-+-----------------------------------+---------------------------------------------------------+
+.. code-block::
+
+   {
+       "model_algorithm": "image_classification",
+       "model_type": "Image",
+
+       "metrics": {
+           "f1": 0.345294,
+           "accuracy": 0.462963,
+           "precision": 0.338977,
+           "recall": 0.351852
+       },
+       "apis": [{
+           "protocol": "http",
+           "url": "/",
+           "method": "post",
+           "request": {
+               "Content-type": "multipart/form-data",
+               "data": {
+                   "type": "object",
+                   "properties": {
+                       "images": {
+                           "type": "file"
+                       }
+                   }
+               }
+           },
+           "response": {
+               "Content-type": "multipart/form-data",
+               "data": {
+                   "type": "object",
+                   "required": [
+                       "predicted_label",
+                       "scores"
+                   ],
+                   "properties": {
+                       "predicted_label": {
+                           "type": "string"
+                       },
+                       "scores": {
+                           "type": "array",
+                           "items": [{
+                               "type": "array",
+                               "minItems": 2,
+                               "maxItems": 2,
+                               "items": [{
+                                       "type": "string"
+                                   },
+                                   {
+                                       "type": "number"
+                                   }
+                               ]
+                           }]
+                       }
+                   }
+               }
+           }
+       }]
+   }
 
 Example of the Machine Learning Model Configuration File
 --------------------------------------------------------
@@ -738,58 +722,56 @@ Example of a Model Configuration File Using a Custom Dependency Package
 
 The following example defines the NumPy 1.16.4 dependency environment.
 
-+-----------------------------------+------------------------------------------------------------+
-| ::                                | ::                                                         |
-|                                   |                                                            |
-|     1                             |    {                                                       |
-|     2                             |         "model_algorithm": "image_classification",         |
-|     3                             |         "model_type": "TensorFlow",                        |
-|     4                             |         "runtime": "python3.6",                            |
-|     5                             |         "apis": [{                                         |
-|     6                             |                 "procotol": "http",                        |
-|     7                             |                 "url": "/",                                |
-|     8                             |                 "method": "post",                          |
-|     9                             |                 "request": {                               |
-|    10                             |                     "Content-type": "multipart/form-data", |
-|    11                             |                     "data": {                              |
-|    12                             |                         "type": "object",                  |
-|    13                             |                         "properties": {                    |
-|    14                             |                             "images": {                    |
-|    15                             |                                 "type": "file"             |
-|    16                             |                             }                              |
-|    17                             |                         }                                  |
-|    18                             |                     }                                      |
-|    19                             |                 },                                         |
-|    20                             |                 "response": {                              |
-|    21                             |                     "Content-type": "applicaton/json",     |
-|    22                             |                     "data": {                              |
-|    23                             |                         "type": "object",                  |
-|    24                             |                         "properties": {                    |
-|    25                             |                             "mnist_result": {              |
-|    26                             |                                 "type": "array",           |
-|    27                             |                 "item": [{                                 |
-|    28                             |                    "type": "string"                        |
-|    29                             |                             }]                             |
-|    30                             |                             }                              |
-|    31                             |                         }                                  |
-|    32                             |                     }                                      |
-|    33                             |                 }                                          |
-|    34                             |             }                                              |
-|    35                             |         ],                                                 |
-|    36                             |         "metrics": {                                       |
-|    37                             |             "f1": 0.124555,                                |
-|    38                             |             "recall": 0.171875,                            |
-|    39                             |             "precision": 0.0023493892851938493,            |
-|    40                             |             "accuracy": 0.00746268656716417                |
-|    41                             |         },                                                 |
-|    42                             |        "dependencies": [{                                  |
-|    43                             |            "installer": "pip",                             |
-|    44                             |            "packages": [{                                  |
-|    45                             |                    "restraint": "EXACT",                   |
-|    46                             |                    "package_version": "1.16.4",            |
-|    47                             |                    "package_name": "numpy"                 |
-|    48                             |                }                                           |
-|    49                             |            ]                                               |
-|    50                             |        }]                                                  |
-|    51                             |     }                                                      |
-+-----------------------------------+------------------------------------------------------------+
+.. code-block::
+
+   {
+        "model_algorithm": "image_classification",
+        "model_type": "TensorFlow",
+        "runtime": "python3.6",
+        "apis": [{
+                "procotol": "http",
+                "url": "/",
+                "method": "post",
+                "request": {
+                    "Content-type": "multipart/form-data",
+                    "data": {
+                        "type": "object",
+                        "properties": {
+                            "images": {
+                                "type": "file"
+                            }
+                        }
+                    }
+                },
+                "response": {
+                    "Content-type": "applicaton/json",
+                    "data": {
+                        "type": "object",
+                        "properties": {
+                            "mnist_result": {
+                                "type": "array",
+                "item": [{
+                   "type": "string"
+                            }]
+                            }
+                        }
+                    }
+                }
+            }
+        ],
+        "metrics": {
+            "f1": 0.124555,
+            "recall": 0.171875,
+            "precision": 0.0023493892851938493,
+            "accuracy": 0.00746268656716417
+        },
+       "dependencies": [{
+           "installer": "pip",
+           "packages": [{
+                   "restraint": "EXACT",
+                   "package_version": "1.16.4",
+                   "package_name": "numpy"
+               }
+           ]
+       }]
+    }

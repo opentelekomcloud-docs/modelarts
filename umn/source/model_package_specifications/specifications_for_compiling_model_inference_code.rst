@@ -124,7 +124,7 @@ Specifications for Compiling Inference Code
 
       .. code-block::
 
-          {
+         {
              "images":"base64 encode image"
 
           }
@@ -136,37 +136,35 @@ The following is an example of TensorFlow MnistService.
 
 -  Inference code
 
-   +-----------------------------------+-------------------------------------------------------------------------------+
-   | ::                                | ::                                                                            |
-   |                                   |                                                                               |
-   |     1                             |    from PIL import Image                                                      |
-   |     2                             |    import numpy as np                                                         |
-   |     3                             |    from model_service.tfserving_model_service import TfServingBaseService     |
-   |     4                             |                                                                               |
-   |     5                             |    class mnist_service(TfServingBaseService):                                 |
-   |     6                             |                                                                               |
-   |     7                             |        def _preprocess(self, data):                                           |
-   |     8                             |            preprocessed_data = {}                                             |
-   |     9                             |                                                                               |
-   |    10                             |            for k, v in data.items():                                          |
-   |    11                             |                for file_name, file_content in v.items():                      |
-   |    12                             |                    image1 = Image.open(file_content)                          |
-   |    13                             |                    image1 = np.array(image1, dtype=np.float32)                |
-   |    14                             |                    image1.resize((1, 784))                                    |
-   |    15                             |                    preprocessed_data[k] = image1                              |
-   |    16                             |                                                                               |
-   |    17                             |            return preprocessed_data                                           |
-   |    18                             |                                                                               |
-   |    19                             |        def _postprocess(self, data):                                          |
-   |    20                             |                                                                               |
-   |    21                             |            infer_output = {}                                                  |
-   |    22                             |                                                                               |
-   |    23                             |            for output_name, result in data.items():                           |
-   |    24                             |                                                                               |
-   |    25                             |                infer_output["mnist_result"] = result[0].index(max(result[0])) |
-   |    26                             |                                                                               |
-   |    27                             |            return infer_output                                                |
-   +-----------------------------------+-------------------------------------------------------------------------------+
+   .. code-block::
+
+      from PIL import Image
+      import numpy as np
+      from model_service.tfserving_model_service import TfServingBaseService
+
+      class mnist_service(TfServingBaseService):
+
+          def _preprocess(self, data):
+              preprocessed_data = {}
+
+              for k, v in data.items():
+                  for file_name, file_content in v.items():
+                      image1 = Image.open(file_content)
+                      image1 = np.array(image1, dtype=np.float32)
+                      image1.resize((1, 784))
+                      preprocessed_data[k] = image1
+
+              return preprocessed_data
+
+          def _postprocess(self, data):
+
+              infer_output = {}
+
+              for output_name, result in data.items():
+
+                  infer_output["mnist_result"] = result[0].index(max(result[0]))
+
+              return infer_output
 
 -  Request
 
@@ -227,120 +225,118 @@ Inference Script Example of the Custom Inference Logic
 
 First, define a dependency package in the configuration file. For details, see :ref:`Example of a Model Configuration File Using a Custom Dependency Package <modelarts_23_0092__en-us_topic_0172466149_section119911955122011>`. Then, use the following code example to implement the loading and inference of the model in **saved_model** format.
 
-+-----------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-| ::                                | ::                                                                                                                       |
-|                                   |                                                                                                                          |
-|      1                            |    # -*- coding: utf-8 -*-                                                                                               |
-|      2                            |    import json                                                                                                           |
-|      3                            |    import os                                                                                                             |
-|      4                            |    import threading                                                                                                      |
-|      5                            |                                                                                                                          |
-|      6                            |    import numpy as np                                                                                                    |
-|      7                            |    import tensorflow as tf                                                                                               |
-|      8                            |    from PIL import Image                                                                                                 |
-|      9                            |                                                                                                                          |
-|     10                            |    from model_service.tfserving_model_service import TfServingBaseService                                                |
-|     11                            |    import logging                                                                                                        |
-|     12                            |                                                                                                                          |
-|     13                            |    logger = logging.getLogger(__name__)                                                                                  |
-|     14                            |                                                                                                                          |
-|     15                            |                                                                                                                          |
-|     16                            |    class MnistService(TfServingBaseService):                                                                             |
-|     17                            |                                                                                                                          |
-|     18                            |        def __init__(self, model_name, model_path):                                                                       |
-|     19                            |            self.model_name = model_name                                                                                  |
-|     20                            |            self.model_path = model_path                                                                                  |
-|     21                            |            self.model_inputs = {}                                                                                        |
-|     22                            |            self.model_outputs = {}                                                                                       |
-|     23                            |                                                                                                                          |
-|     24                            |           # The label file can be loaded here and used in the post-processing function.                                  |
-|     25                            |            # Directories for storing the label.txt file on OBS and in the model package                                  |
-|     26                            |                                                                                                                          |
-|     27                            |            # with open(os.path.join(self.model_path, 'label.txt')) as f:                                                 |
-|     28                            |            #     self.label = json.load(f)                                                                               |
-|     29                            |                                                                                                                          |
-|     30                            |            # Load the model in saved_model format in non-blocking mode to prevent blocking timeout.                      |
-|     31                            |            thread = threading.Thread(target=self.get_tf_sess)                                                            |
-|     32                            |            thread.start()                                                                                                |
-|     33                            |                                                                                                                          |
-|     34                            |        def get_tf_sess(self):                                                                                            |
-|     35                            |            # Load the model in saved_model format.                                                                       |
-|     36                            |                                                                                                                          |
-|     37                            |           # The session will be reused. Do not use the with statement.                                                   |
-|     38                            |            sess = tf.Session(graph=tf.Graph())                                                                           |
-|     39                            |            meta_graph_def = tf.saved_model.loader.load(sess, [tf.saved_model.tag_constants.SERVING], self.model_path)    |
-|     40                            |            signature_defs = meta_graph_def.signature_def                                                                 |
-|     41                            |                                                                                                                          |
-|     42                            |            self.sess = sess                                                                                              |
-|     43                            |                                                                                                                          |
-|     44                            |            signature = []                                                                                                |
-|     45                            |                                                                                                                          |
-|     46                            |            # only one signature allowed                                                                                  |
-|     47                            |            for signature_def in signature_defs:                                                                          |
-|     48                            |                signature.append(signature_def)                                                                           |
-|     49                            |            if len(signature) == 1:                                                                                       |
-|     50                            |                model_signature = signature[0]                                                                            |
-|     51                            |            else:                                                                                                         |
-|     52                            |                logger.warning("signatures more than one, use serving_default signature")                                 |
-|     53                            |                model_signature = tf.saved_model.signature_constants.DEFAULT_SERVING_SIGNATURE_DEF_KEY                    |
-|     54                            |                                                                                                                          |
-|     55                            |            logger.info("model signature: %s", model_signature)                                                           |
-|     56                            |                                                                                                                          |
-|     57                            |            for signature_name in meta_graph_def.signature_def[model_signature].inputs:                                   |
-|     58                            |                tensorinfo = meta_graph_def.signature_def[model_signature].inputs[signature_name]                         |
-|     59                            |                name = tensorinfo.name                                                                                    |
-|     60                            |                op = self.sess.graph.get_tensor_by_name(name)                                                             |
-|     61                            |                self.model_inputs[signature_name] = op                                                                    |
-|     62                            |                                                                                                                          |
-|     63                            |            logger.info("model inputs: %s", self.model_inputs)                                                            |
-|     64                            |                                                                                                                          |
-|     65                            |            for signature_name in meta_graph_def.signature_def[model_signature].outputs:                                  |
-|     66                            |                tensorinfo = meta_graph_def.signature_def[model_signature].outputs[signature_name]                        |
-|     67                            |                name = tensorinfo.name                                                                                    |
-|     68                            |                op = self.sess.graph.get_tensor_by_name(name)                                                             |
-|     69                            |                                                                                                                          |
-|     70                            |                self.model_outputs[signature_name] = op                                                                   |
-|     71                            |                                                                                                                          |
-|     72                            |            logger.info("model outputs: %s", self.model_outputs)                                                          |
-|     73                            |                                                                                                                          |
-|     74                            |        def _preprocess(self, data):                                                                                      |
-|     75                            |            # Two request modes using HTTPS                                                                               |
-|     76                            |            # 1. The request in form-data file format is as follows: data = {"Request key value":{"File name":<File io>}} |
-|     77                            |           # 2. Request in JSON format is as follows: data = json.loads("JSON body transferred by the API")               |
-|     78                            |            preprocessed_data = {}                                                                                        |
-|     79                            |                                                                                                                          |
-|     80                            |            for k, v in data.items():                                                                                     |
-|     81                            |                for file_name, file_content in v.items():                                                                 |
-|     82                            |                    image1 = Image.open(file_content)                                                                     |
-|     83                            |                    image1 = np.array(image1, dtype=np.float32)                                                           |
-|     84                            |                    image1.resize((1, 28, 28))                                                                            |
-|     85                            |                    preprocessed_data[k] = image1                                                                         |
-|     86                            |                                                                                                                          |
-|     87                            |            return preprocessed_data                                                                                      |
-|     88                            |                                                                                                                          |
-|     89                            |        def _inference(self, data):                                                                                       |
-|     90                            |                                                                                                                          |
-|     91                            |            feed_dict = {}                                                                                                |
-|     92                            |            for k, v in data.items():                                                                                     |
-|     93                            |                if k not in self.model_inputs.keys():                                                                     |
-|     94                            |                    logger.error("input key %s is not in model inputs %s", k, list(self.model_inputs.keys()))             |
-|     95                            |                    raise Exception("input key %s is not in model inputs %s" % (k, list(self.model_inputs.keys())))       |
-|     96                            |                feed_dict[self.model_inputs[k]] = v                                                                       |
-|     97                            |                                                                                                                          |
-|     98                            |            result = self.sess.run(self.model_outputs, feed_dict=feed_dict)                                               |
-|     99                            |            logger.info('predict result : ' + str(result))                                                                |
-|    100                            |                                                                                                                          |
-|    101                            |            return result                                                                                                 |
-|    102                            |                                                                                                                          |
-|    103                            |        def _postprocess(self, data):                                                                                     |
-|    104                            |            infer_output = {"mnist_result": []}                                                                           |
-|    105                            |            for output_name, results in data.items():                                                                     |
-|    106                            |                                                                                                                          |
-|    107                            |                for result in results:                                                                                    |
-|    108                            |                    infer_output["mnist_result"].append(np.argmax(result))                                                |
-|    109                            |                                                                                                                          |
-|    110                            |            return infer_output                                                                                           |
-|    111                            |                                                                                                                          |
-|    112                            |        def __del__(self):                                                                                                |
-|    113                            |            self.sess.close()                                                                                             |
-+-----------------------------------+--------------------------------------------------------------------------------------------------------------------------+
+.. code-block::
+
+   # -*- coding: utf-8 -*-
+   import json
+   import os
+   import threading
+
+   import numpy as np
+   import tensorflow as tf
+   from PIL import Image
+
+   from model_service.tfserving_model_service import TfServingBaseService
+   import logging
+
+   logger = logging.getLogger(__name__)
+
+
+   class MnistService(TfServingBaseService):
+
+       def __init__(self, model_name, model_path):
+           self.model_name = model_name
+           self.model_path = model_path
+           self.model_inputs = {}
+           self.model_outputs = {}
+
+          # The label file can be loaded here and used in the post-processing function.
+           # Directories for storing the label.txt file on OBS and in the model package
+
+           # with open(os.path.join(self.model_path, 'label.txt')) as f:
+           #     self.label = json.load(f)
+
+           # Load the model in saved_model format in non-blocking mode to prevent blocking timeout.
+           thread = threading.Thread(target=self.get_tf_sess)
+           thread.start()
+
+       def get_tf_sess(self):
+           # Load the model in saved_model format.
+
+          # The session will be reused. Do not use the with statement.
+           sess = tf.Session(graph=tf.Graph())
+           meta_graph_def = tf.saved_model.loader.load(sess, [tf.saved_model.tag_constants.SERVING], self.model_path)
+           signature_defs = meta_graph_def.signature_def
+
+           self.sess = sess
+
+           signature = []
+
+           # only one signature allowed
+           for signature_def in signature_defs:
+               signature.append(signature_def)
+           if len(signature) == 1:
+               model_signature = signature[0]
+           else:
+               logger.warning("signatures more than one, use serving_default signature")
+               model_signature = tf.saved_model.signature_constants.DEFAULT_SERVING_SIGNATURE_DEF_KEY
+
+           logger.info("model signature: %s", model_signature)
+
+           for signature_name in meta_graph_def.signature_def[model_signature].inputs:
+               tensorinfo = meta_graph_def.signature_def[model_signature].inputs[signature_name]
+               name = tensorinfo.name
+               op = self.sess.graph.get_tensor_by_name(name)
+               self.model_inputs[signature_name] = op
+
+           logger.info("model inputs: %s", self.model_inputs)
+
+           for signature_name in meta_graph_def.signature_def[model_signature].outputs:
+               tensorinfo = meta_graph_def.signature_def[model_signature].outputs[signature_name]
+               name = tensorinfo.name
+               op = self.sess.graph.get_tensor_by_name(name)
+
+               self.model_outputs[signature_name] = op
+
+           logger.info("model outputs: %s", self.model_outputs)
+
+       def _preprocess(self, data):
+           # Two request modes using HTTPS
+           # 1. The request in form-data file format is as follows: data = {"Request key value":{"File name":<File io>}}
+          # 2. Request in JSON format is as follows: data = json.loads("JSON body transferred by the API")
+           preprocessed_data = {}
+
+           for k, v in data.items():
+               for file_name, file_content in v.items():
+                   image1 = Image.open(file_content)
+                   image1 = np.array(image1, dtype=np.float32)
+                   image1.resize((1, 28, 28))
+                   preprocessed_data[k] = image1
+
+           return preprocessed_data
+
+       def _inference(self, data):
+
+           feed_dict = {}
+           for k, v in data.items():
+               if k not in self.model_inputs.keys():
+                   logger.error("input key %s is not in model inputs %s", k, list(self.model_inputs.keys()))
+                   raise Exception("input key %s is not in model inputs %s" % (k, list(self.model_inputs.keys())))
+               feed_dict[self.model_inputs[k]] = v
+
+           result = self.sess.run(self.model_outputs, feed_dict=feed_dict)
+           logger.info('predict result : ' + str(result))
+
+           return result
+
+       def _postprocess(self, data):
+           infer_output = {"mnist_result": []}
+           for output_name, results in data.items():
+
+               for result in results:
+                   infer_output["mnist_result"].append(np.argmax(result))
+
+           return infer_output
+
+       def __del__(self):
+           self.sess.close()

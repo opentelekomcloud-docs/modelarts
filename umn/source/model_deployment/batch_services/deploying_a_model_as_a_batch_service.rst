@@ -95,6 +95,7 @@ Batch services of the inference platform support the manifest file. The manifest
 
    #. The file name extension must be **.manifest**.
    #. The file content is in JSON format. Each row describes a piece of input data, which must be accurate to a file instead of a folder.
+   #. A **source** field must be defined for the JSON content. The field value is the OBS URL of the file: **<obs path>/{{Bucket name}}/{{Object name}}**.
 
 **Example output manifest file**
 
@@ -138,49 +139,47 @@ The following example shows the relationship between the configuration file, map
 
 Assume that the **apis** parameter in the configuration file used by your model is as follows:
 
-+-----------------------------------+-----------------------------------------------------------------+
-| ::                                | ::                                                              |
-|                                   |                                                                 |
-|     1                             |    [                                                            |
-|     2                             |        {                                                        |
-|     3                             |            "protocol": "http",                                  |
-|     4                             |            "method": "post",                                    |
-|     5                             |            "url": "/",                                          |
-|     6                             |            "request": {                                         |
-|     7                             |                "type": "object",                                |
-|     8                             |                "properties": {                                  |
-|     9                             |                    "data": {                                    |
-|    10                             |                        "type": "object",                        |
-|    11                             |                        "properties": {                          |
-|    12                             |                            "req_data": {                        |
-|    13                             |                                "type": "array",                 |
-|    14                             |                                "items": [                       |
-|    15                             |                                    {                            |
-|    16                             |                                        "type": "object",        |
-|    17                             |                                        "properties": {          |
-|    18                             |                                            "input_1": {         |
-|    19                             |                                                "type": "number" |
-|    20                             |                                            },                   |
-|    21                             |                                            "input_2": {         |
-|    22                             |                                                "type": "number" |
-|    23                             |                                            },                   |
-|    24                             |                                            "input_3": {         |
-|    25                             |                                                "type": "number" |
-|    26                             |                                            },                   |
-|    27                             |                                            "input_4": {         |
-|    28                             |                                                "type": "number" |
-|    29                             |                                            }                    |
-|    30                             |                                        }                        |
-|    31                             |                                    }                            |
-|    32                             |                                ]                                |
-|    33                             |                            }                                    |
-|    34                             |                        }                                        |
-|    35                             |                    }                                            |
-|    36                             |                }                                                |
-|    37                             |            }                                                    |
-|    38                             |        }                                                        |
-|    39                             |    ]                                                            |
-+-----------------------------------+-----------------------------------------------------------------+
+.. code-block::
+
+   [
+       {
+           "protocol": "http",
+           "method": "post",
+           "url": "/",
+           "request": {
+               "type": "object",
+               "properties": {
+                   "data": {
+                       "type": "object",
+                       "properties": {
+                           "req_data": {
+                               "type": "array",
+                               "items": [
+                                   {
+                                       "type": "object",
+                                       "properties": {
+                                           "input_1": {
+                                               "type": "number"
+                                           },
+                                           "input_2": {
+                                               "type": "number"
+                                           },
+                                           "input_3": {
+                                               "type": "number"
+                                           },
+                                           "input_4": {
+                                               "type": "number"
+                                           }
+                                       }
+                                   }
+                               ]
+                           }
+                       }
+                   }
+               }
+           }
+       }
+   ]
 
 At this point, the corresponding mapping relationship is shown below. The ModelArts management console automatically resolves the mapping relationship from the configuration file. When calling a ModelArts API, write the mapping relationship by yourself according to the rule.
 

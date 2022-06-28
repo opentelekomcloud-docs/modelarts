@@ -46,28 +46,26 @@ Testing a Service
 
       -  **attr_1** to **attr_7** indicate the input data. On the **Label Data** tab page, the selected label column is **attr_7**, that is, **attr_7** is the target column to be predicted. The value of **attr_7** can be set to any value or left blank, which does not affect the prediction result.
 
-         +-----------------------------------+------------------------------------+
-         | ::                                | ::                                 |
-         |                                   |                                    |
-         |     1                             |    {                               |
-         |     2                             |      "data":                       |
-         |     3                             |      {                             |
-         |     4                             |        "count": 1,                 |
-         |     5                             |        "req_data":                 |
-         |     6                             |        [                           |
-         |     7                             |          {                         |
-         |     8                             |            "attr_1": "58",         |
-         |     9                             |            "attr_2": "management", |
-         |    10                             |            "attr_3": "married",    |
-         |    11                             |            "attr_4": "tertiary",   |
-         |    12                             |            "attr_5": "yes",        |
-         |    13                             |            "attr_6": "no",         |
-         |    14                             |            "attr_7": ""            |
-         |    15                             |          }                         |
-         |    16                             |        ]                           |
-         |    17                             |      }                             |
-         |    18                             |    }                               |
-         +-----------------------------------+------------------------------------+
+         .. code-block::
+
+            {
+              "data":
+              {
+                "count": 1,
+                "req_data":
+                [
+                  {
+                    "attr_1": "58",
+                    "attr_2": "management",
+                    "attr_3": "married",
+                    "attr_4": "tertiary",
+                    "attr_5": "yes",
+                    "attr_6": "no",
+                    "attr_7": ""
+                  }
+                ]
+              }
+            }
 
       -  In the preceding code snippet, **predictioncol** is the inference result of label column **attr_7**.
 

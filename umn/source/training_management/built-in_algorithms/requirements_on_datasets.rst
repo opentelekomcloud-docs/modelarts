@@ -63,41 +63,43 @@ The training dataset must be stored in the OBS bucket. The following shows the O
          ...
 
 -  **data_url** indicates the folder name. You can customize the folder name. Images and label files cannot be stored in the root directory of an OBS bucket.
+
 -  Images and label files must have the same name. The **.xml** files are label files for object detection. The images can be in JPG, JPEG, PNG, or BMP format.
+
 -  In addition to the preceding files and folders, no other files or folders can exist in the **data_url** folder.
+
 -  You can directly use an existing object detection dataset with published versions in **Data Management** of ModelArts.
+
 -  The following provides a label file for object detection. The key parameters are **size** (image size), **object** (object information), and **name** (label name, which can be Chinese characters, English letters, or digits). Note that the values of **xmin**, **ymin**, **xmax**, and **ymax** in the **bndbox** field cannot exceed the value of **size**. That is, the value of **min** cannot be less than 0, and the value of **max** cannot be greater than the value of **width** or **height**.
 
-   +-----------------------------------+-----------------------------------------------------------+
-   | ::                                | ::                                                        |
-   |                                   |                                                           |
-   |     1                             |    <?xml version="1.0" encoding="UTF-8" standalone="no"?> |
-   |     2                             |    <annotation>                                           |
-   |     3                             |        <folder>Images</folder>                            |
-   |     4                             |        <filename>IMG_20180919_120022.jpg</filename>       |
-   |     5                             |        <source>                                           |
-   |     6                             |            <database>Unknown</database>                   |
-   |     7                             |        </source>                                          |
-   |     8                             |        <size>                                             |
-   |     9                             |            <width>800</width>                             |
-   |    10                             |            <height>600</height>                           |
-   |    11                             |            <depth>1</depth>                               |
-   |    12                             |        </size>                                            |
-   |    13                             |        <segmented>0</segmented>                           |
-   |    14                             |        <object>                                           |
-   |    15                             |            <name>yunbao</name>                            |
-   |    16                             |            <pose>Unspecified</pose>                       |
-   |    17                             |            <truncated>0</truncated>                       |
-   |    18                             |            <difficult>0</difficult>                       |
-   |    19                             |            <bndbox>                                       |
-   |    20                             |                <xmin>216.00</xmin>                        |
-   |    21                             |                <ymin>108.00</ymin>                        |
-   |    22                             |                <xmax>705.00</xmax>                        |
-   |    23                             |                <ymax>488.00</ymax>                        |
-   |    24                             |            </bndbox>                                      |
-   |    25                             |        </object>                                          |
-   |    26                             |    </annotation>                                          |
-   +-----------------------------------+-----------------------------------------------------------+
+   .. code-block::
+
+      <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+      <annotation>
+          <folder>Images</folder>
+          <filename>IMG_20180919_120022.jpg</filename>
+          <source>
+              <database>Unknown</database>
+          </source>
+          <size>
+              <width>800</width>
+              <height>600</height>
+              <depth>1</depth>
+          </size>
+          <segmented>0</segmented>
+          <object>
+              <name>yunbao</name>
+              <pose>Unspecified</pose>
+              <truncated>0</truncated>
+              <difficult>0</difficult>
+              <bndbox>
+                  <xmin>216.00</xmin>
+                  <ymin>108.00</ymin>
+                  <xmax>705.00</xmax>
+                  <ymax>488.00</ymax>
+              </bndbox>
+          </object>
+      </annotation>
 
 Image Semantic Segmentation
 ---------------------------
