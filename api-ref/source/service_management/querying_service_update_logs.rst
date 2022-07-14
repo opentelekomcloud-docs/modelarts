@@ -127,14 +127,13 @@ Response Body
 
 .. table:: **Table 6** **custom_spec** parameters
 
-   =========== ======= ======================
-   Parameter   Type    Description
-   =========== ======= ======================
-   cpu         Float   Number of CPUs
-   memory      Integer Memory capacity in MB
-   gpu_p4      Float   Number of GPUs
-   ascend_a310 Integer Number of Ascend chips
-   =========== ======= ======================
+   ========= ======= =====================
+   Parameter Type    Description
+   ========= ======= =====================
+   cpu       Float   Number of CPUs
+   memory    Integer Memory capacity in MB
+   gpu_p4    Float   Number of GPUs
+   ========= ======= =====================
 
 Samples
 -------

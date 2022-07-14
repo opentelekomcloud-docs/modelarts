@@ -81,7 +81,6 @@ Response Body
    |                       |                       | -  6: Scikit Learn                                |
    |                       |                       | -  9: XGBoost-Sklearn                             |
    |                       |                       | -  10: PyTorch                                    |
-   |                       |                       | -  13: Ascend-Powered-Engine                      |
    |                       |                       | -  17: MindSpore-GPU                              |
    +-----------------------+-----------------------+---------------------------------------------------+
    | engine_id             | Long                  | ID of the engine selected for a training job      |

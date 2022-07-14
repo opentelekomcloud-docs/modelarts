@@ -136,7 +136,7 @@ If an API is used to obtain a user token, the request parameters and parameter d
 
    The **scope** parameter specifies where a token takes effect. In the example, the token takes effect only for the resources in a specified project. ModelArts uses a region-specific endpoint to call this API. Set **scope** to **project**. You can set **scope** to an account or a project under an account. In the following example, the token takes effect only for the resources in a specified project. For more information about this API, see "Obtaining a User Token".
 
-.. code-block::
+.. code-block:: text
 
    POST https://{iam-endpoint}/v3/auth/tokens
    Content-Type:application/json

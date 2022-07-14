@@ -14,5 +14,3 @@ Dataset Management
    deleting_a_dataset
    querying_dataset_statistics
    querying_the_monitoring_data_of_a_dataset
-   querying_details_about_team_labeling_task_statistics
-   querying_details_about_the_progress_of_a_team_labeling_task_member

@@ -91,8 +91,8 @@ Samples
       {
           "specifications": [
               {
-                  "specification": "modelarts.vm.gpu.p4" "modelarts.vm.gpu.v100",
-                  "billing_spec": "modelarts.vm.gpu.p4" "modelarts.vm.gpu.v100",
+                  "specification":  "modelarts.vm.gpu.v100",
+                  "billing_spec":  "modelarts.vm.gpu.v100",
                   "is_open": true,
                   "spec_status": "normal",
                   "is_free": false,

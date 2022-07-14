@@ -1,4 +1,4 @@
-.. _label_management:
+.. _topic_300000012:
 
 ================
 Label Management
