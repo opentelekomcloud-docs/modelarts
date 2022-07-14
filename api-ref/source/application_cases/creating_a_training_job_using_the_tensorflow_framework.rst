@@ -164,13 +164,6 @@ Procedure
          {
            "engines": [
              {
-               "engine_type": 13,
-               "engine_name": "Ascend-Powered-Engine",
-               "engine_id": 130,
-               "engine_version": "TF-1.15-python3.7-aarch64"
-             },
-             ......
-             {
                "engine_type": 1,
                "engine_name": "TensorFlow",
                "engine_id": 3,

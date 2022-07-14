@@ -8,14 +8,14 @@ Creating a ModelArts Agency
 Function
 --------
 
-This API is used to create an agency so that ModelArts can access dependent services such as OBS, SWR, and IEF.
+This API is used to create a ModelArts agency for dependent services such as OBS, SWR, and IEF.
 
 URI
 ---
 
 POST /v2/{project_id}/agency
 
-.. table:: **Table 1** Path parameters
+.. table:: **Table 1** Path Parameters
 
    +------------+-----------+--------+------------------------------------------------------------------------------------------------------------------+
    | Parameter  | Mandatory | Type   | Description                                                                                                      |

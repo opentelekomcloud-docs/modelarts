@@ -68,7 +68,7 @@ Response Body
    +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | source_type           | String                | Model source type. If a model is deployed through ExeML, the value is **auto**. If a model is deployed through a training job or an OBS model file, this parameter is left blank. |
    +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | model_type            | String                | Model type. The value can be **TensorFlow**, **MXNet**, **Spark_MLlib**, **Scikit_Learn**, **XGBoost**, **MindSpore**, **Image**, or **PyTorch**.                                 |
+   | model_type            | String                | Model type. The value can be **TensorFlow**, **MXNet**, **Spark_MLlib**, **Scikit_Learn**, **XGBoost**, **Image**, or **PyTorch**.                                                |
    +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | model_size            | Long                  | Model size, in bytes                                                                                                                                                              |
    +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -232,7 +232,6 @@ Response Body
    min_cpu    String Minimum CPU
    min_gpu    String Minimum GPU
    min_memory String Minimum memory capacity
-   min_ascend String Minimum Ascend
    ========== ====== =======================
 
 Samples

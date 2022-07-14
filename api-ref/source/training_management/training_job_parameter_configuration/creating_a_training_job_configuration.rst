@@ -129,36 +129,36 @@ Response Body
 Samples
 -------
 
-#. The following shows how to create a training job configuration whose name is **testConfig** and description is **This is config**.
+The following shows how to create a training job configuration whose name is **testConfig** and description is **This is config**.
 
-   -  Sample request
+-  Sample request
 
-      .. code-block:: text
+   .. code-block:: text
 
-         POST    https://endpoint/v1/{project_id}/training-job-configs
-         {
-             "config_name": "testConfig",
-             "config_desc": "This is config",
-             "worker_server_num": 1,
-             "app_url": "/usr/app/",
-             "boot_file_url": "/usr/app/boot.py",
-             "parameter": [
-                 {
-                     "label": "learning_rate",
-                     "value": "0.01"
-                 },
-                 {
-                     "label": "batch_size",
-                     "value": "32"
-                 }
-             ],
-             "spec_id": 1,
-             "dataset_id": "38277e62-9e59-48f4-8d89-c8cf41622c24",
-             "dataset_version_id": "2ff0d6ba-c480-45ae-be41-09a8369bfc90",
-             "engine_id": 1,
-             "train_url": "/usr/train/",
-             "log_url": "/usr/log/"
-         }
+      POST    https://endpoint/v1/{project_id}/training-job-configs
+      {
+          "config_name": "testConfig",
+          "config_desc": "This is config",
+          "worker_server_num": 1,
+          "app_url": "/usr/app/",
+          "boot_file_url": "/usr/app/boot.py",
+          "parameter": [
+              {
+                  "label": "learning_rate",
+                  "value": "0.01"
+              },
+              {
+                  "label": "batch_size",
+                  "value": "32"
+              }
+          ],
+          "spec_id": 1,
+          "dataset_id": "38277e62-9e59-48f4-8d89-c8cf41622c24",
+          "dataset_version_id": "2ff0d6ba-c480-45ae-be41-09a8369bfc90",
+          "engine_id": 1,
+          "train_url": "/usr/train/",
+          "log_url": "/usr/log/"
+      }
 
 -  Successful sample response
 
