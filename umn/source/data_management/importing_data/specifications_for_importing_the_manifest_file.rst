@@ -32,34 +32,32 @@ The manifest file that contains information about the original file and labeling
 Image Classification
 --------------------
 
-+-----------------------------------+--------------------------------------------------------------+
-| ::                                | ::                                                           |
-|                                   |                                                              |
-|     1                             |    {                                                         |
-|     2                             |        "source":"s3://path/to/image1.jpg",                   |
-|     3                             |        "usage":"TRAIN",                                      |
-|     4                             |        "id":"0162005993f8065ef47eefb59d1e4970",              |
-|     5                             |        "annotation": [                                       |
-|     6                             |            {                                                 |
-|     7                             |                "type": "modelarts/image_classification",     |
-|     8                             |                "name": "cat",                                |
-|     9                             |                "property": {                                 |
-|    10                             |                    "color":"white",                          |
-|    11                             |                    "kind":"Persian cat"                      |
-|    12                             |                },                                            |
-|    13                             |                "annotated-by":"human",                       |
-|    14                             |                "creation-time":"2019-01-23 11:30:30"         |
-|    15                             |            },                                                |
-|    16                             |            {                                                 |
-|    17                             |                "type": "modelarts/image_classification",     |
-|    18                             |                "name":"animal",                              |
-|    19                             |                "annotated-by":"modelarts/active-learning",   |
-|    20                             |                "confidence": 0.8,                            |
-|    21                             |                "creation-time":"2019-01-23 11:30:30"         |
-|    22                             |            }],                                               |
-|    23                             |        "inference-loc":"/path/to/inference-output"           |
-|    24                             |    }                                                         |
-+-----------------------------------+--------------------------------------------------------------+
+.. code-block::
+
+   {
+       "source":"s3://path/to/image1.jpg",
+       "usage":"TRAIN",
+       "id":"0162005993f8065ef47eefb59d1e4970",
+       "annotation": [
+           {
+               "type": "modelarts/image_classification",
+               "name": "cat",
+               "property": {
+                   "color":"white",
+                   "kind":"Persian cat"
+               },
+               "annotated-by":"human",
+               "creation-time":"2019-01-23 11:30:30"
+           },
+           {
+               "type": "modelarts/image_classification",
+               "name":"animal",
+               "annotated-by":"modelarts/active-learning",
+               "confidence": 0.8,
+               "creation-time":"2019-01-23 11:30:30"
+           }],
+       "inference-loc":"/path/to/inference-output"
+   }
 
 .. _modelarts_23_0009__en-us_topic_0170886817_table598984218223:
 
@@ -129,147 +127,6 @@ Image Classification
    | confidence            | No                    | Confidence score of machine labeling. The value ranges from 0 to 1.                                                                                                                                                                                                            |
    +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _modelarts_23_0009__en-us_topic_0170886817_section6459163044216:
-
-Image Segmentation
-------------------
-
-.. code-block::
-
-   {
-       "annotation": [{
-           "annotation-format": "PASCAL VOC",
-           "type": "modelarts/image_segmentation",
-           "annotation-loc": "s3://path/to/annotation/image1.xml",
-           "creation-time": "2020-12-16 21:36:27",
-           "annotated-by": "human"
-       }],
-       "usage": "train",
-       "source": "s3://path/to/image1.jpg",
-       "id": "16d196c19bf61994d7deccafa435398c",
-       "sample-type": 0
-   }
-
--  The parameters such as **source**, **usage**, and **annotation** are the same as those described in :ref:`Image Classification <modelarts_23_0009__en-us_topic_0170886817_section260132417144>`. For details, see :ref:`Table 1 <modelarts_23_0009__en-us_topic_0170886817_table598984218223>`.
--  **annotation-loc** indicates the path for saving the label file. This parameter is mandatory for image segmentation and object detection but optional for other labeling types.
--  **annotation-format** indicates the format of the label file. This parameter is optional. The default value is **PASCAL VOC**. Only **PASCAL VOC** is supported.
--  **sample-type** indicates a sample format. Value **0** indicates image, **1** text, **2** audio, **4** table, and **6** video.
-
-.. _modelarts_23_0009__en-us_topic_0170886817_table1516151991311:
-
-.. table:: **Table 4** PASCAL VOC format parameters
-
-   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter             | Mandatory             | Description                                                                                                                                                                             |
-   +=======================+=======================+=========================================================================================================================================================================================+
-   | folder                | Yes                   | Directory where the data source is located                                                                                                                                              |
-   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | filename              | Yes                   | Name of the file to be labeled                                                                                                                                                          |
-   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | size                  | Yes                   | Image pixel                                                                                                                                                                             |
-   |                       |                       |                                                                                                                                                                                         |
-   |                       |                       | -  **width**: image width. This parameter is mandatory.                                                                                                                                 |
-   |                       |                       | -  **height**: image height. This parameter is mandatory.                                                                                                                               |
-   |                       |                       | -  **depth**: number of image channels. This parameter is mandatory.                                                                                                                    |
-   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | segmented             | Yes                   | Segmented or not                                                                                                                                                                        |
-   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | mask_source           | No                    | Segmentation mask path                                                                                                                                                                  |
-   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | object                | Yes                   | Object detection information. Multiple **object{}** functions are generated for multiple objects.                                                                                       |
-   |                       |                       |                                                                                                                                                                                         |
-   |                       |                       | -  **name**: class of the labeled content. This parameter is mandatory.                                                                                                                 |
-   |                       |                       | -  **pose**: shooting angle of the labeled content. This parameter is mandatory.                                                                                                        |
-   |                       |                       | -  **truncated**: whether the labeled content is truncated (**0** indicates that the content is not truncated). This parameter is mandatory.                                            |
-   |                       |                       | -  **occluded**: whether the labeled content is occluded (**0** indicates that the content is not occluded). This parameter is mandatory.                                               |
-   |                       |                       | -  **difficult**: whether the labeled object is difficult to identify (**0** indicates that the object is easy to identify). This parameter is mandatory.                               |
-   |                       |                       | -  **confidence**: confidence score of the labeled object. The value ranges from 0 to 1. This parameter is optional.                                                                    |
-   |                       |                       | -  **bndbox**: bounding box type. This parameter is mandatory. For details about the possible values, see :ref:`Table 5 <modelarts_23_0009__en-us_topic_0170886817_table181711917139>`. |
-   |                       |                       | -  **mask_color**: label color, which is represented by the RGB value. This parameter is mandatory.                                                                                     |
-   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-.. _modelarts_23_0009__en-us_topic_0170886817_table181711917139:
-
-.. table:: **Table 5** Bounding box types
-
-   +-----------------------+-----------------------+-----------------------+
-   | Type                  | Shape                 | Labeling Information  |
-   +=======================+=======================+=======================+
-   | polygon               | Polygon               | Coordinates of points |
-   |                       |                       |                       |
-   |                       |                       | <x1>100<x1>           |
-   |                       |                       |                       |
-   |                       |                       | <y1>100<y1>           |
-   |                       |                       |                       |
-   |                       |                       | <x2>200<x2>           |
-   |                       |                       |                       |
-   |                       |                       | <y2>100<y2>           |
-   |                       |                       |                       |
-   |                       |                       | <x3>250<x3>           |
-   |                       |                       |                       |
-   |                       |                       | <y3>150<y3>           |
-   |                       |                       |                       |
-   |                       |                       | <x4>200<x4>           |
-   |                       |                       |                       |
-   |                       |                       | <y4>200<y4>           |
-   |                       |                       |                       |
-   |                       |                       | <x5>100<x5>           |
-   |                       |                       |                       |
-   |                       |                       | <y5>200<y5>           |
-   |                       |                       |                       |
-   |                       |                       | <x6>50<x6>            |
-   |                       |                       |                       |
-   |                       |                       | <y6>150<y6>           |
-   |                       |                       |                       |
-   |                       |                       | <x7>100<x7>           |
-   |                       |                       |                       |
-   |                       |                       | <y7>100<y7>           |
-   +-----------------------+-----------------------+-----------------------+
-
-Example:
-
-.. code-block::
-
-   <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-   <annotation>
-       <folder>NA</folder>
-       <filename>image_0006.jpg</filename>
-       <source>
-           <database>Unknown</database>
-       </source>
-       <size>
-           <width>230</width>
-           <height>300</height>
-           <depth>3</depth>
-       </size>
-       <segmented>1</segmented>
-       <mask_source>obs://xianao/out/dataset-8153-Jmf5ylLjRmSacj9KevS/annotation/V001/segmentationClassRaw/image_0006.png</mask_source>
-       <object>
-           <name>bike</name>
-           <pose>Unspecified</pose>
-           <truncated>0</truncated>
-           <difficult>0</difficult>
-           <mask_color>193,243,53</mask_color>
-           <occluded>0</occluded>
-           <polygon>
-               <x1>71</x1>
-               <y1>48</y1>
-               <x2>75</x2>
-               <y2>73</y2>
-               <x3>49</x3>
-               <y3>69</y3>
-               <x4>68</x4>
-               <y4>92</y4>
-               <x5>90</x5>
-               <y5>101</y5>
-               <x6>45</x6>
-               <y6>110</y6>
-               <x7>71</x7>
-               <y7>48</y7>
-           </polygon>
-       </object>
-   </annotation>
-
 .. _modelarts_23_0009__en-us_topic_0170886817_section8593163192118:
 
 Text Classification
@@ -327,11 +184,11 @@ Named Entity Recognition
 
 The parameters such as **source**, **usage**, and **annotation** are the same as those described in :ref:`Image Classification <modelarts_23_0009__en-us_topic_0170886817_section260132417144>`. For details, see :ref:`Table 1 <modelarts_23_0009__en-us_topic_0170886817_table598984218223>`.
 
-:ref:`Table 6 <modelarts_23_0009__en-us_topic_0170886817_table8486339124912>` describes the property parameters. For example, if you want to extract **Michael** from **"source":"content://Michael Jordan"**, the value of **start_index** is **0** and that of **end_index** is **7**.
+:ref:`Table 4 <modelarts_23_0009__en-us_topic_0170886817_table8486339124912>` describes the property parameters. For example, if you want to extract **Michael** from **"source":"content://Michael Jordan"**, the value of **start_index** is **0** and that of **end_index** is **7**.
 
 .. _modelarts_23_0009__en-us_topic_0170886817_table8486339124912:
 
-.. table:: **Table 6** Description of **property** parameters
+.. table:: **Table 4** Description of **property** parameters
 
    +------------------------+-----------+-------------------------------------------------------------------------------------------------------------+
    | Parameter              | Data Type | Description                                                                                                 |
@@ -405,7 +262,7 @@ The parameters such as **source**, **usage**, and **annotation** are the same as
 
 .. _modelarts_23_0009__en-us_topic_0170886817_table134893213914:
 
-.. table:: **Table 7** Description of **property** parameters
+.. table:: **Table 5** Description of **property** parameters
 
    +------------------------+-----------+-------------------------------------------------------------------------------------------------------------------------+
    | Parameter              | Data Type | Description                                                                                                             |
@@ -445,7 +302,7 @@ Object Detection
 
 .. _modelarts_23_0009__en-us_topic_0170886817_table77167388472:
 
-.. table:: **Table 8** PASCAL VOC format parameters
+.. table:: **Table 6** PASCAL VOC format parameters
 
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter             | Mandatory             | Description                                                                                                                                                                              |
@@ -470,12 +327,12 @@ Object Detection
    |                       |                       | -  **occluded**: whether the labeled content is occluded (**0** indicates that the content is not occluded). This parameter is mandatory.                                                |
    |                       |                       | -  **difficult**: whether the labeled object is difficult to identify (**0** indicates that the object is easy to identify). This parameter is mandatory.                                |
    |                       |                       | -  **confidence**: confidence score of the labeled object. The value ranges from 0 to 1. This parameter is optional.                                                                     |
-   |                       |                       | -  **bndbox**: bounding box type. This parameter is mandatory. For details about the possible values, see :ref:`Table 9 <modelarts_23_0009__en-us_topic_0170886817_table1770752310500>`. |
+   |                       |                       | -  **bndbox**: bounding box type. This parameter is mandatory. For details about the possible values, see :ref:`Table 7 <modelarts_23_0009__en-us_topic_0170886817_table1770752310500>`. |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. _modelarts_23_0009__en-us_topic_0170886817_table1770752310500:
 
-.. table:: **Table 9** Description of bounding box types
+.. table:: **Table 7** Description of bounding box types
 
    +-----------------------+-----------------------+------------------------------------------------------+
    | Type                  | Shape                 | Labeling Information                                 |
@@ -710,11 +567,11 @@ Speech Paragraph Labeling
 
 -  The parameters such as **source**, **usage**, and **annotation** are the same as those described in :ref:`Image Classification <modelarts_23_0009__en-us_topic_0170886817_section260132417144>`. For details, see :ref:`Table 1 <modelarts_23_0009__en-us_topic_0170886817_table598984218223>`.
 
--  :ref:`Table 10 <modelarts_23_0009__en-us_topic_0170886817_table1151144815513>` describes the **property** parameters.
+-  :ref:`Table 8 <modelarts_23_0009__en-us_topic_0170886817_table1151144815513>` describes the **property** parameters.
 
    .. _modelarts_23_0009__en-us_topic_0170886817_table1151144815513:
 
-   .. table:: **Table 10** Description of **property** parameters
+   .. table:: **Table 8** Description of **property** parameters
 
       +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------+
       | Parameter             | Data Type             | Description                                                                                                                 |
@@ -731,8 +588,6 @@ Speech Paragraph Labeling
       +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------+
       | @modelarts:content    | String                | Sound content                                                                                                               |
       +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------+
-
-.. _modelarts_23_0009__en-us_topic_0170886817_section1269454020180:
 
 Video Labeling
 --------------
@@ -763,7 +618,7 @@ Video Labeling
 -  **annotation-format** indicates the format of the label file. This parameter is optional. The default value is **PASCAL VOC**. Only **PASCAL VOC** is supported.
 -  **sample-type** indicates a sample format. Value **0** indicates image, **1** text, **2** audio, **4** table, and **6** video.
 
-.. table:: **Table 11** **property** parameters
+.. table:: **Table 9** **property** parameters
 
    +----------------------------+-----------+--------------------------------------------------+
    | Parameter                  | Data Type | Description                                      |
@@ -775,7 +630,7 @@ Video Labeling
    | @modelarts:parent_source   | String    | OBS path of the labeled video                    |
    +----------------------------+-----------+--------------------------------------------------+
 
-.. table:: **Table 12** PASCAL VOC format parameters
+.. table:: **Table 10** PASCAL VOC format parameters
 
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter             | Mandatory             | Description                                                                                                                                                                              |
@@ -800,12 +655,12 @@ Video Labeling
    |                       |                       | -  **occluded**: whether the labeled content is occluded (**0** indicates that the content is not occluded). This parameter is mandatory.                                                |
    |                       |                       | -  **difficult**: whether the labeled object is difficult to identify (**0** indicates that the object is easy to identify). This parameter is mandatory.                                |
    |                       |                       | -  **confidence**: confidence score of the labeled object. The value ranges from 0 to 1. This parameter is optional.                                                                     |
-   |                       |                       | -  **bndbox**: bounding box type. This parameter is mandatory. For details about the possible values, see :ref:`Table 13 <modelarts_23_0009__en-us_topic_0170886817_table869624041814>`. |
+   |                       |                       | -  **bndbox**: bounding box type. This parameter is mandatory. For details about the possible values, see :ref:`Table 11 <modelarts_23_0009__en-us_topic_0170886817_table869624041814>`. |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. _modelarts_23_0009__en-us_topic_0170886817_table869624041814:
 
-.. table:: **Table 13** Bounding box types
+.. table:: **Table 11** Bounding box types
 
    +-----------------------+-----------------------+------------------------------------------------------+
    | Type                  | Shape                 | Labeling Information                                 |

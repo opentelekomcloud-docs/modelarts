@@ -19,13 +19,13 @@ For notebook instances that use OBS storage, you can use OBS or the ModelArts SD
 -  Method 2: Downloading the files using the ModelArts SDKs
 
    #. Download and install the ModelArts SDKs on your local PC. For details, see .
+
    #. Authenticate sessions of the ModelArts SDKs. For details, see .
+
    #. from OBS to the local PC. The sample code is as follows:
 
-      +-----------------------------------+--------------------------------------------------------------------------------------------------+
-      | ::                                | ::                                                                                               |
-      |                                   |                                                                                                  |
-      |    1                              |    from modelarts.session import Session                                                         |
-      |    2                              |    session=Session(access_key='***',secret_key='***',project_id='***',region_name='***')         |
-      |    3                              |    session.download_data(bucket_path="/bucket_name/obs_file.txt",path="/home/user/obs_file.txt") |
-      +-----------------------------------+--------------------------------------------------------------------------------------------------+
+      .. code-block::
+
+         from modelarts.session import Session
+         session=Session(access_key='***',secret_key='***',project_id='***',region_name='***')
+         session.download_data(bucket_path="/bucket_name/obs_file.txt",path="/home/user/obs_file.txt")
