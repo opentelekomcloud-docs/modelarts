@@ -9,11 +9,11 @@ This section describes how to use TensorFlow to recognize handwritten digits in 
 
 Before using the following sample, complete necessary operations. For details, see :ref:`Preparations <modelarts_21_0038__section51133584536>`. The following describes the process of using TensorFlow to recognize handwritten digits in images.
 
-#. **:ref:`Preparing Data <modelarts_21_0038__section336312088>`**: Obtain the MNIST dataset and upload it to OBS.
-#. **:ref:`Training a Model <modelarts_21_0038__section42320342266>`**: Use the TensorFlow framework to compile the model training script and create a training job for model training.
-#. **:ref:`Importing a Model <modelarts_21_0038__section740614592308>`**: After training is complete, import the model to ModelArts.
-#. **:ref:`Deploying a Service <modelarts_21_0038__section18653124916459>`**: Deploy the imported model as a real-time service.
-#. **:ref:`Performing Prediction <modelarts_21_0038__section9961181112311>`**: Initiate a prediction request and obtain the prediction result.
+#. :ref:`Preparing Data <modelarts_21_0038__section336312088>`: Obtain the MNIST dataset and upload it to OBS.
+#. :ref:`Training a Model <modelarts_21_0038__section42320342266>`: Use the TensorFlow framework to compile the model training script and create a training job for model training.
+#. :ref:`Importing a Model <modelarts_21_0038__section740614592308>`: After training is complete, import the model to ModelArts.
+#. :ref:`Deploying a Service <modelarts_21_0038__section18653124916459>`: Deploy the imported model as a real-time service.
+#. :ref:`Performing Prediction <modelarts_21_0038__section9961181112311>`: Initiate a prediction request and obtain the prediction result.
 
 .. _modelarts_21_0038__section51133584536:
 
@@ -246,88 +246,86 @@ Training Script (train_mnist_tf.py)
 
 Copy the following code and name the code file **train_mnist_tf.py**. The code is a training script compiled based on the TensorFlow engine in Python.
 
-+-----------------------------------+---------------------------------------------------------------------------------------------------------------+
-| ::                                | ::                                                                                                            |
-|                                   |                                                                                                               |
-|     1                             |    from __future__ import absolute_import                                                                     |
-|     2                             |    from __future__ import division                                                                            |
-|     3                             |    from __future__ import print_function                                                                      |
-|     4                             |                                                                                                               |
-|     5                             |    import os                                                                                                  |
-|     6                             |                                                                                                               |
-|     7                             |    import tensorflow as tf                                                                                    |
-|     8                             |    from tensorflow.examples.tutorials.mnist import input_data                                                 |
-|     9                             |                                                                                                               |
-|    10                             |    tf.flags.DEFINE_integer('max_steps', 1000, 'number of training iterations.')                               |
-|    11                             |    tf.flags.DEFINE_string('data_url', '/home/jnn/nfs/mnist', 'dataset directory.')                            |
-|    12                             |    tf.flags.DEFINE_string('train_url', '/home/jnn/temp/delete', 'saved model directory.')                     |
-|    13                             |                                                                                                               |
-|    14                             |    FLAGS = tf.flags.FLAGS                                                                                     |
-|    15                             |                                                                                                               |
-|    16                             |                                                                                                               |
-|    17                             |    def main(*args):                                                                                           |
-|    18                             |      # Train model                                                                                            |
-|    19                             |      print('Training model...')                                                                               |
-|    20                             |      mnist = input_data.read_data_sets(FLAGS.data_url, one_hot=True)                                          |
-|    21                             |      sess = tf.InteractiveSession()                                                                           |
-|    22                             |      serialized_tf_example = tf.placeholder(tf.string, name='tf_example')                                     |
-|    23                             |      feature_configs = {'x': tf.FixedLenFeature(shape=[784], dtype=tf.float32),}                              |
-|    24                             |      tf_example = tf.parse_example(serialized_tf_example, feature_configs)                                    |
-|    25                             |      x = tf.identity(tf_example['x'], name='x')                                                               |
-|    26                             |      y_ = tf.placeholder('float', shape=[None, 10])                                                           |
-|    27                             |      w = tf.Variable(tf.zeros([784, 10]))                                                                     |
-|    28                             |      b = tf.Variable(tf.zeros([10]))                                                                          |
-|    29                             |      sess.run(tf.global_variables_initializer())                                                              |
-|    30                             |      y = tf.nn.softmax(tf.matmul(x, w) + b, name='y')                                                         |
-|    31                             |      cross_entropy = -tf.reduce_sum(y_ * tf.log(y))                                                           |
-|    32                             |                                                                                                               |
-|    33                             |      tf.summary.scalar('cross_entropy', cross_entropy)                                                        |
-|    34                             |                                                                                                               |
-|    35                             |      train_step = tf.train.GradientDescentOptimizer(0.01).minimize(cross_entropy)                             |
-|    36                             |                                                                                                               |
-|    37                             |      correct_prediction = tf.equal(tf.argmax(y, 1), tf.argmax(y_, 1))                                         |
-|    38                             |      accuracy = tf.reduce_mean(tf.cast(correct_prediction, 'float'))                                          |
-|    39                             |      tf.summary.scalar('accuracy', accuracy)                                                                  |
-|    40                             |      merged = tf.summary.merge_all()                                                                          |
-|    41                             |      test_writer = tf.summary.FileWriter(FLAGS.train_url, flush_secs=1)                                       |
-|    42                             |                                                                                                               |
-|    43                             |      for step in range(FLAGS.max_steps):                                                                      |
-|    44                             |        batch = mnist.train.next_batch(50)                                                                     |
-|    45                             |        train_step.run(feed_dict={x: batch[0], y_: batch[1]})                                                  |
-|    46                             |        if step % 10 == 0:                                                                                     |
-|    47                             |          summary, acc = sess.run([merged, accuracy], feed_dict={x: mnist.test.images, y_: mnist.test.labels}) |
-|    48                             |          test_writer.add_summary(summary, step)                                                               |
-|    49                             |          print('training accuracy is:', acc)                                                                  |
-|    50                             |      print('Done training!')                                                                                  |
-|    51                             |                                                                                                               |
-|    52                             |      builder = tf.saved_model.builder.SavedModelBuilder(os.path.join(FLAGS.train_url, 'model'))               |
-|    53                             |                                                                                                               |
-|    54                             |      tensor_info_x = tf.saved_model.utils.build_tensor_info(x)                                                |
-|    55                             |      tensor_info_y = tf.saved_model.utils.build_tensor_info(y)                                                |
-|    56                             |                                                                                                               |
-|    57                             |      prediction_signature = (                                                                                 |
-|    58                             |          tf.saved_model.signature_def_utils.build_signature_def(                                              |
-|    59                             |              inputs={'images': tensor_info_x},                                                                |
-|    60                             |              outputs={'scores': tensor_info_y},                                                               |
-|    61                             |              method_name=tf.saved_model.signature_constants.PREDICT_METHOD_NAME))                             |
-|    62                             |                                                                                                               |
-|    63                             |      builder.add_meta_graph_and_variables(                                                                    |
-|    64                             |          sess, [tf.saved_model.tag_constants.SERVING],                                                        |
-|    65                             |          signature_def_map={                                                                                  |
-|    66                             |              'predict_images':                                                                                |
-|    67                             |                  prediction_signature,                                                                        |
-|    68                             |          },                                                                                                   |
-|    69                             |          main_op=tf.tables_initializer(),                                                                     |
-|    70                             |          strip_default_attrs=True)                                                                            |
-|    71                             |                                                                                                               |
-|    72                             |      builder.save()                                                                                           |
-|    73                             |                                                                                                               |
-|    74                             |      print('Done exporting!')                                                                                 |
-|    75                             |                                                                                                               |
-|    76                             |                                                                                                               |
-|    77                             |    if __name__ == '__main__':                                                                                 |
-|    78                             |      tf.app.run(main=main)                                                                                    |
-+-----------------------------------+---------------------------------------------------------------------------------------------------------------+
+.. code-block::
+
+   from __future__ import absolute_import
+   from __future__ import division
+   from __future__ import print_function
+
+   import os
+
+   import tensorflow as tf
+   from tensorflow.examples.tutorials.mnist import input_data
+
+   tf.flags.DEFINE_integer('max_steps', 1000, 'number of training iterations.')
+   tf.flags.DEFINE_string('data_url', '/home/jnn/nfs/mnist', 'dataset directory.')
+   tf.flags.DEFINE_string('train_url', '/home/jnn/temp/delete', 'saved model directory.')
+
+   FLAGS = tf.flags.FLAGS
+
+
+   def main(*args):
+     # Train model
+     print('Training model...')
+     mnist = input_data.read_data_sets(FLAGS.data_url, one_hot=True)
+     sess = tf.InteractiveSession()
+     serialized_tf_example = tf.placeholder(tf.string, name='tf_example')
+     feature_configs = {'x': tf.FixedLenFeature(shape=[784], dtype=tf.float32),}
+     tf_example = tf.parse_example(serialized_tf_example, feature_configs)
+     x = tf.identity(tf_example['x'], name='x')
+     y_ = tf.placeholder('float', shape=[None, 10])
+     w = tf.Variable(tf.zeros([784, 10]))
+     b = tf.Variable(tf.zeros([10]))
+     sess.run(tf.global_variables_initializer())
+     y = tf.nn.softmax(tf.matmul(x, w) + b, name='y')
+     cross_entropy = -tf.reduce_sum(y_ * tf.log(y))
+
+     tf.summary.scalar('cross_entropy', cross_entropy)
+
+     train_step = tf.train.GradientDescentOptimizer(0.01).minimize(cross_entropy)
+
+     correct_prediction = tf.equal(tf.argmax(y, 1), tf.argmax(y_, 1))
+     accuracy = tf.reduce_mean(tf.cast(correct_prediction, 'float'))
+     tf.summary.scalar('accuracy', accuracy)
+     merged = tf.summary.merge_all()
+     test_writer = tf.summary.FileWriter(FLAGS.train_url, flush_secs=1)
+
+     for step in range(FLAGS.max_steps):
+       batch = mnist.train.next_batch(50)
+       train_step.run(feed_dict={x: batch[0], y_: batch[1]})
+       if step % 10 == 0:
+         summary, acc = sess.run([merged, accuracy], feed_dict={x: mnist.test.images, y_: mnist.test.labels})
+         test_writer.add_summary(summary, step)
+         print('training accuracy is:', acc)
+     print('Done training!')
+
+     builder = tf.saved_model.builder.SavedModelBuilder(os.path.join(FLAGS.train_url, 'model'))
+
+     tensor_info_x = tf.saved_model.utils.build_tensor_info(x)
+     tensor_info_y = tf.saved_model.utils.build_tensor_info(y)
+
+     prediction_signature = (
+         tf.saved_model.signature_def_utils.build_signature_def(
+             inputs={'images': tensor_info_x},
+             outputs={'scores': tensor_info_y},
+             method_name=tf.saved_model.signature_constants.PREDICT_METHOD_NAME))
+
+     builder.add_meta_graph_and_variables(
+         sess, [tf.saved_model.tag_constants.SERVING],
+         signature_def_map={
+             'predict_images':
+                 prediction_signature,
+         },
+         main_op=tf.tables_initializer(),
+         strip_default_attrs=True)
+
+     builder.save()
+
+     print('Done exporting!')
+
+
+   if __name__ == '__main__':
+     tf.app.run(main=main)
 
 .. _modelarts_21_0038__section868435781614:
 
@@ -336,41 +334,39 @@ Inference Code (customize_service.py)
 
 Copy the following code and name the code file **customize_service.py**. The following inference code meets the ModelArts model package specifications.
 
-+-----------------------------------+------------------------------------------------------------------------------------+
-| ::                                | ::                                                                                 |
-|                                   |                                                                                    |
-|     1                             |    from PIL import Image                                                           |
-|     2                             |    import numpy as np                                                              |
-|     3                             |    from model_service.tfserving_model_service import TfServingBaseService          |
-|     4                             |                                                                                    |
-|     5                             |                                                                                    |
-|     6                             |    class mnist_service(TfServingBaseService):                                      |
-|     7                             |      def _preprocess(self, data):                                                  |
-|     8                             |        preprocessed_data = {}                                                      |
-|     9                             |                                                                                    |
-|    10                             |        for k, v in data.items():                                                   |
-|    11                             |          for file_name, file_content in v.items():                                 |
-|    12                             |            image1 = Image.open(file_content)                                       |
-|    13                             |            image1 = np.array(image1, dtype=np.float32)                             |
-|    14                             |            image1.resize((1, 784))                                                 |
-|    15                             |            preprocessed_data[k] = image1                                           |
-|    16                             |                                                                                    |
-|    17                             |        return preprocessed_data                                                    |
-|    18                             |                                                                                    |
-|    19                             |      def _postprocess(self, data):                                                 |
-|    20                             |                                                                                    |
-|    21                             |        outputs = {}                                                                |
-|    22                             |        logits = data['scores'][0]                                                  |
-|    23                             |        label = logits.index(max(logits))                                           |
-|    24                             |        logits = ['%.3f' % logit for logit in logits]                               |
-|    25                             |        outputs['predicted_label'] = str(label)                                     |
-|    26                             |        label_list = [str(label) for label in list(range(10))]                      |
-|    27                             |        scores = dict(zip(label_list, logits))                                      |
-|    28                             |        scores = sorted(scores.items(), key=lambda item: item[1], reverse=True)[:5] |
-|    29                             |        outputs['scores'] = scores                                                  |
-|    30                             |                                                                                    |
-|    31                             |        return outputs                                                              |
-+-----------------------------------+------------------------------------------------------------------------------------+
+.. code-block::
+
+   from PIL import Image
+   import numpy as np
+   from model_service.tfserving_model_service import TfServingBaseService
+
+
+   class mnist_service(TfServingBaseService):
+     def _preprocess(self, data):
+       preprocessed_data = {}
+
+       for k, v in data.items():
+         for file_name, file_content in v.items():
+           image1 = Image.open(file_content)
+           image1 = np.array(image1, dtype=np.float32)
+           image1.resize((1, 784))
+           preprocessed_data[k] = image1
+
+       return preprocessed_data
+
+     def _postprocess(self, data):
+
+       outputs = {}
+       logits = data['scores'][0]
+       label = logits.index(max(logits))
+       logits = ['%.3f' % logit for logit in logits]
+       outputs['predicted_label'] = str(label)
+       label_list = [str(label) for label in list(range(10))]
+       scores = dict(zip(label_list, logits))
+       scores = sorted(scores.items(), key=lambda item: item[1], reverse=True)[:5]
+       outputs['scores'] = scores
+
+       return outputs
 
 .. _modelarts_21_0038__section655951611710:
 
@@ -379,93 +375,91 @@ Configuration File (config.json)
 
 Copy the following code and name the code file **config.json**. The configuration file meets the ModelArts model package specifications.
 
-+-----------------------------------+------------------------------------------------------------+
-| ::                                | ::                                                         |
-|                                   |                                                            |
-|     1                             |    {                                                       |
-|     2                             |        "model_type":"TensorFlow",                          |
-|     3                             |        "metrics":{                                         |
-|     4                             |            "f1":0,                                         |
-|     5                             |            "accuracy":0,                                   |
-|     6                             |            "precision":0,                                  |
-|     7                             |            "recall":0                                      |
-|     8                             |        },                                                  |
-|     9                             |        "dependencies":[                                    |
-|    10                             |            {                                               |
-|    11                             |                "installer":"pip",                          |
-|    12                             |                "packages":[                                |
-|    13                             |                    {                                       |
-|    14                             |                        "restraint":"ATLEAST",              |
-|    15                             |                        "package_version":"1.15.0",         |
-|    16                             |                        "package_name":"numpy"              |
-|    17                             |                    },                                      |
-|    18                             |                    {                                       |
-|    19                             |                        "restraint":"",                     |
-|    20                             |                        "package_version":"",               |
-|    21                             |                        "package_name":"h5py"               |
-|    22                             |                    },                                      |
-|    23                             |                    {                                       |
-|    24                             |                        "restraint":"ATLEAST",              |
-|    25                             |                        "package_version":"1.8.0",          |
-|    26                             |                        "package_name":"tensorflow"         |
-|    27                             |                    },                                      |
-|    28                             |                    {                                       |
-|    29                             |                        "restraint":"ATLEAST",              |
-|    30                             |                        "package_version":"5.2.0",          |
-|    31                             |                        "package_name":"Pillow"             |
-|    32                             |                    }                                       |
-|    33                             |                ]                                           |
-|    34                             |            }                                               |
-|    35                             |        ],                                                  |
-|    36                             |        "model_algorithm":"image_classification",           |
-|    37                             |        "apis":[                                            |
-|    38                             |            {                                               |
-|    39                             |                "procotol":"http",                          |
-|    40                             |                "url":"/",                                  |
-|    41                             |                "request":{                                 |
-|    42                             |                    "Content-type":"multipart/form-data",   |
-|    43                             |                    "data":{                                |
-|    44                             |                        "type":"object",                    |
-|    45                             |                        "properties":{                      |
-|    46                             |                            "images":{                      |
-|    47                             |                                "type":"file"               |
-|    48                             |                            }                               |
-|    49                             |                        }                                   |
-|    50                             |                    }                                       |
-|    51                             |                },                                          |
-|    52                             |                "method":"post",                            |
-|    53                             |                "response":{                                |
-|    54                             |                    "Content-type":"multipart/form-data",   |
-|    55                             |                    "data":{                                |
-|    56                             |                        "required":[                        |
-|    57                             |                            "predicted_label",              |
-|    58                             |                            "scores"                        |
-|    59                             |                        ],                                  |
-|    60                             |                        "type":"object",                    |
-|    61                             |                        "properties":{                      |
-|    62                             |                            "predicted_label":{             |
-|    63                             |                                "type":"string"             |
-|    64                             |                            },                              |
-|    65                             |                            "scores":{                      |
-|    66                             |                                "items":{                   |
-|    67                             |                                    "minItems":2,           |
-|    68                             |                                    "items":[               |
-|    69                             |                                        {                   |
-|    70                             |                                            "type":"string" |
-|    71                             |                                        },                  |
-|    72                             |                                        {                   |
-|    73                             |                                            "type":"number" |
-|    74                             |                                        }                   |
-|    75                             |                                    ],                      |
-|    76                             |                                    "type":"array",         |
-|    77                             |                                    "maxItems":2            |
-|    78                             |                                },                          |
-|    79                             |                                "type":"array"              |
-|    80                             |                            }                               |
-|    81                             |                        }                                   |
-|    82                             |                    }                                       |
-|    83                             |                }                                           |
-|    84                             |            }                                               |
-|    85                             |        ]                                                   |
-|    86                             |    }                                                       |
-+-----------------------------------+------------------------------------------------------------+
+.. code-block::
+
+   {
+       "model_type":"TensorFlow",
+       "metrics":{
+           "f1":0,
+           "accuracy":0,
+           "precision":0,
+           "recall":0
+       },
+       "dependencies":[
+           {
+               "installer":"pip",
+               "packages":[
+                   {
+                       "restraint":"ATLEAST",
+                       "package_version":"1.15.0",
+                       "package_name":"numpy"
+                   },
+                   {
+                       "restraint":"",
+                       "package_version":"",
+                       "package_name":"h5py"
+                   },
+                   {
+                       "restraint":"ATLEAST",
+                       "package_version":"1.8.0",
+                       "package_name":"tensorflow"
+                   },
+                   {
+                       "restraint":"ATLEAST",
+                       "package_version":"5.2.0",
+                       "package_name":"Pillow"
+                   }
+               ]
+           }
+       ],
+       "model_algorithm":"image_classification",
+       "apis":[
+           {
+               "procotol":"http",
+               "url":"/",
+               "request":{
+                   "Content-type":"multipart/form-data",
+                   "data":{
+                       "type":"object",
+                       "properties":{
+                           "images":{
+                               "type":"file"
+                           }
+                       }
+                   }
+               },
+               "method":"post",
+               "response":{
+                   "Content-type":"multipart/form-data",
+                   "data":{
+                       "required":[
+                           "predicted_label",
+                           "scores"
+                       ],
+                       "type":"object",
+                       "properties":{
+                           "predicted_label":{
+                               "type":"string"
+                           },
+                           "scores":{
+                               "items":{
+                                   "minItems":2,
+                                   "items":[
+                                       {
+                                           "type":"string"
+                                       },
+                                       {
+                                           "type":"number"
+                                       }
+                                   ],
+                                   "type":"array",
+                                   "maxItems":2
+                               },
+                               "type":"array"
+                           }
+                       }
+                   }
+               }
+           }
+       ]
+   }

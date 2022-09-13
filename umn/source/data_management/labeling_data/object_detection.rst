@@ -46,6 +46,8 @@ The following filter criteria are supported. You can set one or more filter crit
 -  **File Name** or **Path**: Filter files by file name or file storage path.
 -  **Labeled By**: Select the name of the user who performs the labeling operation.
 
+.. _modelarts_23_0012__en-us_topic_0170889732_section888019266174:
+
 Labeling Images (Manually)
 --------------------------
 
@@ -58,8 +60,6 @@ The dataset details page provides the **Labeled** and **Unlabeled** tabs. The **
    .. note::
 
       On the left of the page, multiple tools are provided for you to label images. However, you can use only one tool at a time.
-
-   .. _modelarts_23_0012__en-us_topic_0170889732_table165201739119:
 
    .. table:: **Table 1** Supported bounding box
 

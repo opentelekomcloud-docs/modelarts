@@ -63,7 +63,6 @@ Constraints
 -  Notebook instances support only standalone training under the current AI engine framework. If you need to use distributed training, use ModelArts training jobs and specify multiple nodes in the resource pool.
 -  ModelArts DevEnviron does not support apt-get. You can use a :ref:`custom image <modelarts_23_0084>` to train a model.
 -  Notebook instances do not support GUI-related libraries, such as PyQt.
--  Notebook instances created using Ascend specifications cannot be attached to EVS disks.
 -  Notebook instances cannot be connected to DWS and database services.
 -  Notebook instances cannot directly read files in OBS. You need to download the files to the local host. To access data in OBS, use or for interaction.
 -  DevEnviron does not support TensorBoard. Use the visualization job function under **Training Jobs**.

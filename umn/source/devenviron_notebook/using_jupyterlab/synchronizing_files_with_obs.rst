@@ -15,7 +15,6 @@ Precautions
 -  The maximum size of files to be synchronized at a time is 500 MB, and the maximum number of files to be synchronized at a time is 1,024.
 -  The total size of objects to be synchronized cannot exceed 5 GB. For example, if 2 GB files exist in the **~/work** container directory, you can use Sync OBS to synchronize a maximum of 3 GB files.
 -  The Sync OBS function only takes effect on notebook instances for which **Storage** is **OBS**. For notebook instances whose **Storage** is not **OBS**, all files are read and written in the **~/work** container directory.
--  Notebook instances created using Ascend resources do not support the Sync OBS function.
 
 Procedure
 ---------
