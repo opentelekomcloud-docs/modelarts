@@ -15,7 +15,7 @@ URI
 
 GET /v2/{project_id}/authorizations
 
-.. table:: **Table 1** Path parameters
+.. table:: **Table 1** Path Parameters
 
    +------------+-----------+--------+------------------------------------------------------------------------------------------------------------------+
    | Parameter  | Mandatory | Type   | Description                                                                                                      |
@@ -23,7 +23,7 @@ GET /v2/{project_id}/authorizations
    | project_id | Yes       | String | Project ID. For details about how to obtain a project ID, see :ref:`Obtaining a Project ID <modelarts_03_0147>`. |
    +------------+-----------+--------+------------------------------------------------------------------------------------------------------------------+
 
-.. table:: **Table 2** Query parameters
+.. table:: **Table 2** Query Parameters
 
    +-----------------+-----------------+-----------------+--------------------------------------------------------------------------+
    | Parameter       | Mandatory       | Type            | Description                                                              |
@@ -33,7 +33,6 @@ GET /v2/{project_id}/authorizations
    |                 |                 |                 | Options:                                                                 |
    |                 |                 |                 |                                                                          |
    |                 |                 |                 | -  **user_name**: IAM user                                               |
-   |                 |                 |                 |                                                                          |
    |                 |                 |                 | -  **create_time**: creation time                                        |
    |                 |                 |                 |                                                                          |
    |                 |                 |                 | Default: **user_name**                                                   |
@@ -43,7 +42,6 @@ GET /v2/{project_id}/authorizations
    |                 |                 |                 | Options:                                                                 |
    |                 |                 |                 |                                                                          |
    |                 |                 |                 | -  **asc**: ascending order                                              |
-   |                 |                 |                 |                                                                          |
    |                 |                 |                 | -  **desc**: descending order                                            |
    |                 |                 |                 |                                                                          |
    |                 |                 |                 | Default: **asc**                                                         |
@@ -79,35 +77,33 @@ Response Parameters
 
 .. table:: **Table 4** AuthorizationResponse
 
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter             | Type                  | Description                                                                                                                                        |
-   +=======================+=======================+====================================================================================================================================================+
-   | user_id               | String                | User ID. For details about how to obtain a user ID, see :ref:`Obtaining a User ID <modelarts_03_0006>`.                                            |
-   |                       |                       |                                                                                                                                                    |
-   |                       |                       | If **user_id** is set to **all**, all IAM users are authorized. If some IAM users have been authorized, the authorization setting will be updated. |
-   |                       |                       |                                                                                                                                                    |
-   |                       |                       | This parameter is mandatory only if the authorization type is set to **agency**.                                                                   |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-   | type                  | String                | Authorization type. **Agency** is recommended.                                                                                                     |
-   |                       |                       |                                                                                                                                                    |
-   |                       |                       | Options:                                                                                                                                           |
-   |                       |                       |                                                                                                                                                    |
-   |                       |                       | -  **agency**: authorization through an agency                                                                                                     |
-   |                       |                       |                                                                                                                                                    |
-   |                       |                       | -  **credential**: authorization through an access Key (AK/SK)                                                                                     |
-   |                       |                       |                                                                                                                                                    |
-   |                       |                       | Default: **agency**                                                                                                                                |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-   | content               | String                | Authorization content.                                                                                                                             |
-   |                       |                       |                                                                                                                                                    |
-   |                       |                       | -  If **Authorization Type** is set to **Agency**, this field indicates the agency name.                                                           |
-   |                       |                       |                                                                                                                                                    |
-   |                       |                       | -  If **Authorization Type** is set to **AK/SK**, this field indicates the access key ID (AK).                                                     |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-   | secret_key            | String                | Secret Access Key (SK). This field is required only when **Authorization Method** is set to **AK/SK**.                                             |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-   | create_time           | Long                  | Timestamp when the quality job was created.                                                                                                        |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                                                                                                                     |
+   +=======================+=======================+=================================================================================================================================================================+
+   | user_id               | String                | User ID. For details about how to obtain a user ID, see :ref:`Obtaining a User ID <modelarts_03_0006>`.                                                         |
+   |                       |                       |                                                                                                                                                                 |
+   |                       |                       | If **user_id** is set to **all-users**, authorization is configured for all IAM users. If some users have been authorized, their authorization will be updated. |
+   |                       |                       |                                                                                                                                                                 |
+   |                       |                       | This parameter is mandatory only if the authorization method is set to **Agency**.                                                                              |
+   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | type                  | String                | Authorization type. **Agency** is recommended.                                                                                                                  |
+   |                       |                       |                                                                                                                                                                 |
+   |                       |                       | Options:                                                                                                                                                        |
+   |                       |                       |                                                                                                                                                                 |
+   |                       |                       | -  **agency**: authorization through an agency                                                                                                                  |
+   |                       |                       | -  **credential**: authorization through an access Key (AK/SK)                                                                                                  |
+   |                       |                       |                                                                                                                                                                 |
+   |                       |                       | Default: **agency**                                                                                                                                             |
+   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | content               | String                | Authorization content.                                                                                                                                          |
+   |                       |                       |                                                                                                                                                                 |
+   |                       |                       | -  If **Authorization Type** is set to **Agency**, this field indicates the agency name.                                                                        |
+   |                       |                       | -  If **Authorization Type** is set to **AK/SK**, this field indicates the access key ID (AK).                                                                  |
+   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | secret_key            | String                | Secret Access Key (SK). This field is required only when **Authorization Method** is set to **AK/SK**.                                                          |
+   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | create_time           | Long                  | Timestamp when the quality job was created.                                                                                                                     |
+   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Example Requests
 ----------------

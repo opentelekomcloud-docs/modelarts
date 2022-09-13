@@ -1,6 +1,6 @@
-==========
-Main Index
-==========
+=========================
+ModelArts - API Reference
+=========================
 
 .. toctree::
    :maxdepth: 1
