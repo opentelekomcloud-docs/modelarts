@@ -1,11 +1,20 @@
-.. _label_management:
+:original_name: topic_300000012.html
 
-================
+.. _topic_300000012:
+
 Label Management
 ================
 
+-  :ref:`Querying the Dataset Label List <listlabels>`
+-  :ref:`Creating a Dataset Label <createlabels>`
+-  :ref:`Modifying Labels in Batches <updatelabels>`
+-  :ref:`Deleting Labels in Batches <deletelabels>`
+-  :ref:`Updating a Label by Label Names <updatelabel>`
+-  :ref:`Deleting a Label and the Files that Only Contain the Label <deletelabelandsamples>`
+
 .. toctree::
    :maxdepth: 1
+   :hidden: 
 
    querying_the_dataset_label_list
    creating_a_dataset_label

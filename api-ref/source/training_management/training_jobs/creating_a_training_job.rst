@@ -210,9 +210,9 @@ Response Body
 Samples
 -------
 
-#. The following shows how to create training job **TestModelArtsJob** with **This is a ModelArts job** as its description.
+-  Sample request
 
-   -  Sample request
+   #. The following shows how to create training job **TestModelArtsJob** with **This is a ModelArts job** as its description.
 
       .. code-block:: text
 
@@ -244,85 +244,81 @@ Samples
              }
          }
 
-#. The following shows how to create training job **TestModelArtsJob2** with a custom image.
+   #. The following shows how to create training job **TestModelArtsJob2** with a custom image.
 
--  Sample request
+      .. code-block:: text
 
-   .. code-block:: text
+         POST    https://endpoint/v1/{project_id}/training-jobs
+         {
+             "job_name": "TestModelArtsJob2",
+             "job_desc": "This is a ModelArts job",
+             "workspace_id": "af261af2218841ec960b01ab3cf1a5fa",
+             "config": {
+                 "worker_server_num": 1,
+                 "data_url": "/usr/data/",
+                 "app_url": "/usr/app/",
+                 "parameter": [
+                     {
+                         "label": "CUSTOM_PARAM1",
+                         "value": "1"
+                     }
+                 ],
+                 "spec_id": 1,
+                 "user_command": "bash -x /home/work/run_train.sh python /home/work/user-job-dir/app/mnist/mnist_softmax.py --data_url /home/work/user-job-dir/app/mnist_data",
+                 "user_image_url": "100.125.5.235:20202/jobmng/custom-cpu-base:1.0",
+                 "train_url": "/usr/train/",
+                 "log_url": "/usr/log/"
+             }
+         }
 
-      POST    https://endpoint/v1/{project_id}/training-jobs
-      {
-          "job_name": "TestModelArtsJob2",
-          "job_desc": "This is a ModelArts job",
-          "workspace_id": "af261af2218841ec960b01ab3cf1a5fa",
-          "config": {
-              "worker_server_num": 1,
-              "data_url": "/usr/data/",
-              "app_url": "/usr/app/",
-              "parameter": [
-                  {
-                      "label": "CUSTOM_PARAM1",
-                      "value": "1"
-                  }
-              ],
-              "spec_id": 1,
-              "user_command": "bash -x /home/work/run_train.sh python /home/work/user-job-dir/app/mnist/mnist_softmax.py --data_url /home/work/user-job-dir/app/mnist_data",
-              "user_image_url": "100.125.5.235:20202/jobmng/custom-cpu-base:1.0",
-              "train_url": "/usr/train/",
-              "log_url": "/usr/log/"
-          }
-      }
+   #. The following shows how to create training job **TestModelArtsJob3** using a storage volume.
 
-3. The following shows how to create training job **TestModelArtsJob3** using a storage volume.
+      .. code-block:: text
 
--  Sample request
-
-   .. code-block:: text
-
-      POST    https://endpoint/v1/{project_id}/training-jobs
-      {
-          "job_name": "TestModelArtsJob3",
-          "job_desc": "This is a ModelArts job",
-          "workspace_id": "af261af2218841ec960b01ab3cf1a5fa",
-          "config": {
-              "worker_server_num": 1,
-              "app_url": "/usr/app/",
-              "boot_file_url": "/usr/app/boot.py",
-              "parameter": [
-                  {
-                      "label": "learning_rate",
-                      "value": "0.01"
-                  },
-                  {
-                      "label": "batch_size",
-                      "value": "32"
-                  }
-              ],
-              "dataset_id": "38277e62-9e59-48f4-8d89-c8cf41622c24",
-              "dataset_version_id": "2ff0d6ba-c480-45ae-be41-09a8369bfc90",
-              "spec_id": 1,
-              "engine_id": 1,
-              "train_url": "/usr/train/",
-              "log_url": "/usr/log/",
-              "volumes": [
-                  {
-                      "nfs": {
-                          "id": "43b37236-9afa-4855-8174-32254b9562e7",
-                          "src_path": "192.168.8.150:/",
-                          "dest_path": "/home/work/nas",
-                          "read_only": false
-                      }
-                  },
-                  {
-                      "host_path": {
-                          "src_path": "/root/work",
-                          "dest_path": "/home/mind",
-                          "read_only": false
-                      }
-                  }
-              ]
-          }
-      }
+         POST    https://endpoint/v1/{project_id}/training-jobs
+         {
+             "job_name": "TestModelArtsJob3",
+             "job_desc": "This is a ModelArts job",
+             "workspace_id": "af261af2218841ec960b01ab3cf1a5fa",
+             "config": {
+                 "worker_server_num": 1,
+                 "app_url": "/usr/app/",
+                 "boot_file_url": "/usr/app/boot.py",
+                 "parameter": [
+                     {
+                         "label": "learning_rate",
+                         "value": "0.01"
+                     },
+                     {
+                         "label": "batch_size",
+                         "value": "32"
+                     }
+                 ],
+                 "dataset_id": "38277e62-9e59-48f4-8d89-c8cf41622c24",
+                 "dataset_version_id": "2ff0d6ba-c480-45ae-be41-09a8369bfc90",
+                 "spec_id": 1,
+                 "engine_id": 1,
+                 "train_url": "/usr/train/",
+                 "log_url": "/usr/log/",
+                 "volumes": [
+                     {
+                         "nfs": {
+                             "id": "43b37236-9afa-4855-8174-32254b9562e7",
+                             "src_path": "192.168.8.150:/",
+                             "dest_path": "/home/work/nas",
+                             "read_only": false
+                         }
+                     },
+                     {
+                         "host_path": {
+                             "src_path": "/root/work",
+                             "dest_path": "/home/mind",
+                             "read_only": false
+                         }
+                     }
+                 ]
+             }
+         }
 
 -  Successful sample response
 
