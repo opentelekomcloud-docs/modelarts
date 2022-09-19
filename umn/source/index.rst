@@ -1,6 +1,6 @@
-==========
-Main Index
-==========
+======================
+ModelArts - User Guide
+======================
 
 .. toctree::
    :maxdepth: 1

@@ -23,6 +23,8 @@ Starting Labeling
 
 #. On the **Dashboard** page of the dataset, click **Label** in the upper right corner. The dataset details page is displayed. By default, all data of the dataset is displayed on the dataset details page.
 
+.. _modelarts_23_0013__en-us_topic_0170889733_section888019266174:
+
 Labeling Content
 ----------------
 

@@ -1,11 +1,19 @@
+:original_name: en-us_topic_0000001297767637.html
+
 .. _en-us_topic_0000001297767637:
 
-====================
 Predictive Analytics
 ====================
 
+-  :ref:`Preparing Data <modelarts_21_0015>`
+-  :ref:`Creating a Project <modelarts_21_0016>`
+-  :ref:`Selecting a Label Column <modelarts_21_0017>`
+-  :ref:`Training a Model <modelarts_21_0018>`
+-  :ref:`Deploying a Model as a Service <modelarts_21_0019>`
+
 .. toctree::
    :maxdepth: 1
+   :hidden: 
 
    preparing_data
    creating_a_project
