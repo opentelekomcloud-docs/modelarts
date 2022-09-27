@@ -21,7 +21,6 @@ Basic Concepts
 
    Projects group and isolate compute, storage, and network resources across physical regions. A default project is provided for each region, and subprojects can be created under each default project. Users can be granted permissions to access all resources in a specific project. For more refined access control, create subprojects under a project and purchase resources in the subprojects. Users can then be assigned permissions to access only specific resources in the subprojects.
 
-   .. _modelarts_03_0143__en-us_topic_0171316292_en-us_topic_0170640577_en-us_topic_0169294976_fig1189614168311:
 
    .. figure:: /_static/images/en-us_image_0000001254415793.gif
       :alt: **Figure 1** Project isolation model
