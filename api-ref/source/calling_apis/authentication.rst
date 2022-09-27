@@ -94,7 +94,6 @@ Decompress the downloaded package and reference the obtained JAR files as depend
 
    Import the demo project to Eclipse.
 
-   .. _modelarts_03_0004__en-us_topic_0129435566_fig10881944183710:
 
    .. figure:: /_static/images/en-us_image_0000001209775802.gif
       :alt: **Figure 1** Selecting Existing Projects into Workspace
@@ -102,7 +101,6 @@ Decompress the downloaded package and reference the obtained JAR files as depend
 
       **Figure 1** Selecting Existing Projects into Workspace
 
-   .. _modelarts_03_0004__en-us_topic_0129435566_fig15961458113717:
 
    .. figure:: /_static/images/en-us_image_0000001254535753.gif
       :alt: **Figure 2** Selecting the demo project
@@ -110,7 +108,6 @@ Decompress the downloaded package and reference the obtained JAR files as depend
 
       **Figure 2** Selecting the demo project
 
-   .. _modelarts_03_0004__en-us_topic_0129435566_fig74501929113815:
 
    .. figure:: /_static/images/en-us_image_0000001254215795.gif
       :alt: **Figure 3** Structure of the demo project
@@ -134,7 +131,7 @@ Decompress the downloaded package and reference the obtained JAR files as depend
 
       Uncomment the following code snippet in the **AccessServiceImpl.java** file, and specify the project ID and account ID.
 
-      .. code-block::
+      .. code-block:: text
 
          //TODO: Add special headers.
          //request.addHeader("X-Project-Id", "xxxxx");
@@ -144,7 +141,7 @@ Decompress the downloaded package and reference the obtained JAR files as depend
 
       As shown in the following code, if you use other methods such as POST, PUT, and DELETE, see the corresponding comment. Replace the values of **region**, **serviceName**, **ak**, **sk**, and **url**. The URL for obtaining the VPC is used in the sample project. Replace it with the actual URL. Contact the system administrator to obtain the endpoint.
 
-      .. code-block::
+      .. code-block:: text
 
          //TODO: Replace the value of region with the actual region where the service to be accessed is located.
          private static final String region = "";
@@ -192,4 +189,3 @@ Decompress the downloaded package and reference the obtained JAR files as depend
       You can view the API call logs on the console.
 
 .. |image1| image:: /_static/images/en-us_image_0000001209615816.gif
-

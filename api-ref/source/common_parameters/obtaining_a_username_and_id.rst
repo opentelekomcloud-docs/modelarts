@@ -13,7 +13,6 @@ When you call APIs, certain requests require the username and ID. To obtain a us
 
    On the **My Credentials** page, view the username and ID.
 
-   .. _modelarts_03_0006__fig106591844293:
 
    .. figure:: /_static/images/en-us_image_0000001298629861.png
       :alt: **Figure 1** Viewing the username and ID

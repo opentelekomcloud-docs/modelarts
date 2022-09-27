@@ -13,7 +13,6 @@ When you call APIs, certain requests require the account name and ID. To obtain 
 
    On the **API Credentials** page, view the account name and ID.
 
-   .. _modelarts_03_0148__en-us_topic_0171436478_fig816634061619:
 
    .. figure:: /_static/images/en-us_image_0000001209615814.png
       :alt: **Figure 1** Viewing the account name and ID
