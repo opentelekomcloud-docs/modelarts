@@ -18,7 +18,6 @@ ModelArts supports the entire development process, including data processing, an
 
 ModelArts supports various AI application scenarios, such as image classification and object detection.
 
-.. _modelarts_01_0001__en-us_topic_0284258732_en-us_topic_0129423679_fig19821028175912:
 
 .. figure:: /_static/images/en-us_image_0000001110920880.png
    :alt: **Figure 1** ModelArts architecture

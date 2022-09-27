@@ -24,7 +24,6 @@ Log in to the ModelArts management console and create a training job according t
 
    -  **Image Path**: SWR URL after the image is uploaded to SWR
 
-      .. _modelarts_23_0087__en-us_topic_0171858299_fig1610311596365:
 
       .. figure:: /_static/images/en-us_image_0000001156920769.png
          :alt: **Figure 1** SWR image address

@@ -22,7 +22,6 @@ Basic Process of AI Development
 
 The basic process of AI development includes the following steps: determining an objective, preparing data, and training, evaluating, and deploying a model.
 
-.. _modelarts_01_0010__en-us_topic_0284258735_en-us_topic_0168462752_fig1553185024113:
 
 .. figure:: /_static/images/en-us_image_0000001110921016.png
    :alt: **Figure 1** AI development process

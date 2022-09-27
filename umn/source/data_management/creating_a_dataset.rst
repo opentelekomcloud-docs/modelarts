@@ -22,7 +22,6 @@ Procedure
 
    a. Set the basic information, the name and description of the dataset.
 
-      .. _modelarts_23_0004__en-us_topic_0170886809_fig17294143617510:
 
       .. figure:: /_static/images/en-us_image_0000001157080905.png
          :alt: **Figure 1** Basic information about a dataset
@@ -32,7 +31,6 @@ Procedure
 
    b. Select a labeling scene and type as required. For details about the types supported by ModelArts, see :ref:`Dataset Types <modelarts_23_0003__en-us_topic_0171496996_section51771731153811>`.
 
-      .. _modelarts_23_0004__fig5631646153415:
 
       .. figure:: /_static/images/en-us_image_0000001340184197.png
          :alt: **Figure 2** Selecting a labeling scene and type
@@ -56,7 +54,6 @@ Procedure
 Images (Image Classification, Object Detection, )
 -------------------------------------------------
 
-.. _modelarts_23_0004__fig28510434351:
 
 .. figure:: /_static/images/en-us_image_0000001340265309.png
    :alt: **Figure 3** Parameters of datasets for image classification and object detection
@@ -99,7 +96,6 @@ Images (Image Classification, Object Detection, )
 Audio (Sound Classification, Speech Labeling, and Speech Paragraph Labeling)
 ----------------------------------------------------------------------------
 
-.. _modelarts_23_0004__en-us_topic_0170886809_fig107351821153417:
 
 .. figure:: /_static/images/en-us_image_0000001157080903.png
    :alt: **Figure 4** Parameters of datasets for sound classification, speech labeling, and speech paragraph labeling
@@ -148,7 +144,6 @@ Audio (Sound Classification, Speech Labeling, and Speech Paragraph Labeling)
 Text (Text Classification, Named Entity Recognition, and Text Triplet)
 ----------------------------------------------------------------------
 
-.. _modelarts_23_0004__en-us_topic_0170886809_fig13128845173710:
 
 .. figure:: /_static/images/en-us_image_0000001110920960.png
    :alt: **Figure 5** Parameters of datasets for text classification, named entity recognition, and text triplet
@@ -200,7 +195,6 @@ Text (Text Classification, Named Entity Recognition, and Text Triplet)
 Other (Free Format)
 -------------------
 
-.. _modelarts_23_0004__en-us_topic_0170886809_fig1957792145712:
 
 .. figure:: /_static/images/en-us_image_0000001156920933.png
    :alt: **Figure 6** Parameters of datasets of the free format type
@@ -223,4 +217,3 @@ Other (Free Format)
    +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. |image1| image:: /_static/images/en-us_image_0000001156920935.png
-

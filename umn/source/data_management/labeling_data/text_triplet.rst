@@ -19,7 +19,6 @@ Before labeling, ensure that the **Entity Label** and **Relationship Label** of 
 
 For example, if two entities are labeled as **Place**, you cannot add any relationship label between them. If a relationship label cannot be added, a red cross is displayed.
 
-.. _modelarts_23_0211__en-us_topic_0209128667_fig145576513485:
 
 .. figure:: /_static/images/en-us_image_0000001157080821.png
    :alt: **Figure 1** Example of entity and relationship labels
@@ -27,7 +26,6 @@ For example, if two entities are labeled as **Place**, you cannot add any relati
 
    **Figure 1** Example of entity and relationship labels
 
-.. _modelarts_23_0211__en-us_topic_0209128667_fig656185315485:
 
 .. figure:: /_static/images/en-us_image_0000001157080819.png
    :alt: **Figure 2** Failure of adding a relationship label
@@ -55,7 +53,6 @@ The dataset details page displays the labeled and unlabeled text objects in the 
 
 #. On the **Unlabeled** tab page, the objects to be labeled are listed in the left pane. In the list, click a text object, select the corresponding text content on the right pane, and select an entity name from the displayed entity list to label the content.
 
-   .. _modelarts_23_0211__en-us_topic_0209128667_fig845175419492:
 
    .. figure:: /_static/images/en-us_image_0000001156920847.png
       :alt: **Figure 3** Labeling an entity
@@ -65,7 +62,6 @@ The dataset details page displays the labeled and unlabeled text objects in the 
 
 #. After labeling multiple entities, click the source entity and target entity in sequence and select a relationship type from the displayed relationship list to label the relationship.
 
-   .. _modelarts_23_0211__en-us_topic_0209128667_fig1112651155015:
 
    .. figure:: /_static/images/en-us_image_0000001157080823.png
       :alt: **Figure 4** Labeling a relationship
@@ -86,7 +82,6 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
 
 On the dataset details page, click the **Labeled** tab. Select a text object in the left pane and the right pane displays the detailed label information. You can move your cursor to the entity or relationship label, and right-click to delete it. You can also click the source entity and target entity in sequence to add a relationship label.
 
-.. _modelarts_23_0211__en-us_topic_0209128667_fig1989017392518:
 
 .. figure:: /_static/images/en-us_image_0000001110760966.png
    :alt: **Figure 5** Modifying a label in the text
@@ -96,7 +91,6 @@ On the dataset details page, click the **Labeled** tab. Select a text object in 
 
 You can click **Delete Labels on Current Item** at the bottom of the page to delete all labels in the selected text object.
 
-.. _modelarts_23_0211__en-us_topic_0209128667_fig15856154165212:
 
 .. figure:: /_static/images/en-us_image_0000001110920872.png
    :alt: **Figure 6** Deleting current labels
@@ -115,7 +109,6 @@ In addition to automatically synchronizing data from **Input Dataset Path**, you
 
    Select one or more files to be uploaded in the local environment. Only **.txt** and **.csv** files are supported. The total size of files uploaded at a time cannot exceed 8 MB.
 
-   .. _modelarts_23_0211__en-us_topic_0209128667_fig4494454154518:
 
    .. figure:: /_static/images/en-us_image_0000001156920843.png
       :alt: **Figure 7** Adding a file

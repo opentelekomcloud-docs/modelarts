@@ -9,7 +9,6 @@ After the training code is debugged in a notebook instance, if you need to use t
 
 On the Jupyter page, click **Convert to Python File** to convert the training code to a Python file (**.py** file). After the conversion is completed, manually upload the Python file to OBS. Then, select the OBS path in the ModelArts training job to use the training code.
 
-.. _modelarts_21_0066__en-us_topic_0165695112_fig639734419562:
 
 .. figure:: /_static/images/en-us_image_0000001279825389.png
    :alt: **Figure 1** Converting the **.ipynb** file into a Python file

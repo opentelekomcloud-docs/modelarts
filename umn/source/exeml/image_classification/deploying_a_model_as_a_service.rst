@@ -20,7 +20,6 @@ You can deploy a model as a real-time service that provides a real-time test UI 
 
    The options are **1 hour later**, **2 hours later**, **4 hours later**, **6 hours later**, and **Custom**. If you select **Custom**, you can enter any integer from 1 to 24 hours in the text box on the right.
 
-   .. _modelarts_21_0007__en-us_topic_0284258836_en-us_topic_0169446156_fig65852182313:
 
    .. figure:: /_static/images/en-us_image_0000001156920879.png
       :alt: **Figure 1** Deploying a model

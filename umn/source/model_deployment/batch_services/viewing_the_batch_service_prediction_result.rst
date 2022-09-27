@@ -23,4 +23,3 @@ Procedure
    -  If table data is entered, the result file is generated in the *Table name*\ **\__result.txt** format, for example, **train.csv_result.txt**.
 
 .. |image1| image:: /_static/images/en-us_image_0000001157080919.png
-

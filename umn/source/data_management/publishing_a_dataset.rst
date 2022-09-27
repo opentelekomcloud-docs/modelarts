@@ -18,7 +18,6 @@ About Dataset Versions
 -  You can obtain the dataset in the manifest file format corresponding to each dataset version based on the value of **Storage Path**. The dataset can be used when you import data or filter hard examples.
 -  The version of a table dataset cannot be changed.
 
-.. _publishing-a-dataset-1:
 
 Publishing a Dataset
 --------------------
@@ -55,7 +54,6 @@ Publishing a Dataset
       | Description                       | Description of the current dataset version.                                                                                                                                                                                                      |
       +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   .. _modelarts_23_0018__en-us_topic_0170886812_fig0400181520353:
 
    .. figure:: /_static/images/en-us_image_0000001277931137.png
       :alt: **Figure 1** Publishing a dataset

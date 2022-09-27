@@ -83,7 +83,6 @@ The dataset details page provides the **Labeled** and **Unlabeled** tabs. The **
 
    Label all objects in an image. Multiple labels can be added to an image. After labeling an image, you can click the image list below the image to quickly select other images that are not labeled and label them on the labeling page.
 
-   .. _modelarts_23_0012__fig7712133716711:
 
    .. figure:: /_static/images/en-us_image_0000001211469369.png
       :alt: **Figure 1** Adding an object detection label
@@ -141,7 +140,6 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
 
       After deleting the label, click **Back to Data Labeling Preview** in the upper left corner of the page to exit the labeling page. In the dialog box that is displayed, save the modification. After all labels of an image are deleted, the image is displayed on the **Unlabeled** tab page.
 
-      .. _modelarts_23_0012__fig1258151315813:
 
       .. figure:: /_static/images/en-us_image_0000001211469623.png
          :alt: **Figure 2** Editing an object detection label
@@ -156,7 +154,6 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
    -  Modifying a label: Click the edit icon in the **Operation** column. In the dialog box that is displayed, enter the new label name, select the new label color, and click **OK**. After the modification, the images that have been added with the label use the new label name.
    -  Deleting a label: Click the deletion icon in the **Operation** column to delete a label.
 
-   .. _modelarts_23_0012__fig08311511694:
 
    .. figure:: /_static/images/en-us_image_0000001166069824.png
       :alt: **Figure 3** All labels for object detection
@@ -177,7 +174,6 @@ In addition to the data automatically synchronized from **Input Dataset Path**, 
 
    After the images are selected, their thumbnails and total size are displayed on the **Add** page.
 
-   .. _modelarts_23_0012__en-us_topic_0170889732_en-us_topic_0170889731_fig84261928608:
 
    .. figure:: /_static/images/en-us_image_0000001156920963.png
       :alt: **Figure 4** Adding images
@@ -203,62 +199,32 @@ If a tick is displayed in the upper left corner of an image, the image is select
    If you select **Delete source files**, images stored in the OBS directory will be deleted accordingly. This operation may affect other dataset versions or datasets using those files, for example, leading to an error in page display, training, or inference. Deleted data cannot be recovered. Exercise caution when performing this operation.
 
 .. |image1| image:: /_static/images/en-us_image_0000001156920971.png
-
 .. |image2| image:: /_static/images/en-us_image_0000001156920969.png
-
 .. |image3| image:: /_static/images/en-us_image_0000001157080923.png
-
 .. |image4| image:: /_static/images/en-us_image_0000001110761098.png
-
 .. |image5| image:: /_static/images/en-us_image_0000001110920992.png
-
 .. |image6| image:: /_static/images/en-us_image_0000001110920994.png
-
 .. |image7| image:: /_static/images/en-us_image_0000001156920971.png
-
 .. |image8| image:: /_static/images/en-us_image_0000001156920969.png
-
 .. |image9| image:: /_static/images/en-us_image_0000001157080923.png
-
 .. |image10| image:: /_static/images/en-us_image_0000001110761098.png
-
 .. |image11| image:: /_static/images/en-us_image_0000001110920992.png
-
 .. |image12| image:: /_static/images/en-us_image_0000001110920994.png
-
 .. |image13| image:: /_static/images/en-us_image_0000001110920996.png
-
 .. |image14| image:: /_static/images/en-us_image_0000001110920984.png
-
 .. |image15| image:: /_static/images/en-us_image_0000001110761082.png
-
 .. |image16| image:: /_static/images/en-us_image_0000001110920982.png
-
 .. |image17| image:: /_static/images/en-us_image_0000001156920959.png
-
 .. |image18| image:: /_static/images/en-us_image_0000001110921000.png
-
 .. |image19| image:: /_static/images/en-us_image_0000001110761080.png
-
 .. |image20| image:: /_static/images/en-us_image_0000001110921004.png
-
 .. |image21| image:: /_static/images/en-us_image_0000001110920978.png
-
 .. |image22| image:: /_static/images/en-us_image_0000001110920996.png
-
 .. |image23| image:: /_static/images/en-us_image_0000001110920984.png
-
 .. |image24| image:: /_static/images/en-us_image_0000001110761082.png
-
 .. |image25| image:: /_static/images/en-us_image_0000001110920982.png
-
 .. |image26| image:: /_static/images/en-us_image_0000001156920959.png
-
 .. |image27| image:: /_static/images/en-us_image_0000001110921000.png
-
 .. |image28| image:: /_static/images/en-us_image_0000001110761080.png
-
 .. |image29| image:: /_static/images/en-us_image_0000001110921004.png
-
 .. |image30| image:: /_static/images/en-us_image_0000001110920978.png
-

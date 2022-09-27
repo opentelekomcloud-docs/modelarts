@@ -18,7 +18,6 @@ Instance Opening
 
    In the notebook instance list, select the notebook instance to be opened and click **Open JupyterLab** in the **Operation** column.
 
-.. _modelarts_23_0325__en-us_topic_0266024073_fig12833914154415:
 
 .. figure:: /_static/images/en-us_image_0000001233650818.png
    :alt: **Figure 1** Opening a notebook instance

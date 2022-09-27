@@ -10,7 +10,6 @@ If you need to assign different permissions to different employees in your enter
 Granting Permissions to Users
 -----------------------------
 
-.. _modelarts_01_0017__en-us_topic_0284296677_fig105571112712:
 
 .. figure:: /_static/images/en-us_image_0000001156920871.png
    :alt: **Figure 1** Authorization model
@@ -33,7 +32,6 @@ Granting Permissions to Federated Users
 
 You can use IAM to create an IdP and create rules for the IdP to convert federated users into IAM users who have specified permissions to access cloud resources.
 
-.. _modelarts_01_0017__en-us_topic_0284296677_fig644812451338:
 
 .. figure:: /_static/images/en-us_image_0000001157080847.png
    :alt: **Figure 2** Principles of identity conversion for federated users

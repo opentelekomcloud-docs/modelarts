@@ -17,7 +17,6 @@ ModelArts allows you to use custom images to create training jobs and import mod
 
 .. _modelarts_23_0085__en-us_topic_0171858297_section125639162589:
 
-.. _creating-and-uploading-a-custom-image-1:
 
 Creating and Uploading a Custom Image
 -------------------------------------

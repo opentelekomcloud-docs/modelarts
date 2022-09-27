@@ -79,7 +79,6 @@ The parameters on the GUI for data import vary according to the dataset type. Th
 
 #. In the **Import** dialog box, set **Import Mode** to **OBS path** and set **OBS path** to the path for storing data. Then click **OK**.
 
-   .. _modelarts_23_0006__en-us_topic_0171025430_fig1391710401912:
 
    .. figure:: /_static/images/en-us_image_0000001233970650.png
       :alt: **Figure 1** Importing the dataset to an OBS path
@@ -107,7 +106,6 @@ The parameters on the GUI for data import vary according to the dataset type. Th
    -  **Import by Label**: The system automatically obtains the labels of the dataset. You can click **Add Label** to add a label or click the deletion icon on the right to delete a label. This field is optional. After importing a dataset, you can add or delete labels during data labeling.
    -  **Import labels**: If this parameter is selected, the labels defined in the manifest file are imported to the ModelArts dataset.
 
-   .. _modelarts_23_0006__en-us_topic_0171025430_fig1260617211526:
 
    .. figure:: /_static/images/en-us_image_0000001234129946.png
       :alt: **Figure 2** Importing the dataset

@@ -65,7 +65,6 @@ The dataset details page displays images on the **All**, **Labeled**, and **Unla
 
    b. Confirm the **Labels of Selected Image** information and click **OK**. The selected image is automatically moved to the **Labeled** tab page. On the **Unlabeled** and **All** tab pages, the labeling information is updated along with the labeling process, including the added label names and the number of images for each label.
 
-   .. _modelarts_23_0011__en-us_topic_0170889731_fig131815433480:
 
    .. figure:: /_static/images/en-us_image_0000001110761138.png
       :alt: **Figure 1** Adding labels
@@ -91,7 +90,6 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
 
    Deleting a label: In the **File Labels** area, click the delete icon in the **Operation** column to delete the label. This operation deletes only the labels added to the selected image.
 
-   .. _modelarts_23_0011__en-us_topic_0170889731_fig8117163317534:
 
    .. figure:: /_static/images/en-us_image_0000001110921036.png
       :alt: **Figure 2** Modifying a label
@@ -106,7 +104,6 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
    -  Modifying a label: Click the editing icon in the **Operation** column. In the dialog box that is displayed, enter the new label name and click **OK**. After the modification, the images that have been added with the label use the new label name.
    -  Deleting a label: Click the deletion icon in the **Operation** column. In the displayed dialog box, select **Delete label**, **Delete label and images with only the label (Do not delete source files)**, or **Delete label and images with only the label (Delete source files)**, and click **OK**.
 
-   .. _modelarts_23_0011__en-us_topic_0170889731_fig7533134312579:
 
    .. figure:: /_static/images/en-us_image_0000001156921013.png
       :alt: **Figure 3** Information about all labels
@@ -127,7 +124,6 @@ In addition to automatically synchronizing data from **Input Dataset Path**, you
 
    After the images are selected, their thumbnails and sizes are displayed on the **Add** page.
 
-   .. _modelarts_23_0011__en-us_topic_0170889731_fig84261928608:
 
    .. figure:: /_static/images/en-us_image_0000001156920963.png
       :alt: **Figure 4** Adding images

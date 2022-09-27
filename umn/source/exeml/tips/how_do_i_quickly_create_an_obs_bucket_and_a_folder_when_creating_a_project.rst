@@ -11,7 +11,6 @@ When creating a project, select a training data path. This section describes how
 
 #. Click **Create Bucket**. The **Create Bucket** page is displayed. For details about how to create a bucket, see `Creating a Bucket <https://docs.otc.t-systems.com/en-us/usermanual/obs/obs_03_0306.html>`__ in the *Object Storage Service Console Operation Guide*.
 
-   .. _modelarts_21_0031__fig137124138322:
 
    .. figure:: /_static/images/en-us_image_0000001297638913.png
       :alt: **Figure 1** Creating an OBS bucket
@@ -27,4 +26,3 @@ When creating a project, select a training data path. This section describes how
    -  Any single slash (/) separates and creates multiple levels of folders at once.
 
 .. |image1| image:: /_static/images/en-us_image_0000001157080897.png
-
