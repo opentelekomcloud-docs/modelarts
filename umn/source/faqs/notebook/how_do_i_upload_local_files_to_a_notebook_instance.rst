@@ -9,7 +9,6 @@ How Do I Upload Local Files to a Notebook Instance?
 
    Open a notebook instance and click **Upload** in the upper right corner to upload a local file to the notebook instance.
 
-   .. _modelarts_21_0068__en-us_topic_0181034192_fig449019592184:
 
    .. figure:: /_static/images/en-us_image_0000001235505840.png
       :alt: **Figure 1** Upload a small file

@@ -51,7 +51,6 @@ The dataset details page displays the labeled and unlabeled audio files. The **U
 
       Each label has a shortcut key. A shortcut key cannot be specified for different labels. Shortcut keys can greatly improve the labeling efficiency.
 
-   .. _modelarts_23_0015__en-us_topic_0170889735_fig4264182145418:
 
    .. figure:: /_static/images/en-us_image_0000001110761046.png
       :alt: **Figure 1** Adding an audio label
@@ -80,7 +79,6 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
 
    On the dataset details page, click the **Labeled** tab. The information about all labels is displayed on the right.
 
-   .. _modelarts_23_0015__en-us_topic_0170889735_fig15568123335413:
 
    .. figure:: /_static/images/en-us_image_0000001110761048.png
       :alt: **Figure 2** Information about all labels
@@ -120,4 +118,3 @@ If a tick is displayed in the upper right corner of an audio file, the audio fil
    If you select **Delete source files**, audio files stored in the corresponding OBS directory will be deleted when you delete the selected audio files. Deleting source files may affect other dataset versions or datasets using those files. As a result, the page display, training, or inference is abnormal. Deleted data cannot be recovered. Exercise caution when performing this operation.
 
 .. |image1| image:: /_static/images/en-us_image_0000001157080893.png
-

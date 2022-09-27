@@ -80,6 +80,4 @@ In this mode, input an image to be processed in the inference request. The infer
    -  On the **Body** tab page, set the request body. Set **key** to **images**, select **File**, select the image to be processed, and click **send** to send your prediction request.
 
 .. |image1| image:: /_static/images/en-us_image_0000001110761158.png
-
 .. |image2| image:: /_static/images/en-us_image_0000001110761158.png
-

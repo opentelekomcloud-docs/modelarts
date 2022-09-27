@@ -175,7 +175,6 @@ Customized settings can be used in the following scenarios:
          | [xyz]     | Match any single character contained in a character set. For example, **[abc]** can match **a** in **plain**.                                               |
          +-----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-      .. _modelarts_23_0061__en-us_topic_0165025305_fig19860141184710:
 
       .. figure:: /_static/images/en-us_image_0000001157080859.png
          :alt: **Figure 1** Traffic distribution by user
@@ -208,7 +207,6 @@ Customized settings can be used in the following scenarios:
 
          #HEADER_testheader matches 'mock.*'
 
-      .. _modelarts_23_0061__en-us_topic_0165025305_fig386192143714:
 
       .. figure:: /_static/images/en-us_image_0000001110920910.png
          :alt: **Figure 2** Using the header to access different versions
@@ -222,7 +220,6 @@ Customized settings can be used in the following scenarios:
 
    When user A accesses the model, the user uses configuration A. When user B accesses the model, the user uses configuration B. When matching a running configuration, ModelArts adds a header to the request and also the customized running parameters specified by **Setting Name** and **Setting Value**.
 
-   .. _modelarts_23_0061__en-us_topic_0165025305_fig913111016189:
 
    .. figure:: /_static/images/en-us_image_0000001110761010.png
       :alt: **Figure 3** Customized running parameters added for a customized configuration rule
@@ -231,4 +228,3 @@ Customized settings can be used in the following scenarios:
       **Figure 3** Customized running parameters added for a customized configuration rule
 
 .. |image1| image:: /_static/images/en-us_image_0000001110920912.png
-

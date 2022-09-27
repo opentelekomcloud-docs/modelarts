@@ -39,7 +39,6 @@ The AI framework supported by each notebook instance varies according to the wor
 
 After the file is created, the console page is displayed.
 
-.. _modelarts_23_0209__en-us_topic_0208766071_fig12167335121119:
 
 .. figure:: /_static/images/en-us_image_0000001110761020.png
    :alt: **Figure 1** Creating a notebook file (console)
@@ -56,7 +55,6 @@ On the JupyterLab page, you can click **Upload File** in the upper left corner a
 
 The size of the file to be uploaded using this method is limited. If the file size exceeds the limit, use other methods to upload the file. For details, see :ref:`Uploading Data to JupyterLab <modelarts_23_0332>`.
 
-.. _modelarts_23_0209__en-us_topic_0208766071_fig162661614164017:
 
 .. figure:: /_static/images/en-us_image_0000001110920918.png
    :alt: **Figure 2** Uploading a file
@@ -71,7 +69,6 @@ JupyterLab allows you to open multiple notebook instances or files (such as HTML
 
 Using JupyterLab, you can customize the display of multiple files. In the file display area on the right, you can drag a file to adjust its position. Multiple files can be concurrently displayed.
 
-.. _modelarts_23_0209__en-us_topic_0208766071_fig6301121132215:
 
 .. figure:: /_static/images/en-us_image_0000001157080869.png
    :alt: **Figure 3** Customized display of multiple files
@@ -83,7 +80,6 @@ When writing code in a notebook instance, you can create multiple views of a fil
 
 To open multiple views, open the file and choose **File** > **New View for Notebook**.
 
-.. _modelarts_23_0209__en-us_topic_0208766071_fig9122203643213:
 
 .. figure:: /_static/images/en-us_image_0000001110920916.png
    :alt: **Figure 4** Multiple views of a file
@@ -98,7 +94,6 @@ Files created in JupyterLab can be directly downloaded to a local computer. The 
 
 In the JupyterLab file list, right-click the file to be downloaded and choose **Download** from the shortcut menu. The file is downloaded to the directory set for your browser.
 
-.. _modelarts_23_0209__en-us_topic_0208766071_fig115128616340:
 
 .. figure:: /_static/images/en-us_image_0000001157080879.png
    :alt: **Figure 5** Downloading a file
@@ -109,7 +104,6 @@ In the JupyterLab file list, right-click the file to be downloaded and choose **
 Common Icons and Plug-ins of JupyterLab
 ---------------------------------------
 
-.. _modelarts_23_0209__en-us_topic_0208766071_fig18661212194314:
 
 .. figure:: /_static/images/en-us_image_0000001110761018.png
    :alt: **Figure 6** Common icons and plug-ins of JupyterLab
@@ -150,42 +144,22 @@ Common Icons and Plug-ins of JupyterLab
    +-----------+-------------------------------------------------------------------------------------------------------+
 
 .. |image1| image:: /_static/images/en-us_image_0000001110920920.png
-
 .. |image2| image:: /_static/images/en-us_image_0000001157080875.png
-
 .. |image3| image:: /_static/images/en-us_image_0000001156920903.png
-
 .. |image4| image:: /_static/images/en-us_image_0000001156920893.png
-
 .. |image5| image:: /_static/images/en-us_image_0000001110920920.png
-
 .. |image6| image:: /_static/images/en-us_image_0000001157080875.png
-
 .. |image7| image:: /_static/images/en-us_image_0000001156920903.png
-
 .. |image8| image:: /_static/images/en-us_image_0000001156920893.png
-
 .. |image9| image:: /_static/images/en-us_image_0000001110920934.png
-
 .. |image10| image:: /_static/images/en-us_image_0000001110761016.png
-
 .. |image11| image:: /_static/images/en-us_image_0000001157080873.png
-
 .. |image12| image:: /_static/images/en-us_image_0000001156920899.png
-
 .. |image13| image:: /_static/images/en-us_image_0000001156920901.png
-
 .. |image14| image:: /_static/images/en-us_image_0000001156920887.png
-
 .. |image15| image:: /_static/images/en-us_image_0000001110920934.png
-
 .. |image16| image:: /_static/images/en-us_image_0000001110761016.png
-
 .. |image17| image:: /_static/images/en-us_image_0000001157080873.png
-
 .. |image18| image:: /_static/images/en-us_image_0000001156920899.png
-
 .. |image19| image:: /_static/images/en-us_image_0000001156920901.png
-
 .. |image20| image:: /_static/images/en-us_image_0000001156920887.png
-

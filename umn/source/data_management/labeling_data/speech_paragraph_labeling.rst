@@ -34,7 +34,6 @@ The dataset details page displays the labeled and unlabeled audio files. The **U
 
 #. Select an audio segment based on the content being played, and enter the audio file label and content in the **Speech Content** text box.
 
-   .. _modelarts_23_0017__en-us_topic_0170889737_fig17146158195818:
 
    .. figure:: /_static/images/en-us_image_0000001157080967.png
       :alt: **Figure 1** Labeling an audio file
@@ -84,6 +83,4 @@ On the **Unlabeled** or **Labeled** tab page, select the audio files to be delet
    If you select **Delete source files**, audio files stored in the corresponding OBS directory will be deleted when you delete the selected audio files. Deleting source files may affect other dataset versions or datasets using those files. As a result, the page display, training, or inference is abnormal. Deleted data cannot be recovered. Exercise caution when performing this operation.
 
 .. |image1| image:: /_static/images/en-us_image_0000001110761012.png
-
 .. |image2| image:: /_static/images/en-us_image_0000001156920989.png
-

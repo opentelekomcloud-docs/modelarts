@@ -7,7 +7,6 @@ Data Management
 
 During AI development, massive volumes of data need to be processed, and data preparation and labeling usually take more than half of the development time. ModelArts data management provides an efficient data management and labeling framework. It supports various data types such as image, text, audio, and video in a range of labeling scenarios such as image classification, object detection, speech paragraph labeling, and text classification. ModelArts data management can be used in AI projects of computer vision, natural language processing, and audio and video analysis. In addition, it provides functions such as data filtering, data analysis, team labeling, and version management for full-process data labeling.
 
-.. _modelarts_01_0012__en-us_topic_0284258738_en-us_topic_0168462753_fig156962483235:
 
 .. figure:: /_static/images/en-us_image_0000001157080947.png
    :alt: **Figure 1** Data labeling process
