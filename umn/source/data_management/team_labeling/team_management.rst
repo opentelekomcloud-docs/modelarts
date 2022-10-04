@@ -24,7 +24,6 @@ Adding a Team
 
 #. In the displayed **Add Team** dialog box, enter a team name and description and click **OK**. The labeling team is added.
 
-   .. _modelarts_23_0182__en-us_topic_0186456617_fig16799194110102:
 
    .. figure:: /_static/images/en-us_image_0000001157080843.png
       :alt: **Figure 1** Adding a team
@@ -41,7 +40,6 @@ You can delete a team that is no longer used.
 
 On the **Labeling Teams** page, select the target team and click **Delete**. In the dialog box that is displayed, click **OK**.
 
-.. _modelarts_23_0182__en-us_topic_0186456617_fig32602118112:
 
 .. figure:: /_static/images/en-us_image_0000001157080841.png
    :alt: **Figure 2** Deleting a team

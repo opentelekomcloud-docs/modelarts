@@ -18,7 +18,6 @@ Viewing Dataset Version Updates
 
    You can view basic information about the dataset, and view the versions and publish time on the left.
 
-   .. _modelarts_23_0019__en-us_topic_0170886813_fig9607133103715:
 
    .. figure:: /_static/images/en-us_image_0000001278250381.png
       :alt: **Figure 1** Viewing dataset versions

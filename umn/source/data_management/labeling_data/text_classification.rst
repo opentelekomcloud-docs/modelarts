@@ -34,7 +34,6 @@ The dataset details page displays the labeled and unlabeled text files in the da
 
    You can repeat this operation to select objects and add labels to the objects.
 
-   .. _modelarts_23_0013__en-us_topic_0170889733_fig683344215383:
 
    .. figure:: /_static/images/en-us_image_0000001157080753.png
       :alt: **Figure 1** Labeling for text classification
@@ -49,7 +48,6 @@ Adding Labels
 
 -  Adding labels on the **Unlabeled** tab page: Click the plus sign (+) next to **Label Set**. On the **Add Label** page that is displayed, add a label name, select a label color, and click **OK**.
 
-   .. _modelarts_23_0013__en-us_topic_0170889733_fig9150218153914:
 
    .. figure:: /_static/images/en-us_image_0000001156920783.png
       :alt: **Figure 2** Adding a label (1)
@@ -59,7 +57,6 @@ Adding Labels
 
 -  Adding labels on the **Labeled** tab page: Click the plus sign (+) next to **All Labels**. On the **Add Label** page that is displayed, add a label name, select a label color, and click **OK**.
 
-   .. _modelarts_23_0013__en-us_topic_0170889733_fig10130856193910:
 
    .. figure:: /_static/images/en-us_image_0000001110920808.png
       :alt: **Figure 3** Adding a label (2)
@@ -67,7 +64,6 @@ Adding Labels
 
       **Figure 3** Adding a label (2)
 
-   .. _modelarts_23_0013__en-us_topic_0170889733_fig0843225124011:
 
    .. figure:: /_static/images/en-us_image_0000001110760914.png
       :alt: **Figure 4** Adding a label
@@ -126,4 +122,3 @@ You can quickly delete the files you want to discard.
 The background of the selected text is blue.
 
 .. |image1| image:: /_static/images/en-us_image_0000001110760908.png
-

@@ -76,7 +76,6 @@ Authentication Logic
 
 IAM authenticates users according to the permissions that the users have been granted. The authentication logic is as follows:
 
-.. _modelarts_23_0079__en-us_topic_0285383428_en-us_topic_0270979573_fig4148178111014:
 
 .. figure:: /_static/images/en-us_image_0000001110920802.png
    :alt: **Figure 1** Authentication logic

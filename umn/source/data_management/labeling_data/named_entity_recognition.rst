@@ -31,7 +31,6 @@ The dataset details page displays the labeled and unlabeled text files in the da
 
    You can repeat this operation to select objects and add labels to the objects.
 
-   .. _modelarts_23_0014__en-us_topic_0170889734_fig1281513105431:
 
    .. figure:: /_static/images/en-us_image_0000001157080991.png
       :alt: **Figure 1** Labeling for named entity recognition
@@ -46,7 +45,6 @@ Adding Labels
 
 -  Adding labels on the **Unlabeled** tab page: Click the plus sign (+) next to **Label Set**. On the **Add Label** page that is displayed, add a label name, select a label color, and click **OK**.
 
-   .. _modelarts_23_0014__en-us_topic_0170889734_fig99911654448:
 
    .. figure:: /_static/images/en-us_image_0000001110921046.png
       :alt: **Figure 2** Adding a named entity label (1)
@@ -56,7 +54,6 @@ Adding Labels
 
 -  Adding labels on the **Labeled** tab page: Click the plus sign (+) next to **All Labels**. On the **Add Label** page that is displayed, add a label name, select a label color, and click **OK**.
 
-   .. _modelarts_23_0014__en-us_topic_0170889734_fig542633694419:
 
    .. figure:: /_static/images/en-us_image_0000001110921048.png
       :alt: **Figure 3** Adding a named entity label (2)
@@ -64,7 +61,6 @@ Adding Labels
 
       **Figure 3** Adding a named entity label (2)
 
-   .. _modelarts_23_0014__en-us_topic_0170889734_fig2357151414455:
 
    .. figure:: /_static/images/en-us_image_0000001110921044.png
       :alt: **Figure 4** Adding a named entity label
@@ -108,7 +104,6 @@ In addition to automatically synchronizing data from **Input Dataset Path**, you
 
    Select one or more files to be uploaded in the local environment. Only **.txt** and **.csv** files are supported. The total size of files uploaded at a time cannot exceed 8 MB.
 
-   .. _modelarts_23_0014__en-us_topic_0170889734_fig4494454154518:
 
    .. figure:: /_static/images/en-us_image_0000001157080995.png
       :alt: **Figure 5** Adding files
@@ -129,4 +124,3 @@ You can quickly delete the files you want to discard.
 The background of the selected text is blue.
 
 .. |image1| image:: /_static/images/en-us_image_0000001110761148.png
-

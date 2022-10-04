@@ -16,7 +16,6 @@ In the left navigation pane of the ModelArts management console, choose **Traini
 
 :ref:`Table 1 <modelarts_23_0048__en-us_topic_0171858286_table43451384323>` lists parameters of the training job of each version.
 
-.. _modelarts_23_0048__fig1746810425571:
 
 .. figure:: /_static/images/en-us_image_0000001251977644.png
    :alt: **Figure 1** Training job details

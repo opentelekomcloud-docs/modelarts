@@ -246,4 +246,3 @@ Depending on the defined mapping relationship, the inference request is shown be
    }
 
 .. |image1| image:: /_static/images/en-us_image_0000001110760970.png
-

@@ -43,7 +43,6 @@ Procedure
          | Description                       | Brief description of the real-time service.                                                                                                                                                                    |
          +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-      .. _modelarts_23_0060__en-us_topic_0165025304_fig1173181111421:
 
       .. figure:: /_static/images/en-us_image_0000001233970662.png
          :alt: **Figure 1** Basic information about deploying a model as a real-time service
@@ -103,7 +102,6 @@ Procedure
          | CPU: 8 vCPUs \| 32 GiB GPU: 1 x T4 | Suitable for models requiring CPU and GPU (NVIDIA T4) resources. |
          +------------------------------------+------------------------------------------------------------------+
 
-      .. _modelarts_23_0060__en-us_topic_0165025304_fig13702918114313:
 
       .. figure:: /_static/images/en-us_image_0000001234129978.png
          :alt: **Figure 2** Setting model information

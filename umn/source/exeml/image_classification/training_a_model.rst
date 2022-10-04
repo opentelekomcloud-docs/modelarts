@@ -14,7 +14,6 @@ Procedure
 
 #. On the **Label Data** tab page, click **Train** in the upper right corner. In the displayed **Training Configuration** dialog box, set related parameters. :ref:`Table 1 <modelarts_21_0006__en-us_topic_0284258835_en-us_topic_0169446155_table56110116164>` describes the parameters.
 
-   .. _modelarts_21_0006__en-us_topic_0284258835_en-us_topic_0169446155_fig162101622135815:
 
    .. figure:: /_static/images/en-us_image_0000001157080771.png
       :alt: **Figure 1** Setting training parameters

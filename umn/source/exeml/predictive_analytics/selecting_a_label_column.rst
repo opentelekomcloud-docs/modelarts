@@ -14,7 +14,6 @@ Procedure
 
    The label column is the output of an inference model. The training objective here is to determine whether the customer will apply for a deposit (that is, **attr_7**). Set **Label Column Data Type** to **Discrete value**. After the training objective is specified, click **Train**.
 
-   .. _modelarts_21_0017__en-us_topic_0169446266_fig933116144116:
 
    .. figure:: /_static/images/en-us_image_0000001251249066.png
       :alt: **Figure 1** Data labeling page of a predictive analytics project

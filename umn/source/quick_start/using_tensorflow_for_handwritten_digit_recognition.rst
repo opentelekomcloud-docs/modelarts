@@ -95,7 +95,6 @@ After data is prepared, use TensorFlow to compile the training script code. Mode
       | Compute Nodes                     | Set this parameter to **1**.                                                                                                                                                        |
       +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   .. _modelarts_21_0038__fig67462018144112:
 
    .. figure:: /_static/images/en-us_image_0000001278010757.png
       :alt: **Figure 1** Basic information for creating a training job
@@ -103,7 +102,6 @@ After data is prepared, use TensorFlow to compile the training script code. Mode
 
       **Figure 1** Basic information for creating a training job
 
-   .. _modelarts_21_0038__fig18746141811415:
 
    .. figure:: /_static/images/en-us_image_0000001277931129.png
       :alt: **Figure 2** Parameters for creating a training job
@@ -111,7 +109,6 @@ After data is prepared, use TensorFlow to compile the training script code. Mode
 
       **Figure 2** Parameters for creating a training job
 
-   .. _modelarts_21_0038__fig774192913455:
 
    .. figure:: /_static/images/en-us_image_0000001233650798.png
       :alt: **Figure 3** Resource specifications selected for a training job
@@ -188,7 +185,6 @@ Deploying a Service
 
 #. Click the down arrow next to a model name to unfold all versions of the model. Locate the target version, and choose **Deploy** > **Real-Time Services** in the **Operation** column to deploy the model as a real-time service.
 
-   .. _modelarts_21_0038__fig84961522143919:
 
    .. figure:: /_static/images/en-us_image_0000001278010761.png
       :alt: **Figure 5** Model list
@@ -224,7 +220,6 @@ Performing Prediction
       -  As specified in the inference code and configuration file, the size of the image used for prediction must be 28 x 28 pixels, and the image must contain white handwritten digits on a black background.
       -  You are advised not to use the images provided by the dataset. You can use the drawing tool provided by the Windows operating system to draw an image for prediction.
 
-   .. _modelarts_21_0038__en-us_topic_0168474775_fig2049295319516:
 
    .. figure:: /_static/images/en-us_image_0000001233650802.png
       :alt: **Figure 7** Prediction results

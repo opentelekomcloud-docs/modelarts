@@ -7,7 +7,6 @@ How Do I Upload a File from a Notebook Instance to OBS or Download a File from O
 
 In a notebook instance, you can call the ModelArts MoXing API or SDK to exchange data with OBS for uploading a file to OBS or downloading a file from OBS to the notebook instance.
 
-.. _modelarts_05_0024__en-us_topic_0165695113_fig15668759124612:
 
 .. figure:: /_static/images/en-us_image_0000001290603082.png
    :alt: **Figure 1** Uploading or downloading a file

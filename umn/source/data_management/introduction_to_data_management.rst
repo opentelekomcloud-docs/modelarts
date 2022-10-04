@@ -36,7 +36,6 @@ ModelArts supports datasets of images, audio, text, and other types for the foll
 
    -  Free format: manages data in any format. Labeling is not available for data of the free format type. The free format type is applicable to scenarios where labeling is not required or developers customize labeling. If your dataset needs to contain data in multiple formats or your data format does not meet the requirements of other types of datasets, you can select a dataset in free format.
 
-      .. _modelarts_23_0003__en-us_topic_0171496996_fig594265714140:
 
       .. figure:: /_static/images/en-us_image_0000001156920919.png
          :alt: **Figure 1** Example of a dataset in free format
