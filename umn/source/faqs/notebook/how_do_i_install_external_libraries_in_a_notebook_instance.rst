@@ -43,7 +43,6 @@ For example, use **pip** to install Shapely in the **TensorFlow-1.8** environmen
    .. figure:: /_static/images/en-us_image_0000001281686748.png
       :alt: **Figure 1** Activating the environment
 
-
       **Figure 1** Activating the environment
 
 #. Type the following command in the code input bar to install Shapely:

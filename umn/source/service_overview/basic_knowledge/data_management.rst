@@ -11,7 +11,6 @@ During AI development, massive volumes of data need to be processed, and data pr
 .. figure:: /_static/images/en-us_image_0000001157080947.png
    :alt: **Figure 1** Data labeling process
 
-
    **Figure 1** Data labeling process
 
 Team labeling enables multiple members to label a dataset, improving labeling efficiency. ModelArts allows project-based management for labeling by individual developers, small-scale labeling by small teams, and large-scale labeling by professional teams.

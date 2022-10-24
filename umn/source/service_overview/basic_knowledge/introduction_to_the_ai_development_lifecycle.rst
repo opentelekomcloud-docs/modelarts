@@ -26,7 +26,6 @@ The basic process of AI development includes the following steps: determining an
 .. figure:: /_static/images/en-us_image_0000001110921016.png
    :alt: **Figure 1** AI development process
 
-
    **Figure 1** AI development process
 
 #. **Determine an objective.**

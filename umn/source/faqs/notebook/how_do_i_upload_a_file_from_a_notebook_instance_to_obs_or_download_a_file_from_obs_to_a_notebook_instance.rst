@@ -11,7 +11,6 @@ In a notebook instance, you can call the ModelArts MoXing API or SDK to exchange
 .. figure:: /_static/images/en-us_image_0000001290603082.png
    :alt: **Figure 1** Uploading or downloading a file
 
-
    **Figure 1** Uploading or downloading a file
 
 Method 1: Using MoXing to upload and download a file

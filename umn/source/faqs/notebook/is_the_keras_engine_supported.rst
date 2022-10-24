@@ -24,5 +24,4 @@ How Do I View Keras Versions?
    .. figure:: /_static/images/en-us_image_0000001279905793.png
       :alt: **Figure 1** Viewing Keras versions
 
-
       **Figure 1** Viewing Keras versions

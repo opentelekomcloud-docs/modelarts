@@ -55,7 +55,6 @@ The dataset details page displays the labeled and unlabeled audio files. The **U
    .. figure:: /_static/images/en-us_image_0000001110761046.png
       :alt: **Figure 1** Adding an audio label
 
-
       **Figure 1** Adding an audio label
 
 Viewing the Labeled Audio Files
@@ -82,7 +81,6 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
 
    .. figure:: /_static/images/en-us_image_0000001110761048.png
       :alt: **Figure 2** Information about all labels
-
 
       **Figure 2** Information about all labels
 

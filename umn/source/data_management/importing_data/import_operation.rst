@@ -83,7 +83,6 @@ The parameters on the GUI for data import vary according to the dataset type. Th
    .. figure:: /_static/images/en-us_image_0000001233970650.png
       :alt: **Figure 1** Importing the dataset to an OBS path
 
-
       **Figure 1** Importing the dataset to an OBS path
 
    After the data import is successful, the data is automatically synchronized to the dataset. On the **Datasets** page, you can click the dataset name to view its details and label the data.
@@ -109,7 +108,6 @@ The parameters on the GUI for data import vary according to the dataset type. Th
 
    .. figure:: /_static/images/en-us_image_0000001234129946.png
       :alt: **Figure 2** Importing the dataset
-
 
       **Figure 2** Importing the dataset
 

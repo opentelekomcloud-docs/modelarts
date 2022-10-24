@@ -13,7 +13,6 @@ How Do I Upload Local Files to a Notebook Instance?
    .. figure:: /_static/images/en-us_image_0000001235505840.png
       :alt: **Figure 1** Upload a small file
 
-
       **Figure 1** Upload a small file
 
 -  **Large files (files larger than 100 MB)**

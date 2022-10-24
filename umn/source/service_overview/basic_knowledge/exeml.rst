@@ -13,7 +13,6 @@ ModelArts provides ExeML for service developers who are not experienced in algor
 .. figure:: /_static/images/en-us_image_0000001250410632.png
    :alt: **Figure 1** Process of using ExeML
 
-
    **Figure 1** Process of using ExeML
 
 ModelArts ExeML also provides the auto learning white-box capabilities. It opens model parameters and implements template-based development. ExeML helps accelerate the development speed. With ExeML, developers can directly optimize the generated model or retrain the model, instead of setting up a new model.

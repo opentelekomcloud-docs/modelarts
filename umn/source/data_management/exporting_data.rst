@@ -37,7 +37,6 @@ Exporting Data to a New Dataset
    .. figure:: /_static/images/en-us_image_0000001278010765.png
       :alt: **Figure 1** Selecting or filtering images to be exported
 
-
       **Figure 1** Selecting or filtering images to be exported
 
 #. In the displayed **Export to New Dataset** dialog box, enter the related information and click **OK**.
@@ -53,7 +52,6 @@ Exporting Data to a New Dataset
 
    .. figure:: /_static/images/en-us_image_0000001298006289.png
       :alt: **Figure 2** Exporting to a new dataset
-
 
       **Figure 2** Exporting to a new dataset
 
@@ -80,7 +78,6 @@ Exporting Data to OBS
    .. figure:: /_static/images/en-us_image_0000001251806154.png
       :alt: **Figure 3** Selecting or filtering images to be exported
 
-
       **Figure 3** Selecting or filtering images to be exported
 
 #. In the displayed **Export to OBS** dialog box, enter the related information and click **OK**.
@@ -92,7 +89,6 @@ Exporting Data to OBS
 
    .. figure:: /_static/images/en-us_image_0000001251646390.png
       :alt: **Figure 4** Exporting to OBS
-
 
       **Figure 4** Exporting to OBS
 

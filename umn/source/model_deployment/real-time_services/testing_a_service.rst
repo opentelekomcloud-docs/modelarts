@@ -24,7 +24,6 @@ For the service that you have deployed, you can learn about its input parameters
 .. figure:: /_static/images/en-us_image_0000001234603134.png
    :alt: **Figure 1** Viewing the Usage Guides tab page
 
-
    **Figure 1** Viewing the Usage Guides tab page
 
 The input parameters displayed on the **Usage Guides** tab page depend on the model source that you select.
@@ -34,7 +33,6 @@ The input parameters displayed on the **Usage Guides** tab page depend on the mo
 
    .. figure:: /_static/images/en-us_image_0000001157080793.png
       :alt: **Figure 2** Mapping between the configuration file and Usage Guides
-
 
       **Figure 2** Mapping between the configuration file and Usage Guides
 
@@ -53,7 +51,6 @@ JSON Text Prediction
    .. figure:: /_static/images/en-us_image_0000001157080799.png
       :alt: **Figure 3** Prediction code
 
-
       **Figure 3** Prediction code
 
 .. _modelarts_23_0062__en-us_topic_0165025306_section1666533761611:
@@ -68,6 +65,5 @@ File Prediction (Images and Audios)
 
    .. figure:: /_static/images/en-us_image_0000001165916474.png
       :alt: **Figure 4** Image prediction
-
 
       **Figure 4** Image prediction

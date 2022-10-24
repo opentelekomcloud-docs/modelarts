@@ -179,7 +179,6 @@ Customized settings can be used in the following scenarios:
       .. figure:: /_static/images/en-us_image_0000001157080859.png
          :alt: **Figure 1** Traffic distribution by user
 
-
          **Figure 1** Traffic distribution by user
 
 -  If multiple versions of a real-time service are deployed for dark launch, customized settings can be used to access different versions through the header.
@@ -211,7 +210,6 @@ Customized settings can be used in the following scenarios:
       .. figure:: /_static/images/en-us_image_0000001110920910.png
          :alt: **Figure 2** Using the header to access different versions
 
-
          **Figure 2** Using the header to access different versions
 
 -  If a real-time service version supports different running configurations, you can use **Setting Name** and **Setting Value** to specify customized running parameters so that different users can use different running configurations.
@@ -223,7 +221,6 @@ Customized settings can be used in the following scenarios:
 
    .. figure:: /_static/images/en-us_image_0000001110761010.png
       :alt: **Figure 3** Customized running parameters added for a customized configuration rule
-
 
       **Figure 3** Customized running parameters added for a customized configuration rule
 

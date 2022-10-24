@@ -31,5 +31,4 @@ Incremental Training Procedure
    .. figure:: /_static/images/en-us_image_0000001110761050.png
       :alt: **Figure 1** Selecting an incremental training version
 
-
       **Figure 1** Selecting an incremental training version

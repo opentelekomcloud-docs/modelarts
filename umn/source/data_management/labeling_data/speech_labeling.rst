@@ -40,7 +40,6 @@ The dataset details page displays the labeled and unlabeled audio files. The **U
    .. figure:: /_static/images/en-us_image_0000001157080861.png
       :alt: **Figure 1** Labeling an audio file
 
-
       **Figure 1** Labeling an audio file
 
 Viewing the Labeled Audio Files

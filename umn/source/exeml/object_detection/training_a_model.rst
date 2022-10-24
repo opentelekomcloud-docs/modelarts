@@ -18,7 +18,6 @@ Procedure
    .. figure:: /_static/images/en-us_image_0000001157080807.png
       :alt: **Figure 1** Setting training parameters
 
-
       **Figure 1** Setting training parameters
 
    .. _modelarts_21_0012__en-us_topic_0284258841_en-us_topic_0169446261_table56110116164:

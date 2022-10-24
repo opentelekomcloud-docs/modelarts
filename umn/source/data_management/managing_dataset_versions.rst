@@ -22,7 +22,6 @@ Viewing Dataset Version Updates
    .. figure:: /_static/images/en-us_image_0000001278250381.png
       :alt: **Figure 1** Viewing dataset versions
 
-
       **Figure 1** Viewing dataset versions
 
 Setting to Current Version

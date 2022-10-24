@@ -13,5 +13,4 @@ On the Jupyter page, click **Convert to Python File** to convert the training co
 .. figure:: /_static/images/en-us_image_0000001279825389.png
    :alt: **Figure 1** Converting the **.ipynb** file into a Python file
 
-
    **Figure 1** Converting the **.ipynb** file into a Python file

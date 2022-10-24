@@ -178,7 +178,7 @@ The following is an example of TensorFlow MnistService.
 
       {"mnist_result": 7}
 
-The preceding code example resizes images imported to the user's form to adapt to the model input shape. The **32×32** image is read from the Pillow library and resized to **1×784** to match the model input. In subsequent processing, convert the model output into a list for the RESTful API to display.
+The preceding code example resizes images imported to the user's form to adapt to the model input shape. The **32x32** image is read from the Pillow library and resized to **1x784** to match the model input. In subsequent processing, convert the model output into a list for the RESTful API to display.
 
 XGBoost Inference Script Example
 --------------------------------

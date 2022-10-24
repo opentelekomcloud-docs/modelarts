@@ -22,7 +22,6 @@ The following uses the template described in as an example. Upload the TensorFlo
    .. figure:: /_static/images/en-us_image_0000001278010777.png
       :alt: **Figure 1** Selecting a template
 
-
       **Figure 1** Selecting a template
 
 #. For **Model Folder**, select the **model** directory where the model files reside. For details, see :ref:`Template Description <modelarts_23_0118>`.

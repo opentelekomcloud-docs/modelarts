@@ -38,7 +38,6 @@ The dataset details page displays the labeled and unlabeled audio files. The **U
    .. figure:: /_static/images/en-us_image_0000001157080967.png
       :alt: **Figure 1** Labeling an audio file
 
-
       **Figure 1** Labeling an audio file
 
 #. After entering the content, click **OK** to complete the labeling. The audio file is automatically moved to the **Labeled** tab page.

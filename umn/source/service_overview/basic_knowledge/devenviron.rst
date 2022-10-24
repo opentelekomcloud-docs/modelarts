@@ -11,7 +11,6 @@ It is challenging to set up a development environment, select an AI algorithm fr
 .. figure:: /_static/images/en-us_image_0000001110920904.png
    :alt: **Figure 1** Algorithm development
 
-
    **Figure 1** Algorithm development
 
 -  **Mainstream AI algorithm frameworks supported**

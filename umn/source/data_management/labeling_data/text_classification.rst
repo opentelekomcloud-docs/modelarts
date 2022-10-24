@@ -38,7 +38,6 @@ The dataset details page displays the labeled and unlabeled text files in the da
    .. figure:: /_static/images/en-us_image_0000001157080753.png
       :alt: **Figure 1** Labeling for text classification
 
-
       **Figure 1** Labeling for text classification
 
 #. After all objects are labeled, click **Save Current Page** at the bottom of the page to complete labeling text files on the **Unlabeled** tab page.
@@ -52,7 +51,6 @@ Adding Labels
    .. figure:: /_static/images/en-us_image_0000001156920783.png
       :alt: **Figure 2** Adding a label (1)
 
-
       **Figure 2** Adding a label (1)
 
 -  Adding labels on the **Labeled** tab page: Click the plus sign (+) next to **All Labels**. On the **Add Label** page that is displayed, add a label name, select a label color, and click **OK**.
@@ -61,13 +59,11 @@ Adding Labels
    .. figure:: /_static/images/en-us_image_0000001110920808.png
       :alt: **Figure 3** Adding a label (2)
 
-
       **Figure 3** Adding a label (2)
 
 
    .. figure:: /_static/images/en-us_image_0000001110760914.png
       :alt: **Figure 4** Adding a label
-
 
       **Figure 4** Adding a label
 

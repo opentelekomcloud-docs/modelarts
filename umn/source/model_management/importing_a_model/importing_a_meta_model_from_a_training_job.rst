@@ -45,7 +45,6 @@ Procedure
       .. figure:: /_static/images/en-us_image_0000001110920988.png
          :alt: **Figure 1** Setting Meta Model Source to Training job
 
-
          **Figure 1** Setting Meta Model Source to Training job
 
       .. _modelarts_23_0054__en-us_topic_0207629475_table104931647171713:
@@ -74,7 +73,6 @@ Procedure
 
       .. figure:: /_static/images/en-us_image_0000001156920957.png
          :alt: **Figure 2** Setting the inference specifications and model description
-
 
          **Figure 2** Setting the inference specifications and model description
 

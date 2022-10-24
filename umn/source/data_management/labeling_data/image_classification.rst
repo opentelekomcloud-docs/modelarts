@@ -69,7 +69,6 @@ The dataset details page displays images on the **All**, **Labeled**, and **Unla
    .. figure:: /_static/images/en-us_image_0000001110761138.png
       :alt: **Figure 1** Adding labels
 
-
       **Figure 1** Adding labels
 
 Viewing Labeled Images
@@ -94,7 +93,6 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
    .. figure:: /_static/images/en-us_image_0000001110921036.png
       :alt: **Figure 2** Modifying a label
 
-
       **Figure 2** Modifying a label
 
 -  **Modifying based on labels**
@@ -107,7 +105,6 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
 
    .. figure:: /_static/images/en-us_image_0000001156921013.png
       :alt: **Figure 3** Information about all labels
-
 
       **Figure 3** Information about all labels
 
@@ -127,7 +124,6 @@ In addition to automatically synchronizing data from **Input Dataset Path**, you
 
    .. figure:: /_static/images/en-us_image_0000001156920963.png
       :alt: **Figure 4** Adding images
-
 
       **Figure 4** Adding images
 

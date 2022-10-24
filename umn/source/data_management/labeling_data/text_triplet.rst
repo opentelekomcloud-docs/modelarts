@@ -23,13 +23,11 @@ For example, if two entities are labeled as **Place**, you cannot add any relati
 .. figure:: /_static/images/en-us_image_0000001157080821.png
    :alt: **Figure 1** Example of entity and relationship labels
 
-
    **Figure 1** Example of entity and relationship labels
 
 
 .. figure:: /_static/images/en-us_image_0000001157080819.png
    :alt: **Figure 2** Failure of adding a relationship label
-
 
    **Figure 2** Failure of adding a relationship label
 
@@ -57,7 +55,6 @@ The dataset details page displays the labeled and unlabeled text objects in the 
    .. figure:: /_static/images/en-us_image_0000001156920847.png
       :alt: **Figure 3** Labeling an entity
 
-
       **Figure 3** Labeling an entity
 
 #. After labeling multiple entities, click the source entity and target entity in sequence and select a relationship type from the displayed relationship list to label the relationship.
@@ -65,7 +62,6 @@ The dataset details page displays the labeled and unlabeled text objects in the 
 
    .. figure:: /_static/images/en-us_image_0000001157080823.png
       :alt: **Figure 4** Labeling a relationship
-
 
       **Figure 4** Labeling a relationship
 
@@ -86,7 +82,6 @@ On the dataset details page, click the **Labeled** tab. Select a text object in 
 .. figure:: /_static/images/en-us_image_0000001110760966.png
    :alt: **Figure 5** Modifying a label in the text
 
-
    **Figure 5** Modifying a label in the text
 
 You can click **Delete Labels on Current Item** at the bottom of the page to delete all labels in the selected text object.
@@ -94,7 +89,6 @@ You can click **Delete Labels on Current Item** at the bottom of the page to del
 
 .. figure:: /_static/images/en-us_image_0000001110920872.png
    :alt: **Figure 6** Deleting current labels
-
 
    **Figure 6** Deleting current labels
 
@@ -112,7 +106,6 @@ In addition to automatically synchronizing data from **Input Dataset Path**, you
 
    .. figure:: /_static/images/en-us_image_0000001156920843.png
       :alt: **Figure 7** Adding a file
-
 
       **Figure 7** Adding a file
 

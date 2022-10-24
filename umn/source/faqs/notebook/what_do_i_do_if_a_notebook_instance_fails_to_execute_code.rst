@@ -14,7 +14,6 @@ If a notebook instance fails to execute code, you can locate and rectify the fau
    .. figure:: /_static/images/en-us_image_0000001279666173.png
       :alt: **Figure 1** Stopping all cells
 
-
       **Figure 1** Stopping all cells
 
 #. If the notebook page does not respond, close the notebook page and the ModelArts management console. Then, open the ModelArts management console and access the notebook instance again. The notebook instance retains all the variable spaces that exist when the notebook instance is unavailable.
@@ -22,7 +21,6 @@ If a notebook instance fails to execute code, you can locate and rectify the fau
 
    .. figure:: /_static/images/en-us_image_0000001235825716.png
       :alt: **Figure 2** Accessing the notebook instance again
-
 
       **Figure 2** Accessing the notebook instance again
 

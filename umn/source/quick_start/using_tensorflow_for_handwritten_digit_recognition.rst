@@ -99,20 +99,17 @@ After data is prepared, use TensorFlow to compile the training script code. Mode
    .. figure:: /_static/images/en-us_image_0000001278010757.png
       :alt: **Figure 1** Basic information for creating a training job
 
-
       **Figure 1** Basic information for creating a training job
 
 
    .. figure:: /_static/images/en-us_image_0000001277931129.png
       :alt: **Figure 2** Parameters for creating a training job
 
-
       **Figure 2** Parameters for creating a training job
 
 
    .. figure:: /_static/images/en-us_image_0000001233650798.png
       :alt: **Figure 3** Resource specifications selected for a training job
-
 
       **Figure 3** Resource specifications selected for a training job
 
@@ -173,7 +170,6 @@ After model training is complete, you can import the model to ModelArts and depl
    .. figure:: /_static/images/en-us_image_0000001233970646.png
       :alt: **Figure 4** Importing a model
 
-
       **Figure 4** Importing a model
 
 .. _modelarts_21_0038__section18653124916459:
@@ -189,7 +185,6 @@ Deploying a Service
    .. figure:: /_static/images/en-us_image_0000001278010761.png
       :alt: **Figure 5** Model list
 
-
       **Figure 5** Model list
 
 #. On the **Deploy** page that is displayed, set the parameters shown in :ref:`Figure 6 <modelarts_21_0038__fig3534111012408>`, click **Create Now**, and create the real-time service as prompted.
@@ -198,7 +193,6 @@ Deploying a Service
 
    .. figure:: /_static/images/en-us_image_0000001277931133.png
       :alt: **Figure 6** Deploying a model
-
 
       **Figure 6** Deploying a model
 
@@ -223,7 +217,6 @@ Performing Prediction
 
    .. figure:: /_static/images/en-us_image_0000001233650802.png
       :alt: **Figure 7** Prediction results
-
 
       **Figure 7** Prediction results
 

@@ -13,7 +13,6 @@ ModelArts resolves this issue by deploying a trained model on different devices 
 .. figure:: /_static/images/en-us_image_0000001110920824.png
    :alt: **Figure 1** Process of deploying a model
 
-
    **Figure 1** Process of deploying a model
 
 -  The real-time inference service features high concurrency, low latency, and elastic scaling.

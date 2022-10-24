@@ -45,7 +45,6 @@ Procedure
       .. figure:: /_static/images/en-us_image_0000001110761156.png
          :alt: **Figure 1** Setting Meta Model Source to Container image
 
-
          **Figure 1** Setting Meta Model Source to Container image
 
       .. _modelarts_23_0206__en-us_topic_0207629477_table104931647171713:
@@ -78,7 +77,6 @@ Procedure
 
       .. figure:: /_static/images/en-us_image_0000001157081005.png
          :alt: **Figure 2** Setting the inference specifications and model description
-
 
          **Figure 2** Setting the inference specifications and model description
 

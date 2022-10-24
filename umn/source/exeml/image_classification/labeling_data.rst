@@ -21,7 +21,6 @@ Labeling Images
    .. figure:: /_static/images/en-us_image_0000001110760930.png
       :alt: **Figure 1** Adding a label
 
-
       **Figure 1** Adding a label
 
 #. After all the images are labeled, view them on the **Labeled** tab page or view **All Labels** in the right pane to check the name and quantity of the labels.
@@ -56,7 +55,6 @@ After labeling data, you can modify the labeled data on the **Labeled** tab page
       .. figure:: /_static/images/en-us_image_0000001157080781.png
          :alt: **Figure 2** Modifying a label
 
-
          **Figure 2** Modifying a label
 
    -  Deleting a label: In the **Labels of Selected Image** area, click |image1| in the **Operation** column to delete the label.
@@ -68,7 +66,6 @@ After labeling data, you can modify the labeled data on the **Labeled** tab page
 
    .. figure:: /_static/images/en-us_image_0000001157080783.png
       :alt: **Figure 3** Information about all labels
-
 
       **Figure 3** Information about all labels
 

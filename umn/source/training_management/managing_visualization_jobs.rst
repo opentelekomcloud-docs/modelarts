@@ -20,7 +20,7 @@ To ensure that the **summary** file is generated in the training result, you nee
 
 -  Using the TensorFlow engine:
 
-   When using the TensorFlow-based MoXing, in **mox.run**, set **save_summary_steps>0** and **summary_verbosity≥1**.
+   When using the TensorFlow-based MoXing, in **mox.run**, set **save_summary_steps>0** and **summary_verbosity>=1**.
 
    If you want to display other metrics, add tensors to **log_info** in the return value **mox.ModelSpec** of **model_fn**. Only the rank-0 tensors (scalars) are supported. The added tensors are written into the **summary** file. If you want to write tensors of higher ranks in the **summary** file, use the native **tf.summary** of TensorFlow in **model_fn**.
 
@@ -44,7 +44,6 @@ Creating a Visualization Job
    .. figure:: /_static/images/en-us_image_0000001110920888.png
       :alt: **Figure 1** Creating a visualization job
 
-
       **Figure 1** Creating a visualization job
 
 #. Click **Next**.
@@ -61,7 +60,6 @@ In the visualization job list, click the name of the target visualization job. T
 
 .. figure:: /_static/images/en-us_image_0000001110760988.jpg
    :alt: **Figure 2** TensorBoard page
-
 
    **Figure 2** TensorBoard page
 

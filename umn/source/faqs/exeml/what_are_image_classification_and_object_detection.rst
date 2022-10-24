@@ -12,7 +12,6 @@ Image classification is an image processing method that separates different clas
 .. figure:: /_static/images/en-us_image_0000001156920931.png
    :alt: **Figure 1** Image classification
 
-
    **Figure 1** Image classification
 
 Object detection is one of the classical problems in computer vision. It intends to label objects with frames and identify the object classes in an image. Generally, if an image contains multiple objects, object detection can identify the location, quantity, and name of each object in the image. It is suitable for scenarios where an image contains multiple objects. :ref:`Figure 2 <modelarts_05_0018__en-us_topic_0000001096467407_en-us_topic_0285164820_en-us_topic_0147657895_fig522176141613>` shows an example of identifying a tree and a car in an image.
@@ -21,6 +20,5 @@ Object detection is one of the classical problems in computer vision. It intends
 
 .. figure:: /_static/images/en-us_image_0000001110920962.png
    :alt: **Figure 2** Object detection
-
 
    **Figure 2** Object detection

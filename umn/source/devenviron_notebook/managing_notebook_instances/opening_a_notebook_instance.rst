@@ -22,7 +22,6 @@ Instance Opening
 .. figure:: /_static/images/en-us_image_0000001233650818.png
    :alt: **Figure 1** Opening a notebook instance
 
-
    **Figure 1** Opening a notebook instance
 
 Code Development
