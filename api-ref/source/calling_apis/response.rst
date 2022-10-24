@@ -64,7 +64,6 @@ Similar to a request, a response also has a header, for example, **Content-type*
 .. figure:: /_static/images/en-us_image_0000001254535751.png
    :alt: **Figure 1** Header fields of the response to the request for obtaining a user token
 
-
    **Figure 1** Header fields of the response to the request for obtaining a user token
 
 Response Body
