@@ -14,7 +14,6 @@ Granting Permissions to Users
 .. figure:: /_static/images/en-us_image_0000001156920871.png
    :alt: **Figure 1** Authorization model
 
-
    **Figure 1** Authorization model
 
 #. Plan user groups and grant required permissions to each user group.
@@ -35,6 +34,5 @@ You can use IAM to create an IdP and create rules for the IdP to convert federat
 
 .. figure:: /_static/images/en-us_image_0000001157080847.png
    :alt: **Figure 2** Principles of identity conversion for federated users
-
 
    **Figure 2** Principles of identity conversion for federated users

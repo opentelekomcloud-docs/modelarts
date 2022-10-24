@@ -26,7 +26,6 @@ Procedure
       .. figure:: /_static/images/en-us_image_0000001157080905.png
          :alt: **Figure 1** Basic information about a dataset
 
-
          **Figure 1** Basic information about a dataset
 
    b. Select a labeling scene and type as required. For details about the types supported by ModelArts, see :ref:`Dataset Types <modelarts_23_0003__en-us_topic_0171496996_section51771731153811>`.
@@ -34,7 +33,6 @@ Procedure
 
       .. figure:: /_static/images/en-us_image_0000001340184197.png
          :alt: **Figure 2** Selecting a labeling scene and type
-
 
          **Figure 2** Selecting a labeling scene and type
 
@@ -57,7 +55,6 @@ Images (Image Classification, Object Detection, )
 
 .. figure:: /_static/images/en-us_image_0000001340265309.png
    :alt: **Figure 3** Parameters of datasets for image classification and object detection
-
 
    **Figure 3** Parameters of datasets for image classification and object detection
 
@@ -99,7 +96,6 @@ Audio (Sound Classification, Speech Labeling, and Speech Paragraph Labeling)
 
 .. figure:: /_static/images/en-us_image_0000001157080903.png
    :alt: **Figure 4** Parameters of datasets for sound classification, speech labeling, and speech paragraph labeling
-
 
    **Figure 4** Parameters of datasets for sound classification, speech labeling, and speech paragraph labeling
 
@@ -147,7 +143,6 @@ Text (Text Classification, Named Entity Recognition, and Text Triplet)
 
 .. figure:: /_static/images/en-us_image_0000001110920960.png
    :alt: **Figure 5** Parameters of datasets for text classification, named entity recognition, and text triplet
-
 
    **Figure 5** Parameters of datasets for text classification, named entity recognition, and text triplet
 
@@ -198,7 +193,6 @@ Other (Free Format)
 
 .. figure:: /_static/images/en-us_image_0000001156920933.png
    :alt: **Figure 6** Parameters of datasets of the free format type
-
 
    **Figure 6** Parameters of datasets of the free format type
 

@@ -16,7 +16,6 @@ Training job parameters can be automatically generated in the background or manu
    .. figure:: /_static/images/en-us_image_0000001279825393.png
       :alt: **Figure 1** Viewing logs
 
-
       **Figure 1** Viewing logs
 
 #. To obtain the values of **train_url**, **data_url**, and **test** during training, add the following code to the boot file of the training job:

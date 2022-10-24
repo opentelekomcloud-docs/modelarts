@@ -30,13 +30,11 @@ Adding a Member
    .. figure:: /_static/images/en-us_image_0000001156920939.png
       :alt: **Figure 1** Adding a member
 
-
       **Figure 1** Adding a member
 
 
    .. figure:: /_static/images/en-us_image_0000001157081267.png
       :alt: **Figure 2** Adding a member
-
 
       **Figure 2** Adding a member
 
@@ -69,6 +67,5 @@ Deleting Members
 
    .. figure:: /_static/images/en-us_image_0000001157080915.png
       :alt: **Figure 3** Batch deletion
-
 
       **Figure 3** Batch deletion

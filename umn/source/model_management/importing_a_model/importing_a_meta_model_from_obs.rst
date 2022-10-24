@@ -104,7 +104,6 @@ Procedure
       .. figure:: /_static/images/en-us_image_0000001110761104.png
          :alt: **Figure 1** Setting Meta Model Source to OBS
 
-
          **Figure 1** Setting Meta Model Source to OBS
 
       .. _modelarts_23_0207__en-us_topic_0207629478_table1631162916535:
@@ -135,7 +134,6 @@ Procedure
 
       .. figure:: /_static/images/en-us_image_0000001157080951.png
          :alt: **Figure 2** Setting the inference specifications and model description
-
 
          **Figure 2** Setting the inference specifications and model description
 

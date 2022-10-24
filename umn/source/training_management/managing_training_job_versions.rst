@@ -50,5 +50,4 @@ On the **Version Manager** page, ModelArts provides certain shortcut operation b
 .. figure:: /_static/images/en-us_image_0000001156920837.png
    :alt: **Figure 1** Shortcut operation buttons
 
-
    **Figure 1** Shortcut operation buttons

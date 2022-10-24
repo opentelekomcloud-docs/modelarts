@@ -26,7 +26,6 @@ The AI development lifecycle on ModelArts takes developers' habits into consider
 .. figure:: /_static/images/en-us_image_0000001297902093.png
    :alt: **Figure 1** Process of using ModelArts
 
-
    **Figure 1** Process of using ModelArts
 
 .. table:: **Table 1** Process description

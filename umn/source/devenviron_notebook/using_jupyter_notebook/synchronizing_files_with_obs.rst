@@ -27,5 +27,4 @@ For example, if the **Example1.ipynb** file needs to call **module** in the **Ex
 .. figure:: /_static/images/en-us_image_0000001251814444.png
    :alt: **Figure 1** Using the Sync OBS function
 
-
    **Figure 1** Using the Sync OBS function

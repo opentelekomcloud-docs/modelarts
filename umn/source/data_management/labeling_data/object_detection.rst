@@ -87,7 +87,6 @@ The dataset details page provides the **Labeled** and **Unlabeled** tabs. The **
    .. figure:: /_static/images/en-us_image_0000001211469369.png
       :alt: **Figure 1** Adding an object detection label
 
-
       **Figure 1** Adding an object detection label
 
 #. Click **Back to Data Labeling Preview** in the upper left part of the page to view the labeling information. In the dialog box that is displayed, click **OK** to save the labeling settings.
@@ -144,7 +143,6 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
       .. figure:: /_static/images/en-us_image_0000001211469623.png
          :alt: **Figure 2** Editing an object detection label
 
-
          **Figure 2** Editing an object detection label
 
 -  **Modifying based on labels**
@@ -157,7 +155,6 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
 
    .. figure:: /_static/images/en-us_image_0000001166069824.png
       :alt: **Figure 3** All labels for object detection
-
 
       **Figure 3** All labels for object detection
 
@@ -177,7 +174,6 @@ In addition to the data automatically synchronized from **Input Dataset Path**, 
 
    .. figure:: /_static/images/en-us_image_0000001156920963.png
       :alt: **Figure 4** Adding images
-
 
       **Figure 4** Adding images
 

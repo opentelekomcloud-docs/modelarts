@@ -36,7 +36,6 @@ Creating a Training Job
       .. figure:: /_static/images/en-us_image_0000001157080797.png
          :alt: **Figure 1** Setting basic information about the training job
 
-
          **Figure 1** Setting basic information about the training job
 
    b. Set job parameters, including the data source, algorithm source, and more. For details, see :ref:`Table 1 <modelarts_23_0237__en-us_topic_0216621182_table1819364517144>`.
@@ -44,7 +43,6 @@ Creating a Training Job
 
       .. figure:: /_static/images/en-us_image_0000001110760950.png
          :alt: **Figure 2** **Built-in** as the algorithm source
-
 
          **Figure 2** **Built-in** as the algorithm source
 
@@ -87,7 +85,6 @@ Creating a Training Job
       .. figure:: /_static/images/en-us_image_0000001157080787.png
          :alt: **Figure 3** Selecting resources for the training job
 
-
          **Figure 3** Selecting resources for the training job
 
       .. table:: **Table 2** Resource parameters
@@ -113,7 +110,6 @@ Creating a Training Job
 
       .. figure:: /_static/images/en-us_image_0000001110760942.png
          :alt: **Figure 4** Setting training job parameters
-
 
          **Figure 4** Setting training job parameters
 

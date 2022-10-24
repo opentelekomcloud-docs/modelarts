@@ -20,7 +20,6 @@ Procedure
    .. figure:: /_static/images/en-us_image_0000001297768589.png
       :alt: **Figure 1** Training configuration
 
-
       **Figure 1** Training configuration
 
 #. On the **Train Model** tab page, wait until the training status changes from **Running** to **Completed**.

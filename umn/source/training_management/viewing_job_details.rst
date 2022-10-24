@@ -20,7 +20,6 @@ In the left navigation pane of the ModelArts management console, choose **Traini
 .. figure:: /_static/images/en-us_image_0000001251977644.png
    :alt: **Figure 1** Training job details
 
-
    **Figure 1** Training job details
 
 .. _modelarts_23_0048__en-us_topic_0171858286_table43451384323:

@@ -26,7 +26,6 @@ You can deploy a model as a real-time service that provides a real-time test UI 
    .. figure:: /_static/images/en-us_image_0000001297768593.png
       :alt: **Figure 1** Deploying a service
 
-
       **Figure 1** Deploying a service
 
 #. After the model is deployed, view the model deployment status on the **Service Deployment** page.

@@ -15,5 +15,4 @@ How Do I Enable the Terminal Function in DevEnviron of ModelArts?
    .. figure:: /_static/images/en-us_image_0000001110760910.png
       :alt: **Figure 1** Going to the **Terminal** page
 
-
       **Figure 1** Going to the **Terminal** page

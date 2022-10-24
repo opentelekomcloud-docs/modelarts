@@ -47,7 +47,6 @@ Procedure
       .. figure:: /_static/images/en-us_image_0000001233970662.png
          :alt: **Figure 1** Basic information about deploying a model as a real-time service
 
-
          **Figure 1** Basic information about deploying a model as a real-time service
 
    b. Enter key information including the resource pool and model configurations. For details, see :ref:`Table 2 <modelarts_23_0060__en-us_topic_0165025304_table10352134481117>`.
@@ -105,7 +104,6 @@ Procedure
 
       .. figure:: /_static/images/en-us_image_0000001234129978.png
          :alt: **Figure 2** Setting model information
-
 
          **Figure 2** Setting model information
 

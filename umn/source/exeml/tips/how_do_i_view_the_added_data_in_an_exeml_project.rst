@@ -22,7 +22,6 @@ Obtaining the Data Source of an ExeML Project
    .. figure:: /_static/images/en-us_image_0000001156920911.png
       :alt: **Figure 1** Viewing the data storage path
 
-
       **Figure 1** Viewing the data storage path
 
 Uploading New Data to OBS

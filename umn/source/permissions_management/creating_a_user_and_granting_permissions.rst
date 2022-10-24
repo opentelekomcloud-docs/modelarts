@@ -80,7 +80,6 @@ IAM authenticates users according to the permissions that the users have been gr
 .. figure:: /_static/images/en-us_image_0000001110920802.png
    :alt: **Figure 1** Authentication logic
 
-
    **Figure 1** Authentication logic
 
 .. note::

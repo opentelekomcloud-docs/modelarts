@@ -15,7 +15,6 @@ When creating a project, select a training data path. This section describes how
    .. figure:: /_static/images/en-us_image_0000001297638913.png
       :alt: **Figure 1** Creating an OBS bucket
 
-
       **Figure 1** Creating an OBS bucket
 
 #. Select the bucket, and click **Create Folder**. In the dialog box that is displayed, enter the folder name and click **OK**.

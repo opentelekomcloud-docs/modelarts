@@ -25,7 +25,6 @@ With ModelArts ExeML, you can develop AI models without coding. You only need to
 .. figure:: /_static/images/en-us_image_0000001110921482.png
    :alt: **Figure 1** Usage process of ExeML
 
-
    **Figure 1** Usage process of ExeML
 
 ExeML Projects

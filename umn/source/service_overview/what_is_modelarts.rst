@@ -22,7 +22,6 @@ ModelArts supports various AI application scenarios, such as image classificatio
 .. figure:: /_static/images/en-us_image_0000001110920880.png
    :alt: **Figure 1** ModelArts architecture
 
-
    **Figure 1** ModelArts architecture
 
 Product Advantages

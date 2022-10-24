@@ -43,7 +43,6 @@ After the file is created, the console page is displayed.
 .. figure:: /_static/images/en-us_image_0000001110761020.png
    :alt: **Figure 1** Creating a notebook file (console)
 
-
    **Figure 1** Creating a notebook file (console)
 
 .. _modelarts_23_0209__en-us_topic_0208766071_section172463910383:
@@ -59,7 +58,6 @@ The size of the file to be uploaded using this method is limited. If the file si
 .. figure:: /_static/images/en-us_image_0000001110920918.png
    :alt: **Figure 2** Uploading a file
 
-
    **Figure 2** Uploading a file
 
 Editing a File
@@ -73,7 +71,6 @@ Using JupyterLab, you can customize the display of multiple files. In the file d
 .. figure:: /_static/images/en-us_image_0000001157080869.png
    :alt: **Figure 3** Customized display of multiple files
 
-
    **Figure 3** Customized display of multiple files
 
 When writing code in a notebook instance, you can create multiple views of a file to synchronously edit the file and view the execution result in real time.
@@ -83,7 +80,6 @@ To open multiple views, open the file and choose **File** > **New View for Noteb
 
 .. figure:: /_static/images/en-us_image_0000001110920916.png
    :alt: **Figure 4** Multiple views of a file
-
 
    **Figure 4** Multiple views of a file
 
@@ -98,7 +94,6 @@ In the JupyterLab file list, right-click the file to be downloaded and choose **
 .. figure:: /_static/images/en-us_image_0000001157080879.png
    :alt: **Figure 5** Downloading a file
 
-
    **Figure 5** Downloading a file
 
 Common Icons and Plug-ins of JupyterLab
@@ -107,7 +102,6 @@ Common Icons and Plug-ins of JupyterLab
 
 .. figure:: /_static/images/en-us_image_0000001110761018.png
    :alt: **Figure 6** Common icons and plug-ins of JupyterLab
-
 
    **Figure 6** Common icons and plug-ins of JupyterLab
 

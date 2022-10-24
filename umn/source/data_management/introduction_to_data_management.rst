@@ -40,7 +40,6 @@ ModelArts supports datasets of images, audio, text, and other types for the foll
       .. figure:: /_static/images/en-us_image_0000001156920919.png
          :alt: **Figure 1** Example of a dataset in free format
 
-
          **Figure 1** Example of a dataset in free format
 
 Dataset Management Process and Functions

@@ -28,7 +28,6 @@ Adding a Team
    .. figure:: /_static/images/en-us_image_0000001157080843.png
       :alt: **Figure 1** Adding a team
 
-
       **Figure 1** Adding a team
 
    The new team is displayed on the **Labeling Teams** page. You can view team details in the right pane. There is no member in the new team. Add members to the new team by referring to :ref:`Adding a Member <modelarts_23_0183__en-us_topic_0186456618_section060323818470>`.
@@ -43,6 +42,5 @@ On the **Labeling Teams** page, select the target team and click **Delete**. In 
 
 .. figure:: /_static/images/en-us_image_0000001157080841.png
    :alt: **Figure 2** Deleting a team
-
 
    **Figure 2** Deleting a team

@@ -11,7 +11,6 @@ AI engineers face challenges in the installation and configuration of various AI
 .. figure:: /_static/images/en-us_image_0000001156920851.png
    :alt: **Figure 1** Function overview
 
-
    **Figure 1** Function overview
 
 ModelArts has the following features:

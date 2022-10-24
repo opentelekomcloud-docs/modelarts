@@ -14,7 +14,6 @@ Pay attention to the following when setting training parameters:
    .. figure:: /_static/images/en-us_image_0000001235985012.png
       :alt: **Figure 1** Setting running parameters
 
-
       **Figure 1** Setting running parameters
 
 -  If a parameter value is an OBS bucket path, use the path to the data. See :ref:`Figure 2 <modelarts_21_0077__en-us_topic_0198838770_fig392681318596>`.
@@ -23,7 +22,6 @@ Pay attention to the following when setting training parameters:
 
    .. figure:: /_static/images/en-us_image_0000001235665800.png
       :alt: **Figure 2** Configuring an OBS path
-
 
       **Figure 2** Configuring an OBS path
 

@@ -18,7 +18,6 @@ Procedure
    .. figure:: /_static/images/en-us_image_0000001251249066.png
       :alt: **Figure 1** Data labeling page of a predictive analytics project
 
-
       **Figure 1** Data labeling page of a predictive analytics project
 
 #. Select the data type of the label column. On the **Label Data** tab page, select a data type for **Label Column Data Type**.

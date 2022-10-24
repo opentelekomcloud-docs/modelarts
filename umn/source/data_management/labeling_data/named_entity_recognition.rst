@@ -35,7 +35,6 @@ The dataset details page displays the labeled and unlabeled text files in the da
    .. figure:: /_static/images/en-us_image_0000001157080991.png
       :alt: **Figure 1** Labeling for named entity recognition
 
-
       **Figure 1** Labeling for named entity recognition
 
 #. Click **Save Current Page** in the lower part of the page to complete the labeling.
@@ -49,7 +48,6 @@ Adding Labels
    .. figure:: /_static/images/en-us_image_0000001110921046.png
       :alt: **Figure 2** Adding a named entity label (1)
 
-
       **Figure 2** Adding a named entity label (1)
 
 -  Adding labels on the **Labeled** tab page: Click the plus sign (+) next to **All Labels**. On the **Add Label** page that is displayed, add a label name, select a label color, and click **OK**.
@@ -58,13 +56,11 @@ Adding Labels
    .. figure:: /_static/images/en-us_image_0000001110921048.png
       :alt: **Figure 3** Adding a named entity label (2)
 
-
       **Figure 3** Adding a named entity label (2)
 
 
    .. figure:: /_static/images/en-us_image_0000001110921044.png
       :alt: **Figure 4** Adding a named entity label
-
 
       **Figure 4** Adding a named entity label
 
@@ -107,7 +103,6 @@ In addition to automatically synchronizing data from **Input Dataset Path**, you
 
    .. figure:: /_static/images/en-us_image_0000001157080995.png
       :alt: **Figure 5** Adding files
-
 
       **Figure 5** Adding files
 

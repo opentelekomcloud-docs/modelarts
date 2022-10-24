@@ -58,7 +58,6 @@ Publishing a Dataset
    .. figure:: /_static/images/en-us_image_0000001277931137.png
       :alt: **Figure 1** Publishing a dataset
 
-
       **Figure 1** Publishing a dataset
 
    After the version is published, you can go to the **Version Manager** tab page to view the detailed information. By default, the system sets the latest version to the current directory.
