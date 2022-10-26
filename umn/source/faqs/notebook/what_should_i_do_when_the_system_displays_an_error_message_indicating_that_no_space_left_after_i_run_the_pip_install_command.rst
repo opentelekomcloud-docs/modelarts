@@ -13,4 +13,4 @@ In the notebook instance, error message "No Space left..." is displayed after th
 Solution
 --------
 
-You are advised to run the **pip install --no-cache \*\*** command instead of the **pip install \*\*** command. Adding the **--no-cache** parameter can solve such problem.
+You are advised to run the **pip install --no-cache \*\* ** command instead of the **pip install \*\*** command. Adding the **--no-cache** parameter can solve such problem.
