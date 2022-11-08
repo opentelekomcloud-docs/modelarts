@@ -90,7 +90,7 @@ html_static_path = ['_static']
 
 # -- Options for PDF output --------------------------------------------------
 latex_documents = [
-('index',
+    ('index',
      'ma-umn.tex',
      u'ModelArts - User Guide',
      u'OpenTelekomCloud', 'manual'),
