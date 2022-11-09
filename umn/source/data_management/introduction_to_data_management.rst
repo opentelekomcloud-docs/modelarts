@@ -97,17 +97,17 @@ Different types of datasets support different functions. For details, see :ref:`
    +---------------------------+--------------------+----------------+----------------+----------------------+---------------------+---------------------------+
    | Object detection          | Supported          | Supported      | Supported      | Supported            | Supported           | Supported                 |
    +---------------------------+--------------------+----------------+----------------+----------------------+---------------------+---------------------------+
-   | Sound classification      | Supported          | Supported      | -              | Supported            | Supported           | Supported                 |
+   | Sound classification      | Supported          | Supported      | ``-``          | Supported            | Supported           | Supported                 |
    +---------------------------+--------------------+----------------+----------------+----------------------+---------------------+---------------------------+
-   | Speech labeling           | Supported          | Supported      | -              | Supported            | Supported           | Supported                 |
+   | Speech labeling           | Supported          | Supported      | ``-``          | Supported            | Supported           | Supported                 |
    +---------------------------+--------------------+----------------+----------------+----------------------+---------------------+---------------------------+
-   | Speech paragraph labeling | Supported          | Supported      | -              | Supported            | Supported           | Supported                 |
+   | Speech paragraph labeling | Supported          | Supported      | ``-``          | Supported            | Supported           | Supported                 |
    +---------------------------+--------------------+----------------+----------------+----------------------+---------------------+---------------------------+
-   | Text classification       | Supported          | Supported      | -              | Supported            | Supported           | Supported                 |
+   | Text classification       | Supported          | Supported      | ``-``          | Supported            | Supported           | Supported                 |
    +---------------------------+--------------------+----------------+----------------+----------------------+---------------------+---------------------------+
-   | Named entity recognition  | Supported          | Supported      | -              | Supported            | Supported           | Supported                 |
+   | Named entity recognition  | Supported          | Supported      | ``-``          | Supported            | Supported           | Supported                 |
    +---------------------------+--------------------+----------------+----------------+----------------------+---------------------+---------------------------+
-   | Text triplet              | Supported          | Supported      | -              | Supported            | Supported           | Supported                 |
+   | Text triplet              | Supported          | Supported      | ``-``          | Supported            | Supported           | Supported                 |
    +---------------------------+--------------------+----------------+----------------+----------------------+---------------------+---------------------------+
-   | Free format               | Supported          | -              | Supported      | Supported            | Supported           | Supported                 |
+   | Free format               | Supported          | ``-``          | Supported      | Supported            | Supported           | Supported                 |
    +---------------------------+--------------------+----------------+----------------+----------------------+---------------------+---------------------------+
