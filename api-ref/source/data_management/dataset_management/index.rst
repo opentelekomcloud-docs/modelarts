@@ -5,7 +5,7 @@
 Dataset Management
 ==================
 
--  :ref:`Response body for querying the dataset list. <listdatasets>`
+-  :ref:`Querying the Dataset List <listdatasets>`
 -  :ref:`Creating a Dataset <createdataset>`
 -  :ref:`Querying Details About a Dataset <descdataset>`
 -  :ref:`Modifying a Dataset <updatedataset>`
@@ -17,7 +17,7 @@ Dataset Management
    :maxdepth: 1
    :hidden: 
 
-   response_body_for_querying_the_dataset_list.
+   querying_the_dataset_list
    creating_a_dataset
    querying_details_about_a_dataset
    modifying_a_dataset

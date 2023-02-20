@@ -96,7 +96,7 @@ Request Body
    +=================+=================+=================+==========================================================================================================================================================================================================+
    | type            | Yes             | String          | Storage type.                                                                                                                                                                                            |
    |                 |                 |                 |                                                                                                                                                                                                          |
-   |                 |                 |                 | Only **obs** and **evs** are supported.                                                                                                                                                                  |
+   |                 |                 |                 | Only **obs** is supported.                                                                                                                                                                               |
    +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | location        | No              | Object          | Storage location. If **type** is set to **obs**, this parameter is mandatory. See :ref:`Table 5 <modelarts_03_0110__en-us_topic_0136223949_table10263721145>`. By default, this parameter is left blank. |
    +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -305,7 +305,6 @@ Response Body
    | storage_list          | Array<Storage type>   | Supported storage type. The options are as follows:                                                      |
    |                       |                       |                                                                                                          |
    |                       |                       | -  **obs**                                                                                               |
-   |                       |                       | -  **evs**                                                                                               |
    +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------+
    | is_permitted          | Boolean               | Whether the current user has the permission to use this flavor                                           |
    +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------+
@@ -399,7 +398,7 @@ Response Body
    +=======================+=======================+============================================================================================================================================================================================================+
    | type                  | String                | Storage type.                                                                                                                                                                                              |
    |                       |                       |                                                                                                                                                                                                            |
-   |                       |                       | Only **obs** and **evs** are supported.                                                                                                                                                                    |
+   |                       |                       | Only **obs** is supported.                                                                                                                                                                                 |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | location              | Object                | Storage location. If **type** is set to **obs**, this parameter is mandatory. See :ref:`Table 21 <modelarts_03_0110__en-us_topic_0136223949_table212131963416>`. By default, this parameter is left blank. |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -567,25 +566,25 @@ The following shows how to create the **notebook-instance** instance with ID **P
    .. code-block::
 
       {
-          "name": "notebook-instance",
-          "description": "",
-          "profile_id": "Multi-Engine 1.0 (python3)-gpu",
-          "flavor": "modelarts.bm.gpu.v100NV32",
-          "spec": {
-              "storage": {
-                  "location": {
-                      "volume_size": 5
-                  },
-                  "type": "evs"
-              },
-              "auto_stop": {
-                  "enable": true,
-                  "duration": 3600
-              }
+        "name": "notebook-d115",
+        "description": "",
+        "profile_id": "Ascend-Power-Engine 1.0(python3)",
+        "flavor": "modelarts.kat1.xlarge",
+        "spec": {
+          "storage": {
+            "location": {
+              "path": "/aaaaaaaaa/output/"
+            },
+            "type": "obs"
           },
-          "workspace": {
-              "id": "0"
+          "auto_stop": {
+            "enable": true,
+            "duration": 3600
           }
+        },
+        "workspace": {
+          "id": "0"
+        }
       }
 
 -  Successful sample response
@@ -593,80 +592,82 @@ The following shows how to create the **notebook-instance** instance with ID **P
    .. code-block::
 
       {
-          "ai_project": {
-              "id": "default-ai-project"
+        "ai_project": {
+          "id": "default-ai-project"
+        },
+        "creation_timestamp": "1614669154682",
+        "description": "",
+        "flavor": "modelarts.kat1.xlarge",
+        "flavor_details": {
+          "name": "modelarts.kat1.xlarge",
+          "params": {
+            "CPU": 24,
+            "NPU": 1,
+            "graphics_memory": "32GiB",
+            "memory": "96GiB",
+            "type": "Ascend 910"
           },
-          "creation_timestamp": "1594887749962",
-          "description": "",
-          "flavor": "modelarts.bm.gpu.v100NV32",
-          "flavor_details": {
-              "name": "modelarts.bm.gpu.v100NV32",
+          "status": "onSale",
+          "storage_list": [
+            "obs",
+            "efs"
+          ],
+          "type": "Ascend"
+        },
+        "id": "DE-a970f5d4-7b26-11eb-91ca-0255ac10003b",
+        "latest_update_timestamp": "1614669154682",
+        "name": "notebook-d115",
+        "profile": {
+          "de_type": "Notebook",
+          "description": "Ascend 910, python 3.7/3.6 for notebook",
+          "flavor_type": "Ascend",
+          "id": "efa847c0-7359-11eb-b34f-0255ac100057",
+          "name": "Ascend-Powered-Engine 1.0 (python3)",
+          "provision": {
+            "annotations": {
+              "category": "Ascend-Powered-Engine 1.0 (Python3)",
+              "type": "system"
+            },
+            "spec": {
+              "engine": "CCE",
               "params": {
-                  "CPU": 8,
-                  "GPU": 1,
-                  "gpu_type": "v100NV32",
-                  "memory": "64GiB"
-              },
-              "status": "onSale",
-              "type": "GPU"
-          },
-          "id": "DE-7d558ef8-c73d-11ea-964c-0255ac100033",
-          "latest_update_timestamp": "1594887749962",
-          "name": "notebook-c6fd",
-          "profile": {
-              "de_type": "Notebook",
-              "description": "multi engine, gpu, python 3.6 for notebook",
-              "flavor_type": "GPU",
-              "id": "Multi-Engine 1.0 (python3)-gpu",
-              "name": "Multi-Engine 1.0 (python3)-gpu",
-              "provision": {
-                  "annotations": {
-                      "category": "Multi-Engine 1.0",
-
-                      "type": "system"
-                  },
-                  "spec": {
-                      "engine": "CCE",
-                      "params": {
-                          "image_name": "mul-kernel-gpu-cuda-cp36",
-                          "image_tag": "2.0.5-B003",
-                          "namespace": "atelier"
-                      }
-                  },
-                  "type": "Docker"
+                "image_name": "mul-kernel-d910-arm-cp37",
+                "image_tag": "3.1.0-c76-2-test",
+                "namespace": "atelier"
               }
-          },
-          "spec": {
-              "annotations": {
-                  "target_domain": "https://xxx",
-                  "url": ""
-              },
-              "auto_stop": {
-                  "duration": 3600,
-                  "enable": true,
-                  "prompt": true
-              },
-              "extend_params": null,
-              "failed_reasons": null,
-              "repository": null,
-              "extend_storage": null,
-              "storage": {
-                  "location": {
-                      "path": "/home/ma-user/work",
-                      "volume_size": 5,
-                      "volume_unit": "GB"
-                  },
-                  "type": "evs"
-              }
-          },
-          "status": "CREATING",
-          "user": {
-              "id": "15dda26361214ca2a5953917d2f48ffb",
-              "name": "ops_dev_env"
-          },
-          "workspace": {
-              "id": "0"
+            },
+            "type": "Docker"
           }
+        },
+        "spec": {
+          "annotations": {
+            "target_domain": "https://notebook-modelarts.cn-south-222.pcl.ac.cn",
+            "url": ""
+          },
+          "auto_stop": {
+            "duration": 3600,
+            "enable": true,
+            "prompt": true
+          },
+          "extend_params": null,
+          "extend_storage": null,
+          "failed_reasons": null,
+          "repository": null,
+          "storage": {
+            "location": {
+              "path": "/aaaaaaaaa/output/"
+            },
+            "type": "obs"
+          }
+        },
+        "status": "CREATING",
+        "user": {
+          "id": "f3779708b547462dbca12a70555d0690",
+          "name": "modelarts_manage_admin"
+        },
+        "workspace": {
+          "id": "0"
+        }
       }
 
 -  Failed sample response

@@ -34,36 +34,22 @@ GET /v2/{project_id}/datasets/{dataset_id}/data-annotations/stats
    +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------+
    | locale          | No              | String          | Language. The options are as follows:                                         |
    |                 |                 |                 |                                                                               |
-   |                 |                 |                 | -  **zh-cn**: Chinese                                                         |
-   |                 |                 |                 |                                                                               |
-   |                 |                 |                 | -  **en-us**: English (default value)                                         |
+   |                 |                 |                 | **en-us**: English (default value)                                            |
    +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------+
    | sample_state    | No              | String          | Query statistics on samples in a specified state. The options are as follows: |
    |                 |                 |                 |                                                                               |
    |                 |                 |                 | -  **ALL**: labeled                                                           |
-   |                 |                 |                 |                                                                               |
    |                 |                 |                 | -  **NONE**: unlabeled                                                        |
-   |                 |                 |                 |                                                                               |
    |                 |                 |                 | -  **UNCHECK**: pending acceptance                                            |
-   |                 |                 |                 |                                                                               |
    |                 |                 |                 | -  **ACCEPTED**: accepted                                                     |
-   |                 |                 |                 |                                                                               |
    |                 |                 |                 | -  **REJECTED**: rejected                                                     |
-   |                 |                 |                 |                                                                               |
    |                 |                 |                 | -  **UNREVIEWED**: pending review                                             |
-   |                 |                 |                 |                                                                               |
    |                 |                 |                 | -  **REVIEWED**: reviewed                                                     |
-   |                 |                 |                 |                                                                               |
    |                 |                 |                 | -  **WORKFORCE_SAMPLED**: sampled                                             |
-   |                 |                 |                 |                                                                               |
    |                 |                 |                 | -  **WORKFORCE_SAMPLED_UNCHECK**: sampling unchecked                          |
-   |                 |                 |                 |                                                                               |
    |                 |                 |                 | -  **WORKFORCE_SAMPLED_CHECKED**: sampling checked                            |
-   |                 |                 |                 |                                                                               |
    |                 |                 |                 | -  **WORKFORCE_SAMPLED_ACCEPTED**: sampling accepted                          |
-   |                 |                 |                 |                                                                               |
    |                 |                 |                 | -  **WORKFORCE_SAMPLED_REJECTED**: sampling rejected                          |
-   |                 |                 |                 |                                                                               |
    |                 |                 |                 | -  **AUTO_ANNOTATION**: to be confirmed                                       |
    +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------+
 
@@ -87,7 +73,6 @@ Response Parameters
    | data_spliting_enable  | Boolean                                                                                  | Whether the dataset can be split into training set and validation set based on the sample labeling statistics. The options are as follows:                                                                                                                                                                       |
    |                       |                                                                                          |                                                                                                                                                                                                                                                                                                                  |
    |                       |                                                                                          | -  **true**: The dataset can be split into training set and validation set.                                                                                                                                                                                                                                      |
-   |                       |                                                                                          |                                                                                                                                                                                                                                                                                                                  |
    |                       |                                                                                          | -  **false**: The dataset cannot be split into training set and validation set.                                                                                                                                                                                                                                  |
    +-----------------------+------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | grouped_label_stats   | Map<String,Array<:ref:`LabelStats <liststats__response_labelstats>`>>                    | Label statistics grouped by labeling type.                                                                                                                                                                                                                                                                       |
@@ -123,23 +108,14 @@ Response Parameters
    | type                  | Integer                                                                     | Label type. The options are as follows:                                                                                          |
    |                       |                                                                             |                                                                                                                                  |
    |                       |                                                                             | -  **0**: image classification                                                                                                   |
-   |                       |                                                                             |                                                                                                                                  |
    |                       |                                                                             | -  **1**: object detection                                                                                                       |
-   |                       |                                                                             |                                                                                                                                  |
    |                       |                                                                             | -  **100**: text classification                                                                                                  |
-   |                       |                                                                             |                                                                                                                                  |
    |                       |                                                                             | -  **101**: named entity recognition                                                                                             |
-   |                       |                                                                             |                                                                                                                                  |
    |                       |                                                                             | -  **102**: text triplet relationship                                                                                            |
-   |                       |                                                                             |                                                                                                                                  |
    |                       |                                                                             | -  **103**: text triplet entity                                                                                                  |
-   |                       |                                                                             |                                                                                                                                  |
    |                       |                                                                             | -  **200**: speech classification                                                                                                |
-   |                       |                                                                             |                                                                                                                                  |
    |                       |                                                                             | -  **201**: speech content                                                                                                       |
-   |                       |                                                                             |                                                                                                                                  |
    |                       |                                                                             | -  **202**: speech paragraph labeling                                                                                            |
-   |                       |                                                                             |                                                                                                                                  |
    |                       |                                                                             | -  **600**: video classification                                                                                                 |
    +-----------------------+-----------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
 
@@ -155,17 +131,11 @@ Response Parameters
    | @modelarts:default_shape | String                | Default attribute: Default shape of an object detection label (dedicated attribute). By default, this parameter is left blank. The options are as follows:                                                     |
    |                          |                       |                                                                                                                                                                                                                |
    |                          |                       | -  **bndbox**: rectangle                                                                                                                                                                                       |
-   |                          |                       |                                                                                                                                                                                                                |
    |                          |                       | -  **polygon**: polygon                                                                                                                                                                                        |
-   |                          |                       |                                                                                                                                                                                                                |
    |                          |                       | -  **circle**: circle                                                                                                                                                                                          |
-   |                          |                       |                                                                                                                                                                                                                |
    |                          |                       | -  **line**: straight line                                                                                                                                                                                     |
-   |                          |                       |                                                                                                                                                                                                                |
    |                          |                       | -  **dashed**: dotted line                                                                                                                                                                                     |
-   |                          |                       |                                                                                                                                                                                                                |
    |                          |                       | -  **point**: point                                                                                                                                                                                            |
-   |                          |                       |                                                                                                                                                                                                                |
    |                          |                       | -  **polyline**: polyline                                                                                                                                                                                      |
    +--------------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | @modelarts:from_type     | String                | Default attribute: Type of the head entity in the triplet relationship label. This attribute must be specified when a relationship label is created. This parameter is used only for the text triplet dataset. |
@@ -218,7 +188,6 @@ Response Parameters
    | type                  | String                                                                                | Label attribute type. The options are as follows: |
    |                       |                                                                                       |                                                   |
    |                       |                                                                                       | -  **text**: text                                 |
-   |                       |                                                                                       |                                                   |
    |                       |                                                                                       | -  **select**: single-choice drop-down list       |
    +-----------------------+---------------------------------------------------------------------------------------+---------------------------------------------------+
    | values                | Array of :ref:`LabelAttributeValue <liststats__response_labelattributevalue>` objects | List of label attribute values.                   |
@@ -255,7 +224,7 @@ OK
 
    {
      "label_stats" : [ {
-       "name" : "Dog",
+       "name" : "Rabbit",
        "type" : 1,
        "property" : {
          "@modelarts:color" : "#3399ff"

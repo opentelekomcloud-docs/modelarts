@@ -34,8 +34,7 @@ GET /v2/{project_id}/datasets/{dataset_id}/data-annotations/samples/{sample_id}
    +=================+=================+=================+======================================================+
    | locale          | No              | String          | Language. The options are as follows:                |
    |                 |                 |                 |                                                      |
-   |                 |                 |                 | -  **en-us**: English (default value)                |
-   |                 |                 |                 | -  **zh-cn**: Chinese                                |
+   |                 |                 |                 | **en-us**: English (default value)                   |
    +-----------------+-----------------+-----------------+------------------------------------------------------+
    | sample_state    | No              | String          | Sample status. The options are as follows:           |
    |                 |                 |                 |                                                      |

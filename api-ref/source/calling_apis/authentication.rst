@@ -95,19 +95,19 @@ Decompress the downloaded package and reference the obtained JAR files as depend
    Import the demo project to Eclipse.
 
 
-   .. figure:: /_static/images/en-us_image_0000001209775802.gif
+   .. figure:: /_static/images/en-us_image_0000001404664602.gif
       :alt: **Figure 1** Selecting Existing Projects into Workspace
 
       **Figure 1** Selecting Existing Projects into Workspace
 
 
-   .. figure:: /_static/images/en-us_image_0000001254535753.gif
+   .. figure:: /_static/images/en-us_image_0000001455264277.gif
       :alt: **Figure 2** Selecting the demo project
 
       **Figure 2** Selecting the demo project
 
 
-   .. figure:: /_static/images/en-us_image_0000001254215795.gif
+   .. figure:: /_static/images/en-us_image_0000001454864609.gif
       :alt: **Figure 3** Structure of the demo project
 
       **Figure 3** Structure of the demo project
@@ -124,15 +124,14 @@ Decompress the downloaded package and reference the obtained JAR files as depend
 
    The following describes how to call a POST method to sign the request.
 
-   a. (Optional) Add request header fields.
+   a. Add request header fields.
 
-      Uncomment the following code snippet in the **AccessServiceImpl.java** file, and specify the project ID and account ID.
+      Comment out the following second line of code in the **AccessServiceImpl.java** file, and specify the project ID.
 
       .. code-block:: text
 
          //TODO: Add special headers.
          //request.addHeader("X-Project-Id", "xxxxx");
-         //request.addHeader("X-Domain-Id", "xxxxx");
 
    b. Edit the **main()** method in the Demo.java file, and replace the bold text with actual values.
 
@@ -185,4 +184,4 @@ Decompress the downloaded package and reference the obtained JAR files as depend
 
       You can view the API call logs on the console.
 
-.. |image1| image:: /_static/images/en-us_image_0000001209615816.gif
+.. |image1| image:: /_static/images/en-us_image_0000001404504698.gif

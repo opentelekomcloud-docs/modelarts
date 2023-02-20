@@ -409,7 +409,7 @@ OK
      "success" : true,
      "results" : [ {
        "success" : true,
-       "name" : "/test-obs/classify/input/cat-dog/2.jpg",
+       "name" : "/test-obs/classify/input/cat-rabbit/2.jpg",
        "info" : "960585877c92d63911ba555ab3129d36"
      } ]
    }

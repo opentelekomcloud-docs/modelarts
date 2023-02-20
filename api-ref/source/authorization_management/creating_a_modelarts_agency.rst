@@ -1,6 +1,6 @@
-:original_name: CreateModelArtsAgency.html
+:original_name: modelarts_03_0412.html
 
-.. _CreateModelArtsAgency:
+.. _modelarts_03_0412:
 
 Creating a ModelArts Agency
 ===========================

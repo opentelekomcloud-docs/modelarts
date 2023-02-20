@@ -50,7 +50,7 @@ Response Parameters
    +-----------------------+----------------------------------------------------------------------------------+-------------------------------------------------------------------+
    | export_format         | Integer                                                                          | Format of the exported directory. The options are as follows:     |
    |                       |                                                                                  |                                                                   |
-   |                       |                                                                                  | -  **1**: tree structure. For example: cat/1.jpg,dog/2.jpg.       |
+   |                       |                                                                                  | -  **1**: tree structure. For example: cat/1.jpg,rabbit/2.jpg.    |
    |                       |                                                                                  | -  **2**: tile structure. For example: 1.jpg, 1.txt; 2.jpg,2.txt. |
    +-----------------------+----------------------------------------------------------------------------------+-------------------------------------------------------------------+
    | export_params         | :ref:`ExportParams <getexporttaskstatusofdataset__response_exportparams>` object | Parameters of a dataset export task.                              |

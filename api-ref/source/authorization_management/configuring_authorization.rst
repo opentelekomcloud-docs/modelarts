@@ -1,6 +1,6 @@
-:original_name: CreateAuthorization.html
+:original_name: modelarts_03_0409.html
 
-.. _CreateAuthorization:
+.. _modelarts_03_0409:
 
 Configuring Authorization
 =========================
@@ -8,7 +8,7 @@ Configuring Authorization
 Function
 --------
 
-This API is used to configure ModelArts authorization. ModelArts functions such as training management, development environment, data management, and real-time services can be properly used only after required authorization is configured. This API allows the administrator to configure an agency for IAM users and set an access key of the current user.
+This API is used to configure ModelArts authorization. ModelArts functions such as training management, development environment, data management, and real-time services can be properly used only after required authorization is configured. This API allows the system administrator to configure an agency for IAM users and set an access key of the current user.
 
 URI
 ---

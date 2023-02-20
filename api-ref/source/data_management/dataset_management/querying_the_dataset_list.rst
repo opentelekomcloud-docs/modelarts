@@ -2,8 +2,8 @@
 
 .. _ListDatasets:
 
-Response body for querying the dataset list.
-============================================
+Querying the Dataset List
+=========================
 
 Function
 --------
@@ -763,7 +763,7 @@ OK
        "status" : 1,
        "data_sources" : [ {
          "data_type" : 0,
-         "data_path" : "/test-obs/classify/input/catDog4/"
+         "data_path" : "/test-obs/classify/input/catRabbit4/"
        } ],
        "create_time" : 1605690595404,
        "update_time" : 1605690595404,
@@ -795,29 +795,29 @@ OK
        "dataset_version" : "v1",
        "content_labeling" : true,
        "samples" : [ {
-         "url" : "https://test-obs.obs.xxx.com:443/classify/input/catDog4/15.jpg?AccessKeyId=vprCCTxxxxxxxxxxbXr&Expires=1606100112&Signature=tuUo9jl6lqoMKAwNBz5g8dxO%2FdE%3D",
+         "url" : "https://test-obs.obs.xxx.com:443/classify/input/catRabbit4/15.jpg?AccessKeyId=vprCCTxxxxxxxxxxbXr&Expires=1606100112&Signature=tuUo9jl6lqoMKAwNBz5g8dxO%2FdE%3D",
          "create_time" : 1605690596035
        }, {
-         "url" : "https://test-obs.obs.xxx.com:443/classify/input/catDog4/8.jpg?AccessKeyId=vprCCTxxxxxxxxxxbXr&Expires=1606100112&Signature=NITOdBnkUXtdnKuEgDzZpkQzNfM%3D",
+         "url" : "https://test-obs.obs.xxx.com:443/classify/input/catRabbit4/8.jpg?AccessKeyId=vprCCTxxxxxxxxxxbXr&Expires=1606100112&Signature=NITOdBnkUXtdnKuEgDzZpkQzNfM%3D",
          "create_time" : 1605690596046
        }, {
-         "url" : "https://test-obs.obs.xxx.com:443/classify/input/catDog4/9.jpg?AccessKeyId=vprCCTxxxxxxxxxxbXr&Expires=1606100112&Signature=%2BwUo1BL38%2F2d7p7anPi4fNzm1VU%3D",
+         "url" : "https://test-obs.obs.xxx.com:443/classify/input/catRabbit4/9.jpg?AccessKeyId=vprCCTxxxxxxxxxxbXr&Expires=1606100112&Signature=%2BwUo1BL38%2F2d7p7anPi4fNzm1VU%3D",
          "create_time" : 1605690596050
        }, {
-         "url" : "https://test-obs.obs.xxx.com:443/classify/input/catDog4/7.jpg?AccessKeyId=vprCCTxxxxxxxxxxbXr&Expires=1606100112&Signature=tOrHfcWo%2FEJ0wRzfi1M5Wk2MrXg%3D",
+         "url" : "https://test-obs.obs.xxx.com:443/classify/input/catRabbit4/7.jpg?AccessKeyId=vprCCTxxxxxxxxxxbXr&Expires=1606100112&Signature=tOrHfcWo%2FEJ0wRzfi1M5Wk2MrXg%3D",
          "create_time" : 1605690596043
        } ],
        "files" : [ {
-         "url" : "https://test-obs.obs.xxx.com:443/classify/input/catDog4/15.jpg?AccessKeyId=vprCCTxxxxxxxxxxbXr&Expires=1606100112&Signature=tuUo9jl6lqoMKAwNBz5g8dxO%2FdE%3D",
+         "url" : "https://test-obs.obs.xxx.com:443/classify/input/catRabbit4/15.jpg?AccessKeyId=vprCCTxxxxxxxxxxbXr&Expires=1606100112&Signature=tuUo9jl6lqoMKAwNBz5g8dxO%2FdE%3D",
          "create_time" : 1605690596035
        }, {
-         "url" : "https://test-obs.obs.xxx.com:443/classify/input/catDog4/8.jpg?AccessKeyId=vprCCTxxxxxxxxxxbXr&Expires=1606100112&Signature=NITOdBnkUXtdnKuEgDzZpkQzNfM%3D",
+         "url" : "https://test-obs.obs.xxx.com:443/classify/input/catRabbit4/8.jpg?AccessKeyId=vprCCTxxxxxxxxxxbXr&Expires=1606100112&Signature=NITOdBnkUXtdnKuEgDzZpkQzNfM%3D",
          "create_time" : 1605690596046
        }, {
-         "url" : "https://test-obs.obs.xxx.com:443/classify/input/catDog4/9.jpg?AccessKeyId=vprCCTxxxxxxxxxxbXr&Expires=1606100112&Signature=%2BwUo1BL38%2F2d7p7anPi4fNzm1VU%3D",
+         "url" : "https://test-obs.obs.xxx.com:443/classify/input/catRabbit4/9.jpg?AccessKeyId=vprCCTxxxxxxxxxxbXr&Expires=1606100112&Signature=%2BwUo1BL38%2F2d7p7anPi4fNzm1VU%3D",
          "create_time" : 1605690596050
        }, {
-         "url" : "https://test-obs.obs.xxx.com:443/classify/input/catDog4/7.jpg?AccessKeyId=vprCCTxxxxxxxxxxbXr&Expires=1606100112&Signature=tOrHfcWo%2FEJ0wRzfi1M5Wk2MrXg%3D",
+         "url" : "https://test-obs.obs.xxx.com:443/classify/input/catRabbit4/7.jpg?AccessKeyId=vprCCTxxxxxxxxxxbXr&Expires=1606100112&Signature=tOrHfcWo%2FEJ0wRzfi1M5Wk2MrXg%3D",
          "create_time" : 1605690596043
        } ]
      } ]

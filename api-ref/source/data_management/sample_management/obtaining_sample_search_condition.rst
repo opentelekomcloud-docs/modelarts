@@ -63,23 +63,14 @@ Response Parameters
    | type                  | Integer                                                                      | Label type. The options are as follows:                                                                                          |
    |                       |                                                                              |                                                                                                                                  |
    |                       |                                                                              | -  **0**: image classification                                                                                                   |
-   |                       |                                                                              |                                                                                                                                  |
    |                       |                                                                              | -  **1**: object detection                                                                                                       |
-   |                       |                                                                              |                                                                                                                                  |
    |                       |                                                                              | -  **100**: text classification                                                                                                  |
-   |                       |                                                                              |                                                                                                                                  |
    |                       |                                                                              | -  **101**: named entity recognition                                                                                             |
-   |                       |                                                                              |                                                                                                                                  |
    |                       |                                                                              | -  **102**: text triplet relationship                                                                                            |
-   |                       |                                                                              |                                                                                                                                  |
    |                       |                                                                              | -  **103**: text triplet entity                                                                                                  |
-   |                       |                                                                              |                                                                                                                                  |
    |                       |                                                                              | -  **200**: speech classification                                                                                                |
-   |                       |                                                                              |                                                                                                                                  |
    |                       |                                                                              | -  **201**: speech content                                                                                                       |
-   |                       |                                                                              |                                                                                                                                  |
    |                       |                                                                              | -  **202**: speech paragraph labeling                                                                                            |
-   |                       |                                                                              |                                                                                                                                  |
    |                       |                                                                              | -  **600**: video classification                                                                                                 |
    +-----------------------+------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
 
@@ -99,7 +90,6 @@ Response Parameters
    | type                  | String                                                                                 | Label attribute type. The options are as follows: |
    |                       |                                                                                        |                                                   |
    |                       |                                                                                        | -  **text**: text                                 |
-   |                       |                                                                                        |                                                   |
    |                       |                                                                                        | -  **select**: single-choice drop-down list       |
    +-----------------------+----------------------------------------------------------------------------------------+---------------------------------------------------+
    | values                | Array of :ref:`LabelAttributeValue <listsearch__response_labelattributevalue>` objects | List of label attribute values.                   |
@@ -128,17 +118,11 @@ Response Parameters
    | @modelarts:default_shape | String                | Default attribute: Default shape of an object detection label (dedicated attribute). By default, this parameter is left blank. The options are as follows:                                                     |
    |                          |                       |                                                                                                                                                                                                                |
    |                          |                       | -  **bndbox**: rectangle                                                                                                                                                                                       |
-   |                          |                       |                                                                                                                                                                                                                |
    |                          |                       | -  **polygon**: polygon                                                                                                                                                                                        |
-   |                          |                       |                                                                                                                                                                                                                |
    |                          |                       | -  **circle**: circle                                                                                                                                                                                          |
-   |                          |                       |                                                                                                                                                                                                                |
    |                          |                       | -  **line**: straight line                                                                                                                                                                                     |
-   |                          |                       |                                                                                                                                                                                                                |
    |                          |                       | -  **dashed**: dotted line                                                                                                                                                                                     |
-   |                          |                       |                                                                                                                                                                                                                |
    |                          |                       | -  **point**: point                                                                                                                                                                                            |
-   |                          |                       |                                                                                                                                                                                                                |
    |                          |                       | -  **polyline**: polyline                                                                                                                                                                                      |
    +--------------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | @modelarts:from_type     | String                | Default attribute: Type of the head entity in the triplet relationship label. This attribute must be specified when a relationship label is created. This parameter is used only for the text triplet dataset. |
@@ -176,7 +160,7 @@ OK
          "@modelarts:color" : "#3399ff"
        }
      }, {
-       "name" : "Dog",
+       "name" : "Rabbit",
        "type" : 0,
        "property" : {
          "@modelarts:color" : "#3399ff"

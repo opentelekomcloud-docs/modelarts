@@ -126,9 +126,7 @@ The API for obtaining a user token does not require authentication. Therefore, t
 Request Body
 ------------
 
-The body of a request is often sent in a structured format as specified in the Content-Type header field. The request body transfers content except the request header. If the request body contains Chinese characters, these characters must be encoded in UTF-8.
-
-The request body varies between APIs. Some APIs do not require the request body, such as the APIs requested using the GET and DELETE methods.
+The body of a request is often sent in a structured format as specified in the Content-Type header field. The request body transfers content except the request header.The request body varies between APIs. Some APIs do not require the request body, such as the APIs requested using the GET and DELETE methods.
 
 If an API is used to obtain a user token, the request parameters and parameter description can be obtained from the API request. The following provides an example request with a body included. Replace *user_name*, *domain_name*, and *user_password* with the actual username, account name, and login password, respectively. **project_name** is the project name. For details, see :ref:`Obtaining a Username and ID <modelarts_03_0006>`, :ref:`Obtaining an Account Name and ID <modelarts_03_0148>`, and :ref:`Obtaining a Project ID <modelarts_03_0147>`.
 

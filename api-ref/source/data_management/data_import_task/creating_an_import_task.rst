@@ -296,7 +296,7 @@ Example Requests
 
       {
         "import_type" : "dir",
-        "import_path" : "s3://test-obs/daoLu_images/cat-dog/",
+        "import_path" : "s3://test-obs/daoLu_images/cat-rabbit/",
         "included_tags" : [ ],
         "import_annotations" : false,
         "difficult_only" : false
@@ -309,7 +309,7 @@ Example Requests
       {
         "import_type" : "manifest",
         "import_path" : "s3://test-obs/classify/output/dataset-f9e8-gfghHSokody6AJigS5A/annotation/V002/V002.manifest",
-        "included_tags" : [ "cat", "dog", "Cat", "Dog" ],
+        "included_tags" : [ "cat", "rabbit", "Cat", "Rabbit" ],
         "import_annotations" : true,
         "difficult_only" : false
       }
