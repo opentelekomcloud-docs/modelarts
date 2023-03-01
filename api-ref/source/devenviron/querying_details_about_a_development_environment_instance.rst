@@ -161,7 +161,7 @@ Response Body
    |                       |                       |                                                                                                          |
    |                       |                       | This parameter is mandatory when **promo_type** is set to **Free** and **status** is set to **soldOut**. |
    +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------+
-   | storage_list          | Array<Storage type>   | Supported storage type. The options are **obs**, **evs**, and **efs**.                                   |
+   | storage_list          | Array<Storage type>   | Supported storage type. The options are **obs** and **efs**.                                             |
    +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------+
    | is_permitted          | Boolean               | Whether the current user has the permission to use this flavor                                           |
    +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------+
@@ -265,7 +265,7 @@ Response Body
    +=======================+=======================+============================================================================================================================================================================================================+
    | type                  | String                | Storage type.                                                                                                                                                                                              |
    |                       |                       |                                                                                                                                                                                                            |
-   |                       |                       | Only **obs** and **evs** are supported.                                                                                                                                                                    |
+   |                       |                       | Only **obs** is supported.                                                                                                                                                                                 |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | location              | Object                | Storage location. If **type** is set to **obs**, this parameter is mandatory. See :ref:`Table 13 <modelarts_03_0112__en-us_topic_0136223951_table212131963416>`. By default, this parameter is left blank. |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -490,11 +490,10 @@ The following shows how to obtain the details about instance **6fa459ea-ee8a-3ca
               "extend_storage": null,
               "storage": {
                   "location": {
-                      "path": "/home/ma-user/work",
-                      "volume_size": 5,
-                      "volume_unit": "GB"
+                      "path": "/home/ma-user/work"
                   },
-                  "type": "evs"
+                  "type": "obs"
+
               }
           },
           "status": "RUNNING",

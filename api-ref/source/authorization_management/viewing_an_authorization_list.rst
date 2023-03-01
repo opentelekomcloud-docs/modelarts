@@ -1,6 +1,6 @@
-:original_name: GetAuthorizations.html
+:original_name: modelarts_03_0410.html
 
-.. _GetAuthorizations:
+.. _modelarts_03_0410:
 
 Viewing an Authorization List
 =============================
@@ -33,6 +33,7 @@ GET /v2/{project_id}/authorizations
    |                 |                 |                 | Options:                                                                 |
    |                 |                 |                 |                                                                          |
    |                 |                 |                 | -  **user_name**: IAM user                                               |
+   |                 |                 |                 |                                                                          |
    |                 |                 |                 | -  **create_time**: creation time                                        |
    |                 |                 |                 |                                                                          |
    |                 |                 |                 | Default: **user_name**                                                   |
@@ -42,6 +43,7 @@ GET /v2/{project_id}/authorizations
    |                 |                 |                 | Options:                                                                 |
    |                 |                 |                 |                                                                          |
    |                 |                 |                 | -  **asc**: ascending order                                              |
+   |                 |                 |                 |                                                                          |
    |                 |                 |                 | -  **desc**: descending order                                            |
    |                 |                 |                 |                                                                          |
    |                 |                 |                 | Default: **asc**                                                         |
@@ -70,10 +72,10 @@ Response Parameters
    +=============+===================================================================================================+=================================+
    | total_count | Number                                                                                            | Authorization information.      |
    +-------------+---------------------------------------------------------------------------------------------------+---------------------------------+
-   | auth        | Array of :ref:`AuthorizationResponse <getauthorizations__response_authorizationresponse>` objects | Authorization information list. |
+   | auth        | Array of :ref:`AuthorizationResponse <modelarts_03_0410__response_authorizationresponse>` objects | Authorization information list. |
    +-------------+---------------------------------------------------------------------------------------------------+---------------------------------+
 
-.. _getauthorizations__response_authorizationresponse:
+.. _modelarts_03_0410__response_authorizationresponse:
 
 .. table:: **Table 4** AuthorizationResponse
 
@@ -91,6 +93,7 @@ Response Parameters
    |                       |                       | Options:                                                                                                                                                        |
    |                       |                       |                                                                                                                                                                 |
    |                       |                       | -  **agency**: authorization through an agency                                                                                                                  |
+   |                       |                       |                                                                                                                                                                 |
    |                       |                       | -  **credential**: authorization through an access Key (AK/SK)                                                                                                  |
    |                       |                       |                                                                                                                                                                 |
    |                       |                       | Default: **agency**                                                                                                                                             |
@@ -98,11 +101,12 @@ Response Parameters
    | content               | String                | Authorization content.                                                                                                                                          |
    |                       |                       |                                                                                                                                                                 |
    |                       |                       | -  If **Authorization Type** is set to **Agency**, this field indicates the agency name.                                                                        |
+   |                       |                       |                                                                                                                                                                 |
    |                       |                       | -  If **Authorization Type** is set to **AK/SK**, this field indicates the access key ID (AK).                                                                  |
    +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | secret_key            | String                | Secret Access Key (SK). This field is required only when **Authorization Method** is set to **AK/SK**.                                                          |
    +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | create_time           | Long                  | Timestamp when the quality job was created.                                                                                                                     |
+   | create_time           | Long                  | Timestamp when a training job was created                                                                                                                       |
    +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Example Requests

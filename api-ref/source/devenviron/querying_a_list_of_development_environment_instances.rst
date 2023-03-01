@@ -216,7 +216,7 @@ Response Body
    |                       |                       |                                                                                                          |
    |                       |                       | This parameter is mandatory when **promo_type** is set to **Free** and **status** is set to **soldOut**. |
    +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------+
-   | storage_list          | Array<Storage type>   | Supported storage type. The options are **obs**, **evs**, and **efs**.                                   |
+   | storage_list          | Array<Storage type>   | Supported storage type. The options are **obs** and **efs**.                                             |
    +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------+
    | is_permitted          | Boolean               | Whether the current user has the permission to use this flavor                                           |
    +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------+
@@ -456,160 +456,169 @@ The following shows how to query the list of Notebook development environments.
    .. code-block::
 
       {
-          "instances": [
-              {
-                  "ai_project": {
-                      "id": "default-ai-project"
-                  },
-                  "creation_timestamp": "1594887749962",
-                  "description": "",
-                  "flavor": "modelarts.bm.gpu.v100NV32",
-                  "flavor_details": {
-                      "name": "modelarts.bm.gpu.v100NV32",
-                      "params": {
-                          "CPU": 8,
-                          "GPU": 1,
-                          "gpu_type": "v100NV32",
-                          "memory": "64GiB"
-                      },
-                      "status": "onSale",
-                      "type": "GPU"
-                  },
-                  "id": "DE-7d558ef8-c73d-11ea-964c-0255ac100033",
-                  "latest_update_timestamp": "1594887749962",
-                  "name": "notebook-c6fd",
-                  "profile": {
-                      "de_type": "Notebook",
-                      "description": "multi engine, gpu, python 3.6 for notebook",
-                      "flavor_type": "GPU",
-                      "id": "Multi-Engine 1.0 (python3)-gpu",
-                      "name": "Multi-Engine 1.0 (python3)-gpu",
-                      "provision": {
-                          "annotations": {
-                              "category": "Multi-Engine 1.0 (python3)",
-                              "type": "system"
-                          },
-                          "spec": {
-                              "engine": "CCE",
-                              "params": {
-                                  "annotations": null,
-                                  "image_name": "mul-kernel-gpu-cuda-cp36",
-                                  "image_tag": "2.0.5-B003",
-                                  "namespace": "atelier"
-                              }
-                          },
-                          "type": "Docker"
-                      }
-                  },
-                  "spec": {
-                      "annotations": {
-                          "target_domain": "https://xxx",
-                          "url": "https://xxx:32000/modelartshubv100/notebook/user/DE-7d558ef8-c73d-11ea-964c-0255ac100033"
-                      },
-                      "auto_stop": {
-                          "duration": 3600,
-                          "enable": true,
-                          "prompt": true,
-                          "remain_time": 3450,
-                          "stop_timestamp": 1594891408723
-                      },
-                      "extend_params": null,
-                      "failed_reasons": null,
-                      "repository": null,
-                      "extend_storage": null,
-                      "storage": {
-                          "location": {
-                              "path": "/home/ma-user/work",
-                              "volume_size": 5,
-                              "volume_unit": "GB"
-                          },
-                          "type": "evs"
-                      }
-                  },
-                  "status": "RUNNING",
-                  "user": {
-                      "id": "15dda26361214ca2a5953917d2f48ffb",
-                      "name": "ops_dev_env"
-                  },
-                  "workspace": {
-                      "id": "0"
-                  }
+        "instances": [
+          {
+            "ai_project": {
+              "id": "default-ai-project"
+            },
+            "creation_timestamp": "1614669154682",
+            "description": "",
+            "flavor": "modelarts.kat1.xlarge",
+            "flavor_details": {
+              "name": "modelarts.kat1.xlarge",
+              "params": {
+                "CPU": 24,
+                "NPU": 1,
+                "graphics_memory": "32GiB",
+                "memory": "96GiB",
+                "type": "Ascend 910"
               },
-              {
-                  "ai_project": {
-                      "id": "default-ai-project"
-                  },
-                  "creation_timestamp": "1594883877728",
-                  "description": "",
-                  "flavor": "modelarts.vm.cpu.2u",
-                  "flavor_details": {
-                      "name": "modelarts.vm.cpu.2u",
-                      "params": {
-                          "CPU": 2,
-                          "GPU": 0,
-                          "memory": "8GiB"
-                      },
-                      "status": "onSale",
-                      "type": "CPU"
-                  },
-                  "id": "DE-7936a360-c734-11ea-a72b-0255ac100033",
-                  "latest_update_timestamp": "1594883877728",
-                  "name": "notebook-b1b8",
-                  "profile": {
-                      "de_type": "Notebook",
-                      "description": "multi engine, cpu, python 3.6 for notebook",
-                      "flavor_type": "CPU",
-                      "id": "Multi-Engine 1.0 (python3)-cpu",
-                      "name": "Multi-Engine 1.0 (python3)-cpu",
-                      "provision": {
-                          "annotations": {
-                              "category": "Multi-Engine 1.0 (Python3, Recommended)",
-                              "type": "system"
-                          },
-                          "spec": {
-                              "engine": "CCE",
-                              "params": {
-                                  "annotations": null,
-                                  "image_name": "mul-kernel-cpu-cp36",
-                                  "image_tag": "2.0.5-B003",
-                                  "namespace": "atelier"
-                              }
-                          },
-                          "type": "Docker"
-                      }
-                  },
-                  "spec": {
-                      "annotations": {
-                          "target_domain": "https://xxx",
-                          "url": ""
-                      },
-                      "auto_stop": {
-                          "duration": 3600,
-                          "enable": true,
-                          "prompt": true
-                      },
-                      "extend_params": null,
-                      "failed_reasons": null,
-                      "repository": null,
-                      "storage": {
-                          "location": {
-                              "path": "/home/ma-user/work",
-                              "volume_size": 5,
-                              "volume_unit": "GB"
-                          },
-                          "type": "evs"
-                      }
-                  },
-                  "status": "STOPPED",
-                  "user": {
-                      "id": "15dda26361214ca2a5953917d2f48ffb",
-                      "name": "ops_dev_env"
-                  },
-                  "workspace": {
-                      "id": "0"
+              "status": "onSale",
+              "storage_list": [
+                "obs",
+                "efs"
+              ],
+              "type": "Ascend"
+            },
+            "id": "DE-a970f5d4-7b26-11eb-91ca-0255ac10003b",
+            "latest_update_timestamp": "1614669154682",
+            "name": "notebook-d115",
+            "profile": {
+              "de_type": "Notebook",
+              "description": "Ascend 910, python 3.7/3.6 for notebook",
+              "flavor_type": "Ascend",
+              "id": "efa847c0-7359-11eb-b34f-0255ac100057",
+              "name": "Ascend-Powered-Engine 1.0 (python3)",
+              "provision": {
+                "annotations": {
+                  "category": "Ascend-Powered-Engine 1.0 (Python3)",
+                  "type": "system"
+                },
+                "spec": {
+                  "engine": "CCE",
+                  "params": {
+                    "annotations": null,
+                    "image_name": "mul-kernel-d910-arm-cp37",
+                    "image_tag": "3.1.0-c76-2-test",
+                    "namespace": "atelier"
                   }
-              }],
-          "total_count": 2
+                },
+                "type": "Docker"
+              }
+            },
+            "spec": {
+              "annotations": {
+                "target_domain": "https://notebook-modelarts.cn-south-222.pcl.ac.cn",
+                "url": "https://10.176.46.12:32000/modelarts/internal/hub/notebook/user/DE-a970f5d4-7b26-11eb-91ca-0255ac10003b"
+              },
+              "auto_stop": {
+                "duration": 3600,
+                "enable": true,
+                "prompt": true,
+                "remain_time": 3465,
+                "stop_timestamp": 1614672767697
+              },
+              "extend_params": null,
+              "extend_storage": null,
+              "failed_reasons": null,
+              "repository": null,
+              "storage": {
+                "location": {
+                  "path": "/aaaaaaaaa/output/"
+                },
+                "type": "obs"
+              }
+            },
+            "status": "RUNNING",
+            "user": {
+              "id": "f3779708b547462dbca12a70555d0690",
+              "name": "modelarts_manage_admin"
+            },
+            "workspace": {
+              "id": "0"
+            }
+          },
+          {
+            "ai_project": {
+              "id": "default-ai-project"
+            },
+            "creation_timestamp": "1614597367550",
+            "description": "",
+            "flavor": "modelarts.kat1.xlarge",
+            "flavor_details": {
+              "name": "modelarts.kat1.xlarge",
+              "params": {
+                "CPU": 24,
+                "NPU": 1,
+                "graphics_memory": "32GiB",
+                "memory": "96GiB",
+                "type": "Ascend 910"
+              },
+              "status": "onSale",
+              "storage_list": [
+                "obs",
+                "efs"
+              ],
+              "type": "Ascend"
+            },
+            "id": "DE-84f9df4c-7a7f-11eb-9246-0255ac10003b",
+            "latest_update_timestamp": "1614598035546",
+            "name": "notebook-1282",
+            "profile": {
+              "de_type": "Notebook",
+              "description": "Ascend 910, python 3.7/3.6 for notebook",
+              "flavor_type": "Ascend",
+              "id": "efa847c0-7359-11eb-b34f-0255ac100057",
+              "name": "Ascend-Powered-Engine 1.0 (python3)",
+              "provision": {
+                "annotations": {
+                  "category": "Ascend-Powered-Engine 1.0 (Python3)",
+                  "type": "system"
+                },
+                "spec": {
+                  "engine": "CCE",
+                  "params": {
+                    "annotations": null,
+                    "image_name": "mul-kernel-d910-arm-cp37",
+                    "image_tag": "3.1.0-c76-2-test",
+                    "namespace": "atelier"
+                  }
+                },
+                "type": "Docker"
+              }
+            },
+            "spec": {
+              "annotations": {
+                "target_domain": "https://notebook-modelarts.cn-south-222.pcl.ac.cn",
+                "url": ""
+              },
+              "auto_stop": {
+                "duration": 3600,
+                "enable": true,
+                "prompt": true
+              },
+              "extend_params": null,
+              "extend_storage": null,
+              "failed_reasons": null,
+              "repository": null,
+              "storage": {
+                "location": {
+                  "path": "/aaaaaaaaa/input/"
+                },
+                "type": "obs"
+              }
+            },
+            "status": "STOPPED",
+            "user": {
+              "id": "f3779708b547462dbca12a70555d0690",
+              "name": "modelarts_manage_admin"
+            },
+            "workspace": {
+              "id": "0"
+            }
+          }
+        ],
+        "total_count": 2
       }
 
 Status Code

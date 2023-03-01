@@ -317,7 +317,7 @@ Request Parameters
    +--------------------------------+-----------------+--------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | task_name                      | Yes             | String                                                                   | Name of a team labeling task. The value contains 1 to 64 characters, including only letters, digits, underscores (_), and hyphens (-).                                        |
    +--------------------------------+-----------------+--------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | workforces_config              | No              | :ref:`WorkforcesConfig <createdataset__request_workforcesconfig>` object | Manpower assignment of a team labeling task. You can delegate the administrator to assign the manpower or do it by yourself.                                                  |
+   | workforces_config              | No              | :ref:`WorkforcesConfig <createdataset__request_workforcesconfig>` object | Manpower assignment of a team labeling task. You can delegate the team administrator to assign the manpower or do it by yourself.                                             |
    +--------------------------------+-----------------+--------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. _createdataset__request_workforcesconfig:
@@ -409,7 +409,7 @@ Example Requests
         "dataset_type" : 0,
         "data_sources" : [ {
           "data_type" : 0,
-          "data_path" : "/test-obs/classify/input/cat-dog/"
+          "data_path" : "/test-obs/classify/input/cat-rabbit/"
         } ],
         "description" : "",
         "work_path" : "/test-obs/classify/output/",
@@ -421,7 +421,7 @@ Example Requests
             "@modelarts:color" : "#3399ff"
           }
         }, {
-          "name" : "Dog",
+          "name" : "Rabbit",
           "type" : 0,
           "property" : {
             "@modelarts:color" : "#3399ff"
@@ -439,7 +439,7 @@ Example Requests
         "dataset_type" : 1,
         "data_sources" : [ {
           "data_type" : 0,
-          "data_path" : "/test-obs/detect/input/cat-dog/"
+          "data_path" : "/test-obs/detect/input/cat-rabbit/"
         } ],
         "description" : "",
         "work_path" : "/test-obs/detect/output/",
@@ -451,7 +451,7 @@ Example Requests
             "@modelarts:color" : "#3399ff"
           }
         }, {
-          "name" : "Dog",
+          "name" : "Rabbit",
           "type" : 1,
           "property" : {
             "@modelarts:color" : "#3399ff"

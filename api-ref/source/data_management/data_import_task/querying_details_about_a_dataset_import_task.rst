@@ -65,13 +65,11 @@ Response Parameters
    | import_path               | String                                                                     | OBS path or **manifest** path to be imported.                                                                                                                      |
    |                           |                                                                            |                                                                                                                                                                    |
    |                           |                                                                            | -  When importing a manifest file, ensure that the path is accurate to the manifest file.                                                                          |
-   |                           |                                                                            |                                                                                                                                                                    |
    |                           |                                                                            | -  When a path is imported as a directory, the dataset type can only support image classification, object detection, text classification, or sound classification. |
    +---------------------------+----------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | import_type               | Integer                                                                    | Import mode. The options are as follows:                                                                                                                           |
    |                           |                                                                            |                                                                                                                                                                    |
    |                           |                                                                            | -  **0**: Import by directory.                                                                                                                                     |
-   |                           |                                                                            |                                                                                                                                                                    |
    |                           |                                                                            | -  **1**: Import by manifest file.                                                                                                                                 |
    +---------------------------+----------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | imported_sample_count     | Long                                                                       | Number of imported samples.                                                                                                                                        |
@@ -85,15 +83,10 @@ Response Parameters
    | status                    | String                                                                     | Status of an import task. The options are as follows:                                                                                                              |
    |                           |                                                                            |                                                                                                                                                                    |
    |                           |                                                                            | -  **QUEUING**: queuing                                                                                                                                            |
-   |                           |                                                                            |                                                                                                                                                                    |
    |                           |                                                                            | -  **STARTING**: execution started                                                                                                                                 |
-   |                           |                                                                            |                                                                                                                                                                    |
    |                           |                                                                            | -  **RUNNING**: running                                                                                                                                            |
-   |                           |                                                                            |                                                                                                                                                                    |
    |                           |                                                                            | -  **COMPLETED**: completed                                                                                                                                        |
-   |                           |                                                                            |                                                                                                                                                                    |
    |                           |                                                                            | -  **FAILED**: failed                                                                                                                                              |
-   |                           |                                                                            |                                                                                                                                                                    |
    |                           |                                                                            | -  **NOT_EXIST**: not found                                                                                                                                        |
    +---------------------------+----------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | task_id                   | String                                                                     | Task ID.                                                                                                                                                           |
@@ -123,17 +116,11 @@ Response Parameters
    | data_type             | Integer                                                                | Data type. The options are as follows:                                                                                     |
    |                       |                                                                        |                                                                                                                            |
    |                       |                                                                        | -  **0**: OBS bucket (default value)                                                                                       |
-   |                       |                                                                        |                                                                                                                            |
    |                       |                                                                        | -  **1**: GaussDB(DWS)                                                                                                     |
-   |                       |                                                                        |                                                                                                                            |
    |                       |                                                                        | -  **2**: DLI                                                                                                              |
-   |                       |                                                                        |                                                                                                                            |
    |                       |                                                                        | -  **3**: RDS                                                                                                              |
-   |                       |                                                                        |                                                                                                                            |
    |                       |                                                                        | -  **4**: MRS                                                                                                              |
-   |                       |                                                                        |                                                                                                                            |
    |                       |                                                                        | -  **5**: AI Gallery                                                                                                       |
-   |                       |                                                                        |                                                                                                                            |
    |                       |                                                                        | -  **6**: Inference service                                                                                                |
    +-----------------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+
    | schema_maps           | Array of :ref:`SchemaMap <descimporttask__response_schemamap>` objects | Schema mapping information corresponding to the table data.                                                                |
@@ -143,7 +130,6 @@ Response Parameters
    | with_column_header    | Boolean                                                                | Whether the first row in the file is a column name. This field is valid for the table dataset. The options are as follows: |
    |                       |                                                                        |                                                                                                                            |
    |                       |                                                                        | -  **true**: The first row in the file is the column name.                                                                 |
-   |                       |                                                                        |                                                                                                                            |
    |                       |                                                                        | -  **false**: The first row in the file is not the column name.                                                            |
    +-----------------------+------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+
 
@@ -170,7 +156,6 @@ Response Parameters
    | cluster_mode          | String                | Running mode of an MRS cluster. The options are as follows:  |
    |                       |                       |                                                              |
    |                       |                       | -  **0**: normal cluster                                     |
-   |                       |                       |                                                              |
    |                       |                       | -  **1**: security cluster                                   |
    +-----------------------+-----------------------+--------------------------------------------------------------+
    | cluster_name          | String                | Name of an MRS cluster.                                      |
@@ -234,7 +219,7 @@ OK
      "status" : "COMPLETED",
      "task_id" : "gfghHSokody6AJigS5A_RHJ1zOkIoI3Nzwxj8nh",
      "dataset_id" : "gfghHSokody6AJigS5A",
-     "import_path" : "obs://test-obs/daoLu_images/cat-dog/",
+     "import_path" : "obs://test-obs/daoLu_images/cat-rabbit/",
      "import_type" : 0,
      "total_sample_count" : 20,
      "imported_sample_count" : 20,
