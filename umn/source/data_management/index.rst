@@ -14,7 +14,6 @@ Data Management
 -  :ref:`Publishing a Dataset <modelarts_23_0018>`
 -  :ref:`Deleting a Dataset <modelarts_23_0021>`
 -  :ref:`Managing Dataset Versions <modelarts_23_0019>`
--  :ref:`Team Labeling <modelarts_23_0180>`
 
 .. toctree::
    :maxdepth: 1
@@ -29,4 +28,3 @@ Data Management
    publishing_a_dataset
    deleting_a_dataset
    managing_dataset_versions
-   team_labeling/index

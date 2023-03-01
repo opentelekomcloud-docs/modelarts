@@ -15,10 +15,10 @@ Labeling Images
 #. After selecting an image, input a label in the **Label** text box, or select an existing label from the drop-down list. Click **OK**. The selected image is labeled. For example, you can select multiple images containing tulips and add label **tulips** to them. Then select other unlabeled images and label them as **sunflowers** and **roses**. After the labeling is complete, the images are saved on the **Labeled** tab page.
 
    a. You can add multiple labels to an image.
-   b. A label name can contain a maximum of 32 characters, including Chinese characters, letters, digits, hyphens (-), and underscores (_).
+   b. A label name can contain a maximum of 32 characters, including letters, digits, hyphens (-), and underscores (_).
 
 
-   .. figure:: /_static/images/en-us_image_0000001110760930.png
+   .. figure:: /_static/images/en-us_image_0000001404985670.png
       :alt: **Figure 1** Adding a label
 
       **Figure 1** Adding a label
@@ -52,7 +52,7 @@ After labeling data, you can modify the labeled data on the **Labeled** tab page
    -  Modifying a label: In the **File Labels** area, click the editing icon in the **Operation** column, enter the correct label name in the text box, and click the check mark icon to complete the modification.
 
 
-      .. figure:: /_static/images/en-us_image_0000001157080781.png
+      .. figure:: /_static/images/en-us_image_0000001455145505.png
          :alt: **Figure 2** Modifying a label
 
          **Figure 2** Modifying a label
@@ -64,7 +64,7 @@ After labeling data, you can modify the labeled data on the **Labeled** tab page
    On the dataset labeling page, click the **Labeled** tab. The information about all labels is displayed on the right.
 
 
-   .. figure:: /_static/images/en-us_image_0000001157080783.png
+   .. figure:: /_static/images/en-us_image_0000001454985693.png
       :alt: **Figure 3** Information about all labels
 
       **Figure 3** Information about all labels
@@ -72,4 +72,4 @@ After labeling data, you can modify the labeled data on the **Labeled** tab page
    -  Modifying a label: Click the editing icon in the **Operation** column. In the dialog box that is displayed, enter the new label name and click **OK**. After the modification, the images that have been added with the label use the new label name.
    -  Deleting a label: Click the deletion icon in the **Operation** column. In the displayed dialog box, select **Delete label**, **Delete label and images with only the label (Do not delete source files)**, or **Delete label and images with only the label (Delete source files)**, and click **OK**.
 
-.. |image1| image:: /_static/images/en-us_image_0000001110760936.png
+.. |image1| image:: /_static/images/en-us_image_0000001455145509.png

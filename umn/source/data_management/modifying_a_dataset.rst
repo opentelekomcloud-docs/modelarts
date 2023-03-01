@@ -24,7 +24,7 @@ Modifying the Basic Information About a Dataset
 #. Modify basic information about the dataset and then click **OK**. Refer to :ref:`Table 1 <modelarts_23_0020__en-us_topic_0170886811_table151481125214>` for details.
 
 
-   .. figure:: /_static/images/en-us_image_0000001233810770.png
+   .. figure:: /_static/images/en-us_image_0000001404506438.png
       :alt: **Figure 1** Modifying a dataset
 
       **Figure 1** Modifying a dataset

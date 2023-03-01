@@ -33,4 +33,4 @@ Adding an Access Key
 
    After the configuration is complete, you can view the access key configurations of an account or IAM user on the **Settings** page.
 
-.. |image1| image:: /_static/images/en-us_image_0000001156920825.png
+.. |image1| image:: /_static/images/en-us_image_0000001404985806.png

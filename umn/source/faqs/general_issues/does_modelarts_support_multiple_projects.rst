@@ -5,4 +5,4 @@
 Does ModelArts Support Multiple Projects?
 =========================================
 
-The current version supports multiple projects.
+The current version supports multiple projects.Multi-projects refers to IAM projects. ModelArts supports multiple IAM projects, without requiring EPS separately.

@@ -11,7 +11,7 @@ Pay attention to the following when setting training parameters:
 
    .. _modelarts_21_0077__en-us_topic_0198838770_fig1638314610491:
 
-   .. figure:: /_static/images/en-us_image_0000001235985012.png
+   .. figure:: /_static/images/en-us_image_0000001455265985.png
       :alt: **Figure 1** Setting running parameters
 
       **Figure 1** Setting running parameters
@@ -20,7 +20,7 @@ Pay attention to the following when setting training parameters:
 
    .. _modelarts_21_0077__en-us_topic_0198838770_fig392681318596:
 
-   .. figure:: /_static/images/en-us_image_0000001235665800.png
+   .. figure:: /_static/images/en-us_image_0000001404986122.png
       :alt: **Figure 2** Configuring an OBS path
 
       **Figure 2** Configuring an OBS path

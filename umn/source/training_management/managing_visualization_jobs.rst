@@ -41,7 +41,7 @@ Creating a Visualization Job
    -  **Auto Stop**: Enable or disable the auto stop function. The options are **1 hour later**, **2 hours later**, **4 hours later**, **6 hours later**, and **Custom**. If you select **Custom**, you can enter any integer within 1 to 24 hours in the textbox on the right.
 
 
-   .. figure:: /_static/images/en-us_image_0000001110920888.png
+   .. figure:: /_static/images/en-us_image_0000001404506290.png
       :alt: **Figure 1** Creating a visualization job
 
       **Figure 1** Creating a visualization job
@@ -58,7 +58,7 @@ Opening a Visualization Job
 In the visualization job list, click the name of the target visualization job. The **TensorBoard** page is displayed. Only the visualization job in the **Running** status can be opened.
 
 
-.. figure:: /_static/images/en-us_image_0000001110760988.jpg
+.. figure:: /_static/images/en-us_image_0000001455145833.jpg
    :alt: **Figure 2** TensorBoard page
 
    **Figure 2** TensorBoard page

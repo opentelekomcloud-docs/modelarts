@@ -10,7 +10,7 @@ To implement AI in various industries, AI model development must be simplified. 
 ModelArts provides ExeML for service developers who are not experienced in algorithm development to develop algorithms. It automatically generates models based on transfer learning and Neural Architecture Search (NAS), selects parameters for model training, and tunes models for rapid model training and deployment. Based on the labeled data and application scenario provided by developers, ModelArts automatically generates models that meet precision requirements, without the need for coding. The application scenarios include image classification and object detection. Models can be automatically optimized and generated based on the deployment environment and inference speed requirements.
 
 
-.. figure:: /_static/images/en-us_image_0000001250410632.png
+.. figure:: /_static/images/en-us_image_0000001404826166.png
    :alt: **Figure 1** Process of using ExeML
 
    **Figure 1** Process of using ExeML

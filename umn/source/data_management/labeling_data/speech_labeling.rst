@@ -37,7 +37,7 @@ The dataset details page displays the labeled and unlabeled audio files. The **U
 #. After entering the content, click **OK** to complete the labeling. The audio file is automatically moved to the **Labeled** tab page.
 
 
-   .. figure:: /_static/images/en-us_image_0000001157080861.png
+   .. figure:: /_static/images/en-us_image_0000001404985642.png
       :alt: **Figure 1** Labeling an audio file
 
       **Figure 1** Labeling an audio file
@@ -80,4 +80,4 @@ On the **Unlabeled** or **Labeled** tab page, select the audio files to be delet
 
    If you select **Delete source files**, audio files stored in the corresponding OBS directory will be deleted when you delete the selected audio files. Deleting source files may affect other dataset versions or datasets using those files. As a result, the page display, training, or inference is abnormal. Deleted data cannot be recovered. Exercise caution when performing this operation.
 
-.. |image1| image:: /_static/images/en-us_image_0000001110761012.png
+.. |image1| image:: /_static/images/en-us_image_0000001404825682.png

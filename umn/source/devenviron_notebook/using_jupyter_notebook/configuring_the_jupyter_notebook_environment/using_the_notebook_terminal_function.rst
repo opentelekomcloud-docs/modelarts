@@ -25,7 +25,7 @@ You can switch to another AI engine environment in the terminal environment of J
 #. View **README** in the current directory to obtain your required information. For example, to switch to **TensorFlow-1.8**, run the **source /home/ma-user/anaconda3/bin/activate TensorFlow-1.8** command. To exist the environment, run the **source deactivate** command.
 
 
-   .. figure:: /_static/images/en-us_image_0000001110761076.png
+   .. figure:: /_static/images/en-us_image_0000001454866161.png
       :alt: **Figure 1** Output after command execution
 
       **Figure 1** Output after command execution

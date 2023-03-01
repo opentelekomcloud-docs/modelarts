@@ -22,7 +22,7 @@ Image Classification
 
    -  Images with the same label must be stored in the same directory, and the label name is the directory name. If there are multiple levels of directories, the last level is used as the label name.
 
-      In the following example, **Cat** and **Dog** are label names.
+      In the following example, **Cat** and **Rabbit** are label names.
 
       .. code-block::
 
@@ -32,7 +32,7 @@ Image Classification
          │      11.jpg
          │      12.jpg
          │
-         └─Dog
+         └─Rabbit
                  1.jpg
                  2.jpg
                  3.jpg
@@ -68,7 +68,7 @@ Image Classification
       .. code-block::
 
          Cat
-         Dog
+         Rabbit
 
 -  Only images in JPG, JPEG, PNG, and BMP formats are supported. The size of a single image cannot exceed 5 MB, and the total size of all images uploaded at a time cannot exceed 8 MB.
 
@@ -111,7 +111,7 @@ Object Detection
           </size>
           <segmented>0</segmented>
           <object>
-              <name>Dog</name>
+              <name>Rabbit</name>
               <pose>Unspecified</pose>
               <truncated>0</truncated>
               <difficult>0</difficult>
@@ -209,7 +209,7 @@ Example:
    │      11.wav
    │      12.wav
    │
-   └─Dog
+   └─Rabbit
            1.wav
            2.wav
            3.wav

@@ -10,7 +10,7 @@ How Do I Upload Local Files to a Notebook Instance?
    Open a notebook instance and click **Upload** in the upper right corner to upload a local file to the notebook instance.
 
 
-   .. figure:: /_static/images/en-us_image_0000001235505840.png
+   .. figure:: /_static/images/en-us_image_0000001454986109.png
       :alt: **Figure 1** Upload a small file
 
       **Figure 1** Upload a small file
@@ -21,7 +21,7 @@ How Do I Upload Local Files to a Notebook Instance?
 
    To upload files using OBS Browser, refer to `Uploading a File <https://docs.otc.t-systems.com/en-us/usermanual/obs/obs_03_0307.html>`__.
 
-   To use ModelArts SDKs to download files from OBS to a notebook instance, refer to `Downloading a File from OBS <https://docs.otc.t-systems.com/en-us/sdkreference/modelarts/modelarts_04_0220.html>`__.
+   To use ModelArts SDKs to download files from OBS to a notebook instance, refer to `Downloading a File from OBSDownloading a File from OBS <https://docs.otc.t-systems.com/modelarts/sdk-ref/obs_management_recommended/downloading_a_file_from_obs.html>`__.
 
 -  **Folders**
 

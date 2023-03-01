@@ -34,7 +34,7 @@ Exporting Data to a New Dataset
    On the dataset details page, select or filter data to be exported. Click **Export To** and choose **New Dataset** from the drop-down list.
 
 
-   .. figure:: /_static/images/en-us_image_0000001278010765.png
+   .. figure:: /_static/images/en-us_image_0000001404986146.png
       :alt: **Figure 1** Selecting or filtering images to be exported
 
       **Figure 1** Selecting or filtering images to be exported
@@ -50,7 +50,7 @@ Exporting Data to a New Dataset
    **Export Content**: The options are **Export the selected samples** and **Export all samples meeting filtering criteria**.
 
 
-   .. figure:: /_static/images/en-us_image_0000001298006289.png
+   .. figure:: /_static/images/en-us_image_0000001455266013.png
       :alt: **Figure 2** Exporting to a new dataset
 
       **Figure 2** Exporting to a new dataset
@@ -75,7 +75,7 @@ Exporting Data to OBS
    On the dataset details page, select or filter data to be exported. Click **Export To** and choose **OBS** from the drop-down list.
 
 
-   .. figure:: /_static/images/en-us_image_0000001251806154.png
+   .. figure:: /_static/images/en-us_image_0000001454986137.png
       :alt: **Figure 3** Selecting or filtering images to be exported
 
       **Figure 3** Selecting or filtering images to be exported
@@ -87,7 +87,7 @@ Exporting Data to OBS
    **Export Content**: The options are **Export the selected samples** and **Export all samples meeting filtering criteria**.
 
 
-   .. figure:: /_static/images/en-us_image_0000001251646390.png
+   .. figure:: /_static/images/en-us_image_0000001404666318.png
       :alt: **Figure 4** Exporting to OBS
 
       **Figure 4** Exporting to OBS

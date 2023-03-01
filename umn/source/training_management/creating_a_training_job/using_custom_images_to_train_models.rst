@@ -37,7 +37,7 @@ Creating a Training Job
       Specify **Name** and **Description** according to actual requirements.
 
 
-      .. figure:: /_static/images/en-us_image_0000001251817968.png
+      .. figure:: /_static/images/en-us_image_0000001404826186.png
          :alt: **Figure 1** Setting basic information about the training job
 
          **Figure 1** Setting basic information about the training job
@@ -45,7 +45,7 @@ Creating a Training Job
    b. Set job parameters, including the data source, algorithm source, and more. For details, see :ref:`Table 1 <modelarts_23_0239__en-us_topic_0216621184_table1819364517144>`.
 
 
-      .. figure:: /_static/images/en-us_image_0000001251977524.png
+      .. figure:: /_static/images/en-us_image_0000001404666334.png
          :alt: **Figure 2** **Custom** as the algorithm source
 
          **Figure 2** **Custom** as the algorithm source
@@ -110,7 +110,7 @@ Creating a Training Job
    d. Select whether to save the parameters of the training job.
 
 
-      .. figure:: /_static/images/en-us_image_0000001251658528.png
+      .. figure:: /_static/images/en-us_image_0000001455266033.png
          :alt: **Figure 3** Setting training job parameters
 
          **Figure 3** Setting training job parameters

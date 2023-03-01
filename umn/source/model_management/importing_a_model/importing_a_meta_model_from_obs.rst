@@ -84,24 +84,24 @@ Procedure
 
       .. table:: **Table 2** Parameters of basic model information
 
-         +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-         | Parameter   | Description                                                                                                                                                                         |
-         +=============+=====================================================================================================================================================================================+
-         | Name        | Model name. The value can contain 1 to 64 visible characters, including Chinese characters. Only letters, Chinese characters, digits, hyphens (-), and underscores (_) are allowed. |
-         +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-         | Version     | Version of the model to be created. For the first import, the default value is **0.0.1**.                                                                                           |
-         +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-         | Label       | Model label. A maximum of five model labels are supported.                                                                                                                          |
-         +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-         | Description | Brief description of the model                                                                                                                                                      |
-         +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+         +-------------+-----------------------------------------------------------------------------------------------------------------------------------+
+         | Parameter   | Description                                                                                                                       |
+         +=============+===================================================================================================================================+
+         | Name        | Model name. The value can contain 1 to 64 visible characters. Only letters, digits, hyphens (-), and underscores (_) are allowed. |
+         +-------------+-----------------------------------------------------------------------------------------------------------------------------------+
+         | Version     | Version of the model to be created. For the first import, the default value is **0.0.1**.                                         |
+         +-------------+-----------------------------------------------------------------------------------------------------------------------------------+
+         | Label       | Model label. A maximum of five model labels are supported.                                                                        |
+         +-------------+-----------------------------------------------------------------------------------------------------------------------------------+
+         | Description | Brief description of the model                                                                                                    |
+         +-------------+-----------------------------------------------------------------------------------------------------------------------------------+
 
    b. Select the meta model source and set related parameters. **Meta Model Source** has four options based on the scenario. Set **Meta Model Source** to **OBS**. For details about the parameters, see :ref:`Table 3 <modelarts_23_0207__en-us_topic_0207629478_table1631162916535>`.
 
       For the meta model imported from OBS, you need to compile the inference code and configuration file by referring to :ref:`Model Package Specifications <modelarts_23_0091>` and place the inference code and configuration files in the **model** folder storing the meta model. If the selected directory does not contain the corresponding inference code and configuration files, the model cannot be imported.
 
 
-      .. figure:: /_static/images/en-us_image_0000001110761104.png
+      .. figure:: /_static/images/en-us_image_0000001455265533.png
          :alt: **Figure 1** Setting Meta Model Source to OBS
 
          **Figure 1** Setting Meta Model Source to OBS
@@ -132,7 +132,7 @@ Procedure
       -  **Model Description**: To help other model developers better understand and use your models, provide model descriptions. Click **Add Model Description** and then set the document name and URL. A maximum of three model descriptions are supported.
 
 
-      .. figure:: /_static/images/en-us_image_0000001157080951.png
+      .. figure:: /_static/images/en-us_image_0000001454985681.png
          :alt: **Figure 2** Setting the inference specifications and model description
 
          **Figure 2** Setting the inference specifications and model description
@@ -146,5 +146,5 @@ Follow-Up Procedure
 
 -  :ref:`Model Deployment <modelarts_23_0058>`: On the **Models** page, click the triangle next to a model name to view all versions of the model. Locate the row that contains the target version, click **Deploy** in the **Operation** column, and select the deployment type configured when importing the model from the drop-down list. On the **Deploy** page, set parameters by referring to :ref:`Introduction to Model Deployment <modelarts_23_0058>` .
 
-.. |image1| image:: /_static/images/en-us_image_0000001156920973.png
-.. |image2| image:: /_static/images/en-us_image_0000001156920973.png
+.. |image1| image:: /_static/images/en-us_image_0000001404985662.png
+.. |image2| image:: /_static/images/en-us_image_0000001404985662.png

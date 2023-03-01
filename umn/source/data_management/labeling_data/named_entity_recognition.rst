@@ -7,7 +7,7 @@ Named Entity Recognition
 
 Named entity recognition assigns labels to named entities in text, such as time and locations. Before labeling, you need to understand the following:
 
--  A label name can contain a maximum of 32 characters, including Chinese characters, letters, digits, hyphens (-), and underscores (_).
+-  A label name can contain a maximum of 32 characters, including letters, digits, hyphens (-), and underscores (_).
 
 Starting Labeling
 -----------------
@@ -20,8 +20,6 @@ Starting Labeling
 
 #. On the **Dashboard** page of the dataset, click **Label** in the upper right corner. The dataset details page is displayed. By default, all data of the dataset is displayed on the dataset details page.
 
-.. _modelarts_23_0014__en-us_topic_0170889734_section888019266174:
-
 Labeling Content
 ----------------
 
@@ -32,7 +30,7 @@ The dataset details page displays the labeled and unlabeled text files in the da
    You can repeat this operation to select objects and add labels to the objects.
 
 
-   .. figure:: /_static/images/en-us_image_0000001157080991.png
+   .. figure:: /_static/images/en-us_image_0000001404666002.png
       :alt: **Figure 1** Labeling for named entity recognition
 
       **Figure 1** Labeling for named entity recognition
@@ -45,7 +43,7 @@ Adding Labels
 -  Adding labels on the **Unlabeled** tab page: Click the plus sign (+) next to **Label Set**. On the **Add Label** page that is displayed, add a label name, select a label color, and click **OK**.
 
 
-   .. figure:: /_static/images/en-us_image_0000001110921046.png
+   .. figure:: /_static/images/en-us_image_0000001404666010.png
       :alt: **Figure 2** Adding a named entity label (1)
 
       **Figure 2** Adding a named entity label (1)
@@ -53,13 +51,13 @@ Adding Labels
 -  Adding labels on the **Labeled** tab page: Click the plus sign (+) next to **All Labels**. On the **Add Label** page that is displayed, add a label name, select a label color, and click **OK**.
 
 
-   .. figure:: /_static/images/en-us_image_0000001110921048.png
+   .. figure:: /_static/images/en-us_image_0000001454866005.png
       :alt: **Figure 3** Adding a named entity label (2)
 
       **Figure 3** Adding a named entity label (2)
 
 
-   .. figure:: /_static/images/en-us_image_0000001110921044.png
+   .. figure:: /_static/images/en-us_image_0000001454985825.png
       :alt: **Figure 4** Adding a named entity label
 
       **Figure 4** Adding a named entity label
@@ -101,7 +99,7 @@ In addition to automatically synchronizing data from **Input Dataset Path**, you
    Select one or more files to be uploaded in the local environment. Only **.txt** and **.csv** files are supported. The total size of files uploaded at a time cannot exceed 8 MB.
 
 
-   .. figure:: /_static/images/en-us_image_0000001157080995.png
+   .. figure:: /_static/images/en-us_image_0000001455145641.png
       :alt: **Figure 5** Adding files
 
       **Figure 5** Adding files
@@ -118,4 +116,4 @@ You can quickly delete the files you want to discard.
 
 The background of the selected text is blue.
 
-.. |image1| image:: /_static/images/en-us_image_0000001110761148.png
+.. |image1| image:: /_static/images/en-us_image_0000001455265685.png

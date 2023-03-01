@@ -13,6 +13,7 @@ Labeling Data
 -  :ref:`Sound Classification <modelarts_23_0015>`
 -  :ref:`Speech Labeling <modelarts_23_0016>`
 -  :ref:`Speech Paragraph Labeling <modelarts_23_0017>`
+-  :ref:`Video Labeling <modelarts_23_0282>`
 
 .. toctree::
    :maxdepth: 1
@@ -26,3 +27,4 @@ Labeling Data
    sound_classification
    speech_labeling
    speech_paragraph_labeling
+   video_labeling

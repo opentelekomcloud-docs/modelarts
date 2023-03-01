@@ -19,7 +19,7 @@ Obtaining the Data Source of an ExeML Project
       For a predictive analytics project, the data source is an OBS path, not a dataset. For other types of ExeML projects, the data source is a dataset.
 
 
-   .. figure:: /_static/images/en-us_image_0000001156920911.png
+   .. figure:: /_static/images/en-us_image_0000001404506270.png
       :alt: **Figure 1** Viewing the data storage path
 
       **Figure 1** Viewing the data storage path

@@ -25,7 +25,7 @@ The training dataset must be stored in the OBS bucket. The following shows the O
 
 -  Images and label files must have the same name. The **.txt** files are label files for image classification. The images can be in JPG, JPEG, PNG, or BMP format.
 
--  The first row of label files for image classification indicates the category name of images, which can be Chinese characters, English letters, or digits. The following provides an example of file content:
+-  The first row of label files for image classification indicates the category name of images, which can be English letters, or digits. The following provides an example of file content:
 
    .. code-block::
 
@@ -43,7 +43,7 @@ The training dataset must be stored in the OBS bucket. The following shows the O
           |--cat
             |--a.jpg
             |--a.txt
-          |--dog
+          |--rabbit
             |--b.jpg
             |--b.txt
             ...
@@ -70,7 +70,7 @@ The training dataset must be stored in the OBS bucket. The following shows the O
 
 -  You can directly use an existing object detection dataset with published versions in **Data Management** of ModelArts.
 
--  The following provides a label file for object detection. The key parameters are **size** (image size), **object** (object information), and **name** (label name, which can be Chinese characters, English letters, or digits). Note that the values of **xmin**, **ymin**, **xmax**, and **ymax** in the **bndbox** field cannot exceed the value of **size**. That is, the value of **min** cannot be less than 0, and the value of **max** cannot be greater than the value of **width** or **height**.
+-  The following provides a label file for object detection. The key parameters are **size** (image size), **object** (object information), and **name** (label name, which can be English letters, or digits). Note that the values of **xmin**, **ymin**, **xmax**, and **ymax** in the **bndbox** field cannot exceed the value of **size**. That is, the value of **min** cannot be less than 0, and the value of **max** cannot be greater than the value of **width** or **height**.
 
    .. code-block::
 

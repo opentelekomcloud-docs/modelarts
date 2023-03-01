@@ -27,22 +27,22 @@ Procedure
 
       .. table:: **Table 1** Parameters of basic model information
 
-         +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-         | Parameter   | Description                                                                                                                                                                         |
-         +=============+=====================================================================================================================================================================================+
-         | Name        | Model name. The value can contain 1 to 64 visible characters, including Chinese characters. Only letters, Chinese characters, digits, hyphens (-), and underscores (_) are allowed. |
-         +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-         | Version     | Version of the model to be created. For the first import, the default value is **0.0.1**.                                                                                           |
-         +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-         | Label       | Model label. A maximum of five model labels are supported.                                                                                                                          |
-         +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-         | Description | Brief description of the model                                                                                                                                                      |
-         +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+         +-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | Parameter   | Description                                                                                                                                             |
+         +=============+=========================================================================================================================================================+
+         | Name        | Model name. The value can contain 1 to 64 visible characters, including characters. Only letters, digits, hyphens (-), and underscores (_) are allowed. |
+         +-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | Version     | Version of the model to be created. For the first import, the default value is **0.0.1**.                                                               |
+         +-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | Label       | Model label. A maximum of five model labels are supported.                                                                                              |
+         +-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | Description | Brief description of the model                                                                                                                          |
+         +-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
    b. Select the meta model source and set related parameters. If **Meta Model Source** is set to **Training job**, set other parameters by referring to :ref:`Table 2 <modelarts_23_0054__en-us_topic_0207629475_table104931647171713>`.
 
 
-      .. figure:: /_static/images/en-us_image_0000001110920988.png
+      .. figure:: /_static/images/en-us_image_0000001454866077.png
          :alt: **Figure 1** Setting Meta Model Source to Training job
 
          **Figure 1** Setting Meta Model Source to Training job
@@ -71,7 +71,7 @@ Procedure
       -  **Model Description**: To help other model developers better understand and use your models, provide model descriptions. Click **Add Model Description** and then set the document name and URL. A maximum of three model descriptions are supported.
 
 
-      .. figure:: /_static/images/en-us_image_0000001156920957.png
+      .. figure:: /_static/images/en-us_image_0000001454985893.png
          :alt: **Figure 2** Setting the inference specifications and model description
 
          **Figure 2** Setting the inference specifications and model description
@@ -85,5 +85,5 @@ Follow-Up Procedure
 
 -  :ref:`Model Deployment <modelarts_23_0058>`: On the **Models** page, click the triangle next to a model name to view all versions of the model. Locate the row that contains the target version, click **Deploy** in the **Operation** column, and select the deployment type configured when importing the model from the drop-down list. On the **Deploy** page, set parameters by referring to :ref:`Introduction to Model Deployment <modelarts_23_0058>`.
 
-.. |image1| image:: /_static/images/en-us_image_0000001110761092.png
-.. |image2| image:: /_static/images/en-us_image_0000001110761092.png
+.. |image1| image:: /_static/images/en-us_image_0000001455145705.png
+.. |image2| image:: /_static/images/en-us_image_0000001455145705.png
