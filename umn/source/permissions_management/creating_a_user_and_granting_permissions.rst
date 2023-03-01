@@ -15,7 +15,7 @@ A fine-grained policy consists of the policy version (the **Version** field) and
    -  **1.0**: RBAC policies, which are preset in the system and used to grant permissions of each service as a whole. After such a policy is granted to a user, the user has all permissions of the corresponding service.
    -  **1.1**: Fine-grained policies. A fine-grained policy consists of API-based permissions for operations on specific resource types. Fine-grained policies, as the name suggests, allow for more fine-grained control than RBAC policies. Users granted permissions of such a policy can only perform specific operations on the corresponding service. Fine-grained policies are classified into default and custom policies.
 
-      -  Default policies: Preset common permission sets to control read and administrator permissions of different services.
+      -  Default policies: Preset common permission sets to control read and system administrator permissions of different services.
       -  Custom policies: Permission sets created and managed by users as an extension and supplement to system-defined policies. For example, a custom policy can be created to allow users only to modify ECS specifications.
 
 -  **Statement**: Detailed information about a policy, containing the **Effect** and **Action** elements.
@@ -77,7 +77,7 @@ Authentication Logic
 IAM authenticates users according to the permissions that the users have been granted. The authentication logic is as follows:
 
 
-.. figure:: /_static/images/en-us_image_0000001110920802.png
+.. figure:: /_static/images/en-us_image_0000001404506122.png
    :alt: **Figure 1** Authentication logic
 
    **Figure 1** Authentication logic

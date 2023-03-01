@@ -16,7 +16,7 @@ After code compiling is finished, you can save the entered code as a **.py** fil
    The generated **.py** file can be used to start ModelArts training jobs.
 
 
-   .. figure:: /_static/images/en-us_image_0000001156920943.png
+   .. figure:: /_static/images/en-us_image_0000001404506198.png
       :alt: **Figure 1** Convert to Python File
 
       **Figure 1** Convert to Python File
@@ -24,7 +24,7 @@ After code compiling is finished, you can save the entered code as a **.py** fil
 #. In the dialog box that is displayed, enter the file name as required, and select or deselect **Force overwrite if file already exists**. By default, the item is not selected, indicating that the file will not be overwritten when a file with the same name exists in the directory. Click **Convert**.
 
 
-   .. figure:: /_static/images/en-us_image_0000001110761072.png
+   .. figure:: /_static/images/en-us_image_0000001404825962.png
       :alt: **Figure 2** Setting and saving the configuration
 
       **Figure 2** Setting and saving the configuration

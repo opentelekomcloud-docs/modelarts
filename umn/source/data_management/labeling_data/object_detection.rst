@@ -46,8 +46,6 @@ The following filter criteria are supported. You can set one or more filter crit
 -  **File Name** or **Path**: Filter files by file name or file storage path.
 -  **Labeled By**: Select the name of the user who performs the labeling operation.
 
-.. _modelarts_23_0012__en-us_topic_0170889732_section888019266174:
-
 Labeling Images (Manually)
 --------------------------
 
@@ -60,6 +58,8 @@ The dataset details page provides the **Labeled** and **Unlabeled** tabs. The **
    .. note::
 
       On the left of the page, multiple tools are provided for you to label images. However, you can use only one tool at a time.
+
+   .. _modelarts_23_0012__en-us_topic_0170889732_table165201739119:
 
    .. table:: **Table 1** Supported bounding box
 
@@ -84,7 +84,7 @@ The dataset details page provides the **Labeled** and **Unlabeled** tabs. The **
    Label all objects in an image. Multiple labels can be added to an image. After labeling an image, you can click the image list below the image to quickly select other images that are not labeled and label them on the labeling page.
 
 
-   .. figure:: /_static/images/en-us_image_0000001211469369.png
+   .. figure:: /_static/images/en-us_image_0000001455145857.png
       :alt: **Figure 1** Adding an object detection label
 
       **Figure 1** Adding an object detection label
@@ -140,7 +140,7 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
       After deleting the label, click **Back to Data Labeling Preview** in the upper left corner of the page to exit the labeling page. In the dialog box that is displayed, save the modification. After all labels of an image are deleted, the image is displayed on the **Unlabeled** tab page.
 
 
-      .. figure:: /_static/images/en-us_image_0000001211469623.png
+      .. figure:: /_static/images/en-us_image_0000001404986038.png
          :alt: **Figure 2** Editing an object detection label
 
          **Figure 2** Editing an object detection label
@@ -153,7 +153,7 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
    -  Deleting a label: Click the deletion icon in the **Operation** column to delete a label.
 
 
-   .. figure:: /_static/images/en-us_image_0000001166069824.png
+   .. figure:: /_static/images/en-us_image_0000001455145853.png
       :alt: **Figure 3** All labels for object detection
 
       **Figure 3** All labels for object detection
@@ -172,7 +172,7 @@ In addition to the data automatically synchronized from **Input Dataset Path**, 
    After the images are selected, their thumbnails and total size are displayed on the **Add** page.
 
 
-   .. figure:: /_static/images/en-us_image_0000001156920963.png
+   .. figure:: /_static/images/en-us_image_0000001404825854.png
       :alt: **Figure 4** Adding images
 
       **Figure 4** Adding images
@@ -194,33 +194,33 @@ If a tick is displayed in the upper left corner of an image, the image is select
 
    If you select **Delete source files**, images stored in the OBS directory will be deleted accordingly. This operation may affect other dataset versions or datasets using those files, for example, leading to an error in page display, training, or inference. Deleted data cannot be recovered. Exercise caution when performing this operation.
 
-.. |image1| image:: /_static/images/en-us_image_0000001156920971.png
-.. |image2| image:: /_static/images/en-us_image_0000001156920969.png
-.. |image3| image:: /_static/images/en-us_image_0000001157080923.png
-.. |image4| image:: /_static/images/en-us_image_0000001110761098.png
-.. |image5| image:: /_static/images/en-us_image_0000001110920992.png
-.. |image6| image:: /_static/images/en-us_image_0000001110920994.png
-.. |image7| image:: /_static/images/en-us_image_0000001156920971.png
-.. |image8| image:: /_static/images/en-us_image_0000001156920969.png
-.. |image9| image:: /_static/images/en-us_image_0000001157080923.png
-.. |image10| image:: /_static/images/en-us_image_0000001110761098.png
-.. |image11| image:: /_static/images/en-us_image_0000001110920992.png
-.. |image12| image:: /_static/images/en-us_image_0000001110920994.png
-.. |image13| image:: /_static/images/en-us_image_0000001110920996.png
-.. |image14| image:: /_static/images/en-us_image_0000001110920984.png
-.. |image15| image:: /_static/images/en-us_image_0000001110761082.png
-.. |image16| image:: /_static/images/en-us_image_0000001110920982.png
-.. |image17| image:: /_static/images/en-us_image_0000001156920959.png
-.. |image18| image:: /_static/images/en-us_image_0000001110921000.png
-.. |image19| image:: /_static/images/en-us_image_0000001110761080.png
-.. |image20| image:: /_static/images/en-us_image_0000001110921004.png
-.. |image21| image:: /_static/images/en-us_image_0000001110920978.png
-.. |image22| image:: /_static/images/en-us_image_0000001110920996.png
-.. |image23| image:: /_static/images/en-us_image_0000001110920984.png
-.. |image24| image:: /_static/images/en-us_image_0000001110761082.png
-.. |image25| image:: /_static/images/en-us_image_0000001110920982.png
-.. |image26| image:: /_static/images/en-us_image_0000001156920959.png
-.. |image27| image:: /_static/images/en-us_image_0000001110921000.png
-.. |image28| image:: /_static/images/en-us_image_0000001110761080.png
-.. |image29| image:: /_static/images/en-us_image_0000001110921004.png
-.. |image30| image:: /_static/images/en-us_image_0000001110920978.png
+.. |image1| image:: /_static/images/en-us_image_0000001455265893.png
+.. |image2| image:: /_static/images/en-us_image_0000001454866225.png
+.. |image3| image:: /_static/images/en-us_image_0000001404666218.png
+.. |image4| image:: /_static/images/en-us_image_0000001404986042.png
+.. |image5| image:: /_static/images/en-us_image_0000001455145849.png
+.. |image6| image:: /_static/images/en-us_image_0000001404826070.png
+.. |image7| image:: /_static/images/en-us_image_0000001455265893.png
+.. |image8| image:: /_static/images/en-us_image_0000001454866225.png
+.. |image9| image:: /_static/images/en-us_image_0000001404666218.png
+.. |image10| image:: /_static/images/en-us_image_0000001404986042.png
+.. |image11| image:: /_static/images/en-us_image_0000001455145849.png
+.. |image12| image:: /_static/images/en-us_image_0000001404826070.png
+.. |image13| image:: /_static/images/en-us_image_0000001454986037.png
+.. |image14| image:: /_static/images/en-us_image_0000001455265897.png
+.. |image15| image:: /_static/images/en-us_image_0000001404826066.png
+.. |image16| image:: /_static/images/en-us_image_0000001454866217.png
+.. |image17| image:: /_static/images/en-us_image_0000001404826074.png
+.. |image18| image:: /_static/images/en-us_image_0000001454986029.png
+.. |image19| image:: /_static/images/en-us_image_0000001404506302.png
+.. |image20| image:: /_static/images/en-us_image_0000001454866221.png
+.. |image21| image:: /_static/images/en-us_image_0000001455265901.png
+.. |image22| image:: /_static/images/en-us_image_0000001454986037.png
+.. |image23| image:: /_static/images/en-us_image_0000001455265897.png
+.. |image24| image:: /_static/images/en-us_image_0000001404826066.png
+.. |image25| image:: /_static/images/en-us_image_0000001454866217.png
+.. |image26| image:: /_static/images/en-us_image_0000001404826074.png
+.. |image27| image:: /_static/images/en-us_image_0000001454986029.png
+.. |image28| image:: /_static/images/en-us_image_0000001404506302.png
+.. |image29| image:: /_static/images/en-us_image_0000001454866221.png
+.. |image30| image:: /_static/images/en-us_image_0000001455265901.png

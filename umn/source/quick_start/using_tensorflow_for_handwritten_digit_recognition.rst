@@ -96,19 +96,19 @@ After data is prepared, use TensorFlow to compile the training script code. Mode
       +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-   .. figure:: /_static/images/en-us_image_0000001278010757.png
+   .. figure:: /_static/images/en-us_image_0000001455145981.png
       :alt: **Figure 1** Basic information for creating a training job
 
       **Figure 1** Basic information for creating a training job
 
 
-   .. figure:: /_static/images/en-us_image_0000001277931129.png
+   .. figure:: /_static/images/en-us_image_0000001454986161.png
       :alt: **Figure 2** Parameters for creating a training job
 
       **Figure 2** Parameters for creating a training job
 
 
-   .. figure:: /_static/images/en-us_image_0000001233650798.png
+   .. figure:: /_static/images/en-us_image_0000001404506446.png
       :alt: **Figure 3** Resource specifications selected for a training job
 
       **Figure 3** Resource specifications selected for a training job
@@ -167,7 +167,7 @@ After model training is complete, you can import the model to ModelArts and depl
 
    .. _modelarts_21_0038__fig1391183516364:
 
-   .. figure:: /_static/images/en-us_image_0000001233970646.png
+   .. figure:: /_static/images/en-us_image_0000001454866349.png
       :alt: **Figure 4** Importing a model
 
       **Figure 4** Importing a model
@@ -182,7 +182,7 @@ Deploying a Service
 #. Click the down arrow next to a model name to unfold all versions of the model. Locate the target version, and choose **Deploy** > **Real-Time Services** in the **Operation** column to deploy the model as a real-time service.
 
 
-   .. figure:: /_static/images/en-us_image_0000001278010761.png
+   .. figure:: /_static/images/en-us_image_0000001455266041.png
       :alt: **Figure 5** Model list
 
       **Figure 5** Model list
@@ -191,7 +191,7 @@ Deploying a Service
 
    .. _modelarts_21_0038__fig3534111012408:
 
-   .. figure:: /_static/images/en-us_image_0000001277931133.png
+   .. figure:: /_static/images/en-us_image_0000001404986174.png
       :alt: **Figure 6** Deploying a model
 
       **Figure 6** Deploying a model
@@ -215,7 +215,7 @@ Performing Prediction
       -  You are advised not to use the images provided by the dataset. You can use the drawing tool provided by the Windows operating system to draw an image for prediction.
 
 
-   .. figure:: /_static/images/en-us_image_0000001233650802.png
+   .. figure:: /_static/images/en-us_image_0000001404506442.png
       :alt: **Figure 7** Prediction results
 
       **Figure 7** Prediction results

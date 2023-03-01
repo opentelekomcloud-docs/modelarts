@@ -56,7 +56,7 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
       After the label is deleted, click the project name in the upper left corner of the page to exit the labeling page. The image will be returned to the **Unlabeled** tab page.
 
 
-      .. figure:: /_static/images/en-us_image_0000001211311199.png
+      .. figure:: /_static/images/en-us_image_0000001404985698.png
          :alt: **Figure 1** Editing an object detection label
 
          **Figure 1** Editing an object detection label
@@ -66,7 +66,7 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
    On the dataset details page, click the **Labeled** tab. The information about all labels is displayed on the right.
 
 
-   .. figure:: /_static/images/en-us_image_0000001211308579.png
+   .. figure:: /_static/images/en-us_image_0000001404665898.png
       :alt: **Figure 2** All labels for object detection
 
       **Figure 2** All labels for object detection

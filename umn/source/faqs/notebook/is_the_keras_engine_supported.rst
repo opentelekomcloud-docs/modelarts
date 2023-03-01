@@ -21,7 +21,7 @@ How Do I View Keras Versions?
    The following figure shows the Keras versions when **Python3** and **TensorFlow-1.8** are selected during notebook instance creation.
 
 
-   .. figure:: /_static/images/en-us_image_0000001279905793.png
+   .. figure:: /_static/images/en-us_image_0000001455145925.png
       :alt: **Figure 1** Viewing Keras versions
 
       **Figure 1** Viewing Keras versions

@@ -33,4 +33,4 @@ After a model is successfully imported using a custom image, that is, the model 
 
 You can deploy models as real-time or batch services based on the business logic of your custom image. The procedure for deploying a model imported using other methods is the same as that for deploying a model imported using a custom image. For details, see :ref:`Introduction to Model Deployment <modelarts_23_0058>`.
 
-.. |image1| image:: /_static/images/en-us_image_0000001156920767.png
+.. |image1| image:: /_static/images/en-us_image_0000001454865853.png

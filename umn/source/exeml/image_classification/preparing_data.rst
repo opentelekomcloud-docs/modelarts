@@ -20,7 +20,7 @@ Perform the following operations to import data to the dataset for model trainin
 Requirements on Datasets
 ------------------------
 
--  The name of files in a dataset cannot contain Chinese characters, plus signs (+), spaces, or tabs.
+-  The name of files in a dataset cannot contain plus signs (+), spaces, or tabs.
 -  Ensure that no damaged image exists. The supported image formats include JPG, JPEG, BMP, and PNG.
 -  Do not store data of different projects in the same dataset.
 -  Prepare sufficient data and balance each class of data. To achieve better results, prepare at least 100 images of each class in a training set for image classification.
@@ -50,7 +50,7 @@ Requirements for Files Uploaded to OBS
 
    -  Images in JPG, JPEG, PNG, and BMP formats are supported. When uploading images on the ModelArts management console, ensure that the size of an image does not exceed 5 MB and the total size of images to be uploaded in one attempt does not exceed 8 MB. If the data volume is large, use OBS Browser+ to upload images.
 
-   -  A label name can contain a maximum of 32 characters, including Chinese characters, letters, digits, hyphens (-), and underscores (_).
+   -  A label name can contain a maximum of 32 characters, including letters, digits, hyphens (-), and underscores (_).
 
    -  Image classification label file (**.txt**) rule:
 
@@ -59,5 +59,5 @@ Requirements for Files Uploaded to OBS
       .. code-block::
 
          cat
-         dog
+         rabbit
          ...

@@ -27,7 +27,7 @@ Creating a Notebook Instance
    a. Enter the basic information about the notebook instance, including the name, description, and whether to automatically stop the notebook instance. For details about the parameters, see :ref:`Table 1 <modelarts_23_0034__en-us_topic_0162690358_table1669535791517>`.
 
 
-      .. figure:: /_static/images/en-us_image_0000001156920885.png
+      .. figure:: /_static/images/en-us_image_0000001404666234.png
          :alt: **Figure 1** Basic information about a notebook instance
 
          **Figure 1** Basic information about a notebook instance

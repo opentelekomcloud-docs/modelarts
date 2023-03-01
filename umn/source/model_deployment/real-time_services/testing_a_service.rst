@@ -21,7 +21,7 @@ Input Parameters
 For the service that you have deployed, you can learn about its input parameters of the service, that is, the input request type mentioned above, on the **Usage Guides** tab page of the service details page.
 
 
-.. figure:: /_static/images/en-us_image_0000001234603134.png
+.. figure:: /_static/images/en-us_image_0000001454866293.png
    :alt: **Figure 1** Viewing the Usage Guides tab page
 
    **Figure 1** Viewing the Usage Guides tab page
@@ -31,7 +31,7 @@ The input parameters displayed on the **Usage Guides** tab page depend on the mo
 -  If you use a custom model with the inference code and configuration file compiled by yourself (:ref:`Specifications for Compiling the Model Configuration File <modelarts_23_0092>`), the **Usage Guides** tab page only visualizes your data. The following figure shows the mapping between the input parameters displayed on the **Usage Guides** tab page and the configuration file.
 
 
-   .. figure:: /_static/images/en-us_image_0000001157080793.png
+   .. figure:: /_static/images/en-us_image_0000001404826026.png
       :alt: **Figure 2** Mapping between the configuration file and Usage Guides
 
       **Figure 2** Mapping between the configuration file and Usage Guides
@@ -48,7 +48,7 @@ JSON Text Prediction
 #. On the **Real-Time Services** page, click the name of the target service. The service details page is displayed. On the **Prediction** tab page, enter the prediction code and click **Predict** to perform prediction.
 
 
-   .. figure:: /_static/images/en-us_image_0000001157080799.png
+   .. figure:: /_static/images/en-us_image_0000001454985993.png
       :alt: **Figure 3** Prediction code
 
       **Figure 3** Prediction code
@@ -63,7 +63,7 @@ File Prediction (Images and Audios)
 #. On the **Real-Time Services** page, click the name of the target service. The service details page is displayed. On the **Prediction** tab page, click **Upload** and select a test file. After the file is uploaded successfully, click **Predict** to perform a prediction test.
 
 
-   .. figure:: /_static/images/en-us_image_0000001165916474.png
+   .. figure:: /_static/images/en-us_image_0000001454866177.png
       :alt: **Figure 4** Image prediction
 
       **Figure 4** Image prediction

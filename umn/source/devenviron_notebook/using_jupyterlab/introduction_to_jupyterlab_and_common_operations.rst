@@ -40,7 +40,7 @@ The AI framework supported by each notebook instance varies according to the wor
 After the file is created, the console page is displayed.
 
 
-.. figure:: /_static/images/en-us_image_0000001110761020.png
+.. figure:: /_static/images/en-us_image_0000001454865829.png
    :alt: **Figure 1** Creating a notebook file (console)
 
    **Figure 1** Creating a notebook file (console)
@@ -55,7 +55,7 @@ On the JupyterLab page, you can click **Upload File** in the upper left corner a
 The size of the file to be uploaded using this method is limited. If the file size exceeds the limit, use other methods to upload the file. For details, see :ref:`Uploading Data to JupyterLab <modelarts_23_0332>`.
 
 
-.. figure:: /_static/images/en-us_image_0000001110920918.png
+.. figure:: /_static/images/en-us_image_0000001404505938.png
    :alt: **Figure 2** Uploading a file
 
    **Figure 2** Uploading a file
@@ -68,7 +68,7 @@ JupyterLab allows you to open multiple notebook instances or files (such as HTML
 Using JupyterLab, you can customize the display of multiple files. In the file display area on the right, you can drag a file to adjust its position. Multiple files can be concurrently displayed.
 
 
-.. figure:: /_static/images/en-us_image_0000001157080869.png
+.. figure:: /_static/images/en-us_image_0000001454985673.png
    :alt: **Figure 3** Customized display of multiple files
 
    **Figure 3** Customized display of multiple files
@@ -78,7 +78,7 @@ When writing code in a notebook instance, you can create multiple views of a fil
 To open multiple views, open the file and choose **File** > **New View for Notebook**.
 
 
-.. figure:: /_static/images/en-us_image_0000001110920916.png
+.. figure:: /_static/images/en-us_image_0000001454985669.png
    :alt: **Figure 4** Multiple views of a file
 
    **Figure 4** Multiple views of a file
@@ -91,7 +91,7 @@ Files created in JupyterLab can be directly downloaded to a local computer. The 
 In the JupyterLab file list, right-click the file to be downloaded and choose **Download** from the shortcut menu. The file is downloaded to the directory set for your browser.
 
 
-.. figure:: /_static/images/en-us_image_0000001157080879.png
+.. figure:: /_static/images/en-us_image_0000001404505942.png
    :alt: **Figure 5** Downloading a file
 
    **Figure 5** Downloading a file
@@ -100,7 +100,7 @@ Common Icons and Plug-ins of JupyterLab
 ---------------------------------------
 
 
-.. figure:: /_static/images/en-us_image_0000001110761018.png
+.. figure:: /_static/images/en-us_image_0000001455145485.png
    :alt: **Figure 6** Common icons and plug-ins of JupyterLab
 
    **Figure 6** Common icons and plug-ins of JupyterLab
@@ -137,23 +137,23 @@ Common Icons and Plug-ins of JupyterLab
    | |image20| | Document organization.                                                                                |
    +-----------+-------------------------------------------------------------------------------------------------------+
 
-.. |image1| image:: /_static/images/en-us_image_0000001110920920.png
-.. |image2| image:: /_static/images/en-us_image_0000001157080875.png
-.. |image3| image:: /_static/images/en-us_image_0000001156920903.png
-.. |image4| image:: /_static/images/en-us_image_0000001156920893.png
-.. |image5| image:: /_static/images/en-us_image_0000001110920920.png
-.. |image6| image:: /_static/images/en-us_image_0000001157080875.png
-.. |image7| image:: /_static/images/en-us_image_0000001156920903.png
-.. |image8| image:: /_static/images/en-us_image_0000001156920893.png
-.. |image9| image:: /_static/images/en-us_image_0000001110920934.png
-.. |image10| image:: /_static/images/en-us_image_0000001110761016.png
-.. |image11| image:: /_static/images/en-us_image_0000001157080873.png
-.. |image12| image:: /_static/images/en-us_image_0000001156920899.png
-.. |image13| image:: /_static/images/en-us_image_0000001156920901.png
-.. |image14| image:: /_static/images/en-us_image_0000001156920887.png
-.. |image15| image:: /_static/images/en-us_image_0000001110920934.png
-.. |image16| image:: /_static/images/en-us_image_0000001110761016.png
-.. |image17| image:: /_static/images/en-us_image_0000001157080873.png
-.. |image18| image:: /_static/images/en-us_image_0000001156920899.png
-.. |image19| image:: /_static/images/en-us_image_0000001156920901.png
-.. |image20| image:: /_static/images/en-us_image_0000001156920887.png
+.. |image1| image:: /_static/images/en-us_image_0000001455145473.png
+.. |image2| image:: /_static/images/en-us_image_0000001404505934.png
+.. |image3| image:: /_static/images/en-us_image_0000001404505930.png
+.. |image4| image:: /_static/images/en-us_image_0000001454865833.png
+.. |image5| image:: /_static/images/en-us_image_0000001455145473.png
+.. |image6| image:: /_static/images/en-us_image_0000001404505934.png
+.. |image7| image:: /_static/images/en-us_image_0000001404505930.png
+.. |image8| image:: /_static/images/en-us_image_0000001454865833.png
+.. |image9| image:: /_static/images/en-us_image_0000001455265517.png
+.. |image10| image:: /_static/images/en-us_image_0000001404665846.png
+.. |image11| image:: /_static/images/en-us_image_0000001454985661.png
+.. |image12| image:: /_static/images/en-us_image_0000001404665850.png
+.. |image13| image:: /_static/images/en-us_image_0000001404665838.png
+.. |image14| image:: /_static/images/en-us_image_0000001404985650.png
+.. |image15| image:: /_static/images/en-us_image_0000001455265517.png
+.. |image16| image:: /_static/images/en-us_image_0000001404665846.png
+.. |image17| image:: /_static/images/en-us_image_0000001454985661.png
+.. |image18| image:: /_static/images/en-us_image_0000001404665850.png
+.. |image19| image:: /_static/images/en-us_image_0000001404665838.png
+.. |image20| image:: /_static/images/en-us_image_0000001404985650.png

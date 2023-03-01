@@ -5,7 +5,7 @@
 Introduction to Notebook
 ========================
 
-ModelArts integrates the open-source Jupyter Notebook to provide you with online interactive development and debugging environments. You can use the Notebook on the ModelArts management console to compile and debug code and train models based on the code, without concerning installation and configurations.
+ModelArts integrates the open-source Jupyter Notebook and JupyterLab to provide you with online interactive development and debugging environments. You can use the Notebook on the ModelArts management console to compile and debug code and train models based on the code, without concerning installation and configurations.
 
 .. _modelarts_23_0033__en-us_topic_0162690357_section191109611479:
 
@@ -48,12 +48,6 @@ Each development environment supports multiple AI engines that run independently
    |                                          | TensorFlow-1.8                 | CPU/GPU        |
    +------------------------------------------+--------------------------------+----------------+
    |                                          | XGBoost-Sklearn                | CPU            |
-   +------------------------------------------+--------------------------------+----------------+
-   | Multi-Engine 2.0 (Python3)               | Pytorch-1.4.0                  | GPU            |
-   +------------------------------------------+--------------------------------+----------------+
-   |                                          | R-3.6.1                        | CPU/GPU        |
-   +------------------------------------------+--------------------------------+----------------+
-   |                                          | TensorFlow-2.1.0               | CPU/GPU        |
    +------------------------------------------+--------------------------------+----------------+
 
 Constraints

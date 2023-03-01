@@ -7,7 +7,7 @@ Using ModelArts SDKs
 
 In notebook instances, you can use ModelArts SDKs to manage OBS, training jobs, models, and real-time services.
 
-For details about how to use ModelArts SDKs, see `ModelArts SDK Reference <https://docs.otc.t-systems.com/en-us/sdkreference/modelarts/modelarts_04_0002.html>`__.
+For details about how to use ModelArts SDKs, see `ModelArts SDK Reference <https://docs.otc.t-systems.com/modelarts/sdk-ref/sdk_overview.html>`__.
 
 Notebooks carry the authentication (AK/SK) and region information about login users. Therefore, SDK session authentication can be completed without entering parameters.
 

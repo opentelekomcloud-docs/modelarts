@@ -13,7 +13,7 @@ The manifest file defines the mapping between labeling objects and content. The 
 
 The manifest file that contains information about the original file and labeling can be used in labeling, training, and inference scenarios. The manifest file that contains only information about the original file can be used in inference scenarios or used to generate an unlabeled dataset. The manifest file must meet the following requirements:
 
--  The manifest file uses the UTF-8 encoding format. The **source** value of text classification can contain Chinese characters. However, Chinese characters are not recommended for other parameters.
+-  The manifest file uses the UTF-8 encoding format.
 
 -  The manifest file uses the JSON Lines format (**jsonlines.org**). A line contains one JSON object.
 
@@ -146,7 +146,7 @@ Text Classification
            } ]
    }
 
-The **content** parameter indicates the text to be labeled (in UTF-8 encoding format, which can be Chinese). The other parameters are the same as those described in :ref:`Image Classification <modelarts_23_0009__en-us_topic_0170886817_section260132417144>`. For details, see :ref:`Table 1 <modelarts_23_0009__en-us_topic_0170886817_table598984218223>`.
+The **content** parameter indicates the text to be labeled. The other parameters are the same as those described in :ref:`Image Classification <modelarts_23_0009__en-us_topic_0170886817_section260132417144>`. For details, see :ref:`Table 1 <modelarts_23_0009__en-us_topic_0170886817_table598984218223>`.
 
 .. _modelarts_23_0009__en-us_topic_0170886817_section335761812211:
 
@@ -588,6 +588,8 @@ Speech Paragraph Labeling
       +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------+
       | @modelarts:content    | String                | Sound content                                                                                                               |
       +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------+
+
+.. _modelarts_23_0009__en-us_topic_0170886817_section1269454020180:
 
 Video Labeling
 --------------

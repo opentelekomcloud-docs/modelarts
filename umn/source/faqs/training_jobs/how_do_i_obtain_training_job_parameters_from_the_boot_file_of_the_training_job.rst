@@ -13,7 +13,7 @@ Training job parameters can be automatically generated in the background or manu
 
    .. _modelarts_21_0080__en-us_topic_0200386929_fig74929528456:
 
-   .. figure:: /_static/images/en-us_image_0000001279825393.png
+   .. figure:: /_static/images/en-us_image_0000001404666314.png
       :alt: **Figure 1** Viewing logs
 
       **Figure 1** Viewing logs

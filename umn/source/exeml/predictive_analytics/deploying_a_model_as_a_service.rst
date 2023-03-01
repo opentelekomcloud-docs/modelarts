@@ -23,7 +23,7 @@ You can deploy a model as a real-time service that provides a real-time test UI 
       Currently, the options are **1 hour later**, **2 hours later**, **4 hours later**, **6 hours later**, and **Custom**. If you select **Custom**, you can enter any integer from 1 to 24 hours in the text box on the right.
 
 
-   .. figure:: /_static/images/en-us_image_0000001297768593.png
+   .. figure:: /_static/images/en-us_image_0000001455145941.png
       :alt: **Figure 1** Deploying a service
 
       **Figure 1** Deploying a service
@@ -35,12 +35,12 @@ You can deploy a model as a real-time service that provides a real-time test UI 
 Testing a Service
 -----------------
 
--  On the **Service Deployment** page, select a service type. For example, on the ExeML page, the predictive analytics model is deployed as a real-time service by default. On the **Real-Time Services** page, click **Prediction** in the **Operation** column of the target service to perform a service test. For details, see `Testing a Service <https://docs.otc.t-systems.com/en-us/usermanual/modelarts/modelarts_23_0062.html>`__.
--  You can also use code to test a service. For details, see `Accessing a Real-Time Service <https://docs.otc.t-systems.com/en-us/usermanual/modelarts/modelarts_23_0063.html>`__.
+-  On the **Service Deployment** page, select a service type. For example, on the ExeML page, the predictive analytics model is deployed as a real-time service by default. On the **Real-Time Services** page, click **Prediction** in the **Operation** column of the target service to perform a service test. For details, see :ref:`Testing a Service <modelarts_23_0062>`.
+-  You can also use code to test a service. For details, see :ref:`Accessing a Real-Time Service <modelarts_23_0063>`.
 -  The following describes the procedure for performing a service test after the predictive analytics model is deployed as a service on the ExeML page.
 
    #. After the model is deployed, you can test the model using code. On the **ExeML** page, click the target project, go to the **Deployment Online** tab page, select the service version in the **Running** state, and enter the code in the **Code** area.
-   #. Click **Prediction** to perform the test. After the prediction is complete, the result is displayed in the **Return Result** area on the right. If the model accuracy does not meet your expectation, train and deploy the model again on the **Label Data** tab page. If you are satisfied with the model prediction result, call the API to access the real-time service as prompted. For details, see `Accessing a Real-Time Service <https://docs.otc.t-systems.com/en-us/usermanual/modelarts/modelarts_23_0063.html>`__.
+   #. Click **Prediction** to perform the test. After the prediction is complete, the result is displayed in the **Return Result** area on the right. If the model accuracy does not meet your expectation, train and deploy the model again on the **Label Data** tab page. If you are satisfied with the model prediction result, call the API to access the real-time service as prompted. For details, see :ref:`Accessing a Real-Time Service <modelarts_23_0063>`.
 
       -  **attr_1** to **attr_7** indicate the input data. On the **Label Data** tab page, the selected label column is **attr_7**, that is, **attr_7** is the target column to be predicted. The value of **attr_7** can be set to any value or left blank, which does not affect the prediction result.
 

@@ -8,7 +8,7 @@ DevEnviron
 It is challenging to set up a development environment, select an AI algorithm framework and algorithm, debug code, install software, and accelerate hardware. To address these challenges, ModelArts provides DevEnviron to simplify the entire development process.
 
 
-.. figure:: /_static/images/en-us_image_0000001110920904.png
+.. figure:: /_static/images/en-us_image_0000001454866213.png
    :alt: **Figure 1** Algorithm development
 
    **Figure 1** Algorithm development

@@ -23,7 +23,7 @@ Procedure
    a. Set the basic information, the name and description of the dataset.
 
 
-      .. figure:: /_static/images/en-us_image_0000001157080905.png
+      .. figure:: /_static/images/en-us_image_0000001404666166.png
          :alt: **Figure 1** Basic information about a dataset
 
          **Figure 1** Basic information about a dataset
@@ -31,7 +31,7 @@ Procedure
    b. Select a labeling scene and type as required. For details about the types supported by ModelArts, see :ref:`Dataset Types <modelarts_23_0003__en-us_topic_0171496996_section51771731153811>`.
 
 
-      .. figure:: /_static/images/en-us_image_0000001340184197.png
+      .. figure:: /_static/images/en-us_image_0000001404666338.png
          :alt: **Figure 2** Selecting a labeling scene and type
 
          **Figure 2** Selecting a labeling scene and type
@@ -41,19 +41,20 @@ Procedure
       -  :ref:`Images (Image Classification, Object Detection) <modelarts_23_0004__en-us_topic_0170886809_section8625131415541>`
       -  :ref:`Audio (Sound Classification, Speech Labeling, and Speech Paragraph Labeling) <modelarts_23_0004__en-us_topic_0170886809_section17893314546>`
       -  :ref:`Text (Text Classification, Named Entity Recognition, and Text Triplet) <modelarts_23_0004__en-us_topic_0170886809_section16230452125420>`
+      -  :ref:`Video <modelarts_23_0004__en-us_topic_0170886809_section1357212065510>`
       -  :ref:`Other (Free Format) <modelarts_23_0004__en-us_topic_0170886809_section359415145517>`
 
    d. Click **Create** in the lower right corner of the page.
 
-      After the dataset is created, the dataset management page is displayed. You can perform the following operations on the dataset: label data, publish dataset versions, manage dataset versions, modify the dataset, import data, and delete the dataset. For details about the operations supported by different types of datasets, see .
+      After the dataset is created, the dataset management page is displayed. You can perform the following operations on the dataset: label data, publish dataset versions, manage dataset versions, modify the dataset, import data, and delete the dataset. For details about the operations supported by different types of datasets, see\ :ref:`Table 2 <modelarts_23_0003__table105501035113917>` .
 
 .. _modelarts_23_0004__en-us_topic_0170886809_section8625131415541:
 
-Images (Image Classification, Object Detection, )
--------------------------------------------------
+Images (Image Classification, Object Detection)
+-----------------------------------------------
 
 
-.. figure:: /_static/images/en-us_image_0000001340265309.png
+.. figure:: /_static/images/en-us_image_0000001454986149.png
    :alt: **Figure 3** Parameters of datasets for image classification and object detection
 
    **Figure 3** Parameters of datasets for image classification and object detection
@@ -79,14 +80,6 @@ Images (Image Classification, Object Detection, )
    |                                   |                                                                                                                                                                                                                                                                                                                                                                                     |
    |                                   | -  Setting label attributes: For an object detection dataset, you can click the plus sign (+) on the right to add label attributes after setting a label color. Label attributes are used to distinguish different attributes of the objects with the same label. For example, yellow kittens and black kittens have the same label **cat** and their label attribute is **color**. |
    +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Team Labeling                     | Enable or disable team labeling. Image segmentation does not support team labeling. Therefore, this parameter is unavailable when you use image segmentation.                                                                                                                                                                                                                       |
-   |                                   |                                                                                                                                                                                                                                                                                                                                                                                     |
-   |                                   | After enabling team labeling, enter the name and type of the team labeling task, and select the labeling team and team members. For details about the parameter settings, see :ref:`Creating Team Labeling Tasks <modelarts_23_0210__en-us_topic_0209053802_section72262410214>`.                                                                                                   |
-   |                                   |                                                                                                                                                                                                                                                                                                                                                                                     |
-   |                                   | Before enabling team labeling, ensure that you have added a team and members on the **Labeling Teams** page. If no labeling team is available, click the link on the page to go to the **Labeling Teams** page, and add your team and members. For details, see :ref:`Introduction to Team Labeling <modelarts_23_0181>`.                                                           |
-   |                                   |                                                                                                                                                                                                                                                                                                                                                                                     |
-   |                                   | After a dataset is created with team labeling enabled, you can view the **Team Labeling** mark in **Labeling Type**.                                                                                                                                                                                                                                                                |
-   +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. _modelarts_23_0004__en-us_topic_0170886809_section17893314546:
 
@@ -94,7 +87,7 @@ Audio (Sound Classification, Speech Labeling, and Speech Paragraph Labeling)
 ----------------------------------------------------------------------------
 
 
-.. figure:: /_static/images/en-us_image_0000001157080903.png
+.. figure:: /_static/images/en-us_image_0000001404826014.png
    :alt: **Figure 4** Parameters of datasets for sound classification, speech labeling, and speech paragraph labeling
 
    **Figure 4** Parameters of datasets for sound classification, speech labeling, and speech paragraph labeling
@@ -141,7 +134,7 @@ Text (Text Classification, Named Entity Recognition, and Text Triplet)
 ----------------------------------------------------------------------
 
 
-.. figure:: /_static/images/en-us_image_0000001110920960.png
+.. figure:: /_static/images/en-us_image_0000001454985973.png
    :alt: **Figure 5** Parameters of datasets for text classification, named entity recognition, and text triplet
 
    **Figure 5** Parameters of datasets for text classification, named entity recognition, and text triplet
@@ -176,25 +169,17 @@ Text (Text Classification, Named Entity Recognition, and Text Triplet)
    |                                                                  |                                                                                                                                                                                                                                                                                                                                                       |
    |                                                                  | |image1|                                                                                                                                                                                                                                                                                                                                              |
    +------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Team Labeling                                                    | Enable or disable team labeling.                                                                                                                                                                                                                                                                                                                      |
-   |                                                                  |                                                                                                                                                                                                                                                                                                                                                       |
-   |                                                                  | After enabling team labeling, enter the name and type of the team labeling task, and select the labeling team and team members. For details about the parameter settings, see :ref:`Creating Team Labeling Tasks <modelarts_23_0210__en-us_topic_0209053802_section72262410214>`.                                                                     |
-   |                                                                  |                                                                                                                                                                                                                                                                                                                                                       |
-   |                                                                  | Before enabling team labeling, ensure that you have added a team and members on the **Labeling Teams** page. If no labeling team is available, click the link on the page to go to the **Labeling Teams** page, and add your team and members. For details, see :ref:`Introduction to Team Labeling <modelarts_23_0181>`.                             |
-   |                                                                  |                                                                                                                                                                                                                                                                                                                                                       |
-   |                                                                  | After a dataset is created with team labeling enabled, you can view the **Team Labeling** mark in **Labeling Type**.                                                                                                                                                                                                                                  |
-   +------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _modelarts_23_0004__en-us_topic_0170886809_section359415145517:
+.. _modelarts_23_0004__en-us_topic_0170886809_section1357212065510:
 
-Other (Free Format)
--------------------
+Video
+-----
 
 
-.. figure:: /_static/images/en-us_image_0000001156920933.png
-   :alt: **Figure 6** Parameters of datasets of the free format type
+.. figure:: /_static/images/en-us_image_0000001454866337.png
+   :alt: **Figure 6** Parameters of datasets of the video type
 
-   **Figure 6** Parameters of datasets of the free format type
+   **Figure 6** Parameters of datasets of the video type
 
 .. table:: **Table 3** Dataset parameters
 
@@ -209,5 +194,36 @@ Other (Free Format)
    |                                   |                                                                                                                                                                                            |
    |                                   |    The output dataset path cannot be the same as the input dataset path or cannot be the subdirectory of the input dataset path. Select an empty directory as the **Output Dataset Path**. |
    +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Label Set                         | -  **Label Name**: Enter a label name. The label name can contain only letters, digits, underscores (_), and hyphens (-). The name contains 1 to 32 characters.                            |
+   |                                   |                                                                                                                                                                                            |
+   |                                   | -  **Add Label**: Click **Add Label** to add more labels.                                                                                                                                  |
+   |                                   |                                                                                                                                                                                            |
+   |                                   | -  Setting a label color: Select a color from the color palette or enter the hexadecimal color code to set the color.                                                                      |
+   +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. |image1| image:: /_static/images/en-us_image_0000001156920935.png
+.. _modelarts_23_0004__en-us_topic_0170886809_section359415145517:
+
+Other (Free Format)
+-------------------
+
+
+.. figure:: /_static/images/en-us_image_0000001454985977.png
+   :alt: **Figure 7** Parameters of datasets of the free format type
+
+   **Figure 7** Parameters of datasets of the free format type
+
+.. table:: **Table 4** Dataset parameters
+
+   +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter                         | Description                                                                                                                                                                                |
+   +===================================+============================================================================================================================================================================================+
+   | Input Dataset Path                | Select the OBS path to the input dataset.                                                                                                                                                  |
+   +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Output Dataset Path               | Select the OBS path to the output dataset.                                                                                                                                                 |
+   |                                   |                                                                                                                                                                                            |
+   |                                   | .. note::                                                                                                                                                                                  |
+   |                                   |                                                                                                                                                                                            |
+   |                                   |    The output dataset path cannot be the same as the input dataset path or cannot be the subdirectory of the input dataset path. Select an empty directory as the **Output Dataset Path**. |
+   +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. |image1| image:: /_static/images/en-us_image_0000001455145797.png

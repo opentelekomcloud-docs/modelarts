@@ -19,7 +19,7 @@ Viewing Dataset Version Updates
    You can view basic information about the dataset, and view the versions and publish time on the left.
 
 
-   .. figure:: /_static/images/en-us_image_0000001278250381.png
+   .. figure:: /_static/images/en-us_image_0000001455266005.png
       :alt: **Figure 1** Viewing dataset versions
 
       **Figure 1** Viewing dataset versions

@@ -1,6 +1,6 @@
-:original_name: en-us_topic_0000001297767637.html
+:original_name: en-us_topic_0000001455145417.html
 
-.. _en-us_topic_0000001297767637:
+.. _en-us_topic_0000001455145417:
 
 Predictive Analytics
 ====================

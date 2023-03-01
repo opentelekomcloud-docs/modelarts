@@ -63,4 +63,4 @@ To delete a file or folder from Jupyter Notebook, select the file or folder in t
 
    After the file or folder is deleted, click the **Refresh** button in the upper right corner to refresh the Jupyter page and clear the cache.
 
-.. |image1| image:: /_static/images/en-us_image_0000001110920936.png
+.. |image1| image:: /_static/images/en-us_image_0000001404665834.png

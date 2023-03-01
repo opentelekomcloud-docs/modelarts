@@ -12,7 +12,7 @@ How Do I Enable the Terminal Function in DevEnviron of ModelArts?
 #. On the **Files** tab page of the Jupyter page, click **New** and select **Terminal**. The **Terminal** page is displayed.
 
 
-   .. figure:: /_static/images/en-us_image_0000001110760910.png
+   .. figure:: /_static/images/en-us_image_0000001454985769.png
       :alt: **Figure 1** Going to the **Terminal** page
 
       **Figure 1** Going to the **Terminal** page

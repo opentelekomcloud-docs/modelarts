@@ -23,7 +23,7 @@ AI Development Lifecycle
 The AI development lifecycle on ModelArts takes developers' habits into consideration and provides a variety of engines and scenarios for developers to choose. The following describes the entire process from data preparation to service development using ModelArts.
 
 
-.. figure:: /_static/images/en-us_image_0000001297902093.png
+.. figure:: /_static/images/en-us_image_0000001455145929.png
    :alt: **Figure 1** Process of using ModelArts
 
    **Figure 1** Process of using ModelArts

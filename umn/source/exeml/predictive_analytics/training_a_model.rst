@@ -17,7 +17,7 @@ Procedure
    The training takes a certain period of time. If you close or exit the page, the system continues training until it is complete.
 
 
-   .. figure:: /_static/images/en-us_image_0000001297768589.png
+   .. figure:: /_static/images/en-us_image_0000001404986134.png
       :alt: **Figure 1** Training configuration
 
       **Figure 1** Training configuration
@@ -85,4 +85,4 @@ Evaluation result display modes vary according to training data types.
 
    The evaluation values are **MAE**, **MSE**, and **RMSE**. The three error values can represent a difference between a real value and a predicted value. During multiple rounds of modeling, a group of error values is generated for each round of modeling. The method of checking whether a model is good is to check whether the three error values become smaller or larger. A smaller error value indicates a better model.
 
-.. |image1| image:: /_static/images/en-us_image_0000001297649133.png
+.. |image1| image:: /_static/images/en-us_image_0000001454866301.png

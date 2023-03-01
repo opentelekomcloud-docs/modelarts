@@ -19,7 +19,7 @@ The following uses the template described in as an example. Upload the TensorFlo
    ModelArts also provides three filter criteria: **Type**, **Engine**, and **Environment**, helping you quickly find the desired template. If the three filter criteria cannot meet your requirements, you can enter keywords to search for the target template.
 
 
-   .. figure:: /_static/images/en-us_image_0000001278010777.png
+   .. figure:: /_static/images/en-us_image_0000001455145949.png
       :alt: **Figure 1** Selecting a template
 
       **Figure 1** Selecting a template

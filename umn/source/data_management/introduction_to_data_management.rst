@@ -12,7 +12,7 @@ In ModelArts, you can import and label data on the **Data Management** page to p
 Dataset Types
 -------------
 
-ModelArts supports datasets of images, audio, text, and other types for the following purposes:
+ModelArts supports datasets of images, audio, text, videos, and other types for the following purposes:
 
 -  Images
 
@@ -32,12 +32,16 @@ ModelArts supports datasets of images, audio, text, and other types for the foll
    -  Named entity recognition: assigns labels to named entities in text, such as time and locations.
    -  Text triplet: assigns labels to entity segments and entity relationships in the text.
 
+-  Videos
+
+   -  Video labeling: identifies the position and class of each object in a video. Only the MP4 format is supported.
+
 -  Others
 
    -  Free format: manages data in any format. Labeling is not available for data of the free format type. The free format type is applicable to scenarios where labeling is not required or developers customize labeling. If your dataset needs to contain data in multiple formats or your data format does not meet the requirements of other types of datasets, you can select a dataset in free format.
 
 
-      .. figure:: /_static/images/en-us_image_0000001156920919.png
+      .. figure:: /_static/images/en-us_image_0000001454986021.png
          :alt: **Figure 1** Example of a dataset in free format
 
          **Figure 1** Example of a dataset in free format
@@ -67,6 +71,8 @@ Dataset Management Process and Functions
    | :ref:`Speech Labeling <modelarts_23_0016>`           |                                                                                                        |
    |                                                      |                                                                                                        |
    | :ref:`Speech Paragraph Labeling <modelarts_23_0017>` |                                                                                                        |
+   |                                                      |                                                                                                        |
+   | :ref:`Video Labeling <modelarts_23_0282>`            |                                                                                                        |
    +------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
    | :ref:`Import Operation <modelarts_23_0006>`          | Import the local manifest file or data stored in OBS to the dataset.                                   |
    +------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
@@ -108,6 +114,8 @@ Different types of datasets support different functions. For details, see :ref:`
    | Named entity recognition  | Supported          | Supported      | ``-``          | Supported            | Supported           | Supported                 |
    +---------------------------+--------------------+----------------+----------------+----------------------+---------------------+---------------------------+
    | Text triplet              | Supported          | Supported      | ``-``          | Supported            | Supported           | Supported                 |
+   +---------------------------+--------------------+----------------+----------------+----------------------+---------------------+---------------------------+
+   | Video labeling            | Supported          | Supported      | Supported      | Supported            | Supported           | Supported                 |
    +---------------------------+--------------------+----------------+----------------+----------------------+---------------------+---------------------------+
    | Free format               | Supported          | ``-``          | Supported      | Supported            | Supported           | Supported                 |
    +---------------------------+--------------------+----------------+----------------+----------------------+---------------------+---------------------------+

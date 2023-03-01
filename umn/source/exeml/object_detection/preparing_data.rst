@@ -20,7 +20,7 @@ Perform the following operations to import data to the dataset for model trainin
 Requirements on Datasets
 ------------------------
 
--  The name of files in a dataset cannot contain Chinese characters, plus signs (+), spaces, or tabs.
+-  The name of files in a dataset cannot contain plus signs (+), spaces, or tabs.
 -  Ensure that no damaged image exists. The supported image formats include JPG, JPEG, BMP, and PNG.
 -  Do not store data of different projects in the same dataset.
 -  To ensure the prediction accuracy of models, the training samples must be similar to the actual application scenarios.

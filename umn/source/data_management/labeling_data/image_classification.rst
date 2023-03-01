@@ -10,7 +10,7 @@ Model training uses a large number of labeled images. Therefore, before the mode
 Before labeling an image in image classification scenarios, you need to understand the following:
 
 -  You can add multiple labels to an image.
--  A label name can contain a maximum of 32 characters, including Chinese characters, letters, digits, hyphens (-), and underscores (_).
+-  A label name can contain a maximum of 32 characters, including letters, digits, hyphens (-), and underscores (_).
 
 Starting Labeling
 -----------------
@@ -40,12 +40,11 @@ On the **Dashboard** page of the dataset, click **Label** in the upper right cor
 
 The following filter criteria are supported. You can set one or more filter criteria.
 
+-  **Example Type**: Select **Hard example** or **Non-hard example**.
 -  **Label**: Select **All** or one or more labels you specified.
 -  **Sample Creation Time**: Select **Within 1 month**, **Within 1 day**, or **Custom** to customize a time range.
 -  **File Name** or **Path**: Filter files by file name or file storage path.
 -  **Labeled By**: Select the name of the user who performs the labeling operation.
-
-.. _modelarts_23_0011__en-us_topic_0170889731_section888019266174:
 
 Labeling Images (Manually)
 --------------------------
@@ -66,7 +65,7 @@ The dataset details page displays images on the **All**, **Labeled**, and **Unla
    b. Confirm the **Labels of Selected Image** information and click **OK**. The selected image is automatically moved to the **Labeled** tab page. On the **Unlabeled** and **All** tab pages, the labeling information is updated along with the labeling process, including the added label names and the number of images for each label.
 
 
-   .. figure:: /_static/images/en-us_image_0000001110761138.png
+   .. figure:: /_static/images/en-us_image_0000001455145825.png
       :alt: **Figure 1** Adding labels
 
       **Figure 1** Adding labels
@@ -90,7 +89,7 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
    Deleting a label: In the **File Labels** area, click the delete icon in the **Operation** column to delete the label. This operation deletes only the labels added to the selected image.
 
 
-   .. figure:: /_static/images/en-us_image_0000001110921036.png
+   .. figure:: /_static/images/en-us_image_0000001454866193.png
       :alt: **Figure 2** Modifying a label
 
       **Figure 2** Modifying a label
@@ -103,7 +102,7 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
    -  Deleting a label: Click the deletion icon in the **Operation** column. In the displayed dialog box, select **Delete label**, **Delete label and images with only the label (Do not delete source files)**, or **Delete label and images with only the label (Delete source files)**, and click **OK**.
 
 
-   .. figure:: /_static/images/en-us_image_0000001156921013.png
+   .. figure:: /_static/images/en-us_image_0000001404986010.png
       :alt: **Figure 3** Information about all labels
 
       **Figure 3** Information about all labels
@@ -122,7 +121,7 @@ In addition to automatically synchronizing data from **Input Dataset Path**, you
    After the images are selected, their thumbnails and sizes are displayed on the **Add** page.
 
 
-   .. figure:: /_static/images/en-us_image_0000001156920963.png
+   .. figure:: /_static/images/en-us_image_0000001404825854.png
       :alt: **Figure 4** Adding images
 
       **Figure 4** Adding images

@@ -27,22 +27,22 @@ Procedure
 
       .. table:: **Table 1** Parameters of basic model information
 
-         +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-         | Parameter   | Description                                                                                                                                                                         |
-         +=============+=====================================================================================================================================================================================+
-         | Name        | Model name. The value can contain 1 to 64 visible characters, including Chinese characters. Only letters, Chinese characters, digits, hyphens (-), and underscores (_) are allowed. |
-         +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-         | Version     | Version of the model to be created. For the first import, the default value is **0.0.1**.                                                                                           |
-         +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-         | Label       | Model label. A maximum of five model labels are supported.                                                                                                                          |
-         +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-         | Description | Brief description of the model                                                                                                                                                      |
-         +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+         +-------------+------------------------------------------------------------------------------------------------------------------------------------+
+         | Parameter   | Description                                                                                                                        |
+         +=============+====================================================================================================================================+
+         | Name        | Model name. The value can contain 1 to 64 visible characters. Only letters, digits, hyphens (-), and underscores (_) are allowed.  |
+         +-------------+------------------------------------------------------------------------------------------------------------------------------------+
+         | Version     | Version of the model to be created. For the first import, the default value is **0.0.1**.                                          |
+         +-------------+------------------------------------------------------------------------------------------------------------------------------------+
+         | Label       | Model label. A maximum of five model labels are supported.                                                                         |
+         +-------------+------------------------------------------------------------------------------------------------------------------------------------+
+         | Description | Brief description of the model                                                                                                     |
+         +-------------+------------------------------------------------------------------------------------------------------------------------------------+
 
    b. Select the meta model source and set related parameters. **Meta Model Source** has four options based on the scenario. For details, see . Set **Meta Model Source** to **Container image**. For details about the parameters, see :ref:`Table 2 <modelarts_23_0206__en-us_topic_0207629477_table104931647171713>`.
 
 
-      .. figure:: /_static/images/en-us_image_0000001110761156.png
+      .. figure:: /_static/images/en-us_image_0000001404666006.png
          :alt: **Figure 1** Setting Meta Model Source to Container image
 
          **Figure 1** Setting Meta Model Source to Container image
@@ -60,7 +60,7 @@ Procedure
          |                                   |                                                                                                                                                                                                                                                                                                                                                                                                 |
          |                                   | .. note::                                                                                                                                                                                                                                                                                                                                                                                       |
          |                                   |                                                                                                                                                                                                                                                                                                                                                                                                 |
-         |                                   |    The model image you select will be shared with the administrator, so ensure you have the permission to share the image (images shared with other accounts are unsupported). When you deploy a service, ModelArts deploys the image as an inference service. Ensure that your image can be properly started and provide an inference interface.                                               |
+         |                                   |    The model image you select will be shared with the system administrator, so ensure you have the permission to share the image (images shared with other accounts are unsupported). When you deploy a service, ModelArts deploys the image as an inference service. Ensure that your image can be properly started and provide an inference interface.                                        |
          +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
          | Deployment Type                   | After the model is imported, select the service type that the model is deployed. When deploying a service, you can only deploy the service type selected here. For example, if you only select **Real-time services** here, you can only deploy real-time services after importing the model.                                                                                                   |
          +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -75,7 +75,7 @@ Procedure
       -  **Model Description**: To help other model developers better understand and use your models, provide model descriptions. Click **Add Model Description** and then set the document name and URL. A maximum of three model descriptions are supported.
 
 
-      .. figure:: /_static/images/en-us_image_0000001157081005.png
+      .. figure:: /_static/images/en-us_image_0000001454865997.png
          :alt: **Figure 2** Setting the inference specifications and model description
 
          **Figure 2** Setting the inference specifications and model description
@@ -89,5 +89,5 @@ Follow-Up Procedure
 
 -  :ref:`Model Deployment <modelarts_23_0058>`: On the **Models** page, click the triangle next to a model name to view all versions of the model. Locate the row that contains the target version, click **Deploy** in the **Operation** column, and select the deployment type configured when importing the model from the drop-down list. On the **Deploy** page, set parameters by referring to :ref:`Introduction to Model Deployment <modelarts_23_0058>`.
 
-.. |image1| image:: /_static/images/en-us_image_0000001157081003.png
-.. |image2| image:: /_static/images/en-us_image_0000001157081001.png
+.. |image1| image:: /_static/images/en-us_image_0000001404506086.png
+.. |image2| image:: /_static/images/en-us_image_0000001455265673.png
