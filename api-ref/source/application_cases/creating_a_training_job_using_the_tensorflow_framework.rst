@@ -40,7 +40,11 @@ Procedure
 
    a. Request body:
 
-      URI format: POST https://**{iam_endpoint}**/v3/auth/tokens
+      URI format:
+
+      .. code-block:: text
+
+         POST https://{iam_endpoint}/v3/auth/tokens
 
       Request header: Content-Type → application/json
 
@@ -90,7 +94,11 @@ Procedure
 
    a. Request body:
 
-      URI format: GET https://**{ma_endpoint}**/v1/**{project_id}**/job/resource-specs?job_type=train
+      URI format:
+
+      .. code-block:: text
+
+         GET https://{ma_endpoint}/v1/{project_id}/job/resource-specs?job_type=train
 
       Request header: X-auth-Token →\ **MIIZmgYJKoZIhvcNAQcCoIIZizCCGYcCAQExDTALBglghkgBZQMEAgEwgXXXXXX...**
 
@@ -147,7 +155,11 @@ Procedure
 
    a. Request body:
 
-      URI format: GET https://**{ma_endpoint}**/v1/**{project_id}**/job/ai-engines?job_type=train
+      URI format:
+
+      .. code-block:: text
+
+         GET https://{ma_endpoint}/v1/{project_id}/job/ai-engines?job_type=train
 
       Request header: X-auth-Token →\ **MIIZmgYJKoZIhvcNAQcCoIIZizCCGYcCAQExDTALBglghkgBZQMEAgEwgXXXXXX...**
 
@@ -194,7 +206,11 @@ Procedure
 
    a. Request body:
 
-      URI format: POST https://**{ma_endpoint}**/v1/**{project_id}**/training-jobs
+      URI format:
+
+      .. code-block:: text
+
+         POST https://{ma_endpoint}/v1/{project_id}/training-jobs
 
       Request header:
 
@@ -263,7 +279,11 @@ Procedure
 
    a. Request body:
 
-      URI format: GET https://**{ma_endpoint}**/v1/**{project_id}**/training-jobs/**567524**/versions/**1108482**
+      URI format:
+
+      .. code-block:: text
+
+         GET https://{ma_endpoint}/v1/{project_id}/training-jobs/567524/versions/1108482
 
       Request header: X-auth-Token →\ **MIIZmgYJKoZIhvcNAQcCoIIZizCCGYcCAQExDTALBglghkgBZQMEAgEwgXXXXXX...**
 
@@ -390,7 +410,11 @@ Procedure
 
    a. Request body:
 
-      URI format: GET https://**{ma_endpoint}**/v1/**{project_id}**/training-jobs/**567524**/versions/**1108482**/log/file-names
+      URI format:
+
+      .. code-block:: text
+
+         GET https://{ma_endpoint}/v1/{project_id}/training-jobs/567524/versions/1108482/log/file-names
 
       Request header: X-auth-Token →\ **MIIZmgYJKoZIhvcNAQcCoIIZizCCGYcCAQExDTALBglghkgBZQMEAgEwgXXXXXX...**
 
@@ -413,7 +437,11 @@ Procedure
 
    a. Request body:
 
-      URI format: GET https://**{ma_endpoint}**/v1/**{project_id}**/training-jobs/**567524**/versions/**1108482**/aom-log?log_file=\ **job-jobtest-tf.0**\ &lines=\ **8**\ &order=\ **desc**
+      URI format:
+
+      .. code-block:: text
+
+         GET https://{ma_endpoint}/v1/{project_id}/training-jobs/567524/versions/1108482/aom-log?log_file=job-jobtest-tf.0&lines=8&order=desc
 
       Request header: X-auth-Token →\ **MIIZmgYJKoZIhvcNAQcCoIIZizCCGYcCAQExDTALBglghkgBZQMEAgEwgXXXXXX...**
 
@@ -439,7 +467,11 @@ Procedure
 
    a. Request body:
 
-      URI format: GET https://**{ma_endpoint}**/v1/**{project_id}**/training-jobs/**567524**
+      URI format:
+
+      .. code-block:: text
+
+         GET https://{ma_endpoint}/v1/{project_id}/training-jobs/567524
 
       Request header: X-auth-Token →\ **MIIZmgYJKoZIhvcNAQcCoIIZizCCGYcCAQExDTALBglghkgBZQMEAgEwgXXXXXX...**
 
