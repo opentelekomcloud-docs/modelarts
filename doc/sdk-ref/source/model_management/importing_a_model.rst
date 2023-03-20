@@ -10,6 +10,21 @@ The model import function covers the following aspects:
 -  Initialize the existing model and create a model object based on the model ID.
 -  Create a model. For details about the attributes of the created model, see :ref:`Querying the Details About a Model <modelarts_04_0197>`.
 
+Sample Model File
+-----------------
+
+Take a `custom PyTorch script <https://docs.otc.t-systems.com/modelarts/umn/examples_of_custom_scripts/pytorch.html#modelarts-23-0175>`__ as an example. Download `model.zip <https://obs-sdk.obs.eu-de.otc.t-systems.com/model.zip>`__ that can be directly deployed, decompress the package, and upload it to OBS. For details about the structure of the PyTorch model package, see `Model Package Specifications <https://docs.otc.t-systems.com/modelarts/umn/model_package_specifications/model_package_specifications.html>`__.
+
+.. code-block::
+
+   OBS bucket or directory name
+   ├── resnet
+   │   ├── model (Mandatory) Fixed subdirectory name. The subdirectory is used to store model-related files.
+   │   │  ├──<<Custom Python package>> (Optional) Customized Python package, which can be directly referenced in model inference code
+   │   │  ├──mnist_mlp.pt (Mandatory) PyTorch model file, which contains variable and weight information and is saved as state_dict
+   │   │  ├──config.json (Mandatory) Model configuration file. The file name is fixed to config.json. Only one model configuration file is supported.
+   │   │  ├──customize_service.py (Mandatory) Model inference code. The file name is fixed to customize_service.py. Only one model inference file is supported. The files on which customize_service.py depends can be directly stored in the model directory.
+
 Sample Code
 -----------
 
@@ -19,49 +34,37 @@ In ModelArts notebook, you do not need to enter authentication parameters for se
 
    from modelarts.session import Session
    from modelarts.model import Model
-   from modelarts.config.model_config import ServiceConfig,Params,Dependencies,Packages
+   from modelarts.config.model_config import ServiceConfig, Params, Dependencies, Packages
+
    session = Session()
 
 -  Method 1: Initialize an existing model.
 
    ::
 
-      model_instance = Model(session, model_id="input your model id")
+      model_instance = Model(session, model_id="your_model_id")
 
 -  Method 2: Create a model.
 
    ::
 
+      model_location = "/your_obs_bucket/model_path"            # Change to the OBS path to the model file
+      execution_code = "/your_obs_bucket/model_path/customize_service.py"
+      runtime = "python3.7"
+
       model_instance = Model(
-                           session,
-                           model_name="input model name",              # Model name
-                           model_version="1.0.0",                      # Model version
-                           source_location=model_location,             # OBS path to a model file, for example, obs://your_obs_bucket/mode_file_path
-                           model_type="MXNet",                         # Model type
-                           model_algorithm="image_classification",     # Model algorithm
-                           execution_code="OBS_PATH",
-                           input_params=input_params,                  # For details, see the input_params format description.
-                           output_params=output_params,                # For details, see the output_params format description.
-                           dependencies=dependencies,                  # For details, see the dependencies format description.
-                           apis=apis)
+                              session,
+                              model_name="input_model_name",    #  (Optional) Model name
+                              model_version="1.0.0",            # (Optional) Model version
+                              source_location=model_location,   # OBS path to the model file, for example, /your_obs_bucket/model_path
+                              model_type="PyTorch",             # Model type
+                              execution_code=execution_code,    # (Optional) OBS path to the execution script, for example, /your_obs_bucket/model_path/customize_service.py
+                              runtime = runtime                 # (Optional) Supported runtime environment
+                             )
 
-   -  Definition formats of **input_params** and **output_params** parameter groups used in method 2
+   .. note::
 
-      The SDK provides the definition of **input_params** and **output_params** parameter groups. The types of **input_params** and **output_params** are list, and those of the tuple objects in the list are Params.
-
-      The following uses **input_params** as an example:
-
-      ::
-
-         input_params = []                                                # The type of input_params is list. Multiple objects of the Params type can be stored.
-         input_params1 = Params(
-                                 url='url',                               # URL
-                                 param_name='param_name',                 # Parameter name
-                                 param_type='param_type',                 # Parameter type
-                                 min='min',
-                                 max='max',
-                                 param_desc='param_desc')
-         input_params.append(input_params1)
+      **dependencies** will overwrite the data in **config.json** in the preceding example. You do not need to use **dependencies**. The following section describes the **dependencies** formats.
 
    -  Definition formats of the **dependencies** parameter group used in method 2
 
@@ -73,8 +76,9 @@ In ModelArts notebook, you do not need to enter authentication parameters for se
 
          dependencies = []
          dependency1 = Dependencies(
-                                     installer="pip",                     # Installation mode. pip is supported.
-                                     packages=packages)                   # Collection of dependency packages. For details about the definition format, see the definition of packages.
+                 installer="pip",                # Installation mode. pip is supported.
+                 packages=packages               # Collection of dependency packages. For details, see packages.
+                 )
          dependencies.append(dependency1)
 
    -  Definition formats of the **package** parameter group used in method 2
@@ -85,11 +89,11 @@ In ModelArts notebook, you do not need to enter authentication parameters for se
 
       ::
 
-         packages  = []
-         package1 =  Packages(
-                               package_name="package_name",               # Package name
-                               package_version="version",                 # Package version
-                               restraint="restraint")
+         packages = []
+         package1 = Packages(
+             package_name="package_name",       # Package name
+             package_version="version",         # Package version
+             restraint="EXACT")
          packages.append(package1)
 
       .. note::
@@ -100,14 +104,14 @@ In ModelArts notebook, you do not need to enter authentication parameters for se
 
             dependencies = []
             packages = [{
-                        "package_name": "numpy",
-                        "package_version": "1.15.0",
-                        "restraint": "EXACT"},
-                    {
-                        "package_name": "h5py",
-                        "package_version": "2.8.0",
-                        "restraint": "EXACT"}
-                      ]
+                "package_name": "numpy",
+                "package_version": "1.15.0",
+                "restraint": "EXACT"
+                }, {
+                    "package_name": "h5py",
+                    "package_version": "2.8.0",
+                    "restraint": "EXACT"
+                }]
             dependency = Dependencies(installer="pip", packages=packages)
             dependencies.append(dependency)
 
@@ -164,7 +168,9 @@ Parameter Description
    +----------------------+-----------------+----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | description          | No              | String               | Model description, which contains a maximum of 100 characters and cannot contain the following special characters: !<>=&'"                                                                                                                                                                                                                                        |
    +----------------------+-----------------+----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | execution_code       | No              | String               | OBS path to the execution script. The inference script must be stored in the **model** directory in the path where the model is located. For details, see the **source_location** parameter. The script name is fixed to **customize_service.py**.                                                                                                                |
+   | execution_code       | No              | String               | OBS path to the script to be executed. If **customize_service.py** is not output by the model, configure this parameter to specify the path. The inference script must be stored in the **model** directory in the path where the model is located. For details, see the **source_location** parameter. The script name is fixed to **customize_service.py**.     |
+   +----------------------+-----------------+----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | runtime              | No              | String               | Supported runtime environment. This parameter is mandatory if **model_type** is used. The **runtime** parameter varies depending on engines. For details, see `Supported AI engines and their runtime <https://docs.otc.t-systems.com/modelarts/umn/model_management/importing_a_model/importing_a_meta_model_from_obs.html#modelarts-23-0207>`__.                |
    +----------------------+-----------------+----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | input_params         | No              | **params** array     | List of input parameters for model inference. By default, this parameter is left blank. If the **apis** information has been configured in the model configuration file, you do not need to set this parameter. The backend automatically reads the input parameters from the **apis** field in the configuration file.                                           |
    +----------------------+-----------------+----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -235,10 +241,12 @@ Parameter Description
 
       from modelarts.session import Session
       from modelarts.model import Model
+
       session = Session()
       model_instance = Model(session,
-                             model_name = "digit recognition",
-                             model_version = "1.0.0",
-                             source_location = model_location,
-                             model_type      = "MXNet",
-                             model_algorithm = "image_classification")
+                             model_name="digit_recognition",
+                             model_version="1.0.0",
+                             source_location=model_location,
+                             model_type="MXNet",
+                             model_algorithm="image_classification"
+                             )

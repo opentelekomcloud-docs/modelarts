@@ -7,8 +7,8 @@ Visualization Jobs
 
 -  :ref:`Creating a Visualization Job <modelarts_04_0181>`
 -  :ref:`Querying the List of Visualization Job Objects <modelarts_04_0182>`
--  :ref:`Querying the List of Visualization Jobs <modelarts_04_0183>`
--  :ref:`Querying the Details About a Visualization Job <modelarts_04_0184>`
+-  :ref:`Obtaining Visualization Jobs <modelarts_04_0183>`
+-  :ref:`Obtaining Details About a Visualization Job <modelarts_04_0184>`
 -  :ref:`Modifying the Description of a Visualization Job <modelarts_04_0185>`
 -  :ref:`Stopping a Visualization Job <modelarts_04_0186>`
 -  :ref:`Restarting a Visualization Job <modelarts_04_0187>`
@@ -20,8 +20,8 @@ Visualization Jobs
 
    creating_a_visualization_job
    querying_the_list_of_visualization_job_objects
-   querying_the_list_of_visualization_jobs
-   querying_the_details_about_a_visualization_job
+   obtaining_visualization_jobs
+   obtaining_details_about_a_visualization_job
    modifying_the_description_of_a_visualization_job
    stopping_a_visualization_job
    restarting_a_visualization_job

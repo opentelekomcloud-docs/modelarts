@@ -2,13 +2,13 @@
 
 .. _modelarts_04_0190:
 
-Querying a Built-in Algorithm
-=============================
+Obtaining a Built-in Algorithm
+==============================
 
 Sample Code
 -----------
 
-In the ModelArts notebook instance, you do not need to enter authentication parameters for session authentication. For details about session authentication of other development environments, see :ref:`Session Authentication <modelarts_04_0123>`.
+In ModelArts notebook, you do not need to enter authentication parameters for session authentication. For details about session authentication of other development environments, see :ref:`Session Authentication <modelarts_04_0123>`.
 
 ::
 
@@ -30,23 +30,23 @@ Parameter Description
 
 .. table:: **Table 2** **get_built_in_algorithms** response parameters
 
-   +-----------------------+-----------------------+----------------------------------------------------------------+
-   | Parameter             | Type                  | Description                                                    |
-   +=======================+=======================+================================================================+
-   | error_msg             | String                | Error message when the API call fails.                         |
-   |                       |                       |                                                                |
-   |                       |                       | This parameter is not included when the API call succeeds.     |
-   +-----------------------+-----------------------+----------------------------------------------------------------+
-   | error_code            | String                | Error code when the API fails to be called. For details, see . |
-   |                       |                       |                                                                |
-   |                       |                       | This parameter is not included when the API call succeeds.     |
-   +-----------------------+-----------------------+----------------------------------------------------------------+
-   | model_total_count     | Integer               | Number of models                                               |
-   +-----------------------+-----------------------+----------------------------------------------------------------+
-   | models                | JSON Array            | Parameter list of a model                                      |
-   +-----------------------+-----------------------+----------------------------------------------------------------+
-   | is_success            | Boolean               | Whether the API call succeeds                                  |
-   +-----------------------+-----------------------+----------------------------------------------------------------+
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                                                                                                                                                      |
+   +=======================+=======================+==================================================================================================================================================================================================+
+   | error_msg             | String                | Error message when the API call fails.                                                                                                                                                           |
+   |                       |                       |                                                                                                                                                                                                  |
+   |                       |                       | This parameter is not included when the API call succeeds.                                                                                                                                       |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | error_code            | String                | Error code when the API fails to be called. For details, see `Error Codes <https://docs.otc.t-systems.com/modelarts/api-ref/common_parameters/error_codes.html>`__ in *ModelArts API Reference*. |
+   |                       |                       |                                                                                                                                                                                                  |
+   |                       |                       | This parameter is not included when the API call succeeds.                                                                                                                                       |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | model_total_count     | Integer               | Number of models                                                                                                                                                                                 |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | models                | JSON Array            | Parameter list of a model                                                                                                                                                                        |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | is_success            | Boolean               | Whether the API call succeeds                                                                                                                                                                    |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. table:: **Table 3** **models** parameters
 
