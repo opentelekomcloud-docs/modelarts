@@ -16,6 +16,7 @@ In ModelArts notebook, you do not need to enter authentication parameters for se
 
    from modelarts.session import Session
    from modelarts.model import Model
+
    session = Session()
    model_list = Model.get_model_list(session)
 
@@ -25,6 +26,7 @@ In ModelArts notebook, you do not need to enter authentication parameters for se
 
    from modelarts.session import Session
    from modelarts.model import Model
+
    session = Session()
    model_list = Model.get_model_list(session, model_status="published", model_name="digit", order="desc")
 
@@ -40,7 +42,7 @@ Parameter Description
    +---------------+-----------+---------+----------------------------------------------------------------------------------------------------------------------------+
    | model_version | No        | String  | Model version                                                                                                              |
    +---------------+-----------+---------+----------------------------------------------------------------------------------------------------------------------------+
-   | model_status  | No        | String  | Model status. The value can be **publishing**, **published**, or **failed**. You can query jobs based on their statuses.   |
+   | model_status  | No        | String  | Model status. The value can be **publishing**, **published**, or **failed**. Obtain jobs based on their statuses.          |
    +---------------+-----------+---------+----------------------------------------------------------------------------------------------------------------------------+
    | description   | No        | String  | Description. Fuzzy match is supported.                                                                                     |
    +---------------+-----------+---------+----------------------------------------------------------------------------------------------------------------------------+

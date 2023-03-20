@@ -16,6 +16,7 @@ In ModelArts notebook, you do not need to enter authentication parameters for se
 
       from modelarts.session import Session
       from modelarts.model import Model
+
       session = Session()
       model_object_list = Model.get_model_object_list(session)
 
@@ -25,6 +26,7 @@ In ModelArts notebook, you do not need to enter authentication parameters for se
 
       from modelarts.session import Session
       from modelarts.model import Model
+
       session = Session()
       model_object_list = Model.get_model_object_list(session, model_status="published", model_name="digit", order="desc")
 
