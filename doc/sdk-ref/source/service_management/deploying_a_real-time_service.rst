@@ -51,7 +51,7 @@ In ModelArts notebook, you do not need to enter authentication parameters for se
                   vpc_id=vpc_id,
                   subnet_network_id=subnet_network_id,
                   security_group_id=security_group_id,
-                  configs=configs                          # predictor configuration parameter. For details, see configs.
+                  configs=configs,                       # predictor configuration parameter. For details, see configs.
                   schedule = [Schedule(op_type='stop', time_unit='HOURS', duration=1)]       # (Optional) Specify the runtime duration for a real-time service.
       )
 
