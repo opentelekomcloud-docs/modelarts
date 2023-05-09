@@ -200,7 +200,6 @@ The following code uses the TensorFlow engine as an example. You can modify the 
 
    .. code-block::
 
-      ```
       {
           "detection_classes": [
               "face",
@@ -222,13 +221,11 @@ The following code uses the TensorFlow engine as an example. You can modify the 
           ],
           "detection_scores": [0.99, 0.73]
       }
-      ```
 
 -  Configuration file
 
    .. code-block::
 
-      ```
       {
           "model_type": "TensorFlow",
           "model_algorithm": "object_detection",
@@ -300,7 +297,6 @@ The following code uses the TensorFlow engine as an example. You can modify the 
               ]
           }]
       }
-      ```
 
 Example of the Image Classification Model Configuration File
 ------------------------------------------------------------
@@ -317,7 +313,6 @@ The following code uses the TensorFlow engine as an example. You can modify the 
 
    .. code-block::
 
-      ```
       {
           "predicted_label": "flower",
           "scores": [
@@ -325,13 +320,11 @@ The following code uses the TensorFlow engine as an example. You can modify the 
              ["begonia", 0.01]
           ]
       }
-      ```
 
 -  Configuration file
 
    .. code-block::
 
-      ```
       {
           "model_type": "TensorFlow",
           "model_algorithm": "image_classification",
@@ -399,7 +392,6 @@ The following code uses the TensorFlow engine as an example. You can modify the 
               ]
           }]
       }
-      ```
 
 Example of the Predictive Analytics Model Configuration File
 ------------------------------------------------------------
@@ -410,7 +402,6 @@ The following code uses the TensorFlow engine as an example. You can modify the 
 
    .. code-block::
 
-      ```
       {
           "data": {
               "req_data": [
@@ -435,13 +426,11 @@ The following code uses the TensorFlow engine as an example. You can modify the 
               ]
           }
       }
-      ```
 
 -  Model output
 
    .. code-block::
 
-      ```
       {
           "data": {
               "resp_data": [
@@ -454,13 +443,11 @@ The following code uses the TensorFlow engine as an example. You can modify the 
               ]
           }
       }
-      ```
 
 -  Configuration file
 
    .. code-block::
 
-      ```
       {
           "model_type": "TensorFlow",
           "model_algorithm": "predict_analysis",
@@ -536,7 +523,6 @@ The following code uses the TensorFlow engine as an example. You can modify the 
                       }]
               }]
       }
-      ```
 
 .. _modelarts_23_0092__en-us_topic_0172466149_section9113122232018:
 
