@@ -9,7 +9,7 @@ When you import models in **Model Management**, if the meta model is imported fr
 
 -  The model package must contain the **model** directory. The **model** directory stores the model file, model configuration file, and model inference code.
 -  The model configuration file must exist and its name is fixed to **config.json**. There exists only one model configuration file. For details about how to compile the model configuration file, see :ref:`Specifications for Compiling the Model Configuration File <modelarts_23_0092>`.
--  The model inference code file is optional. If this file is required, the file name is fixed to **customize_service.py**. There must be one and only one such file. For details about how to compile the model inference code, see :ref:`Specifications for Compiling Model Inference Code <modelarts_23_0093>`.
+-  The model inference code file is mandatory. The file name is consistently to be **customize_service.py**. There must be one and only one such file. For details about how to compile the model inference code, see :ref:`Specifications for Compiling Model Inference Code <modelarts_23_0093>`.
 
    .. note::
 
@@ -36,7 +36,7 @@ Model Package Example
       |   │   │   ├── variables.index Mandatory
       |   │   │   ├── variables.data-00000-of-00001 Mandatory
       |   │   ├──config.json (Mandatory) Model configuration file. The file name is fixed to config.json. Only one model configuration file is supported.
-      |   │   ├──customize_service.py (Optional) Model inference code. The file name is fixed to customize_service.py. Only one model inference code file exists. The files on which customize_service.py depends can be directly stored in the model directory.
+      |   │   ├──customize_service.py (Mandatory) Model inference code. The file name is fixed to customize_service.py. Only one model inference code file exists. The files on which customize_service.py depends can be directly stored in the model directory.
 
 -  Structure of the MXNet-based model package
 
@@ -51,7 +51,7 @@ Model Package Example
       |   │   ├── resnet-50-symbol.json (Mandatory) Model definition file, which contains the neural network description of the model
       |   │   ├── resnet-50-0000.params (Mandatory) Model variable parameter file, which contains parameter and weight information
       |   │   ├──config.json (Mandatory) Model configuration file. The file name is fixed to config.json. Only one model configuration file is supported.
-      |   │   ├──customize_service.py (Optional) Model inference code. The file name is fixed to customize_service.py. Only one model inference code file exists. The files on which customize_service.py depends can be directly stored in the model directory.
+      |   │   ├──customize_service.py (Mandatory) Model inference code. The file name is fixed to customize_service.py. Only one model inference code file exists. The files on which customize_service.py depends can be directly stored in the model directory.
 
 -  Structure of the Image-based model package
 
@@ -76,7 +76,7 @@ Model Package Example
       |   │  ├── <<Custom Python package>> (Optional) User's Python package, which can be directly referenced in the model inference code
       |   │  ├── spark_model (Mandatory) Model directory, which contains the model content saved by PySpark
       |   │  ├──config.json (Mandatory) Model configuration file. The file name is fixed to config.json. Only one model configuration file is supported.
-      |   │  ├──customize_service.py (Optional) Model inference code. The file name is fixed to customize_service.py. Only one model inference code file exists. The files on which customize_service.py depends can be directly stored in the model directory.
+      |   │  ├──customize_service.py (Mandatory) Model inference code. The file name is fixed to customize_service.py. Only one model inference code file exists. The files on which customize_service.py depends can be directly stored in the model directory.
 
 -  Structure of the PyTorch-based model package
 
@@ -90,7 +90,7 @@ Model Package Example
       |   │  ├── <<Custom Python package>> (Optional) User's Python package, which can be directly referenced in the model inference code
       |   │  ├── resnet50.pth (Mandatory) PyTorch model file, which contains variable and weight information and is saved as state_dict
       |   │  ├──config.json (Mandatory) Model configuration file. The file name is fixed to config.json. Only one model configuration file is supported.
-      |   │  ├──customize_service.py (Optional) Model inference code. The file name is fixed to customize_service.py. Only one model inference code file exists. The files on which customize_service.py depends can be directly stored in the model directory.
+      |   │  ├──customize_service.py (Mandatory) Model inference code. The file name is fixed to customize_service.py. Only one model inference code file exists. The files on which customize_service.py depends can be directly stored in the model directory.
 
 -  Structure of the Caffe-based model package
 
@@ -105,7 +105,7 @@ Model Package Example
       |   |   |── deploy.prototxt (Mandatory) Caffe model file, which contains information such as the model network structure
       |   |   |── resnet.caffemodel (Mandatory) Caffe model file, which contains variable and weight information
       |   |   |── config.json (Mandatory) Model configuration file. The file name is fixed to config.json. Only one model configuration file is supported.
-      |   |   |── customize_service.py  (Optional) Model inference code. The file name is fixed to customize_service.py. Only one model inference code file exists. The files on which customize_service.py depends can be directly stored in the model directory.
+      |   |   |── customize_service.py  (Mandatory) Model inference code. The file name is fixed to customize_service.py. Only one model inference code file exists. The files on which customize_service.py depends can be directly stored in the model directory.
 
 -  Structure of the XGBoost-based model package
 
@@ -119,7 +119,7 @@ Model Package Example
       |   |   |── <<Custom Python package>> (Optional) User's Python package, which can be directly referenced in the model inference code
       |   |   |── *.m (Mandatory): Model file whose extension name is .m
       |   |   |── config.json (Mandatory) Model configuration file. The file name is fixed to config.json. Only one model configuration file is supported.
-      |   |   |── customize_service.py  (Optional) Model inference code. The file name is fixed to customize_service.py. Only one model inference code file exists. The files on which customize_service.py depends can be directly stored in the model directory.
+      |   |   |── customize_service.py  (Mandatory) Model inference code. The file name is fixed to customize_service.py. Only one model inference code file exists. The files on which customize_service.py depends can be directly stored in the model directory.
 
 -  Structure of the Scikit_Learn-based model package
 
@@ -133,4 +133,4 @@ Model Package Example
       |   |   |── <<Custom Python package>> (Optional) User's Python package, which can be directly referenced in the model inference code
       |   |   |── *.m (Mandatory): Model file whose extension name is .m
       |   |   |── config.json (Mandatory) Model configuration file. The file name is fixed to config.json. Only one model configuration file is supported.
-      |   |   |── customize_service.py  (Optional) Model inference code. The file name is fixed to customize_service.py. Only one model inference code file exists. The files on which customize_service.py depends can be directly stored in the model directory.
+      |   |   |── customize_service.py  (Mandatory) Model inference code. The file name is fixed to customize_service.py. Only one model inference code file exists. The files on which customize_service.py depends can be directly stored in the model directory.
