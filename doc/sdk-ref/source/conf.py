@@ -28,6 +28,15 @@ project = 'ModelArts'
 otcdocs_repo_name = 'opentelekomcloud-docs/modelarts'
 # Those variables are required for edit/bug links
 
+# Those variables are needed for indexing into OpenSearch
+otcdocs_doc_environment = 'public'
+otcdocs_doc_link = '/modelarts/sdk-ref/'
+otcdocs_doc_title = 'ModelArts Software Development Kit (ModelArts SDK)'
+otcdocs_doc_type = 'sdk-ref'
+otcdocs_service_category = 'big_data'
+otcdocs_service_title = 'ModelArts'
+otcdocs_service_type = 'ma'
+
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
