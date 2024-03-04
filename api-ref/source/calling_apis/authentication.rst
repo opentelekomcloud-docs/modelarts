@@ -80,7 +80,11 @@ Obtain the API Gateway signing SDK from the enterprise administrator.
 
 Decompress the downloaded package and reference the obtained JAR files as dependencies, as highlighted in the following figure.
 
-|image1|
+
+.. figure:: /_static/images/en-us_image_0000001838380189.png
+   :alt: **Figure 1** JAR Files
+
+   **Figure 1** JAR Files
 
 #. Generate an AK/SK. (If an AK/SK file has already been obtained, skip this step and locate the downloaded AK/SK file. Generally, the file name will be **credentials.csv**.)
 
@@ -95,22 +99,22 @@ Decompress the downloaded package and reference the obtained JAR files as depend
    Import the demo project to Eclipse.
 
 
-   .. figure:: /_static/images/en-us_image_0000001404664602.gif
-      :alt: **Figure 1** Selecting Existing Projects into Workspace
+   .. figure:: /_static/images/en-us_image_0000001791625782.png
+      :alt: **Figure 2** Selecting Existing Projects into Workspace
 
-      **Figure 1** Selecting Existing Projects into Workspace
-
-
-   .. figure:: /_static/images/en-us_image_0000001455264277.gif
-      :alt: **Figure 2** Selecting the demo project
-
-      **Figure 2** Selecting the demo project
+      **Figure 2** Selecting Existing Projects into Workspace
 
 
-   .. figure:: /_static/images/en-us_image_0000001454864609.gif
-      :alt: **Figure 3** Structure of the demo project
+   .. figure:: /_static/images/en-us_image_0000001838385153.png
+      :alt: **Figure 3** Selecting the demo project
 
-      **Figure 3** Structure of the demo project
+      **Figure 3** Selecting the demo project
+
+
+   .. figure:: /_static/images/en-us_image_0000001838385445.png
+      :alt: **Figure 4** Structure of the demo project
+
+      **Figure 4** Structure of the demo project
 
 #. Sign the request.
 
@@ -183,5 +187,3 @@ Decompress the downloaded package and reference the obtained JAR files as depend
       In the **Package Explorer** area on the left, right-click **Demo.java** and choose **Run AS** > **Java Application** from the shortcut menu to run the demo code.
 
       You can view the API call logs on the console.
-
-.. |image1| image:: /_static/images/en-us_image_0000001404504698.gif
