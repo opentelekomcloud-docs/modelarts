@@ -32,4 +32,4 @@ For details about the built-in algorithms and their running parameters, see the 
 -  :ref:`Faster_RCNN_ResNet_v2_101 <modelarts_23_0158__en-us_topic_0259701754_en-us_topic_0189694045_section184719918316>`
 -  :ref:`Faster_RCNN_ResNet_v1_50 <modelarts_23_0158__en-us_topic_0259701754_en-us_topic_0189694045_section1794118221311>`
 
-.. |image1| image:: /_static/images/en-us_image_0000001455265565.gif
+.. |image1| image:: /_static/images/en-us_image_0000001791628038.png
