@@ -1,6 +1,6 @@
-:original_name: modelarts_03_0409.html
+:original_name: CreateAuthorization.html
 
-.. _modelarts_03_0409:
+.. _CreateAuthorization:
 
 Configuring Authorization
 =========================

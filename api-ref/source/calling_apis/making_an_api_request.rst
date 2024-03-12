@@ -7,7 +7,7 @@ Making an API Request
 
 This section describes the structure of a REST API request, and uses the IAM API for obtaining a user token as an example to demonstrate how to call an API. The obtained token can then be used to authenticate the calling of other APIs.
 
-.. _modelarts_03_0005__en-us_topic_0129435569_en-us_topic_0170917207_en-us_topic_0168405763_section1849899574:
+.. _modelarts_03_0005__en-us_topic_0170917207_en-us_topic_0168405763_section1849899574:
 
 Request URI
 -----------
@@ -23,7 +23,7 @@ The format of a request URI is as follows:
    +===============+=====================================================================================================================================================================================================================================================================+
    | URI-scheme    | Protocol used to transmit requests. All APIs use HTTPS.                                                                                                                                                                                                             |
    +---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Endpoint      | Domain name or IP address of the server for the REST service endpoint. The endpoint varies depending on services in different regions. It can be obtained in :ref:`Endpoints <modelarts_03_0141>`.                                                                  |
+   | Endpoint      | Domain name or IP address of the server for the REST service endpoint. The endpoint varies depending on services in different regions. It can be obtained in :ref:`Endpoint <modelarts_03_0141>`.                                                                   |
    +---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | resource-path | Access path of an API for performing a specified operation. Obtain the path from the URI of an API. For example, the **resource-path** of the API used to obtain a user token is **/v3/auth/tokens**.                                                               |
    +---------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -76,9 +76,9 @@ Request Header
 
 You can also add additional header fields to a request, such as the fields required by a specified URI or HTTP method. For example, to request for the authentication information, add **Content-Type**, which specifies the request body type.
 
-:ref:`Table 3 <modelarts_03_0005__en-us_topic_0129435569_table139019272562>` describes the common request header fields to be added to the request.
+:ref:`Table 3 <modelarts_03_0005__table139019272562>` describes the common request header fields to be added to the request.
 
-.. _modelarts_03_0005__en-us_topic_0129435569_table139019272562:
+.. _modelarts_03_0005__table139019272562:
 
 .. table:: **Table 3** Common request header fields
 
@@ -126,9 +126,9 @@ The API for obtaining a user token does not require authentication. Therefore, t
 Request Body
 ------------
 
-The body of a request is often sent in a structured format as specified in the Content-Type header field. The request body transfers content except the request header.The request body varies between APIs. Some APIs do not require the request body, such as the APIs requested using the GET and DELETE methods.
+The body of a request is often sent in a structured format as specified in the Content-Type header field. The request body transfers content except the request header. The request body varies between APIs. Some APIs do not require the request body, such as the APIs requested using the GET and DELETE methods.
 
-If an API is used to obtain a user token, the request parameters and parameter description can be obtained from the API request. The following provides an example request with a body included. Replace *user_name*, *domain_name*, and *user_password* with the actual username, account name, and login password, respectively. **project_name** is the project name. For details, see :ref:`Obtaining a Username and ID <modelarts_03_0006>`, :ref:`Obtaining an Account Name and ID <modelarts_03_0148>`, and :ref:`Obtaining a Project ID <modelarts_03_0147>`.
+If an API is used to obtain a user token, the request parameters and parameter description can be obtained from the API request. The following provides an example request with a body included. Replace *user_name*, *domain_name*, and *user_password* with the actual username, tenant name, and login password, respectively. **project_name** is the project name. For details, see :ref:`Obtaining a Username <modelarts_03_0006>`, :ref:`Obtaining the Account Name and Account ID <modelarts_03_0148>`, and :ref:`Obtaining a Project Name <modelarts_03_0147>`.
 
 .. note::
 

@@ -1,14 +1,14 @@
-:original_name: modelarts_03_0408.html
+:original_name: authorization.html
 
-.. _modelarts_03_0408:
+.. _authorization:
 
 Authorization Management
 ========================
 
--  :ref:`Configuring Authorization <modelarts_03_0409>`
--  :ref:`Viewing an Authorization List <modelarts_03_0410>`
--  :ref:`Deleting Authorization <modelarts_03_0411>`
--  :ref:`Creating a ModelArts Agency <modelarts_03_0412>`
+-  :ref:`Configuring Authorization <createauthorization>`
+-  :ref:`Viewing an Authorization List <getauthorizations>`
+-  :ref:`Deleting Authorization <deleteauthorizations>`
+-  :ref:`Creating a ModelArts Agency <createmodelartsagency>`
 
 .. toctree::
    :maxdepth: 1

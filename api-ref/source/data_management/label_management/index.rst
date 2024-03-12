@@ -1,6 +1,6 @@
-:original_name: topic_300000012.html
+:original_name: label_management.html
 
-.. _topic_300000012:
+.. _label_management:
 
 Label Management
 ================

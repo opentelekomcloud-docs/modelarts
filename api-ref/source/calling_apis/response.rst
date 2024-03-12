@@ -19,49 +19,13 @@ Response Header
 
 Similar to a request, a response also has a header, for example, **Content-type**.
 
-.. table:: **Table 1** Common response header fields
-
-   +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | Header                | Description                                                                                                                                                                                                                    | Mandatory             |
-   +=======================+================================================================================================================================================================================================================================+=======================+
-   | Content-Type          | Media type of the message body sent to a receiver                                                                                                                                                                              | Yes                   |
-   |                       |                                                                                                                                                                                                                                |                       |
-   |                       | Type: string                                                                                                                                                                                                                   |                       |
-   |                       |                                                                                                                                                                                                                                |                       |
-   |                       | Default value: **application/json; charset=UTF-8**                                                                                                                                                                             |                       |
-   +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | X-request-id          | This field carries the request ID for task tracing.                                                                                                                                                                            | No                    |
-   |                       |                                                                                                                                                                                                                                |                       |
-   |                       | Type: string **request_id-timestamp-hostname** (**request_id** is the UUID generated on the server, **timestamp** indicates the current timestamp, and **hostname** is the name of the server that processes the current API.) |                       |
-   |                       |                                                                                                                                                                                                                                |                       |
-   |                       | Default value: none                                                                                                                                                                                                            |                       |
-   +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | X-ratelimit           | This field carries the total number of flow control requests.                                                                                                                                                                  | No                    |
-   |                       |                                                                                                                                                                                                                                |                       |
-   |                       | Type: integer                                                                                                                                                                                                                  |                       |
-   |                       |                                                                                                                                                                                                                                |                       |
-   |                       | Default value: none                                                                                                                                                                                                            |                       |
-   +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | X-ratelimit-used      | This field carries the number of remaining requests.                                                                                                                                                                           | No                    |
-   |                       |                                                                                                                                                                                                                                |                       |
-   |                       | Type: integer                                                                                                                                                                                                                  |                       |
-   |                       |                                                                                                                                                                                                                                |                       |
-   |                       | Default value: none                                                                                                                                                                                                            |                       |
-   +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | X-ratelimit-window    | This field carries the flow control unit.                                                                                                                                                                                      | No                    |
-   |                       |                                                                                                                                                                                                                                |                       |
-   |                       | Type: string The unit is minute, hour, or day.                                                                                                                                                                                 |                       |
-   |                       |                                                                                                                                                                                                                                |                       |
-   |                       | Default value: hour                                                                                                                                                                                                            |                       |
-   +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-
-:ref:`Figure 1 <modelarts_03_0003__en-us_topic_0171310283_en-us_topic_0170917209_en-us_topic_0168405765_fig4865141011511>` shows the response header fields for the API used to obtain a user token.
+:ref:`Figure 1 <modelarts_03_0003__en-us_topic_0170917209_en-us_topic_0168405765_fig4865141011511>` shows the response header fields for the API used to obtain a user token.
 
 **x-subject-token** is the desired user token. This token can then be used to authenticate the calling of other APIs.
 
-.. _modelarts_03_0003__en-us_topic_0171310283_en-us_topic_0170917209_en-us_topic_0168405765_fig4865141011511:
+.. _modelarts_03_0003__en-us_topic_0170917209_en-us_topic_0168405765_fig4865141011511:
 
-.. figure:: /_static/images/en-us_image_0000001404984470.png
+.. figure:: /_static/images/en-us_image_0000001846140993.png
    :alt: **Figure 1** Header fields of the response to the request for obtaining a user token
 
    **Figure 1** Header fields of the response to the request for obtaining a user token
@@ -93,8 +57,8 @@ If an error occurs during API calling, an error code and a message will be displ
 .. code-block::
 
    {
-       "error_message": "The format of message is error",
+       "error_msg": "The format of message is error",
        "error_code": "AS.0001"
    }
 
-In the error response body, **error_code** is an error code, and **error_message** provides information about the error. For more details, see :ref:`Error Codes <modelarts_03_0095>`.
+In the error response body, **error_code** is an error code, and **error_msg** provides information about the error. For more details, see :ref:`Error Codes <modelarts_03_0095>`.

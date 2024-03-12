@@ -14,7 +14,6 @@ Service Management
 -  :ref:`Querying Service Event Logs <modelarts_03_0155>`
 -  :ref:`Deleting a Service <modelarts_03_0089>`
 -  :ref:`Querying Supported Service Deployment Specifications <modelarts_03_0200>`
--  :ref:`Querying Dedicated Resource Pools <modelarts_03_0201>`
 
 .. toctree::
    :maxdepth: 1
@@ -29,4 +28,3 @@ Service Management
    querying_service_event_logs
    deleting_a_service
    querying_supported_service_deployment_specifications
-   querying_dedicated_resource_pools

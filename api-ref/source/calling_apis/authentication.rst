@@ -72,7 +72,7 @@ Download the demo project at https://github.com/api-gate-way/SdkDemo.
 
 .. note::
 
-   ModelArts is a regional service. Specify the project ID when calling the API. Therefore, before running the demo project, add the project ID (**X-Project-Id**) in line 110 of access() in **AccessServicelmpl.java**. For details about how to obtain a project ID, see :ref:`Obtaining a Project ID <modelarts_03_0147>`.
+   ModelArts is a regional service. Specify the project ID when calling the API. Therefore, before running the demo project, add the project ID (**X-Project-Id**) in line 110 of access() in **AccessServicelmpl.java**. For details about how to obtain a project ID, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`.
 
 If you do not need the demo project, visit the following URL to download the API Gateway signing SDK:
 
@@ -81,12 +81,16 @@ Obtain the API Gateway signing SDK from the enterprise administrator.
 Decompress the downloaded package and reference the obtained JAR files as dependencies, as highlighted in the following figure.
 
 
-.. figure:: /_static/images/en-us_image_0000001838380189.png
+.. figure:: /_static/images/en-us_image_0000001862721045.png
    :alt: **Figure 1** JAR Files
 
    **Figure 1** JAR Files
 
 #. Generate an AK/SK. (If an AK/SK file has already been obtained, skip this step and locate the downloaded AK/SK file. Generally, the file name will be **credentials.csv**.)
+
+   .. note::
+
+      If you use a RightCloud account, contact the system administrator to obtain the AK/SK.
 
    a. Log in to the console, enter the **My Credentials** page, and choose **Access Keys** > **Create Access Key**.
    b. In the **Create Access Key** dialog box that is displayed, use the login password for verification.
@@ -94,31 +98,31 @@ Decompress the downloaded package and reference the obtained JAR files as depend
 
 #. Download and decompress the demo project.
 
-#. .. _modelarts_03_0004__en-us_topic_0129435566_li94791126103617:
+#. .. _modelarts_03_0004__li94791126103617:
 
    Import the demo project to Eclipse.
 
 
-   .. figure:: /_static/images/en-us_image_0000001791625782.png
+   .. figure:: /_static/images/en-us_image_0000001816121182.png
       :alt: **Figure 2** Selecting Existing Projects into Workspace
 
       **Figure 2** Selecting Existing Projects into Workspace
 
 
-   .. figure:: /_static/images/en-us_image_0000001838385153.png
+   .. figure:: /_static/images/en-us_image_0000001815961414.png
       :alt: **Figure 3** Selecting the demo project
 
       **Figure 3** Selecting the demo project
 
 
-   .. figure:: /_static/images/en-us_image_0000001838385445.png
+   .. figure:: /_static/images/en-us_image_0000001862721209.png
       :alt: **Figure 4** Structure of the demo project
 
       **Figure 4** Structure of the demo project
 
 #. Sign the request.
 
-   The request signing method is integrated in the JAR files imported in :ref:`3 <modelarts_03_0004__en-us_topic_0129435566_li94791126103617>`. The request needs to be signed before it is sent. The signature will then be added as part of the HTTP header to the request.
+   The request signing method is integrated in the JAR files imported in :ref:`3 <modelarts_03_0004__li94791126103617>`. The request needs to be signed before it is sent. The signature will then be added as part of the HTTP header to the request.
 
    The demo code is classified into the following classes to demonstrate signing and sending the HTTP request:
 
@@ -139,7 +143,7 @@ Decompress the downloaded package and reference the obtained JAR files as depend
 
    b. Edit the **main()** method in the Demo.java file, and replace the bold text with actual values.
 
-      As shown in the following code, if you use other methods such as POST, PUT, and DELETE, see the corresponding comment. Replace the values of **region**, **serviceName**, **ak**, **sk**, and **url**. The URL for obtaining the VPC is used in the sample project. Replace it with the actual URL. Contact the system administrator to obtain the endpoint.
+      As shown in the following code, if you use other methods such as POST, PUT, and DELETE, see the corresponding comment. Replace the values of **region**, **serviceName**, **ak**, **sk**, and **url**. The URL for obtaining the VPC is used in the sample project. Replace it with the actual URL. For details about how to obtain the endpoint, see :ref:`Regions and Endpoints <modelarts_03_0141>`.
 
       .. code-block:: text
 

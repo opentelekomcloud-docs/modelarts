@@ -12,6 +12,8 @@ Dataset Management
 -  :ref:`Deleting a Dataset <deletedataset>`
 -  :ref:`Querying Dataset Statistics <liststats>`
 -  :ref:`Querying the Monitoring Data of a Dataset <getdatasetmetrics>`
+-  :ref:`Querying Details About Team Labeling Task Statistics <listworkforcetaskstats>`
+-  :ref:`Querying Details About the Progress of a Team Labeling Task Member <getworkforcetaskmetrics>`
 
 .. toctree::
    :maxdepth: 1
@@ -24,3 +26,5 @@ Dataset Management
    deleting_a_dataset
    querying_dataset_statistics
    querying_the_monitoring_data_of_a_dataset
+   querying_details_about_team_labeling_task_statistics
+   querying_details_about_the_progress_of_a_team_labeling_task_member

@@ -15,19 +15,19 @@ URI
 
 DELETE /v1/{project_id}/models/{model_id}
 
-:ref:`Table 1 <modelarts_03_0079__en-us_topic_0130168819_table16518993181628>` describes the required parameters.
+:ref:`Table 1 <modelarts_03_0079__table16518993181628>` describes the required parameters.
 
-.. _modelarts_03_0079__en-us_topic_0130168819_table16518993181628:
+.. _modelarts_03_0079__table16518993181628:
 
 .. table:: **Table 1** Parameter description
 
-   +------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
-   | Parameter  | Mandatory | Type   | Description                                                                                                        |
-   +============+===========+========+====================================================================================================================+
-   | project_id | Yes       | String | Project ID. For details about how to obtain the project ID, see :ref:`Obtaining a Project ID <modelarts_03_0147>`. |
-   +------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
-   | model_id   | Yes       | String | ID of the model to be deleted                                                                                      |
-   +------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------+
+   +------------+-----------+--------+---------------------------------------------------------------------------------------------------------------------------+
+   | Parameter  | Mandatory | Type   | Description                                                                                                               |
+   +============+===========+========+===========================================================================================================================+
+   | project_id | Yes       | String | Project ID. For details about how to obtain a project ID, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`. |
+   +------------+-----------+--------+---------------------------------------------------------------------------------------------------------------------------+
+   | model_id   | Yes       | String | ID of the model to be deleted                                                                                             |
+   +------------+-----------+--------+---------------------------------------------------------------------------------------------------------------------------+
 
 .. table:: **Table 2** Parameter description
 
@@ -45,31 +45,31 @@ None
 Response Body
 -------------
 
-:ref:`Table 3 <modelarts_03_0079__en-us_topic_0130168819_table1954662185412>` describes the response parameters.
+:ref:`Table 3 <modelarts_03_0079__table1954662185412>` describes the response parameters.
 
-.. _modelarts_03_0079__en-us_topic_0130168819_table1954662185412:
+.. _modelarts_03_0079__table1954662185412:
 
 .. table:: **Table 3** Parameter description
 
-   +---------------------+---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter           | Type                            | Description                                                                                                                             |
-   +=====================+=================================+=========================================================================================================================================+
-   | delete_success_list | String array                    | ID list of models successfully deleted                                                                                                  |
-   +---------------------+---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-   | delete_failed_list  | **DeleteModelFailResult** array | List of models that fail to be deleted. For details, see :ref:`Table 4 <modelarts_03_0079__en-us_topic_0130168819_table1198992710540>`. |
-   +---------------------+---------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
+   +---------------------+---------------------------------+------------------------------------------------------------------------------------------------------------------+
+   | Parameter           | Type                            | Description                                                                                                      |
+   +=====================+=================================+==================================================================================================================+
+   | delete_success_list | String array                    | ID list of models successfully deleted                                                                           |
+   +---------------------+---------------------------------+------------------------------------------------------------------------------------------------------------------+
+   | delete_failed_list  | **DeleteModelFailResult** array | List of models that fail to be deleted. For details, see :ref:`Table 4 <modelarts_03_0079__table1198992710540>`. |
+   +---------------------+---------------------------------+------------------------------------------------------------------------------------------------------------------+
 
-.. _modelarts_03_0079__en-us_topic_0130168819_table1198992710540:
+.. _modelarts_03_0079__table1198992710540:
 
 .. table:: **Table 4** **DeleteModelFailResult** parameters
 
-   ============= ====== ======================================
-   Parameter     Type   Description
-   ============= ====== ======================================
-   model_id      String ID of a model that fails to be deleted
-   error_code    String Error code of the deletion failure
-   error_message String Error message of the deletion failure
-   ============= ====== ======================================
+   ========== ====== ======================================
+   Parameter  Type   Description
+   ========== ====== ======================================
+   model_id   String ID of a model that fails to be deleted
+   error_code String Error code of the deletion failure
+   error_msg  String Error message of the deletion failure
+   ========== ====== ======================================
 
 Samples
 -------
@@ -92,16 +92,11 @@ The following shows how to delete the model whose ID is **023e90be-7e2a-4169-bab
       {
       "model_id": "759645d9-3672-4db1-bb6d-49ed58b84e10",
       "error_code": "ModelArts.3009",
-      "error_message": "Failed to delete model, model (759645d9-3672-4db1-bb6d-49ed58b84e10) already deploy service."
+      "error_msg": "Failed to delete model, model (759645d9-3672-4db1-bb6d-49ed58b84e10) already deploy service."
       }]
       }
 
 Status Code
 -----------
 
-For details about the status code, see :ref:`Table 1 <modelarts_03_0094__en-us_topic_0132773864_table1450010510213>`.
-
-Error Codes
------------
-
-See :ref:`Error Codes <modelarts_03_0095>`.
+For details about the status code, see :ref:`Table 1 <modelarts_03_0094__table1450010510213>`.
