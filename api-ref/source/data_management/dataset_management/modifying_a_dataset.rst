@@ -157,7 +157,7 @@ Modifying a Dataset
      "dataset_id" : "gfghHSokody6AJigS5A",
      "description" : "just a test",
      "add_tags" : [ {
-       "name" : "Bee",
+       "name" : "Rabbit",
        "type" : 0,
        "property" : {
          "@modelarts:color" : "#3399ff"

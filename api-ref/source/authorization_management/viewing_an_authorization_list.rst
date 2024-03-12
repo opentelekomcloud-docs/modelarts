@@ -1,6 +1,6 @@
-:original_name: modelarts_03_0410.html
+:original_name: GetAuthorizations.html
 
-.. _modelarts_03_0410:
+.. _GetAuthorizations:
 
 Viewing an Authorization List
 =============================
@@ -72,10 +72,10 @@ Response Parameters
    +=============+===================================================================================================+=================================+
    | total_count | Number                                                                                            | Authorization information.      |
    +-------------+---------------------------------------------------------------------------------------------------+---------------------------------+
-   | auth        | Array of :ref:`AuthorizationResponse <modelarts_03_0410__response_authorizationresponse>` objects | Authorization information list. |
+   | auth        | Array of :ref:`AuthorizationResponse <getauthorizations__response_authorizationresponse>` objects | Authorization information list. |
    +-------------+---------------------------------------------------------------------------------------------------+---------------------------------+
 
-.. _modelarts_03_0410__response_authorizationresponse:
+.. _getauthorizations__response_authorizationresponse:
 
 .. table:: **Table 4** AuthorizationResponse
 
