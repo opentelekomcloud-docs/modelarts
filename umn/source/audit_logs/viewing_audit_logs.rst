@@ -38,7 +38,7 @@ Procedure
 
 #. Click **View Trace** in the **Operation** column. In the displayed **View Trace** dialog box, the trace structure details are displayed.
 
-   For details about the key fields in the CTS trace structure, see `Cloud Trace Service User Guide <https://docs.otc.t-systems.com/en-us/usermanual/cts/en-us_topic_0030579718.html>`__.
+   For more information about the CTS trace structure, see `Cloud Trace Service User Guide <https://docs.otc.t-systems.com/en-us/usermanual/cts/en-us_topic_0030579718.html>`__.
 
-.. |image1| image:: /_static/images/en-us_image_0000001454865841.png
-.. |image2| image:: /_static/images/en-us_image_0000001455265521.png
+.. |image1| image:: /_static/images/en-us_image_0000001846057341.png
+.. |image2| image:: /_static/images/en-us_image_0000001799338500.png

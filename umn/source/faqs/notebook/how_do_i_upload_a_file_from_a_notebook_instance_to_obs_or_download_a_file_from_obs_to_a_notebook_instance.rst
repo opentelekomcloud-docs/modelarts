@@ -8,7 +8,7 @@ How Do I Upload a File from a Notebook Instance to OBS or Download a File from O
 In a notebook instance, you can call the ModelArts MoXing API or SDK to exchange data with OBS for uploading a file to OBS or downloading a file from OBS to the notebook instance.
 
 
-.. figure:: /_static/images/en-us_image_0000001454985997.png
+.. figure:: /_static/images/en-us_image_0000001799338736.png
    :alt: **Figure 1** Uploading or downloading a file
 
    **Figure 1** Uploading or downloading a file
@@ -31,13 +31,13 @@ Sample code:
    # Download the OBS file obs_file.txt from OBS to a notebook instance.
    mox.file.copy('obs://bucket_name/obs_file.txt', '/home/ma-user/work/obs_file.txt')
 
-   # Upload the OBS folder sub_dir_0 from a notebook instance to OBS.
+   # Upload the OBS folder sub_dir_0 from the notebook instance to OBS.
    mox.file.copy_parallel('/home/ma-user/work/sub_dir_0', 'obs://bucket_name/sub_dir_0')
    # Upload the OBS file obs_file.txt from a notebook instance to OBS.
    mox.file.copy('/home/ma-user/work/obs_file.txt', 'obs://bucket_name/obs_file.txt')
 
-Method 2: Using SDK to Upload and Download a File
--------------------------------------------------
+Method 2: Use SDKs to Exchange Data
+-----------------------------------
 
 Call the ModelArts SDK for downloading a file from OBS.
 

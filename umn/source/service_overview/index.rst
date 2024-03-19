@@ -9,8 +9,8 @@ Service Overview
 -  :ref:`Functions <modelarts_01_0003>`
 -  :ref:`Basic Knowledge <modelarts_01_0009>`
 -  :ref:`Related Services <modelarts_01_0006>`
--  :ref:`How Do I Access ModelArts <modelarts_21_0035>`
--  :ref:`Permissions Management <modelarts_01_0017>`
+-  :ref:`How Do I Access ModelArts? <modelarts_01_0007>`
+-  :ref:`Billing <modelarts_01_0021>`
 
 .. toctree::
    :maxdepth: 1
@@ -21,4 +21,4 @@ Service Overview
    basic_knowledge/index
    related_services
    how_do_i_access_modelarts
-   permissions_management
+   billing

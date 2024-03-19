@@ -8,7 +8,7 @@ ExeML
 -  :ref:`Introduction to ExeML <modelarts_21_0001>`
 -  :ref:`Image Classification <modelarts_21_0002>`
 -  :ref:`Object Detection <modelarts_21_0008>`
--  :ref:`Predictive Analytics <en-us_topic_0000001455145417>`
+-  :ref:`Predictive Analytics <modelarts_21_0014>`
 -  :ref:`Tips <modelarts_21_0030>`
 
 .. toctree::

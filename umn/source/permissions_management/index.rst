@@ -5,14 +5,14 @@
 Permissions Management
 ======================
 
--  :ref:`Basic Concepts <modelarts_23_0078>`
--  :ref:`Creating a User and Granting Permissions <modelarts_23_0079>`
+-  :ref:`Fine-grained Policy <modelarts_23_0078>`
+-  :ref:`Policy Language <modelarts_23_0079>`
 -  :ref:`Creating a Custom Policy <modelarts_23_0080>`
 
 .. toctree::
    :maxdepth: 1
    :hidden: 
 
-   basic_concepts
-   creating_a_user_and_granting_permissions
+   fine-grained_policy
+   policy_language
    creating_a_custom_policy

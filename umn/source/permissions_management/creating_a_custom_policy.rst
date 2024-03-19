@@ -60,26 +60,6 @@ ModelArts is a project-level service, and OBS is a global service. Therefore, yo
 Example Custom Policies of ModelArts
 ------------------------------------
 
--  Example: Denying ExeML project deletion
-
-   A deny policy must be used in conjunction with other policies to take effect. If the permissions assigned to a user contain both Allow and Deny actions, the Deny actions take precedence over the Allow actions.
-
-   The following method can be used if you need to assign permissions of the **ModelArts FullAccess** policy to a user but also forbid the user from deleting ExeML projects. Create a custom policy for denying ExeML project deletion, and assign both policies to the group the user belongs to. Then the user can perform all operations on ModelArts except deleting ExeML projects. The following is an example deny policy:
-
-   .. code-block::
-
-      {
-            "Version": "1.1",
-            "Statement": [
-                  {
-                "Effect": "Deny",
-                        "Action": [
-                              "modelarts:exemlProject:delete"
-                        ]
-                  }
-            ]
-      }
-
 -  Example: Allowing users to use only development environments
 
    The following is a policy configuration example for this user:

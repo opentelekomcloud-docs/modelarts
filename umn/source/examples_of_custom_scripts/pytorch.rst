@@ -102,6 +102,8 @@ Saving a Model
 Inference Code
 --------------
 
+Inference code must be inherited from the BaseService class. For details about the import statements of different types of parent model classes, see :ref:`Table 1 <modelarts_23_0093__en-us_topic_0172466150_table55021545175412>`.
+
 .. code-block::
 
    from PIL import Image
@@ -172,6 +174,14 @@ Inference Code
                result = {k: self.label[result]}
                results.append(result)
            return results
+
+       def _inference(self, data):
+
+           result = {}
+           for k, v in data.items():
+               result[k] = self.model(v)
+
+           return result
 
    class Net(nn.Module):
        def __init__(self):

@@ -5,9 +5,9 @@
 What Is ModelArts?
 ==================
 
-ModelArts is a one-stop development platform for AI developers. With distributed training, automated model building, and model deployment, ModelArts helps AI developers quickly build models and efficiently manage the AI development lifecycle.
+ModelArts is a one-stop AI development platform geared toward developers and data scientists of all skill levels. It enables you to rapidly build, train, and deploy models anywhere, and manage full-lifecycle AI workflows. ModelArts accelerates AI development and fosters AI innovation with key capabilities, including data preprocessing and auto labeling, distributed training, automated model building, and one-click workflow execution.
 
-ModelArts covers all stages of AI development, including data processing and model training and deployment. The underlying technologies of ModelArts support various heterogeneous computing resources, allowing developers to flexibly select and use resources. In addition, ModelArts supports popular open-source AI development frameworks such as TensorFlow and MXNet. Developers can also use self-developed algorithm frameworks to match their usage habits.
+ModelArts covers all stages of AI development, including data processing and model training and deployment. The underlying technologies of ModelArts support various heterogeneous computing resources, allowing developers to flexibly select and use resources. In addition, ModelArts supports popular open-source AI development frameworks such as TensorFlow and PyTorch. ModelArts also allows you to use customized algorithm frameworks tailored to your needs.
 
 ModelArts aims to simplify AI development.
 
@@ -19,7 +19,7 @@ ModelArts supports the entire development process, including data processing, an
 ModelArts supports various AI application scenarios, such as image classification and object detection.
 
 
-.. figure:: /_static/images/en-us_image_0000001404506026.png
+.. figure:: /_static/images/en-us_image_0000001799336924.png
    :alt: **Figure 1** ModelArts architecture
 
    **Figure 1** ModelArts architecture
@@ -29,7 +29,7 @@ Product Advantages
 
 -  **One-stop platform**
 
-   The out-of-the-box and full-lifecycle AI development platform provides one-stop data processing, and development, training, management, and deployment of models.
+   The out-of-the-box and full-lifecycle AI development platform provides one-stop training, management, and deployment of models.
 
 -  **Easy to use**
 
@@ -39,9 +39,11 @@ Product Advantages
 -  **High performance**
 
    -  The self-developed MoXing deep learning framework accelerates algorithm development and training.
+   -  Models running on Ascend AI chips achieve more efficient inference.
 
 -  **Flexible**
 
-   -  Popular open-source frameworks available, such as TensorFlow, Spark_MLlib, MXNet, Caffe, PyTorch, XGBoost-Sklearn, and MindSpore
+   -  Popular open-source frameworks available, such as TensorFlow, and MindSpore
+   -  Ascend chips
    -  Exclusive use of dedicated resources
    -  Custom images for custom frameworks and operators

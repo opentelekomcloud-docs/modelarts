@@ -15,7 +15,7 @@ Text classification classifies text content based on labels. Before labeling tex
 Starting Labeling
 -----------------
 
-#. Log in to the ModelArts management console. In the left navigation pane, choose **Data Management** > **Datasets**. The **Datasets** page is displayed.
+#. Log in to the ModelArts console. In the navigation pane, choose **Data Management** > **Datasets**. The **Datasets** page is displayed.
 
 #. In the dataset list, select the dataset to be labeled based on the labeling type, and click the dataset name to go to the **Dashboard** tab page of the dataset.
 
@@ -33,7 +33,7 @@ The dataset details page displays the labeled and unlabeled text files in the da
    You can repeat this operation to select objects and add labels to the objects.
 
 
-   .. figure:: /_static/images/en-us_image_0000001404825810.png
+   .. figure:: /_static/images/en-us_image_0000001846137201.png
       :alt: **Figure 1** Labeling for text classification
 
       **Figure 1** Labeling for text classification
@@ -46,24 +46,18 @@ Adding Labels
 -  Adding labels on the **Unlabeled** tab page: Click the plus sign (+) next to **Label Set**. On the **Add Label** page that is displayed, add a label name, select a label color, and click **OK**.
 
 
-   .. figure:: /_static/images/en-us_image_0000001455265641.png
-      :alt: **Figure 2** Adding a label (1)
+   .. figure:: /_static/images/en-us_image_0000001799338328.png
+      :alt: **Figure 2** Adding Labels
 
-      **Figure 2** Adding a label (1)
+      **Figure 2** Adding Labels
 
 -  Adding labels on the **Labeled** tab page: Click the plus sign (+) next to **All Labels**. On the **Add Label** page that is displayed, add a label name, select a label color, and click **OK**.
 
 
-   .. figure:: /_static/images/en-us_image_0000001455145609.png
-      :alt: **Figure 3** Adding a label (2)
+   .. figure:: /_static/images/en-us_image_0000001846057121.png
+      :alt: **Figure 3** Adding a label
 
-      **Figure 3** Adding a label (2)
-
-
-   .. figure:: /_static/images/en-us_image_0000001454865965.png
-      :alt: **Figure 4** Adding a label
-
-      **Figure 4** Adding a label
+      **Figure 3** Adding a label
 
 Viewing the Labeled Text
 ------------------------
@@ -103,6 +97,12 @@ In addition to automatically synchronizing data from **Input Dataset Path**, you
    -  **Text and Label Separator**: Select **Tab**, **Space**, **Semicolon**, **Comma**, or **Other**. If you select **Other**, enter a separator in the text box on the right.
    -  **Label Separator**: Select **Tab**, **Space**, **Semicolon**, **Comma**, or **Other**. If you select **Other**, enter a separator in the text box on the right.
 
+
+   .. figure:: /_static/images/en-us_image_0000001805293966.png
+      :alt: **Figure 4** Adding a file
+
+      **Figure 4** Adding a file
+
 #. In the **Add File** dialog box, click **Upload**. The files you add will be automatically displayed on the **Unlabeled** or **Labeled** tab page.
 
 Deleting a File
@@ -115,4 +115,4 @@ You can quickly delete the files you want to discard.
 
 The background of the selected text is blue.
 
-.. |image1| image:: /_static/images/en-us_image_0000001454865969.png
+.. |image1| image:: /_static/images/en-us_image_0000001799498072.png

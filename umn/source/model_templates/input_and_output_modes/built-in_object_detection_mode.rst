@@ -22,7 +22,7 @@ The inference result is returned in JSON format. For details about the fields, s
    +-------------------+--------------+-----------------------------------------------------------------------------------------+
    | Field             | Type         | Description                                                                             |
    +===================+==============+=========================================================================================+
-   | detection_classes | String array | List of detected objects, for example, **["flowers","cat"]**                            |
+   | detection_classes | String array | Types of detected objects, for example, **["bicycle","bus"]**                           |
    +-------------------+--------------+-----------------------------------------------------------------------------------------+
    | detection_boxes   | Float array  | Coordinates of the bounding box, in the format of |image2|                              |
    +-------------------+--------------+-----------------------------------------------------------------------------------------+
@@ -79,5 +79,5 @@ In this mode, input an image to be processed in the inference request. The infer
 
    -  On the **Body** tab page, set the request body. Set **key** to **images**, select **File**, select the image to be processed, and click **send** to send your prediction request.
 
-.. |image1| image:: /_static/images/en-us_image_0000001404985858.png
-.. |image2| image:: /_static/images/en-us_image_0000001404985858.png
+.. |image1| image:: /_static/images/en-us_image_0000001799339004.png
+.. |image2| image:: /_static/images/en-us_image_0000001799339004.png

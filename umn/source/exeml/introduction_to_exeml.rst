@@ -8,36 +8,53 @@ Introduction to ExeML
 ExeML
 -----
 
-ModelArts ExeML is a customized code-free model development tool that helps users start AI application development from scratch with high flexibility. ExeML automates model design, parameter tuning and training, and model compression and deployment with the labeled data. Developers do not need to develop basic and encoding capabilities, but only to upload data and complete model training and deployment as prompted by ExeML.
+ModelArts ExeML is a customized code-free model development tool that helps you start codeless AI application development with high flexibility. ExeML automates model design, parameter tuning and training, and model compression and deployment based on the labeled data. With ExeML, you only need to upload data and perform simple operations as prompted on the ExeML GUI to train and deploy models. Up to 100 ExeML projects can be created.
 
-Currently, you can use ExeML to quickly create image classification, and object detection models. It can be widely used in industrial, retail, and security fields.
+You can use ExeML to quickly build models for image classification, and object detection. ExeML is widely used in industrial, retail, and security sectors.
 
--  Image classification classifies and identifies objects in images.
--  Object detection identifies the position and class of each object in images.
+-  Image classification: identifies a class of objects in images.
+-  Object detection: identifies the position and class of each object in an image.
 
-ExeML Usage Process
--------------------
+ExeML Process
+-------------
 
 With ModelArts ExeML, you can develop AI models without coding. You only need to upload data, create a project, label the data, publish training, and deploy the trained model. Up to 100 ExeML projects can be created. For details, see :ref:`Figure 1 <modelarts_21_0001__en-us_topic_0284258830_en-us_topic_0169445434_fig3917183328>`.
 
 .. _modelarts_21_0001__en-us_topic_0284258830_en-us_topic_0169445434_fig3917183328:
 
-.. figure:: /_static/images/en-us_image_0000001404986118.png
-   :alt: **Figure 1** Usage process of ExeML
+.. figure:: /_static/images/en-us_image_0000001799498508.png
+   :alt: **Figure 1** ExeML process
 
-   **Figure 1** Usage process of ExeML
+   **Figure 1** ExeML process
 
 ExeML Projects
 --------------
 
 -  **Image Classification**
 
-   An image classification project aims to classify images. You only need to add images and label the images. After the images are labeled, an image classification model can be quickly generated. It can automatically classify offerings, vehicle types, and defective goods. For example, in the quality check scenario, you can upload a product image, label the image as qualified or unqualified, and train and deploy a model to inspect product quality.
+   An image classification project aims to classify images. You only need to add images and label them. Then, an image classification model can be quickly generated for automatically classifying offerings, vehicle types, and defective goods. For example, in the quality check scenario, you can upload a product image, label the image as qualified or unqualified, and train and deploy a model to inspect product quality.
 
 -  **Object Detection**
 
-   An object detection project aims to identify the class and location of objects in images. You only need to add images and label objects in the images with proper bounding boxes. The labled images will be used as the training set for creating a model. The model can identify multiple objects and count the number of objects in a single image, as well as inspect employees' dress code and perform unattended inspection of article placement.
+   An object detection project aims to identify the class and location of objects in images. You only need to add images and label objects in the images with proper bounding boxes. The labeled images will be used as a training set for building a model to identify multiple objects or provide the number of objects in a single image. Object detection can also be used to inspect employees' dress code and perform unattended inspection of article placement.
 
--  **Predictive Analytics**
+Model Deployment Specifications
+-------------------------------
 
-   A predictive analytics project is an automated model training application for structured data, which can classify or predict structured data. It can be used for user profile analysis and targeted marketing, as well as predictive maintenance of manufacturing equipment based on real-time data to identify equipment faults.
+Different types of ExeML projects support different specifications for model deployment. For details, see :ref:`Table 1 <modelarts_21_0001__en-us_topic_0284258830_en-us_topic_0169445434_en-us_topic_0284258830_en-us_topic_0169445434_table4446919194615>`.
+
+.. _modelarts_21_0001__en-us_topic_0284258830_en-us_topic_0169445434_en-us_topic_0284258830_en-us_topic_0169445434_table4446919194615:
+
+.. table:: **Table 1** Available deployment specifications for different types of projects
+
+   +-----------------------------------+-------------------------------------------+
+   | Type                              | Available Model Deployment Specifications |
+   +===================================+===========================================+
+   | Image classification              | Compute-intensive 3 instance (CPU)        |
+   |                                   |                                           |
+   |                                   | Compute-intensive 2 instance (GPU)        |
+   +-----------------------------------+-------------------------------------------+
+   | Object detection                  | Compute-intensive 3 instance (CPU)        |
+   |                                   |                                           |
+   |                                   | Compute-intensive 2 instance (GPU)        |
+   +-----------------------------------+-------------------------------------------+

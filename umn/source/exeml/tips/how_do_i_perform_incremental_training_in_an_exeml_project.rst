@@ -9,7 +9,6 @@ Each round of training generates a training version in an ExeML project. If a tr
 
 .. note::
 
-   -  Currently, incremental training is only supported for the following types of ExeML projects: image classification and object detection.
    -  For better training results, use high-quality data for incremental training to improve data labeling performance.
 
 Incremental Training Procedure
@@ -26,9 +25,3 @@ Incremental Training Procedure
 #. After all images are labeled, click **Train** in the upper right corner. In the **Training Configuration** dialog box that is displayed, set **Incremental Training Version** to the training version that has been completed to perform incremental training based on this version. Set other parameters as prompted.
 
    After the settings are complete, click **Yes** to start incremental training. The system automatically switches to the **Train Model** page. After the training is complete, you can view the training details, such as training precision, evaluation result, and training parameters.
-
-
-   .. figure:: /_static/images/en-us_image_0000001455145497.png
-      :alt: **Figure 1** Selecting an incremental training version
-
-      **Figure 1** Selecting an incremental training version

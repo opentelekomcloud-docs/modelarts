@@ -95,7 +95,7 @@ Object Detection
 
    A label file example is as follows:
 
-   .. code-block::
+   ::
 
       <?xml version="1.0" encoding="UTF-8" standalone="no"?>
       <annotation>
@@ -145,9 +145,11 @@ Object Detection
 Text Classification
 -------------------
 
-Text classification supports two import modes.
+txt and csv files can be imported for text classification, with the text encoding format of UTF-8 or GBK.
 
--  The labeled objects and labels for text classification are in the same text file. You can specify a separator to separate the labeled objects and labels, as well as multiple labeled objects.
+Labeled objects and labels for text classification can be stored in two modes:
+
+-  The labeled objects and labels for text classification are in the same text file. You can specify a separator to separate the labeled objects and labels, as well as multiple labels.
 
    For example, the following shows an example text file. The **Tab** key is used to separate the labeled object from the label.
 
@@ -158,7 +160,7 @@ Text classification supports two import modes.
       Why does my phone heat up if I charge it for a while? The volume button stuck after being pressed down.  negative
       It's a gift for Father's Day. The logistics is fast and I received it in 24 hours. I like the earphones because the bass sounds feel good and they would not fall off.  positive
 
--  The labeled objects and label files for text classification are text files, and correspond to each other based on the rows. For example, the first row in a label file indicates the label of the first row in the file of the labeled object.
+-  The labeled objects and labels for text classification are text files, and correspond to each other based on the rows. For example, the first row in a label file indicates the label of the first row in the file of the labeled object.
 
    For example, the content of labeled object **COMMENTS_20180919_114745.txt** is as follows:
 

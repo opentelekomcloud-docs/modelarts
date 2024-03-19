@@ -20,12 +20,6 @@ You can deploy a model as a real-time service that provides a real-time test UI 
 
    The options are **1 hour later**, **2 hours later**, **4 hours later**, **6 hours later**, and **Custom**. If you select **Custom**, you can enter any integer from 1 to 24 hours in the text box on the right.
 
-
-   .. figure:: /_static/images/en-us_image_0000001455145669.png
-      :alt: **Figure 1** Deploying a model
-
-      **Figure 1** Deploying a model
-
 #. After the model deployment is started, view the deployment status on the **Service Deployment** page.
 
    It takes a certain period of time to deploy a model. When the status in the **Version Manager** pane changes from **Deploying** to **Running**, the deployment is complete.
@@ -37,13 +31,13 @@ You can deploy a model as a real-time service that provides a real-time test UI 
 Testing a Service
 -----------------
 
--  On the **Service Deployment** page, select a service type. For example, on the ExeML page, the image classification model is deployed as a real-time service by default. On the **Real-Time Services** page, click **Prediction** in the **Operation** column of the target service to perform a service test. For details, see :ref:`Testing a Service <modelarts_23_0062>`.
+-  On the **Service Deployment** page, select a service type. For example, on the ExeML page, the object detection model is deployed as a real-time service by default. On the **Real-Time Services** page, click **Prediction** in the **Operation** column of the target service to perform a service test. For details, see :ref:`Testing a Service <modelarts_23_0062>`.
 -  You can also use code to test a service. For details, see :ref:`Accessing a Real-Time Service <modelarts_23_0063>`.
 -  The following describes the procedure for performing a service test after the image classification model is deployed as a service on the ExeML page.
 
    #. After the model is deployed, test the service using an image. On the **ExeML** page, click the target project, go to the **Deploy Service** tab page, select the service version in the **Running** status, click **Upload** in the service test area, and upload a local image to perform the test.
 
-   #. Click **Prediction** to conduct the test. After the prediction is complete, label **sunflowers** and its detection score are displayed in the prediction result area on the right. If the model accuracy does not meet your expectation, add images on the **Label Data** tab page, label the images, and train and deploy the model again. :ref:`Table 1 <modelarts_21_0007__en-us_topic_0284258836_en-us_topic_0169446156_table27341946101510>` describes the parameters in the prediction result. If you are satisfied with the model prediction result, call the API to access the real-time service as prompted. For details, see :ref:`Accessing a Real-Time Service <modelarts_23_0063>`.
+   #. Click **Prediction** to conduct the test. After the prediction is complete, label **sunflowers** and its detection score are displayed in the prediction result area on the right. If the model accuracy does not meet your expectation, add images on the **Label Data** tab page, label the images, and train and deploy the model again. :ref:`Table 1 <modelarts_21_0007__en-us_topic_0284258836_en-us_topic_0169446156_table27341946101510>` describes the parameters in the prediction result. If you are satisfied with the model prediction result, call the API to access the real-time service as prompted. For details, see "Accessing a Real-Time Service".
 
       Currently, only JPG, JPEG, BMP, and PNG images are supported.
 

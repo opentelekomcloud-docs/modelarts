@@ -10,7 +10,7 @@ TensorFlow has two types of APIs: Keras and tf. Keras and tf use different code 
 Training a Model (Keras API)
 ----------------------------
 
-.. code-block::
+::
 
    from keras.models import Sequential
    model = Sequential()
@@ -51,7 +51,7 @@ Training a Model (Keras API)
 Saving a Model (Keras API)
 --------------------------
 
-.. code-block::
+::
 
    from keras import backend as K
 
@@ -88,7 +88,7 @@ Saving a Model (Keras API)
 Training a Model (tf API)
 -------------------------
 
-.. code-block::
+::
 
    from __future__ import print_function
 
@@ -319,7 +319,7 @@ Training a Model (tf API)
 Saving a Model (tf API)
 -----------------------
 
-.. code-block::
+::
 
    # Export the model.
    # The model needs to be saved using the saved_model API.
@@ -355,7 +355,9 @@ Saving a Model (tf API)
 Inference Code (Keras and tf APIs)
 ----------------------------------
 
-.. code-block::
+Inference code must be inherited from the BaseService class. For details about the import statements of different types of parent model classes, see :ref:`Table 1 <modelarts_23_0093__en-us_topic_0172466150_table55021545175412>`.
+
+::
 
    from PIL import Image
    import numpy as np

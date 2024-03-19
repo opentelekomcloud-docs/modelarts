@@ -10,7 +10,7 @@ Model training requires a large amount of labeled data. Therefore, before the mo
 Starting Labeling
 -----------------
 
-#. Log in to the ModelArts management console. In the left navigation pane, choose **Data Management** > **Datasets**. The **Datasets** page is displayed.
+#. Log in to the ModelArts console. In the navigation pane, choose **Data Management** > **Datasets**. The **Datasets** page is displayed.
 
 #. In the dataset list, select the dataset to be labeled based on the labeling type, and click the dataset name to go to the **Dashboard** tab page of the dataset.
 
@@ -37,7 +37,7 @@ The dataset details page displays the labeled and unlabeled audio files. The **U
 #. After entering the content, click **OK** to complete the labeling. The audio file is automatically moved to the **Labeled** tab page.
 
 
-   .. figure:: /_static/images/en-us_image_0000001404985642.png
+   .. figure:: /_static/images/en-us_image_0000001846137605.png
       :alt: **Figure 1** Labeling an audio file
 
       **Figure 1** Labeling an audio file
@@ -59,13 +59,13 @@ Adding Audio Files
 
 In addition to automatically synchronizing data from **Input Dataset Path**, you can directly add audio files on ModelArts for data labeling.
 
-#. On the dataset details page, click the **Unlabeled** tab. Then click **Add Audio** in the upper left corner.
+#. On the dataset details page, click the **Unlabeled** tab. Then click **Add File** in the upper left corner.
 
-#. In the **Add Audio** dialog box that is displayed, click **Add Audio**.
+#. In the **Add File** dialog box that is displayed, click **Add File**.
 
    Select the audio files to be uploaded in the local environment. Only WAV audio files are supported. The size of an audio file cannot exceed 4 MB. The total size of audio files uploaded at a time cannot exceed 8 MB.
 
-#. In the **Add Audio** dialog box, click **OK**.
+#. In the **Add File** dialog box, click **OK**.
 
    The audio files you add will be automatically displayed on the **Unlabeled** tab page. In addition, the audio files are automatically saved to the OBS directory specified by **Input Dataset Path**.
 
@@ -80,4 +80,4 @@ On the **Unlabeled** or **Labeled** tab page, select the audio files to be delet
 
    If you select **Delete source files**, audio files stored in the corresponding OBS directory will be deleted when you delete the selected audio files. Deleting source files may affect other dataset versions or datasets using those files. As a result, the page display, training, or inference is abnormal. Deleted data cannot be recovered. Exercise caution when performing this operation.
 
-.. |image1| image:: /_static/images/en-us_image_0000001404825682.png
+.. |image1| image:: /_static/images/en-us_image_0000001799498440.png
