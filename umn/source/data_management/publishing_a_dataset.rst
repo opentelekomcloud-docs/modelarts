@@ -54,12 +54,6 @@ Publishing a Dataset
       | Description                       | Description of the current dataset version.                                                                                                                                                                                                      |
       +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-   .. figure:: /_static/images/en-us_image_0000001404826146.png
-      :alt: **Figure 1** Publishing a dataset
-
-      **Figure 1** Publishing a dataset
-
    After the version is published, you can go to the **Version Manager** tab page to view the detailed information. By default, the system sets the latest version to the current directory.
 
 Directory Structure of Related Files After the Dataset Is Published
@@ -94,3 +88,33 @@ The following uses object detection as an example. If a manifest file is importe
                |-- VersionMame2
                    ...
                |-- ...
+
+Take video labeling as an example. After the dataset is published, the labeling result file (XML) is stored in the dataset output directory.
+
+::
+
+   |-- user-specified-output-path
+        |-- DatasetName-datasetId
+            |-- annotation
+                |-- VersionMame1
+                    |-- VersionMame1.manifest
+                    |-- annotations
+                      |-- images
+                          |-- videoName1
+                             |-- videoName1.timestamp.xml
+                           |-- videoName2
+                             |-- videoName2.timestamp.xml
+               |-- VersionMame2
+                   ...
+               |-- ...
+
+The key frames for video labeling are stored in the dataset input directory.
+
+.. code-block::
+
+   |-- user-specified-input-path
+        |-- images
+           |-- videoName1
+                |-- videoName1.timestamp.jpg
+            |-- videoName2
+                |-- videoName2.timestamp.jpg

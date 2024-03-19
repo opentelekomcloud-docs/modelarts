@@ -32,11 +32,13 @@ The manifest file that contains information about the original file and labeling
 Image Classification
 --------------------
 
-.. code-block::
+::
 
    {
        "source":"s3://path/to/image1.jpg",
        "usage":"TRAIN",
+       "hard":"true",
+       "hard-coefficient":0.8,
        "id":"0162005993f8065ef47eefb59d1e4970",
        "annotation": [
            {
@@ -46,6 +48,8 @@ Image Classification
                    "color":"white",
                    "kind":"Persian cat"
                },
+               "hard":"true",
+               "hard-coefficient":0.8,
                "annotated-by":"human",
                "creation-time":"2019-01-23 11:30:30"
            },
@@ -118,6 +122,8 @@ Image Classification
    +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | property              | No                    | Labeling property. In this example, the cat has two properties: color and kind.                                                                                                                                                                                                |
    +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | hard                  | No                    | Indicates whether the example is a hard example. **True** indicates that the labeling example is a hard example, and **False** indicates that the labeling example is not a hard example.                                                                                      |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | annotated-by          | No                    | The default value is **human**, indicating manual labeling.                                                                                                                                                                                                                    |
    |                       |                       |                                                                                                                                                                                                                                                                                |
    |                       |                       | -  human                                                                                                                                                                                                                                                                       |
@@ -146,7 +152,7 @@ Text Classification
            } ]
    }
 
-The **content** parameter indicates the text to be labeled. The other parameters are the same as those described in :ref:`Image Classification <modelarts_23_0009__en-us_topic_0170886817_section260132417144>`. For details, see :ref:`Table 1 <modelarts_23_0009__en-us_topic_0170886817_table598984218223>`.
+The **content** parameter indicates the text to be labeled (in UTF-8 encoding format). The other parameters are the same as those described in :ref:`Image Classification <modelarts_23_0009__en-us_topic_0170886817_section260132417144>`. For details, see :ref:`Table 1 <modelarts_23_0009__en-us_topic_0170886817_table598984218223>`.
 
 .. _modelarts_23_0009__en-us_topic_0170886817_section335761812211:
 
@@ -286,6 +292,8 @@ Object Detection
    {
        "source":"s3://path/to/image1.jpg",
        "usage":"TRAIN",
+       "hard":"true",
+       "hard-coefficient":0.8,
        "annotation": [
            {
                "type":"modelarts/object_detection",
@@ -454,7 +462,7 @@ Example:
           <truncated>0</truncated>
           <occluded>0</occluded>
           <difficult>0</difficult>
-
+          <hard-coefficient>0.8</hard-coefficient>
           <polygon>
               <x1>373</x1>
               <y1>264</y1>
@@ -784,6 +792,7 @@ Example:
           <truncated>0</truncated>
           <occluded>0</occluded>
           <difficult>0</difficult>
+          <hard-coefficient>0.8</hard-coefficient>
           <polygon>
               <x1>373</x1>
               <y1>264</y1>

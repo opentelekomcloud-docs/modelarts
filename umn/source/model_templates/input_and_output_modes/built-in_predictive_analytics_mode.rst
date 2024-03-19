@@ -8,7 +8,7 @@ Built-in Predictive Analytics Mode
 Input
 -----
 
-This is a built-in input and output mode for predictive analytics. The models using this mode are identified as predictive analytics models. The prediction request path is **/**, the request protocol is **HTTP**, the request method is **POST**, and **Content-Type** is **application/json**. The request body is in JSON format. For details about the JSON fields, see :ref:`Table 1 <modelarts_23_0102__en-us_topic_0172873544_table101531747125712>`. Before selecting this mode, ensure that your model can process the input data in **JSON Schema** format.
+This is a built-in input and output mode for predictive analytics. The models using this mode are identified as predictive analytics models. The prediction request path is **/**, the request protocol is **HTTP**, the request method is **POST**, and **Content-Type** is **application/json**. The request body is in JSON format. For details about the JSON fields, see :ref:`Table 1 <modelarts_23_0102__en-us_topic_0172873544_table101531747125712>`. Before selecting this mode, ensure that your model can process the input data in **JSON Schema** format. For details about the **JSON Schema** format, see the `official guide <https://json-schema.org/understanding-json-schema/reference/array.html>`__.
 
 .. _modelarts_23_0102__en-us_topic_0172873544_table101531747125712:
 

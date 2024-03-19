@@ -8,7 +8,7 @@ Scikit Learn
 Training and Saving a Model
 ---------------------------
 
-.. code-block::
+::
 
    import json
    import pandas as pd
@@ -25,14 +25,16 @@ Training and Saving a Model
    # Save model to local path
    joblib.dump(logisticRegression, '/tmp/sklearn.m')
 
-Before training, download the **iris.csv** dataset, decompress it, and upload it to the **/home/ma-user/work/** directory of the notebook instance. Download the **iris.csv** dataset from https://gist.github.com/netj/8836201.
+Before training, download the **iris.csv** dataset, decompress it, and upload it to the **/home/ma-user/work/** directory of the notebook instance. Download the **iris.csv** dataset from https://gist.github.com/netj/8836201. For details about how to upload a file to a notebook instance, see :ref:`Uploading Files from a Local Path to JupyterLab <modelarts_30_0041>`.
 
 After the model is saved, it must be uploaded to the OBS directory before being published. The **config.json** and **customize_service.py** files must be contained during publishing. For details about the definition method, see :ref:`Model Package Specifications <modelarts_23_0091>`.
 
 Inference Code
 --------------
 
-.. code-block::
+Inference code must be inherited from the BaseService class. For details about the import statements of different types of parent model classes, see :ref:`Table 1 <modelarts_23_0093__en-us_topic_0172466150_table55021545175412>`.
+
+::
 
    # coding:utf-8
    import collections

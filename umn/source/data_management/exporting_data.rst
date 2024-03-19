@@ -9,11 +9,10 @@ A dataset includes labeled and unlabeled data. You can select images or filter d
 
 .. note::
 
-   Only datasets of image classification, object detection, image segmentation, and free format types can be exported.
+   Only datasets of image classification, object detection, and free format types can be exported.
 
    -  For image classification datasets, only the label files in TXT format can be exported.
    -  For object detection datasets, only XML label files in Pascal VOC format can be exported.
-   -  For image segmentation datasets, only XML label files in Pascal VOC format and mask images can be exported.
    -  For free format datasets, all files of the datasets can be exported.
 
 Exporting Data to a New Dataset
@@ -33,12 +32,6 @@ Exporting Data to a New Dataset
 
    On the dataset details page, select or filter data to be exported. Click **Export To** and choose **New Dataset** from the drop-down list.
 
-
-   .. figure:: /_static/images/en-us_image_0000001404986146.png
-      :alt: **Figure 1** Selecting or filtering images to be exported
-
-      **Figure 1** Selecting or filtering images to be exported
-
 #. In the displayed **Export to New Dataset** dialog box, enter the related information and click **OK**.
 
    **Name**: name of the new dataset
@@ -49,11 +42,7 @@ Exporting Data to a New Dataset
 
    **Export Content**: The options are **Export the selected samples** and **Export all samples meeting filtering criteria**.
 
-
-   .. figure:: /_static/images/en-us_image_0000001455266013.png
-      :alt: **Figure 2** Exporting to a new dataset
-
-      **Figure 2** Exporting to a new dataset
+   **Hard Example Filtering**: Select whether to enable hard example filtering.
 
 #. After the data is exported, you can view the new dataset in the dataset list.
 
@@ -74,23 +63,11 @@ Exporting Data to OBS
 
    On the dataset details page, select or filter data to be exported. Click **Export To** and choose **OBS** from the drop-down list.
 
-
-   .. figure:: /_static/images/en-us_image_0000001454986137.png
-      :alt: **Figure 3** Selecting or filtering images to be exported
-
-      **Figure 3** Selecting or filtering images to be exported
-
 #. In the displayed **Export to OBS** dialog box, enter the related information and click **OK**.
 
    **Storage Path**: path where the data to be exported is stored. You are advised not to save data to the input or output path of the current dataset.
 
    **Export Content**: The options are **Export the selected samples** and **Export all samples meeting filtering criteria**.
-
-
-   .. figure:: /_static/images/en-us_image_0000001404666318.png
-      :alt: **Figure 4** Exporting to OBS
-
-      **Figure 4** Exporting to OBS
 
 #. After the data is exported, you can view it in the specified path.
 

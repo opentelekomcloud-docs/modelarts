@@ -14,6 +14,7 @@ Data Management
 -  :ref:`Publishing a Dataset <modelarts_23_0018>`
 -  :ref:`Deleting a Dataset <modelarts_23_0021>`
 -  :ref:`Managing Dataset Versions <modelarts_23_0019>`
+-  :ref:`Confirming Hard Examples <modelarts_23_0223>`
 
 .. toctree::
    :maxdepth: 1
@@ -28,3 +29,4 @@ Data Management
    publishing_a_dataset
    deleting_a_dataset
    managing_dataset_versions
+   confirming_hard_examples
