@@ -1,6 +1,6 @@
-:original_name: en-us_topic_0000001455145417.html
+:original_name: modelarts_21_0014.html
 
-.. _en-us_topic_0000001455145417:
+.. _modelarts_21_0014:
 
 Predictive Analytics
 ====================

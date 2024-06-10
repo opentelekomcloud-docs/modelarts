@@ -7,13 +7,11 @@ Model Deployment
 
 Generally, AI model deployment and large-scale implementation are complex.
 
-ModelArts resolves this issue by deploying a trained model on different devices in various scenarios with only a few clicks. This secure and reliable one-stop deployment is available for individual developers, enterprises, and device manufacturers.
 
-
-.. figure:: /_static/images/en-us_image_0000001404505954.png
+.. figure:: /_static/images/en-us_image_0000001799496692.png
    :alt: **Figure 1** Process of deploying a model
 
    **Figure 1** Process of deploying a model
 
--  The real-time inference service features high concurrency, low latency, and elastic scaling.
--  Models can be deployed as real-time inference services and batch inference tasks.
+-  The real-time inference service features high concurrency, low latency, and elastic scaling, and supports multi-model gray release and A/B testing.
+-  ModelArts is optimized based on the high-performance AI inference chip Ascend 310. It can process PBs of inference data within a single day, publish over 1 million inference APIs on the cloud, and control inference network latency to milliseconds.

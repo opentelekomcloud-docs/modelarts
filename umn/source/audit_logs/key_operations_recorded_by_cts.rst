@@ -5,12 +5,12 @@
 Key Operations Recorded by CTS
 ==============================
 
-CTS is available on the public cloud platform. With CTS, you can record operations associated with ModelArts for later query, audit, and backtrack operations.
+With CTS, you can record operations associated with ModelArts for later query, audit, and backtrack operations.
 
 Prerequisites
 -------------
 
-CTS has been enabled. For details, see `Enabling CTS. <https://docs.otc.t-systems.com/en-us/usermanual/cts/en-us_topic_0030598498.html>`__
+CTS has been enabled. For details, see `Enabling CTS <https://docs.otc.t-systems.com/en-us/usermanual/cts/en-us_topic_0030598498.html>`__
 
 Key Operations Recorded for Data Management
 -------------------------------------------
@@ -100,17 +100,17 @@ Key Operations Recorded for Training Jobs
    | Restarting a visualization job                   | ModelArtsTensorboardJob | restartModelArtsgTensorboardJob |
    +--------------------------------------------------+-------------------------+---------------------------------+
 
-Key Operations Recorded for Model Management
---------------------------------------------
+Key Operations Recorded for AI Application Management
+-----------------------------------------------------
 
-.. table:: **Table 4** Key operations that can be audited for model management
+.. table:: **Table 4** Key operations that can be audited for AI application management
 
    ================================ ============= =============
    Operation                        Resource Type Trace Name
    ================================ ============= =============
-   Importing a model                model         addModel
-   Updating a model                 model         updateModel
-   Deleting a model                 model         deleteModel
+   Creating an AI application       model         addModel
+   Updating an AI application       model         updateModel
+   Deleting an AI application       model         deleteModel
    Adding a model conversion task   convert       addConvert
    Updating a model conversion task convert       updateConvert
    Deleting a model conversion task convert       deleteConvert
@@ -121,28 +121,28 @@ Key Operations Recorded for Service Management
 
 .. table:: **Table 5** Key operations that can be audited for service management
 
-   +----------------------------------------------------------+---------------+---------------------+
-   | Operation                                                | Resource Type | Trace Name          |
-   +==========================================================+===============+=====================+
-   | Deploying a model as a service                           | service       | addService          |
-   +----------------------------------------------------------+---------------+---------------------+
-   | Deleting a service                                       | service       | deleteService       |
-   +----------------------------------------------------------+---------------+---------------------+
-   | Updating a service                                       | service       | updateService       |
-   +----------------------------------------------------------+---------------+---------------------+
-   | Starting/stopping a service                              | service       | startOrStopService  |
-   +----------------------------------------------------------+---------------+---------------------+
-   | Adding an access key                                     | service       | addAkSk             |
-   +----------------------------------------------------------+---------------+---------------------+
-   | Deleting an access key                                   | service       | deleteAkSk          |
-   +----------------------------------------------------------+---------------+---------------------+
-   | Creating a dedicated resource pool                       | cluster       | createCluster       |
-   +----------------------------------------------------------+---------------+---------------------+
-   | Deleting a dedicated resource pool                       | cluster       | deleteCluster       |
-   +----------------------------------------------------------+---------------+---------------------+
-   | Adding a node to a dedicated resource pool               | cluster       | addClusterNode      |
-   +----------------------------------------------------------+---------------+---------------------+
-   | Deleting a node from a dedicated resource pool           | cluster       | deleteClusterNode   |
-   +----------------------------------------------------------+---------------+---------------------+
-   | Obtaing the result of creating a dedicated resource pool | cluster       | createClusterResult |
-   +----------------------------------------------------------+---------------+---------------------+
+   +------------------------------------------------------------+---------------+---------------------+
+   | Operation                                                  | Resource Type | Trace Name          |
+   +============================================================+===============+=====================+
+   | Deploying a model as a service                             | service       | addService          |
+   +------------------------------------------------------------+---------------+---------------------+
+   | Deleting a service                                         | service       | deleteService       |
+   +------------------------------------------------------------+---------------+---------------------+
+   | Updating a service                                         | service       | updateService       |
+   +------------------------------------------------------------+---------------+---------------------+
+   | Starting/stopping a service                                | service       | startOrStopService  |
+   +------------------------------------------------------------+---------------+---------------------+
+   | Adding an access key                                       | service       | addAkSk             |
+   +------------------------------------------------------------+---------------+---------------------+
+   | Deleting an access key                                     | service       | deleteAkSk          |
+   +------------------------------------------------------------+---------------+---------------------+
+   | Creating a dedicated resource pool                         | cluster       | createCluster       |
+   +------------------------------------------------------------+---------------+---------------------+
+   | Deleting a dedicated resource pool                         | cluster       | deleteCluster       |
+   +------------------------------------------------------------+---------------+---------------------+
+   | Adding a node to a dedicated resource pool                 | cluster       | addClusterNode      |
+   +------------------------------------------------------------+---------------+---------------------+
+   | Deleting a node from a dedicated resource pool             | cluster       | deleteClusterNode   |
+   +------------------------------------------------------------+---------------+---------------------+
+   | Getting a result from the dedicated resource pool creation | cluster       | createClusterResult |
+   +------------------------------------------------------------+---------------+---------------------+

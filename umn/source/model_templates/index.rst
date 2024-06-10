@@ -6,7 +6,7 @@ Model Templates
 ===============
 
 -  :ref:`Introduction to Model Templates <modelarts_23_0098>`
--  :ref:`Template Description <modelarts_23_0118>`
+-  :ref:`Templates <modelarts_23_0118>`
 -  :ref:`Input and Output Modes <modelarts_23_0099>`
 
 .. toctree::
@@ -14,5 +14,5 @@ Model Templates
    :hidden: 
 
    introduction_to_model_templates
-   template_description/index
+   templates/index
    input_and_output_modes/index

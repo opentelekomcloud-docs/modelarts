@@ -5,7 +5,7 @@
 What Are Sizes of the /cache Directories for Different Resource Specifications in the Training Environment?
 ===========================================================================================================
 
-When creating a training job, you can select CPU, GPU resources based on the size of the training job.
+When creating a training job, you can select CPU, GPU, or Ascend resources based on the size of the training job.
 
 ModelArts mounts the disk to the **/cache** directory. You can use this directory to store temporary files. The **/cache** directory shares resources with the code directory. The directory has different capacities for different resource specifications.
 

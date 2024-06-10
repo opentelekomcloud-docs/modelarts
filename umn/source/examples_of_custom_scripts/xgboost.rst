@@ -8,7 +8,7 @@ XGBoost
 Training and Saving a Model
 ---------------------------
 
-.. code-block::
+::
 
    import pandas as pd
    import xgboost as xgb
@@ -40,12 +40,16 @@ Training and Saving a Model
    model = xgb.train(plst, dtrain, num_rounds)
    model.save_model('/tmp/xgboost.m')
 
-Before training, download the **iris.csv** dataset, decompress it, and upload it to the **/home/ma-user/work/** directory of the notebook instance. Download the **iris.csv** dataset from https://gist.github.com/netj/8836201.
+Before training, download the **iris.csv** dataset, decompress it, and upload it to the **/home/ma-user/work/** directory of the notebook instance. Download the **iris.csv** dataset from https://gist.github.com/netj/8836201. For details about how to upload a file to a notebook instance, see .
 
-After the model is saved, it must be uploaded to the OBS directory before being published. The **config.json** and **customize_service.py** files must be contained during publishing. For details about the definition method, see :ref:`Model Package Specifications <modelarts_23_0091>`.
+After the model is saved, it must be uploaded to the OBS directory before being published. The **config.json** configuration and the **customize_service.py** inference code must be included during the publishing. For details about how to compile **config.json**, see :ref:`Specifications for Compiling the Model Configuration File <modelarts_23_0092>`. For details about inference code, see :ref:`Inference Code <modelarts_23_0177__en-us_topic_0196941733_section6122193511917>`.
+
+.. _modelarts_23_0177__en-us_topic_0196941733_section6122193511917:
 
 Inference Code
 --------------
+
+Inference code must be inherited from the BaseService class. For details about the import statements of different types of parent model classes, see :ref:`Table 1 <modelarts_23_0093__en-us_topic_0172466150_table55021545175412>`.
 
 .. code-block::
 
@@ -64,7 +68,7 @@ Inference Code
                array = []
                for each in element:
                    array.append(element[each])
-                   list_data.append(array)
+               list_data.append(array)
            return list_data
 
        #   predict

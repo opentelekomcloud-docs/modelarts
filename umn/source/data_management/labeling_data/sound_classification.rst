@@ -10,7 +10,7 @@ Model training requires a large amount of labeled data. Therefore, before the mo
 Starting Labeling
 -----------------
 
-#. Log in to the ModelArts management console. In the left navigation pane, choose **Data Management** > **Datasets**. The **Datasets** page is displayed.
+#. Log in to the ModelArts console. In the navigation pane, choose **Data Management** > **Datasets**. The **Datasets** page is displayed.
 
 #. In the dataset list, select the dataset to be labeled based on the labeling type, and click the dataset name to go to the **Dashboard** tab page of the dataset.
 
@@ -52,7 +52,7 @@ The dataset details page displays the labeled and unlabeled audio files. The **U
       Each label has a shortcut key. A shortcut key cannot be specified for different labels. Shortcut keys can greatly improve the labeling efficiency.
 
 
-   .. figure:: /_static/images/en-us_image_0000001455145513.png
+   .. figure:: /_static/images/en-us_image_0000001799498600.png
       :alt: **Figure 1** Adding an audio label
 
       **Figure 1** Adding an audio label
@@ -79,7 +79,7 @@ After labeling data, you can modify labeled data on the **Labeled** tab page.
    On the dataset details page, click the **Labeled** tab. The information about all labels is displayed on the right.
 
 
-   .. figure:: /_static/images/en-us_image_0000001404825726.png
+   .. figure:: /_static/images/en-us_image_0000001799498592.png
       :alt: **Figure 2** Information about all labels
 
       **Figure 2** Information about all labels
@@ -115,4 +115,4 @@ If a tick is displayed in the upper right corner of an audio file, the audio fil
 
    If you select **Delete source files**, audio files stored in the corresponding OBS directory will be deleted when you delete the selected audio files. Deleting source files may affect other dataset versions or datasets using those files. As a result, the page display, training, or inference is abnormal. Deleted data cannot be recovered. Exercise caution when performing this operation.
 
-.. |image1| image:: /_static/images/en-us_image_0000001404825718.png
+.. |image1| image:: /_static/images/en-us_image_0000001846057669.png

@@ -5,22 +5,27 @@
 Related Services
 ================
 
-IAM
----
-
-ModelArts uses Identity and Access Management (IAM) for authentication and authorization. For more information about IAM, see `Identity and Access Management User Guide <https://docs.otc.t-systems.com/identity-access-management/umn/service_overview/index.html>`__.
-
 OBS
 ---
 
-ModelArts uses Object Storage Service (OBS) to store data and model backups and snapshots. OBS provides secure, reliable, low-cost storage. For more details, see `Object Storage Service Console Function Overview <https://docs.otc.t-systems.com/object-storage-service/umn/service_overview/index.html>`__.
+ModelArts uses Object Storage Service (OBS) to securely and reliably store data and models at low costs. For more details, see *Object Storage Service Console Operation Guide*.
 
 CCE
 ---
 
-ModelArts uses Cloud Container Engine (CCE) to deploy models as real-time services. CCE enables high concurrency and provides elastic scaling. For more information about CCE, see `Cloud Container Engine User Guide <https://docs.otc.t-systems.com/cloud-container-engine/umn/index.html>`__.
+ModelArts uses Cloud Container Engine (CCE) to deploy models as real-time services. CCE enables high concurrency and provides elastic scaling. For more information about CCE, see *Cloud Container Engine User Guide*.
 
 SWR
 ---
 
-To use an AI framework that is not supported by ModelArts, use SoftWare Repository for Container (SWR) to customize an image and import the image to ModelArts for training or inference. For more details, see `SoftWare Repository for Container User Guide <https://docs.otc.t-systems.com/software-repository-container/umn/index.html>`__
+To use an AI framework that is not supported by ModelArts, use SoftWare Repository for Container (SWR) to customize an image and import the image to ModelArts for training or inference. For details about SWR, see .
+
+Cloud Eye
+---------
+
+ModelArts uses Cloud Eye to monitor online services and model loads in real time and send alarms and notifications automatically. For details about Cloud Eye, see *Cloud Eye User Guide*.
+
+CTS
+---
+
+ModelArts uses Cloud Trace Service (CTS) to record operations for later query, audit, and backtrack operations. For details about CTS, see *Cloud Trace Service User Guide*.

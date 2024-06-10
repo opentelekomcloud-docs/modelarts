@@ -1,9 +1,9 @@
-:original_name: modelarts_21_0035.html
+:original_name: modelarts_01_0007.html
 
-.. _modelarts_21_0035:
+.. _modelarts_01_0007:
 
-How Do I Access ModelArts
-=========================
+How Do I Access ModelArts?
+==========================
 
 You can access ModelArts through the web-based management console or by using HTTPS-based application programming interfaces (APIs).
 
@@ -11,12 +11,6 @@ You can access ModelArts through the web-based management console or by using HT
 
    ModelArts features a simple and easy-to-use management console, and provides a host of functions including ExeML, data management, development environment, model training, model management, and service deployment. You can complete end-to-end AI development on the management console.
 
--  **Using SDKs**
-
-   If you want to integrate ModelArts into a third-party system for secondary development, call SDKs to complete the development. ModelArts SDKs encapsulate RESTful APIs provided by ModelArts to simplify secondary development. For details about the SDKs and operations, see the `ModelArts SDK Reference <https://docs.otc.t-systems.com/modelarts/sdk-ref/sdk_overview.html>`__.
-
-   In addition, you can directly call the ModelArts SDKs when writing code in a notebook on the management console.
-
 -  **Using APIs**
 
-   If you want to integrate ModelArts into a third-party system for secondary development, use APIs to access ModelArts. For details about the APIs and operations, see the `ModelArts API Reference <https://docs.otc.t-systems.com/modelarts/api-ref/api_overview.html>`__.
+   If you want to integrate ModelArts into a third-party system for secondary development, use APIs to access ModelArts. For details about the APIs and operations, see *ModelArts API Reference*.

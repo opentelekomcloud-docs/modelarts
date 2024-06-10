@@ -11,9 +11,8 @@ ExeML
 -  :ref:`Can I Add Multiple Labels to an Image for an Object Detection Project? <modelarts_05_0006>`
 -  :ref:`What Type of Service Is Deployed in ExeML? <modelarts_05_0008>`
 -  :ref:`What Formats of Images Are Supported by Object Detection or Image Classification Projects? <modelarts_05_0010>`
--  :ref:`What Are the Requirements for Training Data When You Create a Predictive Analytics Project in ExeML? <modelarts_21_0062>`
--  :ref:`Can I Download a Model After It Is Automatically Trained? <modelarts_21_0061>`
--  :ref:`How Do I Perform Incremental Training in an ExeML Project? <modelarts_21_0060>`
+-  :ref:`What Do I Do If an Image Error Occurred During Model Training Using ExeML? <modelarts_05_0502>`
+-  :ref:`Is There a Limit on the Number of ExeML Projects That Can Be Created? <modelarts_05_0179>`
 
 .. toctree::
    :maxdepth: 1
@@ -25,6 +24,5 @@ ExeML
    can_i_add_multiple_labels_to_an_image_for_an_object_detection_project
    what_type_of_service_is_deployed_in_exeml
    what_formats_of_images_are_supported_by_object_detection_or_image_classification_projects
-   what_are_the_requirements_for_training_data_when_you_create_a_predictive_analytics_project_in_exeml
-   can_i_download_a_model_after_it_is_automatically_trained
-   how_do_i_perform_incremental_training_in_an_exeml_project
+   what_do_i_do_if_an_image_error_occurred_during_model_training_using_exeml
+   is_there_a_limit_on_the_number_of_exeml_projects_that_can_be_created

@@ -10,7 +10,7 @@ Training and Saving a Model
 
 **lenet_train_test.prototxt** file
 
-.. code-block::
+::
 
    name: "LeNet"
    layer {
@@ -183,7 +183,7 @@ Training and Saving a Model
 
 **lenet_solver.prototxt** file
 
-.. code-block::
+::
 
    # The train/test net protocol buffer definition
    net: "examples/mnist/lenet_train_test.prototxt"
@@ -219,7 +219,7 @@ Train the model.
 
 The **caffemodel** file is generated after model training. Rewrite the **lenet_train_test.prototxt** file to the **lenet_deploy.prototxt** file used for deployment by modifying input and output layers.
 
-.. code-block::
+::
 
    name: "LeNet"
    layer {
@@ -354,7 +354,9 @@ The **caffemodel** file is generated after model training. Rewrite the **lenet_t
 Inference Code
 --------------
 
-.. code-block::
+Inference code must be inherited from the BaseService class. For details about the import statements of different types of parent model classes, see :ref:`Table 1 <modelarts_23_0093__en-us_topic_0172466150_table55021545175412>`.
+
+::
 
    from model_service.caffe_model_service import CaffeBaseService
 

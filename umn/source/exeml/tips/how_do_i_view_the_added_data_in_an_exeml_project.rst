@@ -5,31 +5,20 @@
 How Do I View the Added Data in an ExeML Project?
 =================================================
 
-To add data for an existing project, perform the following operations. The operations described in this section apply only to object detection and image classification projects. For a predictive analytics project, you can directly add data to its data files.
+To add data for an existing project, perform the following operations. The operations described in this section apply only to object detection and image classification projects.
 
 Obtaining the Data Source of an ExeML Project
 ---------------------------------------------
 
 #. Log in to the ModelArts management console and choose **ExeML** from the left navigation pane.
-
 #. In the ExeML project list, you can view the data source corresponding to the project in the **Data Source** column. Click your desired data source link to go to the dataset selected or created during project creation.
-
-   .. note::
-
-      For a predictive analytics project, the data source is an OBS path, not a dataset. For other types of ExeML projects, the data source is a dataset.
-
-
-   .. figure:: /_static/images/en-us_image_0000001404506270.png
-      :alt: **Figure 1** Viewing the data storage path
-
-      **Figure 1** Viewing the data storage path
 
 Uploading New Data to OBS
 -------------------------
 
 Log in to OBS Console, access the data storage path, and upload new data to OBS.
 
-For details about how to upload files to OBS, see `Uploading a File <https://docs.otc.t-systems.com/en-us/usermanual/obs/obs_03_0307.html>`__.
+For details about how to upload files to OBS, see .
 
 Synchronizing Data to ModelArts
 -------------------------------
