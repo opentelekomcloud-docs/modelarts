@@ -1,6 +1,6 @@
-:original_name: modelarts_03_0411.html
+:original_name: DeleteAuthorizations.html
 
-.. _modelarts_03_0411:
+.. _DeleteAuthorizations:
 
 Deleting Authorization
 ======================

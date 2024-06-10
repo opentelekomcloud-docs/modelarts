@@ -12,6 +12,7 @@ Permissions Policies and Supported Actions
 -  :ref:`Training Job Permissions <modelarts_03_0163>`
 -  :ref:`Model Management Permissions <modelarts_03_0164>`
 -  :ref:`Service Management Permissions <modelarts_03_0165>`
+-  :ref:`Workspace Management Permissions <modelarts_03_0166>`
 
 .. toctree::
    :maxdepth: 1
@@ -24,3 +25,4 @@ Permissions Policies and Supported Actions
    training_job_permissions
    model_management_permissions
    service_management_permissions
+   workspace_management_permissions

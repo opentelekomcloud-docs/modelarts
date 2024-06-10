@@ -5,7 +5,7 @@
 Introduction
 ============
 
-This section describes fine-grained permissions management for your ModelArts. If your current account does not require individual IAM users, skip this section.
+This section describes fine-grained permissions management for your ModelArts. If your account does not require individual IAM users, skip this section.
 
 By default, new IAM users do not have permissions assigned. You need to add a user to one or more groups, and attach permissions policies or roles to these groups. Users inherit permissions from the groups to which they are added and can perform specified operations on cloud services based on the permissions.
 

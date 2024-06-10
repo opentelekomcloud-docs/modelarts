@@ -19,7 +19,7 @@ GET /v1/{project_id}/services/specifications
    +---------------------+-----------+---------+------------------------------------------------------------------------------------------------------------------------------+
    | Parameter           | Mandatory | Type    | Description                                                                                                                  |
    +=====================+===========+=========+==============================================================================================================================+
-   | project_id          | Yes       | String  | Project ID. For details about how to obtain the project ID, see :ref:`Obtaining a Project ID <modelarts_03_0147>`.           |
+   | project_id          | Yes       | String  | Project ID. For details about how to obtain a project ID, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`.    |
    +---------------------+-----------+---------+------------------------------------------------------------------------------------------------------------------------------+
    | is_personal_cluster | No        | Boolean | Whether to query the service deployment specifications supported by dedicated resource pool. The default value is **false**. |
    +---------------------+-----------+---------+------------------------------------------------------------------------------------------------------------------------------+
@@ -36,13 +36,13 @@ Response Body
 
 .. table:: **Table 2** Parameters
 
-   +----------------+-------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter      | Type                    | Description                                                                                                                                   |
-   +================+=========================+===============================================================================================================================================+
-   | specifications | **specification** array | Supported service deployment specifications. For details, see :ref:`Table 3 <modelarts_03_0200__en-us_topic_0210524455_table16128205111319>`. |
-   +----------------+-------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+   +----------------+-------------------------+------------------------------------------------------------------------------------------------------------------------+
+   | Parameter      | Type                    | Description                                                                                                            |
+   +================+=========================+========================================================================================================================+
+   | specifications | **specification** array | Supported service deployment specifications. For details, see :ref:`Table 3 <modelarts_03_0200__table16128205111319>`. |
+   +----------------+-------------------------+------------------------------------------------------------------------------------------------------------------------+
 
-.. _modelarts_03_0200__en-us_topic_0210524455_table16128205111319:
+.. _modelarts_03_0200__table16128205111319:
 
 .. table:: **Table 3** **specification** parameters
 
@@ -89,23 +89,56 @@ Samples
       {
           "specifications": [
               {
-                  "specification":  "modelarts.vm.gpu.v100",
-                  "billing_spec":  "modelarts.vm.gpu.v100",
+                  "specification": "modelarts.vm.cpu.2u",
+                  "billing_spec": "modelarts.vm.cpu.2u",
                   "is_open": true,
                   "spec_status": "normal",
                   "is_free": false,
                   "over_quota": false,
                   "extend_params": 1
               },
+              {
+                  "specification": modelarts.kat1.xlarge,
+                  "billing_spec": modelarts.kat1.xlarge,
+                  "is_open": true,
+                  "spec_status": "normal",
+                  "is_free": false,
+                  "over_quota": false,
+                  "extend_params": 1
+              },
+              {
+                  "specification": "modelarts.vm.high.p3",
+                  "billing_spec": "modelarts.vm.high.p3",
+                  "is_open": true,
+                  "source_type": "auto",
+                  "spec_status": "normal",
+                  "is_free": false,
+                  "over_quota": false,
+                  "extend_params": 1
+              },
+              {
+                  "specification": "modelarts.vm.high.p2",
+                  "billing_spec": "modelarts.vm.high.p2",
+                  "is_open": true,
+                  "source_type": "auto",
+                  "spec_status": "normal",
+                  "is_free": false,
+                  "over_quota": false,
+                  "extend_params": 1
+              },
+              {
+                  "specification": ,
+                  "billing_spec": ,
+                   "is_open": false,
+                  "spec_status": "normal",
+                  "is_free": false,
+                  "over_quota": false,
+                  "extend_params": 1
+              }
           ]
       }
 
 Status Code
 -----------
 
-For details about the status code, see :ref:`Table 1 <modelarts_03_0094__en-us_topic_0132773864_table1450010510213>`.
-
-Error Codes
------------
-
-See :ref:`Error Codes <modelarts_03_0095>`.
+For details about the status code, see :ref:`Table 1 <modelarts_03_0094__table1450010510213>`.
