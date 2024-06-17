@@ -15,26 +15,26 @@ URI
 
 POST /v1/{project_id}/demanager/instances/{instance_id}/action
 
-:ref:`Table 1 <modelarts_03_0115__table569625523811>` describes the required parameters.
+:ref:`Table 1 <en-us_topic_0000001943967301__table569625523811>` describes the required parameters.
 
-.. _modelarts_03_0115__table569625523811:
+.. _en-us_topic_0000001943967301__table569625523811:
 
 .. table:: **Table 1** Parameters
 
-   +-------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------+
-   | Parameter   | Mandatory | Type   | Description                                                                                                                 |
-   +=============+===========+========+=============================================================================================================================+
-   | project_id  | Yes       | String | Project ID. For details about how to obtain the project ID, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`. |
-   +-------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------+
-   | instance_id | Yes       | String | Instance ID                                                                                                                 |
-   +-------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------+
+   +-------------+-----------+--------+---------------------------------------------------------------------------------------------------------------------------+
+   | Parameter   | Mandatory | Type   | Description                                                                                                               |
+   +=============+===========+========+===========================================================================================================================+
+   | project_id  | Yes       | String | Project ID. For details about how to obtain a project ID, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`. |
+   +-------------+-----------+--------+---------------------------------------------------------------------------------------------------------------------------+
+   | instance_id | Yes       | String | Instance ID                                                                                                               |
+   +-------------+-----------+--------+---------------------------------------------------------------------------------------------------------------------------+
 
 Request Body
 ------------
 
-:ref:`Table 2 <modelarts_03_0115__table46411941555>` describes the request parameters.
+:ref:`Table 2 <en-us_topic_0000001943967301__table46411941555>` describes the request parameters.
 
-.. _modelarts_03_0115__table46411941555:
+.. _en-us_topic_0000001943967301__table46411941555:
 
 .. table:: **Table 2** Parameters
 
@@ -50,9 +50,9 @@ Request Body
 Response Body
 -------------
 
-:ref:`Table 3 <modelarts_03_0115__table14581542113111>` describes the response parameters.
+:ref:`Table 3 <en-us_topic_0000001943967301__table14581542113111>` describes the response parameters.
 
-.. _modelarts_03_0115__table14581542113111:
+.. _en-us_topic_0000001943967301__table14581542113111:
 
 .. table:: **Table 3** Parameters
 
@@ -63,20 +63,21 @@ Response Body
    previous_state String Previous status of an instance
    ============== ====== ==============================
 
-Samples
--------
+Sample Request
+--------------
 
 The following shows how to start instance **6fa459ea-ee8a-3ca4-894e-db77e160355e**.
 
--  Sample request
+.. code-block::
 
-   .. code-block::
+   {
+       "action": "start"
+   }
 
-      {
-          "action": "start"
-      }
+Sample Response
+---------------
 
--  Successful sample response
+-  Successful response
 
    .. code-block::
 
@@ -85,7 +86,7 @@ The following shows how to start instance **6fa459ea-ee8a-3ca4-894e-db77e160355e
           "previous_state": "STOPPED"
       }
 
--  Failed sample response
+-  Failed response
 
    .. code-block::
 

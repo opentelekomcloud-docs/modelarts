@@ -5,8 +5,8 @@
 Authorization Management
 ========================
 
--  :ref:`Configuring Authorization <createauthorization>`
 -  :ref:`Viewing an Authorization List <getauthorizations>`
+-  :ref:`Configuring Authorization <createauthorization>`
 -  :ref:`Deleting Authorization <deleteauthorizations>`
 -  :ref:`Creating a ModelArts Agency <createmodelartsagency>`
 
@@ -14,7 +14,7 @@ Authorization Management
    :maxdepth: 1
    :hidden: 
 
-   configuring_authorization
    viewing_an_authorization_list
+   configuring_authorization
    deleting_authorization
    creating_a_modelarts_agency

@@ -10,21 +10,21 @@ Service Management Permissions
    +-----------------------------------------+--------------------------------------------------------------------------------+------------------------------+-------------+--------------------+
    | Permission                              | API                                                                            | Action                       | IAM Project | Enterprise Project |
    +=========================================+================================================================================+==============================+=============+====================+
-   | Deploying a Model Service               | POST /v1/{project_id}/services                                                 | modelarts:service:create     | Y           | Y                  |
+   | Deploying a model                       | POST /v1/{project_id}/services                                                 | modelarts:service:create     | Y           | Y                  |
    +-----------------------------------------+--------------------------------------------------------------------------------+------------------------------+-------------+--------------------+
-   | Querying the List of Model Services     | GET /v1/{project_id}/services                                                  | modelarts:service:list       | Y           | Y                  |
+   | Obtaining model services                | GET /v1/{project_id}/services                                                  | modelarts:service:list       | Y           | Y                  |
    +-----------------------------------------+--------------------------------------------------------------------------------+------------------------------+-------------+--------------------+
-   | Querying Details About a Model Service  | GET /v1/{project_id}/services/{service_id}                                     | modelarts:service:get        | Y           | Y                  |
+   | Obtaining details about a model service | GET /v1/{project_id}/services/{service_id}                                     | modelarts:service:get        | Y           | Y                  |
    +-----------------------------------------+--------------------------------------------------------------------------------+------------------------------+-------------+--------------------+
-   | Updating a Model Service                | PUT /v1/{project_id}/services/{service_id}                                     | modelarts:service:update     | Y           | Y                  |
+   | Updating a model service                | PUT /v1/{project_id}/services/{service_id}                                     | modelarts:service:update     | Y           | Y                  |
    +-----------------------------------------+--------------------------------------------------------------------------------+------------------------------+-------------+--------------------+
-   | Deleting a Model Service                | DELETE /v1/{project_id}/services/{service_id}                                  | modelarts:service:delete     | Y           | Y                  |
+   | Deleting a model service                | DELETE /v1/{project_id}/services/{service_id}                                  | modelarts:service:delete     | Y           | Y                  |
    +-----------------------------------------+--------------------------------------------------------------------------------+------------------------------+-------------+--------------------+
-   | Starting or Stopping a Model Service    | PUT /v1/{project_id}/services/{service_id} (with statuses in the request body) | modelarts:service:action     | Y           | Y                  |
+   | Starting or stopping a model service    | PUT /v1/{project_id}/services/{service_id} (with statuses in the request body) | modelarts:service:action     | Y           | Y                  |
    +-----------------------------------------+--------------------------------------------------------------------------------+------------------------------+-------------+--------------------+
-   | Querying Service Monitoring Information | GET /v1/{project_id}/services/{service_id}/monitor                             | modelarts:service:getMonitor | Y           | Y                  |
+   | Obtaining service monitoring            | GET /v1/{project_id}/services/{service_id}/monitor                             | modelarts:service:getMonitor | Y           | Y                  |
    +-----------------------------------------+--------------------------------------------------------------------------------+------------------------------+-------------+--------------------+
-   | Querying Service Update Logs            | GET /v1/{project_id}/services/{service_id}/logs                                | modelarts:service:getLogs    | Y           | Y                  |
+   | Obtaining service update logs           | GET /v1/{project_id}/services/{service_id}/logs                                | modelarts:service:getLogs    | Y           | Y                  |
    +-----------------------------------------+--------------------------------------------------------------------------------+------------------------------+-------------+--------------------+
-   | Querying Service Event Logs             | GET /v1/{project_id}/services/{service_id}/events                              | modelarts:service:getEvents  | Y           | Y                  |
+   | Obtaining service event logs            | GET /v1/{project_id}/services/{service_id}/events                              | modelarts:service:getEvents  | Y           | Y                  |
    +-----------------------------------------+--------------------------------------------------------------------------------+------------------------------+-------------+--------------------+

@@ -1,20 +1,20 @@
-:original_name: modelarts_03_0153.html
+:original_name: topic_300000004.html
 
-.. _modelarts_03_0153:
+.. _topic_300000004:
 
 Model Management
 ================
 
--  :ref:`Importing a Model <modelarts_03_0076>`
--  :ref:`Querying a Model List <modelarts_03_0077>`
--  :ref:`Querying the Details About a Model <modelarts_03_0078>`
--  :ref:`Deleting a Model <modelarts_03_0079>`
+-  :ref:`Obtaining Models <listmodels>`
+-  :ref:`Importing Models <createmodel>`
+-  :ref:`Viewing Details About a Model <showmodel>`
+-  :ref:`Deleting a Model <deletemodel>`
 
 .. toctree::
    :maxdepth: 1
    :hidden: 
 
-   importing_a_model
-   querying_a_model_list
-   querying_the_details_about_a_model
+   obtaining_models
+   importing_models
+   viewing_details_about_a_model
    deleting_a_model
