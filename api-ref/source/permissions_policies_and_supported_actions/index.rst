@@ -6,23 +6,21 @@ Permissions Policies and Supported Actions
 ==========================================
 
 -  :ref:`Introduction <modelarts_03_0146>`
--  :ref:`ExeML Permissions <modelarts_03_0234>`
 -  :ref:`Data Management Permissions <modelarts_03_0161>`
--  :ref:`DevEnviron Permissions <modelarts_03_0162>`
--  :ref:`Training Job Permissions <modelarts_03_0163>`
+-  :ref:`DevEnviron Permissions (New Version) <modelarts_03_0365>`
+-  :ref:`DevEnviron Permissions (Old Version) <modelarts_03_0162>`
+-  :ref:`Training Job Permissions <modelarts_03_0364>`
 -  :ref:`Model Management Permissions <modelarts_03_0164>`
 -  :ref:`Service Management Permissions <modelarts_03_0165>`
--  :ref:`Workspace Management Permissions <modelarts_03_0166>`
 
 .. toctree::
    :maxdepth: 1
    :hidden: 
 
    introduction
-   exeml_permissions
    data_management_permissions
-   devenviron_permissions
+   devenviron_permissions_new_version
+   devenviron_permissions_old_version
    training_job_permissions
    model_management_permissions
    service_management_permissions
-   workspace_management_permissions

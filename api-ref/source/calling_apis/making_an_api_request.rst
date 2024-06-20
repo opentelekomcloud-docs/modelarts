@@ -7,7 +7,7 @@ Making an API Request
 
 This section describes the structure of a REST API request, and uses the IAM API for obtaining a user token as an example to demonstrate how to call an API. The obtained token can then be used to authenticate the calling of other APIs.
 
-.. _modelarts_03_0005__en-us_topic_0170917207_en-us_topic_0168405763_section1849899574:
+.. _en-us_topic_0000001910008156__en-us_topic_0170917207_en-us_topic_0168405763_section1849899574:
 
 Request URI
 -----------
@@ -76,9 +76,9 @@ Request Header
 
 You can also add additional header fields to a request, such as the fields required by a specified URI or HTTP method. For example, to request for the authentication information, add **Content-Type**, which specifies the request body type.
 
-:ref:`Table 3 <modelarts_03_0005__table139019272562>` describes the common request header fields to be added to the request.
+:ref:`Table 3 <en-us_topic_0000001910008156__table139019272562>` describes the common request header fields to be added to the request.
 
-.. _modelarts_03_0005__table139019272562:
+.. _en-us_topic_0000001910008156__table139019272562:
 
 .. table:: **Table 3** Common request header fields
 
@@ -126,13 +126,15 @@ The API for obtaining a user token does not require authentication. Therefore, t
 Request Body
 ------------
 
-The body of a request is often sent in a structured format as specified in the Content-Type header field. The request body transfers content except the request header. The request body varies between APIs. Some APIs do not require the request body, such as the APIs requested using the GET and DELETE methods.
+The body of a request is often sent in a structured format as specified in the Content-Type header field. The request body transfers content except the request header.
 
-If an API is used to obtain a user token, the request parameters and parameter description can be obtained from the API request. The following provides an example request with a body included. Replace *user_name*, *domain_name*, and *user_password* with the actual username, tenant name, and login password, respectively. **project_name** is the project name. For details, see :ref:`Obtaining a Username <modelarts_03_0006>`, :ref:`Obtaining the Account Name and Account ID <modelarts_03_0148>`, and :ref:`Obtaining a Project Name <modelarts_03_0147>`.
+The request body varies between APIs. Some APIs do not require the request body, such as the APIs requested using the GET and DELETE methods.
+
+If an API is used to obtain a user token, the request parameters and parameter description can be obtained from the API request. The following provides an example request with a body included. Replace *user_name*, *domain_name*, and *user_password* with the actual username, tenant name, and login password, respectively. **project_name** is the project name. For details, see :ref:`Obtaining a Username <modelarts_03_0006>`, :ref:`Obtaining a Tenant Name and ID <modelarts_03_0148>`, and :ref:`Obtaining a Project Name <modelarts_03_0147>`.
 
 .. note::
 
-   The **scope** parameter specifies where a token takes effect. In the example, the token takes effect only for the resources in a specified project. ModelArts uses a region-specific endpoint to call this API. Set **scope** to **project**. You can set **scope** to an account or a project under an account. In the following example, the token takes effect only for the resources in a specified project. For more information about this API, see "Obtaining a User Token".
+   The **scope** parameter specifies where a token takes effect. In the example, the token takes effect only for the resources in a specified project. ModelArts uses a region-specific endpoint to call this API. Set **scope** to **project**. You can set **scope** to an account or a project under an account.
 
 .. code-block:: text
 
@@ -154,7 +156,7 @@ If an API is used to obtain a user token, the request parameters and parameter d
        },
        "scope": {
          "project": {
-           "name": "Project name"
+           "name": "project_name"
          }
        }
      }

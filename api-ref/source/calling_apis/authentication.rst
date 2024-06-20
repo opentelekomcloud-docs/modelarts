@@ -24,27 +24,27 @@ In :ref:`Making an API Request <modelarts_03_0005>`, the process of calling the 
 .. code-block::
 
    {
-       "auth": {
-           "identity": {
-               "methods": [
-                   "password"
-               ],
-               "password": {
-                   "user": {
-                       "name": "user_name",
-                       "password": "user_password",
-                       "domain": {
-                           "name": "domain_name"
-                       }
-                   }
-               }
-           },
-           "scope": {
-               "project": {
-                   "name": "project_name"
-               }
-           }
+    "auth": {
+     "identity": {
+      "methods": [
+       "password"
+      ],
+      "password": {
+       "user": {
+        "name": "user_name",
+        "password": "user_password",
+        "domain": {
+         "name": "domain_name"
+        }
        }
+      }
+     },
+     "scope": {
+      "project": {
+       "name": "project_name"
+      }
+     }
+    }
    }
 
 After a token is obtained, the **X-Auth-Token** header field must be added to requests to specify the token when calling other APIs. For example, if the token is **ABCDEFJ....**, **X-Auth-Token: ABCDEFJ....** can be added to a request as follows:
@@ -80,49 +80,45 @@ Obtain the API Gateway signing SDK from the enterprise administrator.
 
 Decompress the downloaded package and reference the obtained JAR files as dependencies, as highlighted in the following figure.
 
-
-.. figure:: /_static/images/en-us_image_0000001862721045.png
-   :alt: **Figure 1** JAR Files
-
-   **Figure 1** JAR Files
+|image1|
 
 #. Generate an AK/SK. (If an AK/SK file has already been obtained, skip this step and locate the downloaded AK/SK file. Generally, the file name will be **credentials.csv**.)
 
    .. note::
 
-      If you use a RightCloud account, contact the system administrator to obtain the AK/SK.
+      If you use a RightCloud account, contact the administrator to obtain the AK/SK.
 
    a. Log in to the console, enter the **My Credentials** page, and choose **Access Keys** > **Create Access Key**.
-   b. In the **Create Access Key** dialog box that is displayed, use the login password for verification.
-   c. Click **OK**, open the **credentials.csv** file, and save the key file as prompted. The access key file is saved in the default downloads folder of the browser. Then, the access key (**Access Key Id** and **Secret Access Key**) is obtained.
+   b. In the **Create Access Key**, enter the description of the access key,and then click **OK**.
+   c. The access key is created successfully. Click **DownLoad**. Then, the access key (**Access Key Id** and **Secret Access Key**) is obtained.
 
 #. Download and decompress the demo project.
 
-#. .. _modelarts_03_0004__li94791126103617:
+#. .. _en-us_topic_0000001910008084__li94791126103617:
 
    Import the demo project to Eclipse.
 
 
-   .. figure:: /_static/images/en-us_image_0000001816121182.png
-      :alt: **Figure 2** Selecting Existing Projects into Workspace
+   .. figure:: /_static/images/en-us_image_0000001909848400.gif
+      :alt: **Figure 1** Selecting Existing Projects into Workspace
 
-      **Figure 2** Selecting Existing Projects into Workspace
-
-
-   .. figure:: /_static/images/en-us_image_0000001815961414.png
-      :alt: **Figure 3** Selecting the demo project
-
-      **Figure 3** Selecting the demo project
+      **Figure 1** Selecting Existing Projects into Workspace
 
 
-   .. figure:: /_static/images/en-us_image_0000001862721209.png
-      :alt: **Figure 4** Structure of the demo project
+   .. figure:: /_static/images/en-us_image_0000001910008400.gif
+      :alt: **Figure 2** Selecting the demo project
 
-      **Figure 4** Structure of the demo project
+      **Figure 2** Selecting the demo project
+
+
+   .. figure:: /_static/images/en-us_image_0000001943967581.gif
+      :alt: **Figure 3** Structure of the demo project
+
+      **Figure 3** Structure of the demo project
 
 #. Sign the request.
 
-   The request signing method is integrated in the JAR files imported in :ref:`3 <modelarts_03_0004__li94791126103617>`. The request needs to be signed before it is sent. The signature will then be added as part of the HTTP header to the request.
+   The request signing method is integrated in the JAR files imported in :ref:`3 <en-us_topic_0000001910008084__li94791126103617>`. The request needs to be signed before it is sent. The signature will then be added as part of the HTTP header to the request.
 
    The demo code is classified into the following classes to demonstrate signing and sending the HTTP request:
 
@@ -132,7 +128,7 @@ Decompress the downloaded package and reference the obtained JAR files as depend
 
    The following describes how to call a POST method to sign the request.
 
-   a. Add request header fields.
+   a. Add a request header.
 
       Comment out the following second line of code in the **AccessServiceImpl.java** file, and specify the project ID.
 
@@ -191,3 +187,5 @@ Decompress the downloaded package and reference the obtained JAR files as depend
       In the **Package Explorer** area on the left, right-click **Demo.java** and choose **Run AS** > **Java Application** from the shortcut menu to run the demo code.
 
       You can view the API call logs on the console.
+
+.. |image1| image:: /_static/images/en-us_image_0000001943967577.gif
