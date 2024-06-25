@@ -29,8 +29,7 @@ You can deploy a model as a real-time service that provides a real-time test UI 
 Testing the Service
 -------------------
 
--  On the **Service Deployment** page, select a service type. For example, on the ExeML page, the object detection model is deployed as a real-time service by default. On the **Real-Time Services** page, click **Prediction** in the **Operation** column of the target service to perform a service test. For details, see :ref:`Testing a Service <modelarts_23_0062>`.
--  You can also use code to test a service. For details, see :ref:`Accessing a Real-Time Service <modelarts_23_0063>`.
+-  On the **Service Deployment** page, select a service type. For example, on the ExeML page, the object detection model is deployed as a real-time service by default. On the **Real-Time Services** page, click **Prediction** in the **Operation** column of the target service to perform a service test.
 -  The following describes the procedure for performing a service test after the predictive analytics model is deployed as a service on the ExeML page.
 
    #. After the model is deployed, you can test the model using code. On the **ExeML** page, click the target project, go to the **Deploy Service** tab page, select a service version in the **Running** state, and enter the code in the **Service Test** pane.

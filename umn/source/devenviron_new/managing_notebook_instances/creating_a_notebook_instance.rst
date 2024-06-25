@@ -28,7 +28,7 @@ Procedure
 
 #. Click **Create**. On the **Create Notebook** page, configure parameters.
 
-   a. Configure basic information of the notebook instance, including its name, description, and auto stop status. For details, see :ref:`Table 1 <modelarts_30_0004__table1669535791517>`.
+   a. Configure basic information of the notebook instance, including its name, description, and auto stop status. For details, see :ref:`Table 1 <en-us_topic_0000001846136097__table1669535791517>`.
 
 
       .. figure:: /_static/images/en-us_image_0000001806156600.png
@@ -36,7 +36,7 @@ Procedure
 
          **Figure 2** Basic information of a notebook instance
 
-      .. _modelarts_30_0004__table1669535791517:
+      .. _en-us_topic_0000001846136097__table1669535791517:
 
       .. table:: **Table 1** Basic parameters
 
@@ -52,7 +52,7 @@ Procedure
          |                                   | The options are **1 hour**, **2 hours**, **4 hours**, **6 hours**, and **Custom**. You can select **Custom** to specify any integer from 1 to 24 hours.                                                                  |
          +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   b. Configure notebook parameters, such as the image and instance flavor. For details, see :ref:`Table 2 <modelarts_30_0004__table4606194015227>`.
+   b. Configure notebook parameters, such as the image and instance flavor. For details, see :ref:`Table 2 <en-us_topic_0000001846136097__table4606194015227>`.
 
 
       .. figure:: /_static/images/en-us_image_0000001806316500.png
@@ -60,7 +60,7 @@ Procedure
 
          **Figure 3** Notebook instance parameters
 
-      .. _modelarts_30_0004__table4606194015227:
+      .. _en-us_topic_0000001846136097__table4606194015227:
 
       .. table:: **Table 2** Notebook instance parameters
 

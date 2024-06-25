@@ -9,7 +9,7 @@ You can access ModelArts through the web-based management console or by using HT
 
 -  **Using the Management Console**
 
-   ModelArts features a simple and easy-to-use management console, and provides a host of functions including ExeML, data management, development environment, model training, model management, and service deployment. You can complete end-to-end AI development on the management console.
+   ModelArts features a simple and easy-to-use management console, and provides a host of functions including ExeML, data management, development environment, model training, AI application management, AI Hub, and service deployment. You can complete end-to-end AI development on the management console.
 
 -  **Using APIs**
 

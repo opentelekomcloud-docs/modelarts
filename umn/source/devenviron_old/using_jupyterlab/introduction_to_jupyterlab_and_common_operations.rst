@@ -2,6 +2,8 @@
 
 .. _modelarts_23_0209:
 
+.. _en-us_topic_0000001946441181:
+
 Introduction to JupyterLab and Common Operations
 ================================================
 
@@ -24,7 +26,7 @@ Creating and Opening a Notebook Instance
 
 On the JupyterLab homepage, click an applicable AI engine in the **Notebook** area to create a notebook file with the selected framework.
 
-The AI framework supported by each notebook instance varies according to the working environment. The following figure is only an example. Select an AI framework based on the site requirements. For details about all framework versions and Python versions supported by ModelArts, see :ref:`Supported AI Engines <modelarts_23_0033__en-us_topic_0162690357_section191109611479>`.
+The AI framework supported by each notebook instance varies according to the working environment. The following figure is only an example. Select an AI framework based on the site requirements. For details about all framework versions and Python versions supported by ModelArts, see :ref:`Supported AI Engines <en-us_topic_0000001914882092__en-us_topic_0000001846136609_en-us_topic_0162690357_section191109611479>`.
 
 The created notebook file is displayed in the navigation pane on the left.
 
@@ -45,14 +47,14 @@ After the file is created, the console page is displayed.
 
    **Figure 1** Creating a notebook file (console)
 
-.. _modelarts_23_0209__en-us_topic_0208766071_section172463910383:
+.. _en-us_topic_0000001946441181__en-us_topic_0000001799337328_en-us_topic_0208766071_section172463910383:
 
 Uploading a File
 ----------------
 
 On the JupyterLab page, you can click **Upload File** in the upper left corner and select a local file to upload.
 
-The size of the file to be uploaded using this method is limited. If the file size exceeds the limit, use other methods to upload the file. For details, see :ref:`Uploading Data to JupyterLab <modelarts_23_0332>`.
+The size of the file to be uploaded using this method is limited. If the file size exceeds the limit, use other methods to upload the file. For details, see :ref:`Uploading Data to JupyterLab <en-us_topic_0000001915042052>`.
 
 
 .. figure:: /_static/images/en-us_image_0000001799497968.png
@@ -86,7 +88,7 @@ To open multiple views, open the file and choose **File** > **New View for Noteb
 Downloading a File to a Local Computer
 --------------------------------------
 
-Files created in JupyterLab can be directly downloaded to a local computer. The size of the file to be downloaded using this method is limited. If the file size exceeds the limit, use other methods to download the file. For details, see :ref:`Downloading a File from JupyterLab <modelarts_23_0333>`.
+Files created in JupyterLab can be directly downloaded to a local computer. The size of the file to be downloaded using this method is limited. If the file size exceeds the limit, use other methods to download the file. For details, see :ref:`Downloading a File from JupyterLab <en-us_topic_0000001946441185>`.
 
 In the JupyterLab file list, right-click the file to be downloaded and choose **Download** from the shortcut menu. The file is downloaded to the directory set for your browser.
 
@@ -107,17 +109,17 @@ Common Icons and Plug-ins of JupyterLab
 
 .. table:: **Table 1** Icon description
 
-   +----------+---------------------------------------------------------------------------------------------------------------------------+
-   | Icon     | Description                                                                                                               |
-   +==========+===========================================================================================================================+
-   | |image5| | Opens the Launcher page. Then you can quickly create notebook instances, consoles, or other files.                        |
-   +----------+---------------------------------------------------------------------------------------------------------------------------+
-   | |image6| | Creates a folder.                                                                                                         |
-   +----------+---------------------------------------------------------------------------------------------------------------------------+
-   | |image7| | Uploads a file. For details, see :ref:`Uploading a File <modelarts_23_0209__en-us_topic_0208766071_section172463910383>`. |
-   +----------+---------------------------------------------------------------------------------------------------------------------------+
-   | |image8| | Updates a folder.                                                                                                         |
-   +----------+---------------------------------------------------------------------------------------------------------------------------+
+   +----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Icon     | Description                                                                                                                                                       |
+   +==========+===================================================================================================================================================================+
+   | |image5| | Opens the Launcher page. Then you can quickly create notebook instances, consoles, or other files.                                                                |
+   +----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |image6| | Creates a folder.                                                                                                                                                 |
+   +----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |image7| | Uploads a file. For details, see :ref:`Uploading a File <en-us_topic_0000001946441181__en-us_topic_0000001799337328_en-us_topic_0208766071_section172463910383>`. |
+   +----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | |image8| | Updates a folder.                                                                                                                                                 |
+   +----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. table:: **Table 2** Common plug-ins in the plug-in area
 
