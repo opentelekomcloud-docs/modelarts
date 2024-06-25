@@ -5,16 +5,21 @@
 Data Management
 ===============
 
-During AI development, massive volumes of data need to be processed, and data preparation and labeling usually take more than half of the development time. ModelArts data management provides an efficient data management and labeling framework. It supports different data types such as image, text, audio, and video, and covers a range of labeling scenarios such as image classification, object detection, speech paragraph labeling, and text classification. It is used to AI projects such as computer vision, natural language processing, and audio and video analysis. In addition, it provides functions such as data filtering, data analysis, data processing, team labeling, and version management. This framework enables AI developers to fulfill the entire data labeling process. See the following figure.
+During AI development, massive volumes of data need to be processed, and data preparing and labeling usually take more than half of the time required for the entire development process. ModelArts data management provides an efficient data management and labeling framework. It supports image, text, audio, and video data types in a range of labeling scenarios such as image classification, object detection, speech paragraph labeling, and text classification so that data management can be used in various AI projects such as computer vision, natural language processing, and audio and video analysis projects. In addition, ModelArts data management provides functions such as data filtering, data analysis, data processing, team labeling, and version management, enabling you to manage the full data labeling process. :ref:`Figure 1 <en-us_topic_0000001943978901__fig196581550111013>` shows the data labeling process.
 
+.. _en-us_topic_0000001943978901__fig196581550111013:
 
-.. figure:: /_static/images/en-us_image_0000001799496664.png
+.. figure:: /_static/images/en-us_image_0000001910059926.png
    :alt: **Figure 1** Data labeling process
 
    **Figure 1** Data labeling process
 
-You can select the appropriate labeling tool in data management to label data in the specified scenario. Models trained by built-in algorithms or custom algorithms can be selected for intelligent labeling. Only a small amount of manual labeling and correction are required to obtain accurate labeling results. You can create a team to perform collaborative labeling, improving labeling efficiency. ModelArts allows project-based management for labeling by individual developers, small-scale labeling by small teams, and large-scale labeling by professional teams.
+ModelArts data management analyzes and processes data using such functions as clustering analysis, data feature analysis, data cleansing, data verification, data augmentation, and data selection, helping you obtain high-value data that meets development or project requirements.
 
-For large-scale team labeling, ModelArts provides team management, personnel management, and data management to implement the entire process, from project creation, allocation, management, labeling, to acceptance. For small-scale labeling by individuals and small teams, ModelArts provides an easy-to-use labeling tool to minimize project management costs.
+With data management, ModelArts allows you to label data online for image classification, object detection, speech paragraphs, text triplet, and videos. You can also use intelligent labeling to automatically label data through built-in or customized algorithms, improving the labeling efficiency.
 
-In addition, the labeling platform ensures data security. User data is used only within the authorized scope. The labeling object allocation policy ensures user data privacy and implements data anonymization.
+To support large-scale collaborative labeling, data management provides team labeling with team management, personnel management, and data management for full-process project management, from project creation, data allocation, progress control, labeling, review, to acceptance. This improves labeling efficiency and minimizes project management costs.
+
+ModelArts data management ensures the security and privacy of user data and allows data to be used only within the authorized scope.
+
+In the new version of data management, datasets and data labeling are decoupled to facilitate your operations.

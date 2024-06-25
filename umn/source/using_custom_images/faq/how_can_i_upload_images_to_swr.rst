@@ -12,7 +12,7 @@ Step 1 Logging In to SWR
 
 #. Log in to the SWR console.
 
-#. Click **Create Organization** in the upper right corner and enter an organization name to create an organization. **deep-learning** is used as an example. The organization name **deep-learning** used in subsequent commands must be replaced with the actual organization name.
+#. Click **Create Organization** in the upper right corner and enter an organization name to create an organization. You can customize an organization name. In this case, **deep-learning** is used as an example. The organization name **deep-learning** used in subsequent commands must be replaced with the actual organization name.
 
 #. Click **Generate Login Command** in the upper right corner to obtain a login command.
 

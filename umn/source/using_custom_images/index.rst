@@ -1,6 +1,6 @@
-:original_name: en-us_topic_0000001799497932.html
+:original_name: modelarts_77_0152.html
 
-.. _en-us_topic_0000001799497932:
+.. _modelarts_77_0152:
 
 Using Custom Images
 ===================

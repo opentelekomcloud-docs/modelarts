@@ -20,9 +20,9 @@ Procedure
 
 #. Click **Create Project** in the box of your desired project. The page for creating an ExeML project is displayed.
 
-#. On the displayed page, set the parameters by referring to :ref:`Table 1 <modelarts_21_0004__en-us_topic_0284258833_en-us_topic_0169446153_table14961618163816>`.
+#. On the displayed page, set the parameters by referring to :ref:`Table 1 <en-us_topic_0000001915041992__en-us_topic_0000001799338076_en-us_topic_0284258833_en-us_topic_0169446153_table14961618163816>`.
 
-   .. _modelarts_21_0004__en-us_topic_0284258833_en-us_topic_0169446153_table14961618163816:
+   .. _en-us_topic_0000001915041992__en-us_topic_0000001799338076_en-us_topic_0284258833_en-us_topic_0169446153_table14961618163816:
 
    .. table:: **Table 1** Parameters
 
@@ -43,7 +43,7 @@ Procedure
       +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Dataset Name                      | If you select **Create** for **Dataset Source**, enter a dataset name based on required rules in the text box on the right. If you select **Specify** for **Dataset Source**, select one from available datasets of the same type under the current account displayed in the drop-down list. |
       +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Input Dataset Path                | Select the OBS path to the input dataset. For details about dataset input specifications, see :ref:`Preparing Data <modelarts_21_0003>`.                                                                                                                                                     |
+      | Input Dataset Path                | Select the OBS path to the input dataset. For details about dataset input specifications, see :ref:`Preparing Data <en-us_topic_0000001914882056>`.                                                                                                                                          |
       |                                   |                                                                                                                                                                                                                                                                                              |
       |                                   | -  Except the files and folders described in **Preparing Data > Requirements for Files Uploaded to OBS**, no other files or folders can be saved in the training data path. Otherwise, an error will be reported.                                                                            |
       |                                   | -  Do not modify the files in the training data path.                                                                                                                                                                                                                                        |

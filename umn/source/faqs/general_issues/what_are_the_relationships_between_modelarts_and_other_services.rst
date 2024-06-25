@@ -13,7 +13,7 @@ ModelArts uses Object Storage Service (OBS) to securely and reliably store data 
 CCE
 ---
 
-ModelArts uses Cloud Container Engine (CCE) to deploy models as real-time services. CCE enables high concurrency and provides elastic scaling. For more information about CCE, see *Cloud Container Engine User Guide*.
+ModelArts uses Cloud Container Engine (CCE) to deploy models as real-time services. CCE enables high concurrency and provides elastic scaling. For more information about CCE, see Cloud Container Engine User Guide.
 
 SWR
 ---

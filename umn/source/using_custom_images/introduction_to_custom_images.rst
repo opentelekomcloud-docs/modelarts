@@ -2,6 +2,8 @@
 
 .. _modelarts_23_0084:
 
+.. _en-us_topic_0000001948506069:
+
 Introduction to Custom Images
 =============================
 

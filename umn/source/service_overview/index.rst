@@ -1,6 +1,6 @@
-:original_name: modelarts_01_0000.html
+:original_name: modelarts_77_0142.html
 
-.. _modelarts_01_0000:
+.. _modelarts_77_0142:
 
 Service Overview
 ================
@@ -10,7 +10,6 @@ Service Overview
 -  :ref:`Basic Knowledge <modelarts_01_0009>`
 -  :ref:`Related Services <modelarts_01_0006>`
 -  :ref:`How Do I Access ModelArts? <modelarts_01_0007>`
--  :ref:`Billing <modelarts_01_0021>`
 
 .. toctree::
    :maxdepth: 1
@@ -21,4 +20,3 @@ Service Overview
    basic_knowledge/index
    related_services
    how_do_i_access_modelarts
-   billing

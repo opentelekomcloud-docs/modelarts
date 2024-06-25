@@ -29,7 +29,7 @@ Step 1 Install the SSH Tool
 
 `Download <https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html>`__ and install the SSH remote connection tool, for example, PuTTY.
 
-.. _modelarts_30_0038__section97911985211:
+.. _en-us_topic_0000001799496572__section97911985211:
 
 Step 2 Use PuTTYgen to Convert the .pem Key Pair File to a .ppk Key Pair File
 -----------------------------------------------------------------------------
@@ -80,7 +80,7 @@ Step 3 Use SSH to Connect to a Notebook Instance
 
       **Figure 5** Entering a username
 
-#. Choose **Connection** > **SSH** > **Auth**, click **Browse**, and select the .ppk file generated in :ref:`step 2 <modelarts_30_0038__section97911985211>`.
+#. Choose **Connection** > **SSH** > **Auth**, click **Browse**, and select the .ppk file generated in :ref:`step 2 <en-us_topic_0000001799496572__section97911985211>`.
 
    |image1|
 

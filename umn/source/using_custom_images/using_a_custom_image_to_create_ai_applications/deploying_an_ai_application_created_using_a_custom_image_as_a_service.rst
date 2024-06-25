@@ -9,12 +9,12 @@ For AI engines that are not supported by ModelArts, you can import the models yo
 
 The general procedure is as follows:
 
-#. :ref:`Building an Image Locally <modelarts_23_0270__en-us_topic_0298993551_section537112981619>`: Create a custom image package locally. For details about the image package specifications, see :ref:`Custom Image Specifications for Creating an AI Application <modelarts_23_0219>`.
-#. :ref:`Verifying the Image on the Local Host and Uploading the Image to SWR <modelarts_23_0270__en-us_topic_0298993551_section048011101569>`: Verify the API functions of the custom image and upload the custom image to SWR.
-#. :ref:`Creating an AI Application Using a Custom Image <modelarts_23_0270__en-us_topic_0298993551_section1610615113496>`: Import the image uploaded to SWR to ModelArts model management.
-#. :ref:`Deploying the AI Application as a Real-Time Service <modelarts_23_0270__en-us_topic_0298993551_section11593124119461>`: Deploy the imported model.
+#. :ref:`Building an Image Locally <en-us_topic_0000001948506077__en-us_topic_0000001846137717_en-us_topic_0298993551_section537112981619>`: Create a custom image package locally. For details about the image package specifications, see :ref:`Custom Image Specifications for Creating an AI Application <en-us_topic_0000001919187104>`.
+#. :ref:`Verifying the Image on the Local Host and Uploading the Image to SWR <en-us_topic_0000001948506077__en-us_topic_0000001846137717_en-us_topic_0298993551_section048011101569>`: Verify the API functions of the custom image and upload the custom image to SWR.
+#. :ref:`Creating an AI Application Using a Custom Image <en-us_topic_0000001948506077__en-us_topic_0000001846137717_en-us_topic_0298993551_section1610615113496>`: Import the image uploaded to SWR to ModelArts model management.
+#. :ref:`Deploying the AI Application as a Real-Time Service <en-us_topic_0000001948506077__en-us_topic_0000001846137717_en-us_topic_0298993551_section11593124119461>`: Deploy the imported model.
 
-.. _modelarts_23_0270__en-us_topic_0298993551_section537112981619:
+.. _en-us_topic_0000001948506077__en-us_topic_0000001846137717_en-us_topic_0298993551_section537112981619:
 
 Building an Image Locally
 -------------------------
@@ -108,7 +108,7 @@ A Linux x86_x64 host is used here. You can use an existing local host to create 
 
 #. You can run **docker image** to view the custom image you have created.
 
-.. _modelarts_23_0270__en-us_topic_0298993551_section048011101569:
+.. _en-us_topic_0000001948506077__en-us_topic_0000001846137717_en-us_topic_0298993551_section048011101569:
 
 Verifying the Image on the Local Host and Uploading the Image to SWR
 --------------------------------------------------------------------
@@ -142,33 +142,20 @@ Verifying the Image on the Local Host and Uploading the Image to SWR
       **Figure 2** API function verification
 
 3. Upload the custom image to SWR. For details about how to upload an image, see *Software Repository for Container (SWR) User Guide*.
-
 4. After the custom image is uploaded, view the uploaded image on the **My Images** > **Private Images** page of the SWR console.
 
-
-   .. figure:: /_static/images/en-us_image_0000001799498636.png
-      :alt: **Figure 3** List of uploaded images
-
-      **Figure 3** List of uploaded images
-
-.. _modelarts_23_0270__en-us_topic_0298993551_section1610615113496:
+.. _en-us_topic_0000001948506077__en-us_topic_0000001846137717_en-us_topic_0298993551_section1610615113496:
 
 Creating an AI Application Using a Custom Image
 -----------------------------------------------
 
-When you import a meta model by referring to :ref:`Importing a Meta Model from a Container Image <modelarts_23_0206>`, pay attention to the following parameters:
+When you import a meta model from a container image, pay attention to the following parameters:
 
 -  **Meta Model Source**: Select **Container image**.
 
    -  **Container Image Path**: Select the created private image.
 
-
-      .. figure:: /_static/images/en-us_image_0000001799338864.png
-         :alt: **Figure 4** Selecting the created private image
-
-         **Figure 4** Selecting the created private image
-
--  Apis : This parameter is used to edit the apis of a custom image and is optional. The model APIs must comply with ModelArts specifications. For details, see :ref:`Specifications for Compiling the Model Configuration File <modelarts_23_0092>`.
+-  Apis : This parameter is used to edit the apis of a custom image and is optional. The model APIs must comply with ModelArts specifications. For details, see "Specifications for Compiling the Model Configuration File".
 
    The configuration file is as follows:
 
@@ -206,25 +193,11 @@ When you import a meta model by referring to :ref:`Importing a Meta Model from a
           }
       ]
 
-.. _modelarts_23_0270__en-us_topic_0298993551_section11593124119461:
+.. _en-us_topic_0000001948506077__en-us_topic_0000001846137717_en-us_topic_0298993551_section11593124119461:
 
 Deploying the AI Application as a Real-Time Service
 ---------------------------------------------------
 
-#. Deploy the AI application as a real-time service. For details, see :ref:`Deploying a Model as a Real-Time Service <modelarts_23_0060>`.
-
+#. Deploy the AI application as a real-time service. For details, see "Deploying a Model as a Real-Time Service".
 #. View the details about the real-time service.
-
-
-   .. figure:: /_static/images/en-us_image_0000001846057725.png
-      :alt: **Figure 5** Usage Guides
-
-      **Figure 5** Usage Guides
-
 #. Access the real-time service on the **Predictions** tab page.
-
-
-   .. figure:: /_static/images/en-us_image_0000001799498620.png
-      :alt: **Figure 6** Accessing a real-time service
-
-      **Figure 6** Accessing a real-time service

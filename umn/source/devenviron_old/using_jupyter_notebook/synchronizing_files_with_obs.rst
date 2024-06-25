@@ -2,6 +2,8 @@
 
 .. _modelarts_23_0038:
 
+.. _en-us_topic_0000001946441177:
+
 Synchronizing Files with OBS
 ============================
 

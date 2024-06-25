@@ -1,6 +1,6 @@
-:original_name: modelarts_01_0013.html
+:original_name: modelarts_01_0028.html
 
-.. _modelarts_01_0013:
+.. _modelarts_01_0028:
 
 Introduction to Development Tools
 =================================
@@ -44,9 +44,17 @@ The image versions preset in ModelArts are determined based on user feedback and
 The images preset in ModelArts DevEnviron include:
 
 -  Common preset packages: common AI engines such as PyTorch and MindSpore based on standard Conda, common data analysis software packages such as Pandas and Numpy, and common tool software such as CUDA and CUDNN, meeting common AI development requirements.
--  Preset Conda environments: A Conda environment and basic Conda Python (excluding any AI engine) are created for each preset image. Select a Conda environment based on whether the AI engine is used for debugging.
+
+-  Preset Conda environments: A Conda environment and basic Conda Python (excluding any AI engine) are created for each preset image. The following figure shows the Conda environment for the preset MindSpore.
+
+   |image1|
+
+   Select a Conda environment based on whether the AI engine is used for debugging.
+
 -  Notebook: a web application that enables you to code on the GUI and combine the code, mathematical equations, and visualized content into a document.
+
 -  JupyterLab plug-ins: enable flavor changing and instance stopping to improving user experience.
+
 -  Remote SSH: allows you to remotely debug a notebook instance from a local PC.
 
 .. note::
@@ -60,3 +68,5 @@ Feature 3: JupyterLab, an online interactive development and debugging tool
 ModelArts integrates open-source JupyterLab for online interactive development and debugging. You can use the notebook on the ModelArts management console to compile and debug code and train models based on the code, without concerning environment installation or configuration.
 
 JupyterLab is an interactive development environment. It is the next-generation product of Jupyter Notebook. JupyterLab enables you to compile notebooks, operate terminals, edit Markdown text, enable interaction, and view CSV files and images.
+
+.. |image1| image:: /_static/images/en-us_image_0000001910019930.png

@@ -47,9 +47,9 @@ The procedure is as follows:
 
          unzip xxx.zip  # Directly decompress the package in the path where the package is stored.
 
-      After the code is executed, open the terminal shown in :ref:`Figure 2 <modelarts_30_0047__fig711883121018>` and run the **ls /home/ma-user/work** command to view the file downloaded to the notebook instance. Alternatively, view the downloaded file in the left navigation pane of Jupyter. If the file is not displayed, refresh the page.
+      After the code is executed, open the terminal shown in :ref:`Figure 2 <en-us_topic_0000001846055525__fig711883121018>` and run the **ls /home/ma-user/work** command to view the file downloaded to the notebook instance. Alternatively, view the downloaded file in the left navigation pane of Jupyter. If the file is not displayed, refresh the page.
 
-      .. _modelarts_30_0047__fig711883121018:
+      .. _en-us_topic_0000001846055525__fig711883121018:
 
       .. figure:: /_static/images/en-us_image_0000001846057261.png
          :alt: **Figure 2** Opening the terminal

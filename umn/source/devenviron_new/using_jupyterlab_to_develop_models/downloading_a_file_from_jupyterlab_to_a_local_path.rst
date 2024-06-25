@@ -7,10 +7,10 @@ Downloading a File from JupyterLab to a Local Path
 
 Files created in JupyterLab can be downloaded to a local path. The operations for downloading a file are the same, regardless of whether the created notebook instance uses the default or EVS storage.
 
--  If a file is less than or equal to 100 MB, directly download it from JupyterLab. For details, see :ref:`Downloading a File Less Than or Equal to 100 MB <modelarts_30_0011__section2092816813316>`.
--  If a file is larger than 100 MB, use OBS to transfer it to your local path. For details, see :ref:`Downloading a File Larger Than 100 MB <modelarts_30_0011__section1343284817>`.
+-  If a file is less than or equal to 100 MB, directly download it from JupyterLab. For details, see :ref:`Downloading a File Less Than or Equal to 100 MB <en-us_topic_0000001799336972__section2092816813316>`.
+-  If a file is larger than 100 MB, use OBS to transfer it to your local path. For details, see :ref:`Downloading a File Larger Than 100 MB <en-us_topic_0000001799336972__section1343284817>`.
 
-.. _modelarts_30_0011__section2092816813316:
+.. _en-us_topic_0000001799336972__section2092816813316:
 
 Downloading a File Less Than or Equal to 100 MB
 -----------------------------------------------
@@ -23,7 +23,7 @@ In the JupyterLab file list, right-click the file to be downloaded and choose **
 
    **Figure 1** Downloading a file
 
-.. _modelarts_30_0011__section1343284817:
+.. _en-us_topic_0000001799336972__section1343284817:
 
 Downloading a File Larger Than 100 MB
 -------------------------------------

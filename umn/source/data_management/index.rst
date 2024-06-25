@@ -1,32 +1,18 @@
-:original_name: modelarts_23_0002.html
+:original_name: modelarts_77_0146.html
 
-.. _modelarts_23_0002:
+.. _modelarts_77_0146:
 
 Data Management
 ===============
 
--  :ref:`Introduction to Data Management <modelarts_23_0003>`
--  :ref:`Creating a Dataset <modelarts_23_0004>`
--  :ref:`Labeling Data <modelarts_23_0010>`
--  :ref:`Importing Data <modelarts_23_0005>`
--  :ref:`Exporting Data <modelarts_23_0214>`
--  :ref:`Modifying a Dataset <modelarts_23_0020>`
--  :ref:`Publishing a Dataset <modelarts_23_0018>`
--  :ref:`Deleting a Dataset <modelarts_23_0021>`
--  :ref:`Managing Dataset Versions <modelarts_23_0019>`
--  :ref:`Confirming Hard Examples <modelarts_23_0223>`
+-  :ref:`Data Preparation and Analysis <modelarts_88_0146>`
+-  :ref:`Data Processing <modelarts_88_0147>`
+-  :ref:`Data Labeling <modelarts_88_0148>`
 
 .. toctree::
    :maxdepth: 1
    :hidden: 
 
-   introduction_to_data_management
-   creating_a_dataset
-   labeling_data/index
-   importing_data/index
-   exporting_data
-   modifying_a_dataset
-   publishing_a_dataset
-   deleting_a_dataset
-   managing_dataset_versions
-   confirming_hard_examples
+   data_preparation_and_analysis/index
+   data_processing/index
+   data_labeling/index

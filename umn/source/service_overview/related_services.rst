@@ -5,10 +5,20 @@
 Related Services
 ================
 
+IAM
+---
+
+ModelArts uses Identity and Access Management (IAM) for authentication and authorization. For more information about IAM, see *Identity and Access Management User Guide*.
+
 OBS
 ---
 
 ModelArts uses Object Storage Service (OBS) to securely and reliably store data and models at low costs. For more details, see *Object Storage Service Console Operation Guide*.
+
+EVS
+---
+
+ModelArts uses Elastic Volume Service (EVS) to store created notebook instances.
 
 CCE
 ---
@@ -18,7 +28,7 @@ ModelArts uses Cloud Container Engine (CCE) to deploy models as real-time servic
 SWR
 ---
 
-To use an AI framework that is not supported by ModelArts, use SoftWare Repository for Container (SWR) to customize an image and import the image to ModelArts for training or inference. For details about SWR, see .
+To use an AI framework that is not supported by ModelArts, use Software Repository for Container (SWR) to customize an image and import the image to ModelArts for training or inference. For details about SWR, see .
 
 Cloud Eye
 ---------

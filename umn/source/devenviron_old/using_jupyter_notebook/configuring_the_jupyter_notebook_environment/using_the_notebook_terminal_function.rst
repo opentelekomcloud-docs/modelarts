@@ -7,7 +7,7 @@ Using the Notebook Terminal Function
 
 For developers who are used to coding, the terminal function is very convenient and practical. This section describes how to enable the terminal function in a notebook instance and switch the engine environment in the terminal.
 
-.. _modelarts_23_0117__en-us_topic_0190535990_section78015461056:
+.. _en-us_topic_0000001915042040__en-us_topic_0000001799496556_en-us_topic_0190535990_section78015461056:
 
 Enabling the Notebook Terminal Function
 ---------------------------------------

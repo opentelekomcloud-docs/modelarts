@@ -40,20 +40,20 @@ Edit Form
 
 If you click **Edit Form**, four sub-options will be displayed: **Add new form field**, **Hide code**, **Hide form**, and **Show All**.
 
--  You can set the form field type to **dropdown**, **input**, and **slider**. See :ref:`Figure 4 <devtool-modelarts_0212__en-us_topic_0000001278648233_fig86841216610>`. Each time a field is added, the corresponding variable is added to the code and form areas. If a value in the form area is changed, the corresponding variable in the code area is also changed.
+-  You can set the form field type to **dropdown**, **input**, and **slider**. See :ref:`Figure 4 <en-us_topic_0000001846056313__en-us_topic_0000001278648233_fig86841216610>`. Each time a field is added, the corresponding variable is added to the code and form areas. If a value in the form area is changed, the corresponding variable in the code area is also changed.
 
    .. note::
 
-      When creating a dropdown form, click **ADD Item** and add at least two items. See :ref:`Figure 5 <devtool-modelarts_0212__en-us_topic_0000001278648233_fig946213314619>`.
+      When creating a dropdown form, click **ADD Item** and add at least two items. See :ref:`Figure 5 <en-us_topic_0000001846056313__en-us_topic_0000001278648233_fig946213314619>`.
 
-   .. _devtool-modelarts_0212__en-us_topic_0000001278648233_fig86841216610:
+   .. _en-us_topic_0000001846056313__en-us_topic_0000001278648233_fig86841216610:
 
    .. figure:: /_static/images/en-us_image_0000001799498252.png
       :alt: **Figure 4** Form style of dropdown, input, and slider
 
       **Figure 4** Form style of dropdown, input, and slider
 
-   .. _devtool-modelarts_0212__en-us_topic_0000001278648233_fig946213314619:
+   .. _en-us_topic_0000001846056313__en-us_topic_0000001278648233_fig946213314619:
 
    .. figure:: /_static/images/en-us_image_0000001846057329.png
       :alt: **Figure 5** Creating a dropdown form
