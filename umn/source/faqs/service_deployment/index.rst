@@ -5,12 +5,12 @@
 Service Deployment
 ==================
 
--  :ref:`What Types of Services Can Models Be Deployed as on ModelArts? <modelarts_05_0012>`
--  :ref:`What Should I Do If a Conflict Occurs When Deploying a Model As a Real-Time Service? <modelarts_05_0100>`
+-  :ref:`Functional Consulting <modelarts_05_0208>`
+-  :ref:`Real-Time Services <modelarts_05_0217>`
 
 .. toctree::
    :maxdepth: 1
    :hidden: 
 
-   what_types_of_services_can_models_be_deployed_as_on_modelarts
-   what_should_i_do_if_a_conflict_occurs_when_deploying_a_model_as_a_real-time_service
+   functional_consulting/index
+   real-time_services/index

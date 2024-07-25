@@ -1,13 +1,12 @@
-:original_name: modelarts_08_0000.html
+:original_name: modelarts_77_0143.html
 
-.. _modelarts_08_0000:
+.. _modelarts_77_0143:
 
 Preparations
 ============
 
 -  :ref:`Configuring Access Authorization (Global Configuration) <modelarts_08_0007>`
 -  :ref:`Creating an OBS Bucket <modelarts_08_0003>`
--  :ref:`(Optional) Configuring Mapping Between Domain Names and IP Addresses <modelarts_08_0008>`
 
 .. toctree::
    :maxdepth: 1
@@ -15,4 +14,3 @@ Preparations
 
    configuring_access_authorization_global_configuration
    creating_an_obs_bucket
-   optional_configuring_mapping_between_domain_names_and_ip_addresses

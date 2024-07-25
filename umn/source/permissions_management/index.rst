@@ -1,18 +1,18 @@
-:original_name: modelarts_23_0077.html
+:original_name: modelarts_77_0153.html
 
-.. _modelarts_23_0077:
+.. _modelarts_77_0153:
 
 Permissions Management
 ======================
 
--  :ref:`Fine-grained Policy <modelarts_23_0078>`
--  :ref:`Policy Language <modelarts_23_0079>`
--  :ref:`Creating a Custom Policy <modelarts_23_0080>`
+-  :ref:`Basic Concepts <modelarts_24_0078>`
+-  :ref:`Permission Management Mechanisms <modelarts_24_0079>`
+-  :ref:`Configuration Practices in Typical Scenarios <modelarts_24_0084>`
 
 .. toctree::
    :maxdepth: 1
    :hidden: 
 
-   fine-grained_policy
-   policy_language
-   creating_a_custom_policy
+   basic_concepts
+   permission_management_mechanisms/index
+   configuration_practices_in_typical_scenarios/index
