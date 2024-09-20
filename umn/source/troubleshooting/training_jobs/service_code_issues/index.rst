@@ -30,7 +30,7 @@ Service Code Issues
    :maxdepth: 1
    :hidden: 
 
-   error_message_pandas.errors.parsererror_error_tokenizing_data._c_error_expected_.*_fields_displayed_in_logs
+   error_message_pandas.errors.parsererror_error_tokenizing_data._c_error_expected_._fields_displayed_in_logs
    error_message_max_pool2d_with_indices_out_cuda_frame_failed_with_error_code_0_displayed_in_logs
    debugging_training_code_in_the_cloud_environment_if_a_training_job_failed
    error_message_slice0_13184_none_slicenone_none_none_is_an_invalid_key_displayed_in_logs

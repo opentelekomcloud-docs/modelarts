@@ -26,7 +26,7 @@ In-Cloud Migration Adaptation Issues
    :hidden: 
 
    failed_to_import_a_module
-   error_message_no_module_named_.*_displayed_in_training_job_logs
+   error_message_no_module_named_._displayed_in_training_job_logs
    failed_to_install_a_third-party_package
    failed_to_download_the_code_directory
    error_message_no_such_file_or_directory_displayed_in_training_job_logs
