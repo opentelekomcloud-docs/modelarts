@@ -24,7 +24,7 @@ The Sync OBS function can be used in JupyterLab. The following describes how to 
 For example, **Example-1.ipynb** needs to invoke **module** in **Example-2.ipynb**. In **File Browser** on the left, select the two **.ipynb** files and click **Sync OBS**. In the dialog box that is displayed, click **YES** to complete synchronization. After the synchronization is successful, the code can be called mutually.
 
 
-.. figure:: /_static/images/en-us_image_0000001846057741.png
+.. figure:: /_static/images/en-us_image_0000002043024104.png
    :alt: **Figure 1** Using the Sync OBS function
 
    **Figure 1** Using the Sync OBS function

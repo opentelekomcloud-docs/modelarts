@@ -21,15 +21,15 @@ Solution
 Disable automatic VS Code upgrade. To do so, click **Settings** in the lower left corner, search for **Update: Mode**, and set it to **none**.
 
 
-.. figure:: /_static/images/en-us_image_0000001910058794.png
+.. figure:: /_static/images/en-us_image_0000002043025884.png
    :alt: **Figure 1** Settings
 
    **Figure 1** Settings
 
 
-.. figure:: /_static/images/en-us_image_0000001943977961.png
+.. figure:: /_static/images/en-us_image_0000002043184216.png
    :alt: **Figure 2** Setting the update mode to none
 
    **Figure 2** Setting the update mode to none
 
-.. |image1| image:: /_static/images/en-us_image_0000001910018778.png
+.. |image1| image:: /_static/images/en-us_image_0000002043184220.png

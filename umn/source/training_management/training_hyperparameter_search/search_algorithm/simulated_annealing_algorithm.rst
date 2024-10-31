@@ -2,8 +2,6 @@
 
 .. _modelarts_23_0304_0:
 
-.. _en-us_topic_0000001916502166:
-
 Simulated Annealing Algorithm
 =============================
 

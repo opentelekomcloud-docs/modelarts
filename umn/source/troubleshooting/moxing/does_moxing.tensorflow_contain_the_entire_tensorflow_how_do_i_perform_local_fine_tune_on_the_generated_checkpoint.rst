@@ -8,11 +8,11 @@ Does moxing.tensorflow Contain the Entire TensorFlow? How Do I Perform Local Fin
 Symptom
 -------
 
-When MoXing is used to train a model, **global_step** is placed in the Adam name range. The non-MoXing code does not contain the Adam name range. See :ref:`Figure 1 <en-us_topic_0000001909848456__fig934813253212>`. In the figure, **1** indicates MoXing code, and **2** indicates non-MoXing code.
+When MoXing is used to train a model, **global_step** is placed in the Adam name range. The non-MoXing code does not contain the Adam name range. See :ref:`Figure 1 <en-us_topic_0000002043025108__fig934813253212>`. In the figure, **1** indicates MoXing code, and **2** indicates non-MoXing code.
 
-.. _en-us_topic_0000001909848456__fig934813253212:
+.. _en-us_topic_0000002043025108__fig934813253212:
 
-.. figure:: /_static/images/en-us_image_0000001943968081.png
+.. figure:: /_static/images/en-us_image_0000002043025280.png
    :alt: **Figure 1** Sample code
 
    **Figure 1** Sample code

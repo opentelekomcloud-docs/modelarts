@@ -64,4 +64,4 @@ In the **Unlabeled** or **Labeled** tab, select the audio files to be deleted, a
 
    If you select **Delete the source files from OBS**, audio files stored in the corresponding OBS directory will be deleted when you delete the selected audio files. Deleting source files may affect other dataset versions or datasets using those files. As a result, the page display, training, or inference is abnormal. Deleted data cannot be recovered. Exercise caution when performing this operation.
 
-.. |image1| image:: /_static/images/en-us_image_0000001910027706.png
+.. |image1| image:: /_static/images/en-us_image_0000002043022684.png

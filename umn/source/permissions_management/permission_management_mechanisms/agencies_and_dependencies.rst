@@ -541,16 +541,16 @@ Agency authorization
 
 To simplify operations when you use ModelArts to run jobs, certain operations are automatically performed on the ModelArts backend, for example, downloading the datasets in an OBS bucket to a workspace before a training job is started and dumping training job logs to the OBS bucket.
 
-ModelArts does not save your token authentication credentials. Before performing operations on your resources (such as OBS buckets) in a backend asynchronous job, you are required to explicitly authorize ModelArts through an IAM agency. ModelArts will use the agency to obtain a temporary authentication credential for performing operations on your resources. For details, see :ref:`Adding Authorization <en-us_topic_0000001943968981__en-us_topic_0256240291_section2221743101516>`.
+ModelArts does not save your token authentication credentials. Before performing operations on your resources (such as OBS buckets) in a backend asynchronous job, you are required to explicitly authorize ModelArts through an IAM agency. ModelArts will use the agency to obtain a temporary authentication credential for performing operations on your resources. For details, see :ref:`Adding Authorization <en-us_topic_0000002079180665__en-us_topic_0256240291_section2221743101516>`.
 
-.. _en-us_topic_0000001910009776__fig501741161215:
+.. _en-us_topic_0000002079102077__fig501741161215:
 
-.. figure:: /_static/images/en-us_image_0000001910009976.png
+.. figure:: /_static/images/en-us_image_0000002043181344.png
    :alt: **Figure 1** Agency authorization
 
    **Figure 1** Agency authorization
 
-As shown in :ref:`Figure 1 <en-us_topic_0000001910009776__fig501741161215>`, after authorization is configured on ModelArts, ModelArts uses the temporary credential to access and operate your resources, relieving you from some complex and time-consuming operations. The agency credential will also be synchronized to your jobs (including notebook instances and training jobs). You can use the agency credential to access your resources in the jobs.
+As shown in :ref:`Figure 1 <en-us_topic_0000002079102077__fig501741161215>`, after authorization is configured on ModelArts, ModelArts uses the temporary credential to access and operate your resources, relieving you from some complex and time-consuming operations. The agency credential will also be synchronized to your jobs (including notebook instances and training jobs). You can use the agency credential to access your resources in the jobs.
 
 You can use either of the following methods to authorize ModelArts using an agency:
 

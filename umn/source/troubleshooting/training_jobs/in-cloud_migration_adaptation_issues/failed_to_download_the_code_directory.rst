@@ -8,15 +8,15 @@ Failed to Download the Code Directory
 Symptom
 -------
 
-The code directory fails to be downloaded during training job running, and the following error message is displayed. See :ref:`Figure 1 <en-us_topic_0000001909848556__fig920916392148>`.
+The code directory fails to be downloaded during training job running, and the following error message is displayed. See :ref:`Figure 1 <en-us_topic_0000002043183428__fig920916392148>`.
 
 .. code-block::
 
    ERROR: modelarts-downloader.py: Get object key failed: 'Contents'
 
-.. _en-us_topic_0000001909848556__fig920916392148:
+.. _en-us_topic_0000002043183428__fig920916392148:
 
-.. figure:: /_static/images/en-us_image_0000001909848924.png
+.. figure:: /_static/images/en-us_image_0000002079104341.png
    :alt: **Figure 1** Failure of getting content
 
    **Figure 1** Failure of getting content

@@ -9,12 +9,12 @@ For AI engines that are not supported by ModelArts, you can import the models yo
 
 The general procedure is as follows:
 
-#. :ref:`Building an Image Locally <en-us_topic_0000001948506077__en-us_topic_0000001846137717_en-us_topic_0298993551_section537112981619>`: Create a custom image package locally. For details about the image package specifications, see :ref:`Custom Image Specifications for Creating an AI Application <en-us_topic_0000001919187104>`.
-#. :ref:`Verifying the Image on the Local Host and Uploading the Image to SWR <en-us_topic_0000001948506077__en-us_topic_0000001846137717_en-us_topic_0298993551_section048011101569>`: Verify the API functions of the custom image and upload the custom image to SWR.
-#. :ref:`Creating an AI Application Using a Custom Image <en-us_topic_0000001948506077__en-us_topic_0000001846137717_en-us_topic_0298993551_section1610615113496>`: Import the image uploaded to SWR to ModelArts model management.
-#. :ref:`Deploying the AI Application as a Real-Time Service <en-us_topic_0000001948506077__en-us_topic_0000001846137717_en-us_topic_0298993551_section11593124119461>`: Deploy the imported model.
+#. :ref:`Building an Image Locally <en-us_topic_0000002079181597__en-us_topic_0000001846137717_en-us_topic_0298993551_section537112981619>`: Create a custom image package locally. For details about the image package specifications, see :ref:`Custom Image Specifications for Creating an AI Application <modelarts_23_0219>`.
+#. :ref:`Verifying the Image on the Local Host and Uploading the Image to SWR <en-us_topic_0000002079181597__en-us_topic_0000001846137717_en-us_topic_0298993551_section048011101569>`: Verify the API functions of the custom image and upload the custom image to SWR.
+#. :ref:`Creating an AI Application Using a Custom Image <en-us_topic_0000002079181597__en-us_topic_0000001846137717_en-us_topic_0298993551_section1610615113496>`: Import the image uploaded to SWR to ModelArts model management.
+#. :ref:`Deploying the AI Application as a Real-Time Service <en-us_topic_0000002079181597__en-us_topic_0000001846137717_en-us_topic_0298993551_section11593124119461>`: Deploy the imported model.
 
-.. _en-us_topic_0000001948506077__en-us_topic_0000001846137717_en-us_topic_0298993551_section537112981619:
+.. _en-us_topic_0000002079181597__en-us_topic_0000001846137717_en-us_topic_0298993551_section537112981619:
 
 Building an Image Locally
 -------------------------
@@ -108,7 +108,7 @@ A Linux x86_x64 host is used here. You can use an existing local host to create 
 
 #. You can run **docker image** to view the custom image you have created.
 
-.. _en-us_topic_0000001948506077__en-us_topic_0000001846137717_en-us_topic_0298993551_section048011101569:
+.. _en-us_topic_0000002079181597__en-us_topic_0000001846137717_en-us_topic_0298993551_section048011101569:
 
 Verifying the Image on the Local Host and Uploading the Image to SWR
 --------------------------------------------------------------------
@@ -120,7 +120,7 @@ Verifying the Image on the Local Host and Uploading the Image to SWR
       docker run -it -p 8080:8080 test:v1
 
 
-   .. figure:: /_static/images/en-us_image_0000001846137777.png
+   .. figure:: /_static/images/en-us_image_0000002079181717.png
       :alt: **Figure 1** Starting a custom image
 
       **Figure 1** Starting a custom image
@@ -136,7 +136,7 @@ Verifying the Image on the Local Host and Uploading the Image to SWR
    If information similar to the following is displayed, the function verification is successful.
 
 
-   .. figure:: /_static/images/en-us_image_0000001846137769.png
+   .. figure:: /_static/images/en-us_image_0000002043182356.png
       :alt: **Figure 2** API function verification
 
       **Figure 2** API function verification
@@ -144,7 +144,7 @@ Verifying the Image on the Local Host and Uploading the Image to SWR
 3. Upload the custom image to SWR. For details about how to upload an image, see *Software Repository for Container (SWR) User Guide*.
 4. After the custom image is uploaded, view the uploaded image on the **My Images** > **Private Images** page of the SWR console.
 
-.. _en-us_topic_0000001948506077__en-us_topic_0000001846137717_en-us_topic_0298993551_section1610615113496:
+.. _en-us_topic_0000002079181597__en-us_topic_0000001846137717_en-us_topic_0298993551_section1610615113496:
 
 Creating an AI Application Using a Custom Image
 -----------------------------------------------
@@ -193,7 +193,7 @@ When you import a meta model from a container image, pay attention to the follow
           }
       ]
 
-.. _en-us_topic_0000001948506077__en-us_topic_0000001846137717_en-us_topic_0298993551_section11593124119461:
+.. _en-us_topic_0000002079181597__en-us_topic_0000001846137717_en-us_topic_0298993551_section11593124119461:
 
 Deploying the AI Application as a Real-Time Service
 ---------------------------------------------------

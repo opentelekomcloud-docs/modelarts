@@ -12,7 +12,7 @@ Prerequisites
 
 An AI application has been created in ModelArts.
 
-.. _en-us_topic_0000001910054874__en-us_topic_0171858290_section102881451161111:
+.. _en-us_topic_0000002043024844__en-us_topic_0171858290_section102881451161111:
 
 Creating a New Version
 ----------------------

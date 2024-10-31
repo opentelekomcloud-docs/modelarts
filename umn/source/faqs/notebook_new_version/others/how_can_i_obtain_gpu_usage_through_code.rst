@@ -126,10 +126,10 @@ Using the python Command
 
    **When using a deep learning framework such as PyTorch or TensorFlow, you can also use the APIs provided by the framework for query.**
 
-.. |image1| image:: /_static/images/en-us_image_0000001910018974.png
-.. |image2| image:: /_static/images/en-us_image_0000001910058990.png
-.. |image3| image:: /_static/images/en-us_image_0000001943978149.png
-.. |image4| image:: /_static/images/en-us_image_0000001943978153.png
-.. |image5| image:: /_static/images/en-us_image_0000001943978157.png
-.. |image6| image:: /_static/images/en-us_image_0000001910018966.png
-.. |image7| image:: /_static/images/en-us_image_0000001910018978.png
+.. |image1| image:: /_static/images/en-us_image_0000002079183521.png
+.. |image2| image:: /_static/images/en-us_image_0000002043184192.png
+.. |image3| image:: /_static/images/en-us_image_0000002043184208.png
+.. |image4| image:: /_static/images/en-us_image_0000002043025868.png
+.. |image5| image:: /_static/images/en-us_image_0000002043184204.png
+.. |image6| image:: /_static/images/en-us_image_0000002079104937.png
+.. |image7| image:: /_static/images/en-us_image_0000002079104941.png
