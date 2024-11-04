@@ -7,12 +7,12 @@ Error Message "No module named .*" Displayed in Training Job Logs
 
 Perform the following operations to locate the fault:
 
-#. :ref:`Checking Whether the Dependency Package Is Available <en-us_topic_0000001909848532__en-us_topic_0000001174943233_section9729952472>`
-#. :ref:`Checking Whether the Dependency Package Path Can Be Detected <en-us_topic_0000001909848532__en-us_topic_0000001174943233_section11396125111268>`
-#. :ref:`Checking Whether the Selected Resource Flavor Is Correct <en-us_topic_0000001909848532__section2182429896>`
-#. :ref:`Summary and Suggestions <en-us_topic_0000001909848532__en-us_topic_0000001174943233_section169401039184514>`
+#. :ref:`Checking Whether the Dependency Package Is Available <en-us_topic_0000002079104117__en-us_topic_0000001174943233_section9729952472>`
+#. :ref:`Checking Whether the Dependency Package Path Can Be Detected <en-us_topic_0000002079104117__en-us_topic_0000001174943233_section11396125111268>`
+#. :ref:`Checking Whether the Selected Resource Flavor Is Correct <en-us_topic_0000002079104117__section2182429896>`
+#. :ref:`Summary and Suggestions <en-us_topic_0000002079104117__en-us_topic_0000001174943233_section169401039184514>`
 
-.. _en-us_topic_0000001909848532__en-us_topic_0000001174943233_section9729952472:
+.. _en-us_topic_0000002079104117__en-us_topic_0000001174943233_section9729952472:
 
 Checking Whether the Dependency Package Is Available
 ----------------------------------------------------
@@ -72,7 +72,7 @@ If the dependency package is unavailable, use either of the following methods to
 
 In method 1, the dependency package can be downloaded and installed before the training job is started. In method 2, the dependency package is downloaded and installed during the running of the boot file.
 
-.. _en-us_topic_0000001909848532__en-us_topic_0000001174943233_section11396125111268:
+.. _en-us_topic_0000002079104117__en-us_topic_0000001174943233_section11396125111268:
 
 Checking Whether the Dependency Package Path Can Be Detected
 ------------------------------------------------------------
@@ -89,7 +89,7 @@ Run **from module_dir import module_file** to import a package. The code structu
    |  |- __init__.py
    |  |- module_file.py
 
-.. _en-us_topic_0000001909848532__section2182429896:
+.. _en-us_topic_0000002079104117__section2182429896:
 
 Checking Whether the Selected Resource Flavor Is Correct
 --------------------------------------------------------
@@ -103,7 +103,7 @@ Error message "No module named npu_bridge.npu_init" is displayed for a training 
 
 Check whether the flavor used by the training job supports NPUs. The possible cause is that the job selected a non-NPU flavor, for example, a GPU flavor. As a result, an error occurs when NPUs are used.
 
-.. _en-us_topic_0000001909848532__en-us_topic_0000001174943233_section169401039184514:
+.. _en-us_topic_0000002079104117__en-us_topic_0000001174943233_section169401039184514:
 
 Summary and Suggestions
 -----------------------

@@ -7,11 +7,11 @@ What Do I Do If a Notebook Instance Won't Run My Code?
 
 If a notebook instance fails to execute code, you can locate and rectify the fault as follows:
 
-#. If the execution of a cell is suspended or lasts for a long time (for example, the execution of the second and third cells in :ref:`Figure 1 <en-us_topic_0000001910058690__fig54529362315>` is suspended or lasts for a long time, causing execution failure of the fourth cell) but the notebook page still responds and other cells can be selected, click **interrupt the kernel** highlighted in a red box in the following figure to stop the execution of all cells. The notebook instance retains all variable spaces.
+#. If the execution of a cell is suspended or lasts for a long time (for example, the execution of the second and third cells in :ref:`Figure 1 <en-us_topic_0000002079183077__fig54529362315>` is suspended or lasts for a long time, causing execution failure of the fourth cell) but the notebook page still responds and other cells can be selected, click **interrupt the kernel** highlighted in a red box in the following figure to stop the execution of all cells. The notebook instance retains all variable spaces.
 
-   .. _en-us_topic_0000001910058690__fig54529362315:
+   .. _en-us_topic_0000002079183077__fig54529362315:
 
-   .. figure:: /_static/images/en-us_image_0000001943978297.png
+   .. figure:: /_static/images/en-us_image_0000002079105009.png
       :alt: **Figure 1** Stopping all cells
 
       **Figure 1** Stopping all cells

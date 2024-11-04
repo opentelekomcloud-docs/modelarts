@@ -26,7 +26,7 @@ To resume model training or incrementally train a model in ModelArts, configure 
 When creating a training job, configure the data path to the training output, save checkpoints in this data path, and set **Predownload** to **Yes**. If you set **Predownload** to **Yes**, the system automatically downloads the **checkpoint** file in the training output data path to a local directory of the training container before the training job is started.
 
 
-.. figure:: /_static/images/en-us_image_0000001948721993.png
+.. figure:: /_static/images/en-us_image_0000002079098061.png
    :alt: **Figure 1** Training Output
 
    **Figure 1** Training Output
@@ -34,7 +34,7 @@ When creating a training job, configure the data path to the training output, sa
 Enable fault tolerance check (auto restart) for resumable training. On the training job creation page, enable **Auto Restart**. If the environment pre-check fails, the hardware is not functional, or the training job fails, ModelArts will automatically issue the training job again.
 
 
-.. figure:: /_static/images/en-us_image_0000001919403074.png
+.. figure:: /_static/images/en-us_image_0000002043177360.png
    :alt: **Figure 2** Auto Restart
 
    **Figure 2** Auto Restart

@@ -9,10 +9,10 @@ When you use ModelArts, your data is stored in an OBS bucket. There is an OBS pa
 
 Perform the following operations to locate the fault:
 
-#. :ref:`Checking Whether the Affected Path Is an OBS Path <en-us_topic_0000001910008808__en-us_topic_0166743701_section770714556555>`
-#. :ref:`Checking Whether the Affected Path Is Available <en-us_topic_0000001910008808__en-us_topic_0166743701_section14650140565>`
+#. :ref:`Checking Whether the Affected Path Is an OBS Path <en-us_topic_0000002079182693__en-us_topic_0166743701_section770714556555>`
+#. :ref:`Checking Whether the Affected Path Is Available <en-us_topic_0000002079182693__en-us_topic_0166743701_section14650140565>`
 
-.. _en-us_topic_0000001910008808__en-us_topic_0166743701_section770714556555:
+.. _en-us_topic_0000002079182693__en-us_topic_0166743701_section770714556555:
 
 Checking Whether the Affected Path Is an OBS Path
 -------------------------------------------------
@@ -28,7 +28,7 @@ If the affected path is to the training data, perform the following operations t
 #. When creating an algorithm, set the code path, which defaults to **data_url**, in the input path mapping configuration.
 #. Add a hyperparameter, which defaults to **data_url**, to the training code. Use **data_url** as the local path for inputting the training data.
 
-.. _en-us_topic_0000001910008808__en-us_topic_0166743701_section14650140565:
+.. _en-us_topic_0000002079182693__en-us_topic_0166743701_section14650140565:
 
 Checking Whether the Affected Path Is Available
 -----------------------------------------------

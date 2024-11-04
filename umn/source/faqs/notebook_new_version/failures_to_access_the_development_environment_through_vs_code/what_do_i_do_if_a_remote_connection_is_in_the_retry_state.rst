@@ -21,7 +21,7 @@ Solution
 Method 1 (performed locally): Open the command panel (**Ctrl+Shift+P** for Windows and **Cmd+Shift+P** for macOS), search for **Kill VS Code Server on Host**, and locate the affected instance, which will be automatically cleared. Then, establish the connection again.
 
 
-.. figure:: /_static/images/en-us_image_0000001910058818.png
+.. figure:: /_static/images/en-us_image_0000002079104889.png
    :alt: **Figure 1** Clearing the affected instance
 
    **Figure 1** Clearing the affected instance
@@ -47,4 +47,4 @@ Parameters:
 
    The preceding methods can also be used to resolve issues related to the VS Code server.
 
-.. |image1| image:: /_static/images/en-us_image_0000001943977985.png
+.. |image1| image:: /_static/images/en-us_image_0000002079183481.png

@@ -26,4 +26,4 @@ To train a model on ModelArts, follow these steps:
 -  Stop or delete a training job. For details, see :ref:`Stopping, Rebuilding, or Searching for a Training Job <develop-modelarts-0017>`.
 -  Troubleshoot if you encounter any problem during training. For details, see "Training Jobs" in *Troubleshooting*.
 
-.. |image1| image:: /_static/images/en-us_image_0000001943975617.png
+.. |image1| image:: /_static/images/en-us_image_0000002079177093.png

@@ -20,15 +20,15 @@ Procedure
 
 #. View the training details, such as the label column, data type, accuracy, and evaluation result.
 
-   The example is a discrete value of binary classification. For details about the evaluation result parameters, see :ref:`Table 1 <en-us_topic_0000001914882076__en-us_topic_0000001846056137_en-us_topic_0000001096914569_table1827411471920>`.
+   The example is a discrete value of binary classification. For details about the evaluation result parameters, see :ref:`Table 1 <en-us_topic_0000002043182240__en-us_topic_0000001846056137_en-us_topic_0000001096914569_table1827411471920>`.
 
-   For details about the evaluation results generated for different data types of label columns, see :ref:`Evaluation Results <en-us_topic_0000001914882076__en-us_topic_0000001846056137_en-us_topic_0000001096914569_section02494566510>`.
+   For details about the evaluation results generated for different data types of label columns, see :ref:`Evaluation Results <en-us_topic_0000002043182240__en-us_topic_0000001846056137_en-us_topic_0000001096914569_section02494566510>`.
 
 .. note::
 
    An ExeML project supports multiple rounds of training, and each round generates a version. For example, the first training version is **V001 (**\ *xxx*\ **)**, and the next version is **V002 (**\ *xxx*\ **)**. The trained models can be managed by training version. After the trained model meets your requirements, deploy the model as a service.
 
-.. _en-us_topic_0000001914882076__en-us_topic_0000001846056137_en-us_topic_0000001096914569_section02494566510:
+.. _en-us_topic_0000002043182240__en-us_topic_0000001846056137_en-us_topic_0000001096914569_section02494566510:
 
 Evaluation Results
 ------------------
@@ -39,7 +39,7 @@ The parameters in evaluation results vary depending on the training data type.
 
    The evaluation parameters include recall, precision, accuracy, and F1 score, which are described in the following table.
 
-   .. _en-us_topic_0000001914882076__en-us_topic_0000001846056137_en-us_topic_0000001096914569_table1827411471920:
+   .. _en-us_topic_0000002043182240__en-us_topic_0000001846056137_en-us_topic_0000001096914569_table1827411471920:
 
    .. table:: **Table 1** Parameters in discrete value evaluation results
 

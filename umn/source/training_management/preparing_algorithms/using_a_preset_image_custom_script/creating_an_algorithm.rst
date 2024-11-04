@@ -7,17 +7,17 @@ Creating an Algorithm
 
 Your locally developed algorithms or algorithms developed using other tools can be uploaded to ModelArts for unified management. Note the following when creating a custom algorithm:
 
-#. :ref:`Prerequisites <en-us_topic_0000001910016246__en-us_topic_0000001133351332_section13181641194916>`
-#. :ref:`Accessing the Algorithm Creation Page <en-us_topic_0000001910016246__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section1478003731615>`
-#. :ref:`Setting Basic Information <en-us_topic_0000001910016246__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section1534119614910>`
-#. :ref:`Setting the Boot Mode <en-us_topic_0000001910016246__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section058543274910>`
-#. :ref:`Configuring Pipelines <en-us_topic_0000001910016246__en-us_topic_0000001133351332_section19643153517516>`
-#. :ref:`Defining Hyperparameters <en-us_topic_0000001910016246__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section1883311313516>`
-#. :ref:`Supported Policies <en-us_topic_0000001910016246__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section1959512404445>`
-#. :ref:`Adding Training Constraints <en-us_topic_0000001910016246__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section11326178153512>`
-#. :ref:`Follow-Up Operations <en-us_topic_0000001910016246__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section743865313613>`
+#. :ref:`Prerequisites <en-us_topic_0000002079176585__en-us_topic_0000001133351332_section13181641194916>`
+#. :ref:`Accessing the Algorithm Creation Page <en-us_topic_0000002079176585__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section1478003731615>`
+#. :ref:`Setting Basic Information <en-us_topic_0000002079176585__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section1534119614910>`
+#. :ref:`Setting the Boot Mode <en-us_topic_0000002079176585__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section058543274910>`
+#. :ref:`Configuring Pipelines <en-us_topic_0000002079176585__en-us_topic_0000001133351332_section19643153517516>`
+#. :ref:`Defining Hyperparameters <en-us_topic_0000002079176585__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section1883311313516>`
+#. :ref:`Supported Policies <en-us_topic_0000002079176585__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section1959512404445>`
+#. :ref:`Adding Training Constraints <en-us_topic_0000002079176585__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section11326178153512>`
+#. :ref:`Follow-Up Operations <en-us_topic_0000002079176585__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section743865313613>`
 
-.. _en-us_topic_0000001910016246__en-us_topic_0000001133351332_section13181641194916:
+.. _en-us_topic_0000002079176585__en-us_topic_0000001133351332_section13181641194916:
 
 Prerequisites
 -------------
@@ -26,7 +26,7 @@ Prerequisites
 -  Your training script has been uploaded to an OBS directory. For details about how to develop a training script, see :ref:`Developing a Custom Script <develop-modelarts-0008>`.
 -  At least one empty folder has been created in OBS for storing the training output.
 
-.. _en-us_topic_0000001910016246__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section1478003731615:
+.. _en-us_topic_0000002079176585__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section1478003731615:
 
 Accessing the Algorithm Creation Page
 -------------------------------------
@@ -34,7 +34,7 @@ Accessing the Algorithm Creation Page
 #. Log in to the ModelArts console and choose **Algorithm Management** in the navigation pane on the left.
 #. On the **My algorithm** page, click **Create**. The **Create Algorithm** page is displayed.
 
-.. _en-us_topic_0000001910016246__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section1534119614910:
+.. _en-us_topic_0000002079176585__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section1534119614910:
 
 Setting Basic Information
 -------------------------
@@ -42,12 +42,12 @@ Setting Basic Information
 Enter basic information, including **Name** and **Description**.
 
 
-.. figure:: /_static/images/en-us_image_0000001947141221.png
+.. figure:: /_static/images/en-us_image_0000002079098321.png
    :alt: **Figure 1** Setting basic information
 
    **Figure 1** Setting basic information
 
-.. _en-us_topic_0000001910016246__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section058543274910:
+.. _en-us_topic_0000002079176585__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section058543274910:
 
 Setting the Boot Mode
 ---------------------
@@ -85,12 +85,12 @@ Set **Image**, **Code Directory**, and **Boot File** based on the algorithm code
    +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-.. figure:: /_static/images/en-us_image_0000001916382140.png
+.. figure:: /_static/images/en-us_image_0000002079176925.png
    :alt: **Figure 2** Using a custom script to create an algorithm
 
    **Figure 2** Using a custom script to create an algorithm
 
-.. _en-us_topic_0000001910016246__en-us_topic_0000001133351332_section19643153517516:
+.. _en-us_topic_0000002079176585__en-us_topic_0000001133351332_section19643153517516:
 
 Configuring Pipelines
 ---------------------
@@ -101,7 +101,7 @@ When you use a preset image to create an algorithm, configure the input and outp
 
 -  Input configurations
 
-   .. _en-us_topic_0000001910016246__en-us_topic_0000001133351332_table126437359515:
+   .. _en-us_topic_0000002079176585__en-us_topic_0000001133351332_table126437359515:
 
    .. table:: **Table 2** Input configurations
 
@@ -133,7 +133,7 @@ When you use a preset image to create an algorithm, configure the input and outp
 
 -  Output configurations
 
-   .. _en-us_topic_0000001910016246__en-us_topic_0000001133351332_table8644335195117:
+   .. _en-us_topic_0000002079176585__en-us_topic_0000001133351332_table8644335195117:
 
    .. table:: **Table 3** Output configurations
 
@@ -151,7 +151,7 @@ When you use a preset image to create an algorithm, configure the input and outp
       | Add                               | Add multiple output data paths based on your algorithm.                                                                                                                                                                                   |
       +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001910016246__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section1883311313516:
+.. _en-us_topic_0000002079176585__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section1883311313516:
 
 Defining Hyperparameters
 ------------------------
@@ -162,9 +162,9 @@ When you use a preset image to create an algorithm on ModelArts, you can customi
 
    You can click **Add hyperparameter** to manually add hyperparameters.
 
-#. Edit hyperparameters. For details, see :ref:`Table 4 <en-us_topic_0000001910016246__en-us_topic_0000001133351332_en-us_topic_0000001071986951_table143901732155115>`.
+#. Edit hyperparameters. For details, see :ref:`Table 4 <en-us_topic_0000002079176585__en-us_topic_0000001133351332_en-us_topic_0000001071986951_table143901732155115>`.
 
-   .. _en-us_topic_0000001910016246__en-us_topic_0000001133351332_en-us_topic_0000001071986951_table143901732155115:
+   .. _en-us_topic_0000002079176585__en-us_topic_0000001133351332_en-us_topic_0000001071986951_table143901732155115:
 
    .. table:: **Table 4** Hyperparameter parameters
 
@@ -188,14 +188,14 @@ When you use a preset image to create an algorithm on ModelArts, you can customi
       |                                   | Only letters, digits, spaces, hyphens (-), underscores (_), commas (,), and periods (.) are allowed.                                                                                                                                                                                    |
       +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001910016246__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section1959512404445:
+.. _en-us_topic_0000002079176585__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section1959512404445:
 
 Supported Policies
 ------------------
 
 Only the pytorch_1.8.0-cuda_10.2-py_3.7-ubuntu_18.04-x86_64 and tensorflow_2.1.0-cuda_10.1-py_3.7-ubuntu_18.04-x86_64 images are available for auto search.
 
-.. _en-us_topic_0000001910016246__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section11326178153512:
+.. _en-us_topic_0000002079176585__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section11326178153512:
 
 Adding Training Constraints
 ---------------------------
@@ -209,7 +209,7 @@ You can add training constraints of the algorithm based on your needs.
 -  **Distributed Training**: Select **supported** or **not supported**.
 
 
-   .. figure:: /_static/images/en-us_image_0000001947156505.png
+   .. figure:: /_static/images/en-us_image_0000002043019396.png
       :alt: **Figure 3** Training constraints
 
       **Figure 3** Training constraints
@@ -220,16 +220,16 @@ Previewing the Runtime Environment
 When creating an algorithm, click the arrow on |image1| in the lower right corner of the page to know the paths of the code directory, boot file, and input and output data in the training container.
 
 
-.. figure:: /_static/images/en-us_image_0000001947150553.png
+.. figure:: /_static/images/en-us_image_0000002079176961.png
    :alt: **Figure 4** Preview Runtime Environment
 
    **Figure 4** Preview Runtime Environment
 
-.. _en-us_topic_0000001910016246__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section743865313613:
+.. _en-us_topic_0000002079176585__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section743865313613:
 
 Follow-Up Operations
 --------------------
 
 After an algorithm is created, use it to create a training job. For details, see :ref:`Creating a Training Job <develop-modelarts-0011>`.
 
-.. |image1| image:: /_static/images/en-us_image_0000001916390764.png
+.. |image1| image:: /_static/images/en-us_image_0000002079098381.png

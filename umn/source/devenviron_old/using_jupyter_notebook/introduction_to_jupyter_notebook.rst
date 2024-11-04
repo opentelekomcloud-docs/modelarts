@@ -2,8 +2,6 @@
 
 .. _modelarts_23_0326:
 
-.. _en-us_topic_0000001915042036:
-
 Introduction to Jupyter Notebook
 ================================
 

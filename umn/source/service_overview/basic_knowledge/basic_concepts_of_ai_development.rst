@@ -34,6 +34,6 @@ Clustering involves grouping a set of objects in such a way that objects in the 
 
 Clustering analyzes data objects and produces class labels. Objects are grouped based on the maximized and minimized similarities to form clusters. In this way, objects in the same cluster are more similar to each other than to those in other clusters.
 
-.. |image1| image:: /_static/images/en-us_image_0000001910059742.png
-.. |image2| image:: /_static/images/en-us_image_0000001910019746.png
-.. |image3| image:: /_static/images/en-us_image_0000001910059738.png
+.. |image1| image:: /_static/images/en-us_image_0000002043019804.png
+.. |image2| image:: /_static/images/en-us_image_0000002043178132.png
+.. |image3| image:: /_static/images/en-us_image_0000002043019844.png

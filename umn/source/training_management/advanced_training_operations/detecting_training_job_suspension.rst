@@ -12,9 +12,9 @@ A training job may be suspended due to unknown reasons. If the suspension cannot
 
 .. caution::
 
-   -  Due to the limitation of :ref:`detection rules <en-us_topic_0000001910016250__en-us_topic_0000001279351401_section173451049121714>`, there is a certain error probability in suspension detection. If the suspension is caused by the logic of job code (for example, long-time sleep), ignore it.
+   -  Due to the limitation of :ref:`detection rules <en-us_topic_0000002043018908__en-us_topic_0000001279351401_section173451049121714>`, there is a certain error probability in suspension detection. If the suspension is caused by the logic of job code (for example, long-time sleep), ignore it.
 
-.. _en-us_topic_0000001910016250__en-us_topic_0000001279351401_section173451049121714:
+.. _en-us_topic_0000002043018908__en-us_topic_0000001279351401_section173451049121714:
 
 Detection Rules
 ---------------

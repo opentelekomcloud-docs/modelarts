@@ -22,7 +22,7 @@ The parameters on the GUI for data import vary according to the dataset type. Th
 
 #. Log in to the ModelArts management console. In the navigation pane on the left, choose **Data Management** > **Datasets**.
 
-#. Locate the row that contains the desired dataset and click **Import** in the **Operation** column.
+#. Locate the target dataset and click **Import** in the **Operation** column.
 
    Alternatively, you can click the dataset name to go to the **Dashboard** tab of the dataset, and click **Import** in the upper right corner.
 

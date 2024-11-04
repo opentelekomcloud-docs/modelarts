@@ -2,8 +2,6 @@
 
 .. _modelarts_23_0303_0:
 
-.. _en-us_topic_0000001947261241:
-
 TPE Algorithm
 =============
 

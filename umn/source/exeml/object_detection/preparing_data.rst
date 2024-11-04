@@ -36,7 +36,7 @@ Requirements for Files Uploaded to OBS
 
    -  The dataset for object detection requires storing labeled objects and their label files (in one-to-one relationship with the labeled objects) in the same directory. For example, if the name of the labeled object is **IMG_20180919_114745.jpg**, the name of the label file must be **IMG_20180919_114745.xml**.
 
-      The label files for object detection must be in PASCAL VOC format. For details about the format, see :ref:`Table 1 <en-us_topic_0000001914882064__en-us_topic_0000001846056613_en-us_topic_0284258838_en-us_topic_0169446158_table18220153119617>`.
+      The label files for object detection must be in PASCAL VOC format. For details about the format, see :ref:`Table 1 <en-us_topic_0000002043023936__en-us_topic_0000001846056613_en-us_topic_0284258838_en-us_topic_0169446158_table18220153119617>`.
 
       Example of data files:
 
@@ -54,7 +54,7 @@ Requirements for Files Uploaded to OBS
 
    -  A label name can contain a maximum of 32 characters, including letters, digits, hyphens (-), and underscores (_).
 
-      .. _en-us_topic_0000001914882064__en-us_topic_0000001846056613_en-us_topic_0284258838_en-us_topic_0169446158_table18220153119617:
+      .. _en-us_topic_0000002043023936__en-us_topic_0000001846056613_en-us_topic_0284258838_en-us_topic_0169446158_table18220153119617:
 
       .. table:: **Table 1** PASCAL VOC format description
 
@@ -81,10 +81,10 @@ Requirements for Files Uploaded to OBS
          |                       |                       | -  **occluded**: whether the labeled object is occluded (**0** indicates that the object is not occluded). This parameter is mandatory.                                                                                                                |
          |                       |                       | -  **difficult**: whether the labeled object is difficult to identify (**0** indicates that the object is easy to identify). This parameter is mandatory.                                                                                              |
          |                       |                       | -  **confidence**: confidence score of the labeled object. The value range is 0 to 1. This parameter is optional.                                                                                                                                      |
-         |                       |                       | -  **bndbox**: bounding box type. This parameter is mandatory. For details about the possible values, see :ref:`Table 2 <en-us_topic_0000001914882064__en-us_topic_0000001846056613_en-us_topic_0284258838_en-us_topic_0169446158_table102211311866>`. |
+         |                       |                       | -  **bndbox**: bounding box type. This parameter is mandatory. For details about the possible values, see :ref:`Table 2 <en-us_topic_0000002043023936__en-us_topic_0000001846056613_en-us_topic_0284258838_en-us_topic_0169446158_table102211311866>`. |
          +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-      .. _en-us_topic_0000001914882064__en-us_topic_0000001846056613_en-us_topic_0284258838_en-us_topic_0169446158_table102211311866:
+      .. _en-us_topic_0000002043023936__en-us_topic_0000001846056613_en-us_topic_0284258838_en-us_topic_0169446158_table102211311866:
 
       .. table:: **Table 2** Description of bounding box types
 

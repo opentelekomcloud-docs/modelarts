@@ -5,7 +5,7 @@
 Text Labeling
 =============
 
--  :ref:`Text classification <datalabel-modelarts_0010>`
+-  :ref:`Text Classification <datalabel-modelarts_0010>`
 -  :ref:`Named Entity Recognition <datalabel-modelarts_0011>`
 -  :ref:`Text Triplet <datalabel-modelarts_0012>`
 

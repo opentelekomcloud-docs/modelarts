@@ -47,23 +47,23 @@ Manually Labeling Images
 
 The labeling job details page displays the **All statuses**, **Unlabeled**, and **Labeled** tabs. The **Unlabeled** tab is displayed by default.
 
-#. In the **Unlabeled** tab, click an image. The system automatically directs you to the page for labeling the image. For details about how to use common buttons on this page, see :ref:`Table 2 <en-us_topic_0000001910067674__en-us_topic_0000001139785212_table194471512463>`.
+#. In the **Unlabeled** tab, click an image. The system automatically directs you to the page for labeling the image. For details about how to use common buttons on this page, see :ref:`Table 2 <en-us_topic_0000002079180309__en-us_topic_0000001139785212_table194471512463>`.
 
 #. Select a labeling method.
 
-   On the labeling page, common :ref:`labeling methods <en-us_topic_0000001910067674__en-us_topic_0000001139785212_table165201739119>` and :ref:`buttons <en-us_topic_0000001910067674__en-us_topic_0000001139785212_table194471512463>` are provided in the toolbar. By default, polygon labeling is selected.
+   On the labeling page, common :ref:`labeling methods <en-us_topic_0000002079180309__en-us_topic_0000001139785212_table165201739119>` and :ref:`buttons <en-us_topic_0000002079180309__en-us_topic_0000001139785212_table194471512463>` are provided in the toolbar. By default, polygon labeling is selected.
 
    .. note::
 
       After you select a method to label the first image, the labeling method automatically applies to subsequent images.
 
 
-   .. figure:: /_static/images/en-us_image_0000001910067926.png
+   .. figure:: /_static/images/en-us_image_0000002079101777.png
       :alt: **Figure 1** Toolbar
 
       **Figure 1** Toolbar
 
-   .. _en-us_topic_0000001910067674__en-us_topic_0000001139785212_table165201739119:
+   .. _en-us_topic_0000002079180309__en-us_topic_0000001139785212_table165201739119:
 
    .. table:: **Table 1** Labeling methods
 
@@ -73,7 +73,7 @@ The labeling job details page displays the **All statuses**, **Unlabeled**, and 
       | |image3| | Polygon. In the area where the object to be labeled is located, click to label a point, move the mouse and click multiple points along the edge of the object, and then click the first point again. All the points form a polygon. In this way, the object to be labeled is within the bounding box. |
       +----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   .. _en-us_topic_0000001910067674__en-us_topic_0000001139785212_table194471512463:
+   .. _en-us_topic_0000002079180309__en-us_topic_0000001139785212_table194471512463:
 
    .. table:: **Table 2** Toolbar buttons
 
@@ -151,25 +151,25 @@ If a tick is displayed in the upper left corner of an image, the image is select
 
    If you select **Delete the source files from OBS**, images stored in the OBS directory will be deleted accordingly. This operation may affect other dataset versions or datasets using those files, for example, leading to an error in page display, training, or inference. Deleted data cannot be recovered. Exercise caution when performing this operation.
 
-.. |image1| image:: /_static/images/en-us_image_0000001910027938.png
-.. |image2| image:: /_static/images/en-us_image_0000001910067906.png
-.. |image3| image:: /_static/images/en-us_image_0000001910067906.png
-.. |image4| image:: /_static/images/en-us_image_0000001910027926.png
-.. |image5| image:: /_static/images/en-us_image_0000001910027934.png
-.. |image6| image:: /_static/images/en-us_image_0000001910027918.png
-.. |image7| image:: /_static/images/en-us_image_0000001910027930.png
-.. |image8| image:: /_static/images/en-us_image_0000001943987133.png
-.. |image9| image:: /_static/images/en-us_image_0000001943987113.png
-.. |image10| image:: /_static/images/en-us_image_0000001910067918.png
-.. |image11| image:: /_static/images/en-us_image_0000001943987117.png
-.. |image12| image:: /_static/images/en-us_image_0000001943987121.png
-.. |image13| image:: /_static/images/en-us_image_0000001910027926.png
-.. |image14| image:: /_static/images/en-us_image_0000001910027934.png
-.. |image15| image:: /_static/images/en-us_image_0000001910027918.png
-.. |image16| image:: /_static/images/en-us_image_0000001910027930.png
-.. |image17| image:: /_static/images/en-us_image_0000001943987133.png
-.. |image18| image:: /_static/images/en-us_image_0000001943987113.png
-.. |image19| image:: /_static/images/en-us_image_0000001910067918.png
-.. |image20| image:: /_static/images/en-us_image_0000001943987117.png
-.. |image21| image:: /_static/images/en-us_image_0000001943987121.png
-.. |image22| image:: /_static/images/en-us_image_0000001910067930.png
+.. |image1| image:: /_static/images/en-us_image_0000002043181012.png
+.. |image2| image:: /_static/images/en-us_image_0000002043022704.png
+.. |image3| image:: /_static/images/en-us_image_0000002043022704.png
+.. |image4| image:: /_static/images/en-us_image_0000002079180345.png
+.. |image5| image:: /_static/images/en-us_image_0000002079180365.png
+.. |image6| image:: /_static/images/en-us_image_0000002079180353.png
+.. |image7| image:: /_static/images/en-us_image_0000002043022700.png
+.. |image8| image:: /_static/images/en-us_image_0000002043022696.png
+.. |image9| image:: /_static/images/en-us_image_0000002079101769.png
+.. |image10| image:: /_static/images/en-us_image_0000002043022708.png
+.. |image11| image:: /_static/images/en-us_image_0000002043022688.png
+.. |image12| image:: /_static/images/en-us_image_0000002043181020.png
+.. |image13| image:: /_static/images/en-us_image_0000002079180345.png
+.. |image14| image:: /_static/images/en-us_image_0000002079180365.png
+.. |image15| image:: /_static/images/en-us_image_0000002079180353.png
+.. |image16| image:: /_static/images/en-us_image_0000002043022700.png
+.. |image17| image:: /_static/images/en-us_image_0000002043022696.png
+.. |image18| image:: /_static/images/en-us_image_0000002079101769.png
+.. |image19| image:: /_static/images/en-us_image_0000002043022708.png
+.. |image20| image:: /_static/images/en-us_image_0000002043022688.png
+.. |image21| image:: /_static/images/en-us_image_0000002043181020.png
+.. |image22| image:: /_static/images/en-us_image_0000002043181016.png

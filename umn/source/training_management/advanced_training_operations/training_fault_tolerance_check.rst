@@ -14,7 +14,7 @@ The following shows four failure scenarios, among which the failure in scenario 
 -  Scenario 1: The environment pre-check fails, and the hardware is faulty. Then, ModelArts automatically isolates all faulty nodes and issues the training job again.
 
 
-   .. figure:: /_static/images/en-us_image_0000001910056718.png
+   .. figure:: /_static/images/en-us_image_0000002079177049.png
       :alt: **Figure 1** Pre-check failure and hardware fault
 
       **Figure 1** Pre-check failure and hardware fault
@@ -22,7 +22,7 @@ The following shows four failure scenarios, among which the failure in scenario 
 -  Scenario 2: The environment pre-check fails but the hardware is functional. Then, ModelArts automatically isolates all faulty nodes and issues the training job again.
 
 
-   .. figure:: /_static/images/en-us_image_0000001910056710.png
+   .. figure:: /_static/images/en-us_image_0000002079098265.png
       :alt: **Figure 2** Pre-check failure but functional hardware
 
       **Figure 2** Pre-check failure but functional hardware
@@ -30,7 +30,7 @@ The following shows four failure scenarios, among which the failure in scenario 
 -  Scenario 3: The environment pre-check is successful and the user service starts. A hardware fault occurs and the user service exits unexpectedly. Then, ModelArts automatically isolates all faulty nodes and issues the training job again.
 
 
-   .. figure:: /_static/images/en-us_image_0000001943975897.png
+   .. figure:: /_static/images/en-us_image_0000002043177684.png
       :alt: **Figure 3** Service failure and hardware fault
 
       **Figure 3** Service failure and hardware fault
@@ -38,7 +38,7 @@ The following shows four failure scenarios, among which the failure in scenario 
 -  Scenario 4: The environment pre-check is successful and the user service starts. The hardware is functional. A fault occurs in the user service, the training job ends in the failure state.
 
 
-   .. figure:: /_static/images/en-us_image_0000001910056730.png
+   .. figure:: /_static/images/en-us_image_0000002043177568.png
       :alt: **Figure 4** Service failure and functional hardware
 
       **Figure 4** Service failure and functional hardware
@@ -49,12 +49,12 @@ If you use a dedicated resource pool to create a training job, the faulty nodes 
 
 More details of a fault tolerance check:
 
-#. :ref:`Enabling Fault Tolerance Check <en-us_topic_0000001910016146__en-us_topic_0000001128983620_section131407490561>`
-#. :ref:`Check Items and Conditions <en-us_topic_0000001910016146__en-us_topic_0000001128983620_section102137920593>`
-#. :ref:`Effect of a Fault Tolerance Check <en-us_topic_0000001910016146__en-us_topic_0000001128983620_section13971875913>`
+#. :ref:`Enabling Fault Tolerance Check <en-us_topic_0000002043018936__en-us_topic_0000001128983620_section131407490561>`
+#. :ref:`Check Items and Conditions <en-us_topic_0000002043018936__en-us_topic_0000001128983620_section102137920593>`
+#. :ref:`Effect of a Fault Tolerance Check <en-us_topic_0000002043018936__en-us_topic_0000001128983620_section13971875913>`
 #. After the environment pre-check is successful, any hardware fault will interrupt the user service. Add the reload ckpt code logic to the training so that the pre-trained model saved before the training is interrupted can be obtained. For details, see :ref:`Resumable Training and Incremental Training <develop-modelarts-0023>`.
 
-.. _en-us_topic_0000001910016146__en-us_topic_0000001128983620_section131407490561:
+.. _en-us_topic_0000002043018936__en-us_topic_0000001128983620_section131407490561:
 
 Enabling Fault Tolerance Check
 ------------------------------
@@ -66,7 +66,7 @@ To enable fault tolerance check, enable auto restart when creating a training jo
    Enable **Auto Restart** on the ModelArts management console. **Auto Restart** is disabled by default, indicating that the job will not be re-issued and the environment pre-check will not be enabled. After **Auto Restart** is enabled, the number of restart retries ranges from 1 to 3.
 
 
-   .. figure:: /_static/images/en-us_image_0000001948721605.png
+   .. figure:: /_static/images/en-us_image_0000002043019328.png
       :alt: **Figure 5** Auto Restart
 
       **Figure 5** Auto Restart
@@ -79,7 +79,7 @@ To enable fault tolerance check, enable auto restart when creating a training jo
 
    |image1|
 
-.. _en-us_topic_0000001910016146__en-us_topic_0000001128983620_section102137920593:
+.. _en-us_topic_0000002043018936__en-us_topic_0000001128983620_section102137920593:
 
 Check Items and Conditions
 --------------------------
@@ -103,7 +103,7 @@ Check Items and Conditions
 | GPU check                            | gpu-check          | GPU and the v2 training engine are used. | GPUs are detected.                                                                                          |
 +--------------------------------------+--------------------+------------------------------------------+-------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001910016146__en-us_topic_0000001128983620_section13971875913:
+.. _en-us_topic_0000002043018936__en-us_topic_0000001128983620_section13971875913:
 
 Effect of a Fault Tolerance Check
 ---------------------------------
@@ -123,6 +123,6 @@ Using reload ckpt to Resume an Interrupted Training
 
 With fault tolerance enabled, if a training job is restarted due to a hardware fault, you can obtain the pre-trained model in the code to restore the training to the state before the restart. To do so, add reload ckpt to the code. For details, see :ref:`Resumable Training and Incremental Training <develop-modelarts-0023>`.
 
-.. |image1| image:: /_static/images/en-us_image_0000001910016690.png
-.. |image2| image:: /_static/images/en-us_image_0000001943975893.png
-.. |image3| image:: /_static/images/en-us_image_0000001943975885.png
+.. |image1| image:: /_static/images/en-us_image_0000002079176865.png
+.. |image2| image:: /_static/images/en-us_image_0000002043019264.png
+.. |image3| image:: /_static/images/en-us_image_0000002043177608.png

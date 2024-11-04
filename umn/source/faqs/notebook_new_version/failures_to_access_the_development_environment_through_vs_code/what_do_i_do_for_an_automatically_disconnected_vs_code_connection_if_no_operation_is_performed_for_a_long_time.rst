@@ -27,13 +27,13 @@ To retain connections if no operation is performed for a long time, configure pe
 -  Configure the client as needed. If the client is not configured, no heartbeat packet will be sent to the server by default.
 
 
-   .. figure:: /_static/images/en-us_image_0000001910019022.png
+   .. figure:: /_static/images/en-us_image_0000002043025992.png
       :alt: **Figure 1** Opening the VS Code SSH configuration file
 
       **Figure 1** Opening the VS Code SSH configuration file
 
 
-   .. figure:: /_static/images/en-us_image_0000001910059034.png
+   .. figure:: /_static/images/en-us_image_0000002079105065.png
       :alt: **Figure 2** Adding configurations
 
       **Figure 2** Adding configurations
@@ -63,5 +63,5 @@ To retain connections if no operation is performed for a long time, configure pe
 
       nohup train.sh > output.log 2>&1 & tail -f output.log
 
-.. |image1| image:: /_static/images/en-us_image_0000001910059042.png
-.. |image2| image:: /_static/images/en-us_image_0000001910019018.png
+.. |image1| image:: /_static/images/en-us_image_0000002043184328.png
+.. |image2| image:: /_static/images/en-us_image_0000002079105069.png

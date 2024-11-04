@@ -35,7 +35,7 @@ Some resources are reserved for cluster components. Therefore, **CPUs (Available
 
 -  Deleting nodes:
 
-   On the **Nodes** tab page, click |image2| in the **Operation** column to delete a node.
+   In the **Nodes** tab, click |image2| in the **Operation** column to delete a node.
 
 -  Processing abnormal nodes:
 
@@ -62,6 +62,6 @@ On the trace list, click |image3| on the right of **Event Type** to filter event
 -  When a resource pool starts to be created or becomes abnormal, the resource pool status changes and the change will be recorded as an event.
 -  When the number of nodes that are available or abnormal or in the process of being created or deleted changes, the resource pool node status changes and the change will be recorded as an event.
 
-.. |image1| image:: /_static/images/en-us_image_0000001910023346.png
-.. |image2| image:: /_static/images/en-us_image_0000001943982549.png
-.. |image3| image:: /_static/images/en-us_image_0000001910023338.png
+.. |image1| image:: /_static/images/en-us_image_0000002043020220.png
+.. |image2| image:: /_static/images/en-us_image_0000002079177905.png
+.. |image3| image:: /_static/images/en-us_image_0000002043178532.png

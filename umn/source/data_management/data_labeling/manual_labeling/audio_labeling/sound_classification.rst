@@ -2,7 +2,7 @@
 
 .. _datalabel-modelarts_0014:
 
-Sound classification
+Sound Classification
 ====================
 
 Model training requires a large amount of labeled data. Therefore, before the model training, label the unlabeled audio files. ModelArts enables you to label audio files in batches by one click. In addition, you can modify the labels of audio files, or remove their labels and label the audio files again.
@@ -74,7 +74,7 @@ After labeling data, you can modify labeled data in the **Labeled** tab.
 Adding an Audio File
 --------------------
 
-In addition to the data synchronized, you can directly add data on labeling job details page for labeling.
+In addition to synchronizing data, you can directly add data on labeling job details page for labeling.
 
 #. On the labeling job details page, click the **Unlabeled** or **Labeled** tab, click **Add data** in the upper left corner.
 
@@ -95,4 +95,4 @@ If a tick is displayed in the upper right corner of an audio file, the audio fil
 
    If you select **Delete the source files from OBS**, audio files stored in the corresponding OBS directory will be deleted when you delete the selected audio files. Deleting source files may affect other dataset versions or datasets using those files. As a result, the page display, training, or inference is abnormal. Deleted data cannot be recovered. Exercise caution when performing this operation.
 
-.. |image1| image:: /_static/images/en-us_image_0000001910067714.png
+.. |image1| image:: /_static/images/en-us_image_0000002079101861.png

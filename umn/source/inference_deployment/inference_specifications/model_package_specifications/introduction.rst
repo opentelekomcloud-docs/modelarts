@@ -16,16 +16,16 @@ When creating an AI application on the AI application management page, make sure
 
 The model package must contain the **model** directory. The **model** directory stores the model file, model configuration file, and model inference code file.
 
--  **Model files:** The requirements for model files vary according to the model package structure. For details, see :ref:`Model Package Example <en-us_topic_0000001943974161__en-us_topic_0172466148_section828936173917>`.
+-  **Model files:** The requirements for model files vary according to the model package structure. For details, see :ref:`Model Package Example <en-us_topic_0000002079182465__en-us_topic_0172466148_section828936173917>`.
 -  **Model configuration file**: The model configuration file must be available and its name is consistently to be **config.json**. There must be only one model configuration file. For details about how to edit a model configuration file, see :ref:`Specifications for Editing a Model Configuration File <inference-modelarts-0056>`.
 -  **Model inference code file**: It is mandatory. The file name is consistently to be **customize_service.py**. There must be only one model inference code file. For details about how to edit model inference code, see :ref:`Specifications for Writing Model Inference Code <inference-modelarts-0057>`.
 
    -  The .py file on which **customize_service.py** depends can be directly stored in the **model** directory. Use relative import for the custom package.
-   -  The other files on which **customize_service.py** depends can be stored in the **model** directory. Only absolute paths can be used to access these files. For details, see :ref:`Obtaining an Absolute Path <en-us_topic_0000001910014882__en-us_topic_0172466150_li135956421288>`.
+   -  The other files on which **customize_service.py** depends can be stored in the **model** directory. Only absolute paths can be used to access these files. For details, see :ref:`Obtaining an Absolute Path <en-us_topic_0000002079182509__en-us_topic_0172466150_li135956421288>`.
 
 ModelArts also provides custom script examples of common AI engines. For details, see :ref:`Examples of Custom Scripts <inference-modelarts-0079>`.
 
-.. _en-us_topic_0000001943974161__en-us_topic_0172466148_section828936173917:
+.. _en-us_topic_0000002079182465__en-us_topic_0172466148_section828936173917:
 
 Model Package Example
 ---------------------

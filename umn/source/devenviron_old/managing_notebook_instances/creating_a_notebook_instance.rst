@@ -13,7 +13,7 @@ Background
 -  Only notebook instances in the **Running** state can be started.
 -  A maximum of 10 notebook instances can be created for an account. By default, the notebook instances created by the current user are displayed. If **Display Only My Instances** is disabled, all notebook instances created by the current account and its IAM users are displayed.
 -  If OBS storage is used, ensure that the OBS directory you use and ModelArts are in the same region.
--  Before creating a notebook instance, learn about the :ref:`AI engines supported by ModelArts <en-us_topic_0000001914882092__en-us_topic_0000001846136609_en-us_topic_0162690357_section191109611479>` and their versions.
+-  Before creating a notebook instance, learn about the :ref:`AI engines supported by ModelArts <en-us_topic_0000002043182276__en-us_topic_0000001846136609_en-us_topic_0162690357_section191109611479>` and their versions.
 
 
 Creating a Notebook Instance
@@ -22,16 +22,16 @@ Creating a Notebook Instance
 #. Log in to the ModelArts console. In the navigation pane, choose **DevEnviron** > **Notebook** to switch to the **Notebook** page.
 
 
-   .. figure:: /_static/images/en-us_image_0000001853040433.png
+   .. figure:: /_static/images/en-us_image_0000002043182296.png
       :alt: **Figure 1** Notebooks
 
       **Figure 1** Notebooks
 
 #. Click **Create**. On the displayed page, set the required parameters.
 
-   a. Enter the basic information about the notebook instance, including the name, description, and whether to automatically stop the notebook instance. For details about the parameters, see :ref:`Table 1 <en-us_topic_0000001946441161__en-us_topic_0000001846136765_en-us_topic_0162690358_table1669535791517>`.
+   a. Enter the basic information about the notebook instance, including the name, description, and whether to automatically stop the notebook instance. For details about the parameters, see :ref:`Table 1 <en-us_topic_0000002079181585__en-us_topic_0000001846136765_en-us_topic_0162690358_table1669535791517>`.
 
-      .. _en-us_topic_0000001946441161__en-us_topic_0000001846136765_en-us_topic_0162690358_table1669535791517:
+      .. _en-us_topic_0000002079181585__en-us_topic_0000001846136765_en-us_topic_0162690358_table1669535791517:
 
       .. table:: **Table 1** Parameters of basic information
 
@@ -47,9 +47,9 @@ Creating a Notebook Instance
          |                                   | The options are **1 hour later**, **2 hours later**, **4 hours later**, **6 hours later**, and **Custom**. You can select **Custom** to specify any integer from 1 to 24 hours.       |
          +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   b. Set notebook parameters, such as the work environment and instance flavor. For details, see :ref:`Table 2 <en-us_topic_0000001946441161__en-us_topic_0000001846136765_en-us_topic_0162690358_table4606194015227>`.
+   b. Set notebook parameters, such as the work environment and instance flavor. For details, see :ref:`Table 2 <en-us_topic_0000002079181585__en-us_topic_0000001846136765_en-us_topic_0162690358_table4606194015227>`.
 
-      .. _en-us_topic_0000001946441161__en-us_topic_0000001846136765_en-us_topic_0162690358_table4606194015227:
+      .. _en-us_topic_0000002079181585__en-us_topic_0000001846136765_en-us_topic_0162690358_table4606194015227:
 
       .. table:: **Table 2** Notebook instance parameters
 
@@ -58,7 +58,7 @@ Creating a Notebook Instance
          +===================================+=====================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================+
          | Work Environment                  | Only public images, which are the AI frameworks built in ModelArts are supported.                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
          |                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-         |                                   | All supported AI engines can be used in the same notebook instance. Different engines can be switched quickly and conveniently, and run in independent development environments. After the notebook instance is created, go to the **Jupyter** page to create the development environment with the desired AI engine. The AI engine varies depending on the work environment. For details, see :ref:`Supported AI Engines <en-us_topic_0000001914882092__en-us_topic_0000001846136609_en-us_topic_0162690357_section191109611479>`. |
+         |                                   | All supported AI engines can be used in the same notebook instance. Different engines can be switched quickly and conveniently, and run in independent development environments. After the notebook instance is created, go to the **Jupyter** page to create the development environment with the desired AI engine. The AI engine varies depending on the work environment. For details, see :ref:`Supported AI Engines <en-us_topic_0000002043182276__en-us_topic_0000001846136609_en-us_topic_0162690357_section191109611479>`. |
          |                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
          |                                   | **Multi-Engine 1.0 (Python3, Recommended)** is recommended.                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
          |                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -105,7 +105,7 @@ Creating a Notebook Instance
          |                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
          |                                   | Click **Select** next to the **Storage Path** text box to set the OBS path for storing notebook instance data. If you want to use existing files or data, upload the files or data to the corresponding OBS path in advance. **Storage Path** must be set to a specific directory in an OBS bucket rather than the root directory of the OBS bucket.                                                                                                                                                                                |
          |                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-         |                                   | If you select this storage mode, all read and write operations on files on the notebook instances take effect on the data stored in your selected OBS path. To synchronize data in a file stored in OBS to a notebook instance, select the file and click **Sync OBS**. For details, see :ref:`Synchronizing Files with OBS <en-us_topic_0000001946441177>`. There is no data loss after you restart this notebook instance.                                                                                                        |
+         |                                   | If you select this storage mode, all read and write operations on files on the notebook instances take effect on the data stored in your selected OBS path. To synchronize data in a file stored in OBS to a notebook instance, select the file and click **Sync OBS**. For details, see :ref:`Synchronizing Files with OBS <modelarts_23_0038>`. There is no data loss after you restart this notebook instance.                                                                                                                   |
          +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 #. Click **Next**.

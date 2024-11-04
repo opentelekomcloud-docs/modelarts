@@ -24,7 +24,7 @@ Configuring Environment Variables
 When you create a training job, you can add environment variables or modify environment variables preset in the training container.
 
 
-.. figure:: /_static/images/en-us_image_0000001919562630.png
+.. figure:: /_static/images/en-us_image_0000002079098133.png
    :alt: **Figure 1** Setting environment variables
 
    **Figure 1** Setting environment variables

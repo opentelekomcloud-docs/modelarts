@@ -7,11 +7,11 @@ What Are the Precautions for Switching Training Jobs from the Old Version to the
 
 The differences between the new version and the old version lie in:
 
--  :ref:`Differences in Training Job Creation <en-us_topic_0000001943979045__section102743424224>`
--  :ref:`Differences in Training Code Adaptation <en-us_topic_0000001943979045__section1159344293111>`
--  :ref:`Differences in Built-in Training Engines <en-us_topic_0000001943979045__section8673132164615>`
+-  :ref:`Differences in Training Job Creation <en-us_topic_0000002079183133__section102743424224>`
+-  :ref:`Differences in Training Code Adaptation <en-us_topic_0000002079183133__section1159344293111>`
+-  :ref:`Differences in Built-in Training Engines <en-us_topic_0000002079183133__section8673132164615>`
 
-.. _en-us_topic_0000001943979045__section102743424224:
+.. _en-us_topic_0000002079183133__section102743424224:
 
 Differences in Training Job Creation
 ------------------------------------
@@ -25,7 +25,7 @@ The new version reorganizes the algorithms to help you find them more easily. Ex
 -  The **Frequently-used** in the old version is the **Custom algorithm** in the new version. Select **Preset image** for **Boot Mode** when you create jobs using the new version.
 -  The **Custom** in the old version is the **Custom algorithm** in the new version. Select **Custom image** for **Boot Mode** when you create jobs using the new version.
 
-.. _en-us_topic_0000001943979045__section1159344293111:
+.. _en-us_topic_0000002079183133__section1159344293111:
 
 Differences in Training Code Adaptation
 ---------------------------------------
@@ -69,7 +69,7 @@ In the new version, you only need to configure training input and output. In the
    # Upload the local container data to the OBS path.
    #mox.file.copy_parallel(local_output_path, args.train_url)
 
-.. _en-us_topic_0000001943979045__section8673132164615:
+.. _en-us_topic_0000002079183133__section8673132164615:
 
 Differences in Built-in Training Engines
 ----------------------------------------
@@ -82,9 +82,9 @@ Differences in Built-in Training Engines
 
 -  Built-in training engines are different between the old and new versions. Commonly used built-in training engines have been upgraded in the new version.
 
-   To use a training engine in the old version, switch to the old version. :ref:`Table 1 <en-us_topic_0000001943979045__table18869123641314>` lists the differences between the built-in training engines in the old and new versions.
+   To use a training engine in the old version, switch to the old version. :ref:`Table 1 <en-us_topic_0000002079183133__table18869123641314>` lists the differences between the built-in training engines in the old and new versions.
 
-   .. _en-us_topic_0000001943979045__table18869123641314:
+   .. _en-us_topic_0000002079183133__table18869123641314:
 
    .. table:: **Table 1** Differences between the built-in training engines in the old and new versions
 

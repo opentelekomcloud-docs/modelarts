@@ -11,7 +11,7 @@ Symptom
 Message "Error: stat:403" is displayed when I use mox.file.copy_parallel in ModelArts to perform operations on OBS.
 
 
-.. figure:: /_static/images/en-us_image_0000001943968121.png
+.. figure:: /_static/images/en-us_image_0000002043183544.png
    :alt: **Figure 1** Error message
 
    **Figure 1** Error message

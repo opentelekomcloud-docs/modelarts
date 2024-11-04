@@ -68,7 +68,7 @@ Managing Annotators
 If team labeling is enabled for a labeling job, view its labeling details in the **Annotator Management** tab. Additionally, you can add, modify, or delete annotators.
 
 #. Choose **Data Management** > **Label Data**. In the **My Creations** or **My Participations** tab, view the list of all labeling jobs.
-#. Locate the row that contains the target team labeling job. (The name of a team labeling job is followed by |image3|.)
+#. Locate the target team labeling job. (The name of a team labeling job is followed by |image3|.)
 #. Choose **More** > **Annotator Management** in the **Operation** column. Alternatively, click the job name to go to the job details page, and choose **Team Labeling** > **Annotator Management** in the upper right corner.
 
 -  Adding an annotator
@@ -85,6 +85,6 @@ If team labeling is enabled for a labeling job, view its labeling details in the
 
    Click **Delete** in the **Operation** column to delete the annotator.
 
-.. |image1| image:: /_static/images/en-us_image_0000001910067874.png
-.. |image2| image:: /_static/images/en-us_image_0000001943987085.png
-.. |image3| image:: /_static/images/en-us_image_0000001910027806.png
+.. |image1| image:: /_static/images/en-us_image_0000002079180377.png
+.. |image2| image:: /_static/images/en-us_image_0000002043022716.png
+.. |image3| image:: /_static/images/en-us_image_0000002079101757.png
