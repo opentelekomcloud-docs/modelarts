@@ -20,7 +20,7 @@ Compiling the Training Code
    :hidden: 
 
    what_is_the_common_file_path_for_training_jobs
-   how_do_i_install_a_library_that_c_depends_on
+   how_do_i_install_a_library_that_c_plus_plus_depends_on
    how_do_i_check_whether_a_folder_copy_is_complete_during_job_training
    how_do_i_load_some_well_trained_parameters_during_job_training
    how_do_i_obtain_training_job_parameters_from_the_boot_file_of_the_training_job
