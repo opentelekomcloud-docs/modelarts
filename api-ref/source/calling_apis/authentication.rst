@@ -24,32 +24,32 @@ In :ref:`Making an API Request <modelarts_03_0005>`, the process of calling the 
 .. code-block::
 
    {
-    "auth": {
-     "identity": {
-      "methods": [
-       "password"
-      ],
-      "password": {
-       "user": {
-        "name": "user_name",
-        "password": "user_password",
-        "domain": {
-         "name": "domain_name"
-        }
+       "auth": {
+           "identity": {
+               "methods": [
+                   "password"
+               ],
+               "password": {
+                   "user": {
+                       "name": "user_name",
+                       "password": "user_password",
+                       "domain": {
+                           "name": "domain_name"
+                       }
+                   }
+               }
+           },
+           "scope": {
+               "project": {
+                   "name": "project_name"
+               }
+           }
        }
-      }
-     },
-     "scope": {
-      "project": {
-       "name": "project_name"
-      }
-     }
-    }
    }
 
 After a token is obtained, the **X-Auth-Token** header field must be added to requests to specify the token when calling other APIs. For example, if the token is **ABCDEFJ....**, **X-Auth-Token: ABCDEFJ....** can be added to a request as follows:
 
-.. code-block:: text
+.. code-block::
 
    POST https://{endpoint}/v1/{project_id}/services
    Content-Type: application/json
@@ -89,36 +89,36 @@ Decompress the downloaded package and reference the obtained JAR files as depend
       If you use a RightCloud account, contact the administrator to obtain the AK/SK.
 
    a. Log in to the console, enter the **My Credentials** page, and choose **Access Keys** > **Create Access Key**.
-   b. In the **Create Access Key**, enter the description of the access key,and then click **OK**.
-   c. The access key is created successfully. Click **DownLoad**. Then, the access key (**Access Key Id** and **Secret Access Key**) is obtained.
+   b. In the **Create Access Key** dialog box that is displayed, use the login password for verification.
+   c. Click **OK**, open the **credentials.csv** file, and save the key file as prompted. The access key file is saved in the default downloads folder of the browser. Then, the access key (**Access Key Id** and **Secret Access Key**) is obtained.
 
 #. Download and decompress the demo project.
 
-#. .. _en-us_topic_0000001910008084__li94791126103617:
+#. .. _en-us_topic_0000001909747456__li94791126103617:
 
    Import the demo project to Eclipse.
 
 
-   .. figure:: /_static/images/en-us_image_0000001909848400.gif
+   .. figure:: /_static/images/en-us_image_0000001943866749.gif
       :alt: **Figure 1** Selecting Existing Projects into Workspace
 
       **Figure 1** Selecting Existing Projects into Workspace
 
 
-   .. figure:: /_static/images/en-us_image_0000001910008400.gif
+   .. figure:: /_static/images/en-us_image_0000001909747556.gif
       :alt: **Figure 2** Selecting the demo project
 
       **Figure 2** Selecting the demo project
 
 
-   .. figure:: /_static/images/en-us_image_0000001943967581.gif
+   .. figure:: /_static/images/en-us_image_0000001909907556.gif
       :alt: **Figure 3** Structure of the demo project
 
       **Figure 3** Structure of the demo project
 
 #. Sign the request.
 
-   The request signing method is integrated in the JAR files imported in :ref:`3 <en-us_topic_0000001910008084__li94791126103617>`. The request needs to be signed before it is sent. The signature will then be added as part of the HTTP header to the request.
+   The request signing method is integrated in the JAR files imported in :ref:`3 <en-us_topic_0000001909747456__li94791126103617>`. The request needs to be signed before it is sent. The signature will then be added as part of the HTTP header to the request.
 
    The demo code is classified into the following classes to demonstrate signing and sending the HTTP request:
 
@@ -188,4 +188,4 @@ Decompress the downloaded package and reference the obtained JAR files as depend
 
       You can view the API call logs on the console.
 
-.. |image1| image:: /_static/images/en-us_image_0000001943967577.gif
+.. |image1| image:: /_static/images/en-us_image_0000001909907552.gif

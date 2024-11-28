@@ -2,13 +2,13 @@
 
 .. _event_management:
 
-Event management
+Event Management
 ================
 
--  :ref:`Querying a Trace List <listevents>`
+-  :ref:`Obtaining the Event List <listevents>`
 
 .. toctree::
    :maxdepth: 1
    :hidden: 
 
-   querying_a_trace_list
+   obtaining_the_event_list

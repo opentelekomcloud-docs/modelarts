@@ -1,6 +1,6 @@
-:original_name: topic_300000009.html
+:original_name: service_management.html
 
-.. _topic_300000009:
+.. _service_management:
 
 Service Management
 ==================
@@ -12,7 +12,6 @@ Service Management
 -  :ref:`Obtaining Service Details <showservice>`
 -  :ref:`Updating Service Configurations <updateservice>`
 -  :ref:`Deleting a Service <deleteservice>`
--  :ref:`Obtaining Dedicated Resource Pools <listclusters>`
 -  :ref:`Obtaining Service Event Logs <showserviceevents>`
 -  :ref:`Obtaining Service Update Logs <showserviceupdatelogs>`
 
@@ -27,6 +26,5 @@ Service Management
    obtaining_service_details
    updating_service_configurations
    deleting_a_service
-   obtaining_dedicated_resource_pools
    obtaining_service_event_logs
    obtaining_service_update_logs
