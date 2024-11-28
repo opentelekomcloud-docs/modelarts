@@ -17,4 +17,4 @@ Download and install VS Code. (Windows users click **Windows**. Users of other o
 
 |image1|
 
-.. |image1| image:: /_static/images/en-us_image_0000001943978209.png
+.. |image1| image:: /_static/images/en-us_image_0000002079105077.png

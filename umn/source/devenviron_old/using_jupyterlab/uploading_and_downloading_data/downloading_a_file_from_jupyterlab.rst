@@ -2,8 +2,6 @@
 
 .. _modelarts_23_0333:
 
-.. _en-us_topic_0000001946441185:
-
 Downloading a File from JupyterLab
 ==================================
 

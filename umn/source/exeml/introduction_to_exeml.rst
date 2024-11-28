@@ -18,11 +18,11 @@ You can use ExeML to quickly build models for image classification, and object d
 ExeML Process
 -------------
 
-With ModelArts ExeML, you can develop AI models without coding. You only need to upload data, create a project, label the data, publish training, and deploy the trained model. Up to 100 ExeML projects can be created. For details, see :ref:`Figure 1 <en-us_topic_0000001915041988__en-us_topic_0000001799497412_en-us_topic_0284258830_en-us_topic_0169445434_fig3917183328>`.
+With ModelArts ExeML, you can develop AI models without coding. You only need to upload data, create a project, label the data, publish training, and deploy the trained model. Up to 100 ExeML projects can be created. For details, see :ref:`Figure 1 <en-us_topic_0000002043023952__en-us_topic_0000001799497412_en-us_topic_0284258830_en-us_topic_0169445434_fig3917183328>`.
 
-.. _en-us_topic_0000001915041988__en-us_topic_0000001799497412_en-us_topic_0284258830_en-us_topic_0169445434_fig3917183328:
+.. _en-us_topic_0000002043023952__en-us_topic_0000001799497412_en-us_topic_0284258830_en-us_topic_0169445434_fig3917183328:
 
-.. figure:: /_static/images/en-us_image_0000001799498508.png
+.. figure:: /_static/images/en-us_image_0000002043182416.png
    :alt: **Figure 1** ExeML process
 
    **Figure 1** ExeML process
@@ -41,9 +41,9 @@ ExeML Projects
 Model Deployment Specifications
 -------------------------------
 
-Different types of ExeML projects support different specifications for model deployment. For details, see :ref:`Table 1 <en-us_topic_0000001915041988__en-us_topic_0000001799497412_en-us_topic_0284258830_en-us_topic_0169445434_en-us_topic_0284258830_en-us_topic_0169445434_table4446919194615>`.
+Different types of ExeML projects support different specifications for model deployment. For details, see :ref:`Table 1 <en-us_topic_0000002043023952__en-us_topic_0000001799497412_en-us_topic_0284258830_en-us_topic_0169445434_en-us_topic_0284258830_en-us_topic_0169445434_table4446919194615>`.
 
-.. _en-us_topic_0000001915041988__en-us_topic_0000001799497412_en-us_topic_0284258830_en-us_topic_0169445434_en-us_topic_0284258830_en-us_topic_0169445434_table4446919194615:
+.. _en-us_topic_0000002043023952__en-us_topic_0000001799497412_en-us_topic_0284258830_en-us_topic_0169445434_en-us_topic_0284258830_en-us_topic_0169445434_table4446919194615:
 
 .. table:: **Table 1** Available deployment specifications for different types of projects
 

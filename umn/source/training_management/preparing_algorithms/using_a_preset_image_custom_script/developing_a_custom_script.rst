@@ -21,15 +21,15 @@ When creating an algorithm, set the code directory, boot file, input path, and o
 
    The boot file in the code directory is used to start the training. Only Python boot files are supported.
 
--  .. _en-us_topic_0000001943975385__en-us_topic_0000001133191548_en-us_topic_0000001072715070_li1463111565413:
+-  .. _en-us_topic_0000002043018932__en-us_topic_0000001133191548_en-us_topic_0000001072715070_li1463111565413:
 
    Input path
 
-   The training data must be uploaded to an OBS bucket or stored in the dataset. In the training code, :ref:`the input path <en-us_topic_0000001943975385__en-us_topic_0000001133191548_en-us_topic_0000001072715070_li1463111565413>` must be parsed. ModelArts automatically downloads the data in the input path to the local container directory for training. Ensure that you have the read permission on the OBS bucket. After the training job is started, ModelArts mounts a disk to the **/cache** directory. You can use this directory to store temporary files. For details about the size of the **/cache** directory, see "What Are Sizes of the /cache Directories for Different Resource Specifications in the Training Environment?" in *FAQ*
+   The training data must be uploaded to an OBS bucket or stored in the dataset. In the training code, :ref:`the input path <en-us_topic_0000002043018932__en-us_topic_0000001133191548_en-us_topic_0000001072715070_li1463111565413>` must be parsed. ModelArts automatically downloads the data in the input path to the local container directory for training. Ensure that you have the read permission on the OBS bucket. After the training job is started, ModelArts mounts a disk to the **/cache** directory. You can use this directory to store temporary files. For details about the size of the **/cache** directory, see "What Are Sizes of the /cache Directories for Different Resource Specifications in the Training Environment?" in *FAQ*
 
 -  Output path
 
-   You are advised to set an empty directory as the training output path. In the training code, :ref:`the output path <en-us_topic_0000001943975385__en-us_topic_0000001133191548_en-us_topic_0000001072715070_section16262114175610>` must be parsed. ModelArts automatically uploads the training output to the output path. Ensure that you have the write and read permissions on the OBS bucket.
+   You are advised to set an empty directory as the training output path. In the training code, :ref:`the output path <en-us_topic_0000002043018932__en-us_topic_0000001133191548_en-us_topic_0000001072715070_section16262114175610>` must be parsed. ModelArts automatically uploads the training output to the output path. Ensure that you have the write and read permissions on the OBS bucket.
 
 The following section describes how to develop training code in ModelArts.
 
@@ -42,7 +42,7 @@ The following section describes how to develop training code in ModelArts.
    -  For details about how to install a C++ dependency library, see "How Do I Install a Library That C++ Depends on?" in *FAQs*.
    -  For details about how to load parameters to a pre-trained model, see "How Do I Load Some Well Trained Parameters During Job Training?" in *FAQs*.
 
-.. _en-us_topic_0000001943975385__en-us_topic_0000001133191548_en-us_topic_0000001072715070_section16262114175610:
+.. _en-us_topic_0000002043018932__en-us_topic_0000001133191548_en-us_topic_0000001072715070_section16262114175610:
 
 Parsing Input and Output Paths
 ------------------------------
@@ -71,7 +71,7 @@ To enable a ModelArts model reads data stored in OBS or outputs data to a specif
    -  Training data is a must for algorithm development. By default, the input data is **Data Source** and the code path parameter is **data_url** (customizable).
 
 
-      .. figure:: /_static/images/en-us_image_0000001916222240.png
+      .. figure:: /_static/images/en-us_image_0000002079176765.png
          :alt: **Figure 1** Parsing the input path parameter **data_url**
 
          **Figure 1** Parsing the input path parameter **data_url**
@@ -79,7 +79,7 @@ To enable a ModelArts model reads data stored in OBS or outputs data to a specif
    -  After model training is complete, the trained model and the output data must be stored in an OBS path. By default, the output data is **Output Data** and the code path parameter is **train_url** (customizable).
 
 
-      .. figure:: /_static/images/en-us_image_0000001947141321.png
+      .. figure:: /_static/images/en-us_image_0000002043019132.png
          :alt: **Figure 2** Parsing the output path parameter **train_url**
 
          **Figure 2** Parsing the output path parameter **train_url**

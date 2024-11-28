@@ -39,7 +39,7 @@ Adding Authorization
 #. Log in to the ModelArts management console. In the left navigation pane, choose **Settings**. The **Global Configuration** page is displayed.
 
 
-   .. figure:: /_static/images/en-us_image_0000001946316357.png
+   .. figure:: /_static/images/en-us_image_0000002079179341.png
       :alt: **Figure 1** Settings
 
       **Figure 1** Settings
@@ -84,7 +84,7 @@ Viewing Authorized Permissions
 You can view the configured authorizations on the **Global Configuration** page. Click **View Permissions** in the **Authorization Content** column to view the permission details.
 
 
-.. figure:: /_static/images/en-us_image_0000001914601386.png
+.. figure:: /_static/images/en-us_image_0000002079100713.png
    :alt: **Figure 2** View Permissions
 
    **Figure 2** View Permissions
@@ -95,7 +95,7 @@ Changing the Authorization Scope
 #. To change the authorization scope, click **Modify permissions in IAM** in the **View Permissions** dialog box.
 
 
-   .. figure:: /_static/images/en-us_image_0000001914602074.png
+   .. figure:: /_static/images/en-us_image_0000002079179313.png
       :alt: **Figure 3** Modify permissions in IAM
 
       **Figure 3** Modify permissions in IAM
@@ -137,7 +137,7 @@ FAQs
 #. How do I delete an existing agency from the agency list?
 
 
-   .. figure:: /_static/images/en-us_image_0000001946372881.png
+   .. figure:: /_static/images/en-us_image_0000002043021624.png
       :alt: **Figure 4** Use existing
 
       **Figure 4** Use existing
@@ -145,7 +145,7 @@ FAQs
    Go to the IAM console, click **Agencies** in the navigation pane, and delete the target agency.
 
 
-   .. figure:: /_static/images/en-us_image_0000001914973738.png
+   .. figure:: /_static/images/en-us_image_0000002079100745.png
       :alt: **Figure 5** IAM console
 
       **Figure 5** IAM console

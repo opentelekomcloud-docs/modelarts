@@ -19,9 +19,9 @@ ModelArts supports the following types of datasets:
 Dataset Functions
 -----------------
 
-Different types of datasets support different functions, such as auto labeling and team labeling. For details, see :ref:`Table 1 <en-us_topic_0000001909852992__table138425481245>`.
+Different types of datasets support different functions, such as auto labeling and team labeling. For details, see :ref:`Table 1 <en-us_topic_0000002043183632__table138425481245>`.
 
-.. _en-us_topic_0000001909852992__table138425481245:
+.. _en-us_topic_0000002043183632__table138425481245:
 
 .. table:: **Table 1** Functions supported by different types of datasets
 

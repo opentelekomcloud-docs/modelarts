@@ -16,7 +16,7 @@ Constraints
 Prerequisites
 -------------
 
--  The model has been developed and trained, and the type and version of the AI engine used by the model are supported by ModelArts. For details, see :ref:`Supported AI Engines for ModelArts Inference <en-us_topic_0000001943974209__en-us_topic_0171858287_section04192617912>`.
+-  The model has been developed and trained, and the type and version of the AI engine used by the model are supported by ModelArts. For details, see :ref:`Supported AI Engines for ModelArts Inference <en-us_topic_0000002079103881__en-us_topic_0171858287_section04192617912>`.
 -  The trained model package, inference code, and configuration file have been uploaded to OBS.
 -  The OBS directory you use and ModelArts are in the same region.
 
@@ -27,9 +27,9 @@ Creating an AI Application
 #. Click **Create** in the upper left corner.
 #. On the displayed page, configure parameters.
 
-   a. Enter basic information about the AI application. For details, see :ref:`Table 1 <en-us_topic_0000001943974089__en-us_topic_0207629478_table19428112584211>`.
+   a. Enter basic information about the AI application. For details, see :ref:`Table 1 <en-us_topic_0000002079182461__en-us_topic_0207629478_table19428112584211>`.
 
-      .. _en-us_topic_0000001943974089__en-us_topic_0207629478_table19428112584211:
+      .. _en-us_topic_0000002079182461__en-us_topic_0207629478_table19428112584211:
 
       .. table:: **Table 1** Basic information
 
@@ -42,16 +42,16 @@ Creating an AI Application
          |                                   |                                                                                                                                                                                                       |
          |                                   | .. note::                                                                                                                                                                                             |
          |                                   |                                                                                                                                                                                                       |
-         |                                   |    After an AI application is created, you can :ref:`create new versions <en-us_topic_0000001910054874__en-us_topic_0171858290_section102881451161111>` using different meta models for optimization. |
+         |                                   |    After an AI application is created, you can :ref:`create new versions <en-us_topic_0000002043024844__en-us_topic_0171858290_section102881451161111>` using different meta models for optimization. |
          +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
          | Description                       | Brief description of the AI application.                                                                                                                                                              |
          +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   b. Select the meta model source and configure related parameters. Set **Meta Model Source** to **OBS**. For details about the parameters, see :ref:`Table 2 <en-us_topic_0000001943974089__en-us_topic_0207629478_table1631162916535>`.
+   b. Select the meta model source and configure related parameters. Set **Meta Model Source** to **OBS**. For details about the parameters, see :ref:`Table 2 <en-us_topic_0000002079182461__en-us_topic_0207629478_table1631162916535>`.
 
       To import a meta model from OBS, edit the inference code and configuration file by following :ref:`model package specifications <inference-modelarts-0055>` and place the inference code and configuration file in the **model** folder storing the meta model. If the selected directory does not comply with the model package specifications, the AI application cannot be created.
 
-      .. _en-us_topic_0000001943974089__en-us_topic_0207629478_table1631162916535:
+      .. _en-us_topic_0000002079182461__en-us_topic_0207629478_table1631162916535:
 
       .. table:: **Table 2** Meta model source parameters
 
@@ -88,7 +88,7 @@ Creating an AI Application
          +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
          | Deployment Type                   | Choose the service types for application deployment. The service types you select will be the only options available for deployment. For instance, selecting **Real-Time Services** means the AI application can only be deployed as real-time services.                                                                                                                                                  |
          +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-         | API Configuration                 | You can enable it to edit RESTful APIs to define the AI application input and output formats. The API configuration must comply with ModelArts specifications. For details, see apis parameters in :ref:`Specifications for Editing a Model Configuration File <inference-modelarts-0056>`. :ref:`Code Example of apis Parameters <en-us_topic_0000001943974157__section9498141310396>` shows an example. |
+         | API Configuration                 | You can enable it to edit RESTful APIs to define the AI application input and output formats. The API configuration must comply with ModelArts specifications. For details, see apis parameters in :ref:`Specifications for Editing a Model Configuration File <inference-modelarts-0056>`. :ref:`Code Example of apis Parameters <en-us_topic_0000002079182513__section9498141310396>` shows an example. |
          +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
    c. Check the information and click **Create now**.
@@ -98,4 +98,4 @@ Creating an AI Application
 Follow-Up Operations
 --------------------
 
-:ref:`Deploying an AI Application as a Service <en-us_topic_0000001910014914__section5706068262>`: In the AI application list, click the down arrow on the left of an AI application name to check all versions of the AI application. Locate the row that contains the target version, click **Deploy** in the **Operation** column, and select a deployment type from the drop-down list. The AI application can be deployed as a deployment type selected during AI application creation.
+:ref:`Deploying an AI Application as a Service <en-us_topic_0000002043024808__section5706068262>`: In the AI application list, click the down arrow on the left of an AI application name to check all versions of the AI application. Locate the row that contains the target version, click **Deploy** in the **Operation** column, and select a deployment type from the drop-down list. The AI application can be deployed as a deployment type selected during AI application creation.

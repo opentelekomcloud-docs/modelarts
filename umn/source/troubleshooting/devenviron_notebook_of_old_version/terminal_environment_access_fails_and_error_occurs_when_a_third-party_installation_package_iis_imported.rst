@@ -27,12 +27,12 @@ Solution
 #. On the **Files** tab page of the **Jupyter** page, click **New** and select **Terminal**. The **Terminal** page is displayed.
 
 
-   .. figure:: /_static/images/en-us_image_0000001910009168.png
+   .. figure:: /_static/images/en-us_image_0000002043183624.png
       :alt: **Figure 1** Going to the **Terminal** page
 
       **Figure 1** Going to the **Terminal** page
 
-#. Run the following command to obtain the command line for activating the environment, as shown in :ref:`Figure 2 <en-us_topic_0000001910008648__fig9291155351810>`.
+#. Run the following command to obtain the command line for activating the environment, as shown in :ref:`Figure 2 <en-us_topic_0000002043183456__fig9291155351810>`.
 
    .. code-block::
 
@@ -44,9 +44,9 @@ Solution
 
       source /home/ma-user/anaconda3/bin/activate TensorFlow-1.8
 
-   .. _en-us_topic_0000001910008648__fig9291155351810:
+   .. _en-us_topic_0000002043183456__fig9291155351810:
 
-   .. figure:: /_static/images/en-us_image_0000001909849160.png
+   .. figure:: /_static/images/en-us_image_0000002043025304.png
       :alt: **Figure 2** Activating the Terminal environment
 
       **Figure 2** Activating the Terminal environment
