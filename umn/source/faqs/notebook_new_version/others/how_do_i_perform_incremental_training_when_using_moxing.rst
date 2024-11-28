@@ -12,7 +12,7 @@ Adding Incremental Training Parameters to **mox.run**
 
 After modifying labeling data or datasets, you can modify the **log_dir** parameter in and add the **checkpoint_path** parameter to **mox.run**. Set **log_dir** to a new directory and **checkpoint_path** to the output path of the previous training results. If the output path is an OBS directory, set the path to a value starting with **obs://**.
 
-If labels are changed for label data, perform operations in :ref:`If Labels Are Changed <en-us_topic_0000001910018542__section432681405612>` before running **mox.run**.
+If labels are changed for label data, perform operations in :ref:`If Labels Are Changed <en-us_topic_0000002079104805__section432681405612>` before running **mox.run**.
 
 .. code-block::
 
@@ -31,7 +31,7 @@ If labels are changed for label data, perform operations in :ref:`If Labels Are 
              checkpoint_path=flags.checkpoint_url,
              export_model=mox.ExportKeys.TF_SERVING)
 
-.. _en-us_topic_0000001910018542__section432681405612:
+.. _en-us_topic_0000002079104805__section432681405612:
 
 If Labels Are Changed
 ---------------------

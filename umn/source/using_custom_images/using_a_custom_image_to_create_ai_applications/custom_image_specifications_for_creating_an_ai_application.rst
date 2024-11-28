@@ -2,8 +2,6 @@
 
 .. _modelarts_23_0219:
 
-.. _en-us_topic_0000001919187104:
-
 Custom Image Specifications for Creating an AI Application
 ==========================================================
 

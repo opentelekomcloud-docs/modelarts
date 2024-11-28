@@ -27,9 +27,9 @@ Creating an AI Application
 #. Click **Create** in the upper left corner.
 #. On the displayed page, configure parameters.
 
-   a. Set basic information about the AI application. For details about the parameters, see :ref:`Table 1 <en-us_topic_0000001943974093__en-us_topic_0207629475_table19428112584211>`.
+   a. Set basic information about the AI application. For details about the parameters, see :ref:`Table 1 <en-us_topic_0000002043183152__en-us_topic_0207629475_table19428112584211>`.
 
-      .. _en-us_topic_0000001943974093__en-us_topic_0207629475_table19428112584211:
+      .. _en-us_topic_0000002043183152__en-us_topic_0207629475_table19428112584211:
 
       .. table:: **Table 1** Parameters of basic AI application information
 
@@ -42,14 +42,14 @@ Creating an AI Application
          |                                   |                                                                                                                                                                                                       |
          |                                   | .. note::                                                                                                                                                                                             |
          |                                   |                                                                                                                                                                                                       |
-         |                                   |    After an AI application is created, you can :ref:`create new versions <en-us_topic_0000001910054874__en-us_topic_0171858290_section102881451161111>` using different meta models for optimization. |
+         |                                   |    After an AI application is created, you can :ref:`create new versions <en-us_topic_0000002043024844__en-us_topic_0171858290_section102881451161111>` using different meta models for optimization. |
          +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
          | Description                       | Brief description of an AI application                                                                                                                                                                |
          +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   b. Select the meta model source and set related parameters. Set **Meta Model Source** to **Training job**. For details about the parameters, see :ref:`Table 2 <en-us_topic_0000001943974093__en-us_topic_0207629475_table104931647171713>`.
+   b. Select the meta model source and set related parameters. Set **Meta Model Source** to **Training job**. For details about the parameters, see :ref:`Table 2 <en-us_topic_0000002043183152__en-us_topic_0207629475_table104931647171713>`.
 
-      .. _en-us_topic_0000001943974093__en-us_topic_0207629475_table104931647171713:
+      .. _en-us_topic_0000002043183152__en-us_topic_0207629475_table104931647171713:
 
       .. table:: **Table 2** Parameters of the meta model source
 
@@ -78,4 +78,4 @@ Creating an AI Application
 Follow-Up Procedure
 -------------------
 
-:ref:`Deploying an AI Application as a Service <en-us_topic_0000001910014914__section5706068262>`: In the AI application list, click the down arrow on the left of an AI application name to check all versions of the AI application. Locate the row that contains the target version, click **Deploy** in the **Operation** column, and select a deployment type from the drop-down list box. The AI application can be deployed in a deployment type selected during AI application creation.
+:ref:`Deploying an AI Application as a Service <en-us_topic_0000002043024808__section5706068262>`: In the AI application list, click the down arrow on the left of an AI application name to check all versions of the AI application. Locate the row that contains the target version, click **Deploy** in the **Operation** column, and select a deployment type from the drop-down list box. The AI application can be deployed in a deployment type selected during AI application creation.

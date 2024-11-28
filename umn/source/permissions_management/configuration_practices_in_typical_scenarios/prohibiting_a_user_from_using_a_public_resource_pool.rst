@@ -23,7 +23,7 @@ Procedure
 
 #. Log in to the management console as a tenant user, hover the cursor over your username in the upper right corner, and choose **Identity and Access Management** from the drop-down list to switch to the IAM management console.
 
-#. .. _en-us_topic_0000001910009772__li1793015304613:
+#. .. _en-us_topic_0000002043023016__li1793015304613:
 
    In the navigation pane, choose **Permissions** > **Policies/Roles**. On the **Policies/Roles** page, click **Create Custom Policy** in the upper right corner, configure parameters, and click **OK**.
 
@@ -58,7 +58,7 @@ Procedure
              ]
          }
 
-#. In the navigation pane, choose **User Groups**. On the **User Groups** page, locate the row containing the target user group and click **Authorize** in the **Operation** column. On the **Authorize User Group** page, select the custom policy created in :ref:`2 <en-us_topic_0000001910009772__li1793015304613>` and click **Next**. Then, select the scope and click **OK**.
+#. In the navigation pane, choose **User Groups**. On the **User Groups** page, locate the row containing the target user group and click **Authorize** in the **Operation** column. On the **Authorize User Group** page, select the custom policy created in :ref:`2 <en-us_topic_0000002043023016__li1793015304613>` and click **Next**. Then, select the scope and click **OK**.
 
    After the configuration, all users in the user group have the permission to view all notebook instances created by users in the user group.
 
@@ -66,7 +66,7 @@ Procedure
 
 #. Add the policy to the user's agency authorization. This prevents the user from breaking the permission scope through a token on the tenant plane.
 
-   In the navigation pane, choose **Agencies**. Locate the agency used by the user group on ModelArts and click **Modify** in the **Operation** column. On the **Permissions** tab page, click **Authorize**, select the created custom policy, and click **Next**. Select the scope for authorization and click **OK**.
+   In the navigation pane, choose **Agencies**. Locate the agency used by the user group on ModelArts and click **Modify** in the **Operation** column. In the **Permissions** tab, click **Authorize**, select the created custom policy, and click **Next**. Select the scope for authorization and click **OK**.
 
 Verification
 ------------

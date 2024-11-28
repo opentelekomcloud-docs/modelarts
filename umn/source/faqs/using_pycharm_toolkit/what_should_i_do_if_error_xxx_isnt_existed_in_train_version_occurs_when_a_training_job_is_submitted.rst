@@ -11,7 +11,7 @@ Symptom
 Error "xxx isn't existed in train_version" occurs when a training job is submitted. See the following figure.
 
 
-.. figure:: /_static/images/en-us_image_0000001910058978.png
+.. figure:: /_static/images/en-us_image_0000002043184296.png
    :alt: **Figure 1** Error "xxx isn't existed in train_version"
 
    **Figure 1** Error "xxx isn't existed in train_version"
@@ -29,7 +29,7 @@ Solution
 If you have deleted a job on the ModelArts management console, you also need to delete the local configuration from Toolkit. To delete the local configuration, click **Edit Training Configuration**, find the job name, click the minus sign in the upper right corner, and confirm the deletion.
 
 
-.. figure:: /_static/images/en-us_image_0000001910018962.png
+.. figure:: /_static/images/en-us_image_0000002079183601.png
    :alt: **Figure 2** Deleting the local configuration
 
    **Figure 2** Deleting the local configuration

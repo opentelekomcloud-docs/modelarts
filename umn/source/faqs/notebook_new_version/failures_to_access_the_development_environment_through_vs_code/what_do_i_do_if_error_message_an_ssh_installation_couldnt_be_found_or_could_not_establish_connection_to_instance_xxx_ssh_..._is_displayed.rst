@@ -40,11 +40,11 @@ If OpenSSH fails to be installed, manually `download the OpenSSH installation pa
 
 #. Add **C:\\Program Files\\OpenSSH-xx** (in which the SSH executable .exe file is stored) to environment system variables.
 
-#. Open CMD again and run **ssh**. If the following information is displayed, the installation is successful. Otherwise, go to :ref:`5 <en-us_topic_0000001910018650__li9295193011380>` and :ref:`6 <en-us_topic_0000001910018650__li194921423153911>`.
+#. Open CMD again and run **ssh**. If the following information is displayed, the installation is successful. Otherwise, go to :ref:`5 <en-us_topic_0000002079183385__li9295193011380>` and :ref:`6 <en-us_topic_0000002079183385__li194921423153911>`.
 
    |image4|
 
-#. .. _en-us_topic_0000001910018650__li9295193011380:
+#. .. _en-us_topic_0000002079183385__li9295193011380:
 
    Enable port 22 (default OpenSSH port) on the firewall and run the following command in Command Prompt:
 
@@ -52,7 +52,7 @@ If OpenSSH fails to be installed, manually `download the OpenSSH installation pa
 
        netsh advfirewall firewall add rule name=sshd dir=in action=allow protocol=TCP localport=22
 
-#. .. _en-us_topic_0000001910018650__li194921423153911:
+#. .. _en-us_topic_0000002079183385__li194921423153911:
 
    Run the following command to start OpenSSH:
 
@@ -70,9 +70,9 @@ If OpenSSH fails to be installed, manually `download the OpenSSH installation pa
 
    |image6|
 
-.. |image1| image:: /_static/images/en-us_image_0000001943978281.png
-.. |image2| image:: /_static/images/en-us_image_0000001910059114.png
-.. |image3| image:: /_static/images/en-us_image_0000001910059106.png
-.. |image4| image:: /_static/images/en-us_image_0000001910019098.png
-.. |image5| image:: /_static/images/en-us_image_0000001943978285.png
-.. |image6| image:: /_static/images/en-us_image_0000001943978277.png
+.. |image1| image:: /_static/images/en-us_image_0000002079183657.png
+.. |image2| image:: /_static/images/en-us_image_0000002079105085.png
+.. |image3| image:: /_static/images/en-us_image_0000002043026016.png
+.. |image4| image:: /_static/images/en-us_image_0000002079105093.png
+.. |image5| image:: /_static/images/en-us_image_0000002079183661.png
+.. |image6| image:: /_static/images/en-us_image_0000002043184352.png

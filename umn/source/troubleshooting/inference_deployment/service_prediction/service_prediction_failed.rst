@@ -16,7 +16,7 @@ Cause Analysis and Solution
 Service prediction involves multiple phases, including the client, Internet, APIG, dispatcher, and model service. A fault in any phase may lead to a prediction failure.
 
 
-.. figure:: /_static/images/en-us_image_0000001909849108.png
+.. figure:: /_static/images/en-us_image_0000002079104361.png
    :alt: **Figure 1** Prediction process
 
    **Figure 1** Prediction process

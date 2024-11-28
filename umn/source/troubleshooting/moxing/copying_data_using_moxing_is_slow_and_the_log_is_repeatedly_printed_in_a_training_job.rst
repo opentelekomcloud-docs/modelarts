@@ -13,7 +13,7 @@ Symptom
 -  The log **INFO:root:Listing OBS** is repeatedly printed.
 
 
-   .. figure:: /_static/images/en-us_image_0000001943968397.png
+   .. figure:: /_static/images/en-us_image_0000002043025208.png
       :alt: **Figure 1** Repeated log printing
 
       **Figure 1** Repeated log printing

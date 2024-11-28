@@ -5,7 +5,7 @@
 Audio Labeling
 ==============
 
--  :ref:`Sound classification <datalabel-modelarts_0014>`
+-  :ref:`Sound Classification <datalabel-modelarts_0014>`
 -  :ref:`Speech Labeling <datalabel-modelarts_0015>`
 -  :ref:`Speech Paragraph Labeling <datalabel-modelarts_0016>`
 

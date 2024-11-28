@@ -10,7 +10,7 @@ ModelArts is capable of managing models and services. This allows mainstream fra
 Generally, AI model deployment and large-scale implementation are complex.
 
 
-.. figure:: /_static/images/en-us_image_0000001910019742.png
+.. figure:: /_static/images/en-us_image_0000002079177809.png
    :alt: **Figure 1** Process of deploying a model
 
    **Figure 1** Process of deploying a model

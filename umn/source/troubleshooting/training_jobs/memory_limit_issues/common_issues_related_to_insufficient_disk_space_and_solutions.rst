@@ -13,7 +13,7 @@ Symptom
 When data, code, or model is copied during training, error message "No space left on device" is displayed.
 
 
-.. figure:: /_static/images/en-us_image_0000001909848844.png
+.. figure:: /_static/images/en-us_image_0000002079104249.png
    :alt: **Figure 1** Error log
 
    **Figure 1** Error log

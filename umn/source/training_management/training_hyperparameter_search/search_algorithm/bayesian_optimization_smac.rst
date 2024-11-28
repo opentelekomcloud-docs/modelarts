@@ -2,8 +2,6 @@
 
 .. _modelarts_23_0297:
 
-.. _en-us_topic_0000001916662106:
-
 Bayesian Optimization (SMAC)
 ============================
 

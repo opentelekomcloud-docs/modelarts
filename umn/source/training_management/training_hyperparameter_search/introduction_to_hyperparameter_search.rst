@@ -11,6 +11,6 @@ During model training, many hyperparameters, such as **learning_rate** and **wei
 
 ModelArts supports the following hyperparameter search algorithms:
 
--  :ref:`Bayesian Optimization (SMAC) <en-us_topic_0000001916662106>`
--  :ref:`TPE Algorithm <en-us_topic_0000001947261241>`
--  :ref:`Simulated Annealing Algorithm <en-us_topic_0000001916502166>`
+-  :ref:`Bayesian Optimization (SMAC) <modelarts_23_0297>`
+-  :ref:`TPE Algorithm <modelarts_23_0303_0>`
+-  :ref:`Simulated Annealing Algorithm <modelarts_23_0304_0>`
