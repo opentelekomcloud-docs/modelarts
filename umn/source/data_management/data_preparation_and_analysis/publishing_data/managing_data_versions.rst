@@ -10,22 +10,16 @@ During data preparation, you can publish data into multiple versions for dataset
 Viewing Dataset Version Updates
 -------------------------------
 
-#. Log in to the ModelArts management console. In the left navigation pane, choose **Data Management** > **Datasets**.
+#. Log in to the ModelArts management console. In the navigation pane on the left, choose **Data Management** > **Datasets**.
 
 #. In the dataset list, choose **More > Manage Version** in the **Operation** column. The **Manage Version** tab page is displayed.
 
    You can view basic information about the dataset, and view the versions and publish time on the left.
 
-
-   .. figure:: /_static/images/en-us_image_0000001943972257.png
-      :alt: **Figure 1** Viewing dataset versions
-
-      **Figure 1** Viewing dataset versions
-
 Setting to Current Version
 --------------------------
 
-#. Log in to the ModelArts management console. In the left navigation pane, choose **Data Management** > **Datasets**.
+#. Log in to the ModelArts management console. In the navigation pane on the left, choose **Data Management** > **Datasets**.
 #. In the dataset list, choose **More > Manage Version** in the **Operation** column. The **Manage Version** tab page is displayed.
 #. On the **Manage Version** tab page, select the desired dataset version, and click **Set to Current Version** in the basic information area on the right. After the setting is complete, **Current version** is displayed to the right of the version name.
 
@@ -36,7 +30,7 @@ Setting to Current Version
 Deleting a Dataset Version
 --------------------------
 
-#. Log in to the ModelArts management console. In the left navigation pane, choose **Data Management** > **Datasets**.
+#. Log in to the ModelArts management console. In the navigation pane on the left, choose **Data Management** > **Datasets**.
 #. In the dataset list, choose **More > Manage Version** in the **Operation** column. The **Manage Version** tab page is displayed.
 #. Locate the row that contains the target version, and click **Delete** in the **Operation** column. In the dialog box that is displayed, click **OK**.
 

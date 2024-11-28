@@ -14,9 +14,9 @@ Only the following labeling types of data can be imported by **Labeling Format**
    -  To import data from an OBS directory, you must have the read permission on the OBS directory.
    -  The OBS buckets and ModelArts must be in the same region.
 
-.. _en-us_topic_0000001910012960__en-us_topic_0000001194052681_section570816190577:
+.. _en-us_topic_0000002043025328__en-us_topic_0000001194052681_section570816190577:
 
-Image classification
+Image Classification
 --------------------
 
 Data for image classification can be stored in two formats:
@@ -77,16 +77,16 @@ Format 2: ModelArts image classification 1.0
 
 -  Only images in JPG, JPEG, PNG, and BMP formats are supported. The size of a single image cannot exceed 5 MB, and the total size of all images uploaded at a time cannot exceed 8 MB.
 
-Object detection
+Object Detection
 ----------------
 
 Data for object detection can be stored in two formats:
 
-1)ModelArts PASCAL VOC 1.0
+Format 1: ModelArts PASCAL VOC 1.0
 
 -  The simple mode of object detection requires you to store labeled objects and your label files (in one-to-one relationship with the labeled objects) in the same directory. For example, if the name of the labeled object file is **IMG_20180919_114745.jpg**, the name of the label file must be **IMG_20180919_114745.xml**.
 
-   The label files must be in PASCAL VOC format. For details about the format, see :ref:`Table 8 <en-us_topic_0000001910012964__en-us_topic_0000001148092878_table77167388472>`.
+   The label files must be in PASCAL VOC format. For details about the format, see :ref:`Table 8 <en-us_topic_0000002043025324__en-us_topic_0000001148092878_table77167388472>`.
 
    Example:
 
@@ -176,7 +176,7 @@ Format 2: YOLO
 
    A YOLO dataset supports only training sets and validation sets. If other sets are imported, they will be invalid in the YOLO dataset.
 
--  **obj.data** contains the following content and at least one of the **train** and **valid** subsets must be contained. The file paths are relative paths.
+-  The **obj.data** contains the following content and at least one of the **train** and **valid** subsets must be contained. The file paths are relative paths.
 
    .. code-block::
 
@@ -216,14 +216,14 @@ Format 2: YOLO
 
 -  Only images in JPG, JPEG, PNG, and BMP formats are supported. A single image cannot exceed 5 MB, and the total size of all images uploaded at one time cannot exceed 8 MB.
 
-Image segmentation
+Image Segmentation
 ------------------
 
 ModelArts image segmentation 1.0:
 
 -  Labeled objects and their label files (in one-to-one relationship with the labeled objects) must be in the same directory. For example, if the name of the labeled object file is **IMG_20180919_114746.jpg**, the name of the label file must be **IMG_20180919_114746.xml**.
 
-   Fields **mask_source** and **mask_color** are added to the label file in PASCAL VOC format. For details about the format, see :ref:`Table 4 <en-us_topic_0000001910012964__en-us_topic_0000001148092878_table1516151991311>`.
+   Fields **mask_source** and **mask_color** are added to the label file in PASCAL VOC format. For details about the format, see :ref:`Table 4 <en-us_topic_0000002043025324__en-us_topic_0000001148092878_table1516151991311>`.
 
    Example:
 
@@ -281,12 +281,12 @@ ModelArts image segmentation 1.0:
           </object>
       </annotation>
 
-.. _en-us_topic_0000001910012960__en-us_topic_0000001194052681_section163641141195713:
+.. _en-us_topic_0000002043025328__en-us_topic_0000001194052681_section163641141195713:
 
-Text classification
+Text Classification
 -------------------
 
-txt and csv files can be imported for text classification, with the text encoding format of UTF-8 or GBK.
+The TXT and CSV files can be imported for text classification, with the text encoding format of UTF-8 or GBK.
 
 Labeled objects and labels for text classification can be stored in two formats:
 
@@ -335,9 +335,9 @@ Labeled objects and labels for text classification can be stored in two formats:
       │      COMMENTS _20180919_114945.txt
       │      COMMENTS _20180919_114945_result.txt
 
-.. _en-us_topic_0000001910012960__en-us_topic_0000001194052681_section1683314458578:
+.. _en-us_topic_0000002043025328__en-us_topic_0000001194052681_section1683314458578:
 
-Sound classification
+Sound Classification
 --------------------
 
 ModelArts audio classification dir 1.0: Sound files with the same label must be stored in the same directory, and the label name is the directory name.
@@ -357,7 +357,7 @@ Example:
            2.wav
            3.wav
 
-.. _en-us_topic_0000001910012960__en-us_topic_0000001194052681_section118011361754:
+.. _en-us_topic_0000002043025328__en-us_topic_0000001194052681_section118011361754:
 
 Tables
 ------

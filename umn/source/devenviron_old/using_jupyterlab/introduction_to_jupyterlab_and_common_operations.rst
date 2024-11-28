@@ -2,8 +2,6 @@
 
 .. _modelarts_23_0209:
 
-.. _en-us_topic_0000001946441181:
-
 Introduction to JupyterLab and Common Operations
 ================================================
 
@@ -26,7 +24,7 @@ Creating and Opening a Notebook Instance
 
 On the JupyterLab homepage, click an applicable AI engine in the **Notebook** area to create a notebook file with the selected framework.
 
-The AI framework supported by each notebook instance varies according to the working environment. The following figure is only an example. Select an AI framework based on the site requirements. For details about all framework versions and Python versions supported by ModelArts, see :ref:`Supported AI Engines <en-us_topic_0000001914882092__en-us_topic_0000001846136609_en-us_topic_0162690357_section191109611479>`.
+The AI framework supported by each notebook instance varies according to the working environment. The following figure is only an example. Select an AI framework based on the site requirements. For details about all framework versions and Python versions supported by ModelArts, see :ref:`Supported AI Engines <en-us_topic_0000002043182276__en-us_topic_0000001846136609_en-us_topic_0162690357_section191109611479>`.
 
 The created notebook file is displayed in the navigation pane on the left.
 
@@ -42,22 +40,22 @@ The AI framework supported by each notebook instance varies according to the wor
 After the file is created, the console page is displayed.
 
 
-.. figure:: /_static/images/en-us_image_0000001799338228.png
+.. figure:: /_static/images/en-us_image_0000002079103293.png
    :alt: **Figure 1** Creating a notebook file (console)
 
    **Figure 1** Creating a notebook file (console)
 
-.. _en-us_topic_0000001946441181__en-us_topic_0000001799337328_en-us_topic_0208766071_section172463910383:
+.. _en-us_topic_0000002043182264__en-us_topic_0000001799337328_en-us_topic_0208766071_section172463910383:
 
 Uploading a File
 ----------------
 
 On the JupyterLab page, you can click **Upload File** in the upper left corner and select a local file to upload.
 
-The size of the file to be uploaded using this method is limited. If the file size exceeds the limit, use other methods to upload the file. For details, see :ref:`Uploading Data to JupyterLab <en-us_topic_0000001915042052>`.
+The size of the file to be uploaded using this method is limited. If the file size exceeds the limit, use other methods to upload the file. For details, see :ref:`Uploading Data to JupyterLab <modelarts_23_0332>`.
 
 
-.. figure:: /_static/images/en-us_image_0000001799497968.png
+.. figure:: /_static/images/en-us_image_0000002043024280.png
    :alt: **Figure 2** Uploading a file
 
    **Figure 2** Uploading a file
@@ -70,7 +68,7 @@ JupyterLab allows you to open multiple notebook instances or files (such as HTML
 Using JupyterLab, you can customize the display of multiple files. In the file display area on the right, you can drag a file to adjust its position. Multiple files can be concurrently displayed.
 
 
-.. figure:: /_static/images/en-us_image_0000001846137129.png
+.. figure:: /_static/images/en-us_image_0000002079181933.png
    :alt: **Figure 3** Customized display of multiple files
 
    **Figure 3** Customized display of multiple files
@@ -80,7 +78,7 @@ When writing code in a notebook instance, you can create multiple views of a fil
 To open multiple views, open the file and choose **File** > **New View for Notebook**.
 
 
-.. figure:: /_static/images/en-us_image_0000001846057137.png
+.. figure:: /_static/images/en-us_image_0000002043024172.png
    :alt: **Figure 4** Multiple views of a file
 
    **Figure 4** Multiple views of a file
@@ -88,12 +86,12 @@ To open multiple views, open the file and choose **File** > **New View for Noteb
 Downloading a File to a Local Computer
 --------------------------------------
 
-Files created in JupyterLab can be directly downloaded to a local computer. The size of the file to be downloaded using this method is limited. If the file size exceeds the limit, use other methods to download the file. For details, see :ref:`Downloading a File from JupyterLab <en-us_topic_0000001946441185>`.
+Files created in JupyterLab can be directly downloaded to a local computer. The size of the file to be downloaded using this method is limited. If the file size exceeds the limit, use other methods to download the file. For details, see :ref:`Downloading a File from JupyterLab <modelarts_23_0333>`.
 
 In the JupyterLab file list, right-click the file to be downloaded and choose **Download** from the shortcut menu. The file is downloaded to the directory set for your browser.
 
 
-.. figure:: /_static/images/en-us_image_0000001799497956.png
+.. figure:: /_static/images/en-us_image_0000002079181805.png
    :alt: **Figure 5** Downloading a file
 
    **Figure 5** Downloading a file
@@ -102,7 +100,7 @@ Common Icons and Plug-ins of JupyterLab
 ---------------------------------------
 
 
-.. figure:: /_static/images/en-us_image_0000001799338308.png
+.. figure:: /_static/images/en-us_image_0000002079181917.png
    :alt: **Figure 6** Common icons and plug-ins of JupyterLab
 
    **Figure 6** Common icons and plug-ins of JupyterLab
@@ -116,7 +114,7 @@ Common Icons and Plug-ins of JupyterLab
    +----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |image6| | Creates a folder.                                                                                                                                                 |
    +----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | |image7| | Uploads a file. For details, see :ref:`Uploading a File <en-us_topic_0000001946441181__en-us_topic_0000001799337328_en-us_topic_0208766071_section172463910383>`. |
+   | |image7| | Uploads a file. For details, see :ref:`Uploading a File <en-us_topic_0000002043182264__en-us_topic_0000001799337328_en-us_topic_0208766071_section172463910383>`. |
    +----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | |image8| | Updates a folder.                                                                                                                                                 |
    +----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -141,17 +139,17 @@ Common Icons and Plug-ins of JupyterLab
    | |image14|                         | Document organization.                                                                                                                    |
    +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. |image1| image:: /_static/images/en-us_image_0000001846137121.png
-.. |image2| image:: /_static/images/en-us_image_0000001846057117.png
-.. |image3| image:: /_static/images/en-us_image_0000001846057157.png
-.. |image4| image:: /_static/images/en-us_image_0000001799338220.png
-.. |image5| image:: /_static/images/en-us_image_0000001846137121.png
-.. |image6| image:: /_static/images/en-us_image_0000001846057117.png
-.. |image7| image:: /_static/images/en-us_image_0000001846057157.png
-.. |image8| image:: /_static/images/en-us_image_0000001799338220.png
-.. |image9| image:: /_static/images/en-us_image_0000001846057085.png
-.. |image10| image:: /_static/images/en-us_image_0000001846057133.png
-.. |image11| image:: /_static/images/en-us_image_0000001846057097.png
-.. |image12| image:: /_static/images/en-us_image_0000001846137197.png
-.. |image13| image:: /_static/images/en-us_image_0000001799338248.png
-.. |image14| image:: /_static/images/en-us_image_0000001799498036.png
+.. |image1| image:: /_static/images/en-us_image_0000002079181797.png
+.. |image2| image:: /_static/images/en-us_image_0000002079181817.png
+.. |image3| image:: /_static/images/en-us_image_0000002079103233.png
+.. |image4| image:: /_static/images/en-us_image_0000002079103205.png
+.. |image5| image:: /_static/images/en-us_image_0000002079181797.png
+.. |image6| image:: /_static/images/en-us_image_0000002079181817.png
+.. |image7| image:: /_static/images/en-us_image_0000002079103233.png
+.. |image8| image:: /_static/images/en-us_image_0000002079103205.png
+.. |image9| image:: /_static/images/en-us_image_0000002079103213.png
+.. |image10| image:: /_static/images/en-us_image_0000002079103209.png
+.. |image11| image:: /_static/images/en-us_image_0000002079103221.png
+.. |image12| image:: /_static/images/en-us_image_0000002079181857.png
+.. |image13| image:: /_static/images/en-us_image_0000002043182536.png
+.. |image14| image:: /_static/images/en-us_image_0000002043182444.png

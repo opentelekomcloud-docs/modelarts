@@ -2,8 +2,6 @@
 
 .. _modelarts_23_0084:
 
-.. _en-us_topic_0000001948506069:
-
 Introduction to Custom Images
 =============================
 
@@ -23,7 +21,7 @@ Using a custom image may involve the following services:
    Obtain the custom images used by ModelArts for training or creating AI applications from the SWR service management list. Upload your custom images to SWR.
 
 
-   .. figure:: /_static/images/en-us_image_0000001846057689.png
+   .. figure:: /_static/images/en-us_image_0000002079181753.png
       :alt: **Figure 1** Obtaining images
 
       **Figure 1** Obtaining images

@@ -28,4 +28,4 @@ Procedure
       -  If audio files are input, a result file is generated for each audio file in the *Audio file name*\ **\__result.txt** format, for example, **1-36929-A-47.wav_result.txt**.
       -  If table data is input, the result file is generated in the *Table name*\ **\__result.txt** format, for example, **train.csv_result.txt**.
 
-.. |image1| image:: /_static/images/en-us_image_0000001910055010.png
+.. |image1| image:: /_static/images/en-us_image_0000002079103965.png

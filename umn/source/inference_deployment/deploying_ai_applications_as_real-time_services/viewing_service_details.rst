@@ -11,9 +11,9 @@ After an AI application is deployed as a real-time service, you can access the s
 
 #. On the **Real-Time Services** page, click the name of the target service. The service details page is displayed.
 
-   You can view the service name, status, and other information. For details, see :ref:`Table 1 <en-us_topic_0000001910014870__en-us_topic_0165025305_table54131529105213>`.
+   You can view the service name, status, and other information. For details, see :ref:`Table 1 <en-us_topic_0000002079103869__en-us_topic_0165025305_table54131529105213>`.
 
-   .. _en-us_topic_0000001910014870__en-us_topic_0165025305_table54131529105213:
+   .. _en-us_topic_0000002079103869__en-us_topic_0165025305_table54131529105213:
 
    .. table:: **Table 1** real-time service parameters
 
@@ -39,9 +39,9 @@ After an AI application is deployed as a real-time service, you can access the s
       | **WebSocket**                     | Whether to upgrade to the WebSocket service.                                                                                                 |
       +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
-#. You can switch between tabs on the details page of a real-time service to view more details. For details, see :ref:`Table 2 <en-us_topic_0000001910014870__en-us_topic_0165025305_table62441712183917>`.
+#. You can switch between tabs on the details page of a real-time service to view more details. For details, see :ref:`Table 2 <en-us_topic_0000002079103869__en-us_topic_0165025305_table62441712183917>`.
 
-   .. _en-us_topic_0000001910014870__en-us_topic_0165025305_table62441712183917:
+   .. _en-us_topic_0000002079103869__en-us_topic_0165025305_table62441712183917:
 
    .. table:: **Table 2** Details of a real-time service
 
@@ -73,4 +73,4 @@ After an AI application is deployed as a real-time service, you can access the s
       |                                   | You can select the start time and end time when defining the time segment.                                                                                                                                                  |
       +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. |image1| image:: /_static/images/en-us_image_0000001943974441.png
+.. |image1| image:: /_static/images/en-us_image_0000002079182521.png

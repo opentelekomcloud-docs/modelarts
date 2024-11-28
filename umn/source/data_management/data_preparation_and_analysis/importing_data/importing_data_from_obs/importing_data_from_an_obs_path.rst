@@ -19,7 +19,7 @@ The parameters on the GUI for data import vary according to the dataset type. Th
 
 #. Log in to the ModelArts management console. In the navigation pane on the left, choose **Data Management** > **Datasets**.
 
-#. Locate the row that contains the desired dataset and click **Import** in the **Operation** column. Alternatively, you can click the dataset name to go to the **Dashboard** tab of the dataset, and click **Import** in the upper right corner.
+#. Locate the target dataset and click **Import** in the **Operation** column. Alternatively, you can click the dataset name to go to the **Dashboard** tab of the dataset, and click **Import** in the upper right corner.
 
 #. In the **Import** dialog box, set the parameters as follows and click **OK**.
 
@@ -55,7 +55,7 @@ The labeling status can be **Unlabeled** or **Labeled**.
    .. note::
 
       -  If the labeling status is set to **Labeled**, ensure that the folder or manifest file complies with the format specifications. Otherwise, the import may fail.
-      -  After the import of labeled data, check whether the imported data is in the labeled state.
+      -  After the labeled file is imported, check whether the imported data is in the labeled state.
 
 Importing a Table Dataset from OBS
 ----------------------------------
@@ -65,7 +65,7 @@ ModelArts allows you to import table data (CSV files) from OBS.
 Import description:
 
 -  The prerequisite for successful import is that the schema of the data source must be the same as that specified during dataset creation. The schema indicates column names and types of a table. Once specified during dataset creation, the values cannot be changed.
--  When a CSV file is imported from OBS, the data type is not validated, but the number of columns must be the same as that in the schema of the dataset. If the data format is invalid, the data is set to null. For details, see :ref:`Table 3 <en-us_topic_0000001909852996__table5251155510463>`.
+-  When a CSV file is imported from OBS, the data type is not validated, but the number of columns must be the same as that in the schema of the dataset. If the data format is invalid, the data is set to null. For details, see :ref:`Table 3 <en-us_topic_0000002079104369__table5251155510463>`.
 -  You must select the directory where the CSV file is stored. The number of columns in the CSV file must be the same as that in the dataset schema. The schema of the CSV file can be automatically obtained.
 
 .. code-block::

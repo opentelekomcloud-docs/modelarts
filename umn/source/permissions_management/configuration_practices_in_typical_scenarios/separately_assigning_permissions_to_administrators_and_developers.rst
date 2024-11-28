@@ -15,7 +15,7 @@ To develop a project using notebook, administrators need full control permission
 To use development environments, developers only need operation permissions for using their own instances and dependent services. They do not need to perform operations on ModelArts dedicated resource pools or view notebook instances of other users.
 
 
-.. figure:: /_static/images/en-us_image_0000001943969601.png
+.. figure:: /_static/images/en-us_image_0000002079102097.png
    :alt: **Figure 1** Account relationships
 
    **Figure 1** Account relationships
@@ -27,13 +27,13 @@ Assign full control permissions to administrators for using ModelArts dedicated 
 
 #. Use a tenant account to create an administrator user group **ModelArts_admin_group** and add administrator accounts to **ModelArts_admin_group**.
 
-#. .. _en-us_topic_0000001910009780__li58484438106:
+#. .. _en-us_topic_0000002043023012__li58484438106:
 
    Create a custom policy.
 
    a. Log in to the management console using an administrator account, hover over your username in the upper right corner, and click **Identity and Access Management** from the drop-down list to switch to the IAM management console.
 
-   b. .. _en-us_topic_0000001910009780__li284812437102:
+   b. .. _en-us_topic_0000002043023012__li284812437102:
 
       Create custom policy 1 and assign IAM and OBS permissions to the user. In the navigation pane of the IAM console, choose **Permissions** > **Policies/Roles**. Click **Create Custom Policy** in the upper right corner. On the displayed page, enter **Policy1_IAM_OBS** for **Policy Name**, select **JSON** for **Policy View**, configure the policy content, and click **OK**.
 
@@ -61,7 +61,7 @@ Assign full control permissions to administrators for using ModelArts dedicated 
              ]
          }
 
-   c. Repeat :ref:`2.b <en-us_topic_0000001910009780__li284812437102>` to create custom policy 2 and grant the user the permissions to perform operations on dependent services ECS, SWR, MRS, and SMN as well as ModelArts. Set **Policy Name** to **Policy2_AllowOperation** and **Policy View** to **JSON**, configure the policy content, and click **OK**.
+   c. Repeat :ref:`2.b <en-us_topic_0000002043023012__li284812437102>` to create custom policy 2 and grant the user the permissions to perform operations on dependent services ECS, SWR, MRS, and SMN as well as ModelArts. Set **Policy Name** to **Policy2_AllowOperation** and **Policy View** to **JSON**, configure the policy content, and click **OK**.
 
       The custom policy **Policy2_AllowOperation** is as follows, which grants the user the permissions to perform operations on dependent services ECS, SWR, MRS, and SMN as well as ModelArts. You can directly copy and paste the content.
 
@@ -90,7 +90,7 @@ Assign full control permissions to administrators for using ModelArts dedicated 
              ]
          }
 
-#. Grant the policy created in :ref:`2 <en-us_topic_0000001910009780__li58484438106>` to the administrator group **ModelArts_admin_group**.
+#. Grant the policy created in :ref:`2 <en-us_topic_0000002043023012__li58484438106>` to the administrator group **ModelArts_admin_group**.
 
    a. In the navigation pane of the IAM console, choose **User Groups**. On the **User Groups** page, locate the row that contains **ModelArts_admin_group**, click **Authorize** in the **Operation** column, and select **Policy1_IAM_OBS** and **Policy2_AllowOperation**. Click **Next**.
    b. Specify the scope as **All resources** and click **OK**.
@@ -156,7 +156,7 @@ Use IAM for fine-grained control of developer permissions. The procedure is as f
 
    c. Click **Create**.
 
-   d. On the **Global Configuration** page, click **Add Authorization** again. On the **Add Authorization** page that is displayed, configure an agency for other developer users.
+   d. On the **Global Configuration** page, click **Add Authorization** again. On the displayed **Add Authorization** page, configure an agency for other developer users.
 
       On the **Add Authorization** page, set **Authorized User** to **IAM user**, select a developer account for **Authorized To**, and select the existing agency **ma_agency_develop_user** created before.
 

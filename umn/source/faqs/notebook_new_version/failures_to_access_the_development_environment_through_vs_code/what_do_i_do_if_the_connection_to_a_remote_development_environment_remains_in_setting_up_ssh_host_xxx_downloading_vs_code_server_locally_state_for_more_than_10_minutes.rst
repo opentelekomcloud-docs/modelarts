@@ -20,7 +20,7 @@ Solution
 
 Manually install the VS Code server.
 
-#. .. _en-us_topic_0000001910058650__li11183911182410:
+#. .. _en-us_topic_0000002079183185__li11183911182410:
 
    Obtain the VS Code commit ID.
 
@@ -30,7 +30,7 @@ Manually install the VS Code server.
 
    .. note::
 
-      Replace *${commitID}* in the following link with the commit ID obtained in :ref:`1 <en-us_topic_0000001910058650__li11183911182410>`.
+      Replace *${commitID}* in the following link with the commit ID obtained in :ref:`1 <en-us_topic_0000002079183185__li11183911182410>`.
 
    -  For Arm, download **vscode-server-linux-arm64.tar.gz**.
 
@@ -66,7 +66,7 @@ Manually install the VS Code server.
 
 #. Manually install the VS Code server.
 
-   Run the following commands on the VS Code terminal to clear the residual data (replace *${commitID}* in the commands with the commit ID obtained in :ref:`1 <en-us_topic_0000001910058650__li11183911182410>`):
+   Run the following commands on the VS Code terminal to clear the residual data (replace *${commitID}* in the commands with the commit ID obtained in :ref:`1 <en-us_topic_0000002079183185__li11183911182410>`):
 
    .. code-block::
 
@@ -94,7 +94,7 @@ Manually install the VS Code server.
 
    - **Port**: Port number
 
-   Take Arm as an example. Decompress the VS Code server package to **$HOME/.vscode-server/bin**. Replace *${commitID}* in the command with the commit ID obtained in :ref:`1 <en-us_topic_0000001910058650__li11183911182410>`.
+   Take Arm as an example. Decompress the VS Code server package to **$HOME/.vscode-server/bin**. Replace *${commitID}* in the command with the commit ID obtained in :ref:`1 <en-us_topic_0000002079183185__li11183911182410>`.
 
    .. code-block::
 
@@ -104,7 +104,7 @@ Manually install the VS Code server.
 
 #. Establish the remote connection again.
 
-.. |image1| image:: /_static/images/en-us_image_0000001910059090.png
-.. |image2| image:: /_static/images/en-us_image_0000001910059094.png
-.. |image3| image:: /_static/images/en-us_image_0000001943978265.png
-.. |image4| image:: /_static/images/en-us_image_0000001910019074.png
+.. |image1| image:: /_static/images/en-us_image_0000002079105053.png
+.. |image2| image:: /_static/images/en-us_image_0000002079183633.png
+.. |image3| image:: /_static/images/en-us_image_0000002043025988.png
+.. |image4| image:: /_static/images/en-us_image_0000002043184320.png
