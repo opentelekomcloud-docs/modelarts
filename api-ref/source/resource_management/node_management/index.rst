@@ -1,12 +1,12 @@
-:original_name: topic_300000007.html
+:original_name: nodes_management.html
 
-.. _topic_300000007:
+.. _nodes_management:
 
-Node management
+Node Management
 ===============
 
 -  :ref:`Obtaining Nodes <listpoolnodes>`
--  :ref:`Deleting nodes in batches <batchdeletepoolnodes>`
+-  :ref:`Deleting Nodes in Batches <batchdeletepoolnodes>`
 
 .. toctree::
    :maxdepth: 1

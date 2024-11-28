@@ -1,32 +1,32 @@
-:original_name: topic_300000006.html
+:original_name: resource_management1.html
 
-.. _topic_300000006:
+.. _resource_management1:
 
 Resource Management
 ===================
 
--  :ref:`Configuration management <config_management>`
--  :ref:`Quota management <topic_300000001>`
--  :ref:`Event management <event_management>`
--  :ref:`Resource Pool Job Management <topic_300000003>`
--  :ref:`Resource indicators <metrics_management>`
--  :ref:`Plug-in template management API <topic_300000005>`
--  :ref:`Networking <network_management>`
--  :ref:`Node management <topic_300000007>`
--  :ref:`Resource pool management <topic_300000008>`
--  :ref:`Resource flavor management APIs <resource_flavor_management>`
+-  :ref:`Configuration Management <config_management>`
+-  :ref:`Event Management <event_management>`
+-  :ref:`Resource Pool Job Management <workload_management>`
+-  :ref:`Resource Metrics <metrics_management>`
+-  :ref:`Plug-in Template Management <plugintemplate_management>`
+-  :ref:`Tag Management <tags_management>`
+-  :ref:`Network Management <network_management>`
+-  :ref:`Node Management <nodes_management>`
+-  :ref:`Resource Pool Management <pools_management>`
+-  :ref:`Resource Specifications Management <resourceflavor_management>`
 
 .. toctree::
    :maxdepth: 1
    :hidden: 
 
    configuration_management/index
-   quota_management/index
    event_management/index
    resource_pool_job_management/index
-   resource_indicators/index
-   plug-in_template_management_api/index
-   networking/index
+   resource_metrics/index
+   plug-in_template_management/index
+   tag_management/index
+   network_management/index
    node_management/index
    resource_pool_management/index
-   resource_flavor_management_apis/index
+   resource_specifications_management/index

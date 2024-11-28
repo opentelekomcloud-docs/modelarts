@@ -7,7 +7,7 @@ Making an API Request
 
 This section describes the structure of a REST API request, and uses the IAM API for obtaining a user token as an example to demonstrate how to call an API. The obtained token can then be used to authenticate the calling of other APIs.
 
-.. _en-us_topic_0000001910008156__en-us_topic_0170917207_en-us_topic_0168405763_section1849899574:
+.. _en-us_topic_0000001943866577__en-us_topic_0170917207_en-us_topic_0168405763_section1849899574:
 
 Request URI
 -----------
@@ -76,9 +76,9 @@ Request Header
 
 You can also add additional header fields to a request, such as the fields required by a specified URI or HTTP method. For example, to request for the authentication information, add **Content-Type**, which specifies the request body type.
 
-:ref:`Table 3 <en-us_topic_0000001910008156__table139019272562>` describes the common request header fields to be added to the request.
+:ref:`Table 3 <en-us_topic_0000001943866577__table139019272562>` describes the common request header fields to be added to the request.
 
-.. _en-us_topic_0000001910008156__table139019272562:
+.. _en-us_topic_0000001943866577__table139019272562:
 
 .. table:: **Table 3** Common request header fields
 
@@ -136,7 +136,7 @@ If an API is used to obtain a user token, the request parameters and parameter d
 
    The **scope** parameter specifies where a token takes effect. In the example, the token takes effect only for the resources in a specified project. ModelArts uses a region-specific endpoint to call this API. Set **scope** to **project**. You can set **scope** to an account or a project under an account.
 
-.. code-block:: text
+.. code-block::
 
    POST https://{iam-endpoint}/v3/auth/tokens
    Content-Type:application/json

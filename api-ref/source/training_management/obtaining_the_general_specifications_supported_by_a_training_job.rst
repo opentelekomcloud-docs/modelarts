@@ -52,10 +52,10 @@ Response Parameters
    +=============+================================================================================================+=====================================================+
    | total_count | Integer                                                                                        | Total number of resource flavors of a training job. |
    +-------------+------------------------------------------------------------------------------------------------+-----------------------------------------------------+
-   | flavors     | Array of :ref:`FlavorResponse <en-us_topic_0000001909848160__response_flavorresponse>` objects | List of resource flavors of a training job.         |
+   | flavors     | Array of :ref:`FlavorResponse <en-us_topic_0000002079045733__response_flavorresponse>` objects | List of resource flavors of a training job.         |
    +-------------+------------------------------------------------------------------------------------------------+-----------------------------------------------------+
 
-.. _en-us_topic_0000001909848160__response_flavorresponse:
+.. _en-us_topic_0000002079045733__response_flavorresponse:
 
 .. table:: **Table 4** FlavorResponse
 
@@ -74,14 +74,14 @@ Response Parameters
    |                       |                                                                                |                                               |
    |                       |                                                                                | -  **GPU**                                    |
    +-----------------------+--------------------------------------------------------------------------------+-----------------------------------------------+
-   | billing               | :ref:`billing <en-us_topic_0000001909848160__response_billing>` object         | Billing information of a resource flavor.     |
+   | billing               | :ref:`billing <en-us_topic_0000002079045733__response_billing>` object         | Billing information of a resource flavor.     |
    +-----------------------+--------------------------------------------------------------------------------+-----------------------------------------------+
-   | flavor_info           | :ref:`flavor_info <en-us_topic_0000001909848160__response_flavor_info>` object | Resource flavor details.                      |
+   | flavor_info           | :ref:`flavor_info <en-us_topic_0000002079045733__response_flavor_info>` object | Resource flavor details.                      |
    +-----------------------+--------------------------------------------------------------------------------+-----------------------------------------------+
    | attributes            | Map<String,String>                                                             | Other specification attributes.               |
    +-----------------------+--------------------------------------------------------------------------------+-----------------------------------------------+
 
-.. _en-us_topic_0000001909848160__response_billing:
+.. _en-us_topic_0000002079045733__response_billing:
 
 .. table:: **Table 5** billing
 
@@ -92,7 +92,7 @@ Response Parameters
    unit_num  Integer Number of billing units.
    ========= ======= ========================
 
-.. _en-us_topic_0000001909848160__response_flavor_info:
+.. _en-us_topic_0000002079045733__response_flavor_info:
 
 .. table:: **Table 6** flavor_info
 
@@ -101,18 +101,18 @@ Response Parameters
    +===========+======================================================================+=====================================================================================================================+
    | max_num   | Integer                                                              | Maximum number of nodes that can be selected. The value **1** indicates that the distributed mode is not supported. |
    +-----------+----------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
-   | cpu       | :ref:`cpu <en-us_topic_0000001909848160__response_cpu>` object       | CPU specifications.                                                                                                 |
+   | cpu       | :ref:`cpu <en-us_topic_0000002079045733__response_cpu>` object       | CPU specifications.                                                                                                 |
    +-----------+----------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
-   | gpu       | :ref:`gpu <en-us_topic_0000001909848160__response_gpu>` object       | GPU specifications.                                                                                                 |
+   | gpu       | :ref:`gpu <en-us_topic_0000002079045733__response_gpu>` object       | GPU specifications.                                                                                                 |
    +-----------+----------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
-   | npu       | :ref:`npu <en-us_topic_0000001909848160__response_npu>` object       | Ascend specifications                                                                                               |
+   | npu       | :ref:`npu <en-us_topic_0000002079045733__response_npu>` object       | Ascend specifications                                                                                               |
    +-----------+----------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
-   | memory    | :ref:`memory <en-us_topic_0000001909848160__response_memory>` object | Memory information.                                                                                                 |
+   | memory    | :ref:`memory <en-us_topic_0000002079045733__response_memory>` object | Memory information.                                                                                                 |
    +-----------+----------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
-   | disk      | :ref:`disk <en-us_topic_0000001909848160__response_disk>` object     | Disk information.                                                                                                   |
+   | disk      | :ref:`disk <en-us_topic_0000002079045733__response_disk>` object     | Disk information.                                                                                                   |
    +-----------+----------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909848160__response_cpu:
+.. _en-us_topic_0000002079045733__response_cpu:
 
 .. table:: **Table 7** cpu
 
@@ -123,7 +123,7 @@ Response Parameters
    core_num  Integer Number of cores.
    ========= ======= =================
 
-.. _en-us_topic_0000001909848160__response_gpu:
+.. _en-us_topic_0000002079045733__response_gpu:
 
 .. table:: **Table 8** gpu
 
@@ -135,7 +135,7 @@ Response Parameters
    memory       String  Memory.
    ============ ======= ===============
 
-.. _en-us_topic_0000001909848160__response_npu:
+.. _en-us_topic_0000002079045733__response_npu:
 
 .. table:: **Table 9** npu
 
@@ -147,7 +147,7 @@ Response Parameters
    memory       String Memory.
    ============ ====== ===============
 
-.. _en-us_topic_0000001909848160__response_memory:
+.. _en-us_topic_0000002079045733__response_memory:
 
 .. table:: **Table 10** memory
 
@@ -158,7 +158,7 @@ Response Parameters
    unit      String  Memory size
    ========= ======= ============
 
-.. _en-us_topic_0000001909848160__response_disk:
+.. _en-us_topic_0000002079045733__response_disk:
 
 .. table:: **Table 11** disk
 

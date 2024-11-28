@@ -1,16 +1,16 @@
-:original_name: topic_300000003.html
+:original_name: workload_management.html
 
-.. _topic_300000003:
+.. _workload_management:
 
 Resource Pool Job Management
 ============================
 
--  :ref:`Querying the dedicated resource pool Job List <listworkloads>`
--  :ref:`Querying dedicated resource pool Job Statistics <showworkloadstatistics>`
+-  :ref:`Obtaining Jobs in a Dedicated Resource Pool <listworkloads>`
+-  :ref:`Obtaining Statistics About Dedicated Resource Pool Jobs <showworkloadstatistics>`
 
 .. toctree::
    :maxdepth: 1
    :hidden: 
 
-   querying_the_dedicated_resource_pool_job_list
-   querying_dedicated_resource_pool_job_statistics
+   obtaining_jobs_in_a_dedicated_resource_pool
+   obtaining_statistics_about_dedicated_resource_pool_jobs

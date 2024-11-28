@@ -40,10 +40,10 @@ Response Parameters
    +===========+==============================================================================+=======================================+
    | total     | Integer                                                                      | Total number of training job engines. |
    +-----------+------------------------------------------------------------------------------+---------------------------------------+
-   | items     | Array of :ref:`items <en-us_topic_0000001910008144__response_items>` objects | List of engine specifications.        |
+   | items     | Array of :ref:`items <en-us_topic_0000002042806772__response_items>` objects | List of engine specifications.        |
    +-----------+------------------------------------------------------------------------------+---------------------------------------+
 
-.. _en-us_topic_0000001910008144__response_items:
+.. _en-us_topic_0000002042806772__response_items:
 
 .. table:: **Table 3** items
 
@@ -60,10 +60,10 @@ Response Parameters
    +----------------+------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
    | run_user       | String                                                                       | User UID started by default by the engine.                                                                               |
    +----------------+------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
-   | image_info     | :ref:`image_info <en-us_topic_0000001910008144__response_image_info>` object | Engine information.                                                                                                      |
+   | image_info     | :ref:`image_info <en-us_topic_0000002042806772__response_image_info>` object | Engine information.                                                                                                      |
    +----------------+------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001910008144__response_image_info:
+.. _en-us_topic_0000002042806772__response_image_info:
 
 .. table:: **Table 4** image_info
 
@@ -78,7 +78,7 @@ Response Parameters
 Example Requests
 ----------------
 
-The following shows how to query all public engine specifications of a training job in (only part of the specifications are displayed because there are too many engines).
+The following shows how to query all public engine specifications of a training job (only part of the specifications are displayed because there are too many engines).
 
 .. code-block:: text
 
