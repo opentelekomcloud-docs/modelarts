@@ -110,7 +110,7 @@ html_copy_source = False
 latex_documents = [
     ('index',
      'ma-umn.tex',
-     u'ModelArts - User Guide',
+    u'ModelArts - User Guide',
      u'OpenTelekomCloud', 'manual'),
 ]
 
