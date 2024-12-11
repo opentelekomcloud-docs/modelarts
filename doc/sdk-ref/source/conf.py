@@ -110,7 +110,7 @@ html_copy_source = False
 latex_documents = [
     ('index',
      'ma-sdk-ref.tex',
-     u'ModelArts - ModelArts Software Development Kit (ModelArts SDK)',
+    u'ModelArts - ModelArts Software Development Kit (ModelArts SDK)',
      u'OpenTelekomCloud', 'manual'),
 ]
 

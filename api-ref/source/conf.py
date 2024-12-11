@@ -110,7 +110,7 @@ html_copy_source = False
 latex_documents = [
     ('index',
      'ma-api-ref.tex',
-     u'ModelArts - API Reference',
+    u'ModelArts - API Reference',
      u'OpenTelekomCloud', 'manual'),
 ]
 
