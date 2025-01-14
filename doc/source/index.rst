@@ -8,6 +8,7 @@ ModelArts is a one-stop development platform for AI developers. With distributed
    :class: container-sbv
 
    .. service_card::
+      :environment: internal
       :service_type: ma
       :umn: This document describes basic concepts, functions, key terms, and FAQs of ModelArts and provides instructions for applying for and using ModelArts.
       :api-ref: This document describes application programming interfaces (APIs) of ModelArts and provides API parameter description and example values.
