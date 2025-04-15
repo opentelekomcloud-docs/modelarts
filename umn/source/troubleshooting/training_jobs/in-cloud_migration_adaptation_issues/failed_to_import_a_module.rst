@@ -22,7 +22,7 @@ The following error occurs in the log when a module is imported to a ModelArts t
 
    ImportError: No module named xxx
 
-.. _en-us_topic_0000002043025112__section1237061220324:
+.. _en-us_topic_0000002233899156__section1237061220324:
 
 Possible Cause
 --------------
@@ -48,7 +48,7 @@ Solution
 
 -  When a training job is imported to the module, the previous two error messages are displayed in the log. The solution is as follows:
 
-   #. Ensure that the imported module contains **\__init__.py** used for creating **module_dir**. :ref:`Possible Cause <en-us_topic_0000002043025112__section1237061220324>` provides the code structure.
+   #. Ensure that the imported module contains **\__init__.py** used for creating **module_dir**. :ref:`Possible Cause <en-us_topic_0000002233899156__section1237061220324>` provides the code structure.
 
    #. Because the location of **project_dir** in the container is unknown, use an absolute path by adding **project_dir** to **sys.path** in file **main.py**, and import the following information:
 

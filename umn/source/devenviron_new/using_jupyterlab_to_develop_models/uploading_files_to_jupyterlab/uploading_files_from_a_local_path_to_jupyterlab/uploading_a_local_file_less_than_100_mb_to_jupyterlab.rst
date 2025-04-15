@@ -5,7 +5,7 @@
 Uploading a Local File Less Than 100 MB to JupyterLab
 =====================================================
 
-For a file not exceeding 100 MB, directly upload it to the target notebook instance. Detailed information, such as the file size, upload progress, and upload speed are displayed. You can drag a local file or select a file to upload it.
+For a file not exceeding 100 MB, directly upload it to the target notebook instance. Detailed information, such as the file size, upload progress, and upload speed are displayed. You can drag or select a local file for uploading.
 
 
 .. figure:: /_static/images/en-us_image_0000001856327105.png

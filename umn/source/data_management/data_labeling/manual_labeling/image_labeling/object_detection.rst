@@ -44,7 +44,7 @@ Manually Labeling Images
 
 The labeling job details page displays the **All statuses**, **Unlabeled**, and **Labeled** tabs. The **Unlabeled** tab is displayed by default.
 
-#. In the **Unlabeled** tab, click an image. The system automatically directs you to the page for labeling the image. For details about how to use common buttons on this page, see :ref:`Table 2 <en-us_topic_0000002043180996__en-us_topic_0000001185265231_table194471512463>`.
+#. In the **Unlabeled** tab, click an image. The system automatically directs you to the page for labeling the image. For details about how to use common buttons on this page, see :ref:`Table 2 <en-us_topic_0000002268821389__en-us_topic_0000001185265231_table194471512463>`.
 
 #. In the tool bar, select a proper labeling shape. The default labeling shape is a rectangle. In this example, the rectangle is used for labeling.
 
@@ -78,7 +78,7 @@ The labeling job details page displays the **All statuses**, **Unlabeled**, and 
 
    The selected images are automatically moved to the **Labeled** tab. In the **Unlabeled** and **All statuses** tabs, the labeling information is updated along with the labeling process, including the added label names and the number of images for each label.
 
-.. _en-us_topic_0000002043180996__en-us_topic_0000001185265231_table194471512463:
+.. _en-us_topic_0000002268821389__en-us_topic_0000001185265231_table194471512463:
 
 .. table:: **Table 2** Common icons on the labeling page
 
@@ -216,39 +216,39 @@ If team labeling is enabled for a labeling job, view its labeling details in the
 
    Click **Delete** in the **Operation** column to delete the annotator.
 
-.. |image1| image:: /_static/images/en-us_image_0000002079101785.png
-.. |image2| image:: /_static/images/en-us_image_0000002043181044.png
-.. |image3| image:: /_static/images/en-us_image_0000002079180389.png
-.. |image4| image:: /_static/images/en-us_image_0000002079180409.png
-.. |image5| image:: /_static/images/en-us_image_0000002043181068.png
-.. |image6| image:: /_static/images/en-us_image_0000002043022736.png
-.. |image7| image:: /_static/images/en-us_image_0000002079180381.png
-.. |image8| image:: /_static/images/en-us_image_0000002043181044.png
-.. |image9| image:: /_static/images/en-us_image_0000002079180389.png
-.. |image10| image:: /_static/images/en-us_image_0000002079180409.png
-.. |image11| image:: /_static/images/en-us_image_0000002043181068.png
-.. |image12| image:: /_static/images/en-us_image_0000002043022736.png
-.. |image13| image:: /_static/images/en-us_image_0000002079180381.png
-.. |image14| image:: /_static/images/en-us_image_0000002079101793.png
-.. |image15| image:: /_static/images/en-us_image_0000002079180397.png
-.. |image16| image:: /_static/images/en-us_image_0000002079180373.png
-.. |image17| image:: /_static/images/en-us_image_0000002043022728.png
-.. |image18| image:: /_static/images/en-us_image_0000002043181064.png
-.. |image19| image:: /_static/images/en-us_image_0000002079101813.png
-.. |image20| image:: /_static/images/en-us_image_0000002043181056.png
-.. |image21| image:: /_static/images/en-us_image_0000002043022740.png
-.. |image22| image:: /_static/images/en-us_image_0000002079101793.png
-.. |image23| image:: /_static/images/en-us_image_0000002079180397.png
-.. |image24| image:: /_static/images/en-us_image_0000002079180373.png
-.. |image25| image:: /_static/images/en-us_image_0000002043022728.png
-.. |image26| image:: /_static/images/en-us_image_0000002043181064.png
-.. |image27| image:: /_static/images/en-us_image_0000002079101813.png
-.. |image28| image:: /_static/images/en-us_image_0000002043181056.png
-.. |image29| image:: /_static/images/en-us_image_0000002043022740.png
-.. |image30| image:: /_static/images/en-us_image_0000002043181052.png
-.. |image31| image:: /_static/images/en-us_image_0000002079101817.png
-.. |image32| image:: /_static/images/en-us_image_0000002079180401.png
-.. |image33| image:: /_static/images/en-us_image_0000002043181040.png
-.. |image34| image:: /_static/images/en-us_image_0000002079101805.png
-.. |image35| image:: /_static/images/en-us_image_0000002043022724.png
-.. |image36| image:: /_static/images/en-us_image_0000002079101801.png
+.. |image1| image:: /_static/images/en-us_image_0000002268741685.png
+.. |image2| image:: /_static/images/en-us_image_0000002268741665.png
+.. |image3| image:: /_static/images/en-us_image_0000002268741725.png
+.. |image4| image:: /_static/images/en-us_image_0000002233902284.png
+.. |image5| image:: /_static/images/en-us_image_0000002268821617.png
+.. |image6| image:: /_static/images/en-us_image_0000002268741701.png
+.. |image7| image:: /_static/images/en-us_image_0000002268821501.png
+.. |image8| image:: /_static/images/en-us_image_0000002268741665.png
+.. |image9| image:: /_static/images/en-us_image_0000002268741725.png
+.. |image10| image:: /_static/images/en-us_image_0000002233902284.png
+.. |image11| image:: /_static/images/en-us_image_0000002268821617.png
+.. |image12| image:: /_static/images/en-us_image_0000002268741701.png
+.. |image13| image:: /_static/images/en-us_image_0000002268821501.png
+.. |image14| image:: /_static/images/en-us_image_0000002268741621.png
+.. |image15| image:: /_static/images/en-us_image_0000002268821609.png
+.. |image16| image:: /_static/images/en-us_image_0000002233902208.png
+.. |image17| image:: /_static/images/en-us_image_0000002233742424.png
+.. |image18| image:: /_static/images/en-us_image_0000002268821573.png
+.. |image19| image:: /_static/images/en-us_image_0000002233742348.png
+.. |image20| image:: /_static/images/en-us_image_0000002268821601.png
+.. |image21| image:: /_static/images/en-us_image_0000002268741569.png
+.. |image22| image:: /_static/images/en-us_image_0000002268741621.png
+.. |image23| image:: /_static/images/en-us_image_0000002268821609.png
+.. |image24| image:: /_static/images/en-us_image_0000002233902208.png
+.. |image25| image:: /_static/images/en-us_image_0000002233742424.png
+.. |image26| image:: /_static/images/en-us_image_0000002268821573.png
+.. |image27| image:: /_static/images/en-us_image_0000002233742348.png
+.. |image28| image:: /_static/images/en-us_image_0000002268821601.png
+.. |image29| image:: /_static/images/en-us_image_0000002268741569.png
+.. |image30| image:: /_static/images/en-us_image_0000002233902180.png
+.. |image31| image:: /_static/images/en-us_image_0000002268741705.png
+.. |image32| image:: /_static/images/en-us_image_0000002233742320.png
+.. |image33| image:: /_static/images/en-us_image_0000002233742296.png
+.. |image34| image:: /_static/images/en-us_image_0000002268821585.png
+.. |image35| image:: /_static/images/en-us_image_0000002268821545.png
+.. |image36| image:: /_static/images/en-us_image_0000002233902152.png

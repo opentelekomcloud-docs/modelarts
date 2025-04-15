@@ -69,4 +69,4 @@ ModelArts integrates open-source JupyterLab for online interactive development a
 
 JupyterLab is an interactive development environment. It is the next-generation product of Jupyter Notebook. JupyterLab enables you to compile notebooks, operate terminals, edit Markdown text, enable interaction, and view CSV files and images.
 
-.. |image1| image:: /_static/images/en-us_image_0000002043019696.png
+.. |image1| image:: /_static/images/en-us_image_0000002268743113.png

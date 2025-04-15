@@ -37,9 +37,9 @@ Create a labeling job based on the dataset type. ModelArts supports the followin
 Dataset Functions
 -----------------
 
-Dataset functions vary depending on dataset types. For details, see :ref:`Table 1 <en-us_topic_0000002079101737__table475114812297>`.
+Dataset functions vary depending on dataset types. For details, see :ref:`Table 1 <en-us_topic_0000002268741501__table475114812297>`.
 
-.. _en-us_topic_0000002079101737__table475114812297:
+.. _en-us_topic_0000002268741501__table475114812297:
 
 .. table:: **Table 1** Functions supported by different types of datasets
 

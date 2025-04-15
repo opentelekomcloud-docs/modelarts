@@ -35,18 +35,18 @@ The labeling job details page displays the **Unlabeled**, **Labeled**, and **All
 
 #. Play the video. When the video is played to the time point to be labeled, click the pause button in the progress bar to pause the video to a specific image.
 
-#. .. _en-us_topic_0000002043181000__en-us_topic_0000001185265235_li993163014399:
+#. .. _en-us_topic_0000002233742184__en-us_topic_0000001185265235_li993163014399:
 
    In the upper pane, select a bounding box. By default, a rectangular box is selected. Drag the mouse to select an object in the video image, enter a new label name in the displayed **Add Label** text box, select a label color, and click **Add** to label the object. Alternatively, select an existing label from the drop-down list and click **Add** to label the object. Label all objects in the image. Multiple labels can be added to an image.
 
-   The supported labeling boxes are the same as those for object detection. For details, see :ref:`Table 2 <en-us_topic_0000002043180996__en-us_topic_0000001185265231_table194471512463>`.
+   The supported labeling boxes are the same as those for object detection. For details, see :ref:`Table 2 <en-us_topic_0000002268821389__en-us_topic_0000001185265231_table194471512463>`.
 
-#. After the previous image is labeled, click the play button on the progress bar to resume the playback. Then, repeat :ref:`3 <en-us_topic_0000002043181000__en-us_topic_0000001185265235_li993163014399>` to complete labeling on the entire video.
+#. After the previous image is labeled, click the play button on the progress bar to resume the playback. Then, repeat :ref:`3 <en-us_topic_0000002233742184__en-us_topic_0000001185265235_li993163014399>` to complete labeling on the entire video.
 
    Click **Label List** in the upper right corner of the page. The time points when the video is labeled are displayed.
 
 
-   .. figure:: /_static/images/en-us_image_0000002043022744.png
+   .. figure:: /_static/images/en-us_image_0000002268821461.png
       :alt: **Figure 1** File labels
 
       **Figure 1** File labels

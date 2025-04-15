@@ -16,4 +16,4 @@ Creation Failed/Change Failed
 
       By default, failed task records are sorted by application time. A maximum of 500 failed task records can be displayed and retained for three days.
 
-.. |image1| image:: /_static/images/en-us_image_0000002079177889.png
+.. |image1| image:: /_static/images/en-us_image_0000002268819165.png

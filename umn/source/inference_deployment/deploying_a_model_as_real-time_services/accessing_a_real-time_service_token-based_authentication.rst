@@ -7,11 +7,11 @@ Accessing a Real-Time Service (Token-based Authentication)
 
 If a real-time service is in the **Running** state, the real-time service has been deployed successfully. This service provides a standard RESTful API for users to call. Before integrating the API to the production environment, commission the API. You can use the following methods to send an inference request to the real-time service:
 
--  :ref:`Method 1: Use GUI-based Software for Inference (Postman) <en-us_topic_0000002043024868__en-us_topic_0000001846055993_en-us_topic_0165025308_section959354162911>`. (Postman is recommended for Windows.)
--  :ref:`Method 2: Run the cURL Command to Send an Inference Request <en-us_topic_0000002043024868__en-us_topic_0000001846055993_en-us_topic_0165025308_section104131434203114>` (curl commands are recommended for Linux.)
--  :ref:`Method 3: Use a Python Script to Send an Inference Request <en-us_topic_0000002043024868__en-us_topic_0000001846055993_en-us_topic_0165025308_section7639154514230>`.
+-  :ref:`Method 1: Use GUI-based Software for Inference (Postman) <en-us_topic_0000002268821773__en-us_topic_0000001846055993_en-us_topic_0165025308_section959354162911>`. (Postman is recommended for Windows.)
+-  :ref:`Method 2: Run the cURL Command to Send an Inference Request <en-us_topic_0000002268821773__en-us_topic_0000001846055993_en-us_topic_0165025308_section104131434203114>` (curl commands are recommended for Linux.)
+-  :ref:`Method 3: Use a Python Script to Send an Inference Request <en-us_topic_0000002268821773__en-us_topic_0000001846055993_en-us_topic_0165025308_section7639154514230>`.
 
-.. _en-us_topic_0000002043024868__en-us_topic_0000001846055993_en-us_topic_0165025308_section959354162911:
+.. _en-us_topic_0000002268821773__en-us_topic_0000001846055993_en-us_topic_0165025308_section959354162911:
 
 Method 1: Use GUI-based Software for Inference (Postman)
 --------------------------------------------------------
@@ -25,7 +25,7 @@ Method 1: Use GUI-based Software for Inference (Postman)
 
       -  **File input**
 
-         Select **form-data**. Set **KEY** to the input parameter of the AI application, for example, **images**. Set **VALUE** to an image to be inferred (only one image can be inferred).
+         Select **form-data**. Set **KEY** to the input parameter of the model, for example, **images**. Set **VALUE** to an image to be inferred (only one image can be inferred).
 
       -  **Text input**
 
@@ -49,14 +49,14 @@ Method 1: Use GUI-based Software for Inference (Postman)
               }
             }
 
-         **meta** can carry a universally unique identifier (UUID). When you call an API, the system provides a UUID. When the inference result is returned, the UUID is returned to trace the request. If you do not need this function, leave **meta** blank. **data** contains a **req_data** array for one or multiple pieces of input data. The parameters of each piece of data are determined by the AI application, such as **sepal_length** and **sepal_width** in this example.
+         **meta** can carry a universally unique identifier (UUID). When you call an API, the system provides a UUID. When the inference result is returned, the UUID is returned to trace the request. If you do not need this function, leave **meta** blank. **data** contains a **req_data** array for one or multiple pieces of input data. The parameters of each piece of data are determined by the model, such as **sepal_length** and **sepal_width** in this example.
 
 #. After setting the parameters, click **send** to send the request. The result will be displayed in **Response**.
 
-   -  Inference result using file input: The field values in the return result vary with the AI application.
-   -  Inference result using text input: The request body contains **meta** and **data**. If the request contains **uuid**, **uuid** will be returned in the response. Otherwise, **uuid** is left blank. **data** contains a **resp_data** array for the inference results of one or multiple pieces of input data. The parameters of each result are determined by the AI application, for example, **sepal_length** and **predictresult** in this example.
+   -  Inference result using file input: The field values in the return result vary with the model.
+   -  Inference result using text input: The request body contains **meta** and **data**. If the request contains **uuid**, **uuid** will be returned in the response. Otherwise, **uuid** is left blank. **data** contains a **resp_data** array for the inference results of one or multiple pieces of input data. The parameters of each result are determined by the model, for example, **sepal_length** and **predictresult** in this example.
 
-.. _en-us_topic_0000002043024868__en-us_topic_0000001846055993_en-us_topic_0165025308_section104131434203114:
+.. _en-us_topic_0000002268821773__en-us_topic_0000001846055993_en-us_topic_0165025308_section104131434203114:
 
 Method 2: Run the cURL Command to Send an Inference Request
 -----------------------------------------------------------
@@ -88,7 +88,7 @@ The command for sending inference requests can be input as a file or text.
 
    **-d** indicates the text input of the request body.
 
-.. _en-us_topic_0000002043024868__en-us_topic_0000001846055993_en-us_topic_0165025308_section7639154514230:
+.. _en-us_topic_0000002268821773__en-us_topic_0000001846055993_en-us_topic_0165025308_section7639154514230:
 
 Method 3: Use a Python Script to Send an Inference Request
 ----------------------------------------------------------

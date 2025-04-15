@@ -2,18 +2,18 @@
 
 .. _modelarts_13_0212:
 
-Error Occurred When a Created AI Application Is Deployed as a Service
-=====================================================================
+Error Occurred When a Created Model Is Deployed as a Service
+============================================================
 
 Symptom
 -------
 
-After an AI application is created, an error occurred when it is deployed as a service.
+After a model is created, an error occurred when it is deployed as a service.
 
 Possible Causes
 ---------------
 
-When an AI application is imported using a custom or base image, many service logics are customized. Any error in the logics will result in a service deployment or prediction failure.
+When a model is imported using a custom or base image, many service logics are customized. Any error in the logics will result in a service deployment or prediction failure.
 
 Solution
 --------

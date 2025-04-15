@@ -8,7 +8,7 @@ Failed to Obtain Certain Logs on the ModelArts Log Query Page
 Symptom
 -------
 
-I used a base image to import AI applications through OBS and wrote some inference code for implementing the inference logic. After an error occurred, I attempted to use the fault logs to locate the fault. However, certain logs were not displayed on the log query page on ModelArts.
+I used a base image to import models through OBS and wrote some inference code for implementing the inference logic. After an error occurred, I attempted to use the fault logs to locate the fault. However, certain logs were not displayed on the log query page on ModelArts.
 
 Possible Causes
 ---------------

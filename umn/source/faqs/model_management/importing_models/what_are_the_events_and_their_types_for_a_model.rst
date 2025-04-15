@@ -2,12 +2,12 @@
 
 .. _modelarts_06_0008:
 
-What Are the Events and Their Types for an AI application?
-==========================================================
+What Are the Events and Their Types for a Model?
+================================================
 
-During the creation of an AI application, every key event is automatically recorded. You can view the events on the details page of the AI application at any time.
+During the creation of a model, every key event is automatically recorded. You can view the events on the details page of the model at any time.
 
-The following table lists the events, based on which you can locate faults occurred during AI application creation.
+The following table lists the events, based on which you can locate faults occurred during model creation.
 
 +----------+-------------------------------------------------------------------------------------------------------------------------+
 | Type     | Event (*xxx* should be replaced with the actual value.)                                                                 |
@@ -101,10 +101,10 @@ The following table lists the events, based on which you can locate faults occur
 | Abnormal | Failed to calculate the model size. More than one *xxx* model file is stored in path *xxx*.                             |
 +----------+-------------------------------------------------------------------------------------------------------------------------+
 
-During AI application creation, key events can both be manually and automatically refreshed.
+During model creation, key events can both be manually and automatically refreshed.
 
 Viewing Events
 --------------
 
-#. In the navigation pane of the ModelArts management console, choose **AI Application Management** > **AI Applications**. In the AI application list, click the name of the target AI application to go to its details page.
+#. In the navigation pane of the ModelArts management console, choose **Model Management (AI Applications)**. In the model list, click the name of the target model to go to its details page.
 #. View the events on the **Events** tab page.

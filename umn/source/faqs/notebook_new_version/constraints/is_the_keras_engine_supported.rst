@@ -17,7 +17,7 @@ How Do I View Keras Versions?
 #. Access the notebook instance. In JupyterLab, run **!pip list** to view Keras versions.
 
 
-   .. figure:: /_static/images/en-us_image_0000002079183533.png
+   .. figure:: /_static/images/en-us_image_0000002268741669.png
       :alt: **Figure 1** Viewing Keras versions
 
       **Figure 1** Viewing Keras versions

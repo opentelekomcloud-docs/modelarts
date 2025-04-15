@@ -354,7 +354,7 @@ The **caffemodel** file is generated after model training. Rewrite the **lenet_t
 Inference Code
 --------------
 
-In the model inference code file **customize_service.py**, add a child model class which inherits properties from its parent model class. For details about the import statements of different types of parent model classes, see :ref:`Table 1 <en-us_topic_0000002079182509__en-us_topic_0172466150_table55021545175412>`.
+In the model inference code file **customize_service.py**, add a child model class which inherits properties from its parent model class. For details about the import statements of different types of parent model classes, see :ref:`Table 1 <en-us_topic_0000002233742604__en-us_topic_0172466150_table55021545175412>`.
 
 ::
 

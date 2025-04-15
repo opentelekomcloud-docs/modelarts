@@ -36,11 +36,11 @@ Testing a Service
 
    #. After the model is deployed, test the service using an image. On the **ExeML** page, click the target project, go to the **Deploy Service** tab page, select the service version in the **Running** status, click **Upload** in the service test area, and upload a local image to perform the test.
 
-   #. Click **Prediction** to conduct the test. After the prediction is complete, label **sunflowers** and its detection score are displayed in the prediction result area on the right. If the model accuracy does not meet your expectation, add images on the **Label Data** tab page, label the images, and train and deploy the model again. :ref:`Table 1 <en-us_topic_0000002079102981__en-us_topic_0000001799338028_en-us_topic_0284258836_en-us_topic_0169446156_table27341946101510>` describes the parameters in the prediction result. If you are satisfied with the model prediction result, call the API to access the real-time service as prompted. For details, see "Accessing a Real-Time Service".
+   #. Click **Prediction** to conduct the test. After the prediction is complete, label **sunflowers** and its detection score are displayed in the prediction result area on the right. If the model accuracy does not meet your expectation, add images on the **Label Data** tab page, label the images, and train and deploy the model again. :ref:`Table 1 <en-us_topic_0000002233744676__en-us_topic_0000001799338028_en-us_topic_0284258836_en-us_topic_0169446156_table27341946101510>` describes the parameters in the prediction result. If you are satisfied with the model prediction result, call the API to access the real-time service as prompted. For details, see "Accessing a Real-Time Service".
 
       Currently, only JPG, JPEG, BMP, and PNG images are supported.
 
-      .. _en-us_topic_0000002079102981__en-us_topic_0000001799338028_en-us_topic_0284258836_en-us_topic_0169446156_table27341946101510:
+      .. _en-us_topic_0000002233744676__en-us_topic_0000001799338028_en-us_topic_0284258836_en-us_topic_0169446156_table27341946101510:
 
       .. table:: **Table 1** Parameters in the prediction result
 

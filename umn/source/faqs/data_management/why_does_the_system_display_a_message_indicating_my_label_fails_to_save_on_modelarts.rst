@@ -23,4 +23,4 @@ Solution
 -  Switch to a stable network and try again.
 -  Initialize the network configuration. To do so, start **cmd** as the administrator, run the **netsh winsock reset** command, and restart the computer. Then, log in to the data labeling platform again.
 
-.. |image1| image:: /_static/images/en-us_image_0000002079104885.png
+.. |image1| image:: /_static/images/en-us_image_0000002233902348.png

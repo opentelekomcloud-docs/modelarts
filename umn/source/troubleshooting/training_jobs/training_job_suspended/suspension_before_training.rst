@@ -49,5 +49,5 @@ Add the following environment variables:
 
 For more details, see https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/env.html#nccl-ib-timeout.
 
-.. |image1| image:: /_static/images/en-us_image_0000002043183612.jpg
-.. |image2| image:: /_static/images/en-us_image_0000002043025292.jpg
+.. |image1| image:: /_static/images/en-us_image_0000002268820341.jpg
+.. |image2| image:: /_static/images/en-us_image_0000002268740421.jpg

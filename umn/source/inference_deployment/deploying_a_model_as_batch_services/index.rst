@@ -2,8 +2,8 @@
 
 .. _inference-modelarts-0039:
 
-Deploying AI Applications as Batch Services
-===========================================
+Deploying a Model as Batch Services
+===================================
 
 -  :ref:`Deploying as a Batch Service <inference-modelarts-0040>`
 -  :ref:`Viewing the Batch Service Prediction Result <inference-modelarts-0041>`

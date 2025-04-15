@@ -12,9 +12,9 @@ Due to the limitation of API Gateway, the duration of a single prediction in Mod
 Specifications for Writing Inference Code
 -----------------------------------------
 
-#. In the model inference code file **customize_service.py**, add a child model class. This child model class inherits properties from its parent model class. For details about the import statements of different types of parent model classes, see :ref:`Table 1 <en-us_topic_0000002079182509__en-us_topic_0172466150_table55021545175412>`.
+#. In the model inference code file **customize_service.py**, add a child model class. This child model class inherits properties from its parent model class. For details about the import statements of different types of parent model classes, see :ref:`Table 1 <en-us_topic_0000002233742604__en-us_topic_0172466150_table55021545175412>`.
 
-   .. _en-us_topic_0000002079182509__en-us_topic_0172466150_table55021545175412:
+   .. _en-us_topic_0000002233742604__en-us_topic_0172466150_table55021545175412:
 
    .. table:: **Table 1** Import statements of different types of parent model classes
 
@@ -49,9 +49,9 @@ Specifications for Writing Inference Code
    .. note::
 
       -  You can override the preprocess and postprocess methods for preprocessing the API input and postprocessing the inference output.
-      -  Overriding the init method of the parent model class may cause an AI application to run abnormally.
+      -  Overriding the init method of the parent model class may cause a model to run abnormally.
 
-#. .. _en-us_topic_0000002079182509__en-us_topic_0172466150_li135956421288:
+#. .. _en-us_topic_0000002233742604__en-us_topic_0172466150_li135956421288:
 
    The attribute that can be used is the local path where the model resides. The attribute name is **self.model_path**. In addition, PySpark-based models can use **self.spark** to obtain the SparkSession object in **customize_service.py**.
 
@@ -177,7 +177,7 @@ The preceding sample code resizes images imported to the user's form to adapt to
 Inference Script Example of Custom Inference Logic
 --------------------------------------------------
 
-Customize a dependency package in the configuration file by referring to :ref:`Example of a Model Configuration File Using a Custom Dependency Package <en-us_topic_0000002079182513__en-us_topic_0172466149_section119911955122011>`. Then, use the following code example to load the model in **saved_model** format for inference.
+Customize a dependency package in the configuration file by referring to :ref:`Example of a Model Configuration File Using a Custom Dependency Package <en-us_topic_0000002268821749__en-us_topic_0172466149_section119911955122011>`. Then, use the following code example to load the model in **saved_model** format for inference.
 
 .. note::
 

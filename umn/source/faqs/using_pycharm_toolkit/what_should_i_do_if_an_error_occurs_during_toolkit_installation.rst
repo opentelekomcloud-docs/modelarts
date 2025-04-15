@@ -11,7 +11,7 @@ Issue
 The following error message is displayed during Toolkit installation.
 
 
-.. figure:: /_static/images/en-us_image_0000002079183477.png
+.. figure:: /_static/images/en-us_image_0000002268741721.png
    :alt: **Figure 1** Error
 
    **Figure 1** Error

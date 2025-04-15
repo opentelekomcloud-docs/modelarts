@@ -39,7 +39,7 @@ ModelArts.3567: You can access only the OBS path under your own account. To read
 Log in to the ModelArts management console. In the navigation pane, choose **Settings**. Click **View Permissions** to check whether the OBS agency permission is configured.
 
 
-.. figure:: /_static/images/en-us_image_0000002043183716.png
+.. figure:: /_static/images/en-us_image_0000002233899864.png
    :alt: **Figure 1** Viewing permissions
 
    **Figure 1** Viewing permissions

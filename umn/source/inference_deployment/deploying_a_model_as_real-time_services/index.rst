@@ -2,8 +2,8 @@
 
 .. _inference-modelarts-0016:
 
-Deploying AI Applications as Real-Time Services
-===============================================
+Deploying a Model as Real-Time Services
+=======================================
 
 -  :ref:`Deploying as a Real-Time Service <inference-modelarts-0018>`
 -  :ref:`Viewing Service Details <inference-modelarts-0019>`

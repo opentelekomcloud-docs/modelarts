@@ -20,4 +20,4 @@ Solution
 
 Close the displayed dialog box, view the error information in **OUTPUT**, and rectify the fault by referring to the troubleshooting methods provided in the following sections.
 
-.. |image1| image:: /_static/images/en-us_image_0000002079104993.png
+.. |image1| image:: /_static/images/en-us_image_0000002233902360.png

@@ -11,7 +11,7 @@ Symptom
 Message "Error: stat:403" is displayed when I use mox.file.copy_parallel in ModelArts to perform operations on OBS.
 
 
-.. figure:: /_static/images/en-us_image_0000002043184244.png
+.. figure:: /_static/images/en-us_image_0000002268740489.png
    :alt: **Figure 1** Error message
 
    **Figure 1** Error message
@@ -33,7 +33,7 @@ If you access the OBS bucket using an IAM user account, contact the tenant accou
 -  For cause 2, log in to the OBS console, search for the target OBS bucket, and click the bucket name to go to the **Overview** page. In the left navigation pane, choose **Permissions** > **Bucket ACLs**. On the **Bucket ACLs** page that is displayed, check whether the current account has the read and write permissions. If it does not, contact the bucket owner to grant the permissions.
 
 
-   .. figure:: /_static/images/en-us_image_0000002043025908.png
+   .. figure:: /_static/images/en-us_image_0000002233741196.png
       :alt: **Figure 2** Bucket ACLs
 
       **Figure 2** Bucket ACLs

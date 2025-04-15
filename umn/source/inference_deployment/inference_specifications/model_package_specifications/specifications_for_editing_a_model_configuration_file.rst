@@ -10,9 +10,9 @@ You must edit a configuration file **config.json** when publishing a model. The 
 Configuration File Format
 -------------------------
 
-The configuration file is in JSON format. :ref:`Table 1 <en-us_topic_0000002079182513__en-us_topic_0172466149_table7143191919436>` describes the parameters.
+The configuration file is in JSON format. :ref:`Table 1 <en-us_topic_0000002268821749__en-us_topic_0172466149_table7143191919436>` describes the parameters.
 
-.. _en-us_topic_0000002079182513__en-us_topic_0172466149_table7143191919436:
+.. _en-us_topic_0000002268821749__en-us_topic_0172466149_table7143191919436:
 
 .. table:: **Table 1** Parameters
 
@@ -71,7 +71,7 @@ The configuration file is in JSON format. :ref:`Table 1 <en-us_topic_00000020791
    | accuracy  | No        | Number | Accuracy. The value is rounded to 17 decimal places.  |
    +-----------+-----------+--------+-------------------------------------------------------+
 
-.. _en-us_topic_0000002079182513__en-us_topic_0172466149_table1683418482455:
+.. _en-us_topic_0000002268821749__en-us_topic_0172466149_table1683418482455:
 
 .. table:: **Table 3** **api** data structure description
 
@@ -82,12 +82,12 @@ The configuration file is in JSON format. :ref:`Table 1 <en-us_topic_00000020791
    +-----------+-----------+--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | method    | No        | String | Request method. The default value is **POST**.                                                                                                                                                                                                                             |
    +-----------+-----------+--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | request   | No        | Object | Request body. For details, see :ref:`Table 4 <en-us_topic_0000002079182513__en-us_topic_0172466149_table332913335466>`.                                                                                                                                                    |
+   | request   | No        | Object | Request body. For details, see :ref:`Table 4 <en-us_topic_0000002268821749__en-us_topic_0172466149_table332913335466>`.                                                                                                                                                    |
    +-----------+-----------+--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | response  | No        | Object | Response body. For details, see :ref:`Table 5 <en-us_topic_0000002079182513__en-us_topic_0172466149_table17521240184711>`.                                                                                                                                                 |
+   | response  | No        | Object | Response body. For details, see :ref:`Table 5 <en-us_topic_0000002268821749__en-us_topic_0172466149_table17521240184711>`.                                                                                                                                                 |
    +-----------+-----------+--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002079182513__en-us_topic_0172466149_table332913335466:
+.. _en-us_topic_0000002268821749__en-us_topic_0172466149_table332913335466:
 
 .. table:: **Table 4** **request** structure description
 
@@ -110,7 +110,7 @@ The configuration file is in JSON format. :ref:`Table 1 <en-us_topic_00000020791
    |                 | Yes for batch services    |                 |                                                                                        |
    +-----------------+---------------------------+-----------------+----------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002079182513__en-us_topic_0172466149_table17521240184711:
+.. _en-us_topic_0000002268821749__en-us_topic_0172466149_table17521240184711:
 
 .. table:: **Table 5** **response** structure description
 
@@ -128,7 +128,7 @@ The configuration file is in JSON format. :ref:`Table 1 <en-us_topic_00000020791
    |                 | Yes for batch services    |                 |                                                                                        |
    +-----------------+---------------------------+-----------------+----------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002079182513__en-us_topic_0172466149_table13709813144819:
+.. _en-us_topic_0000002268821749__en-us_topic_0172466149_table13709813144819:
 
 .. table:: **Table 6** **dependency** array description
 
@@ -137,10 +137,10 @@ The configuration file is in JSON format. :ref:`Table 1 <en-us_topic_00000020791
    +===========+===========+===================+===========================================================================================================================================================================+
    | installer | Yes       | String            | Installation method. Only **pip** is supported.                                                                                                                           |
    +-----------+-----------+-------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | packages  | Yes       | **package** array | Dependency package collection. For details about the package structure array, see :ref:`Table 7 <en-us_topic_0000002079182513__en-us_topic_0172466149_table47885356482>`. |
+   | packages  | Yes       | **package** array | Dependency package collection. For details about the package structure array, see :ref:`Table 7 <en-us_topic_0000002268821749__en-us_topic_0172466149_table47885356482>`. |
    +-----------+-----------+-------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002079182513__en-us_topic_0172466149_table47885356482:
+.. _en-us_topic_0000002268821749__en-us_topic_0172466149_table47885356482:
 
 .. table:: **Table 7** **package** array description
 
@@ -163,7 +163,7 @@ The configuration file is in JSON format. :ref:`Table 1 <en-us_topic_00000020791
    |                 |                 |                 |       -  If there is no specific requirement on the version, retain only the **package_name** parameter and leave **restraint** and **package_version** blank.                      |
    +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002079182513__en-us_topic_0172466149_table115896191852:
+.. _en-us_topic_0000002268821749__en-us_topic_0172466149_table115896191852:
 
 .. table:: **Table 8** **health** data structure description
 
@@ -179,7 +179,7 @@ The configuration file is in JSON format. :ref:`Table 1 <en-us_topic_00000020791
    | timeout_seconds       | No        | String | Health check timeout duration in the unit of second. This parameter cannot be left blank.                  |
    +-----------------------+-----------+--------+------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002079182513__section9498141310396:
+.. _en-us_topic_0000002268821749__section9498141310396:
 
 Code Example of apis Parameters
 -------------------------------
@@ -218,7 +218,7 @@ Code Example of apis Parameters
        }
    }]
 
-.. _en-us_topic_0000002079182513__en-us_topic_0172466149_section218715919415:
+.. _en-us_topic_0000002268821749__en-us_topic_0172466149_section218715919415:
 
 Example of an Object Detection Model Configuration File
 -------------------------------------------------------
@@ -569,7 +569,7 @@ The following code uses the TensorFlow engine as an example. You can modify the 
 Example of a Custom Image Model Configuration File
 --------------------------------------------------
 
-The model input and output are similar to those in :ref:`Example of an Object Detection Model Configuration File <en-us_topic_0000002079182513__en-us_topic_0172466149_section218715919415>`.
+The model input and output are similar to those in :ref:`Example of an Object Detection Model Configuration File <en-us_topic_0000002268821749__en-us_topic_0172466149_section218715919415>`.
 
 -  The following is a request example when the input is images.
 
@@ -774,7 +774,7 @@ The following uses XGBoost as an example:
        ]
    }
 
-.. _en-us_topic_0000002079182513__en-us_topic_0172466149_section119911955122011:
+.. _en-us_topic_0000002268821749__en-us_topic_0172466149_section119911955122011:
 
 Example of a Model Configuration File Using a Custom Dependency Package
 -----------------------------------------------------------------------

@@ -13,4 +13,4 @@ There is a bug in the container image code.
 Solution
 --------
 
-Debug the container image code based on container logs, create the AI application again, and deploy the application as a real-time service.
+Debug the container image code based on container logs, create the model again, and deploy the application as a real-time service.

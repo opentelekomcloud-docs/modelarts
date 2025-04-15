@@ -15,7 +15,7 @@ When the a notebook instance is used to run code, the following error occurs:
    FileNotFoundError: [Error 2] No usable temporary directory found in ['/tmp', '/var/tmp', '/usr/tmp', 'home/ma-user/work/SR/RDN_train_base']
 
 
-.. figure:: /_static/images/en-us_image_0000002079182933.png
+.. figure:: /_static/images/en-us_image_0000002268819093.png
    :alt: **Figure 1** Code running error
 
    **Figure 1** Code running error

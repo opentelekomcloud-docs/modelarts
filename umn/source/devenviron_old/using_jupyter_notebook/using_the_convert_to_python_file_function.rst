@@ -18,7 +18,7 @@ After code compiling is finished, you can save the entered code as a **.py** fil
 #. In the dialog box that is displayed, enter the file name as required, and select or deselect **Force overwrite if file already exists**. By default, the item is not selected, indicating that the file will not be overwritten when a file with the same name exists in the directory. Click **Convert**.
 
 
-   .. figure:: /_static/images/en-us_image_0000002043182420.png
+   .. figure:: /_static/images/en-us_image_0000002233904772.png
       :alt: **Figure 1** Setting and saving the configuration
 
       **Figure 1** Setting and saving the configuration

@@ -41,5 +41,5 @@ Procedure
 
    You can view the monitoring data in the recent 1 hour, 3 hours, or 12 hours. To view the monitoring curve of a longer time range, click |image2| to enlarge the graph.
 
-.. |image1| image:: /_static/images/en-us_image_0000002079182529.png
-.. |image2| image:: /_static/images/en-us_image_0000002043183200.png
+.. |image1| image:: /_static/images/en-us_image_0000002233902556.png
+.. |image2| image:: /_static/images/en-us_image_0000002268742001.png

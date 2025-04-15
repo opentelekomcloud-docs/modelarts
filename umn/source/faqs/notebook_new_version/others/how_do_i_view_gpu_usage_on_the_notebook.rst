@@ -43,6 +43,6 @@ If you select GPU when creating a notebook instance, perform the following opera
 
    If no process is using GPUs, the file may be unavailable or empty.
 
-.. |image1| image:: /_static/images/en-us_image_0000002079105041.png
-.. |image2| image:: /_static/images/en-us_image_0000002079105037.png
-.. |image3| image:: /_static/images/en-us_image_0000002043184304.png
+.. |image1| image:: /_static/images/en-us_image_0000002233902136.png
+.. |image2| image:: /_static/images/en-us_image_0000002268821493.png
+.. |image3| image:: /_static/images/en-us_image_0000002268741581.png
