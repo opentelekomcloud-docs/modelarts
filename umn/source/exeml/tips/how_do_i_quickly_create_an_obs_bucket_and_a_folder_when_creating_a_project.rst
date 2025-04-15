@@ -12,7 +12,7 @@ When creating a project, select a training data path. This section describes how
 #. Click **Create Bucket**. The **Create Bucket** page is displayed. For details, see "Creating a Bucket" in *Object Storage Service Console Operation Guide*.
 
 
-   .. figure:: /_static/images/en-us_image_0000002079181789.png
+   .. figure:: /_static/images/en-us_image_0000002233904716.png
       :alt: **Figure 1** Creating an OBS bucket
 
       **Figure 1** Creating an OBS bucket
@@ -24,4 +24,4 @@ When creating a project, select a training data path. This section describes how
    -  The absolute path of a folder cannot exceed 1,023 characters.
    -  Any single slash (/) separates and creates multiple levels of folders at once.
 
-.. |image1| image:: /_static/images/en-us_image_0000002079181793.png
+.. |image1| image:: /_static/images/en-us_image_0000002233744840.png

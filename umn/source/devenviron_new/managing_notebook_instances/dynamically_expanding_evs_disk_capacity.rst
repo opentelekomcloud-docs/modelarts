@@ -26,7 +26,7 @@ Restrictions
 Procedure
 ---------
 
-#. Log in to the ModelArts management console. In the left navigation pane, choose **DevEnviron > Notebook** to switch to the new-version **Notebook** page.
+#. Log in to the ModelArts management console. In the navigation pane on the left, choose **DevEnviron > Notebook** to switch to the new-version **Notebook** page.
 
 #. Click the name of a running notebook instance. On the instance details page, click **Expansion**.
 

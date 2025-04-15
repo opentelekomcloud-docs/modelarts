@@ -33,7 +33,7 @@ Error ModelArts.4503 may occur in multiple scenarios. The following describes ty
 
    If the **Container API** value is inconsistent with the value provided by your image, for example, **Container API** is set to **HTTPS** but your image actually uses HTTP, the preceding error occurs.
 
-   To resolve this issue, create an AI application version, select the correct protocol (HTTP or HTTPS), and deploy a real-time service again or update the existing real-time service.
+   To resolve this issue, create a model version, select the correct protocol (HTTP or HTTPS), and deploy a real-time service again or update the existing real-time service.
 
 #. Long prediction time
 

@@ -16,24 +16,24 @@ When using ModelArts for full-process AI development, you can use two different 
 
    Create a dedicated resource pool and select the dedicated resource pool during AI development. For details about the dedicated resource pool, see the following:
 
-   :ref:`Dedicated Resource Pools <en-us_topic_0000002043020060__section6250135125515>`
+   :ref:`Dedicated Resource Pools <en-us_topic_0000002268739181__section6250135125515>`
 
-   :ref:`Creating a Dedicated Resource Pool <en-us_topic_0000002043020060__section4115221610>`
+   :ref:`Creating a Dedicated Resource Pool <en-us_topic_0000002268739181__section4115221610>`
 
-   :ref:`Scaling a Dedicated Resource Pool <en-us_topic_0000002043020060__section1521854122017>`
+   :ref:`Scaling a Dedicated Resource Pool <en-us_topic_0000002268739181__section1521854122017>`
 
-   :ref:`Deleting a Dedicated Resource Pool <en-us_topic_0000002043020060__section102631431172915>`
+   :ref:`Deleting a Dedicated Resource Pool <en-us_topic_0000002268739181__section102631431172915>`
 
-.. _en-us_topic_0000002043020060__section6250135125515:
+.. _en-us_topic_0000002268739181__section6250135125515:
 
 Dedicated Resource Pools
 ------------------------
 
 -  Dedicated resource pools can be used by notebook instances, training jobs, or for model deployment.
--  Dedicated resource pools are classified into two types: **Dedicated for Development/Training** and **Dedicated for Service Deployment**. The **Dedicated for Development/Training** type can be used only for notebook instances and training. The **Dedicated for Service Deployment** type can be used only for AI application deployment.
+-  Dedicated resource pools are classified into two types: **Dedicated for Development/Training** and **Dedicated for Service Deployment**. The **Dedicated for Development/Training** type can be used only for notebook instances and training. The **Dedicated for Service Deployment** type can be used only for Model deployment.
 -  Dedicated resource pools are available only when they are in the **Running** state. If a dedicated resource pool is unavailable or abnormal, rectify the fault before using it.
 
-.. _en-us_topic_0000002043020060__section4115221610:
+.. _en-us_topic_0000002268739181__section4115221610:
 
 Creating a Dedicated Resource Pool
 ----------------------------------
@@ -44,9 +44,9 @@ Creating a Dedicated Resource Pool
 
 #. Click **Create** in the upper left corner. The page for creating a dedicated resource pool is displayed.
 
-#. Set the parameters on the page. For details about how to set parameters, see :ref:`Table 1 <en-us_topic_0000002043020060__table1073325155617>` and :ref:`Table 2 <en-us_topic_0000002043020060__table199892206411>`.
+#. Set the parameters on the page. For details about how to set parameters, see :ref:`Table 1 <en-us_topic_0000002268739181__table1073325155617>` and :ref:`Table 2 <en-us_topic_0000002268739181__table199892206411>`.
 
-   .. _en-us_topic_0000002043020060__table1073325155617:
+   .. _en-us_topic_0000002268739181__table1073325155617:
 
    .. table:: **Table 1** Parameters of the **Dedicated for Development/Training** type
 
@@ -66,7 +66,7 @@ Creating a Dedicated Resource Pool
       | Specifications                    | Required specifications. The GPU delivers better performance, and the CPU is more cost-effective. If a flavor is sold out, you can purchase it again only after other users delete the resource pool. |
       +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   .. _en-us_topic_0000002043020060__table199892206411:
+   .. _en-us_topic_0000002268739181__table199892206411:
 
    .. table:: **Table 2** Parameters of the **Dedicated for Service Deployment** type
 
@@ -116,7 +116,7 @@ After a resource pool is created, you can interconnect a VPC on the resource poo
 
 #. Click **OK**.
 
-.. _en-us_topic_0000002043020060__section1521854122017:
+.. _en-us_topic_0000002268739181__section1521854122017:
 
 Scaling a Dedicated Resource Pool
 ---------------------------------
@@ -143,7 +143,7 @@ The procedure for scaling is as follows:
 
       You can view the event list on the dedicated resource pool details page. "Begin to delete resource node %s" indicates that the node deletion starts. "Resource node %s deleted" indicates that the node has been deleted in the background.
 
-.. _en-us_topic_0000002043020060__section102631431172915:
+.. _en-us_topic_0000002268739181__section102631431172915:
 
 Deleting a Dedicated Resource Pool
 ----------------------------------

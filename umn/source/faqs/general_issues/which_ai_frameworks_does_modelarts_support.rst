@@ -5,7 +5,7 @@
 Which AI Frameworks Does ModelArts Support?
 ===========================================
 
-The AI frameworks and versions supported by ModelArts vary slightly based on the development environment notebook, training jobs, and model inference (AI application management and deployment). The following describes the AI frameworks supported by each module.
+The AI frameworks and versions supported by ModelArts vary slightly based on the development environment notebook, training jobs, and model inference (Model management and deployment). The following describes the AI frameworks supported by each module.
 
 Development Environment Notebook
 --------------------------------
@@ -72,7 +72,7 @@ The built-in training engines in the new version are named in the following form
 Supported AI Engines for ModelArts Inference
 --------------------------------------------
 
-If you import a model from a template or OBS to create an AI application, the following AI engines and versions are supported.
+If you import a model from a template or OBS to create a model, the following AI engines and versions are supported.
 
 .. note::
 

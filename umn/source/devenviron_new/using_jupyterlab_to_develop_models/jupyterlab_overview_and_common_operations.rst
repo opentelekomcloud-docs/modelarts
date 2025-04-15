@@ -83,7 +83,7 @@ After the file is created, the console page is displayed.
 Editing a File in JupyterLab
 ----------------------------
 
-JupyterLab allows you to open multiple notebook instances or files (such as HTML, TXT, and Markdown files) in one window and displays them on different tab pages.
+JupyterLab allows you to open multiple notebook instances or files (such as HTML, TXT, and Markdown files) in one window and displays them in different tabs.
 
 In JupyterLab, you can customize the display of multiple files. In the file display area on the right, you can drag a file to adjust its position. Multiple files can be concurrently displayed.
 
@@ -201,7 +201,7 @@ Common JupyterLab Buttons and Plug-ins
    +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
    | |image16|                         | Property inspector.                                                                                                                   |
    +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-   | |image17|                         | Display the tab pages for the opened files.                                                                                           |
+   | |image17|                         | Display the tabs for the opened files.                                                                                                |
    +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
    | |image18|                         | Show the document organization.                                                                                                       |
    +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+

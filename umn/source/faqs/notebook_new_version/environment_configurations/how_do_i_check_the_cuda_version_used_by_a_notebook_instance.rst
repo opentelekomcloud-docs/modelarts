@@ -14,7 +14,7 @@ Run the following command to view the CUDA version of the target notebook instan
 The following shows an example.
 
 
-.. figure:: /_static/images/en-us_image_0000002043184152.png
+.. figure:: /_static/images/en-us_image_0000002233742428.png
    :alt: **Figure 1** Checking the CUDA version in the current environment
 
    **Figure 1** Checking the CUDA version in the current environment

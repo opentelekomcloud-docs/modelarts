@@ -2,19 +2,19 @@
 
 .. _modelarts_23_0270:
 
-Deploying an AI Application Created Using a Custom Image as a Service
-=====================================================================
+Deploying a Model Created Using a Custom Image as a Service
+===========================================================
 
-For AI engines that are not supported by ModelArts, you can import the models you compile to ModelArts from custom images for creating the AI applications. This section describes how to use a custom image to create an AI application and deploy it as a real-time service.
+For AI engines that are not supported by ModelArts, you can import the models you compile to ModelArts from custom images for creating the models. This section describes how to use a custom image to create a model and deploy it as a real-time service.
 
 The general procedure is as follows:
 
-#. :ref:`Building an Image Locally <en-us_topic_0000002079181597__en-us_topic_0000001846137717_en-us_topic_0298993551_section537112981619>`: Create a custom image package locally. For details about the image package specifications, see :ref:`Custom Image Specifications for Creating an AI Application <modelarts_23_0219>`.
-#. :ref:`Verifying the Image on the Local Host and Uploading the Image to SWR <en-us_topic_0000002079181597__en-us_topic_0000001846137717_en-us_topic_0298993551_section048011101569>`: Verify the API functions of the custom image and upload the custom image to SWR.
-#. :ref:`Creating an AI Application Using a Custom Image <en-us_topic_0000002079181597__en-us_topic_0000001846137717_en-us_topic_0298993551_section1610615113496>`: Import the image uploaded to SWR to ModelArts model management.
-#. :ref:`Deploying the AI Application as a Real-Time Service <en-us_topic_0000002079181597__en-us_topic_0000001846137717_en-us_topic_0298993551_section11593124119461>`: Deploy the imported model.
+#. :ref:`Building an Image Locally <en-us_topic_0000002233744692__en-us_topic_0000001846137717_en-us_topic_0298993551_section537112981619>`: Create a custom image package locally. For details about the image package specifications, see :ref:`Custom Image Specifications for Creating a Model <modelarts_23_0219>`.
+#. :ref:`Verifying the Image on the Local Host and Uploading the Image to SWR <en-us_topic_0000002233744692__en-us_topic_0000001846137717_en-us_topic_0298993551_section048011101569>`: Verify the API functions of the custom image and upload the custom image to SWR.
+#. :ref:`Creating a Model Using a Custom Image <en-us_topic_0000002233744692__en-us_topic_0000001846137717_en-us_topic_0298993551_section1610615113496>`: Import the image uploaded to SWR to ModelArts model management.
+#. :ref:`Deploying the Model as a Real-Time Service <en-us_topic_0000002233744692__en-us_topic_0000001846137717_en-us_topic_0298993551_section11593124119461>`: Deploy the imported model.
 
-.. _en-us_topic_0000002079181597__en-us_topic_0000001846137717_en-us_topic_0298993551_section537112981619:
+.. _en-us_topic_0000002233744692__en-us_topic_0000001846137717_en-us_topic_0298993551_section537112981619:
 
 Building an Image Locally
 -------------------------
@@ -108,7 +108,7 @@ A Linux x86_x64 host is used here. You can use an existing local host to create 
 
 #. You can run **docker image** to view the custom image you have created.
 
-.. _en-us_topic_0000002079181597__en-us_topic_0000001846137717_en-us_topic_0298993551_section048011101569:
+.. _en-us_topic_0000002233744692__en-us_topic_0000001846137717_en-us_topic_0298993551_section048011101569:
 
 Verifying the Image on the Local Host and Uploading the Image to SWR
 --------------------------------------------------------------------
@@ -120,7 +120,7 @@ Verifying the Image on the Local Host and Uploading the Image to SWR
       docker run -it -p 8080:8080 test:v1
 
 
-   .. figure:: /_static/images/en-us_image_0000002079181717.png
+   .. figure:: /_static/images/en-us_image_0000002233744876.png
       :alt: **Figure 1** Starting a custom image
 
       **Figure 1** Starting a custom image
@@ -136,7 +136,7 @@ Verifying the Image on the Local Host and Uploading the Image to SWR
    If information similar to the following is displayed, the function verification is successful.
 
 
-   .. figure:: /_static/images/en-us_image_0000002043182356.png
+   .. figure:: /_static/images/en-us_image_0000002268824109.png
       :alt: **Figure 2** API function verification
 
       **Figure 2** API function verification
@@ -144,10 +144,10 @@ Verifying the Image on the Local Host and Uploading the Image to SWR
 3. Upload the custom image to SWR. For details about how to upload an image, see *Software Repository for Container (SWR) User Guide*.
 4. After the custom image is uploaded, view the uploaded image on the **My Images** > **Private Images** page of the SWR console.
 
-.. _en-us_topic_0000002079181597__en-us_topic_0000001846137717_en-us_topic_0298993551_section1610615113496:
+.. _en-us_topic_0000002233744692__en-us_topic_0000001846137717_en-us_topic_0298993551_section1610615113496:
 
-Creating an AI Application Using a Custom Image
------------------------------------------------
+Creating a Model Using a Custom Image
+-------------------------------------
 
 When you import a meta model from a container image, pay attention to the following parameters:
 
@@ -193,11 +193,11 @@ When you import a meta model from a container image, pay attention to the follow
           }
       ]
 
-.. _en-us_topic_0000002079181597__en-us_topic_0000001846137717_en-us_topic_0298993551_section11593124119461:
+.. _en-us_topic_0000002233744692__en-us_topic_0000001846137717_en-us_topic_0298993551_section11593124119461:
 
-Deploying the AI Application as a Real-Time Service
----------------------------------------------------
+Deploying the Model as a Real-Time Service
+------------------------------------------
 
-#. Deploy the AI application as a real-time service. For details, see "Deploying a Model as a Real-Time Service".
+#. Deploy the Model as a real-time service. For details, see "Deploying a Model as a Real-Time Service".
 #. View the details about the real-time service.
 #. Access the real-time service on the **Predictions** tab page.

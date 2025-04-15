@@ -16,10 +16,10 @@ Product Architecture
 
 ModelArts supports the entire development process, including data processing, and model training, management, and deployment. It also provides AI Gallery for sharing models.
 
-ModelArts supports various AI application scenarios, such as image classification, object detection, video analysis, speech recognition, product recommendation, and exception detection.
+ModelArts supports various model scenarios, such as image classification, object detection, video analysis, speech recognition, product recommendation, and exception detection.
 
 
-.. figure:: /_static/images/en-us_image_0000002043178180.png
+.. figure:: /_static/images/en-us_image_0000002268823033.png
    :alt: **Figure 1** ModelArts architecture
 
    **Figure 1** ModelArts architecture

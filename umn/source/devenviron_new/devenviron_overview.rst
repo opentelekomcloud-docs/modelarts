@@ -50,7 +50,7 @@ The image versions preset in ModelArts are determined based on user feedback and
 The images preset in ModelArts DevEnviron include:
 
 -  Common preset packages: common AI engines such as PyTorch and MindSpore based on standard Conda, common data analysis software packages such as Pandas and Numpy, and common tool software such as CUDA and CUDNN, meeting common AI development requirements.
--  Preset Conda environment: A corresponding Conda environment and a basic Conda environment Python (excluding any AI engine) are created for each preset image. You can select a Conda environment based on whether the AI engine is used for function debugging.
+-  Preset Conda environment: A corresponding Conda environment and a basic Conda environment python (excluding any AI engine) are created for each preset image. You can select a Conda environment based on whether the AI engine is used for function debugging.
 -  Notebook: a web application that enables you to code on the GUI and combine the code, mathematical equations, and visualized content into a document.
 -  JupyterLab plug-ins: enable flavor changing and instance stopping to improving user experience.
 -  Remote SSH: allows you to remotely debug a notebook instance from a local PC.

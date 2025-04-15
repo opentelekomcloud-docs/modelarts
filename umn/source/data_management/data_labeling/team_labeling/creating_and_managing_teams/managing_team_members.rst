@@ -9,7 +9,7 @@ There is no member in a new team. You need to add members who will participate i
 
 A maximum of 100 members can be added to a team. If there are more than 100 members, add them to different teams for better management.
 
-.. _en-us_topic_0000002043180968__en-us_topic_0000001185384433_en-us_topic_0186456618_section060323818470:
+.. _en-us_topic_0000002233742228__en-us_topic_0000001185384433_en-us_topic_0186456618_section060323818470:
 
 Adding a Member
 ---------------

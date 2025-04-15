@@ -20,7 +20,7 @@ Solution
 
 Import the required dependency module to the model through inference code.
 
-For example, when you attempt to deploy a PyTorch AI application as a real-time service, the system displays error message "ModuleNotFoundError: No module named 'model_service.tfserving_model_service'". In this case, configure "from model_service.pytorch_model_service import PTServingBaseService" in **customize_service.py**. Example code:
+For example, when you attempt to deploy a PyTorch model as a real-time service, the system displays error message "ModuleNotFoundError: No module named 'model_service.tfserving_model_service'". In this case, configure "from model_service.pytorch_model_service import PTServingBaseService" in **customize_service.py**. Example code:
 
 .. code-block::
 

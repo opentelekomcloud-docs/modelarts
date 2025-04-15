@@ -13,7 +13,7 @@ When a training job accesses the attached EFS disks or executes the .sh boot scr
 -  [Errno 13]Permission denied: '/xxx/xxxx'
 
 
-   .. figure:: /_static/images/en-us_image_0000002079104237.png
+   .. figure:: /_static/images/en-us_image_0000002268819629.png
       :alt: **Figure 1** Error log
 
       **Figure 1** Error log
@@ -91,4 +91,4 @@ Summary and Suggestions
 
 Before creating a training job, use the ModelArts development environment to debug the training code to maximally eliminate errors in code migration.
 
-.. |image1| image:: /_static/images/en-us_image_0000002079182841.png
+.. |image1| image:: /_static/images/en-us_image_0000002233900244.png

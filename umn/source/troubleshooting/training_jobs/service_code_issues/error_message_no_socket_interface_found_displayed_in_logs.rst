@@ -18,7 +18,7 @@ An NCCL debug log level is set in a distributed job executed using a PyTorch ima
 The following error message is displayed.
 
 
-.. figure:: /_static/images/en-us_image_0000002079182853.png
+.. figure:: /_static/images/en-us_image_0000002268739281.png
    :alt: **Figure 1** Error log
 
    **Figure 1** Error log

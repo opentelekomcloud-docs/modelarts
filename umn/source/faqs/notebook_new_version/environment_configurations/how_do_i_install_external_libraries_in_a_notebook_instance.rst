@@ -40,7 +40,7 @@ You can use **pip** to install external libraries in the **TensorFlow-1.8** envi
       To install TensorFlow in another Python environment, replace **TensorFlow-1.8** in the command with the target engine.
 
 
-   .. figure:: /_static/images/en-us_image_0000002043184156.png
+   .. figure:: /_static/images/en-us_image_0000002233741464.png
       :alt: **Figure 1** Activating the environment
 
       **Figure 1** Activating the environment

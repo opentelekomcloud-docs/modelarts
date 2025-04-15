@@ -25,7 +25,7 @@ Using a Preset Image with Customization
 The only difference between this method and creating a training job totally based on a preset image is that you must select an image. You can create a custom image based on a preset image.
 
 
-.. figure:: /_static/images/en-us_image_0000002079176661.png
+.. figure:: /_static/images/en-us_image_0000002233902564.png
    :alt: **Figure 1** Creating an algorithm using a preset image with customization
 
    **Figure 1** Creating an algorithm using a preset image with customization
@@ -50,7 +50,7 @@ Using a Custom Image
 --------------------
 
 
-.. figure:: /_static/images/en-us_image_0000002043019012.png
+.. figure:: /_static/images/en-us_image_0000002268742005.png
    :alt: **Figure 2** Creating an algorithm using a custom image
 
    **Figure 2** Creating an algorithm using a custom image

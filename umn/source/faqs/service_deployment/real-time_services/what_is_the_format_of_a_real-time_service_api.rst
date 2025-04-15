@@ -5,7 +5,7 @@
 What Is the Format of a Real-Time Service API?
 ==============================================
 
-After an AI application is deployed as a real-time service, you can use the API for inference.
+After a model is deployed as a real-time service, you can use the API for inference.
 
 The format of an API is as follows:
 

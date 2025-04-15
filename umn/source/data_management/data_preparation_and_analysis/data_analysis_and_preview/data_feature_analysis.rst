@@ -20,7 +20,7 @@ Background
    -  In a dataset of the image classification type, if the number of labeled samples is 0, the **View Data Feature** tab is unavailable and data features are not displayed after a version is published. After the images are labeled and the version is published, the data features of all images are displayed.
 
 -  The analysis result is valid only when the number of images in a dataset reaches a certain level. Generally, more than 1,000 images are required.
--  Image classification supports the following data feature metrics: **Resolution**, **Aspect Ratio**, **Brightness**, **Saturation**, **Blur Score**, and **Colorfulness** Object detection supports all data feature metrics. :ref:`Supported Data Feature Metrics <en-us_topic_0000002079104381__en-us_topic_0000001139944460_en-us_topic_0197745910_section9138115545716>` provides all data feature metrics supported by ModelArts.
+-  Image classification supports the following data feature metrics: **Resolution**, **Aspect Ratio**, **Brightness**, **Saturation**, **Blur Score**, and **Colorfulness** Object detection supports all data feature metrics. :ref:`Supported Data Feature Metrics <en-us_topic_0000002233740332__en-us_topic_0000001139944460_en-us_topic_0197745910_section9138115545716>` provides all data feature metrics supported by ModelArts.
 
 
 Data Feature Analysis
@@ -46,7 +46,7 @@ Data Feature Analysis
 
    **Type**: Select the type to be analyzed. The value can be **all**, **train**, **eval**, or **inference**.
 
-   **Data Feature Metric**: Select metrics to be displayed from the drop-down list. For details, see :ref:`Supported Data Feature Metrics <en-us_topic_0000002079104381__en-us_topic_0000001139944460_en-us_topic_0197745910_section9138115545716>`.
+   **Data Feature Metric**: Select metrics to be displayed from the drop-down list. For details, see :ref:`Supported Data Feature Metrics <en-us_topic_0000002233740332__en-us_topic_0000001139944460_en-us_topic_0197745910_section9138115545716>`.
 
    Then, the selected version and metrics are displayed on the page. The displayed chart helps you understand data distribution for better data processing.
 
@@ -54,7 +54,7 @@ Data Feature Analysis
 
    After data feature analysis is complete, you can click **Task History** on the right of the **Data Features** tab to view historical analysis tasks and their statuses in the displayed dialog box.
 
-.. _en-us_topic_0000002079104381__en-us_topic_0000001139944460_en-us_topic_0197745910_section9138115545716:
+.. _en-us_topic_0000002233740332__en-us_topic_0000001139944460_en-us_topic_0197745910_section9138115545716:
 
 Supported Data Feature Metrics
 ------------------------------

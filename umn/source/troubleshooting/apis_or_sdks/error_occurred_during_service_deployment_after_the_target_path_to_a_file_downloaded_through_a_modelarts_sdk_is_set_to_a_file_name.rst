@@ -8,7 +8,7 @@ Error Occurred During Service Deployment After the Target Path to a File Downloa
 Symptom
 -------
 
-A ModelArts SDK was used to download a file from OBS, and the target path was set to the file name. No error was reported in the local IDE, but an error occurred when the target AI application was deployed as a real-time service.
+A ModelArts SDK was used to download a file from OBS, and the target path was set to the file name. No error was reported in the local IDE, but an error occurred when the target model was deployed as a real-time service.
 
 Sample code:
 

@@ -5,7 +5,7 @@
 Inference Deployment
 ====================
 
--  :ref:`AI Application Management <modelarts_13_0203>`
+-  :ref:`Model Management <modelarts_13_0203>`
 -  :ref:`Service Deployment <modelarts_13_0213>`
 -  :ref:`Service Prediction <modelarts_13_0215>`
 
@@ -13,6 +13,6 @@ Inference Deployment
    :maxdepth: 1
    :hidden: 
 
-   ai_application_management/index
+   model_management/index
    service_deployment/index
    service_prediction/index

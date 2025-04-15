@@ -16,4 +16,4 @@ For labeling jobs with team labeling enabled, you can create team labeling jobs 
 Team labeling is managed in a unit of teams. To enable team labeling for a dataset, a team must be specified. Multiple members can be added to a team.
 
 -  An account can have a maximum of 10 teams.
--  An account must have at least one team to enable team labeling for datasets. If the account has no team, add a team by referring to :ref:`Adding a Team <en-us_topic_0000002079180321__en-us_topic_0000001139944462_en-us_topic_0186456617_section165361815383>`.
+-  An account must have at least one team to enable team labeling for datasets. If the account has no team, add a team by referring to :ref:`Adding a Team <en-us_topic_0000002233902044__en-us_topic_0000001139944462_en-us_topic_0186456617_section165361815383>`.

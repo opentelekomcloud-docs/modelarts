@@ -17,9 +17,9 @@ Method: Enter the URL of a remote file in the text box of a browser, and the fil
 
 .. note::
 
-   After you enter a valid remote file URL, the system automatically identifies the name of the uploaded file.
+   After you enter a valid URL of a remote file, the system automatically identifies the name of the uploaded file.
 
 Error Handling
 --------------
 
-Failing to upload the remote file may be caused by network issues. In this case, enter the URL of the remote file in the text box of a browser to check whether the file can be downloaded.
+Failed to upload the remote file, which is possibly caused by network issues. In this case, enter the URL of the remote file in the text box of a browser to check whether the file can be downloaded.

@@ -11,7 +11,7 @@ Symptom
 A training job failed, and the following error is displayed in logs.
 
 
-.. figure:: /_static/images/en-us_image_0000002079182949.png
+.. figure:: /_static/images/en-us_image_0000002268740469.png
    :alt: **Figure 1** Error log
 
    **Figure 1** Error log

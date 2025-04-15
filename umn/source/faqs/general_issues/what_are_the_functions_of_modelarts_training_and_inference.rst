@@ -7,4 +7,4 @@ What Are the Functions of ModelArts Training and Inference?
 
 ModelArts training includes ExeML, training management, and dedicated resource pools (for development/training).
 
-ModelArts inference includes AI application management and deployment.
+ModelArts inference includes model management and deployment.

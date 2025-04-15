@@ -5,7 +5,7 @@
 Uploading Data to JupyterLab
 ============================
 
-On the **JupyterLab** page, click **Upload Files** to upload a file. For details, see :ref:`Uploading a File <en-us_topic_0000002043182264__en-us_topic_0000001799337328_en-us_topic_0208766071_section172463910383>` in :ref:`Introduction to JupyterLab and Common Operations <modelarts_23_0209>`. If a message is displayed indicating that the size of the files to be uploaded exceeds the upper limit when uploading files to notebook instances or JupyterLab, you can upload the files to OBS and then download them to notebook instances.
+On the **JupyterLab** page, click **Upload Files** to upload a file. For details, see :ref:`Uploading a File <en-us_topic_0000002268823949__en-us_topic_0000001799337328_en-us_topic_0208766071_section172463910383>` in :ref:`Introduction to JupyterLab and Common Operations <modelarts_23_0209>`. If a message is displayed indicating that the size of the files to be uploaded exceeds the upper limit when uploading files to notebook instances or JupyterLab, you can upload the files to OBS and then download them to notebook instances.
 
 Step 1: Uploading Files to OBS
 ------------------------------

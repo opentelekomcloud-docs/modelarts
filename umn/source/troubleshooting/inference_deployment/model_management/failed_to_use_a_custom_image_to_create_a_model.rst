@@ -2,20 +2,20 @@
 
 .. _modelarts_13_0210:
 
-Failed to Use a Custom Image to Create an AI application
-========================================================
+Failed to Use a Custom Image to Create a model
+==============================================
 
 Symptom
 -------
 
-When I used a custom image to create an AI application, the creation failed.
+When I used a custom image to create a model, the creation failed.
 
 Possible Causes
 ---------------
 
 Possible causes are as follows:
 
--  The URL of the image used for importing the AI application is invalid or the image is unavailable.
+-  The URL of the image used for importing the model is invalid or the image is unavailable.
 -  SWR operation permissions are not included in the agency authorization configured on ModelArts.
 -  The IAM user does not obtain SWR operation permissions from the tenant.
 -  The image used is from another account.

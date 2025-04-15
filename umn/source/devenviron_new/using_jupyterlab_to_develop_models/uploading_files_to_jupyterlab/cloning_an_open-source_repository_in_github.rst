@@ -33,7 +33,7 @@ Files can be cloned from a GitHub open-source repository to JupyterLab.
 
       **Figure 3** Entering a valid address of a GitHub open-source repository
 
-#. The progress is displayed during repository cloning. Wait until the cloning is complete.
+#. The process is displayed during repository cloning. Wait until it is complete.
 
 
    .. figure:: /_static/images/en-us_image_0000001856210413.png

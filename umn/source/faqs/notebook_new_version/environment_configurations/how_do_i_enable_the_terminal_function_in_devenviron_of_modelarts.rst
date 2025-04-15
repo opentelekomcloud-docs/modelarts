@@ -12,7 +12,7 @@ How Do I Enable the Terminal Function in DevEnviron of ModelArts?
 #. Choose **File** > **New** > **Terminal**. The **Terminal** page is displayed.
 
 
-   .. figure:: /_static/images/en-us_image_0000002079105101.png
+   .. figure:: /_static/images/en-us_image_0000002268820977.png
       :alt: **Figure 1** Going to the **Terminal** page
 
       **Figure 1** Going to the **Terminal** page

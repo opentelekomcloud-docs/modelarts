@@ -7,7 +7,7 @@ Using Custom Images
 
 -  :ref:`Introduction to Custom Images <modelarts_23_0084>`
 -  :ref:`Using a Custom Image to Train Models (New-Version Training) <docker-modelarts_0017>`
--  :ref:`Using a Custom Image to Create AI applications <modelarts_23_0218>`
+-  :ref:`Using a Custom Image to Create Models <modelarts_23_0218>`
 -  :ref:`FAQ <docker-modelarts_0016>`
 
 .. toctree::
@@ -16,5 +16,5 @@ Using Custom Images
 
    introduction_to_custom_images
    using_a_custom_image_to_train_models_new-version_training/index
-   using_a_custom_image_to_create_ai_applications/index
+   using_a_custom_image_to_create_models/index
    faq/index

@@ -5,7 +5,7 @@
 Uploading a Local File with a Size Ranging from 100 MB to 5 GB to JupyterLab
 ============================================================================
 
-For a file that exceeds 100 MB but does not exceed 5 GB, upload the file to OBS (an object bucket or a parallel file system), and then download the file from OBS to the target notebook instance. After the download is complete, the file is automatically deleted from OBS.
+For a file that is 100 MB to 5 GB, upload the file to OBS (an object bucket or a parallel file system), and then download the file from OBS to the target notebook instance. After the download is complete, the file is automatically deleted from OBS.
 
 Upload a local file with a size ranging from 100 MB to 5 GB to JupyterLab through OBS.
 

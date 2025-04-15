@@ -33,13 +33,13 @@ Synchronizing or Adding Images
 On the **ExeML** page, click the project name. The **Label Data** tab page is displayed. When creating a project, you can add images from a local PC or synchronize image data from OBS.
 
 
-.. figure:: /_static/images/en-us_image_0000002079103177.png
+.. figure:: /_static/images/en-us_image_0000002233744976.png
    :alt: **Figure 1** Adding local images
 
    **Figure 1** Adding local images
 
 
-.. figure:: /_static/images/en-us_image_0000002079181781.png
+.. figure:: /_static/images/en-us_image_0000002268744261.png
    :alt: **Figure 2** Synchronizing OBS images
 
    **Figure 2** Synchronizing OBS images

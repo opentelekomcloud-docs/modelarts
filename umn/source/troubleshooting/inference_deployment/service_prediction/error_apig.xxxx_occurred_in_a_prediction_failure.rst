@@ -9,13 +9,13 @@ A request is intercepted on API Gateway due to a fault, and error "APIG.XXXX" oc
 
 Rectify the fault by referring to the methods provided in the following typical cases:
 
--  :ref:`APIG.0101 Incorrect Prediction URL <en-us_topic_0000002043183340__en-us_topic_0000001388983990_section18200525195012>`
--  :ref:`APIG.0201 Request Body Oversized <en-us_topic_0000002043183340__en-us_topic_0000001388983990_section2467112382015>`
--  :ref:`APIG.0301 Authentication Failed <en-us_topic_0000002043183340__en-us_topic_0000001388983990_section362711496297>`
+-  :ref:`APIG.0101 Incorrect Prediction URL <en-us_topic_0000002233899332__en-us_topic_0000001388983990_section18200525195012>`
+-  :ref:`APIG.0201 Request Body Oversized <en-us_topic_0000002233899332__en-us_topic_0000001388983990_section2467112382015>`
+-  :ref:`APIG.0301 Authentication Failed <en-us_topic_0000002233899332__en-us_topic_0000001388983990_section362711496297>`
 
 For more details about API Gateway error codes and solutions, see .
 
-.. _en-us_topic_0000002043183340__en-us_topic_0000001388983990_section18200525195012:
+.. _en-us_topic_0000002233899332__en-us_topic_0000001388983990_section18200525195012:
 
 APIG.0101 Incorrect Prediction URL
 ----------------------------------
@@ -27,12 +27,12 @@ If the prediction URL is incorrect, API Gateway intercepts the request and repor
    If you have specified a custom path in the configuration file, add this path to the called API path. For example, if you have specified custom path **/predictions/poetry**, the called API path will be *{API address}*\ **/predictions/poetry**.
 
 
-.. figure:: /_static/images/en-us_image_0000002079104233.png
+.. figure:: /_static/images/en-us_image_0000002268819445.png
    :alt: **Figure 1** Obtaining an API address
 
    **Figure 1** Obtaining an API address
 
-.. _en-us_topic_0000002043183340__en-us_topic_0000001388983990_section2467112382015:
+.. _en-us_topic_0000002233899332__en-us_topic_0000001388983990_section2467112382015:
 
 APIG.0201 Request Body Oversized
 --------------------------------
@@ -44,12 +44,12 @@ If you perform prediction by calling an API address, the maximum size of the req
 If you perform prediction on the **Prediction** tab of the service details page, the maximum size of the request body is 8 MB. The size limit varies between the two tab pages because they use different network links.
 
 
-.. figure:: /_static/images/en-us_image_0000002043183504.png
+.. figure:: /_static/images/en-us_image_0000002233740272.png
    :alt: **Figure 2** Request error APIG.0201
 
    **Figure 2** Request error APIG.0201
 
-.. _en-us_topic_0000002043183340__en-us_topic_0000001388983990_section362711496297:
+.. _en-us_topic_0000002233899332__en-us_topic_0000001388983990_section362711496297:
 
 APIG.0301 Authentication Failed
 -------------------------------

@@ -36,7 +36,7 @@ In JupyterLab, you can download files from OBS to a notebook instance.
 Error Handling
 --------------
 
-A message is displayed, indicating that the file fails to be uploaded. The possible causes are as follows:
+If the file fails to be uploaded, the possible causes are as follows:
 
 -  The OBS path is set to a folder instead of a file path.
 -  The file in OBS is encrypted. In this case, go to the OBS console and check whether the file is encrypted.

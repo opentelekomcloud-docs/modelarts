@@ -2,8 +2,8 @@
 
 .. _modelarts_23_0219:
 
-Custom Image Specifications for Creating an AI Application
-==========================================================
+Custom Image Specifications for Creating a Model
+================================================
 
 When creating an image using locally developed models, ensure that they meet the specifications defined by ModelArts.
 

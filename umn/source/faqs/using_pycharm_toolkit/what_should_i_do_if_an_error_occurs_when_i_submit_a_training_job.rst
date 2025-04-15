@@ -8,7 +8,7 @@ What Should I Do If an Error Occurs When I Submit a Training Job?
 When a training job is running, the "Invalid OBS path" error is reported.
 
 
-.. figure:: /_static/images/en-us_image_0000002079104925.png
+.. figure:: /_static/images/en-us_image_0000002233901216.png
    :alt: **Figure 1** "Invalid OBS path" error
 
    **Figure 1** "Invalid OBS path" error

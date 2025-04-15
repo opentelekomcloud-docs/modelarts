@@ -19,9 +19,9 @@ Modifying the Basic Information of a Dataset
 
 #. In the dataset list, choose **More** > **Modify** in the **Operation** column of the target dataset.
 
-#. Modify the basic information by referring to :ref:`Table 1 <en-us_topic_0000002079182977__en-us_topic_0170886811_table151481125214>` and click **OK**.
+#. Modify the basic information by referring to :ref:`Table 1 <en-us_topic_0000002233900184__en-us_topic_0170886811_table151481125214>` and click **OK**.
 
-   .. _en-us_topic_0000002079182977__en-us_topic_0170886811_table151481125214:
+   .. _en-us_topic_0000002233900184__en-us_topic_0170886811_table151481125214:
 
    .. table:: **Table 1** Parameters
 

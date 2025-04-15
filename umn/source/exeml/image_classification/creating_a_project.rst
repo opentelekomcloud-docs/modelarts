@@ -13,16 +13,16 @@ Procedure
 #. Log in to the ModelArts management console. In the left navigation pane, choose **ExeML**. The **ExeML** page is displayed.
 
 
-   .. figure:: /_static/images/en-us_image_0000002043024160.png
+   .. figure:: /_static/images/en-us_image_0000002268824169.png
       :alt: **Figure 1** ExeML
 
       **Figure 1** ExeML
 
 #. Click **Create Project** in the box of your desired project. The page for creating an ExeML project is displayed.
 
-#. On the displayed page, set the parameters by referring to :ref:`Table 1 <en-us_topic_0000002043023964__en-us_topic_0000001799338076_en-us_topic_0284258833_en-us_topic_0169446153_table14961618163816>`.
+#. On the displayed page, set the parameters by referring to :ref:`Table 1 <en-us_topic_0000002233744724__en-us_topic_0000001799338076_en-us_topic_0284258833_en-us_topic_0169446153_table14961618163816>`.
 
-   .. _en-us_topic_0000002043023964__en-us_topic_0000001799338076_en-us_topic_0284258833_en-us_topic_0169446153_table14961618163816:
+   .. _en-us_topic_0000002233744724__en-us_topic_0000001799338076_en-us_topic_0284258833_en-us_topic_0169446153_table14961618163816:
 
    .. table:: **Table 1** Parameters
 

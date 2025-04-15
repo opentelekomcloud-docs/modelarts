@@ -2,13 +2,13 @@
 
 .. _modelarts_13_0211:
 
-Restrictions on the Size of an Image for Importing an AI Application
-====================================================================
+Restrictions on the Size of an Image for Importing a Model
+==========================================================
 
 Symptom
 -------
 
-When an imported AI application is used to deploy a service, the system displays a message indicating that the idle disk space is insufficient for service deployment.
+When an imported model is used to deploy a service, the system displays a message indicating that the idle disk space is insufficient for service deployment.
 
 Possible Causes
 ---------------

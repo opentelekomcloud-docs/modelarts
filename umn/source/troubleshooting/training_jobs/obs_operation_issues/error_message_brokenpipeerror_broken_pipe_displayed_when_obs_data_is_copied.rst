@@ -11,7 +11,7 @@ Symptom
 The error message is displayed when MoXing is used to copy data for a training job.
 
 
-.. figure:: /_static/images/en-us_image_0000002043025368.png
+.. figure:: /_static/images/en-us_image_0000002233900096.png
    :alt: **Figure 1** Error log
 
    **Figure 1** Error log
@@ -30,7 +30,7 @@ Solution
 #. If the issue is caused by traffic control, the error code shown in the following figure is displayed. In this case, submit a service ticket. For details about OBS error codes, see **Python > Troubleshooting > OBS Server-Side Error Codes** in *Object Storage Service SDK Reference*.
 
 
-   .. figure:: /_static/images/en-us_image_0000002079183017.png
+   .. figure:: /_static/images/en-us_image_0000002268739533.png
       :alt: **Figure 2** Error log
 
       **Figure 2** Error log

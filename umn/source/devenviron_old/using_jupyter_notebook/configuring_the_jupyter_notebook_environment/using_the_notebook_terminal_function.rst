@@ -7,7 +7,7 @@ Using the Notebook Terminal Function
 
 For developers who are used to coding, the terminal function is very convenient and practical. This section describes how to enable the terminal function in a notebook instance and switch the engine environment in the terminal.
 
-.. _en-us_topic_0000002043023960__en-us_topic_0000001799496556_en-us_topic_0190535990_section78015461056:
+.. _en-us_topic_0000002268744017__en-us_topic_0000001799496556_en-us_topic_0190535990_section78015461056:
 
 Enabling the Notebook Terminal Function
 ---------------------------------------
@@ -27,7 +27,7 @@ You can switch to another AI engine environment in the terminal environment of J
 #. View **README** in the current directory to obtain your required information. For example, to switch to **TensorFlow-1.15.0**, run the **source /home/ma-user/anaconda3/bin/activate TensorFlow-1.15.0** command. To exist the environment, run the **source deactivate** command.
 
 
-   .. figure:: /_static/images/en-us_image_0000002043024144.png
+   .. figure:: /_static/images/en-us_image_0000002268824161.png
       :alt: **Figure 1** Output after command execution
 
       **Figure 1** Output after command execution

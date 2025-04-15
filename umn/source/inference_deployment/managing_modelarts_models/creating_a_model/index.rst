@@ -2,8 +2,8 @@
 
 .. _inference-modelarts-0004:
 
-Creating an AI Application
-==========================
+Creating a Model
+================
 
 -  :ref:`Importing a Meta Model from a Training Job <inference-modelarts-0006>`
 -  :ref:`Importing a Meta Model from OBS <inference-modelarts-0008>`

@@ -16,7 +16,7 @@ Constraints
 -  If you use ModelArts for the first time, add an agency. Generally, common user permissions are sufficient for your requirements. You can configure permissions for refined permissions management.
 -  If you have not been authorized, ModelArts will display a message indicating that you have not been authorized when you access the **Add Authorization** page. In this case, contact your administrator to add authorization.
 
-.. _en-us_topic_0000002079180665__en-us_topic_0256240291_section2221743101516:
+.. _en-us_topic_0000002268818317__en-us_topic_0256240291_section2221743101516:
 
 Adding Authorization
 --------------------
@@ -24,7 +24,7 @@ Adding Authorization
 #. Log in to the ModelArts management console. In the navigation pane on the left, choose **Settings**. The **Global Configuration** page is displayed.
 
 
-   .. figure:: /_static/images/en-us_image_0000002043023020.png
+   .. figure:: /_static/images/en-us_image_0000002268818445.png
       :alt: **Figure 1** Global configuration
 
       **Figure 1** Global configuration
@@ -69,7 +69,7 @@ Viewing Authorized Permissions
 You can view the authorization content on the **Global Configuration** page. Click **View Permissions** in the **Authorization Content** column to view the permission details.
 
 
-.. figure:: /_static/images/en-us_image_0000002079102085.png
+.. figure:: /_static/images/en-us_image_0000002268818453.png
    :alt: **Figure 2** View Permissions
 
    **Figure 2** View Permissions

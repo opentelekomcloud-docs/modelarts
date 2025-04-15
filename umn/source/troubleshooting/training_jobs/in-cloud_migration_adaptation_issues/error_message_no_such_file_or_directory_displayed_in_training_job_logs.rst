@@ -15,7 +15,7 @@ If a training input path is unreachable, error message "No such file or director
 If a training boot file is unavailable, error message "No such file or directory" is displayed.
 
 
-.. figure:: /_static/images/en-us_image_0000002043183620.png
+.. figure:: /_static/images/en-us_image_0000002233741312.png
    :alt: **Figure 1** Example log for an unavailable training boot file
 
    **Figure 1** Example log for an unavailable training boot file
@@ -25,13 +25,13 @@ Possible Causes
 
 -  If the training input path is unreachable, the path is incorrect. Perform the following operations to locate the fault:
 
-   #. :ref:`Checking Whether the Affected Path Is an OBS Path <en-us_topic_0000002079104109__en-us_topic_0000001128983644_section1181277141419>`
-   #. :ref:`Checking Whether the Affected Path Is Available <en-us_topic_0000002079104109__en-us_topic_0000001128983644_section135339269>`
+   #. :ref:`Checking Whether the Affected Path Is an OBS Path <en-us_topic_0000002233739796__en-us_topic_0000001128983644_section1181277141419>`
+   #. :ref:`Checking Whether the Affected Path Is Available <en-us_topic_0000002233739796__en-us_topic_0000001128983644_section135339269>`
 
--  If the training boot file is unavailable, the path to the training job boot command is incorrect. Rectify the fault by referring to :ref:`Checking the File Boot Path of a Training Job Created Using a Custom Image <en-us_topic_0000002079104109__en-us_topic_0000001128983644_section1193319591840>`.
+-  If the training boot file is unavailable, the path to the training job boot command is incorrect. Rectify the fault by referring to :ref:`Checking the File Boot Path of a Training Job Created Using a Custom Image <en-us_topic_0000002233739796__en-us_topic_0000001128983644_section1193319591840>`.
 -  Multiple processes or workers read and write the same file. If SFS is used, check whether multiple nodes concurrently write the same file. Analyze the code and check whether multiple processes write the same file. It is a good practice to prevent multiple processes or nodes from concurrently reading and writing the same file.
 
-.. _en-us_topic_0000002079104109__en-us_topic_0000001128983644_section1181277141419:
+.. _en-us_topic_0000002233739796__en-us_topic_0000001128983644_section1181277141419:
 
 Checking Whether the Affected Path Is an OBS Path
 -------------------------------------------------
@@ -49,7 +49,7 @@ If the affected path is a path to the training data, perform the following opera
 #. When creating an algorithm, set the code path parameter, which defaults to **data_url**, in the input path mapping configuration.
 #. Add a hyperparameter, which defaults to **data_url**, to the training code. Use **data_url** as the local path for inputting the training data.
 
-.. _en-us_topic_0000002079104109__en-us_topic_0000001128983644_section135339269:
+.. _en-us_topic_0000002233739796__en-us_topic_0000001128983644_section135339269:
 
 Checking Whether the Affected Path Is Available
 -----------------------------------------------
@@ -77,7 +77,7 @@ Do as follows to obtain the path to a dependency file, **otherfile_path** in thi
    project_root = os.path.dirname(current_path) # Root directory of the project, which is the code directory set on the ModelArts training console
    otherfile_path = os.path.join(project_root, "otherfileDirectory", "otherfile.py")
 
-.. _en-us_topic_0000002079104109__en-us_topic_0000001128983644_section1193319591840:
+.. _en-us_topic_0000002233739796__en-us_topic_0000001128983644_section1193319591840:
 
 Checking the File Boot Path of a Training Job Created Using a Custom Image
 --------------------------------------------------------------------------

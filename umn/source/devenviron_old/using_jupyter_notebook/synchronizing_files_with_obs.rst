@@ -24,7 +24,7 @@ The Sync OBS function can be used in notebook instances. The following describes
 For example, if the **Example1.ipynb** file needs to call **module** in the **Example2.ipynb** file, select both files and click **Sync OBS**.
 
 
-.. figure:: /_static/images/en-us_image_0000002043182380.png
+.. figure:: /_static/images/en-us_image_0000002233744744.png
    :alt: **Figure 1** Using the Sync OBS function
 
    **Figure 1** Using the Sync OBS function

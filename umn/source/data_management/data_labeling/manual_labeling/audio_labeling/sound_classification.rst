@@ -95,4 +95,4 @@ If a tick is displayed in the upper right corner of an audio file, the audio fil
 
    If you select **Delete the source files from OBS**, audio files stored in the corresponding OBS directory will be deleted when you delete the selected audio files. Deleting source files may affect other dataset versions or datasets using those files. As a result, the page display, training, or inference is abnormal. Deleted data cannot be recovered. Exercise caution when performing this operation.
 
-.. |image1| image:: /_static/images/en-us_image_0000002079101861.png
+.. |image1| image:: /_static/images/en-us_image_0000002268741533.png
