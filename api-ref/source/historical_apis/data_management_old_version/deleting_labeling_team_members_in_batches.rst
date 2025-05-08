@@ -55,7 +55,7 @@ Response Parameters
    +-----------------------+----------------------------------------------------------------------------------------------+-----------------------------------------------------+
    | error_msg             | String                                                                                       | Error message.                                      |
    +-----------------------+----------------------------------------------------------------------------------------------+-----------------------------------------------------+
-   | results               | Array of :ref:`BatchResponse <en-us_topic_0000001943866661__response_batchresponse>` objects | Result of deleting team members in batches.         |
+   | results               | Array of :ref:`BatchResponse <en-us_topic_0000002233928932__response_batchresponse>` objects | Result of deleting team members in batches.         |
    +-----------------------+----------------------------------------------------------------------------------------------+-----------------------------------------------------+
    | success               | Boolean                                                                                      | Check whether the operation is successful. Options: |
    |                       |                                                                                              |                                                     |
@@ -64,7 +64,7 @@ Response Parameters
    |                       |                                                                                              | -  **false**: The operation is failed.              |
    +-----------------------+----------------------------------------------------------------------------------------------+-----------------------------------------------------+
 
-.. _en-us_topic_0000001943866661__response_batchresponse:
+.. _en-us_topic_0000002233928932__response_batchresponse:
 
 .. table:: **Table 4** BatchResponse
 

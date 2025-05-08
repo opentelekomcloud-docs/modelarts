@@ -66,7 +66,7 @@ ok
 
    {
      "file_name" : "Bayes.yaml",
-     "content" : "general:\r\n  instance_per_trial: 1\r\n  gpu_per_instance: 1\r\n  cpu_per_instance: 1\r\n\r\nsearch_space:\r\n  - params:   # only support continuous params\r\n    - type: continuous_param\r\n      name : lr\r\n      start: 0.001\r\n      stop: 0.1\r\n\r\nsearch_algorithm:\r\n  type: bayes_opt_search\r\n  max_concurrent: 4\r\n  reward_attr: accuracy\r\n  num_samples: 8\r\n  kind : ucb\r\n  save_model_count : 3\r\n  mode: max\r\n\r\nscheduler:\r\n  type: FIFOScheduler"
+     "content" : "general:\n  instance_per_trial: 1\n  gpu_per_instance: 1\n  cpu_per_instance: 1\n\nsearch_space:\n  - params:   # only support continuous params\n    - type: continuous_param\n      name : lr\n      start: 0.001\n      stop: 0.1\n\nsearch_algorithm:\n  type: bayes_opt_search\n  max_concurrent: 4\n  reward_attr: accuracy\n  num_samples: 8\n  kind : ucb\n  save_model_count : 3\n  mode: max\n\nscheduler:\n  type: FIFOScheduler"
    }
 
 Status Codes

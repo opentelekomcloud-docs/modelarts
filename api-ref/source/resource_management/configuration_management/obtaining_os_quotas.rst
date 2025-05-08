@@ -38,20 +38,20 @@ Response Parameters
    +-----------+----------------------------------------------------------------------+-----------------+
    | Parameter | Type                                                                 | Description     |
    +===========+======================================================================+=================+
-   | quotas    | :ref:`quotas <en-us_topic_0000002080257325__response_quotas>` object | Resource quotas |
+   | quotas    | :ref:`quotas <en-us_topic_0000002233721414__response_quotas>` object | Resource quotas |
    +-----------+----------------------------------------------------------------------+-----------------+
 
-.. _en-us_topic_0000002080257325__response_quotas:
+.. _en-us_topic_0000002233721414__response_quotas:
 
 .. table:: **Table 3** quotas
 
    +-----------+--------------------------------------------------------------------------------------+----------------------------+
    | Parameter | Type                                                                                 | Description                |
    +===========+======================================================================================+============================+
-   | resources | Array of :ref:`resources <en-us_topic_0000002080257325__response_resources>` objects | Resource quota information |
+   | resources | Array of :ref:`resources <en-us_topic_0000002233721414__response_resources>` objects | Resource quota information |
    +-----------+--------------------------------------------------------------------------------------+----------------------------+
 
-.. _en-us_topic_0000002080257325__response_resources:
+.. _en-us_topic_0000002233721414__response_resources:
 
 .. table:: **Table 4** resources
 

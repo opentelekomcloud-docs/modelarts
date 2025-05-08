@@ -69,10 +69,10 @@ Response Parameters
    +==============+========================================================================================+==========================================+
    | count        | Integer                                                                                | Total number of team labeling tasks.     |
    +--------------+----------------------------------------------------------------------------------------+------------------------------------------+
-   | worker_tasks | Array of :ref:`WorkerTask <en-us_topic_0000001909747440__response_workertask>` objects | Team labeling task list queried by page. |
+   | worker_tasks | Array of :ref:`WorkerTask <en-us_topic_0000002268848329__response_workertask>` objects | Team labeling task list queried by page. |
    +--------------+----------------------------------------------------------------------------------------+------------------------------------------+
 
-.. _en-us_topic_0000001909747440__response_workertask:
+.. _en-us_topic_0000002268848329__response_workertask:
 
 .. table:: **Table 4** WorkerTask
 
@@ -103,7 +103,7 @@ Response Parameters
    +-----------------------+--------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
    | role                  | Integer                                                                        | Role of a labeling team member.                                                     |
    +-----------------------+--------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
-   | sample_stats          | :ref:`SampleStats <en-us_topic_0000001909747440__response_samplestats>` object | Sample statistics of a labeling team member's task.                                 |
+   | sample_stats          | :ref:`SampleStats <en-us_topic_0000002268848329__response_samplestats>` object | Sample statistics of a labeling team member's task.                                 |
    +-----------------------+--------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
    | score                 | Double                                                                         | Average acceptance score of labeling team members' task samples.                    |
    +-----------------------+--------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
@@ -130,7 +130,7 @@ Response Parameters
    | workforce_task_name   | String                                                                         | Team labeling task name associated with a member's task.                            |
    +-----------------------+--------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909747440__response_samplestats:
+.. _en-us_topic_0000002268848329__response_samplestats:
 
 .. table:: **Table 5** SampleStats
 

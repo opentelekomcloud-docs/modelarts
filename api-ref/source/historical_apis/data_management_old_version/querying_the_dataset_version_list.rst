@@ -79,10 +79,10 @@ Response Parameters
    +==============+================================================================================================+===================================+
    | total_number | Integer                                                                                        | Total number of dataset versions. |
    +--------------+------------------------------------------------------------------------------------------------+-----------------------------------+
-   | versions     | Array of :ref:`DatasetVersion <en-us_topic_0000001909907416__response_datasetversion>` objects | Dataset version list.             |
+   | versions     | Array of :ref:`DatasetVersion <en-us_topic_0000002233769024__response_datasetversion>` objects | Dataset version list.             |
    +--------------+------------------------------------------------------------------------------------------------+-----------------------------------+
 
-.. _en-us_topic_0000001909907416__response_datasetversion:
+.. _en-us_topic_0000002233769024__response_datasetversion:
 
 .. table:: **Table 4** DatasetVersion
 
@@ -171,7 +171,7 @@ Response Parameters
    |                                 |                                                                                        |                                                                                                                                                                          |
    |                                 |                                                                                        | -  **false**: The current dataset version is not used.                                                                                                                   |
    +---------------------------------+----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | label_stats                     | Array of :ref:`LabelStats <en-us_topic_0000001909907416__response_labelstats>` objects | Label statistics list of a released version.                                                                                                                             |
+   | label_stats                     | Array of :ref:`LabelStats <en-us_topic_0000002233769024__response_labelstats>` objects | Label statistics list of a released version.                                                                                                                             |
    +---------------------------------+----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | label_type                      | String                                                                                 | Label type of a released version. Options:                                                                                                                               |
    |                                 |                                                                                        |                                                                                                                                                                          |
@@ -302,20 +302,20 @@ Response Parameters
    |                                 |                                                                                        | -  **false**: The first row in the released CSV file is not a column name.                                                                                               |
    +---------------------------------+----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909907416__response_labelstats:
+.. _en-us_topic_0000002233769024__response_labelstats:
 
 .. table:: **Table 5** LabelStats
 
    +-----------------------+------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
    | Parameter             | Type                                                                                           | Description                                                                                                                      |
    +=======================+================================================================================================+==================================================================================================================================+
-   | attributes            | Array of :ref:`LabelAttribute <en-us_topic_0000001909907416__response_labelattribute>` objects | Multi-dimensional attribute of a label. For example, if the label is music, attributes such as style and artist may be included. |
+   | attributes            | Array of :ref:`LabelAttribute <en-us_topic_0000002233769024__response_labelattribute>` objects | Multi-dimensional attribute of a label. For example, if the label is music, attributes such as style and artist may be included. |
    +-----------------------+------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
    | count                 | Integer                                                                                        | Number of labels.                                                                                                                |
    +-----------------------+------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
    | name                  | String                                                                                         | Label name.                                                                                                                      |
    +-----------------------+------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
-   | property              | :ref:`LabelProperty <en-us_topic_0000001909907416__response_labelproperty>` object             | Basic attribute key-value pair of a label, such as color and shortcut keys.                                                      |
+   | property              | :ref:`LabelProperty <en-us_topic_0000002233769024__response_labelproperty>` object             | Basic attribute key-value pair of a label, such as color and shortcut keys.                                                      |
    +-----------------------+------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
    | sample_count          | Integer                                                                                        | Number of samples containing the label.                                                                                          |
    +-----------------------+------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
@@ -344,7 +344,7 @@ Response Parameters
    |                       |                                                                                                | -  **600**: video labeling                                                                                                       |
    +-----------------------+------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909907416__response_labelattribute:
+.. _en-us_topic_0000002233769024__response_labelattribute:
 
 .. table:: **Table 6** LabelAttribute
 
@@ -363,10 +363,10 @@ Response Parameters
    |                       |                                                                                                          |                                                                                                               |
    |                       |                                                                                                          | -  **select**: single-choice drop-down list                                                                   |
    +-----------------------+----------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
-   | values                | Array of :ref:`LabelAttributeValue <en-us_topic_0000001909907416__response_labelattributevalue>` objects | List of label attribute values.                                                                               |
+   | values                | Array of :ref:`LabelAttributeValue <en-us_topic_0000002233769024__response_labelattributevalue>` objects | List of label attribute values.                                                                               |
    +-----------------------+----------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909907416__response_labelattributevalue:
+.. _en-us_topic_0000002233769024__response_labelattributevalue:
 
 .. table:: **Table 7** LabelAttributeValue
 
@@ -377,7 +377,7 @@ Response Parameters
    value     String Label attribute value.
    ========= ====== =========================
 
-.. _en-us_topic_0000001909907416__response_labelproperty:
+.. _en-us_topic_0000002233769024__response_labelproperty:
 
 .. table:: **Table 8** LabelProperty
 

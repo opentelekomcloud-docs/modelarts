@@ -15,9 +15,9 @@ URI
 
 GET /v1/{project_id}/visualization-jobs
 
-:ref:`Table 1 <en-us_topic_0000001909747448__table569625523811>` describes the required parameters.
+:ref:`Table 1 <en-us_topic_0000002268768225__table569625523811>` describes the required parameters.
 
-.. _en-us_topic_0000001909747448__table569625523811:
+.. _en-us_topic_0000002268768225__table569625523811:
 
 .. table:: **Table 1** Parameters
 
@@ -58,9 +58,9 @@ None
 Response Body
 -------------
 
-:ref:`Table 3 <en-us_topic_0000001909747448__table116520556267>` describes the response parameters.
+:ref:`Table 3 <en-us_topic_0000002268768225__table116520556267>` describes the response parameters.
 
-.. _en-us_topic_0000001909747448__table116520556267:
+.. _en-us_topic_0000002268768225__table116520556267:
 
 .. table:: **Table 3** Parameters
 
@@ -81,12 +81,12 @@ Response Body
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------+
    | job_count_limit       | Integer               | Number of visualization jobs that can be created                                                                  |
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------+
-   | jobs                  | **jobs** array        | Visualization job attributes. For details, see :ref:`Table 4 <en-us_topic_0000001909747448__table5856678611720>`. |
+   | jobs                  | **jobs** array        | Visualization job attributes. For details, see :ref:`Table 4 <en-us_topic_0000002268768225__table5856678611720>`. |
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------+
    | quotas                | Integer               | Maximum number of training jobs                                                                                   |
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909747448__table5856678611720:
+.. _en-us_topic_0000002268768225__table5856678611720:
 
 .. table:: **Table 4** **jobs** parameters
 
@@ -161,4 +161,4 @@ Sample Response
 Status Code
 -----------
 
-For details about the status code, see :ref:`Table 1 <en-us_topic_0000001909907492__table1450010510213>`.
+For details about the status code, see :ref:`Table 1 <en-us_topic_0000002268848277__table1450010510213>`.

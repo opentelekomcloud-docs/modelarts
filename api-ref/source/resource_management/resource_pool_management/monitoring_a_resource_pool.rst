@@ -49,29 +49,29 @@ Response Parameters
    +-----------+----------------------------------------------------------------------------------+-------------------------------------------------------------------------------+
    | Parameter | Type                                                                             | Description                                                                   |
    +===========+==================================================================================+===============================================================================+
-   | metrics   | Array of :ref:`metrics <en-us_topic_0000002080257337__response_metrics>` objects | Metric list. The value is a JSON array that contains a maximum of 20 objects. |
+   | metrics   | Array of :ref:`metrics <en-us_topic_0000002233721430__response_metrics>` objects | Metric list. The value is a JSON array that contains a maximum of 20 objects. |
    +-----------+----------------------------------------------------------------------------------+-------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002080257337__response_metrics:
+.. _en-us_topic_0000002233721430__response_metrics:
 
 .. table:: **Table 4** metrics
 
    +------------+----------------------------------------------------------------------------------------+-------------+
    | Parameter  | Type                                                                                   | Description |
    +============+========================================================================================+=============+
-   | metric     | :ref:`metric <en-us_topic_0000002080257337__response_metric>` object                   | Metrics     |
+   | metric     | :ref:`metric <en-us_topic_0000002233721430__response_metric>` object                   | Metrics     |
    +------------+----------------------------------------------------------------------------------------+-------------+
-   | dataPoints | Array of :ref:`dataPoints <en-us_topic_0000002080257337__response_datapoints>` objects | Key metrics |
+   | dataPoints | Array of :ref:`dataPoints <en-us_topic_0000002233721430__response_datapoints>` objects | Key metrics |
    +------------+----------------------------------------------------------------------------------------+-------------+
 
-.. _en-us_topic_0000002080257337__response_metric:
+.. _en-us_topic_0000002233721430__response_metric:
 
 .. table:: **Table 5** metric
 
    +-----------------------+----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
    | Parameter             | Type                                                                                   | Description                                                                             |
    +=======================+========================================================================================+=========================================================================================+
-   | dimensions            | Array of :ref:`dimensions <en-us_topic_0000002080257337__response_dimensions>` objects | Dimensions                                                                              |
+   | dimensions            | Array of :ref:`dimensions <en-us_topic_0000002233721430__response_dimensions>` objects | Dimensions                                                                              |
    +-----------------------+----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
    | metricName            | String                                                                                 | Metric name. Options:                                                                   |
    |                       |                                                                                        |                                                                                         |
@@ -106,7 +106,7 @@ Response Parameters
    |                       |                                                                                        | -  **CUSTOMMETRICS**: default namespace of custom metrics                               |
    +-----------------------+----------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002080257337__response_dimensions:
+.. _en-us_topic_0000002233721430__response_dimensions:
 
 .. table:: **Table 6** dimensions
 
@@ -117,7 +117,7 @@ Response Parameters
    value     String Metric dimension value
    ========= ====== ======================
 
-.. _en-us_topic_0000002080257337__response_datapoints:
+.. _en-us_topic_0000002233721430__response_datapoints:
 
 .. table:: **Table 7** dataPoints
 
@@ -128,10 +128,10 @@ Response Parameters
    +------------+----------------------------------------------------------------------------------------+----------------------------+
    | unit       | String                                                                                 | Time series unit           |
    +------------+----------------------------------------------------------------------------------------+----------------------------+
-   | statistics | Array of :ref:`statistics <en-us_topic_0000002080257337__response_statistics>` objects | List of statistical values |
+   | statistics | Array of :ref:`statistics <en-us_topic_0000002233721430__response_statistics>` objects | List of statistical values |
    +------------+----------------------------------------------------------------------------------------+----------------------------+
 
-.. _en-us_topic_0000002080257337__response_statistics:
+.. _en-us_topic_0000002233721430__response_statistics:
 
 .. table:: **Table 8** statistics
 

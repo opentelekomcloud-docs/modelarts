@@ -2,13 +2,13 @@
 
 .. _DeleteModel:
 
-Deleting an AI application
-==========================
+Deleting a model
+================
 
 Function
 --------
 
-This interface is used to delete an AI application based on the AI application ID. When cascade is set to true, the AI application specified by the AI application ID and other AI applications with the same name but different versions as the specified AI application are deleted. By default, only the AI application corresponding to the current AI application ID is deleted.
+This interface is used to delete a model based on the model ID. When cascade is set to true, the model specified by the model ID and other models with the same name but different versions as the specified model are deleted. By default, only the model corresponding to the current model ID is deleted.
 
 URI
 ---
@@ -20,7 +20,7 @@ DELETE /v1/{project_id}/models/{model_id}
    +------------+-----------+--------+------------------------------------------------------------------------------------------+
    | Parameter  | Mandatory | Type   | Description                                                                              |
    +============+===========+========+==========================================================================================+
-   | model_id   | Yes       | String | ID of the AI application to be deleted.                                                  |
+   | model_id   | Yes       | String | ID of the model to be deleted.                                                           |
    +------------+-----------+--------+------------------------------------------------------------------------------------------+
    | project_id | Yes       | String | Project ID. For details, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`. |
    +------------+-----------+--------+------------------------------------------------------------------------------------------+
@@ -51,15 +51,15 @@ Response Parameters
 
 .. table:: **Table 4** Response body parameters
 
-   +---------------------+------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+
-   | Parameter           | Type                                                                                                                         | Description                                                         |
-   +=====================+==============================================================================================================================+=====================================================================+
-   | delete_success_list | Array of strings                                                                                                             | ID list of models successfully deleted                              |
-   +---------------------+------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+
-   | delete_failed_list  | Array of :ref:`DeleteModelResponseFailedList <en-us_topic_0000002042965000__response_deletemodelresponsefailedlist>` objects | ID of the model that fails to be deleted and the failure cause list |
-   +---------------------+------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+
+   +---------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+
+   | Parameter           | Type                                                                                                                                                      | Description                                                         |
+   +=====================+===========================================================================================================================================================+=====================================================================+
+   | delete_success_list | Array of strings                                                                                                                                          | ID list of models successfully deleted                              |
+   +---------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+
+   | delete_failed_list  | Array of :ref:`DeleteModelResponseFailedList <en-us_topic_0000002233726958__en-us_topic_0000002055164114_response_deletemodelresponsefailedlist>` objects | ID of the model that fails to be deleted and the failure cause list |
+   +---------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------+
 
-.. _en-us_topic_0000002042965000__response_deletemodelresponsefailedlist:
+.. _en-us_topic_0000002233726958__en-us_topic_0000002055164114_response_deletemodelresponsefailedlist:
 
 .. table:: **Table 5** DeleteModelResponseFailedList
 

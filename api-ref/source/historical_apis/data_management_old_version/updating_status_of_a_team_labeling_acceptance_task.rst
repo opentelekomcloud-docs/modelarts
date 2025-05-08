@@ -81,10 +81,10 @@ Response Parameters
    +==============+========================================================================================================+==================================+
    | sample_count | Integer                                                                                                | Total number of accepted samples |
    +--------------+--------------------------------------------------------------------------------------------------------+----------------------------------+
-   | samples      | Array of :ref:`DescribeSampleResp <en-us_topic_0000001943866601__response_describesampleresp>` objects | List of accepted samples         |
+   | samples      | Array of :ref:`DescribeSampleResp <en-us_topic_0000002268848229__response_describesampleresp>` objects | List of accepted samples         |
    +--------------+--------------------------------------------------------------------------------------------------------+----------------------------------+
 
-.. _en-us_topic_0000001943866601__response_describesampleresp:
+.. _en-us_topic_0000002268848229__response_describesampleresp:
 
 .. table:: **Table 5** DescribeSampleResp
 
@@ -103,13 +103,13 @@ Response Parameters
    +-----------------------+------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
    | deletion_reasons      | Array of strings                                                                         | Reason for deleting a sample, which is used for healthcare.                                                                             |
    +-----------------------+------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-   | hard_details          | Map<String,\ :ref:`HardDetail <en-us_topic_0000001943866601__response_harddetail>`>      | Difficult problem details, including description, causes, and suggestions of difficult problems.                                        |
+   | hard_details          | Map<String,\ :ref:`HardDetail <en-us_topic_0000002268848229__response_harddetail>`>      | Difficult problem details, including description, causes, and suggestions of difficult problems.                                        |
    +-----------------------+------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-   | labelers              | Array of :ref:`Worker <en-us_topic_0000001943866601__response_worker>` objects           | Labeling personnel list of sample allocation. The list records the team members receiving the samples, which is used for team labeling. |
+   | labelers              | Array of :ref:`Worker <en-us_topic_0000002268848229__response_worker>` objects           | Labeling personnel list of sample allocation. The list records the team members receiving the samples, which is used for team labeling. |
    +-----------------------+------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-   | labels                | Array of :ref:`SampleLabel <en-us_topic_0000001943866601__response_samplelabel>` objects | List of sample labels                                                                                                                   |
+   | labels                | Array of :ref:`SampleLabel <en-us_topic_0000002268848229__response_samplelabel>` objects | List of sample labels                                                                                                                   |
    +-----------------------+------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-   | metadata              | :ref:`SampleMetadata <en-us_topic_0000001943866601__response_samplemetadata>` object     | Attribute key-value pair of the sample metadata                                                                                         |
+   | metadata              | :ref:`SampleMetadata <en-us_topic_0000002268848229__response_samplemetadata>` object     | Attribute key-value pair of the sample metadata                                                                                         |
    +-----------------------+------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
    | review_accept         | Boolean                                                                                  | Whether to accept the review, which is used for team labeling. Options:                                                                 |
    |                       |                                                                                          |                                                                                                                                         |
@@ -184,7 +184,7 @@ Response Parameters
    | worker_id             | String                                                                                   | ID of a labeling team member, which is used for team labeling.                                                                          |
    +-----------------------+------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001943866601__response_harddetail:
+.. _en-us_topic_0000002268848229__response_harddetail:
 
 .. table:: **Table 6** HardDetail
 
@@ -197,7 +197,7 @@ Response Parameters
    suggestion String  Handling suggestion
    ========== ======= ===================
 
-.. _en-us_topic_0000001943866601__response_worker:
+.. _en-us_topic_0000002268848229__response_worker:
 
 .. table:: **Table 7** Worker
 
@@ -237,7 +237,7 @@ Response Parameters
    | workforce_id          | String                | ID of a labeling team                                                                                                        |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001943866601__response_samplelabel:
+.. _en-us_topic_0000002268848229__response_samplelabel:
 
 .. table:: **Table 8** SampleLabel
 
@@ -254,7 +254,7 @@ Response Parameters
    +-----------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
    | name                  | String                                                                                         | Label name                                                                                                       |
    +-----------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
-   | property              | :ref:`SampleLabelProperty <en-us_topic_0000001943866601__response_samplelabelproperty>` object | Attribute key-value pair of the sample label, such as the object shape and shape feature                         |
+   | property              | :ref:`SampleLabelProperty <en-us_topic_0000002268848229__response_samplelabelproperty>` object | Attribute key-value pair of the sample label, such as the object shape and shape feature                         |
    +-----------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
    | score                 | Float                                                                                          | Confidence. The value ranges from **0** to **1**.                                                                |
    +-----------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
@@ -283,7 +283,7 @@ Response Parameters
    |                       |                                                                                                | -  **600**: video labeling                                                                                       |
    +-----------------------+------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001943866601__response_samplelabelproperty:
+.. _en-us_topic_0000002268848229__response_samplelabelproperty:
 
 .. table:: **Table 9** SampleLabelProperty
 
@@ -415,7 +415,7 @@ Response Parameters
    | @modelarts:to               | String                | Direction entity ID of the triplet relationship label, which is a default attribute dedicated to the triplet relationship label                                                                                                                                                                                                                                                                                                               |
    +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001943866601__response_samplemetadata:
+.. _en-us_topic_0000002268848229__response_samplemetadata:
 
 .. table:: **Table 10** SampleMetadata
 

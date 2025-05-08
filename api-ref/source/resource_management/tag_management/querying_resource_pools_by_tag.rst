@@ -60,12 +60,12 @@ Request Parameters
    +-----------+-----------+---------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+
    | Parameter | Mandatory | Type                                                                                  | Description                                                                                           |
    +===========+===========+=======================================================================================+=======================================================================================================+
-   | tags      | No        | Array of :ref:`CombineTag <en-us_topic_0000002044058284__request_combinetag>` objects | Tags. Only multiple tags can be ANDed. If this parameter is not specified, all resources are queried. |
+   | tags      | No        | Array of :ref:`CombineTag <en-us_topic_0000002233881258__request_combinetag>` objects | Tags. Only multiple tags can be ANDed. If this parameter is not specified, all resources are queried. |
    +-----------+-----------+---------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+
-   | matches   | No        | Array of :ref:`matches <en-us_topic_0000002044058284__request_matches>` objects       | Matching item. Currently, only fuzzy match of resource names is supported.                            |
+   | matches   | No        | Array of :ref:`matches <en-us_topic_0000002233881258__request_matches>` objects       | Matching item. Currently, only fuzzy match of resource names is supported.                            |
    +-----------+-----------+---------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002044058284__request_combinetag:
+.. _en-us_topic_0000002233881258__request_combinetag:
 
 .. table:: **Table 5** CombineTag
 
@@ -83,7 +83,7 @@ Request Parameters
    |                 |                 |                  | Array Length: **0 - 200**           |
    +-----------------+-----------------+------------------+-------------------------------------+
 
-.. _en-us_topic_0000002044058284__request_matches:
+.. _en-us_topic_0000002233881258__request_matches:
 
 .. table:: **Table 6** matches
 
@@ -117,10 +117,10 @@ Response Parameters
    +=============+======================================================================================+===========================+
    | total_count | Integer                                                                              | Total number of resources |
    +-------------+--------------------------------------------------------------------------------------+---------------------------+
-   | resources   | Array of :ref:`resources <en-us_topic_0000002044058284__response_resources>` objects | Resource list             |
+   | resources   | Array of :ref:`resources <en-us_topic_0000002233881258__response_resources>` objects | Resource list             |
    +-------------+--------------------------------------------------------------------------------------+---------------------------+
 
-.. _en-us_topic_0000002044058284__response_resources:
+.. _en-us_topic_0000002233881258__response_resources:
 
 .. table:: **Table 8** resources
 
@@ -131,10 +131,10 @@ Response Parameters
    +---------------+--------------------------------------------------------------------------+----------------------------------+
    | resource_id   | String                                                                   | Resource ID                      |
    +---------------+--------------------------------------------------------------------------+----------------------------------+
-   | tags          | Array of :ref:`Tag <en-us_topic_0000002044058284__response_tag>` objects | All tags of the current resource |
+   | tags          | Array of :ref:`Tag <en-us_topic_0000002233881258__response_tag>` objects | All tags of the current resource |
    +---------------+--------------------------------------------------------------------------+----------------------------------+
 
-.. _en-us_topic_0000002044058284__response_tag:
+.. _en-us_topic_0000002233881258__response_tag:
 
 .. table:: **Table 9** Tag
 

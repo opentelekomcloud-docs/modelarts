@@ -96,10 +96,10 @@ Response Parameters
    |                       |                                                                                    |                               |
    |                       |                                                                                    | -  **WorkloadList**: job list |
    +-----------------------+------------------------------------------------------------------------------------+-------------------------------+
-   | items                 | Array of :ref:`Workload <en-us_topic_0000002044058288__response_workload>` objects | Job list                      |
+   | items                 | Array of :ref:`Workload <en-us_topic_0000002233881262__response_workload>` objects | Job list                      |
    +-----------------------+------------------------------------------------------------------------------------+-------------------------------+
 
-.. _en-us_topic_0000002044058288__response_workload:
+.. _en-us_topic_0000002233881262__response_workload:
 
 .. table:: **Table 4** Workload
 
@@ -132,7 +132,7 @@ Response Parameters
    +-----------------------+------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
    | status                | String                                                                                         | Job status                                                                                  |
    +-----------------------+------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
-   | resourceRequirement   | :ref:`resourceRequirement <en-us_topic_0000002044058288__response_resourcerequirement>` object | Number of resources requested for running a job                                             |
+   | resourceRequirement   | :ref:`resourceRequirement <en-us_topic_0000002233881262__response_resourcerequirement>` object | Number of resources requested for running a job                                             |
    +-----------------------+------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
    | priority              | String                                                                                         | Job priority                                                                                |
    +-----------------------+------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
@@ -149,7 +149,7 @@ Response Parameters
    | hostIps               | String                                                                                         | IP addresses of the nodes where a job is running. The values are separated with commas (,). |
    +-----------------------+------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002044058288__response_resourcerequirement:
+.. _en-us_topic_0000002233881262__response_resourcerequirement:
 
 .. table:: **Table 5** resourceRequirement
 

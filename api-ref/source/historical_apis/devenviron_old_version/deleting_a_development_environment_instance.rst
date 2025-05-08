@@ -15,9 +15,9 @@ URI
 
 DELETE /v1/{project_id}/demanager/instances/{instance_id}
 
-:ref:`Table 1 <en-us_topic_0000001909747424__table569625523811>` describes the required parameters.
+:ref:`Table 1 <en-us_topic_0000002268768189__table569625523811>` describes the required parameters.
 
-.. _en-us_topic_0000001909747424__table569625523811:
+.. _en-us_topic_0000002268768189__table569625523811:
 
 .. table:: **Table 1** Parameter description
 
@@ -37,9 +37,9 @@ None
 Response Body
 -------------
 
-:ref:`Table 2 <en-us_topic_0000001909747424__table14581542113111>` describes the response parameters.
+:ref:`Table 2 <en-us_topic_0000002268768189__table14581542113111>` describes the response parameters.
 
-.. _en-us_topic_0000001909747424__table14581542113111:
+.. _en-us_topic_0000002268768189__table14581542113111:
 
 .. table:: **Table 2** Parameter description
 

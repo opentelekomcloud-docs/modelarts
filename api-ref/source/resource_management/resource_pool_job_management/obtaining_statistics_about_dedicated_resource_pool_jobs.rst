@@ -44,10 +44,10 @@ Response Parameters
    +------------+------------------------------------------------------------------------------+----------------+
    | Parameter  | Type                                                                         | Description    |
    +============+==============================================================================+================+
-   | statistics | :ref:`statistics <en-us_topic_0000002044216584__response_statistics>` object | Job statistics |
+   | statistics | :ref:`statistics <en-us_topic_0000002268720673__response_statistics>` object | Job statistics |
    +------------+------------------------------------------------------------------------------+----------------+
 
-.. _en-us_topic_0000002044216584__response_statistics:
+.. _en-us_topic_0000002268720673__response_statistics:
 
 .. table:: **Table 3** statistics
 
@@ -56,10 +56,10 @@ Response Parameters
    +===========+========================================================================================================+=========================================+
    | total     | Integer                                                                                                | Number of statistics lists              |
    +-----------+--------------------------------------------------------------------------------------------------------+-----------------------------------------+
-   | items     | Array of :ref:`WorkloadStatistics <en-us_topic_0000002044216584__response_workloadstatistics>` objects | Statistics of jobs with a specific type |
+   | items     | Array of :ref:`WorkloadStatistics <en-us_topic_0000002268720673__response_workloadstatistics>` objects | Statistics of jobs with a specific type |
    +-----------+--------------------------------------------------------------------------------------------------------+-----------------------------------------+
 
-.. _en-us_topic_0000002044216584__response_workloadstatistics:
+.. _en-us_topic_0000002268720673__response_workloadstatistics:
 
 .. table:: **Table 4** WorkloadStatistics
 
@@ -76,10 +76,10 @@ Response Parameters
    +-----------------------+----------------------------------------------------------------------+--------------------------------------+
    | total                 | Integer                                                              | Number of jobs                       |
    +-----------------------+----------------------------------------------------------------------+--------------------------------------+
-   | status                | :ref:`status <en-us_topic_0000002044216584__response_status>` object | Number of jobs in different statuses |
+   | status                | :ref:`status <en-us_topic_0000002268720673__response_status>` object | Number of jobs in different statuses |
    +-----------------------+----------------------------------------------------------------------+--------------------------------------+
 
-.. _en-us_topic_0000002044216584__response_status:
+.. _en-us_topic_0000002268720673__response_status:
 
 .. table:: **Table 5** status
 

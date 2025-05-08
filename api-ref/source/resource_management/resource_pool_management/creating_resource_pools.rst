@@ -47,24 +47,24 @@ Request Parameters
    |                 |                 |                                                                                                 |                                 |
    |                 |                 |                                                                                                 | -  **Pool**: resource pool      |
    +-----------------+-----------------+-------------------------------------------------------------------------------------------------+---------------------------------+
-   | metadata        | Yes             | :ref:`PoolMetadataCreation <en-us_topic_0000002080295933__request_poolmetadatacreation>` object | Metadata of a resource pool.    |
+   | metadata        | Yes             | :ref:`PoolMetadataCreation <en-us_topic_0000002268800593__request_poolmetadatacreation>` object | Metadata of a resource pool.    |
    +-----------------+-----------------+-------------------------------------------------------------------------------------------------+---------------------------------+
-   | spec            | No              | :ref:`PoolSpecCreation <en-us_topic_0000002080295933__request_poolspeccreation>` object         | Description of a resource pool. |
+   | spec            | No              | :ref:`PoolSpecCreation <en-us_topic_0000002268800593__request_poolspeccreation>` object         | Description of a resource pool. |
    +-----------------+-----------------+-------------------------------------------------------------------------------------------------+---------------------------------+
 
-.. _en-us_topic_0000002080295933__request_poolmetadatacreation:
+.. _en-us_topic_0000002268800593__request_poolmetadatacreation:
 
 .. table:: **Table 4** PoolMetadataCreation
 
    +-------------+-----------+-------------------------------------------------------------------------------------------------------+----------------------------+
    | Parameter   | Mandatory | Type                                                                                                  | Description                |
    +=============+===========+=======================================================================================================+============================+
-   | labels      | Yes       | :ref:`PoolLabelsCreation <en-us_topic_0000002080295933__request_poollabelscreation>` object           | Resource pool labels.      |
+   | labels      | Yes       | :ref:`PoolLabelsCreation <en-us_topic_0000002268800593__request_poollabelscreation>` object           | Resource pool labels.      |
    +-------------+-----------+-------------------------------------------------------------------------------------------------------+----------------------------+
-   | annotations | No        | :ref:`PoolAnnotationsCreation <en-us_topic_0000002080295933__request_poolannotationscreation>` object | Resource pool annotations. |
+   | annotations | No        | :ref:`PoolAnnotationsCreation <en-us_topic_0000002268800593__request_poolannotationscreation>` object | Resource pool annotations. |
    +-------------+-----------+-------------------------------------------------------------------------------------------------------+----------------------------+
 
-.. _en-us_topic_0000002080295933__request_poollabelscreation:
+.. _en-us_topic_0000002268800593__request_poollabelscreation:
 
 .. table:: **Table 5** PoolLabelsCreation
 
@@ -86,7 +86,7 @@ Request Parameters
    | os.modelarts/node.prefix  | No              | String          | Customized node prefix. This parameter is optional.                                   |
    +---------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002080295933__request_poolannotationscreation:
+.. _en-us_topic_0000002268800593__request_poolannotationscreation:
 
 .. table:: **Table 6** PoolAnnotationsCreation
 
@@ -112,7 +112,7 @@ Request Parameters
    | os.modelarts/scheduler.extension | No              | String          | Priority that can be set for the jobs delivered by other users to the shared resource pool |
    +----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002080295933__request_poolspeccreation:
+.. _en-us_topic_0000002268800593__request_poolspeccreation:
 
 .. table:: **Table 7** PoolSpecCreation
 
@@ -139,28 +139,28 @@ Request Parameters
    |                      |                 |                                                                                                                 |                                                                                                                                                                                         |
    |                      |                 |                                                                                                                 | -  **Notebook**                                                                                                                                                                         |
    +----------------------+-----------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | resources            | Yes             | Array of :ref:`PoolResourceFlavorCount <en-us_topic_0000002080295933__request_poolresourceflavorcount>` objects | Resource specifications in a resource pool, including resource specifications and the number of resources for each specification                                                        |
+   | resources            | Yes             | Array of :ref:`PoolResourceFlavorCount <en-us_topic_0000002268800593__request_poolresourceflavorcount>` objects | Resource specifications in a resource pool, including resource specifications and the number of resources for each specification                                                        |
    +----------------------+-----------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | parent               | No              | String                                                                                                          | Parent resource pool ID. This parameter is mandatory when a logical sub-pool is created based on a specified resource pool.                                                             |
    +----------------------+-----------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | network              | No              | :ref:`PoolNetwork <en-us_topic_0000002080295933__request_poolnetwork>` object                                   | Network settings for a resource pool. This parameter is mandatory for creating physical resource pools and is unavailable for creating logical resource pools.                          |
+   | network              | No              | :ref:`PoolNetwork <en-us_topic_0000002268800593__request_poolnetwork>` object                                   | Network settings for a resource pool. This parameter is mandatory for creating physical resource pools and is unavailable for creating logical resource pools.                          |
    +----------------------+-----------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | containerNetwork     | No              | :ref:`containerNetwork <en-us_topic_0000002080295933__request_containernetwork>` object                         | Kubernetes container network segment. Only one container network segment is supported. This parameter is optional. If this parameter is not set, the default value is specified by CCE. |
+   | containerNetwork     | No              | :ref:`containerNetwork <en-us_topic_0000002268800593__request_containernetwork>` object                         | Kubernetes container network segment. Only one container network segment is supported. This parameter is optional. If this parameter is not set, the default value is specified by CCE. |
    +----------------------+-----------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | kubernetesSvcIpRange | No              | String                                                                                                          | CIDR of the Kubernetes service network segment                                                                                                                                          |
    +----------------------+-----------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | masters              | No              | Array of :ref:`PoolClusterMaster <en-us_topic_0000002080295933__request_poolclustermaster>` objects             | Master node parameters in a resource pool. This parameter is optional for physical resource pools and is unavailable for logical resource pools.                                        |
+   | masters              | No              | Array of :ref:`PoolClusterMaster <en-us_topic_0000002268800593__request_poolclustermaster>` objects             | Master node parameters in a resource pool. This parameter is optional for physical resource pools and is unavailable for logical resource pools.                                        |
    +----------------------+-----------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | driver               | No              | :ref:`PoolDriver <en-us_topic_0000002080295933__request_pooldriver>` object                                     | Resource pool driver                                                                                                                                                                    |
+   | driver               | No              | :ref:`PoolDriver <en-us_topic_0000002268800593__request_pooldriver>` object                                     | Resource pool driver                                                                                                                                                                    |
    +----------------------+-----------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | userLogin            | No              | :ref:`PoolUserLogin <en-us_topic_0000002080295933__request_pooluserlogin>` object                               | Node login information of a privilege pool                                                                                                                                              |
+   | userLogin            | No              | :ref:`PoolUserLogin <en-us_topic_0000002268800593__request_pooluserlogin>` object                               | Node login information of a privilege pool                                                                                                                                              |
    +----------------------+-----------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | clusters             | No              | Array of :ref:`PoolClusterInfo <en-us_topic_0000002080295933__request_poolclusterinfo>` objects                 | Privilege pool cluster information                                                                                                                                                      |
+   | clusters             | No              | Array of :ref:`PoolClusterInfo <en-us_topic_0000002268800593__request_poolclusterinfo>` objects                 | Privilege pool cluster information                                                                                                                                                      |
    +----------------------+-----------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | ipv6enable           | No              | Boolean                                                                                                         | Whether to enable IPv6                                                                                                                                                                  |
    +----------------------+-----------------+-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002080295933__request_poolresourceflavorcount:
+.. _en-us_topic_0000002268800593__request_poolresourceflavorcount:
 
 .. table:: **Table 8** PoolResourceFlavorCount
 
@@ -175,10 +175,10 @@ Request Parameters
    +--------------+-----------+---------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | extendParams | No        | Map<String,String>                                                                    | Custom configuration, for example, setting **dockerSize** to **"extendParams": {"dockerBaseSize": "100" }**                                                                                  |
    +--------------+-----------+---------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | azs          | No        | Array of :ref:`PoolNodeAz <en-us_topic_0000002080295933__request_poolnodeaz>` objects | AZ where resource pool nodes are deployed.                                                                                                                                                   |
+   | azs          | No        | Array of :ref:`PoolNodeAz <en-us_topic_0000002268800593__request_poolnodeaz>` objects | AZ where resource pool nodes are deployed.                                                                                                                                                   |
    +--------------+-----------+---------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002080295933__request_poolnodeaz:
+.. _en-us_topic_0000002268800593__request_poolnodeaz:
 
 .. table:: **Table 9** PoolNodeAz
 
@@ -194,7 +194,7 @@ Request Parameters
    |                 |                 |                 | Maximum: **2000**                                             |
    +-----------------+-----------------+-----------------+---------------------------------------------------------------+
 
-.. _en-us_topic_0000002080295933__request_poolnetwork:
+.. _en-us_topic_0000002268800593__request_poolnetwork:
 
 .. table:: **Table 10** PoolNetwork
 
@@ -212,7 +212,7 @@ Request Parameters
    | subnetId        | No              | String          | Subnet ID, which must be specified when a privileged pool is created and is unavailable for a non-privileged pool                                               |
    +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002080295933__request_containernetwork:
+.. _en-us_topic_0000002268800593__request_containernetwork:
 
 .. table:: **Table 11** containerNetwork
 
@@ -222,7 +222,7 @@ Request Parameters
    | cidr      | No        | String | CIDR block of the container network segment. Recommended: 10.0.0.0/12-19, 172.16.0.0/16-19, or 192.168.0.0/16-19. If the selected CIDR block conflicts with existing ones, an error will be reported. This parameter cannot be modified after the cluster is created. |
    +-----------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002080295933__request_poolclustermaster:
+.. _en-us_topic_0000002268800593__request_poolclustermaster:
 
 .. table:: **Table 12** PoolClusterMaster
 
@@ -232,25 +232,25 @@ Request Parameters
    az        No        String AZ where the master node is located
    ========= ========= ====== ===================================
 
-.. _en-us_topic_0000002080295933__request_pooldriver:
+.. _en-us_topic_0000002268800593__request_pooldriver:
 
 .. table:: **Table 13** PoolDriver
 
-   +-----------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type            | Description                                                                                                                                                |
-   +=================+=================+=================+============================================================================================================================================================+
-   | gpuVersion      | No              | String          | GPU driver version. This parameter is available when GPUs are used in a physical resource pool. For example, the GPU driver version is **440.33**.         |
-   +-----------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | npuVersion      | No              | String          | NPU driver version. This parameter is available when Ascend chips are used in a physical resource pool. For example, the Ascend driver version is **C78**. |
-   +-----------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | updateStrategy  | No              | String          | Driver upgrade policy. Options:                                                                                                                            |
-   |                 |                 |                 |                                                                                                                                                            |
-   |                 |                 |                 | -  **force**: forcible upgrade. The node drivers are upgraded immediately, which may affect jobs running on the node.                                      |
-   |                 |                 |                 |                                                                                                                                                            |
-   |                 |                 |                 | -  **idle**: secure upgrade. The drivers are upgraded when no job is running on the node.                                                                  |
-   +-----------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type            | Description                                                                                                                                        |
+   +=================+=================+=================+====================================================================================================================================================+
+   | gpuVersion      | No              | String          | GPU driver version. This parameter is available when GPUs are used in a physical resource pool. For example, the GPU driver version is **440.33**. |
+   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | npuVersion      | No              | String          | NPU driver version.                                                                                                                                |
+   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | updateStrategy  | No              | String          | Driver upgrade policy. Options:                                                                                                                    |
+   |                 |                 |                 |                                                                                                                                                    |
+   |                 |                 |                 | -  **force**: forcible upgrade. The node drivers are upgraded immediately, which may affect jobs running on the node.                              |
+   |                 |                 |                 |                                                                                                                                                    |
+   |                 |                 |                 | -  **idle**: secure upgrade. The drivers are upgraded when no job is running on the node.                                                          |
+   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002080295933__request_pooluserlogin:
+.. _en-us_topic_0000002268800593__request_pooluserlogin:
 
 .. table:: **Table 14** PoolUserLogin
 
@@ -262,7 +262,7 @@ Request Parameters
    | password    | No        | String | Password, which must be salted, encrypted, and encoded using Base64. The default username is **root**. |
    +-------------+-----------+--------+--------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002080295933__request_poolclusterinfo:
+.. _en-us_topic_0000002268800593__request_poolclusterinfo:
 
 .. table:: **Table 15** PoolClusterInfo
 
@@ -291,14 +291,14 @@ Response Parameters
    |                       |                                                                                  |                                 |
    |                       |                                                                                  | -  **Pool**: resource pool      |
    +-----------------------+----------------------------------------------------------------------------------+---------------------------------+
-   | metadata              | :ref:`PoolMetadata <en-us_topic_0000002080295933__response_poolmetadata>` object | Metadata of a resource pool.    |
+   | metadata              | :ref:`PoolMetadata <en-us_topic_0000002268800593__response_poolmetadata>` object | Metadata of a resource pool.    |
    +-----------------------+----------------------------------------------------------------------------------+---------------------------------+
-   | spec                  | :ref:`PoolSpec <en-us_topic_0000002080295933__response_poolspec>` object         | Description of a resource pool. |
+   | spec                  | :ref:`PoolSpec <en-us_topic_0000002268800593__response_poolspec>` object         | Description of a resource pool. |
    +-----------------------+----------------------------------------------------------------------------------+---------------------------------+
-   | status                | :ref:`PoolStatus <en-us_topic_0000002080295933__response_poolstatus>` object     | Status of a resource pool.      |
+   | status                | :ref:`PoolStatus <en-us_topic_0000002268800593__response_poolstatus>` object     | Status of a resource pool.      |
    +-----------------------+----------------------------------------------------------------------------------+---------------------------------+
 
-.. _en-us_topic_0000002080295933__response_poolmetadata:
+.. _en-us_topic_0000002268800593__response_poolmetadata:
 
 .. table:: **Table 17** PoolMetadata
 
@@ -313,12 +313,12 @@ Response Parameters
    +-----------------------+------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
    | creationTimestamp     | String                                                                                         | Timestamp, for example, 2021-11-01T03:49:41Z.                                   |
    +-----------------------+------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
-   | labels                | :ref:`PoolMetaLabels <en-us_topic_0000002080295933__response_poolmetalabels>` object           | Resource pool labels.                                                           |
+   | labels                | :ref:`PoolMetaLabels <en-us_topic_0000002268800593__response_poolmetalabels>` object           | Resource pool labels.                                                           |
    +-----------------------+------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
-   | annotations           | :ref:`PoolMetaAnnotations <en-us_topic_0000002080295933__response_poolmetaannotations>` object | Resource pool annotations.                                                      |
+   | annotations           | :ref:`PoolMetaAnnotations <en-us_topic_0000002268800593__response_poolmetaannotations>` object | Resource pool annotations.                                                      |
    +-----------------------+------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002080295933__response_poolmetalabels:
+.. _en-us_topic_0000002268800593__response_poolmetalabels:
 
 .. table:: **Table 18** PoolMetaLabels
 
@@ -352,7 +352,7 @@ Response Parameters
    |                               |                       | -  **shared**: It can be shared.                                                                                                                      |
    +-------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002080295933__response_poolmetaannotations:
+.. _en-us_topic_0000002268800593__response_poolmetaannotations:
 
 .. table:: **Table 19** PoolMetaAnnotations
 
@@ -382,7 +382,7 @@ Response Parameters
    | os.modelarts.pool/subpools.count | String                | Number of logical sub-pools in a resource pool                                                              |
    +----------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002080295933__response_poolspec:
+.. _en-us_topic_0000002268800593__response_poolspec:
 
 .. table:: **Table 20** PoolSpec
 
@@ -409,21 +409,21 @@ Response Parameters
    |                       |                                                                                                                  |                                                                                                                                                  |
    |                       |                                                                                                                  | -  **Notebook**                                                                                                                                  |
    +-----------------------+------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-   | resources             | Array of :ref:`PoolResourceFlavorCount <en-us_topic_0000002080295933__response_poolresourceflavorcount>` objects | Resource specifications in a resource pool, including resource specifications and the number of resources for each specification.                |
+   | resources             | Array of :ref:`PoolResourceFlavorCount <en-us_topic_0000002268800593__response_poolresourceflavorcount>` objects | Resource specifications in a resource pool, including resource specifications and the number of resources for each specification.                |
    +-----------------------+------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-   | network               | :ref:`PoolNetwork <en-us_topic_0000002080295933__response_poolnetwork>` object                                   | Network settings for a resource pool. This parameter is mandatory for physical resource pools and is unavailable for logical resource pools.     |
+   | network               | :ref:`PoolNetwork <en-us_topic_0000002268800593__response_poolnetwork>` object                                   | Network settings for a resource pool. This parameter is mandatory for physical resource pools and is unavailable for logical resource pools.     |
    +-----------------------+------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-   | containerNetwork      | :ref:`PoolClusterContainerNetwork <en-us_topic_0000002080295933__response_poolclustercontainernetwork>` object   | Kubernetes container network                                                                                                                     |
+   | containerNetwork      | :ref:`PoolClusterContainerNetwork <en-us_topic_0000002268800593__response_poolclustercontainernetwork>` object   | Kubernetes container network                                                                                                                     |
    +-----------------------+------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
    | kubernetesSvcIpRange  | String                                                                                                           | CIDR of the Kubernetes service network segment                                                                                                   |
    +-----------------------+------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-   | masters               | Array of :ref:`PoolClusterMaster <en-us_topic_0000002080295933__response_poolclustermaster>` objects             | Master node parameters in a resource pool. This parameter is optional for physical resource pools and is unavailable for logical resource pools. |
+   | masters               | Array of :ref:`PoolClusterMaster <en-us_topic_0000002268800593__response_poolclustermaster>` objects             | Master node parameters in a resource pool. This parameter is optional for physical resource pools and is unavailable for logical resource pools. |
    +-----------------------+------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-   | driver                | :ref:`PoolDriver <en-us_topic_0000002080295933__response_pooldriver>` object                                     | Resource pool driver.                                                                                                                            |
+   | driver                | :ref:`PoolDriver <en-us_topic_0000002268800593__response_pooldriver>` object                                     | Resource pool driver.                                                                                                                            |
    +-----------------------+------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-   | userLogin             | :ref:`PoolUserLogin <en-us_topic_0000002080295933__response_pooluserlogin>` object                               | Node login information of a privilege pool                                                                                                       |
+   | userLogin             | :ref:`PoolUserLogin <en-us_topic_0000002268800593__response_pooluserlogin>` object                               | Node login information of a privilege pool                                                                                                       |
    +-----------------------+------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-   | clusters              | Array of :ref:`PoolClusterInfo <en-us_topic_0000002080295933__response_poolclusterinfo>` objects                 | Privilege pool cluster information                                                                                                               |
+   | clusters              | Array of :ref:`PoolClusterInfo <en-us_topic_0000002268800593__response_poolclusterinfo>` objects                 | Privilege pool cluster information                                                                                                               |
    +-----------------------+------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
    | ipv6enable            | Boolean                                                                                                          | Whether to enable IPv6                                                                                                                           |
    +-----------------------+------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -440,7 +440,7 @@ Response Parameters
    |                       |                                                                                                                  | -  **16**: The resource pool is frozen by the public security department (cannot be unsubscribed). In addition, multiple statuses are allowed.   |
    +-----------------------+------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002080295933__response_poolresourceflavorcount:
+.. _en-us_topic_0000002268800593__response_poolresourceflavorcount:
 
 .. table:: **Table 21** PoolResourceFlavorCount
 
@@ -455,10 +455,10 @@ Response Parameters
    +--------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | extendParams | Map<String,String>                                                                     | Custom configuration, for example, setting **dockerSize** to **"extendParams": {"dockerBaseSize": "100" }**                                                                                  |
    +--------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | azs          | Array of :ref:`PoolNodeAz <en-us_topic_0000002080295933__response_poolnodeaz>` objects | AZ where resource pool nodes are deployed.                                                                                                                                                   |
+   | azs          | Array of :ref:`PoolNodeAz <en-us_topic_0000002268800593__response_poolnodeaz>` objects | AZ where resource pool nodes are deployed.                                                                                                                                                   |
    +--------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002080295933__response_poolnetwork:
+.. _en-us_topic_0000002268800593__response_poolnetwork:
 
 .. table:: **Table 22** PoolNetwork
 
@@ -476,7 +476,7 @@ Response Parameters
    | subnetId              | String                | Subnet ID, which must be specified when a privileged pool is created and is unavailable for a non-privileged pool                                               |
    +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002080295933__response_poolclustercontainernetwork:
+.. _en-us_topic_0000002268800593__response_poolclustercontainernetwork:
 
 .. table:: **Table 23** PoolClusterContainerNetwork
 
@@ -496,7 +496,7 @@ Response Parameters
    | cidr                  | String                | Container network segment. This parameter is available only when the container network model is **overlay_l2** or **vpc-router**. |
    +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002080295933__response_poolclustermaster:
+.. _en-us_topic_0000002268800593__response_poolclustermaster:
 
 .. table:: **Table 24** PoolClusterMaster
 
@@ -506,25 +506,25 @@ Response Parameters
    az        String AZ where the master node is located
    ========= ====== ===================================
 
-.. _en-us_topic_0000002080295933__response_pooldriver:
+.. _en-us_topic_0000002268800593__response_pooldriver:
 
 .. table:: **Table 25** PoolDriver
 
-   +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter             | Type                  | Description                                                                                                                                                |
-   +=======================+=======================+============================================================================================================================================================+
-   | gpuVersion            | String                | GPU driver version. This parameter is available when GPUs are used in a physical resource pool. For example, the GPU driver version is **440.33**.         |
-   +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | npuVersion            | String                | NPU driver version. This parameter is available when Ascend chips are used in a physical resource pool. For example, the Ascend driver version is **C78**. |
-   +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | updateStrategy        | String                | Driver upgrade policy. Options:                                                                                                                            |
-   |                       |                       |                                                                                                                                                            |
-   |                       |                       | -  **force**: forcible upgrade. The node drivers are upgraded immediately, which may affect jobs running on the node.                                      |
-   |                       |                       |                                                                                                                                                            |
-   |                       |                       | -  **idle**: secure upgrade. The drivers are upgraded when no job is running on the node.                                                                  |
-   +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                                                                                                        |
+   +=======================+=======================+====================================================================================================================================================+
+   | gpuVersion            | String                | GPU driver version. This parameter is available when GPUs are used in a physical resource pool. For example, the GPU driver version is **440.33**. |
+   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | npuVersion            | String                | NPU driver version.                                                                                                                                |
+   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+   | updateStrategy        | String                | Driver upgrade policy. Options:                                                                                                                    |
+   |                       |                       |                                                                                                                                                    |
+   |                       |                       | -  **force**: forcible upgrade. The node drivers are upgraded immediately, which may affect jobs running on the node.                              |
+   |                       |                       |                                                                                                                                                    |
+   |                       |                       | -  **idle**: secure upgrade. The drivers are upgraded when no job is running on the node.                                                          |
+   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002080295933__response_pooluserlogin:
+.. _en-us_topic_0000002268800593__response_pooluserlogin:
 
 .. table:: **Table 26** PoolUserLogin
 
@@ -536,7 +536,7 @@ Response Parameters
    | password    | String | Password, which must be salted, encrypted, and encoded using Base64. The default username is **root**. |
    +-------------+--------+--------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002080295933__response_poolstatus:
+.. _en-us_topic_0000002268800593__response_poolstatus:
 
 .. table:: **Table 27** PoolStatus
 
@@ -563,36 +563,36 @@ Response Parameters
    +-----------------------+--------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+
    | message               | String                                                                                           | Message indicating that the resource pool is in the current state.                                                          |
    +-----------------------+--------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+
-   | resources             | :ref:`resources <en-us_topic_0000002080295933__response_resources>` object                       | Left blank for logical pools, which do not need to be created.                                                              |
+   | resources             | :ref:`resources <en-us_topic_0000002268800593__response_resources>` object                       | Left blank for logical pools, which do not need to be created.                                                              |
    +-----------------------+--------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+
-   | scope                 | Array of :ref:`scope <en-us_topic_0000002080295933__response_scope>` objects                     | Service status of a resource pool.                                                                                          |
+   | scope                 | Array of :ref:`scope <en-us_topic_0000002268800593__response_scope>` objects                     | Service status of a resource pool.                                                                                          |
    +-----------------------+--------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+
-   | driver                | :ref:`driver <en-us_topic_0000002080295933__response_driver>` object                             | Resource pool driver.                                                                                                       |
+   | driver                | :ref:`driver <en-us_topic_0000002268800593__response_driver>` object                             | Resource pool driver.                                                                                                       |
    +-----------------------+--------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+
    | parent                | String                                                                                           | Name of the parent node of a resource pool. This parameter is left blank for physical pools.                                |
    +-----------------------+--------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+
    | root                  | String                                                                                           | Name of the root node in a resource pool. For a physical pool, the value is its name.                                       |
    +-----------------------+--------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+
-   | clusters              | Array of :ref:`PoolClusterInfo <en-us_topic_0000002080295933__response_poolclusterinfo>` objects | Resource pool cluster information. This parameter is available only for privileged pools.                                   |
+   | clusters              | Array of :ref:`PoolClusterInfo <en-us_topic_0000002268800593__response_poolclusterinfo>` objects | Resource pool cluster information. This parameter is available only for privileged pools.                                   |
    +-----------------------+--------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002080295933__response_resources:
+.. _en-us_topic_0000002268800593__response_resources:
 
 .. table:: **Table 28** resources
 
    +-----------+--------------------------------------------------------------------------------------------------------+---------------------------------------------+
    | Parameter | Type                                                                                                   | Description                                 |
    +===========+========================================================================================================+=============================================+
-   | creating  | :ref:`PoolResourceFlavorCount <en-us_topic_0000002080295933__response_poolresourceflavorcount>` object | Number of resources that are being created. |
+   | creating  | :ref:`PoolResourceFlavorCount <en-us_topic_0000002268800593__response_poolresourceflavorcount>` object | Number of resources that are being created. |
    +-----------+--------------------------------------------------------------------------------------------------------+---------------------------------------------+
-   | available | :ref:`PoolResourceFlavorCount <en-us_topic_0000002080295933__response_poolresourceflavorcount>` object | Number of available resources.              |
+   | available | :ref:`PoolResourceFlavorCount <en-us_topic_0000002268800593__response_poolresourceflavorcount>` object | Number of available resources.              |
    +-----------+--------------------------------------------------------------------------------------------------------+---------------------------------------------+
-   | abnormal  | :ref:`PoolResourceFlavorCount <en-us_topic_0000002080295933__response_poolresourceflavorcount>` object | Number of unavailable resources.            |
+   | abnormal  | :ref:`PoolResourceFlavorCount <en-us_topic_0000002268800593__response_poolresourceflavorcount>` object | Number of unavailable resources.            |
    +-----------+--------------------------------------------------------------------------------------------------------+---------------------------------------------+
-   | deleting  | :ref:`PoolResourceFlavorCount <en-us_topic_0000002080295933__response_poolresourceflavorcount>` object | Number of resources that are being deleted. |
+   | deleting  | :ref:`PoolResourceFlavorCount <en-us_topic_0000002268800593__response_poolresourceflavorcount>` object | Number of resources that are being deleted. |
    +-----------+--------------------------------------------------------------------------------------------------------+---------------------------------------------+
 
-.. _en-us_topic_0000002080295933__response_poolnodeaz:
+.. _en-us_topic_0000002268800593__response_poolnodeaz:
 
 .. table:: **Table 29** PoolNodeAz
 
@@ -608,7 +608,7 @@ Response Parameters
    |                       |                       | Maximum: **2000**                                             |
    +-----------------------+-----------------------+---------------------------------------------------------------+
 
-.. _en-us_topic_0000002080295933__response_scope:
+.. _en-us_topic_0000002268800593__response_scope:
 
 .. table:: **Table 30** scope
 
@@ -640,19 +640,19 @@ Response Parameters
    |                       |                       | -  **Disabled**: The service is disabled.                               |
    +-----------------------+-----------------------+-------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002080295933__response_driver:
+.. _en-us_topic_0000002268800593__response_driver:
 
 .. table:: **Table 31** driver
 
    +-----------+------------------------------------------------------------------------------------------+-------------+
    | Parameter | Type                                                                                     | Description |
    +===========+==========================================================================================+=============+
-   | gpu       | :ref:`PoolDriverStatus <en-us_topic_0000002080295933__response_pooldriverstatus>` object | GPU driver. |
+   | gpu       | :ref:`PoolDriverStatus <en-us_topic_0000002268800593__response_pooldriverstatus>` object | GPU driver. |
    +-----------+------------------------------------------------------------------------------------------+-------------+
-   | npu       | :ref:`PoolDriverStatus <en-us_topic_0000002080295933__response_pooldriverstatus>` object | NPU driver. |
+   | npu       | :ref:`PoolDriverStatus <en-us_topic_0000002268800593__response_pooldriverstatus>` object | NPU driver. |
    +-----------+------------------------------------------------------------------------------------------+-------------+
 
-.. _en-us_topic_0000002080295933__response_pooldriverstatus:
+.. _en-us_topic_0000002268800593__response_pooldriverstatus:
 
 .. table:: **Table 32** PoolDriverStatus
 
@@ -672,7 +672,7 @@ Response Parameters
    |                       |                       | -  **Abnormal**: The driver malfunctions.       |
    +-----------------------+-----------------------+-------------------------------------------------+
 
-.. _en-us_topic_0000002080295933__response_poolclusterinfo:
+.. _en-us_topic_0000002268800593__response_poolclusterinfo:
 
 .. table:: **Table 33** PoolClusterInfo
 

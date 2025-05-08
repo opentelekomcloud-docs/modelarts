@@ -17,15 +17,15 @@ GET /v2/{project_id}/training-jobs/{training_job_id}/tasks/{task_id}/logs/url
 
 .. table:: **Table 1** Path Parameters
 
-   +-----------------+-----------+--------+---------------------------------------------------------------------------------------------------------------+
-   | Parameter       | Mandatory | Type   | Description                                                                                                   |
-   +=================+===========+========+===============================================================================================================+
-   | project_id      | Yes       | String | Project ID. For details, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`.                      |
-   +-----------------+-----------+--------+---------------------------------------------------------------------------------------------------------------+
-   | training_job_id | Yes       | String | ID of a training job.                                                                                         |
-   +-----------------+-----------+--------+---------------------------------------------------------------------------------------------------------------+
-   | task_id         | Yes       | String | Name of a training job. You can obtain the value from the **status.tasks** field in the training job details. |
-   +-----------------+-----------+--------+---------------------------------------------------------------------------------------------------------------+
+   +-----------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory | Type   | Description                                                                                                              |
+   +=================+===========+========+==========================================================================================================================+
+   | project_id      | Yes       | String | Project ID. For details, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`.                                 |
+   +-----------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------------+
+   | training_job_id | Yes       | String | Training job ID For details about how to obtain the value, see :ref:`Querying the Training Job List <listtrainingjobs>`. |
+   +-----------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------------+
+   | task_id         | Yes       | String | Name of a training job. You can obtain the value from the **status.tasks** field in the training job details.            |
+   +-----------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------------+
 
 Request Parameters
 ------------------
@@ -70,7 +70,7 @@ ok
 .. code-block::
 
    {
-     "obs_url" : "http://10.155.101.248:20000/xxxxxx-test/xk/00chess_test/test11/logs/modelarts-job-0f2ccdbb-4f34-4d53-afb9-d526f3be8c68-ma-platform-init-worker-0-172.16.24.51-01909681.log?AWSAccessKeyId=xxxxx"
+     "obs_url" : "http://10.155.101.248:20000/cnnorth4-test/xk/00chess_test/test11/logs/modelarts-job-0f2ccdbb-4f34-4d53-afb9-d526f3be8c68-ma-platform-init-worker-0-172.16.24.51-01909681.log?AWSAccessKeyId=xxxxx"
    }
 
 Status Codes

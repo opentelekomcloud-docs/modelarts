@@ -56,10 +56,10 @@ Response Parameters
    +-----------+----------------------------------------------------------------+-------------------+
    | Parameter | Type                                                           | Description       |
    +===========+================================================================+===================+
-   | tags      | :ref:`Tag <en-us_topic_0000002044216576__response_tag>` object | Resource tag list |
+   | tags      | :ref:`Tag <en-us_topic_0000002268720665__response_tag>` object | Resource tag list |
    +-----------+----------------------------------------------------------------+-------------------+
 
-.. _en-us_topic_0000002044216576__response_tag:
+.. _en-us_topic_0000002268720665__response_tag:
 
 .. table:: **Table 4** Tag
 

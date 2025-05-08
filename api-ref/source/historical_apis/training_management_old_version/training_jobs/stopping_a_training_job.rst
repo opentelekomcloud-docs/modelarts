@@ -17,9 +17,9 @@ URI
 
 POST /v1/{project_id}/training-jobs/{job_id}/versions/{version_id}/stop
 
-:ref:`Table 1 <en-us_topic_0000001909907400__table38721821155840>` describes the required parameters.
+:ref:`Table 1 <en-us_topic_0000002268768289__table38721821155840>` describes the required parameters.
 
-.. _en-us_topic_0000001909907400__table38721821155840:
+.. _en-us_topic_0000002268768289__table38721821155840:
 
 .. table:: **Table 1** Parameters
 
@@ -41,9 +41,9 @@ None
 Response Body
 -------------
 
-:ref:`Table 2 <en-us_topic_0000001909907400__table61691357155927>` describes the response parameters.
+:ref:`Table 2 <en-us_topic_0000002268768289__table61691357155927>` describes the response parameters.
 
-.. _en-us_topic_0000001909907400__table61691357155927:
+.. _en-us_topic_0000002268768289__table61691357155927:
 
 .. table:: **Table 2** Parameters
 

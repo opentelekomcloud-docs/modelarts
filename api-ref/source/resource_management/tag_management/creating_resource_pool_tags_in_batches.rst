@@ -33,10 +33,10 @@ Request Parameters
    +-----------+-----------+-------------------------------------------------------------------------+--------------------------+
    | Parameter | Mandatory | Type                                                                    | Description              |
    +===========+===========+=========================================================================+==========================+
-   | tags      | Yes       | Array of :ref:`Tag <en-us_topic_0000002080257313__request_tag>` objects | List of tags to be added |
+   | tags      | Yes       | Array of :ref:`Tag <en-us_topic_0000002233721402__request_tag>` objects | List of tags to be added |
    +-----------+-----------+-------------------------------------------------------------------------+--------------------------+
 
-.. _en-us_topic_0000002080257313__request_tag:
+.. _en-us_topic_0000002233721402__request_tag:
 
 .. table:: **Table 3** Tag
 
@@ -66,10 +66,10 @@ Response Parameters
    +-----------+----------------------------------------------------------------+-------------------+
    | Parameter | Type                                                           | Description       |
    +===========+================================================================+===================+
-   | tags      | :ref:`Tag <en-us_topic_0000002080257313__response_tag>` object | Resource tag list |
+   | tags      | :ref:`Tag <en-us_topic_0000002233721402__response_tag>` object | Resource tag list |
    +-----------+----------------------------------------------------------------+-------------------+
 
-.. _en-us_topic_0000002080257313__response_tag:
+.. _en-us_topic_0000002233721402__response_tag:
 
 .. table:: **Table 5** Tag
 

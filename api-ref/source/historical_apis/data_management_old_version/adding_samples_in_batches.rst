@@ -44,12 +44,12 @@ Request Parameters
    |                  |                 |                                                                               |                                                                                                                                                                       |
    |                  |                 |                                                                               | -  **false**: Import labels to the to-be-confirmed dataset. Currently, to-be-confirmed datasets only support categories of image classification and object detection. |
    +------------------+-----------------+-------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | label_format     | No              | :ref:`LabelFormat <en-us_topic_0000001909907376__request_labelformat>` object | Label format. This parameter is used only for text datasets.                                                                                                          |
+   | label_format     | No              | :ref:`LabelFormat <en-us_topic_0000002268848129__request_labelformat>` object | Label format. This parameter is used only for text datasets.                                                                                                          |
    +------------------+-----------------+-------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | samples          | No              | Array of :ref:`Sample <en-us_topic_0000001909907376__request_sample>` objects | Sample list.                                                                                                                                                          |
+   | samples          | No              | Array of :ref:`Sample <en-us_topic_0000002268848129__request_sample>` objects | Sample list.                                                                                                                                                          |
    +------------------+-----------------+-------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909907376__request_labelformat:
+.. _en-us_topic_0000002268848129__request_labelformat:
 
 .. table:: **Table 3** LabelFormat
 
@@ -67,7 +67,7 @@ Request Parameters
    | text_sample_separator | No              | String          | Separator between the text and label. By default, the **Tab** key is used as the separator. The separator needs to be escaped. The separator can contain only one character, such as a letter, a digit, or any of the following special characters: ``!@#$%^&*_=|?/':.;,`` |
    +-----------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909907376__request_sample:
+.. _en-us_topic_0000002268848129__request_sample:
 
 .. table:: **Table 4** Sample
 
@@ -76,13 +76,13 @@ Request Parameters
    +=================+=================+=========================================================================================+================================================================================================================================================================+
    | data            | No              | Object                                                                                  | Byte data of sample files. The type is **java.nio.ByteBuffer**. When this parameter is called, the string converted from the byte data is uploaded.            |
    +-----------------+-----------------+-----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | data_source     | No              | :ref:`DataSource <en-us_topic_0000001909907376__request_datasource>` object             | Data source.                                                                                                                                                   |
+   | data_source     | No              | :ref:`DataSource <en-us_topic_0000002268848129__request_datasource>` object             | Data source.                                                                                                                                                   |
    +-----------------+-----------------+-----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | encoding        | No              | String                                                                                  | Encoding type of sample files, which is used to upload .txt or .csv files. The value can be **UTF-8**, **GBK**, or **GB2312**. The default value is **UTF-8**. |
    +-----------------+-----------------+-----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | labels          | No              | Array of :ref:`SampleLabel <en-us_topic_0000001909907376__request_samplelabel>` objects | Sample label list.                                                                                                                                             |
+   | labels          | No              | Array of :ref:`SampleLabel <en-us_topic_0000002268848129__request_samplelabel>` objects | Sample label list.                                                                                                                                             |
    +-----------------+-----------------+-----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | metadata        | No              | :ref:`SampleMetadata <en-us_topic_0000001909907376__request_samplemetadata>` object     | Key-value pair of the sample **metadata** attribute.                                                                                                           |
+   | metadata        | No              | :ref:`SampleMetadata <en-us_topic_0000002268848129__request_samplemetadata>` object     | Key-value pair of the sample **metadata** attribute.                                                                                                           |
    +-----------------+-----------------+-----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | name            | No              | String                                                                                  | Name of sample files. The value contains 0 to 1,024 characters and cannot contain special characters ``(!<>=&"').``                                            |
    +-----------------+-----------------+-----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -101,7 +101,7 @@ Request Parameters
    |                 |                 |                                                                                         | -  **9**: custom format                                                                                                                                        |
    +-----------------+-----------------+-----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909907376__request_datasource:
+.. _en-us_topic_0000002268848129__request_datasource:
 
 .. table:: **Table 5** DataSource
 
@@ -126,9 +126,9 @@ Request Parameters
    |                    |                 |                                                                                     |                                                                                                         |
    |                    |                 |                                                                                     | -  **6**: Inference service                                                                             |
    +--------------------+-----------------+-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
-   | schema_maps        | No              | Array of :ref:`SchemaMap <en-us_topic_0000001909907376__request_schemamap>` objects | Schema mapping information corresponding to the table data.                                             |
+   | schema_maps        | No              | Array of :ref:`SchemaMap <en-us_topic_0000002268848129__request_schemamap>` objects | Schema mapping information corresponding to the table data.                                             |
    +--------------------+-----------------+-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
-   | source_info        | No              | :ref:`SourceInfo <en-us_topic_0000001909907376__request_sourceinfo>` object         | Information required for importing a table data source.                                                 |
+   | source_info        | No              | :ref:`SourceInfo <en-us_topic_0000002268848129__request_sourceinfo>` object         | Information required for importing a table data source.                                                 |
    +--------------------+-----------------+-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
    | with_column_header | No              | Boolean                                                                             | Whether the first row in the file is a column name. This field is valid for the table dataset. Options: |
    |                    |                 |                                                                                     |                                                                                                         |
@@ -137,7 +137,7 @@ Request Parameters
    |                    |                 |                                                                                     | -  **false**: The first row in the file is not the column name.                                         |
    +--------------------+-----------------+-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909907376__request_schemamap:
+.. _en-us_topic_0000002268848129__request_schemamap:
 
 .. table:: **Table 6** SchemaMap
 
@@ -148,7 +148,7 @@ Request Parameters
    src_name  No        String Name of the source column.
    ========= ========= ====== ===============================
 
-.. _en-us_topic_0000001909907376__request_sourceinfo:
+.. _en-us_topic_0000002268848129__request_sourceinfo:
 
 .. table:: **Table 7** SourceInfo
 
@@ -186,7 +186,7 @@ Request Parameters
    | vpc_id          | No              | String          | ID of the VPC where an MRS cluster resides.                                 |
    +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909907376__request_samplelabel:
+.. _en-us_topic_0000002268848129__request_samplelabel:
 
 .. table:: **Table 8** SampleLabel
 
@@ -203,7 +203,7 @@ Request Parameters
    +-----------------+-----------------+-----------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
    | name            | No              | String                                                                                        | Label name.                                                                                                        |
    +-----------------+-----------------+-----------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
-   | property        | No              | :ref:`SampleLabelProperty <en-us_topic_0000001909907376__request_samplelabelproperty>` object | Attribute key-value pair of the sample label, such as the object shape and shape feature.                          |
+   | property        | No              | :ref:`SampleLabelProperty <en-us_topic_0000002268848129__request_samplelabelproperty>` object | Attribute key-value pair of the sample label, such as the object shape and shape feature.                          |
    +-----------------+-----------------+-----------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
    | score           | No              | Float                                                                                         | Confidence. The value range is [0,1].                                                                              |
    +-----------------+-----------------+-----------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
@@ -232,7 +232,7 @@ Request Parameters
    |                 |                 |                                                                                               | -  **600**: video labeling                                                                                         |
    +-----------------+-----------------+-----------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909907376__request_samplelabelproperty:
+.. _en-us_topic_0000002268848129__request_samplelabelproperty:
 
 .. table:: **Table 9** SampleLabelProperty
 
@@ -364,7 +364,7 @@ Request Parameters
    | @modelarts:to               | No              | String          | ID of the tail entity in the triplet relationship label, which is a default attribute dedicated to the triplet relationship label.                                                                                                                                                                                                                                                          |
    +-----------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909907376__request_samplemetadata:
+.. _en-us_topic_0000002268848129__request_samplemetadata:
 
 .. table:: **Table 10** SampleMetadata
 
@@ -462,7 +462,7 @@ Response Parameters
    +-----------------------+----------------------------------------------------------------------------------------------------+-----------------------------------------------+
    | error_msg             | String                                                                                             | Error message.                                |
    +-----------------------+----------------------------------------------------------------------------------------------------+-----------------------------------------------+
-   | results               | Array of :ref:`UploadSampleResp <en-us_topic_0000001909907376__response_uploadsampleresp>` objects | Response list for adding samples in batches.  |
+   | results               | Array of :ref:`UploadSampleResp <en-us_topic_0000002268848129__response_uploadsampleresp>` objects | Response list for adding samples in batches.  |
    +-----------------------+----------------------------------------------------------------------------------------------------+-----------------------------------------------+
    | success               | Boolean                                                                                            | Whether the operation is successful. Options: |
    |                       |                                                                                                    |                                               |
@@ -471,7 +471,7 @@ Response Parameters
    |                       |                                                                                                    | -  **false**: failed                          |
    +-----------------------+----------------------------------------------------------------------------------------------------+-----------------------------------------------+
 
-.. _en-us_topic_0000001909907376__response_uploadsampleresp:
+.. _en-us_topic_0000002268848129__response_uploadsampleresp:
 
 .. table:: **Table 12** UploadSampleResp
 

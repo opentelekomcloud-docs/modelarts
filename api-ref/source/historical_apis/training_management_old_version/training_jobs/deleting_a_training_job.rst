@@ -17,9 +17,9 @@ URI
 
 DELETE /v1/{project_id}/training-jobs/{job_id}
 
-:ref:`Table 1 <en-us_topic_0000001909907436__table126693715562>` describes the required parameters.
+:ref:`Table 1 <en-us_topic_0000002233768892__table126693715562>` describes the required parameters.
 
-.. _en-us_topic_0000001909907436__table126693715562:
+.. _en-us_topic_0000002233768892__table126693715562:
 
 .. table:: **Table 1** Parameters
 
@@ -39,9 +39,9 @@ None
 Response Body
 -------------
 
-:ref:`Table 2 <en-us_topic_0000001909907436__table1221422915578>` describes the response parameters.
+:ref:`Table 2 <en-us_topic_0000002233768892__table1221422915578>` describes the response parameters.
 
-.. _en-us_topic_0000001909907436__table1221422915578:
+.. _en-us_topic_0000002233768892__table1221422915578:
 
 .. table:: **Table 2** Parameters
 

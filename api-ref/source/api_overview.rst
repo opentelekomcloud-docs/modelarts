@@ -7,7 +7,7 @@ API Overview
 
 All ModelArts APIs are proprietary.
 
-You can use these APIs to manage development environments, training jobs, AI applications, and services.
+You can use these APIs to manage development environments, training jobs, models, and services.
 
 DevEnviron APIs
 ---------------
@@ -113,29 +113,10 @@ Training Management APIs
    | :ref:`Obtaining the Preset AI Frameworks Supported by a Training Job <showtrainingjobengines>`   | Obtain the preset AI frameworks supported by a training job.   |
    +--------------------------------------------------------------------------------------------------+----------------------------------------------------------------+
 
-AI Application Management APIs
-------------------------------
-
-.. table:: **Table 5** APIs for managing AI applications
-
-   +----------------------------------------------------------------+----------------------------------------------------------------------------------+
-   | API                                                            | Description                                                                      |
-   +================================================================+==================================================================================+
-   | :ref:`Obtaining the Model Runtime <showmodelengineandruntime>` | Obtain the AI engine and runtime of models.                                      |
-   +----------------------------------------------------------------+----------------------------------------------------------------------------------+
-   | :ref:`Creating an AI Application <createmodel>`                | Create an AI application.                                                        |
-   +----------------------------------------------------------------+----------------------------------------------------------------------------------+
-   | :ref:`Obtaining an AI Application List <listmodels>`           | Obtain AI applications by different search criteria.                             |
-   +----------------------------------------------------------------+----------------------------------------------------------------------------------+
-   | :ref:`Obtaining Details About an AI Application <showmodel>`   | Obtain AI application details by ID.                                             |
-   +----------------------------------------------------------------+----------------------------------------------------------------------------------+
-   | :ref:`Deleting an AI Application <deletemodel>`                | Delete AI applications by ID. All versions of the AI application can be deleted. |
-   +----------------------------------------------------------------+----------------------------------------------------------------------------------+
-
 Service Management APIs
 -----------------------
 
-.. table:: **Table 6** Service management APIs
+.. table:: **Table 5** Service management APIs
 
    +------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
    | API                                                                                      | Description                                                                                                                   |
@@ -162,7 +143,7 @@ Service Management APIs
 Resource Management APIs
 ------------------------
 
-.. table:: **Table 7** Configuration management API
+.. table:: **Table 6** Configuration management API
 
    +-------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
    | API                                                         | Description                                                                                                      |
@@ -170,15 +151,7 @@ Resource Management APIs
    | :ref:`Obtaining OS Configuration Parameters <showosconfig>` | Obtain the configuration parameters of the ModelArts OS service, such as the CIDR block and user resource quota. |
    +-------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
 
-.. table:: **Table 8** Configuration management API
-
-   +------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-   | API                                      | Description                                                                                                 |
-   +==========================================+=============================================================================================================+
-   | :ref:`Obtaining OS Quotas <showosquota>` | Obtain the quotas of some ModelArts OS resources, such as the quotas for resource pool quotas and networks. |
-   +------------------------------------------+-------------------------------------------------------------------------------------------------------------+
-
-.. table:: **Table 9** Tag management
+.. table:: **Table 7** Tag management
 
    +---------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | API                                                                 | Description                                                                                                                                                                                 |
@@ -194,7 +167,7 @@ Resource Management APIs
    | :ref:`Querying Resource Pools by Tag <listpoolsbytags>`             | This API is used to query resources by tag. Multiple tags can be ANDed. Fuzzy search by resource name is supported.                                                                         |
    +---------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. table:: **Table 10** Plug-in template management API
+.. table:: **Table 8** Plug-in template management API
 
    +----------------------------------------------------------+-------------------------------------------------+
    | API                                                      | Description                                     |
@@ -202,7 +175,7 @@ Resource Management APIs
    | :ref:`Obtaining a Plug-in Template <showplugintemplate>` | Obtain details of a specified plug-in template. |
    +----------------------------------------------------------+-------------------------------------------------+
 
-.. table:: **Table 11** Node management APIs
+.. table:: **Table 9** Node management APIs
 
    +---------------------------------------------------------+----------------------------------------------------------------------------------------------------+
    | API                                                     | Description                                                                                        |
@@ -212,7 +185,7 @@ Resource Management APIs
    | :ref:`Deleting Nodes in a Batch <batchdeletepoolnodes>` | Delete nodes in a specific resource pool. At least one node must be reserved in the resource pool. |
    +---------------------------------------------------------+----------------------------------------------------------------------------------------------------+
 
-.. table:: **Table 12** Event management API
+.. table:: **Table 10** Event management API
 
    ==================================== ==============
    API                                  Description
@@ -220,7 +193,7 @@ Resource Management APIs
    :ref:`Obtaining Events <listevents>` Obtain events.
    ==================================== ==============
 
-.. table:: **Table 13** Network management APIs
+.. table:: **Table 11** Network management APIs
 
    +----------------------------------------------------+----------------------------------------------------+
    | API                                                | Description                                        |
@@ -236,7 +209,7 @@ Resource Management APIs
    | :ref:`Updating a Network Resource <patchnetwork>`  | Update a specified network resource.               |
    +----------------------------------------------------+----------------------------------------------------+
 
-.. table:: **Table 14** Resource indicator management API
+.. table:: **Table 12** Resource indicator management API
 
    +------------------------------------------------------------------------+--------------------------------------------------------------------------+
    | API                                                                    | Description                                                              |
@@ -244,7 +217,7 @@ Resource Management APIs
    | :ref:`Obtaining the Real-Time Resource Usage <showpoolruntimemetrics>` | Obtain the real-time usage of all resource pools in the current project. |
    +------------------------------------------------------------------------+--------------------------------------------------------------------------+
 
-.. table:: **Table 15** Resource pool management APIs
+.. table:: **Table 13** Resource pool management APIs
 
    +-----------------------------------------------------------------+-------------------------------------------------------+
    | API                                                             | Description                                           |
@@ -264,7 +237,7 @@ Resource Management APIs
    | :ref:`Collecting Resource Pool Statistics <showpoolstatistics>` | Obtain the statistics of a resource pool.             |
    +-----------------------------------------------------------------+-------------------------------------------------------+
 
-.. table:: **Table 16** Resource flavor management APIs
+.. table:: **Table 14** Resource flavor management APIs
 
    +---------------------------------------------------------+--------------------------+
    | API                                                     | Description              |
@@ -272,7 +245,7 @@ Resource Management APIs
    | :ref:`Obtaining Resource Flavors <listresourceflavors>` | Obtain resource flavors. |
    +---------------------------------------------------------+--------------------------+
 
-.. table:: **Table 17** APIs for managing resource pool jobs
+.. table:: **Table 15** APIs for managing resource pool jobs
 
    +---------------------------------------------------------------------------------------+-----------------------------------------------------+
    | API                                                                                   | Description                                         |
@@ -285,7 +258,7 @@ Resource Management APIs
 Authorization Management APIs
 -----------------------------
 
-.. table:: **Table 18** Authorization management APIs
+.. table:: **Table 16** Authorization management APIs
 
    +------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | API                                                        | Description                                                                                                                                                                                                             |
