@@ -12,7 +12,7 @@ Overview
 
 The process of managing ModelArts authorization is as follows:
 
-#. , which will be added in a request header for authentication.
+#. Obtain a user token, which will be added in a request header for authentication.
 #. Call the API for :ref:`creating a ModelArts agency <createmodelartsagency>` to create an agency for ModelArts-dependent services, such as OBS and SWR.
 #. Call the API for :ref:`configuring authorization <createauthorization>` to configure ModelArts authorization. The administrator can use this API to set an agency for IAM users and set the access key of the current user.
 

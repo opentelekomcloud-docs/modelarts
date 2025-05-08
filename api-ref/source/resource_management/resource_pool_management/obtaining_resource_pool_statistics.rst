@@ -46,22 +46,22 @@ Response Parameters
    +---------------+------------------------------------------------------------------------------+--------------------------+
    | Parameter     | Type                                                                         | Description              |
    +===============+==============================================================================+==========================+
-   | statistics    | :ref:`statistics <en-us_topic_0000002044058296__response_statistics>` object | Resource pool statistics |
+   | statistics    | :ref:`statistics <en-us_topic_0000002233881270__response_statistics>` object | Resource pool statistics |
    +---------------+------------------------------------------------------------------------------+--------------------------+
    | operationTime | String                                                                       | Statistics time          |
    +---------------+------------------------------------------------------------------------------+--------------------------+
 
-.. _en-us_topic_0000002044058296__response_statistics:
+.. _en-us_topic_0000002233881270__response_statistics:
 
 .. table:: **Table 4** statistics
 
    +-----------+----------------------------------------------------------------------+-------------------------------------------------------+
    | Parameter | Type                                                                 | Description                                           |
    +===========+======================================================================+=======================================================+
-   | status    | :ref:`status <en-us_topic_0000002044058296__response_status>` object | Statistics about resource pools in different statuses |
+   | status    | :ref:`status <en-us_topic_0000002233881270__response_status>` object | Statistics about resource pools in different statuses |
    +-----------+----------------------------------------------------------------------+-------------------------------------------------------+
 
-.. _en-us_topic_0000002044058296__response_status:
+.. _en-us_topic_0000002233881270__response_status:
 
 .. table:: **Table 5** status
 

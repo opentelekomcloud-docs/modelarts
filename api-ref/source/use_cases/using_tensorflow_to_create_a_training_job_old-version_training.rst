@@ -34,7 +34,7 @@ Prerequisites
 Procedure
 ---------
 
-#. .. _en-us_topic_0000001401866062__li384513468342:
+#. .. _en-us_topic_0000002268768129__li384513468342:
 
    Call the API for :ref:`obtaining job resource specifications <modelarts_03_0072>` to obtain the resource flavors available for training jobs.
 
@@ -91,7 +91,7 @@ Procedure
       -  Select and record the flavor type required for creating the training job based on **spec_code**. This section uses **modelarts.vm.cpu.8u** with **max_num** set to **1** as an example.
       -  **no_resource** specifies whether resources are sufficient. Value **false** indicates that resources are available.
 
-#. .. _en-us_topic_0000001401866062__li12845104623418:
+#. .. _en-us_topic_0000002268768129__li12845104623418:
 
    Call the API for :ref:`obtaining job engine specifications <modelarts_03_0073>` to obtain the engine types and versions available for training jobs.
 
@@ -111,7 +111,7 @@ Procedure
            "engines": [
              {
                "engine_type": 13,
-               "engine_name": "Ascend-Powered-Engine",
+               "engine_name": "Powered-Engine",
                "engine_id": 130,
                "engine_version": "TF-1.15-python3.7-aarch64"
              },
@@ -141,7 +141,7 @@ Procedure
 
       Select the engine for creating a training job based on **engine_name** and **engine_version** and record **engine_id**. This section describes how to use TensorFlow to create a job with **engine_id** set to **4**.
 
-#. .. _en-us_topic_0000001401866062__li5845144683416:
+#. .. _en-us_topic_0000002268768129__li5845144683416:
 
    Call the API for :ref:`creating a training job <modelarts_03_0045>` to create a TensorFlow training job named **jobtest_TF**.
 
@@ -188,8 +188,8 @@ Procedure
       Set the italic parameters based on site requirements.
 
       -  **job_name** and **job_desc**: Name and description of the training job, respectively
-      -  **worker_server_num** and **code**: **max_num** and **spec_code** values, respectively, obtained in :ref:`1 <en-us_topic_0000001401866062__li384513468342>`
-      -  **engine_id**: Engine ID obtained in :ref:`2 <en-us_topic_0000001401866062__li12845104623418>`
+      -  **worker_server_num** and **code**: **max_num** and **spec_code** values, respectively, obtained in :ref:`1 <en-us_topic_0000002268768129__li384513468342>`
+      -  **engine_id**: Engine ID obtained in :ref:`2 <en-us_topic_0000002268768129__li12845104623418>`
       -  **train_url**: Output directory of the training job
       -  **app_url** and **boot_file_url**: Code directory and code boot file of the training job, respectively
       -  **data_url**: Dataset directory used by the training job
@@ -222,8 +222,8 @@ Procedure
 
       Set the italic parameters based on site requirements.
 
-      -  **job_id**: Training job ID recorded in :ref:`3 <en-us_topic_0000001401866062__li5845144683416>`
-      -  **version_id**: Training job version recorded in :ref:`3 <en-us_topic_0000001401866062__li5845144683416>`
+      -  **job_id**: Training job ID recorded in :ref:`3 <en-us_topic_0000002268768129__li5845144683416>`
+      -  **version_id**: Training job version recorded in :ref:`3 <en-us_topic_0000002268768129__li5845144683416>`
 
    b. Response body with status code **200 OK** returned:
 
@@ -337,7 +337,7 @@ Procedure
 
       Learn about the version details of the training job based on the response. **status** value **10** indicates the training job has been executed.
 
-#. .. _en-us_topic_0000001401866062__li52217241518:
+#. .. _en-us_topic_0000002268768129__li52217241518:
 
    Call the API for :ref:`obtaining the name of a training job log file <modelarts_03_0054>` to obtain the log file name of the training job.
 
@@ -372,7 +372,7 @@ Procedure
 
       Set the italic parameters based on site requirements.
 
-      -  **log_file**: Name of the log file obtained in :ref:`5 <en-us_topic_0000001401866062__li52217241518>`
+      -  **log_file**: Name of the log file obtained in :ref:`5 <en-us_topic_0000002268768129__li52217241518>`
       -  **lines**: Number of rows of logs to be obtained in the log file
       -  **order**: Log query direction
 

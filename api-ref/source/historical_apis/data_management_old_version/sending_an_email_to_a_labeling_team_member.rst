@@ -57,7 +57,7 @@ Response Parameters
    +-----------------------+----------------------------------------------------------------------------------------------+-------------------------------------------------------+
    | error_msg             | String                                                                                       | Error message.                                        |
    +-----------------------+----------------------------------------------------------------------------------------------+-------------------------------------------------------+
-   | results               | Array of :ref:`BatchResponse <en-us_topic_0000001909747444__response_batchresponse>` objects | Result of sending an email to a labeling team member. |
+   | results               | Array of :ref:`BatchResponse <en-us_topic_0000002233768976__response_batchresponse>` objects | Result of sending an email to a labeling team member. |
    +-----------------------+----------------------------------------------------------------------------------------------+-------------------------------------------------------+
    | success               | Boolean                                                                                      | Check whether the operation is successful. Options:   |
    |                       |                                                                                              |                                                       |
@@ -66,7 +66,7 @@ Response Parameters
    |                       |                                                                                              | -  **false**: The operation is failed.                |
    +-----------------------+----------------------------------------------------------------------------------------------+-------------------------------------------------------+
 
-.. _en-us_topic_0000001909747444__response_batchresponse:
+.. _en-us_topic_0000002233768976__response_batchresponse:
 
 .. table:: **Table 4** BatchResponse
 

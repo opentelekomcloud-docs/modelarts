@@ -15,9 +15,9 @@ URI
 
 GET /v1/{project_id}/training-job-configs
 
-:ref:`Table 1 <en-us_topic_0000001909747492__table3329924091755>` describes the required parameters.
+:ref:`Table 1 <en-us_topic_0000002233928816__table3329924091755>` describes the required parameters.
 
-.. _en-us_topic_0000001909747492__table3329924091755:
+.. _en-us_topic_0000002233928816__table3329924091755:
 
 .. table:: **Table 1** Parameters
 
@@ -30,9 +30,9 @@ GET /v1/{project_id}/training-job-configs
 Request Body
 ------------
 
-:ref:`Table 2 <en-us_topic_0000001909747492__table19858192884410>` describes the request parameters.
+:ref:`Table 2 <en-us_topic_0000002233928816__table19858192884410>` describes the request parameters.
 
-.. _en-us_topic_0000001909747492__table19858192884410:
+.. _en-us_topic_0000002233928816__table19858192884410:
 
 .. table:: **Table 2** Parameters
 
@@ -61,9 +61,9 @@ Request Body
 Response Body
 -------------
 
-:ref:`Table 3 <en-us_topic_0000001909747492__table1356779515036>` describes the response parameters.
+:ref:`Table 3 <en-us_topic_0000002233928816__table1356779515036>` describes the response parameters.
 
-.. _en-us_topic_0000001909747492__table1356779515036:
+.. _en-us_topic_0000002233928816__table1356779515036:
 
 .. table:: **Table 3** Parameters
 
@@ -78,10 +78,10 @@ Response Body
    +--------------------+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
    | config_total_count | Integer                                                                                   | Total number of the queried training job configurations                                                                                              |
    +--------------------+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | configs            | Array of :ref:`ConfigResponse <en-us_topic_0000001909747492__table4848297015115>` objects | **configs** parameters                                                                                                                               |
+   | configs            | Array of :ref:`ConfigResponse <en-us_topic_0000002233928816__table4848297015115>` objects | **configs** parameters                                                                                                                               |
    +--------------------+-------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909747492__table4848297015115:
+.. _en-us_topic_0000002233928816__table4848297015115:
 
 .. table:: **Table 4** **configs** parameters
 

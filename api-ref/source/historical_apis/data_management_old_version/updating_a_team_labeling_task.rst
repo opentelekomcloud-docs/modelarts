@@ -48,10 +48,10 @@ Request Parameters
    +-------------------+-----------+-----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
    | task_name         | No        | String                                                                                  | Team labeling task name. The value contains 1 to 64 characters and only letters, digits, underscores (_), and hyphens (-) are allowed.     |
    +-------------------+-----------+-----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
-   | workforces_config | No        | :ref:`WorkforcesConfig <en-us_topic_0000001909907352__request_workforcesconfig>` object | Team labeling task information: Tasks can be assigned by the team administrator or a specified team.                                       |
+   | workforces_config | No        | :ref:`WorkforcesConfig <en-us_topic_0000002233768952__request_workforcesconfig>` object | Team labeling task information: Tasks can be assigned by the team administrator or a specified team.                                       |
    +-------------------+-----------+-----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909907352__request_workforcesconfig:
+.. _en-us_topic_0000002233768952__request_workforcesconfig:
 
 .. table:: **Table 3** WorkforcesConfig
 
@@ -60,24 +60,24 @@ Request Parameters
    +============+===========+=================================================================================================+============================================+
    | agency     | No        | String                                                                                          | Administrator                              |
    +------------+-----------+-------------------------------------------------------------------------------------------------+--------------------------------------------+
-   | workforces | No        | Array of :ref:`WorkforceConfig <en-us_topic_0000001909907352__request_workforceconfig>` objects | List of teams that execute labeling tasks. |
+   | workforces | No        | Array of :ref:`WorkforceConfig <en-us_topic_0000002233768952__request_workforceconfig>` objects | List of teams that execute labeling tasks. |
    +------------+-----------+-------------------------------------------------------------------------------------------------+--------------------------------------------+
 
-.. _en-us_topic_0000001909907352__request_workforceconfig:
+.. _en-us_topic_0000002233768952__request_workforceconfig:
 
 .. table:: **Table 4** WorkforceConfig
 
    +----------------+-----------+-------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+
    | Parameter      | Mandatory | Type                                                                          | Description                                                                                                                     |
    +================+===========+===============================================================================+=================================================================================================================================+
-   | workers        | No        | Array of :ref:`Worker <en-us_topic_0000001909907352__request_worker>` objects | List of labeling team members.                                                                                                  |
+   | workers        | No        | Array of :ref:`Worker <en-us_topic_0000002233768952__request_worker>` objects | List of labeling team members.                                                                                                  |
    +----------------+-----------+-------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+
    | workforce_id   | No        | String                                                                        | ID of a labeling team.                                                                                                          |
    +----------------+-----------+-------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+
    | workforce_name | No        | String                                                                        | Name of a labeling team. The value contains 0 to 1024 characters and does not support the following special characters: !<>=&"' |
    +----------------+-----------+-------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909907352__request_worker:
+.. _en-us_topic_0000002233768952__request_worker:
 
 .. table:: **Table 5** Worker
 

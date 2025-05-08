@@ -57,12 +57,12 @@ Response Parameters
    |                       |                                                                                          |                         |
    |                       |                                                                                          | -  **NodeList**: nodes  |
    +-----------------------+------------------------------------------------------------------------------------------+-------------------------+
-   | metadata              | :ref:`NodeListMetadata <en-us_topic_0000002044216596__response_nodelistmetadata>` object | Metadata of resources.  |
+   | metadata              | :ref:`NodeListMetadata <en-us_topic_0000002268720685__response_nodelistmetadata>` object | Metadata of resources.  |
    +-----------------------+------------------------------------------------------------------------------------------+-------------------------+
-   | items                 | Array of :ref:`Node <en-us_topic_0000002044216596__response_node>` objects               | Nodes.                  |
+   | items                 | Array of :ref:`Node <en-us_topic_0000002268720685__response_node>` objects               | Nodes.                  |
    +-----------------------+------------------------------------------------------------------------------------------+-------------------------+
 
-.. _en-us_topic_0000002044216596__response_nodelistmetadata:
+.. _en-us_topic_0000002268720685__response_nodelistmetadata:
 
 .. table:: **Table 4** NodeListMetadata
 
@@ -73,7 +73,7 @@ Response Parameters
    remainingItemCount Long   Remaining resources
    ================== ====== =======================================
 
-.. _en-us_topic_0000002044216596__response_node:
+.. _en-us_topic_0000002268720685__response_node:
 
 .. table:: **Table 5** Node
 
@@ -88,14 +88,14 @@ Response Parameters
    |                       |                                                                              |                         |
    |                       |                                                                              | -  **Node**: node       |
    +-----------------------+------------------------------------------------------------------------------+-------------------------+
-   | metadata              | :ref:`metadata <en-us_topic_0000002044216596__response_metadata>` object     | Basic node information. |
+   | metadata              | :ref:`metadata <en-us_topic_0000002268720685__response_metadata>` object     | Basic node information. |
    +-----------------------+------------------------------------------------------------------------------+-------------------------+
-   | spec                  | :ref:`NodeSpec <en-us_topic_0000002044216596__response_nodespec>` object     | Node description.       |
+   | spec                  | :ref:`NodeSpec <en-us_topic_0000002268720685__response_nodespec>` object     | Node description.       |
    +-----------------------+------------------------------------------------------------------------------+-------------------------+
-   | status                | :ref:`NodeStatus <en-us_topic_0000002044216596__response_nodestatus>` object | Node status.            |
+   | status                | :ref:`NodeStatus <en-us_topic_0000002268720685__response_nodestatus>` object | Node status.            |
    +-----------------------+------------------------------------------------------------------------------+-------------------------+
 
-.. _en-us_topic_0000002044216596__response_metadata:
+.. _en-us_topic_0000002268720685__response_metadata:
 
 .. table:: **Table 6** metadata
 
@@ -106,10 +106,10 @@ Response Parameters
    +-------------------+------------------------------------------------------------------------------+-----------------------------+
    | creationTimestamp | String                                                                       | Creation time.              |
    +-------------------+------------------------------------------------------------------------------+-----------------------------+
-   | labels            | :ref:`NodeLabels <en-us_topic_0000002044216596__response_nodelabels>` object | Label information of a node |
+   | labels            | :ref:`NodeLabels <en-us_topic_0000002268720685__response_nodelabels>` object | Label information of a node |
    +-------------------+------------------------------------------------------------------------------+-----------------------------+
 
-.. _en-us_topic_0000002044216596__response_nodelabels:
+.. _en-us_topic_0000002268720685__response_nodelabels:
 
 .. table:: **Table 7** NodeLabels
 
@@ -123,7 +123,7 @@ Response Parameters
    | os.modelarts.node/nodepool      | String | Name of the pool where the node is located    |
    +---------------------------------+--------+-----------------------------------------------+
 
-.. _en-us_topic_0000002044216596__response_nodespec:
+.. _en-us_topic_0000002268720685__response_nodespec:
 
 .. table:: **Table 8** NodeSpec
 
@@ -132,10 +132,10 @@ Response Parameters
    +=============+================================================================================+==========================+
    | flavor      | String                                                                         | Node specifications      |
    +-------------+--------------------------------------------------------------------------------+--------------------------+
-   | hostNetwork | :ref:`NodeNetwork <en-us_topic_0000002044216596__response_nodenetwork>` object | Node network information |
+   | hostNetwork | :ref:`NodeNetwork <en-us_topic_0000002268720685__response_nodenetwork>` object | Node network information |
    +-------------+--------------------------------------------------------------------------------+--------------------------+
 
-.. _en-us_topic_0000002044216596__response_nodenetwork:
+.. _en-us_topic_0000002268720685__response_nodenetwork:
 
 .. table:: **Table 9** NodeNetwork
 
@@ -147,7 +147,7 @@ Response Parameters
    securityGroups Array of strings Security group IDs
    ============== ================ ==================
 
-.. _en-us_topic_0000002044216596__response_nodestatus:
+.. _en-us_topic_0000002268720685__response_nodestatus:
 
 .. table:: **Table 10** NodeStatus
 
@@ -168,12 +168,12 @@ Response Parameters
    +-----------------------+----------------------------------------------------------------------------------+----------------------------------------------------+
    | privateIp             | String                                                                           | IP address of a node                               |
    +-----------------------+----------------------------------------------------------------------------------+----------------------------------------------------+
-   | resources             | :ref:`NodeResource <en-us_topic_0000002044216596__response_noderesource>` object | Node resources                                     |
+   | resources             | :ref:`NodeResource <en-us_topic_0000002268720685__response_noderesource>` object | Node resources                                     |
    +-----------------------+----------------------------------------------------------------------------------+----------------------------------------------------+
-   | availableResources    | :ref:`NodeResource <en-us_topic_0000002044216596__response_noderesource>` object | Available node resources                           |
+   | availableResources    | :ref:`NodeResource <en-us_topic_0000002268720685__response_noderesource>` object | Available node resources                           |
    +-----------------------+----------------------------------------------------------------------------------+----------------------------------------------------+
 
-.. _en-us_topic_0000002044216596__response_noderesource:
+.. _en-us_topic_0000002268720685__response_noderesource:
 
 .. table:: **Table 11** NodeResource
 

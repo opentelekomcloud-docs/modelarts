@@ -53,12 +53,12 @@ Response Parameters
    +-----------+------------------------------------------------------------------------------------------------------+----------------------+
    | Parameter | Type                                                                                                 | Description          |
    +===========+======================================================================================================+======================+
-   | items     | Array of :ref:`ProcessorTaskItem <en-us_topic_0000001909747364__response_processortaskitem>` objects | Algorithm type list. |
+   | items     | Array of :ref:`ProcessorTaskItem <en-us_topic_0000002268848101__response_processortaskitem>` objects | Algorithm type list. |
    +-----------+------------------------------------------------------------------------------------------------------+----------------------+
    | total     | Integer                                                                                              | Total number.        |
    +-----------+------------------------------------------------------------------------------------------------------+----------------------+
 
-.. _en-us_topic_0000001909747364__response_processortaskitem:
+.. _en-us_topic_0000002268848101__response_processortaskitem:
 
 .. table:: **Table 4** ProcessorTaskItem
 

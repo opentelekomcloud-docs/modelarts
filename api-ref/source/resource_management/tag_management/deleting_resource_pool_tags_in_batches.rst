@@ -33,10 +33,10 @@ Request Parameters
    +-----------+-----------+---------------------------------------------------------------------------+--------------------+
    | Parameter | Mandatory | Type                                                                      | Description        |
    +===========+===========+===========================================================================+====================+
-   | tags      | Yes       | Array of :ref:`tags <en-us_topic_0000002080295941__request_tags>` objects | Tags to be deleted |
+   | tags      | Yes       | Array of :ref:`tags <en-us_topic_0000002268800601__request_tags>` objects | Tags to be deleted |
    +-----------+-----------+---------------------------------------------------------------------------+--------------------+
 
-.. _en-us_topic_0000002080295941__request_tags:
+.. _en-us_topic_0000002268800601__request_tags:
 
 .. table:: **Table 3** tags
 
@@ -66,10 +66,10 @@ Response Parameters
    +-----------+----------------------------------------------------------------+-------------------+
    | Parameter | Type                                                           | Description       |
    +===========+================================================================+===================+
-   | tags      | :ref:`Tag <en-us_topic_0000002080295941__response_tag>` object | Resource tag list |
+   | tags      | :ref:`Tag <en-us_topic_0000002268800601__response_tag>` object | Resource tag list |
    +-----------+----------------------------------------------------------------+-------------------+
 
-.. _en-us_topic_0000002080295941__response_tag:
+.. _en-us_topic_0000002268800601__response_tag:
 
 .. table:: **Table 5** Tag
 

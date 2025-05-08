@@ -15,9 +15,9 @@ URI
 
 POST /v1/{project_id}/demanager/instances/{instance_id}/action
 
-:ref:`Table 1 <en-us_topic_0000001943866569__table569625523811>` describes the required parameters.
+:ref:`Table 1 <en-us_topic_0000002233768880__table569625523811>` describes the required parameters.
 
-.. _en-us_topic_0000001943866569__table569625523811:
+.. _en-us_topic_0000002233768880__table569625523811:
 
 .. table:: **Table 1** Parameters
 
@@ -32,9 +32,9 @@ POST /v1/{project_id}/demanager/instances/{instance_id}/action
 Request Body
 ------------
 
-:ref:`Table 2 <en-us_topic_0000001943866569__table46411941555>` describes the request parameters.
+:ref:`Table 2 <en-us_topic_0000002233768880__table46411941555>` describes the request parameters.
 
-.. _en-us_topic_0000001943866569__table46411941555:
+.. _en-us_topic_0000002233768880__table46411941555:
 
 .. table:: **Table 2** Parameters
 
@@ -50,9 +50,9 @@ Request Body
 Response Body
 -------------
 
-:ref:`Table 3 <en-us_topic_0000001943866569__table14581542113111>` describes the response parameters.
+:ref:`Table 3 <en-us_topic_0000002233768880__table14581542113111>` describes the response parameters.
 
-.. _en-us_topic_0000001943866569__table14581542113111:
+.. _en-us_topic_0000002233768880__table14581542113111:
 
 .. table:: **Table 3** Parameters
 

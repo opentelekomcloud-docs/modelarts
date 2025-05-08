@@ -52,12 +52,12 @@ Response Parameters
    |                       |                                                                                                      |                                         |
    |                       |                                                                                                      | -  **PluginTemplate**: plug-in template |
    +-----------------------+------------------------------------------------------------------------------------------------------+-----------------------------------------+
-   | metadata              | :ref:`PluginTemplateMetadata <en-us_topic_0000002044058268__response_plugintemplatemetadata>` object | Plug-in template metadata               |
+   | metadata              | :ref:`PluginTemplateMetadata <en-us_topic_0000002233881242__response_plugintemplatemetadata>` object | Plug-in template metadata               |
    +-----------------------+------------------------------------------------------------------------------------------------------+-----------------------------------------+
-   | spec                  | :ref:`PluginTemplateSpec <en-us_topic_0000002044058268__response_plugintemplatespec>` object         | Plug-in template specifications         |
+   | spec                  | :ref:`PluginTemplateSpec <en-us_topic_0000002233881242__response_plugintemplatespec>` object         | Plug-in template specifications         |
    +-----------------------+------------------------------------------------------------------------------------------------------+-----------------------------------------+
 
-.. _en-us_topic_0000002044058268__response_plugintemplatemetadata:
+.. _en-us_topic_0000002233881242__response_plugintemplatemetadata:
 
 .. table:: **Table 3** PluginTemplateMetadata
 
@@ -67,7 +67,7 @@ Response Parameters
    name      String Plug-in template name
    ========= ====== =====================
 
-.. _en-us_topic_0000002044058268__response_plugintemplatespec:
+.. _en-us_topic_0000002233881242__response_plugintemplatespec:
 
 .. table:: **Table 4** PluginTemplateSpec
 
@@ -88,10 +88,10 @@ Response Parameters
    +-----------------------+-----------------------------------------------------------------------------------------------------------+---------------------------------+
    | description           | String                                                                                                    | Plug-in template description    |
    +-----------------------+-----------------------------------------------------------------------------------------------------------+---------------------------------+
-   | versions              | Map<String,\ :ref:`PluginTemplateVersion <en-us_topic_0000002044058268__response_plugintemplateversion>`> | Plug-in template versions       |
+   | versions              | Map<String,\ :ref:`PluginTemplateVersion <en-us_topic_0000002233881242__response_plugintemplateversion>`> | Plug-in template versions       |
    +-----------------------+-----------------------------------------------------------------------------------------------------------+---------------------------------+
 
-.. _en-us_topic_0000002044058268__response_plugintemplateversion:
+.. _en-us_topic_0000002233881242__response_plugintemplateversion:
 
 .. table:: **Table 5** PluginTemplateVersion
 

@@ -17,9 +17,9 @@ URI
 
 GET /v1/{project_id}/job/resource-specs
 
-:ref:`Table 1 <en-us_topic_0000001909907424__table5822680595335>` describes the required parameters.
+:ref:`Table 1 <en-us_topic_0000002233928832__table5822680595335>` describes the required parameters.
 
-.. _en-us_topic_0000001909907424__table5822680595335:
+.. _en-us_topic_0000002233928832__table5822680595335:
 
 .. table:: **Table 1** Parameters
 
@@ -49,9 +49,9 @@ None
 Response Body
 -------------
 
-:ref:`Table 3 <en-us_topic_0000001909907424__table1817887315129>` describes the response parameters.
+:ref:`Table 3 <en-us_topic_0000002233928832__table1817887315129>` describes the response parameters.
 
-.. _en-us_topic_0000001909907424__table1817887315129:
+.. _en-us_topic_0000002233928832__table1817887315129:
 
 .. table:: **Table 3** Parameters
 
@@ -70,10 +70,10 @@ Response Body
    +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------+
    | spec_total_count      | Integer               | Total number of job resource specifications                                                                                      |
    +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------+
-   | specs                 | **specs** array       | List of resource specifications attributes. For details, see :ref:`Table 4 <en-us_topic_0000001909907424__table20408880151239>`. |
+   | specs                 | **specs** array       | List of resource specifications attributes. For details, see :ref:`Table 4 <en-us_topic_0000002233928832__table20408880151239>`. |
    +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909907424__table20408880151239:
+.. _en-us_topic_0000002233928832__table20408880151239:
 
 .. table:: **Table 4** **specs** parameters
 
@@ -134,23 +134,10 @@ Sample Response
                   "storage": "",
                   "interface_type": 1,
                   "no_resource": false
-              },
-              {
-                  "spec_id": 4,
-                  "core": "8",
-                  "cpu": "64",
-                  "gpu_num": 1,
-                  "gpu_type": "v100",
-                  "spec_code":"modelarts.vm.gpu.v100",
-                  "unit_num": 1,
-                  "max_num": 4,
-                  "storage": "",
-                  "interface_type": 1,
-                  "no_resource": false
               }
           ],
           "is_success": true,
-          "spec_total_count": 2
+          "spec_total_count": 1
       }
 
 -  Failed response
@@ -166,4 +153,4 @@ Sample Response
 Status Code
 -----------
 
-For details about the status code, see :ref:`Table 1 <en-us_topic_0000001909907492__table1450010510213>`.
+For details about the status code, see :ref:`Table 1 <en-us_topic_0000002268848277__table1450010510213>`.

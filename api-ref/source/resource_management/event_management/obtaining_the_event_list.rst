@@ -78,12 +78,12 @@ Response Parameters
    |                       |                                                                              |                              |
    |                       |                                                                              | -  **EventList**: event list |
    +-----------------------+------------------------------------------------------------------------------+------------------------------+
-   | items                 | Array of :ref:`Event <en-us_topic_0000002044216588__response_event>` objects | Events                       |
+   | items                 | Array of :ref:`Event <en-us_topic_0000002268720677__response_event>` objects | Events                       |
    +-----------------------+------------------------------------------------------------------------------+------------------------------+
    | total                 | Integer                                                                      | Total number of events       |
    +-----------------------+------------------------------------------------------------------------------+------------------------------+
 
-.. _en-us_topic_0000002044216588__response_event:
+.. _en-us_topic_0000002268720677__response_event:
 
 .. table:: **Table 4** Event
 
@@ -207,7 +207,7 @@ OK
        "lastTimestamp" : "2023-01-16T06:55:35Z",
        "count" : 1,
        "reason" : "PoolStatusChange",
-       "message" : "Pool status changed, from Running to Abnormal, details: ."
+       "message" : "Pool status changed, from Running to Abnormal, details: "
      }, {
        "kind" : "Event",
        "apiVersion" : "v1",

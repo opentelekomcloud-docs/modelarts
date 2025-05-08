@@ -39,22 +39,22 @@ Request Parameters
    |                 |                 |                                                                                                       |                                   |
    |                 |                 |                                                                                                       | -  **Network**                    |
    +-----------------+-----------------+-------------------------------------------------------------------------------------------------------+-----------------------------------+
-   | metadata        | Yes             | :ref:`NetworkMetadataCreation <en-us_topic_0000002044216572__request_networkmetadatacreation>` object | Metadata of network resources.    |
+   | metadata        | Yes             | :ref:`NetworkMetadataCreation <en-us_topic_0000002268720661__request_networkmetadatacreation>` object | Metadata of network resources.    |
    +-----------------+-----------------+-------------------------------------------------------------------------------------------------------+-----------------------------------+
-   | spec            | Yes             | :ref:`NetworkSpec <en-us_topic_0000002044216572__request_networkspec>` object                         | Description of network resources. |
+   | spec            | Yes             | :ref:`NetworkSpec <en-us_topic_0000002268720661__request_networkspec>` object                         | Description of network resources. |
    +-----------------+-----------------+-------------------------------------------------------------------------------------------------------+-----------------------------------+
 
-.. _en-us_topic_0000002044216572__request_networkmetadatacreation:
+.. _en-us_topic_0000002268720661__request_networkmetadatacreation:
 
 .. table:: **Table 3** NetworkMetadataCreation
 
    +-----------+-----------+---------------------------------------------------------------------------------------------------+---------------------------------------+
    | Parameter | Mandatory | Type                                                                                              | Description                           |
    +===========+===========+===================================================================================================+=======================================+
-   | labels    | Yes       | :ref:`NetworkMetadataLabels <en-us_topic_0000002044216572__request_networkmetadatalabels>` object | Metadata labels of network resources. |
+   | labels    | Yes       | :ref:`NetworkMetadataLabels <en-us_topic_0000002268720661__request_networkmetadatalabels>` object | Metadata labels of network resources. |
    +-----------+-----------+---------------------------------------------------------------------------------------------------+---------------------------------------+
 
-.. _en-us_topic_0000002044216572__request_networkmetadatalabels:
+.. _en-us_topic_0000002268720661__request_networkmetadatalabels:
 
 .. table:: **Table 4** NetworkMetadataLabels
 
@@ -68,7 +68,7 @@ Request Parameters
    |                   |                 |                 | Maximum: **32**         |
    +-------------------+-----------------+-----------------+-------------------------+
 
-.. _en-us_topic_0000002044216572__request_networkspec:
+.. _en-us_topic_0000002268720661__request_networkspec:
 
 .. table:: **Table 5** NetworkSpec
 
@@ -83,22 +83,22 @@ Request Parameters
    |                 |                 |                                                                                           |                                                                      |
    |                 |                 |                                                                                           | -  192.168.0.0/16-192.168.0.0/24                                     |
    +-----------------+-----------------+-------------------------------------------------------------------------------------------+----------------------------------------------------------------------+
-   | connection      | No              | :ref:`NetworkConnection <en-us_topic_0000002044216572__request_networkconnection>` object | Automatically interconnected endpoint.                               |
+   | connection      | No              | :ref:`NetworkConnection <en-us_topic_0000002268720661__request_networkconnection>` object | Automatically interconnected endpoint.                               |
    +-----------------+-----------------+-------------------------------------------------------------------------------------------+----------------------------------------------------------------------+
 
-.. _en-us_topic_0000002044216572__request_networkconnection:
+.. _en-us_topic_0000002268720661__request_networkconnection:
 
 .. table:: **Table 6** NetworkConnection
 
    +------------------------+-----------+---------------------------------------------------------------------------------------------------------------+---------------------------------------------+
    | Parameter              | Mandatory | Type                                                                                                          | Description                                 |
    +========================+===========+===============================================================================================================+=============================================+
-   | peerConnectionList     | No        | Array of :ref:`peerConnectionList <en-us_topic_0000002044216572__request_peerconnectionlist>` objects         | Peering connections                         |
+   | peerConnectionList     | No        | Array of :ref:`peerConnectionList <en-us_topic_0000002268720661__request_peerconnectionlist>` objects         | Peering connections                         |
    +------------------------+-----------+---------------------------------------------------------------------------------------------------------------+---------------------------------------------+
-   | sfsTurboConnectionList | No        | Array of :ref:`sfsTurboConnectionList <en-us_topic_0000002044216572__request_sfsturboconnectionlist>` objects | SFS Turbo connections through attached NICs |
+   | sfsTurboConnectionList | No        | Array of :ref:`sfsTurboConnectionList <en-us_topic_0000002268720661__request_sfsturboconnectionlist>` objects | SFS Turbo connections through attached NICs |
    +------------------------+-----------+---------------------------------------------------------------------------------------------------------------+---------------------------------------------+
 
-.. _en-us_topic_0000002044216572__request_peerconnectionlist:
+.. _en-us_topic_0000002268720661__request_peerconnectionlist:
 
 .. table:: **Table 7** peerConnectionList
 
@@ -112,7 +112,7 @@ Request Parameters
    | defaultGateWay | No        | Boolean | Whether to create a default route. The default value is **false**. |
    +----------------+-----------+---------+--------------------------------------------------------------------+
 
-.. _en-us_topic_0000002044216572__request_sfsturboconnectionlist:
+.. _en-us_topic_0000002268720661__request_sfsturboconnectionlist:
 
 .. table:: **Table 8** sfsTurboConnectionList
 
@@ -141,14 +141,14 @@ Response Parameters
    |                       |                                                                                      |                                   |
    |                       |                                                                                      | -  **Network**                    |
    +-----------------------+--------------------------------------------------------------------------------------+-----------------------------------+
-   | metadata              | :ref:`NeworkMetadata <en-us_topic_0000002044216572__response_neworkmetadata>` object | Metadata of network resources.    |
+   | metadata              | :ref:`NeworkMetadata <en-us_topic_0000002268720661__response_neworkmetadata>` object | Metadata of network resources.    |
    +-----------------------+--------------------------------------------------------------------------------------+-----------------------------------+
-   | spec                  | :ref:`NetworkSpec <en-us_topic_0000002044216572__response_networkspec>` object       | Description of network resources. |
+   | spec                  | :ref:`NetworkSpec <en-us_topic_0000002268720661__response_networkspec>` object       | Description of network resources. |
    +-----------------------+--------------------------------------------------------------------------------------+-----------------------------------+
-   | status                | :ref:`NetworkStatus <en-us_topic_0000002044216572__response_networkstatus>` object   | Status of network resources.      |
+   | status                | :ref:`NetworkStatus <en-us_topic_0000002268720661__response_networkstatus>` object   | Status of network resources.      |
    +-----------------------+--------------------------------------------------------------------------------------+-----------------------------------+
 
-.. _en-us_topic_0000002044216572__response_neworkmetadata:
+.. _en-us_topic_0000002268720661__response_neworkmetadata:
 
 .. table:: **Table 10** NeworkMetadata
 
@@ -159,12 +159,12 @@ Response Parameters
    +-------------------+--------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
    | creationTimestamp | String                                                                                                       | Timestamp, for example, 2021-11-01T03:49:41Z.                               |
    +-------------------+--------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
-   | labels            | :ref:`NetworkMetadataLabels <en-us_topic_0000002044216572__response_networkmetadatalabels>` object           | Labels of network resources.                                                |
+   | labels            | :ref:`NetworkMetadataLabels <en-us_topic_0000002268720661__response_networkmetadatalabels>` object           | Labels of network resources.                                                |
    +-------------------+--------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
-   | annotations       | :ref:`NetworkMetadataAnnotations <en-us_topic_0000002044216572__response_networkmetadataannotations>` object | Annotations of network resources.                                           |
+   | annotations       | :ref:`NetworkMetadataAnnotations <en-us_topic_0000002268720661__response_networkmetadataannotations>` object | Annotations of network resources.                                           |
    +-------------------+--------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002044216572__response_networkmetadatalabels:
+.. _en-us_topic_0000002268720661__response_networkmetadatalabels:
 
 .. table:: **Table 11** NetworkMetadataLabels
 
@@ -178,7 +178,7 @@ Response Parameters
    |                       |                       | Maximum: **32**         |
    +-----------------------+-----------------------+-------------------------+
 
-.. _en-us_topic_0000002044216572__response_networkmetadataannotations:
+.. _en-us_topic_0000002268720661__response_networkmetadataannotations:
 
 .. table:: **Table 12** NetworkMetadataAnnotations
 
@@ -192,7 +192,7 @@ Response Parameters
    |                          |                       | Maximum: **100**                                                                                                              |
    +--------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002044216572__response_networkspec:
+.. _en-us_topic_0000002268720661__response_networkspec:
 
 .. table:: **Table 13** NetworkSpec
 
@@ -207,22 +207,22 @@ Response Parameters
    |                       |                                                                                            |                                                                      |
    |                       |                                                                                            | -  192.168.0.0/16-192.168.0.0/24                                     |
    +-----------------------+--------------------------------------------------------------------------------------------+----------------------------------------------------------------------+
-   | connection            | :ref:`NetworkConnection <en-us_topic_0000002044216572__response_networkconnection>` object | Automatically interconnected endpoint.                               |
+   | connection            | :ref:`NetworkConnection <en-us_topic_0000002268720661__response_networkconnection>` object | Automatically interconnected endpoint.                               |
    +-----------------------+--------------------------------------------------------------------------------------------+----------------------------------------------------------------------+
 
-.. _en-us_topic_0000002044216572__response_networkconnection:
+.. _en-us_topic_0000002268720661__response_networkconnection:
 
 .. table:: **Table 14** NetworkConnection
 
    +------------------------+----------------------------------------------------------------------------------------------------------------+---------------------------------------------+
    | Parameter              | Type                                                                                                           | Description                                 |
    +========================+================================================================================================================+=============================================+
-   | peerConnectionList     | Array of :ref:`peerConnectionList <en-us_topic_0000002044216572__response_peerconnectionlist>` objects         | Peering connections                         |
+   | peerConnectionList     | Array of :ref:`peerConnectionList <en-us_topic_0000002268720661__response_peerconnectionlist>` objects         | Peering connections                         |
    +------------------------+----------------------------------------------------------------------------------------------------------------+---------------------------------------------+
-   | sfsTurboConnectionList | Array of :ref:`sfsTurboConnectionList <en-us_topic_0000002044216572__response_sfsturboconnectionlist>` objects | SFS Turbo connections through attached NICs |
+   | sfsTurboConnectionList | Array of :ref:`sfsTurboConnectionList <en-us_topic_0000002268720661__response_sfsturboconnectionlist>` objects | SFS Turbo connections through attached NICs |
    +------------------------+----------------------------------------------------------------------------------------------------------------+---------------------------------------------+
 
-.. _en-us_topic_0000002044216572__response_peerconnectionlist:
+.. _en-us_topic_0000002268720661__response_peerconnectionlist:
 
 .. table:: **Table 15** peerConnectionList
 
@@ -236,7 +236,7 @@ Response Parameters
    | defaultGateWay | Boolean | Whether to create a default route. The default value is **false**. |
    +----------------+---------+--------------------------------------------------------------------+
 
-.. _en-us_topic_0000002044216572__response_sfsturboconnectionlist:
+.. _en-us_topic_0000002268720661__response_sfsturboconnectionlist:
 
 .. table:: **Table 16** sfsTurboConnectionList
 
@@ -247,7 +247,7 @@ Response Parameters
    name      String Name of an SFS Turbo instance
    ========= ====== =============================
 
-.. _en-us_topic_0000002044216572__response_networkstatus:
+.. _en-us_topic_0000002268720661__response_networkstatus:
 
 .. table:: **Table 17** NetworkStatus
 
@@ -262,22 +262,22 @@ Response Parameters
    |                       |                                                                                                        |                                                |
    |                       |                                                                                                        | -  **Abnormal**: The network malfunctions.     |
    +-----------------------+--------------------------------------------------------------------------------------------------------+------------------------------------------------+
-   | connectionStatus      | :ref:`NetworkConnectionStatus <en-us_topic_0000002044216572__response_networkconnectionstatus>` object | Network connection status.                     |
+   | connectionStatus      | :ref:`NetworkConnectionStatus <en-us_topic_0000002268720661__response_networkconnectionstatus>` object | Network connection status.                     |
    +-----------------------+--------------------------------------------------------------------------------------------------------+------------------------------------------------+
 
-.. _en-us_topic_0000002044216572__response_networkconnectionstatus:
+.. _en-us_topic_0000002268720661__response_networkconnectionstatus:
 
 .. table:: **Table 18** NetworkConnectionStatus
 
    +----------------------+------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
    | Parameter            | Type                                                                                                       | Description                                   |
    +======================+============================================================================================================+===============================================+
-   | peerConnectionStatus | Array of :ref:`peerConnectionStatus <en-us_topic_0000002044216572__response_peerconnectionstatus>` objects | Peering connection status                     |
+   | peerConnectionStatus | Array of :ref:`peerConnectionStatus <en-us_topic_0000002268720661__response_peerconnectionstatus>` objects | Peering connection status                     |
    +----------------------+------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
-   | sfsTurboStatus       | Array of :ref:`sfsTurboStatus <en-us_topic_0000002044216572__response_sfsturbostatus>` objects             | Status of SFS Turbo accessible to the network |
+   | sfsTurboStatus       | Array of :ref:`sfsTurboStatus <en-us_topic_0000002268720661__response_sfsturbostatus>` objects             | Status of SFS Turbo accessible to the network |
    +----------------------+------------------------------------------------------------------------------------------------------------+-----------------------------------------------+
 
-.. _en-us_topic_0000002044216572__response_peerconnectionstatus:
+.. _en-us_topic_0000002268720661__response_peerconnectionstatus:
 
 .. table:: **Table 19** peerConnectionStatus
 
@@ -299,7 +299,7 @@ Response Parameters
    |                       |                       | -  **Abnormal**: The network connection is abnormal.               |
    +-----------------------+-----------------------+--------------------------------------------------------------------+
 
-.. _en-us_topic_0000002044216572__response_sfsturbostatus:
+.. _en-us_topic_0000002268720661__response_sfsturbostatus:
 
 .. table:: **Table 20** sfsTurboStatus
 

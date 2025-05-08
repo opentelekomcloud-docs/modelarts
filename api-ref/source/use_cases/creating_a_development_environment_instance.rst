@@ -245,19 +245,16 @@ Procedure
            {
             "arch": "aarch64",
             "create_at": 1608937196685,
-            "description": "Ascend+ARM algorithm development and training. TensorFlow and MindSpore are preset in the AI engine.",
+            "description": "ARM algorithm development and training. TensorFlow and MindSpore are preset in the AI engine.",
             "dev_services": [
              "NOTEBOOK",
              "SSH"
             ],
             "id": "59a6e9f5-93c0-44dd-85b0-82f390c5d53a",
             "name": "tensorflow1.15-mindspore1.7.0-cann5.1.0-euler2.8-aarch64",
-            "resource_categories": [
-             "ASCEND"
-            ],
             "service_type": "TRAIN",
             "status": "ACTIVE",
-            "swr_path": "swr.com/atelier/notebook2.0-mul-kernel-arm-ascend-cp37:5.0.1-c81-20220726",
+            "swr_path": "swr.com/atelier/notebook2.0-mul-kernel-arm-cp37:5.0.1-c81-20220726",
             "tag": "5.0.1-c81-20220726",
             "tags": [],
             "type": "BUILD_IN",
@@ -308,15 +305,12 @@ Procedure
            },
            {
             "arch": "aarch64",
-            "description": "Ascend operator development. The professional operator development tool MindStudio is preconfigured, only SSH connection supported.",
+            "description": " The professional operator development tool MindStudio is preconfigured, only SSH connection supported.",
             "dev_services": [
              "SSH"
             ],
             "id": "e1a07296-22a8-4f05-8bc8-e936c8e54088",
-            "name": "mindstudio5.0.rc1-ascendsnt9-cann5.1.0-euler2.8.3-aarch64",
-            "resource_categories": [
-             "ASCEND"
-            ],
+            "name": "mindstudio5.0.rc1-cann5.1.0-euler2.8.3-aarch64",
             "service_type": "TRAIN",
             "status": "ACTIVE",
             "swr_path": "swr.com/atelier/mindstudio-modelarts-image:5.0.rc1-20230322101430-75f458a",
@@ -450,7 +444,7 @@ Procedure
            },
            {
             "arch": "aarch64",
-            "description": "Ascend+ARM algorithm development and training. MindSpore is preset in the AI engine.",
+            "description": "ARM algorithm development and training. MindSpore is preset in the AI engine.",
             "dev_services": [
              "NOTEBOOK",
              "SSH"
@@ -458,9 +452,6 @@ Procedure
             "id": "f6d0908e-9596-41f9-9843-83089cbdd0de",
             "name": "mindspore1.7.0-cann5.1.0-py3.7-euler2.8.3",
             "namespace": "atelier",
-            "resource_categories": [
-             "ASCEND"
-            ],
             "service_type": "UNKNOWN",
             "status": "ACTIVE",
             "swr_path": "swr.com/atelier/mindspore_1_7_0:mindspore_1.7.0-cann_5.1.0-py_3.7-euler_2.8.3-aarch64-snt9-20220906",
@@ -471,7 +462,7 @@ Procedure
            },
            {
             "arch": "aarch64",
-            "description": "Ascend+ARM algorithm development and training. TensorFlow is preset in the AI engine.",
+            "description": "ARM algorithm development and training. TensorFlow is preset in the AI engine.",
             "dev_services": [
              "NOTEBOOK",
              "SSH"
@@ -479,12 +470,9 @@ Procedure
             "id": "c5b7507b-ca8d-48d5-a373-fe4b42c66ed8",
             "name": "tensorflow1.15-cann5.1.0-py3.7-euler2.8.3",
             "namespace": "atelier",
-            "resource_categories": [
-             "ASCEND"
-            ],
             "service_type": "UNKNOWN",
             "status": "ACTIVE",
-            "swr_path": "swr.com/atelier/tensorflow_1_15_ascend:tensorflow_1.15-cann_5.1.0-py_3.7-euler_2.8.3-aarch64-snt9-20220906",
+            "swr_path": "swr.com/atelier/tensorflow_1_15:tensorflow_1.15-cann_5.1.0-py_3.7-euler_2.8.3-aarch64-snt9-20220906",
             "tag": "tensorflow_1.15-cann_5.1.0-py_3.7-euler_2.8.3-aarch64-snt9-20220906",
             "tags": [],
             "type": "BUILD_IN",
@@ -547,7 +535,7 @@ Procedure
            {
             "arch": "aarch64",
             "create_at": 1682670088194,
-            "description": "Ascend+ARM algorithm development and training. MindSpore is preset in the AI engine.",
+            "description": "ARM algorithm development and training. MindSpore is preset in the AI engine.",
             "dev_services": [
              "NOTEBOOK",
              "SSH"
@@ -555,13 +543,10 @@ Procedure
             "id": "75cbf0f2-0a3e-48c9-b2c4-7e78af18d86e",
             "name": "mindspore_1.9.0-cann_6.0.0-py_3.7-euler_2.8.3",
             "namespace": "atelier",
-            "resource_categories": [
-             "ASCEND"
-            ],
             "service_type": "TRAIN",
             "size": 4011027643,
             "status": "ACTIVE",
-            "swr_path": "swr.com/atelier/mindspore_1_9_ascend:mindspore_1.9.0-cann_6.0.0-py_3.7-euler_2.8.3-aarch64-snt9-20221116111529",
+            "swr_path": "swr.com/atelier/mindspore_1_9:mindspore_1.9.0-cann_6.0.0-py_3.7-euler_2.8.3-aarch64-snt9-20221116111529",
             "tag": "mindspore_1.9.0-cann_6.0.0-py_3.7-euler_2.8.3-aarch64-snt9-20221116111529",
             "tags": [],
             "type": "BUILD_IN",
@@ -593,7 +578,7 @@ Procedure
            {
             "arch": "aarch64",
             "create_at": 1683537880541,
-            "description": "Ascend+ARM algorithm development and training. MindSpore is preset in the AI engine.",
+            "description": "ARM algorithm development and training. MindSpore is preset in the AI engine.",
             "dev_services": [
              "NOTEBOOK",
              "SSH"
@@ -601,13 +586,10 @@ Procedure
             "id": "31ae7ba4-63e6-4fa6-8aeb-cb382953e414",
             "name": "mindspore_1.10.0-cann_6.0.1-py_3.7-euler_2.8.3",
             "namespace": "atelier",
-            "resource_categories": [
-             "ASCEND"
-            ],
             "service_type": "COMMON",
             "size": 4057170552,
             "status": "ACTIVE",
-            "swr_path": "swr.com/atelier/mindspore_1_10_ascend:mindspore_1.10.0-cann_6.0.1-py_3.7-euler_2.8.3-aarch64-snt9-20230303173945-815d627",
+            "swr_path": "swr.com/atelier/mindspore_1_10:mindspore_1.10.0-cann_6.0.1-py_3.7-euler_2.8.3-aarch64-snt9-20230303173945-815d627",
             "tag": "mindspore_1.10.0-cann_6.0.1-py_3.7-euler_2.8.3-aarch64-snt9-20230303173945-815d627",
             "tags": [],
             "type": "BUILD_IN",
@@ -830,7 +812,7 @@ Procedure
            },
            {
             "arch": "aarch64",
-            "description": "Ascend+ARM algorithm development and training. TensorFlow and MindSpore are preset in the AI engine.",
+            "description": "ARM algorithm development and training. TensorFlow and MindSpore are preset in the AI engine.",
             "dev_services": [
              "NOTEBOOK",
              "SSH"
@@ -839,11 +821,10 @@ Procedure
             "name": "tensorflow1.15-mindspore1.7.0-cann5.1.0-euler2.8-aarch64",
             "resource_categories": [
              "CPU",
-             "ASCEND"
             ],
             "service_type": "TRAIN",
             "status": "ACTIVE",
-            "swr_path": "swr.com/atelier/notebook2.0-mul-kernel-arm-ascend-cp37:5.0.1-c81-20220726",
+            "swr_path": "swr.com/atelier/notebook2.0-mul-kernel-arm-cp37:5.0.1-c81-20220726",
             "tag": "5.0.1-c81-20220726",
             "tags": [],
             "type": "BUILD_IN",

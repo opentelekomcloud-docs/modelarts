@@ -40,10 +40,10 @@ Request Parameters
    +-----------+-----------+---------------------------------------------------------------------------------------------+----------------------+
    | Parameter | Mandatory | Type                                                                                        | Description          |
    +===========+===========+=============================================================================================+======================+
-   | comments  | Yes       | Array of :ref:`SampleComment <en-us_topic_0000001909747340__request_samplecomment>` objects | Review comment list. |
+   | comments  | Yes       | Array of :ref:`SampleComment <en-us_topic_0000002268768297__request_samplecomment>` objects | Review comment list. |
    +-----------+-----------+---------------------------------------------------------------------------------------------+----------------------+
 
-.. _en-us_topic_0000001909747340__request_samplecomment:
+.. _en-us_topic_0000002268768297__request_samplecomment:
 
 .. table:: **Table 3** SampleComment
 

@@ -69,10 +69,10 @@ Response Parameters
    +===========+==========================================================================================================+=========================================================+
    | count     | Integer                                                                                                  | Total number of versions.                               |
    +-----------+----------------------------------------------------------------------------------------------------------+---------------------------------------------------------+
-   | versions  | Array of :ref:`DescTaskVersionResp <en-us_topic_0000001909907408__response_desctaskversionresp>` objects | Version list of a data processing task queried by page. |
+   | versions  | Array of :ref:`DescTaskVersionResp <en-us_topic_0000002233769016__response_desctaskversionresp>` objects | Version list of a data processing task queried by page. |
    +-----------+----------------------------------------------------------------------------------------------------------+---------------------------------------------------------+
 
-.. _en-us_topic_0000001909907408__response_desctaskversionresp:
+.. _en-us_topic_0000002233769016__response_desctaskversionresp:
 
 .. table:: **Table 4** DescTaskVersionResp
 
@@ -89,7 +89,7 @@ Response Parameters
    +-------------------------+----------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+
    | duration_seconds        | Integer                                                                                                  | Running time of a data processing task, in seconds.          |
    +-------------------------+----------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+
-   | inputs                  | Array of :ref:`ProcessorDataSource <en-us_topic_0000001909907408__response_processordatasource>` objects | Input channel of a data processing task.                     |
+   | inputs                  | Array of :ref:`ProcessorDataSource <en-us_topic_0000002233769016__response_processordatasource>` objects | Input channel of a data processing task.                     |
    +-------------------------+----------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+
    | modified_sample_count   | Integer                                                                                                  | Number of modified images after processing.                  |
    +-------------------------+----------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+
@@ -111,7 +111,7 @@ Response Parameters
    +-------------------------+----------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+
    | task_version_id         | String                                                                                                   | Version ID of a data processing task.                        |
    +-------------------------+----------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+
-   | template                | :ref:`TemplateParam <en-us_topic_0000001909907408__response_templateparam>` object                       | Algorithm template, such as the algorithm ID and parameters. |
+   | template                | :ref:`TemplateParam <en-us_topic_0000002233769016__response_templateparam>` object                       | Algorithm template, such as the algorithm ID and parameters. |
    +-------------------------+----------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+
    | unmodified_sample_count | Integer                                                                                                  | Number of unmodified images after processing.                |
    +-------------------------+----------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+
@@ -119,10 +119,10 @@ Response Parameters
    +-------------------------+----------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+
    | version_name            | String                                                                                                   | Version name of a data processing task.                      |
    +-------------------------+----------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+
-   | work_path               | :ref:`WorkPath <en-us_topic_0000001909907408__response_workpath>` object                                 | Output channel of a data processing task.                    |
+   | work_path               | :ref:`WorkPath <en-us_topic_0000002233769016__response_workpath>` object                                 | Output channel of a data processing task.                    |
    +-------------------------+----------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+
 
-.. _en-us_topic_0000001909907408__response_processordatasource:
+.. _en-us_topic_0000002233769016__response_processordatasource:
 
 .. table:: **Table 5** ProcessorDataSource
 
@@ -156,7 +156,7 @@ Response Parameters
    | version_name          | String                | Dataset version name.                                                                                                                                                        |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909907408__response_templateparam:
+.. _en-us_topic_0000002233769016__response_templateparam:
 
 .. table:: **Table 6** TemplateParam
 
@@ -177,10 +177,10 @@ Response Parameters
    +-----------------------+----------------------------------------------------------------------------------------------+--------------------------------------------------------------------+
    | name                  | String                                                                                       | Template name.                                                     |
    +-----------------------+----------------------------------------------------------------------------------------------+--------------------------------------------------------------------+
-   | operator_params       | Array of :ref:`OperatorParam <en-us_topic_0000001909907408__response_operatorparam>` objects | Operator parameter list.                                           |
+   | operator_params       | Array of :ref:`OperatorParam <en-us_topic_0000002233769016__response_operatorparam>` objects | Operator parameter list.                                           |
    +-----------------------+----------------------------------------------------------------------------------------------+--------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909907408__response_operatorparam:
+.. _en-us_topic_0000002233769016__response_operatorparam:
 
 .. table:: **Table 7** OperatorParam
 
@@ -196,7 +196,7 @@ Response Parameters
    | params                 | Object  | Operator parameter. The parameter type is map<string,object>. Currently, object only supports the types of Boolean, Integer, Long, String, List[/topic/body/section/table/tgroup/tbody/row/entry/p/br {""}) (br] and Map<String,String>. For two special scenarios of object detection and image classification in a data preprocessing task, the value of **task_type** is **object_detection** or **image_classification**.  |
    +------------------------+---------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909907408__response_workpath:
+.. _en-us_topic_0000002233769016__response_workpath:
 
 .. table:: **Table 8** WorkPath
 

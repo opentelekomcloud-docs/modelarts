@@ -58,12 +58,12 @@ Response Parameters
    |                       |                                                                                                |                                                    |
    |                       |                                                                                                | -  **ResourceFlavorList**: resource specifications |
    +-----------------------+------------------------------------------------------------------------------------------------+----------------------------------------------------+
-   | metadata              | :ref:`metadata <en-us_topic_0000002080295913__response_metadata>` object                       | Metadata of resource specifications.               |
+   | metadata              | :ref:`metadata <en-us_topic_0000002268800573__response_metadata>` object                       | Metadata of resource specifications.               |
    +-----------------------+------------------------------------------------------------------------------------------------+----------------------------------------------------+
-   | items                 | Array of :ref:`ResourceFlavor <en-us_topic_0000002080295913__response_resourceflavor>` objects | Resource specifications.                           |
+   | items                 | Array of :ref:`ResourceFlavor <en-us_topic_0000002268800573__response_resourceflavor>` objects | Resource specifications.                           |
    +-----------------------+------------------------------------------------------------------------------------------------+----------------------------------------------------+
 
-.. _en-us_topic_0000002080295913__response_metadata:
+.. _en-us_topic_0000002268800573__response_metadata:
 
 .. table:: **Table 4** metadata
 
@@ -74,7 +74,7 @@ Response Parameters
    remainingItemCount Integer Remaining resources.
    ================== ======= ========================================
 
-.. _en-us_topic_0000002080295913__response_resourceflavor:
+.. _en-us_topic_0000002268800573__response_resourceflavor:
 
 .. table:: **Table 5** ResourceFlavor
 
@@ -89,11 +89,11 @@ Response Parameters
    |                       |                                                                                                  |                                               |
    |                       |                                                                                                  | -  **ResourceFlavor**: resource specification |
    +-----------------------+--------------------------------------------------------------------------------------------------+-----------------------------------------------+
-   | metadata              | :ref:`metadata <en-us_topic_0000002080295913__response_metadata>` object                         | Metadata of a resource specification.         |
+   | metadata              | :ref:`metadata <en-us_topic_0000002268800573__response_metadata>` object                         | Metadata of a resource specification.         |
    +-----------------------+--------------------------------------------------------------------------------------------------+-----------------------------------------------+
-   | spec                  | :ref:`ResourceFlavorSpec <en-us_topic_0000002080295913__response_resourceflavorspec>` object     | Description of a resource specification.      |
+   | spec                  | :ref:`ResourceFlavorSpec <en-us_topic_0000002268800573__response_resourceflavorspec>` object     | Description of a resource specification.      |
    +-----------------------+--------------------------------------------------------------------------------------------------+-----------------------------------------------+
-   | status                | :ref:`ResourceFlavorStatus <en-us_topic_0000002080295913__response_resourceflavorstatus>` object | Status of a resource specification.           |
+   | status                | :ref:`ResourceFlavorStatus <en-us_topic_0000002268800573__response_resourceflavorstatus>` object | Status of a resource specification.           |
    +-----------------------+--------------------------------------------------------------------------------------------------+-----------------------------------------------+
 
 .. table:: **Table 6** metadata
@@ -103,10 +103,10 @@ Response Parameters
    +===========+================================================================================================+====================================+
    | name      | String                                                                                         | Resource specification name.       |
    +-----------+------------------------------------------------------------------------------------------------+------------------------------------+
-   | labels    | :ref:`ResourceFlavorLabel <en-us_topic_0000002080295913__response_resourceflavorlabel>` object | Labels of a resource specification |
+   | labels    | :ref:`ResourceFlavorLabel <en-us_topic_0000002268800573__response_resourceflavorlabel>` object | Labels of a resource specification |
    +-----------+------------------------------------------------------------------------------------------------+------------------------------------+
 
-.. _en-us_topic_0000002080295913__response_resourceflavorlabel:
+.. _en-us_topic_0000002268800573__response_resourceflavorlabel:
 
 .. table:: **Table 7** ResourceFlavorLabel
 
@@ -118,7 +118,7 @@ Response Parameters
    | os.modelarts.flavor/baremetal | String | BMS flavor label. **true** indicates that the flavor is a BMS flavor. |
    +-------------------------------+--------+-----------------------------------------------------------------------+
 
-.. _en-us_topic_0000002080295913__response_resourceflavorspec:
+.. _en-us_topic_0000002268800573__response_resourceflavorspec:
 
 .. table:: **Table 8** ResourceFlavorSpec
 
@@ -141,11 +141,11 @@ Response Parameters
    +-----------------------+------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+
    | memory                | String                                                                                   | Memory size in GiB.                                                                                   |
    +-----------------------+------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+
-   | gpu                   | :ref:`gpu <en-us_topic_0000002080295913__response_gpu>` object                           | GPU information.                                                                                      |
+   | gpu                   | :ref:`gpu <en-us_topic_0000002268800573__response_gpu>` object                           | GPU information.                                                                                      |
    +-----------------------+------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+
-   | npu                   | :ref:`npu <en-us_topic_0000002080295913__response_npu>` object                           | NPU information.                                                                                      |
+   | npu                   | :ref:`npu <en-us_topic_0000002268800573__response_npu>` object                           | NPU information.                                                                                      |
    +-----------------------+------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+
-   | dataVolumes           | Array of :ref:`dataVolumes <en-us_topic_0000002080295913__response_datavolumes>` objects | Data disks                                                                                            |
+   | dataVolumes           | Array of :ref:`dataVolumes <en-us_topic_0000002268800573__response_datavolumes>` objects | Data disks                                                                                            |
    +-----------------------+------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+
    | billingModes          | Array of integers                                                                        | Billing mode supported by the flavor. The options are as follows:                                     |
    |                       |                                                                                          |                                                                                                       |
@@ -158,7 +158,7 @@ Response Parameters
    | nodeConfigTemplate    | String                                                                                   | Node configuration template used by resource flavor                                                   |
    +-----------------------+------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002080295913__response_gpu:
+.. _en-us_topic_0000002268800573__response_gpu:
 
 .. table:: **Table 9** gpu
 
@@ -170,7 +170,7 @@ Response Parameters
    memory    String GPU memory
    ========= ====== ==============
 
-.. _en-us_topic_0000002080295913__response_npu:
+.. _en-us_topic_0000002268800573__response_npu:
 
 .. table:: **Table 10** npu
 
@@ -182,7 +182,7 @@ Response Parameters
    memory    String NPU memory
    ========= ====== ===============
 
-.. _en-us_topic_0000002080295913__response_datavolumes:
+.. _en-us_topic_0000002268800573__response_datavolumes:
 
 .. table:: **Table 11** dataVolumes
 
@@ -202,7 +202,7 @@ Response Parameters
    | size                  | String                | Disk size, in GiB                 |
    +-----------------------+-----------------------+-----------------------------------+
 
-.. _en-us_topic_0000002080295913__response_resourceflavorstatus:
+.. _en-us_topic_0000002268800573__response_resourceflavorstatus:
 
 .. table:: **Table 12** ResourceFlavorStatus
 

@@ -15,9 +15,9 @@ URI
 
 GET /v1/{project_id}/built-in-algorithms
 
-:ref:`Table 1 <en-us_topic_0000001943866557__table37435132101942>` describes the required parameters.
+:ref:`Table 1 <en-us_topic_0000002268768181__table37435132101942>` describes the required parameters.
 
-.. _en-us_topic_0000001943866557__table37435132101942:
+.. _en-us_topic_0000002268768181__table37435132101942:
 
 .. table:: **Table 1** Parameters
 
@@ -30,9 +30,9 @@ GET /v1/{project_id}/built-in-algorithms
 Request Body
 ------------
 
-:ref:`Table 2 <en-us_topic_0000001943866557__table16279151181311>` describes the request parameters.
+:ref:`Table 2 <en-us_topic_0000002268768181__table16279151181311>` describes the request parameters.
 
-.. _en-us_topic_0000001943866557__table16279151181311:
+.. _en-us_topic_0000002268768181__table16279151181311:
 
 .. table:: **Table 2** Query parameters
 
@@ -56,9 +56,9 @@ Request Body
 Response Body
 -------------
 
-:ref:`Table 3 <en-us_topic_0000001943866557__table10251721151647>` describes the response parameters.
+:ref:`Table 3 <en-us_topic_0000002268768181__table10251721151647>` describes the response parameters.
 
-.. _en-us_topic_0000001943866557__table10251721151647:
+.. _en-us_topic_0000002268768181__table10251721151647:
 
 .. table:: **Table 3** Parameters
 
@@ -75,10 +75,10 @@ Response Body
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
    | model_total_count     | Integer               | Number of models                                                                                                                                     |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | models                | Array<Object>         | Model parameter list. For details, see :ref:`Table 4 <en-us_topic_0000001943866557__table29182771151827>`.                                           |
+   | models                | Array<Object>         | Model parameter list. For details, see :ref:`Table 4 <en-us_topic_0000002268768181__table29182771151827>`.                                           |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001943866557__table29182771151827:
+.. _en-us_topic_0000002268768181__table29182771151827:
 
 .. table:: **Table 4** **models** structure data
 

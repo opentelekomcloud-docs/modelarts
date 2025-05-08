@@ -15,9 +15,9 @@ URI
 
 DELETE /v1/{project_id}/visualization-jobs/{job_id}
 
-:ref:`Table 1 <en-us_topic_0000001909907472__table20736351173356>` describes the required parameters.
+:ref:`Table 1 <en-us_topic_0000002268768357__table20736351173356>` describes the required parameters.
 
-.. _en-us_topic_0000001909907472__table20736351173356:
+.. _en-us_topic_0000002268768357__table20736351173356:
 
 .. table:: **Table 1** Parameters
 
@@ -37,9 +37,9 @@ None
 Response Body
 -------------
 
-:ref:`Table 2 <en-us_topic_0000001909907472__table9370583111247>` describes the response parameters.
+:ref:`Table 2 <en-us_topic_0000002268768357__table9370583111247>` describes the response parameters.
 
-.. _en-us_topic_0000001909907472__table9370583111247:
+.. _en-us_topic_0000002268768357__table9370583111247:
 
 .. table:: **Table 2** Parameters
 
@@ -90,4 +90,4 @@ Sample Response
 Status Code
 -----------
 
-For details about the status code, see :ref:`Table 1 <en-us_topic_0000001909907492__table1450010510213>`.
+For details about the status code, see :ref:`Table 1 <en-us_topic_0000002268848277__table1450010510213>`.

@@ -57,23 +57,23 @@ Response Parameters
    +--------------+------------------------------------------------------------------------------+------------------+
    | Parameter    | Type                                                                         | Description      |
    +==============+==============================================================================+==================+
-   | labels       | Array of :ref:`Label <en-us_topic_0000001909747484__response_label>` objects | Label list.      |
+   | labels       | Array of :ref:`Label <en-us_topic_0000002233928784__response_label>` objects | Label list.      |
    +--------------+------------------------------------------------------------------------------+------------------+
    | total_number | Integer                                                                      | Number of labels |
    +--------------+------------------------------------------------------------------------------+------------------+
 
-.. _en-us_topic_0000001909747484__response_label:
+.. _en-us_topic_0000002233928784__response_label:
 
 .. table:: **Table 4** Label
 
    +-----------------------+------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
    | Parameter             | Type                                                                                           | Description                                                                                                                      |
    +=======================+================================================================================================+==================================================================================================================================+
-   | attributes            | Array of :ref:`LabelAttribute <en-us_topic_0000001909747484__response_labelattribute>` objects | Multi-dimensional attribute of a label. For example, if the label is music, attributes such as style and artist may be included. |
+   | attributes            | Array of :ref:`LabelAttribute <en-us_topic_0000002233928784__response_labelattribute>` objects | Multi-dimensional attribute of a label. For example, if the label is music, attributes such as style and artist may be included. |
    +-----------------------+------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
    | name                  | String                                                                                         | Label name.                                                                                                                      |
    +-----------------------+------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
-   | property              | :ref:`LabelProperty <en-us_topic_0000001909747484__response_labelproperty>` object             | Basic attribute key-value pair of a label, such as color and shortcut keys.                                                      |
+   | property              | :ref:`LabelProperty <en-us_topic_0000002233928784__response_labelproperty>` object             | Basic attribute key-value pair of a label, such as color and shortcut keys.                                                      |
    +-----------------------+------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
    | type                  | Integer                                                                                        | Label type. Options:                                                                                                             |
    |                       |                                                                                                |                                                                                                                                  |
@@ -100,7 +100,7 @@ Response Parameters
    |                       |                                                                                                | -  **600**: video labeling                                                                                                       |
    +-----------------------+------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909747484__response_labelattribute:
+.. _en-us_topic_0000002233928784__response_labelattribute:
 
 .. table:: **Table 5** LabelAttribute
 
@@ -119,10 +119,10 @@ Response Parameters
    |                       |                                                                                                          |                                                                                                               |
    |                       |                                                                                                          | -  **select**: single-choice drop-down list                                                                   |
    +-----------------------+----------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
-   | values                | Array of :ref:`LabelAttributeValue <en-us_topic_0000001909747484__response_labelattributevalue>` objects | List of label attribute values.                                                                               |
+   | values                | Array of :ref:`LabelAttributeValue <en-us_topic_0000002233928784__response_labelattributevalue>` objects | List of label attribute values.                                                                               |
    +-----------------------+----------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909747484__response_labelattributevalue:
+.. _en-us_topic_0000002233928784__response_labelattributevalue:
 
 .. table:: **Table 6** LabelAttributeValue
 
@@ -133,7 +133,7 @@ Response Parameters
    value     String Label attribute value.
    ========= ====== =========================
 
-.. _en-us_topic_0000001909747484__response_labelproperty:
+.. _en-us_topic_0000002233928784__response_labelproperty:
 
 .. table:: **Table 7** LabelProperty
 

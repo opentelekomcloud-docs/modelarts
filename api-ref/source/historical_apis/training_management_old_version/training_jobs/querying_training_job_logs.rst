@@ -15,9 +15,9 @@ URI
 
 GET /v1/{project_id}/training-jobs/{job_id}/versions/{version_id}/aom-log
 
-:ref:`Table 1 <en-us_topic_0000001909747528__table4442765616454>` describes the required parameters.
+:ref:`Table 1 <en-us_topic_0000002233928924__table4442765616454>` describes the required parameters.
 
-.. _en-us_topic_0000001909747528__table4442765616454:
+.. _en-us_topic_0000002233928924__table4442765616454:
 
 .. table:: **Table 1** URI parameters
 
@@ -56,9 +56,9 @@ None
 Response Body
 -------------
 
-:ref:`Table 3 <en-us_topic_0000001909747528__table1414514116749>` describes the response parameters.
+:ref:`Table 3 <en-us_topic_0000002233928924__table1414514116749>` describes the response parameters.
 
-.. _en-us_topic_0000001909747528__table1414514116749:
+.. _en-us_topic_0000002233928924__table1414514116749:
 
 .. table:: **Table 3** Parameters
 

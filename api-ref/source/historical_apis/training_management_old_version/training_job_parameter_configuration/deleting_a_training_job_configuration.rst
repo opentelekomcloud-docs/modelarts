@@ -15,9 +15,9 @@ URI
 
 DELETE /v1/{project_id}/training-job-configs/{config_name}
 
-:ref:`Table 1 <en-us_topic_0000001909907500__table486226859532>` describes the required parameters.
+:ref:`Table 1 <en-us_topic_0000002233928732__table486226859532>` describes the required parameters.
 
-.. _en-us_topic_0000001909907500__table486226859532:
+.. _en-us_topic_0000002233928732__table486226859532:
 
 .. table:: **Table 1** Parameters
 
@@ -37,9 +37,9 @@ None
 Response Body
 -------------
 
-:ref:`Table 2 <en-us_topic_0000001909907500__table5371703815645>` describes the response parameters.
+:ref:`Table 2 <en-us_topic_0000002233928732__table5371703815645>` describes the response parameters.
 
-.. _en-us_topic_0000001909907500__table5371703815645:
+.. _en-us_topic_0000002233928732__table5371703815645:
 
 .. table:: **Table 2** Parameters
 
@@ -88,4 +88,4 @@ Sample Response
 Status Code
 -----------
 
-For details about the status code, see :ref:`Table 1 <en-us_topic_0000001909907492__table1450010510213>`.
+For details about the status code, see :ref:`Table 1 <en-us_topic_0000002268848277__table1450010510213>`.

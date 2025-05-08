@@ -15,9 +15,9 @@ URI
 
 GET /v1/{project_id}/demanager/instances/{instance_id}
 
-:ref:`Table 1 <en-us_topic_0000001943866549__table569625523811>` describes the required parameters.
+:ref:`Table 1 <en-us_topic_0000002268768381__table569625523811>` describes the required parameters.
 
-.. _en-us_topic_0000001943866549__table569625523811:
+.. _en-us_topic_0000002268768381__table569625523811:
 
 .. table:: **Table 1** Parameters
 
@@ -37,9 +37,9 @@ None
 Response Body
 -------------
 
-:ref:`Table 2 <en-us_topic_0000001943866549__table1282791914324>` describes the response parameters.
+:ref:`Table 2 <en-us_topic_0000002268768381__table1282791914324>` describes the response parameters.
 
-.. _en-us_topic_0000001943866549__table1282791914324:
+.. _en-us_topic_0000002268768381__table1282791914324:
 
 .. table:: **Table 2** Parameters
 
@@ -56,30 +56,30 @@ Response Body
    +-------------------------+--------+--------------------------------------------------------------------------------------------------------------------------------------+
    | creation_timestamp      | String | Time when an instance is created                                                                                                     |
    +-------------------------+--------+--------------------------------------------------------------------------------------------------------------------------------------+
-   | profile                 | Object | Configuration information. For details, see :ref:`Table 3 <en-us_topic_0000001943866549__table91791695387>`.                         |
+   | profile                 | Object | Configuration information. For details, see :ref:`Table 3 <en-us_topic_0000002268768381__table91791695387>`.                         |
    +-------------------------+--------+--------------------------------------------------------------------------------------------------------------------------------------+
    | flavor                  | String | Instance flavor                                                                                                                      |
    +-------------------------+--------+--------------------------------------------------------------------------------------------------------------------------------------+
-   | spec                    | Object | Instance specifications of the notebook type. For details, see :ref:`Table 11 <en-us_topic_0000001943866549__table115411254165418>`. |
+   | spec                    | Object | Instance specifications of the notebook type. For details, see :ref:`Table 11 <en-us_topic_0000002268768381__table115411254165418>`. |
    +-------------------------+--------+--------------------------------------------------------------------------------------------------------------------------------------+
-   | workspace               | Object | Workspace. For details, see :ref:`Table 16 <en-us_topic_0000001943866549__table82085111012>`.                                        |
+   | workspace               | Object | Workspace. For details, see :ref:`Table 16 <en-us_topic_0000002268768381__table82085111012>`.                                        |
    +-------------------------+--------+--------------------------------------------------------------------------------------------------------------------------------------+
    | latest_update_timestamp | String | Time when an instance is modified                                                                                                    |
    +-------------------------+--------+--------------------------------------------------------------------------------------------------------------------------------------+
-   | flavor_details          | Object | Flavor details. See :ref:`Table 7 <en-us_topic_0000001943866549__table15315195310273>`.                                              |
+   | flavor_details          | Object | Flavor details. See :ref:`Table 7 <en-us_topic_0000002268768381__table15315195310273>`.                                              |
    +-------------------------+--------+--------------------------------------------------------------------------------------------------------------------------------------+
-   | pool                    | Object | Dedicated resource pool. See :ref:`Table 8 <en-us_topic_0000001943866549__table1757552712913>`.                                      |
+   | pool                    | Object | Dedicated resource pool. See :ref:`Table 8 <en-us_topic_0000002268768381__table1757552712913>`.                                      |
    +-------------------------+--------+--------------------------------------------------------------------------------------------------------------------------------------+
-   | ai_project              | Object | AI project. For details, see :ref:`Table 9 <en-us_topic_0000001943866549__response_aiproject>`.                                      |
+   | ai_project              | Object | AI project. For details, see :ref:`Table 9 <en-us_topic_0000002268768381__response_aiproject>`.                                      |
    +-------------------------+--------+--------------------------------------------------------------------------------------------------------------------------------------+
    | error_code              | String | Error code. For details, see :ref:`Error Codes <modelarts_03_0095>`.                                                                 |
    +-------------------------+--------+--------------------------------------------------------------------------------------------------------------------------------------+
-   | queuing_info            | Object | Queuing information. For details, see :ref:`Table 17 <en-us_topic_0000001943866549__table1535133818408>`.                            |
+   | queuing_info            | Object | Queuing information. For details, see :ref:`Table 17 <en-us_topic_0000002268768381__table1535133818408>`.                            |
    +-------------------------+--------+--------------------------------------------------------------------------------------------------------------------------------------+
-   | user                    | Object | User information. For details, see :ref:`Table 18 <en-us_topic_0000001943866549__table478950164319>`.                                |
+   | user                    | Object | User information. For details, see :ref:`Table 18 <en-us_topic_0000002268768381__table478950164319>`.                                |
    +-------------------------+--------+--------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001943866549__table91791695387:
+.. _en-us_topic_0000002268768381__table91791695387:
 
 .. table:: **Table 3** **profile** parameters
 
@@ -94,14 +94,14 @@ Response Body
    +-------------+--------------------+------------------------------------------------------------------------------------------------------------+
    | de_type     | String             | Development environment type. Only **Notebook** is supported.                                              |
    +-------------+--------------------+------------------------------------------------------------------------------------------------------------+
-   | provision   | Object             | Deployment information. For details, see :ref:`Table 4 <en-us_topic_0000001943866549__table108415111491>`. |
+   | provision   | Object             | Deployment information. For details, see :ref:`Table 4 <en-us_topic_0000002268768381__table108415111491>`. |
    +-------------+--------------------+------------------------------------------------------------------------------------------------------------+
    | labels      | Map<String,String> | Label information                                                                                          |
    +-------------+--------------------+------------------------------------------------------------------------------------------------------------+
-   | flavor_type | String             | Hardware, which can be **CPU**,, Ascend, or **GPU**                                                        |
+   | flavor_type | String             | Hardware, which can be **CPU**, or **GPU**                                                                 |
    +-------------+--------------------+------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001943866549__table108415111491:
+.. _en-us_topic_0000002268768381__table108415111491:
 
 .. table:: **Table 4** **provision** parameters
 
@@ -110,10 +110,10 @@ Response Body
    +===========+========+========================================================================================================+
    | type      | String | Deployment type. Only **Docker** is supported.                                                         |
    +-----------+--------+--------------------------------------------------------------------------------------------------------+
-   | spec      | Object | Deployment details. For details, see :ref:`Table 5 <en-us_topic_0000001943866549__table368911231548>`. |
+   | spec      | Object | Deployment details. For details, see :ref:`Table 5 <en-us_topic_0000002268768381__table368911231548>`. |
    +-----------+--------+--------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001943866549__table368911231548:
+.. _en-us_topic_0000002268768381__table368911231548:
 
 .. table:: **Table 5** **spec** parameters
 
@@ -122,10 +122,10 @@ Response Body
    +===========+========+=========================================================================================================================================+
    | engine    | String | Deployment engine. Only **CCE** is supported.                                                                                           |
    +-----------+--------+-----------------------------------------------------------------------------------------------------------------------------------------+
-   | params    | Object | Deployment parameters. Only **Docker** is supported. For details, see :ref:`Table 6 <en-us_topic_0000001943866549__table932452015018>`. |
+   | params    | Object | Deployment parameters. Only **Docker** is supported. For details, see :ref:`Table 6 <en-us_topic_0000002268768381__table932452015018>`. |
    +-----------+--------+-----------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001943866549__table932452015018:
+.. _en-us_topic_0000002268768381__table932452015018:
 
 .. table:: **Table 6** Docker deployment parameters
 
@@ -141,7 +141,7 @@ Response Body
    | annotations | Map<String,String> | Label information, which can be extended. By default, this parameter is left blank. |
    +-------------+--------------------+-------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001943866549__table15315195310273:
+.. _en-us_topic_0000002268768381__table15315195310273:
 
 .. table:: **Table 7** **flavor_details** parameters
 
@@ -169,7 +169,6 @@ Response Body
    |                       |                       |                                                                                                  |
    |                       |                       | -  **GPU**                                                                                       |
    |                       |                       | -  **CPU**                                                                                       |
-   |                       |                       | -  **ASCEND**                                                                                    |
    +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------+
    | params                | Dict                  | Parameters that describe flavors                                                                 |
    +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------+
@@ -191,7 +190,7 @@ Response Body
    | billing_params        | Integer               | Billing ratio. This parameter is mandatory if **billing_flavor** is specified.                   |
    +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001943866549__table1757552712913:
+.. _en-us_topic_0000002268768381__table1757552712913:
 
 .. table:: **Table 8** **pool** parameters
 
@@ -204,10 +203,10 @@ Response Body
    +-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | type      | String | Type of a resource pool. **USER_DEFINED** indicates a dedicated resource pool.                                                                             |
    +-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | owner     | Object | This parameter is mandatory when **type** is set to **USER_DEFINED**. For details, see :ref:`Table 10 <en-us_topic_0000001943866549__table1532233153818>`. |
+   | owner     | Object | This parameter is mandatory when **type** is set to **USER_DEFINED**. For details, see :ref:`Table 10 <en-us_topic_0000002268768381__table1532233153818>`. |
    +-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001943866549__response_aiproject:
+.. _en-us_topic_0000002268768381__response_aiproject:
 
 .. table:: **Table 9** **AIProject** parameters
 
@@ -217,7 +216,7 @@ Response Body
    id        String AI project ID
    ========= ====== =============
 
-.. _en-us_topic_0000001943866549__table1532233153818:
+.. _en-us_topic_0000002268768381__table1532233153818:
 
 .. table:: **Table 10** **owner** parameters
 
@@ -227,7 +226,7 @@ Response Body
    project_id String Project ID
    ========== ====== ===========
 
-.. _en-us_topic_0000001943866549__table115411254165418:
+.. _en-us_topic_0000002268768381__table115411254165418:
 
 .. table:: **Table 11** **notebook** parameters
 
@@ -238,17 +237,17 @@ Response Body
    +-----------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | custom_script_path          | String                | Path for storing custom initialization scripts used when a notebook instance is started                                                                                                               |
    +-----------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | storage                     | Object                | Storage path. For details, see :ref:`Table 4 <en-us_topic_0000001909747420__table14531721311>`.                                                                                                       |
+   | storage                     | Object                | Storage path. For details, see :ref:`Table 4 <en-us_topic_0000002233928720__table14531721311>`.                                                                                                       |
    +-----------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | credential                  | Object                | AK and SK for accessing OBS. For details, see :ref:`Table 30 <en-us_topic_0000001909747420__table970685216555>`.                                                                                      |
+   | credential                  | Object                | AK and SK for accessing OBS. For details, see :ref:`Table 30 <en-us_topic_0000002233928720__table970685216555>`.                                                                                      |
    +-----------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | repository                  | Object                | Git repository information. For details, see :ref:`Table 28 <en-us_topic_0000001909747420__table63971252184512>`. This parameter cannot be used. It is automatically returned when the API is called. |
+   | repository                  | Object                | Git repository information. For details, see :ref:`Table 28 <en-us_topic_0000002233928720__table63971252184512>`. This parameter cannot be used. It is automatically returned when the API is called. |
    +-----------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | resource_reserved_timestamp | Integer               | Time when the resource is reserved                                                                                                                                                                    |
    +-----------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | auto_stop                   | Object                | Auto stop parameter. For details, see :ref:`Table 23 <en-us_topic_0000001909747420__table14279174582613>`.                                                                                            |
+   | auto_stop                   | Object                | Auto stop parameter. For details, see :ref:`Table 23 <en-us_topic_0000002233928720__table14279174582613>`.                                                                                            |
    +-----------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | failed_reasons              | Object                | Cause for a creation or startup failure. For details, see :ref:`Table 22 <en-us_topic_0000001909747420__table72771614152013>`.                                                                        |
+   | failed_reasons              | Object                | Cause for a creation or startup failure. For details, see :ref:`Table 22 <en-us_topic_0000002233928720__table72771614152013>`.                                                                        |
    +-----------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | annotations                 | Map<String,String>    | Annotations                                                                                                                                                                                           |
    |                             |                       |                                                                                                                                                                                                       |
@@ -266,7 +265,7 @@ Response Body
    |                       |                       |                                                                                                                                                                                              |
    |                       |                       | Only **obs** is supported.                                                                                                                                                                   |
    +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | location              | Object                | Storage location. If **type** is set to **obs**, this parameter is mandatory. See :ref:`Table 5 <en-us_topic_0000001909747420__table10263721145>`. By default, this parameter is left blank. |
+   | location              | Object                | Storage location. If **type** is set to **obs**, this parameter is mandatory. See :ref:`Table 5 <en-us_topic_0000002233928720__table10263721145>`. By default, this parameter is left blank. |
    +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. table:: **Table 13** **location** parameters
@@ -307,7 +306,7 @@ Response Body
    detail    Map<String,String> Error details
    ========= ================== =============
 
-.. _en-us_topic_0000001943866549__table82085111012:
+.. _en-us_topic_0000002268768381__table82085111012:
 
 .. table:: **Table 16** **workspace** parameters
 
@@ -317,7 +316,7 @@ Response Body
    | id        | String | Workspace ID If no workspace is created, the default value is **0**. If a workspace is created and used, use the actual value. |
    +-----------+--------+--------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001943866549__table1535133818408:
+.. _en-us_topic_0000002268768381__table1535133818408:
 
 .. table:: **Table 17** **queuing_info** parameters
 
@@ -334,7 +333,7 @@ Response Body
    +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
    | flavor                | String                | Instance flavor. By default, all types are returned.                                                                                        |
    +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
-   | flavor_details        | Object                | Flavor details, which display the flavor information. For details, see :ref:`Table 16 <en-us_topic_0000001909747420__table15315195310273>`. |
+   | flavor_details        | Object                | Flavor details, which display the flavor information. For details, see :ref:`Table 16 <en-us_topic_0000002233928720__table15315195310273>`. |
    +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
    | status                | String                | Instance status. By default, all statuses are returned. Options:                                                                            |
    |                       |                       |                                                                                                                                             |
@@ -350,7 +349,7 @@ Response Body
    | rank                  | Integer               | Ranking of an instance in a queue                                                                                                           |
    +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001943866549__table478950164319:
+.. _en-us_topic_0000002268768381__table478950164319:
 
 .. table:: **Table 18** **user** parameters
 
@@ -376,7 +375,7 @@ Response Body
    +-----------------+--------+--------------------------------------------------------------------------------------------------------------+
    | type            | String | Repository type, which can be **CodeClub** or **GitHub**                                                     |
    +-----------------+--------+--------------------------------------------------------------------------------------------------------------+
-   | connection_info | Object | Repository connection. For details, see :ref:`Table 29 <en-us_topic_0000001909747420__table13487192116490>`. |
+   | connection_info | Object | Repository connection. For details, see :ref:`Table 29 <en-us_topic_0000002233928720__table13487192116490>`. |
    +-----------------+--------+--------------------------------------------------------------------------------------------------------------+
 
 .. table:: **Table 20** **connection_info** parameters
@@ -388,7 +387,7 @@ Response Body
    +------------+--------+--------------------------------------------------------------------------------------------------------------+
    | url        | String | Repository link address                                                                                      |
    +------------+--------+--------------------------------------------------------------------------------------------------------------+
-   | credential | Object | Certificate information. For details, see :ref:`Table 30 <en-us_topic_0000001909747420__table970685216555>`. |
+   | credential | Object | Certificate information. For details, see :ref:`Table 30 <en-us_topic_0000002233928720__table970685216555>`. |
    +------------+--------+--------------------------------------------------------------------------------------------------------------+
 
 .. table:: **Table 21** **credential** parameters
