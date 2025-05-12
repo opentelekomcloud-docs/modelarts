@@ -38,7 +38,9 @@ otcdocs_doc_type = 'sdk-ref'
 otcdocs_service_category = 'big_data'
 otcdocs_service_title = 'ModelArts'
 otcdocs_service_type = 'ma'
+otcdocs_cloud_environment = 'eu_de'
 otcdocs_search_environment = 'hc_de'
+otcdocs_search_index = 'search_index_de'
 otcdocs_search_url = "https://opensearch.eco.tsi-dev.otc-service.com/"
 
 # If extensions (or modules to document with autodoc) are in another directory,
