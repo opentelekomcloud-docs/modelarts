@@ -17,12 +17,13 @@ PATCH /v2/{project_id}/pools/{pool_name}
 
 .. table:: **Table 1** Path Parameters
 
-   ========== ========= ====== ===========================================
-   Parameter  Mandatory Type   Description
-   ========== ========= ====== ===========================================
-   project_id Yes       String Project ID.
-   pool_name  Yes       String Automatically generated resource pool name.
-   ========== ========= ====== ===========================================
+   +------------+-----------+--------+------------------------------------------------------------------------------------------+
+   | Parameter  | Mandatory | Type   | Description                                                                              |
+   +============+===========+========+==========================================================================================+
+   | project_id | Yes       | String | Project ID. For details, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`. |
+   +------------+-----------+--------+------------------------------------------------------------------------------------------+
+   | pool_name  | Yes       | String | Resource pool ID. The value is the **metadata.name** field in the resource pool details. |
+   +------------+-----------+--------+------------------------------------------------------------------------------------------+
 
 Request Parameters
 ------------------
@@ -168,7 +169,7 @@ Response Parameters
 
 **Status code: 200**
 
-.. table:: **Table 11** Response body parameters
+.. table:: **Table 19** Response body parameters
 
    +-----------------------+----------------------------------------------------------------------------------+---------------------------------+
    | Parameter             | Type                                                                             | Description                     |
@@ -232,8 +233,6 @@ Response Parameters
    | os.modelarts/create-from      | String                | Source of a resource pool, for example, **admin-console**, indicating that the resource pool is created by the administrator on the ModelArts console |
    +-------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
    | os.modelarts.pool/biz         | String                | Business type of a resource pool. The value can be **public** or **private**.                                                                         |
-   +-------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | os.modelarts/privileged       | String                | Whether a resource pool is a privileged pool. If this parameter is specified, the resource pool is a privileged one.                                  |
    +-------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
    | os.modelarts/sharing          | String                | Whether the resource pool can be shared. Options:                                                                                                     |
    |                               |                       |                                                                                                                                                       |
@@ -588,7 +587,7 @@ Response Parameters
 
 **Status code: 404**
 
-.. table:: **Table 30** Response body parameters
+.. table:: **Table 46** Response body parameters
 
    ========== ====== ==============
    Parameter  Type   Description
@@ -665,7 +664,7 @@ OK
            "flavor" : "modelarts.vm.cpu.4ud",
            "count" : 1,
            "azs" : [ {
-             "az" : "xxxxxx-7c",
+             "az" : "az-7c",
              "count" : 1
            } ]
          } ],
@@ -673,7 +672,7 @@ OK
            "flavor" : "modelarts.vm.cpu.4ud",
            "count" : 2,
            "azs" : [ {
-             "az" : "xxxxxx-7c",
+             "az" : "az-7c",
              "count" : 2
            } ]
          } ]

@@ -17,15 +17,11 @@ GET /v1/{project_id}/events
 
 .. table:: **Table 1** Path Parameters
 
-   +-----------------+-----------------+-----------------+------------------------------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type            | Description                                                                              |
-   +=================+=================+=================+==========================================================================================+
-   | project_id      | Yes             | String          | Project ID. For details, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`. |
-   |                 |                 |                 |                                                                                          |
-   |                 |                 |                 | Minimum: **32**                                                                          |
-   |                 |                 |                 |                                                                                          |
-   |                 |                 |                 | Maximum: **36**                                                                          |
-   +-----------------+-----------------+-----------------+------------------------------------------------------------------------------------------+
+   +------------+-----------+--------+------------------------------------------------------------------------------------------+
+   | Parameter  | Mandatory | Type   | Description                                                                              |
+   +============+===========+========+==========================================================================================+
+   | project_id | Yes       | String | Project ID. For details, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`. |
+   +------------+-----------+--------+------------------------------------------------------------------------------------------+
 
 .. table:: **Table 2** Query Parameters
 
@@ -36,7 +32,7 @@ GET /v1/{project_id}/events
    |                 |                 |                 |                                                                                                                                                                                  |
    |                 |                 |                 | -  **pools**: resource pool                                                                                                                                                      |
    +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | name            | Yes             | String          | Name of the resource for which an event occurs                                                                                                                                   |
+   | name            | Yes             | String          | ID of the resource for which an event occurs.                                                                                                                                    |
    +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | limit           | No              | Integer         | Maximum number of records on each page. If this parameter is left blank or set to **0**, 500 records are returned by default. A maximum of 500 records are allowed on each page. |
    +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -46,7 +42,9 @@ GET /v1/{project_id}/events
    |                 |                 |                 |                                                                                                                                                                                  |
    |                 |                 |                 | -  **Normal**: queries normal events.                                                                                                                                            |
    |                 |                 |                 |                                                                                                                                                                                  |
-   |                 |                 |                 | -  **Warning**: queries alarm events. If this parameter is left blank, all types of events are returned.                                                                         |
+   |                 |                 |                 | -  **Warning**: queries alarm events.                                                                                                                                            |
+   |                 |                 |                 |                                                                                                                                                                                  |
+   |                 |                 |                 |    If this parameter is left blank, all types of events are returned.                                                                                                            |
    +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | since           | No              | Integer         | Event start timestamp                                                                                                                                                            |
    +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -119,52 +117,32 @@ Response Parameters
 
 .. table:: **Table 5** Response body parameters
 
-   +-----------------------+-----------------------+-----------------------+
-   | Parameter             | Type                  | Description           |
-   +=======================+=======================+=======================+
-   | error_code            | String                | Error code            |
-   |                       |                       |                       |
-   |                       |                       | Minimum: **8**        |
-   |                       |                       |                       |
-   |                       |                       | Maximum: **36**       |
-   +-----------------------+-----------------------+-----------------------+
-   | error_msg             | String                | Error message         |
-   |                       |                       |                       |
-   |                       |                       | Minimum: **2**        |
-   |                       |                       |                       |
-   |                       |                       | Maximum: **512**      |
-   +-----------------------+-----------------------+-----------------------+
+   ========== ====== =============
+   Parameter  Type   Description
+   ========== ====== =============
+   error_code String Error code
+   error_msg  String Error message
+   ========== ====== =============
 
 **Status code: 404**
 
 .. table:: **Table 6** Response body parameters
 
-   +-----------------------+-----------------------+-----------------------+
-   | Parameter             | Type                  | Description           |
-   +=======================+=======================+=======================+
-   | error_code            | String                | Error code            |
-   |                       |                       |                       |
-   |                       |                       | Minimum: **8**        |
-   |                       |                       |                       |
-   |                       |                       | Maximum: **36**       |
-   +-----------------------+-----------------------+-----------------------+
-   | error_msg             | String                | Error message         |
-   |                       |                       |                       |
-   |                       |                       | Minimum: **2**        |
-   |                       |                       |                       |
-   |                       |                       | Maximum: **512**      |
-   +-----------------------+-----------------------+-----------------------+
+   ========== ====== =============
+   Parameter  Type   Description
+   ========== ====== =============
+   error_code String Error code
+   error_msg  String Error message
+   ========== ====== =============
 
 Example Requests
 ----------------
 
 Querying events of resource pool **pool-6f5da086876d4cd084d36f8bd3346036** by page
 
-.. code-block::
+.. code-block:: text
 
-   /v1/{project_id}/events?resource=pools&name=pool-6f5da086876d4cd084d36f8bd3346036&limit=5&continue=cde36780-1120-4753-bf75-0edb9ebd5a9e
-
-   { }
+   GET https://{endpoint}/v1/{project_id}/events?resource=pools&name=pool-5ff6-6f5da086876d4cd084d36f8bd3346036&limit=10&offset=0&ascend=false
 
 Example Responses
 -----------------

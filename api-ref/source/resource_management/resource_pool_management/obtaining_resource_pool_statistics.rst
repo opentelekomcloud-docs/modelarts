@@ -25,11 +25,11 @@ GET /v2/{project_id}/statistics/pools
 
 .. table:: **Table 2** Query Parameters
 
-   =========== ========= ====== ======================================
+   =========== ========= ====== =========================================
    Parameter   Mandatory Type   Description
-   =========== ========= ====== ======================================
-   workspaceId No        String Workspace. The default value is **0**.
-   =========== ========= ====== ======================================
+   =========== ========= ====== =========================================
+   workspaceId No        String Workspace ID. The default value is **0**.
+   =========== ========= ====== =========================================
 
 Request Parameters
 ------------------
@@ -89,13 +89,11 @@ Response Parameters
 Example Requests
 ----------------
 
-Obtaining the monitored information of a resource pool
+Obtain resource pool statistics.
 
 .. code-block:: text
 
-   GET https://{endpoint}/v2/{project_id}/pools
-
-   { }
+   GET https://{endpoint}/v2/{project_id}/statistics/pools
 
 Example Responses
 -----------------
@@ -109,13 +107,14 @@ OK
    {
      "statistics" : {
        "status" : {
-         "created" : 3,
+         "created" : 9,
          "creating" : 0,
-         "failed" : 1,
+         "deleting" : 1,
+         "failed" : 0,
          "pending" : 0
        }
      },
-     "operationTime" : "2022-12-05 11:15:59.329633162 +0000 UTC"
+     "operationTime" : "2025-03-27 11:48:55.446172146 +0000 UTC"
    }
 
 **Status code: 500**

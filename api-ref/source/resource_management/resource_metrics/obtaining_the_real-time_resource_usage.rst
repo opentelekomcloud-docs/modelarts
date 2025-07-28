@@ -129,7 +129,11 @@ Response Parameters
 Example Requests
 ----------------
 
-None
+Obtain the real-time resource usage of a resource pool.
+
+.. code-block:: text
+
+   GET https://{endpoint}/v2/{project_id}/metrics/runtime/pools
 
 Example Responses
 -----------------
@@ -149,7 +153,7 @@ OK
            "value" : {
              "cpu" : 5,
              "memory" : "15548Mi",
-             "nvidia.com/t4" : "1073m"
+             "tnt004" : "1073m"
            },
            "timestamp" : "2022-03-30T07:09:10Z",
            "window" : "1m"
@@ -158,12 +162,12 @@ OK
            "value" : {
              "cpu" : 16,
              "memory" : "64Gi",
-             "nvidia.com/t4" : 2
+             "tnt004" : 2
            },
            "maxValue" : {
              "cpu" : 16,
              "memory" : "64Gi",
-             "nvidia.com/t4" : 2
+             "tnt004" : 2
            },
            "timestamp" : "2022-03-30T07:09:10Z",
            "window" : "1m"

@@ -2,8 +2,8 @@
 
 .. _modelarts_03_0093:
 
-Common Parameters
-=================
+Appendix
+========
 
 -  :ref:`Status Code <modelarts_03_0094>`
 -  :ref:`Error Codes <modelarts_03_0095>`

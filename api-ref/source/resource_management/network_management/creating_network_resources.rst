@@ -17,11 +17,11 @@ POST /v1/{project_id}/networks
 
 .. table:: **Table 1** Path Parameters
 
-   ========== ========= ====== ===========
-   Parameter  Mandatory Type   Description
-   ========== ========= ====== ===========
-   project_id Yes       String Project ID.
-   ========== ========= ====== ===========
+   +------------+-----------+--------+------------------------------------------------------------------------------------------+
+   | Parameter  | Mandatory | Type   | Description                                                                              |
+   +============+===========+========+==========================================================================================+
+   | project_id | Yes       | String | Project ID. For details, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`. |
+   +------------+-----------+--------+------------------------------------------------------------------------------------------+
 
 Request Parameters
 ------------------
@@ -347,7 +347,7 @@ Create a network.
 
 .. code-block:: text
 
-   POST {endpoint}/v2/{project_id}/pools
+   POST {endpoint}/v1/{project_id}/networks
 
    {
      "apiVersion" : "v1",

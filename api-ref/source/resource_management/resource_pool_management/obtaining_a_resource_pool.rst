@@ -17,12 +17,13 @@ GET /v2/{project_id}/pools/{pool_name}
 
 .. table:: **Table 1** Path Parameters
 
-   ========== ========= ====== ========================
-   Parameter  Mandatory Type   Description
-   ========== ========= ====== ========================
-   project_id Yes       String Project ID.
-   pool_name  Yes       String Name of a resource pool.
-   ========== ========= ====== ========================
+   +------------+-----------+--------+------------------------------------------------------------------------------------------+
+   | Parameter  | Mandatory | Type   | Description                                                                              |
+   +============+===========+========+==========================================================================================+
+   | project_id | Yes       | String | Project ID. For details, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`. |
+   +------------+-----------+--------+------------------------------------------------------------------------------------------+
+   | pool_name  | Yes       | String | Resource pool ID. The value is the **metadata.name** field in the resource pool details. |
+   +------------+-----------+--------+------------------------------------------------------------------------------------------+
 
 Request Parameters
 ------------------
@@ -82,24 +83,16 @@ Response Parameters
    | Parameter                     | Type                  | Description                                                                                                                                           |
    +===============================+=======================+=======================================================================================================================================================+
    | os.modelarts/workspace.id     | String                | Workspace ID                                                                                                                                          |
-   |                               |                       |                                                                                                                                                       |
-   |                               |                       | Default: **0**                                                                                                                                        |
    +-------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | os.modelarts/name             | String                | Specified resource pool name.                                                                                                                         |
-   |                               |                       |                                                                                                                                                       |
-   |                               |                       | Minimum: **4**                                                                                                                                        |
-   |                               |                       |                                                                                                                                                       |
-   |                               |                       | Maximum: **64**                                                                                                                                       |
+   | os.modelarts/name             | String                | Resource pool name specified by the user.                                                                                                             |
    +-------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | os.modelarts/resource.id      | String                | Resource ID, which is typically provided for CBC.                                                                                                     |
+   | os.modelarts/resource.id      | String                | Resource ID of the resource pool.                                                                                                                     |
    +-------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
    | os.modelarts/tenant.domain.id | String                | ID of the tenant corresponding to the resource pool, which records the tenant account where the resource pool is created                              |
    +-------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
    | os.modelarts/create-from      | String                | Source of a resource pool, for example, **admin-console**, indicating that the resource pool is created by the administrator on the ModelArts console |
    +-------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
    | os.modelarts.pool/biz         | String                | Business type of a resource pool. The value can be **public** or **private**.                                                                         |
-   +-------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | os.modelarts/privileged       | String                | Whether a resource pool is a privileged pool. If this parameter is specified, the resource pool is a privileged one.                                  |
    +-------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
    | os.modelarts/sharing          | String                | Whether the resource pool can be shared. Options:                                                                                                     |
    |                               |                       |                                                                                                                                                       |
@@ -485,7 +478,8 @@ OK
        "annotations" : {
          "os.modelarts/description" : "",
          "os.modelarts/billing.mode" : "0",
-         "os.modelarts/external-access" : "elb"
+         "os.modelarts/external-access" : "elb",
+         "os.modelarts.pool/scope.external.dependency.Train" : "{\"type\":\"Enabled\",\"status\":\"True\",\"message\":\"\",\"network_access\":{\"type\":\"Enabled\",\"status\":\"True\",\"message\":\"\"}}"
        }
      },
      "spec" : {
@@ -514,7 +508,7 @@ OK
            "flavor" : "modelarts.vm.cpu.4ud",
            "count" : 2,
            "azs" : [ {
-             "az" : "xxxxxx-7c",
+             "az" : az-7c",
              "count" : 2
            } ]
          } ]

@@ -17,12 +17,13 @@ PATCH /v1/{project_id}/networks/{network_name}
 
 .. table:: **Table 1** Path Parameters
 
-   ============ ========= ====== ======================
-   Parameter    Mandatory Type   Description
-   ============ ========= ====== ======================
-   project_id   Yes       String Project ID.
-   network_name Yes       String Network resource name.
-   ============ ========= ====== ======================
+   +--------------+-----------+--------+------------------------------------------------------------------------------------------+
+   | Parameter    | Mandatory | Type   | Description                                                                              |
+   +==============+===========+========+==========================================================================================+
+   | project_id   | Yes       | String | Project ID. For details, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`. |
+   +--------------+-----------+--------+------------------------------------------------------------------------------------------+
+   | network_name | Yes       | String | Network resource name.                                                                   |
+   +--------------+-----------+--------+------------------------------------------------------------------------------------------+
 
 Request Parameters
 ------------------
@@ -361,26 +362,40 @@ Response Parameters
 Example Requests
 ----------------
 
-Interconnect with a VPC.
+-  Interconnect with a VPC.
 
-.. code-block::
+   .. code-block::
 
-   PATCH https://{endpoint}/v1/{project_id}/networks/{network_name}
+      PATCH https://{endpoint}/v1/{project_id}/networks/{network_name}
 
-   {
-     "spec" : {
-       "connection" : {
-         "peerConnectionList" : [ {
-           "peerVpcId" : "03e4f4d7-fc62-409b-9c52-df885525e30b",
-           "peerSubnetId" : "42aeebc3-f7c7-45aa-b884-e6e9ac2f841d"
-         } ],
-         "sfsTurboConnectionList" : [ {
-           "sfsId" : "97beb2bb-1a5b-41dd-b7fb-65a9c7954517",
-           "name" : "mulVpc-02"
-         } ]
-       }
-     }
-   }
+      {
+        "spec" : {
+          "connection" : {
+            "peerConnectionList" : [ {
+              "peerVpcId" : "359668f4-fbef-4404-b9bc-781142518d3b",
+              "peerSubnetId" : "8f21dbea-df13-4669-8a17-0efba195997b",
+              "defaultGateWay" : false
+            } ]
+          }
+        }
+      }
+
+-  Associate SFS Turbo.
+
+   .. code-block::
+
+      PATCH https://{endpoint}/v1/{project_id}/networks/{network_name}
+
+      {
+        "spec" : {
+          "connection" : {
+            "sfsTurboConnectionList" : [ {
+              "sfsId" : "2a220ce2-936c-4041-8478-c731bf934b11",
+              "name" : "sfs-turbo-a066-bbb"
+            } ]
+          }
+        }
+      }
 
 Example Responses
 -----------------

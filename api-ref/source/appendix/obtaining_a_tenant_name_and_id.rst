@@ -5,9 +5,9 @@
 Obtaining a Tenant Name and ID
 ==============================
 
-When you call APIs, certain requests require the domain name and ID. To obtain a domain name and ID, do as follows:
+When you call APIs, certain requests require a tenant name and ID. To obtain a tenant name and ID, do as follows:
 
-#. Log in to the ModelArts console.
+#. Log in to the console.
 
 #. In the upper right corner, click your account avatar icon and choose **My Settings** from the drop-down list.
 

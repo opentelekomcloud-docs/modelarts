@@ -17,12 +17,13 @@ GET /v1/{project_id}/networks/{network_name}
 
 .. table:: **Table 1** Path Parameters
 
-   ============ ========= ====== =====================================
-   Parameter    Mandatory Type   Description
-   ============ ========= ====== =====================================
-   project_id   Yes       String Project ID.
-   network_name Yes       String Automatically generated network name.
-   ============ ========= ====== =====================================
+   +--------------+-----------+--------+------------------------------------------------------------------------------------------+
+   | Parameter    | Mandatory | Type   | Description                                                                              |
+   +==============+===========+========+==========================================================================================+
+   | project_id   | Yes       | String | Project ID. For details, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`. |
+   +--------------+-----------+--------+------------------------------------------------------------------------------------------+
+   | network_name | Yes       | String | Automatically generated network name.                                                    |
+   +--------------+-----------+--------+------------------------------------------------------------------------------------------+
 
 Request Parameters
 ------------------

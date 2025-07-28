@@ -17,22 +17,22 @@ POST /v2/{project_id}/pools
 
 .. table:: **Table 1** Path Parameters
 
-   ========== ========= ====== ===========
-   Parameter  Mandatory Type   Description
-   ========== ========= ====== ===========
-   project_id Yes       String Project ID.
-   ========== ========= ====== ===========
+   +------------+-----------+--------+------------------------------------------------------------------------------------------+
+   | Parameter  | Mandatory | Type   | Description                                                                              |
+   +============+===========+========+==========================================================================================+
+   | project_id | Yes       | String | Project ID. For details, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`. |
+   +------------+-----------+--------+------------------------------------------------------------------------------------------+
 
 Request Parameters
 ------------------
 
 .. table:: **Table 2** Request header parameters
 
-   ============ ========= ====== ===============
-   Parameter    Mandatory Type   Description
-   ============ ========= ====== ===============
-   request-type No        String Request source.
-   ============ ========= ====== ===============
+   +--------------+-----------+--------+-----------------------------------------------------------------------------+
+   | Parameter    | Mandatory | Type   | Description                                                                 |
+   +==============+===========+========+=============================================================================+
+   | request-type | No        | String | Request source. The order function is enabled only when **console** is set. |
+   +--------------+-----------+--------+-----------------------------------------------------------------------------+
 
 .. table:: **Table 3** Request body parameters
 
@@ -342,8 +342,6 @@ Response Parameters
    | os.modelarts/create-from      | String                | Source of a resource pool, for example, **admin-console**, indicating that the resource pool is created by the administrator on the ModelArts console |
    +-------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
    | os.modelarts.pool/biz         | String                | Business type of a resource pool. The value can be **public** or **private**.                                                                         |
-   +-------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | os.modelarts/privileged       | String                | Whether a resource pool is a privileged pool. If this parameter is specified, the resource pool is a privileged one.                                  |
    +-------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
    | os.modelarts/sharing          | String                | Whether the resource pool can be shared. Options:                                                                                                     |
    |                               |                       |                                                                                                                                                       |
@@ -696,7 +694,7 @@ Response Parameters
 
 **Status code: 409**
 
-.. table:: **Table 35** Response body parameters
+.. table:: **Table 49** Response body parameters
 
    ========== ====== ==============
    Parameter  Type   Description
@@ -715,34 +713,32 @@ Example Requests
       POST https://{endpoint}/v2/{project_id}/pools
 
       {
-        "kind" : "Pool",
-        "apiVersion" : "v1",
-        "metadata" : {
-          "labels" : {
-            "os.modelarts/name" : "pool-001"
+          "kind": "Pool",
+          "apiVersion": "v2",
+          "metadata": {
+              "annotations": {
+                  "os.modelarts/description": ""
+              },
+              "labels": {
+                  "os.modelarts/name": "pool-ae01",
+                  "os.modelarts/workspace.id": "0"
+              }
           },
-          "annotations" : {
-            "os.modelarts/description" : "",
-            "os.modelarts/billing.mode" : "0"
+          "spec": {
+              "type": "Dedicate",
+              "scope": [
+                  "Train"
+              ],
+              "network": {
+                  "name": "network-21e1-6f5da086876d4cd084d36f8bd3346036"
+              },
+              "resources": [
+                  {
+                      "count": 1,
+                      "flavor": "modelarts.vm.cpu.8ud",
+                  }
+              ]
           }
-        },
-        "spec" : {
-          "type" : "Dedicate",
-          "scope" : [ "Train" ],
-          "network" : {
-            "name" : "net-01"
-          },
-          "masters" : [ {
-            "az" : "xxxxxx-7a"
-          } ],
-          "resources" : [ {
-            "flavor" : "modelarts.vm.gpu.t4u8",
-            "count" : 2
-          } ],
-          "driver" : {
-            "gpuVersion" : "440.31"
-          }
-        }
       }
 
 -  Create a logical pool.
@@ -768,7 +764,7 @@ Example Requests
           "type" : "Logical",
           "scope" : [ "Train" ],
           "resources" : [ {
-            "flavor" : "modelarts.vm.gpu.t4u8",
+            "flavor" : "modelarts.vm.gpu.tnt004",
             "count" : 2
           } ]
         }
@@ -776,6 +772,52 @@ Example Requests
 
 Example Responses
 -----------------
+
+**Status code: 200**
+
+OK
+
+.. code-block::
+
+   {
+     "kind" : "Pool",
+     "apiVersion" : "v2",
+     "metadata" : {
+       "name" : "pool-ae01-6f5da086876d4cd084d36f8bd3346036",
+       "creationTimestamp" : "2024-10-24T12:42:43Z",
+       "labels" : {
+         "os.modelarts/name" : "pool-ae01",
+         "os.modelarts/workspace.id" : "0",
+         "os.modelarts/node.prefix" : "",
+         "os.modelarts/resource.id" : "maos-pool-ae01-d7mjs",
+         "os.modelarts/tenant.domain.id" : "75fef1f8a9d64d0cb8de795599185b48",
+         "os.modelarts/tenant.project.id" : "6f5da086876d4cd084d36f8bd3346036",
+         "os.modelarts.pool/biz" : "private",
+         "os.modelarts/create-from" : "console"
+       },
+       "annotations" : {
+         "os.modelarts/billing.mode" : "0",
+         "os.modelarts.pool/subpools.count" : "0",
+         "os.modelarts/flavor.resource.ids" : "{\"modelarts.vm.cpu.8ud\":\"maos.vm.cpu.8ud.1976103046\"}",
+         "os.modelarts/tenant.domain.name" : "ei_batch_t00420620_01"
+       }
+     },
+     "spec" : {
+       "type" : "Dedicate",
+       "scope" : [ "Train" ],
+       "resources" : [ {
+         "flavor" : "modelarts.vm.cpu.8ud",
+         "count" : 1,
+         "maxCount" : 1
+       } ],
+       "network" : {
+         "name" : "network-21e1-6f5da086876d4cd084d36f8bd3346036"
+       }
+     },
+     "status" : {
+       "resources" : { }
+     }
+   }
 
 **Status code: 400**
 

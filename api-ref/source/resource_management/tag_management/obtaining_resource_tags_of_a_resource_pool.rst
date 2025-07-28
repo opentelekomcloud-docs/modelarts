@@ -2,13 +2,13 @@
 
 .. _ShowPoolTags:
 
-Querying Tags of a Resource Pool
-================================
+Obtaining Resource Tags of a Resource Pool
+==========================================
 
 Function
 --------
 
-This API is used to query tags of a specified resource pool.
+This API is used to obtain resource tags of a specified resource pool.
 
 URI
 ---
@@ -17,13 +17,13 @@ GET /v1/{project_id}/pools/{pool_name}/tags
 
 .. table:: **Table 1** Path Parameters
 
-   +------------+-----------+--------+-------------------------------------------------------------------------------------------------------------+
-   | Parameter  | Mandatory | Type   | Description                                                                                                 |
-   +============+===========+========+=============================================================================================================+
-   | project_id | Yes       | String | Project ID. For details, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`.                    |
-   +------------+-----------+--------+-------------------------------------------------------------------------------------------------------------+
-   | pool_name  | Yes       | String | Resource pool name. The value is the **name** value in the **metadata** field of the resource pool details. |
-   +------------+-----------+--------+-------------------------------------------------------------------------------------------------------------+
+   +------------+-----------+--------+------------------------------------------------------------------------------------------+
+   | Parameter  | Mandatory | Type   | Description                                                                              |
+   +============+===========+========+==========================================================================================+
+   | project_id | Yes       | String | Project ID. For details, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`. |
+   +------------+-----------+--------+------------------------------------------------------------------------------------------+
+   | pool_name  | Yes       | String | Resource pool ID. The value is the **metadata.name** field in the resource pool details. |
+   +------------+-----------+--------+------------------------------------------------------------------------------------------+
 
 Request Parameters
 ------------------
@@ -110,16 +110,11 @@ Response Parameters
 Example Requests
 ----------------
 
+Obtain resource tags of a specified resource pool.
+
 .. code-block::
 
-   https://{endpoint}/v1/{project_id}/pools/a55eba18-1ebf-4e9a-8229-d2d3b593a3dc/tags/delete
-
-   {
-     "tags" : [ {
-       "key" : "dev",
-       "value" : "dev1"
-     } ]
-   }
+   https://{endpoint}/v1/{project_id}/pools/{pool_name}/tags
 
 Example Responses
 -----------------

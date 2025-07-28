@@ -17,11 +17,11 @@ GET /v1/{project_id}/networks
 
 .. table:: **Table 1** Path Parameters
 
-   ========== ========= ====== ===========
-   Parameter  Mandatory Type   Description
-   ========== ========= ====== ===========
-   project_id Yes       String Project ID.
-   ========== ========= ====== ===========
+   +------------+-----------+--------+------------------------------------------------------------------------------------------+
+   | Parameter  | Mandatory | Type   | Description                                                                              |
+   +============+===========+========+==========================================================================================+
+   | project_id | Yes       | String | Project ID. For details, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`. |
+   +------------+-----------+--------+------------------------------------------------------------------------------------------+
 
 .. table:: **Table 2** Query Parameters
 
@@ -286,9 +286,7 @@ Obtain resource pools.
 
 .. code-block:: text
 
-   GET https://{endpoint}/v2/{project_id}/pools
-
-   { }
+   GET https://{endpoint}/v1/{project_id}/networks
 
 Example Responses
 -----------------

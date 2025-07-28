@@ -78,7 +78,7 @@ Response Parameters
 Example Requests
 ----------------
 
-The following shows how to query all public engine specifications of a training job (only part of the specifications are displayed because there are too many engines).
+The following shows how to query all public engine specifications of a training job(only part of the specifications are displayed because there are too many engines).
 
 .. code-block:: text
 

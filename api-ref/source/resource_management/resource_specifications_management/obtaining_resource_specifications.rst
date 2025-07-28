@@ -17,11 +17,11 @@ GET /v1/{project_id}/resourceflavors
 
 .. table:: **Table 1** Path Parameters
 
-   ========== ========= ====== ===========
-   Parameter  Mandatory Type   Description
-   ========== ========= ====== ===========
-   project_id Yes       String Project ID.
-   ========== ========= ====== ===========
+   +------------+-----------+--------+------------------------------------------------------------------------------------------+
+   | Parameter  | Mandatory | Type   | Description                                                                              |
+   +============+===========+========+==========================================================================================+
+   | project_id | Yes       | String | Project ID. For details, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`. |
+   +------------+-----------+--------+------------------------------------------------------------------------------------------+
 
 .. table:: **Table 2** Query Parameters
 
@@ -218,7 +218,7 @@ Response Parameters
 
 **Status code: 401**
 
-.. table:: **Table 13** Response body parameters
+.. table:: **Table 16** Response body parameters
 
    ========== ====== ==============
    Parameter  Type   Description
@@ -229,7 +229,7 @@ Response Parameters
 
 **Status code: 404**
 
-.. table:: **Table 14** Response body parameters
+.. table:: **Table 17** Response body parameters
 
    ========== ====== ==============
    Parameter  Type   Description
@@ -280,13 +280,6 @@ OK
            "size" : "500Gi"
          } ]
        },
-       "status" : {
-         "phase" : {
-           "xxxxxx-7a" : "soldout",
-           "xxxxxx-7b" : "soldout",
-           "xxxxxx-7c" : "normal"
-         }
-       }
      } ]
    }
 
