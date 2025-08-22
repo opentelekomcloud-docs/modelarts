@@ -15,8 +15,6 @@ Possible Causes
 
 The selected training flavor does not match the algorithm.
 
-For example, the algorithm supports GPUs, but Ascend flavor is selected for creating the training job.
-
 Solution
 --------
 

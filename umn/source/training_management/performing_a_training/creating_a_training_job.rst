@@ -15,6 +15,17 @@ Prerequisites
 -  At least one empty folder has been created in OBS for storing the training output. OBS buckets are not encrypted. ModelArts does not support encrypted OBS buckets. When creating an OBS bucket, do not enable bucket encryption.
 -  Access authorization has been configured. For details, see :ref:`Configuring Access Authorization (Global Configuration) <modelarts_08_0007>`.
 
+Notes and Constraints
+---------------------
+
+By default, up to 10,000 training jobs can be created. You can view the remaining quota on the training job list page.
+
+
+.. figure:: /_static/images/en-us_image_0000002342008896.png
+   :alt: **Figure 1** Viewing the remaining quota of a training job
+
+   **Figure 1** Viewing the remaining quota of a training job
+
 
 Creating a Training Job
 -----------------------

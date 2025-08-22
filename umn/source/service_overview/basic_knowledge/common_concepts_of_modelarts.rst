@@ -25,11 +25,6 @@ Batch Inference
 
 Batch inference specifies a batch job that processes batch data for inference.
 
-Ascend Chip
------------
-
-The Ascend chips are a series of AI chips with high computing performance and low power consumption.
-
 Resource Pool
 -------------
 

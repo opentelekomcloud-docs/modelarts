@@ -8,7 +8,7 @@ Upgrading a Resource Pool Driver
 Description
 -----------
 
-If GPUs or Ascend resources are used in a dedicated resource pool, you may need to customize GPU or Ascend drivers. ModelArts allows you to upgrade GPU or Ascend drivers of your dedicated resource pools.
+If GPUs resources are used in a dedicated resource pool, you may need to customize GPU drivers. ModelArts allows you to upgrade GPU drivers of your dedicated resource pools.
 
 There are two driver upgrade modes: secure upgrade and forcible upgrade.
 
@@ -18,7 +18,7 @@ There are two driver upgrade modes: secure upgrade and forcible upgrade.
 Constraints
 -----------
 
-The target dedicated resource pool is in running, and the resource pool contains GPU or Ascend resources.
+The target dedicated resource pool is in running, and the resource pool contains GPU resources.
 
 Upgrading the Driver
 --------------------

@@ -12,7 +12,7 @@ Check your data, exclude the data that does not meet the following requirements,
 ModelArts.4710 OBS Permission Issues
 ------------------------------------
 
-This fault is caused by OBS permissions when ModelArts interacts with OBS. If the message "OBS service Error Message" is displayed, the fault is caused by OBS permissions. Perform the following steps to rectify the fault. If this information is not contained in the error message, the fault is caused by backend services. .
+This fault is caused by OBS permissions when ModelArts interacts with OBS. If the message "OBS service Error Message" is displayed, the fault is caused by OBS permissions. Perform the following steps to rectify the fault. If this information is not contained in the error message, the fault is caused by backend services.
 
 #. Check whether the current account has OBS permissions.
 
