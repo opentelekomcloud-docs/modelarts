@@ -39,11 +39,9 @@ Product Advantages
 -  **High performance**
 
    -  The self-developed MoXing deep learning framework accelerates algorithm development and training.
-   -  Models running on Ascend AI chips achieve more efficient inference.
 
 -  **Flexible**
 
    -  Mainstream open-source frameworks such as TensorFlow, PyTorch, and MindSpore
-   -  Ascend chips
    -  Exclusive use of dedicated resources
    -  Custom images for custom frameworks and operators

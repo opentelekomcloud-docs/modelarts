@@ -22,18 +22,6 @@ Each development environment supports multiple AI engines that run independently
    -  Each ModelArts notebook instance can use all supported engines.
    -  AI engines vary based on regions. For details about the AI engines available in a region, see the AI engines displayed on the management console.
 
-.. table:: **Table 1** AI engines
-
-   +--------------------------------------+--------------------------------+----------------+
-   | Work Environment                     | Built-in AI Engine and Version | Supported Chip |
-   +======================================+================================+================+
-   | Ascend-Powered-Engine 1.0 (Python 3) | MindSpore 1.2.0                | Ascend 910     |
-   +--------------------------------------+--------------------------------+----------------+
-   |                                      | MindSpore 1.1.1                | Ascend 910     |
-   +--------------------------------------+--------------------------------+----------------+
-   |                                      | TensorFlow 1.15.0              | Ascend 910     |
-   +--------------------------------------+--------------------------------+----------------+
-
 Constraints
 -----------
 
@@ -41,7 +29,6 @@ Constraints
 -  Notebook instances support only standalone training under the current AI engine framework. If you need to use distributed training, use ModelArts training jobs and specify multiple nodes in the resource pool.
 -  ModelArts DevEnviron does not support apt-get. You can use a :ref:`custom image <modelarts_23_0084>` to train a model.
 -  Notebook instances do not support GUI-related libraries, such as PyQt.
--  Notebook instances created using Ascend specifications cannot be attached to EVS disks.
 -  Notebook instances cannot be connected to DWS and database services.
 -  Notebook instances cannot directly read files in OBS. You need to download the files to the local host. To access data in OBS, use MoXing or SDK for interaction.
 -  DevEnviron does not support TensorBoard. Use the visualization job function under **Training Jobs**.

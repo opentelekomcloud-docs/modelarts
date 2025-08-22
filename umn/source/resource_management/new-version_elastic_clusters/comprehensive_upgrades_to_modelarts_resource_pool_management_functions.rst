@@ -42,7 +42,7 @@ Instructions of Dedicated Resource Pools
 -  View the details about a created dedicated resource pool by referring to :ref:`Viewing Details About a Resource Pool <resmgmt-modelarts_0005>`.
 -  If the specifications of a dedicated resource pool do not meet your service requirements, adjust the specifications by referring to :ref:`Resizing a Resource Pool <resmgmt-modelarts_0006>`.
 -  Set or change job types supported by a dedicated resource pool by referring to :ref:`Changing Job Types Supported by a Resource Pool <resmgmt-modelarts_0008>`.
--  Upgrade the GPU/Ascend driver of your dedicated resource pools by referring to :ref:`Upgrading a Resource Pool Driver <resmgmt-modelarts_0009>`.
+-  Upgrade the GPU driver of your dedicated resource pools by referring to :ref:`Upgrading a Resource Pool Driver <resmgmt-modelarts_0009>`.
 -  If a dedicated resource pool is no longer needed, delete it by referring to :ref:`Deleting a Resource Pool <resmgmt-modelarts_0010>`.
 -  If any exception occurs when you use a dedicated resource pool, handle the exception by referring to :ref:`Abnormal Status of a Dedicated Resource Pool <resmgmt-modelarts_0011>`.
 -  Manage dedicated resource pool networks or interconnect VPCs with the networks by referring to :ref:`ModelArts Network <resmgmt-modelarts_0012>`.

@@ -41,6 +41,23 @@ Some resources are reserved for cluster components. Therefore, **CPUs (Available
 
    Delete abnormal nodes in a resource pool one by one or in a batch and add new ones for substitution.
 
+-  Enabling/Disabling the deletion lock
+
+   To prevent nodes from being deleted by mistake, you can enable the deletion lock. Once enabled, the nodes cannot be deleted unless the lock is disabled.
+
+   .. note::
+
+      -  The deletion lock can be enabled only for the nodes in the resource pool.
+      -  If the deletion lock is enabled, only node deletion operations are restricted. Other operations, such as node replacement, node restart, and node reset, work properly. Moreover, the resource pool that contains the nodes with deletion lock enabled can be deleted.
+
+   -  Enabling deletion lock: Locate the target node and choose **More** > **Enable Deletion Lock** in the **Operation** column. In the displayed dialog box, confirm the information, enter **YES** in the text box, and click **OK**.
+
+      To enable deletion lock for multiple nodes in batches, select the target nodes and choose **More** > **Enable Deletion Lock** above the node list.
+
+   -  Disabling deletion lock: Locate the target node and choose **More** > **Disable Deletion Lock** in the **Operation** column. In the displayed dialog box, confirm the information, enter **YES** in the text box, and click **OK**.
+
+      To disable deletion lock for multiple nodes in batches, select the target nodes and choose **More** > **Disable Deletion Lock** above the node list.
+
 .. note::
 
    Before deleting a node, ensure that there are no running jobs on this node. Otherwise, the jobs will be interrupted.
