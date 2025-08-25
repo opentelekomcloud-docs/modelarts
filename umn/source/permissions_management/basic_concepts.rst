@@ -55,9 +55,9 @@ By default, new IAM users do not have any permissions assigned. You need to add 
 
 When assigning permissions to a user group, IAM does not directly assign specific permissions to the user group. Instead, IAM needs to add the permissions to a policy and then assign the policy to the user group. To facilitate user permissions management, each cloud service provides some preset policies for you to directly use. If the preset policies cannot meet your requirements of fine-grained permissions management, you can customize policies.
 
-:ref:`Table 1 <en-us_topic_0000002043023008__table16882637182018>` lists all the preset system-defined policies supported by ModelArts.
+:ref:`Table 1 <en-us_topic_0000002340727632__table16882637182018>` lists all the preset system-defined policies supported by ModelArts.
 
-.. _en-us_topic_0000002043023008__table16882637182018:
+.. _en-us_topic_0000002340727632__table16882637182018:
 
 .. table:: **Table 1** System-defined policies supported by ModelArts
 
@@ -93,7 +93,7 @@ To simplify agency authorization, ModelArts supports automatic agency authorizat
    -  ModelArts agency authorization is region-specific, which means that you must perform agency authorization in each region you use.
 
 
-.. figure:: /_static/images/en-us_image_0000002043181348.png
+.. figure:: /_static/images/en-us_image_0000002340727712.png
    :alt: **Figure 1** Global configuration
 
    **Figure 1** Global configuration
@@ -103,7 +103,7 @@ On the **Global Configuration** page of the ModelArts console, after you click *
 ModelArts associates multiple users with one agency. This means that if two users need to configure the same agency, you do not need to create an agency for each user. Instead, you only need to configure the same agency for the two users.
 
 
-.. figure:: /_static/images/en-us_image_0000002079180677.png
+.. figure:: /_static/images/en-us_image_0000002374725669.png
    :alt: **Figure 2** Mapping between users and agencies
 
    **Figure 2** Mapping between users and agencies
@@ -153,4 +153,4 @@ Key features of ModelArts permissions management:
 -  All users (including individual users) can use specific functions only after agency authorization on ModelArts (**Settings** > **Add Authorization**). Otherwise, unexpected errors may occur.
 -  If you have enabled the enterprise project function, you can also enable ModelArts workspace and use both basic authorization and workspace for refined permissions management.
 
-.. |image1| image:: /_static/images/en-us_image_0000002079180673.png
+.. |image1| image:: /_static/images/en-us_image_0000002340727744.png

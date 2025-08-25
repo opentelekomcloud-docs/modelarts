@@ -18,10 +18,10 @@ Using a custom image may involve the following services:
 
    Software Repository for Container (SWR) provides easy, secure, and reliable management over container images throughout their lifecycle, facilitating the deployment of containerized applications. You can upload, download, and manage container images through the SWR console, SWR APIs, or community CLI.
 
-   Obtain the custom images used by ModelArts for training or creating AI applications from the SWR service management list. Upload your custom images to SWR.
+   Obtain the custom images used by ModelArts for training or creating models from the SWR service management list. Upload your custom images to SWR.
 
 
-   .. figure:: /_static/images/en-us_image_0000002079181753.png
+   .. figure:: /_static/images/en-us_image_0000002340892008.png
       :alt: **Figure 1** Obtaining images
 
       **Figure 1** Obtaining images
@@ -45,6 +45,6 @@ Application Scenarios of ModelArts Custom Images
 
    If you have developed a model or training script locally but the AI engine you used is not supported by ModelArts, create a custom image and upload it to SWR. Then, use this image to create a training job on ModelArts and use the resources provided by ModelArts to train models.
 
--  **Using a custom image to create an AI application**
+-  **Using a custom image to create a model**
 
-   If you have developed a model using an AI engine that is not supported by ModelArts, to use this model to create an AI application, do as follows: Create a custom image, import the image to ModelArts, and use it to create an AI application. The AI applications created in this way can be centrally managed and deployed as services.
+   If you have developed a model using an AI engine that is not supported by ModelArts, to use this model to create a model, do as follows: Create a custom image, import the image to ModelArts, and use it to create a model. The models created in this way can be centrally managed and deployed as services.

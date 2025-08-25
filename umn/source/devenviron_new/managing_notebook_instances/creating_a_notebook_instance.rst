@@ -18,7 +18,7 @@ Procedure
 
 #. Log in to the ModelArts management console. In the navigation pane, choose **Settings** and check whether the access authorization has been configured. If not, configure access authorization.
 
-#. Log in to the ModelArts management console. In the left navigation pane, choose **DevEnviron > Notebook** to switch to the new-version **Notebook** page.
+#. Log in to the ModelArts management console. In the navigation pane on the left, choose **DevEnviron > Notebook** to switch to the new-version **Notebook** page.
 
 
    .. figure:: /_static/images/en-us_image_0000001853035117.png

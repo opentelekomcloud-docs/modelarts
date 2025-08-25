@@ -13,7 +13,7 @@ Procedure
 #. Log in to the ModelArts management console. In the left navigation pane, choose **ExeML**. The **ExeML** page is displayed.
 
 
-   .. figure:: /_static/images/en-us_image_0000002043182284.png
+   .. figure:: /_static/images/en-us_image_0000002340892012.png
       :alt: **Figure 1** ExeML
 
       **Figure 1** ExeML

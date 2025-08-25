@@ -23,9 +23,9 @@ Starting an Auto Labeling Job
 
 #. In the labeling job list, locate the target labeling job of the object detection or image classification type, and click **Auto Labeling** in the **Operation** column.
 
-#. On the **Enable Auto Labeling** page, select **Active learning** or **Pre-labeling**. For details, see :ref:`Table 1 <en-us_topic_0000002043022660__en-us_topic_0000001185384429_en-us_topic_0209622045_table898214481813>` and :ref:`Table 2 <en-us_topic_0000002043022660__en-us_topic_0000001185384429_en-us_topic_0209622045_table4748115061313>`.
+#. On the **Enable Auto Labeling** page, select **Active learning** or **Pre-labeling**. For details, see :ref:`Table 1 <en-us_topic_0000002374851705__en-us_topic_0000001185384429_en-us_topic_0209622045_table898214481813>` and :ref:`Table 2 <en-us_topic_0000002374851705__en-us_topic_0000001185384429_en-us_topic_0209622045_table4748115061313>`.
 
-   .. _en-us_topic_0000002043022660__en-us_topic_0000001185384429_en-us_topic_0209622045_table898214481813:
+   .. _en-us_topic_0000002374851705__en-us_topic_0000001185384429_en-us_topic_0209622045_table898214481813:
 
    .. table:: **Table 1** Active learning
 
@@ -43,17 +43,17 @@ Starting an Auto Labeling Job
       | Compute Nodes                     | The default value is **1**, indicating the single-node system mode. Only this parameter value is supported.                                                                              |
       +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   .. _en-us_topic_0000002043022660__en-us_topic_0000001185384429_en-us_topic_0209622045_table4748115061313:
+   .. _en-us_topic_0000002374851705__en-us_topic_0000001185384429_en-us_topic_0209622045_table4748115061313:
 
    .. table:: **Table 2** Pre-labeling
 
-      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Parameter                         | Description                                                                                                                                                                                                                                                                                                                                           |
-      +===================================+=======================================================================================================================================================================================================================================================================================================================================================+
-      | Auto Labeling Type                | **Pre-labeling**: Select a model in the **My AI Applications** tab. Ensure that the model type matches the dataset labeling type. After the pre-labeling is complete, if the labeling result complies with the standard labeling format defined by the platform, the system filters hard examples. This step does not affect the pre-labeling result. |
-      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Model and Version                 | -  **My AI Applications**: Select a model as required. Click the drop-down arrow on the left of the target AI application and select a proper version. For details about how to import a model, see :ref:`Creating an AI Application <inference-modelarts-0004>`                                                                                      |
-      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Parameter                         | Description                                                                                                                                                                                                                                                                                                                                         |
+      +===================================+=====================================================================================================================================================================================================================================================================================================================================================+
+      | Auto Labeling Type                | **Pre-labeling**: Select a model in the **Model Management** tab. Ensure that the model type matches the dataset labeling type. After the pre-labeling is complete, if the labeling result complies with the standard labeling format defined by the platform, the system filters hard examples. This step does not affect the pre-labeling result. |
+      +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Model and Version                 | -  **Model Management**: Select a model as required. Click the drop-down arrow on the left of the target model and select a proper version. For details about how to import a model, see :ref:`Creating a Model <inference-modelarts-0004>`                                                                                                         |
+      +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
    .. note::
 

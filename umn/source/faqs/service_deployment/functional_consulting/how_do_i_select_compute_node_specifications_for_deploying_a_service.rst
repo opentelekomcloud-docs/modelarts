@@ -5,9 +5,9 @@
 How Do I Select Compute Node Specifications for Deploying a Service?
 ====================================================================
 
-Before deploying a service, specify node specifications. The node specifications displayed on the GUI are calculated by ModelArts based on the target AI application and the node specifications available in the resource pool. You can select the specifications provided by ModelArts or customize the specifications (supported only in dedicated resource pools).
+Before deploying a service, specify node specifications. The node specifications displayed on the GUI are calculated by ModelArts based on the target model and the node specifications available in the resource pool. You can select the specifications provided by ModelArts or customize the specifications (supported only in dedicated resource pools).
 
-Selecting compute node specifications based on the resources required by your AI application. For example, if an AI application requires 3 CPUs and 10 GB of memory, select compute node specifications higher than 3 CPUs and 10 GB of memory. This ensures that the service can be successfully deployed and run properly.
+Selecting compute node specifications based on the resources required by your model. For example, if a model requires 3 CPUs and 10 GB of memory, select compute node specifications higher than 3 CPUs and 10 GB of memory. This ensures that the service can be successfully deployed and run properly.
 
 When using compute node specifications, pay attention to the following:
 

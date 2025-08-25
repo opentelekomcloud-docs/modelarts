@@ -24,7 +24,7 @@ ModelArts does not support role-based authorization. It supports only policy-bas
 A policy consists of a version and one or more statements (indicating different actions).
 
 
-.. figure:: /_static/images/en-us_image_0000002043023024.png
+.. figure:: /_static/images/en-us_image_0000002340887484.png
    :alt: **Figure 1** Policy structure
 
    **Figure 1** Policy structure

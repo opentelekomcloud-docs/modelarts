@@ -55,7 +55,7 @@ Step 3 Use SSH to Connect to a Notebook Instance
 
    a. **Host Name (or IP address)**: address for accessing the in-cloud notebook instance. Obtain the address on the page providing detailed information of the target notebook instance,
    b. **Port**: port number for accessing the in-cloud notebook instance. Obtain the port number on the page providing detailed information of the target notebook instance, for example, **32701**.
-   c. **Connection type**: **SSH**
+   c. **Connection type**: Choose **SSH**.
    d. **Saved Sessions**: task name, which can be clicked for remote connection when you use PuTTY next time
 
 

@@ -11,9 +11,9 @@ Background
 ----------
 
 -  An account can have a maximum of 10 teams.
--  An account must have at least one team to enable team labeling for datasets. If the account has no team, add a team by referring to :ref:`Adding a Team <en-us_topic_0000002079180321__en-us_topic_0000001139944462_en-us_topic_0186456617_section165361815383>`.
+-  An account must have at least one team to enable team labeling for datasets. If the account has no team, add a team by referring to :ref:`Adding a Team <en-us_topic_0000002374851721__en-us_topic_0000001139944462_en-us_topic_0186456617_section165361815383>`.
 
-.. _en-us_topic_0000002079180321__en-us_topic_0000001139944462_en-us_topic_0186456617_section165361815383:
+.. _en-us_topic_0000002374851721__en-us_topic_0000001139944462_en-us_topic_0186456617_section165361815383:
 
 Adding a Team
 -------------
@@ -24,7 +24,7 @@ Adding a Team
 
 #. In the displayed **Add Team** dialog box, enter a team name and description and click **OK**. The labeling team is added.
 
-   The new team is displayed on the **Labeling Teams** page. You can view team details in the right pane. There is no member in the new team. Add members to the new team by referring to :ref:`Adding a Member <en-us_topic_0000002043180968__en-us_topic_0000001185384433_en-us_topic_0186456618_section060323818470>`.
+   The new team is displayed on the **Labeling Teams** page. You can view team details in the right pane. There is no member in the new team. Add members to the new team by referring to :ref:`Adding a Member <en-us_topic_0000002374731901__en-us_topic_0000001185384433_en-us_topic_0186456618_section060323818470>`.
 
 Deleting a Team
 ---------------

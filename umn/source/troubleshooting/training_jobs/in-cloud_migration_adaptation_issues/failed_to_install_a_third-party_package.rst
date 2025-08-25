@@ -8,7 +8,7 @@ Failed to Install a Third-Party Package
 Symptom
 -------
 
--  :ref:`How to install custom library functions <en-us_topic_0000002043025012__li054160134317>` for ModelArts, for example, **apex**.
+-  :ref:`How to install custom library functions <en-us_topic_0000002340728192__li054160134317>` for ModelArts, for example, **apex**.
 
 -  The following error occurs when a third-party package is installed in the ModelArts training environment:
 
@@ -19,12 +19,12 @@ Symptom
 Possible Cause
 --------------
 
-Error **xxx.whl is not a supported wheel on this platform** occurs, because the format of the name of the installed file is not supported. For details about the solution, see :ref:`2 <en-us_topic_0000002043025012__li21626333431>`.
+Error **xxx.whl is not a supported wheel on this platform** occurs, because the format of the name of the installed file is not supported. For details about the solution, see :ref:`2 <en-us_topic_0000002340728192__li21626333431>`.
 
 Solution
 --------
 
-#. .. _en-us_topic_0000002043025012__li054160134317:
+#. .. _en-us_topic_0000002340728192__li054160134317:
 
    **Installing the third-party package**
 
@@ -47,7 +47,7 @@ Solution
              mox.file.copy_parallel('obs://cnnorth4-test/codes/mox_benchmarks/apex-master/', '/cache/apex-master')
              os.system('pip --default-timeout=100 install -v --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" /cache/apex-master')
 
-#. .. _en-us_topic_0000002043025012__li21626333431:
+#. .. _en-us_topic_0000002340728192__li21626333431:
 
    **Installation error**
 

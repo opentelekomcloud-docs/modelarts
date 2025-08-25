@@ -9,4 +9,4 @@ The datasets of the new version are not displayed on the dataset page of the old
 
 |image1|
 
-.. |image1| image:: /_static/images/en-us_image_0000002043025936.png
+.. |image1| image:: /_static/images/en-us_image_0000002340729232.png

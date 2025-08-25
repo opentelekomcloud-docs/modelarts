@@ -23,7 +23,7 @@ Procedure
 
 #. Log in to the management console as a tenant user, hover the cursor over your username in the upper right corner, and choose **Identity and Access Management** from the drop-down list to switch to the IAM management console.
 
-#. .. _en-us_topic_0000002043023016__li1793015304613:
+#. .. _en-us_topic_0000002340727616__li1793015304613:
 
    In the navigation pane, choose **Permissions** > **Policies/Roles**. On the **Policies/Roles** page, click **Create Custom Policy** in the upper right corner, configure parameters, and click **OK**.
 
@@ -58,7 +58,7 @@ Procedure
              ]
          }
 
-#. In the navigation pane, choose **User Groups**. On the **User Groups** page, locate the row containing the target user group and click **Authorize** in the **Operation** column. On the **Authorize User Group** page, select the custom policy created in :ref:`2 <en-us_topic_0000002043023016__li1793015304613>` and click **Next**. Then, select the scope and click **OK**.
+#. In the navigation pane, choose **User Groups**. On the **User Groups** page, locate the row containing the target user group and click **Authorize** in the **Operation** column. On the **Authorize User Group** page, select the custom policy created in :ref:`2 <en-us_topic_0000002340727616__li1793015304613>` and click **Next**. Then, select the scope and click **OK**.
 
    After the configuration, all users in the user group have the permission to view all notebook instances created by users in the user group.
 

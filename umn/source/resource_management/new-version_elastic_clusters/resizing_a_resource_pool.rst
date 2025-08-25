@@ -54,4 +54,4 @@ A resource pool can be resized by adjusting the number of nodes of existing flav
 
          When you delete a flavor, the resource pool nodes of the flavor will be deleted accordingly and cannot be restored.
 
-.. |image1| image:: /_static/images/en-us_image_0000002079099165.png
+.. |image1| image:: /_static/images/en-us_image_0000002374848901.png

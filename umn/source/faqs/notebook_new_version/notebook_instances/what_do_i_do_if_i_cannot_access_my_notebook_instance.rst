@@ -36,4 +36,4 @@ After a notebook instance is created, click **Open** in the **Operation** column
 
 Do as follows to resolve this issue: Copy the domain name of the page , add it to the **Do not use proxy server for addresses beginning with** text box, and save the settings.
 
-.. |image1| image:: /_static/images/en-us_image_0000002043184312.png
+.. |image1| image:: /_static/images/en-us_image_0000002340729264.png

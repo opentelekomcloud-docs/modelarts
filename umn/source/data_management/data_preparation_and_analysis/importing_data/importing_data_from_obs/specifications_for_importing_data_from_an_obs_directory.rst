@@ -14,7 +14,7 @@ Only the following labeling types of data can be imported by **Labeling Format**
    -  To import data from an OBS directory, you must have the read permission on the OBS directory.
    -  The OBS buckets and ModelArts must be in the same region.
 
-.. _en-us_topic_0000002043025328__en-us_topic_0000001194052681_section570816190577:
+.. _en-us_topic_0000002374731961__en-us_topic_0000001194052681_section570816190577:
 
 Image Classification
 --------------------
@@ -86,7 +86,7 @@ Format 1: ModelArts PASCAL VOC 1.0
 
 -  The simple mode of object detection requires you to store labeled objects and your label files (in one-to-one relationship with the labeled objects) in the same directory. For example, if the name of the labeled object file is **IMG_20180919_114745.jpg**, the name of the label file must be **IMG_20180919_114745.xml**.
 
-   The label files must be in PASCAL VOC format. For details about the format, see :ref:`Table 8 <en-us_topic_0000002043025324__en-us_topic_0000001148092878_table77167388472>`.
+   The label files must be in PASCAL VOC format. For details about the format, see :ref:`Table 8 <en-us_topic_0000002374851809__en-us_topic_0000001148092878_table77167388472>`.
 
    Example:
 
@@ -223,7 +223,7 @@ ModelArts image segmentation 1.0:
 
 -  Labeled objects and their label files (in one-to-one relationship with the labeled objects) must be in the same directory. For example, if the name of the labeled object file is **IMG_20180919_114746.jpg**, the name of the label file must be **IMG_20180919_114746.xml**.
 
-   Fields **mask_source** and **mask_color** are added to the label file in PASCAL VOC format. For details about the format, see :ref:`Table 4 <en-us_topic_0000002043025324__en-us_topic_0000001148092878_table1516151991311>`.
+   Fields **mask_source** and **mask_color** are added to the label file in PASCAL VOC format. For details about the format, see :ref:`Table 4 <en-us_topic_0000002374851809__en-us_topic_0000001148092878_table1516151991311>`.
 
    Example:
 
@@ -281,7 +281,7 @@ ModelArts image segmentation 1.0:
           </object>
       </annotation>
 
-.. _en-us_topic_0000002043025328__en-us_topic_0000001194052681_section163641141195713:
+.. _en-us_topic_0000002374731961__en-us_topic_0000001194052681_section163641141195713:
 
 Text Classification
 -------------------
@@ -335,7 +335,7 @@ Labeled objects and labels for text classification can be stored in two formats:
       │      COMMENTS _20180919_114945.txt
       │      COMMENTS _20180919_114945_result.txt
 
-.. _en-us_topic_0000002043025328__en-us_topic_0000001194052681_section1683314458578:
+.. _en-us_topic_0000002374731961__en-us_topic_0000001194052681_section1683314458578:
 
 Sound Classification
 --------------------
@@ -357,7 +357,7 @@ Example:
            2.wav
            3.wav
 
-.. _en-us_topic_0000002043025328__en-us_topic_0000001194052681_section118011361754:
+.. _en-us_topic_0000002374731961__en-us_topic_0000001194052681_section118011361754:
 
 Tables
 ------

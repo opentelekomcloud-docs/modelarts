@@ -17,4 +17,4 @@ Solution
 
 Ensure that all processes are in the same epoch.
 
-.. |image1| image:: /_static/images/en-us_image_0000002043025300.png
+.. |image1| image:: /_static/images/en-us_image_0000002374727309.png

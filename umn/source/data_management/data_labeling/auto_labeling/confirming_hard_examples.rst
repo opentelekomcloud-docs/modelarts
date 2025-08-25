@@ -11,14 +11,14 @@ The auto hard example detection function is used to automatically label hard exa
 
 Hard example management involves three scenarios.
 
--  :ref:`Confirming Hard Examples After Auto Labeling <en-us_topic_0000002079180333__en-us_topic_0000001185265241_en-us_topic_0217235047_section12530766412>`
--  :ref:`Labeling Data in a Dataset as Hard Examples <en-us_topic_0000002079180333__en-us_topic_0000001185265241_en-us_topic_0217235047_section176081753173911>`
+-  :ref:`Confirming Hard Examples After Auto Labeling <en-us_topic_0000002340893858__en-us_topic_0000001185265241_en-us_topic_0217235047_section12530766412>`
+-  :ref:`Labeling Data in a Dataset as Hard Examples <en-us_topic_0000002340893858__en-us_topic_0000001185265241_en-us_topic_0217235047_section176081753173911>`
 
 .. note::
 
    Only datasets of image classification and object detection types support the auto hard example detection function.
 
-.. _en-us_topic_0000002079180333__en-us_topic_0000001185265241_en-us_topic_0217235047_section12530766412:
+.. _en-us_topic_0000002340893858__en-us_topic_0000001185265241_en-us_topic_0217235047_section12530766412:
 
 Confirming Hard Examples After Auto Labeling
 --------------------------------------------
@@ -45,7 +45,7 @@ During the execution of an auto labeling task, ModelArts automatically detects a
 
       The selected images are incorrectly labeled. Delete the incorrect labels on the right, add a label in **Label**, and click **OK** to confirm the hard examples.
 
-.. _en-us_topic_0000002079180333__en-us_topic_0000001185265241_en-us_topic_0217235047_section176081753173911:
+.. _en-us_topic_0000002340893858__en-us_topic_0000001185265241_en-us_topic_0217235047_section176081753173911:
 
 Labeling Data in a Dataset as Hard Examples
 -------------------------------------------

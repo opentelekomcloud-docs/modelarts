@@ -25,7 +25,7 @@ Table Data Sources
 
 You can import data by downloading built-in datasets from AI Gallery, or from OBS, GaussDB(DWS), DLI, MRS, and local files.
 
-.. _en-us_topic_0000002043025308__section2764112633219:
+.. _en-us_topic_0000002374851801__section2764112633219:
 
 Import Mode
 -----------

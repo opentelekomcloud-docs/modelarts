@@ -11,13 +11,13 @@ Symptom
 If the Git plug-in is used in JupyterLab, when a private repository is cloned or a file is pushed, an error occurs.
 
 
-.. figure:: /_static/images/en-us_image_0000002079182845.png
+.. figure:: /_static/images/en-us_image_0000002340888796.png
    :alt: **Figure 1** JupyterLab
 
    **Figure 1** JupyterLab
 
 
-.. figure:: /_static/images/en-us_image_0000002043183512.png
+.. figure:: /_static/images/en-us_image_0000002340729016.png
    :alt: **Figure 2** Error
 
    **Figure 2** Error
@@ -33,7 +33,7 @@ Solution
 Use a token for authorization. When cloning a private repository or pushing a file, enter the token in the authorization text box.
 
 
-.. figure:: /_static/images/en-us_image_0000002079104245.png
+.. figure:: /_static/images/en-us_image_0000002340729036.png
    :alt: **Figure 3** token
 
    **Figure 3** token
