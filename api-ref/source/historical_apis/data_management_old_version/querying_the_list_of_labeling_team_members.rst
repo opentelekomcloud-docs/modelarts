@@ -69,10 +69,10 @@ Response Parameters
    +==============+================================================================================+=============================================+
    | total_number | Integer                                                                        | Total number of labeling team members.      |
    +--------------+--------------------------------------------------------------------------------+---------------------------------------------+
-   | workers      | Array of :ref:`Worker <en-us_topic_0000001943866613__response_worker>` objects | Labeling team members list queried by page. |
+   | workers      | Array of :ref:`Worker <en-us_topic_0000002374896781__response_worker>` objects | Labeling team members list queried by page. |
    +--------------+--------------------------------------------------------------------------------+---------------------------------------------+
 
-.. _en-us_topic_0000001943866613__response_worker:
+.. _en-us_topic_0000002374896781__response_worker:
 
 .. table:: **Table 4** Worker
 

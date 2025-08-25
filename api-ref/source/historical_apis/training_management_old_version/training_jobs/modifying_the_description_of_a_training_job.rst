@@ -15,9 +15,9 @@ URI
 
 PUT /v1/{project_id}/training-jobs/{job_id}
 
-:ref:`Table 1 <en-us_topic_0000001909907360__table27718806153710>` describes the required parameters.
+:ref:`Table 1 <en-us_topic_0000002341058534__table27718806153710>` describes the required parameters.
 
-.. _en-us_topic_0000001909907360__table27718806153710:
+.. _en-us_topic_0000002341058534__table27718806153710:
 
 .. table:: **Table 1** Parameters
 
@@ -32,9 +32,9 @@ PUT /v1/{project_id}/training-jobs/{job_id}
 Request Body
 ------------
 
-:ref:`Table 2 <en-us_topic_0000001909907360__table54779414153816>` describes the request parameters.
+:ref:`Table 2 <en-us_topic_0000002341058534__table54779414153816>` describes the request parameters.
 
-.. _en-us_topic_0000001909907360__table54779414153816:
+.. _en-us_topic_0000002341058534__table54779414153816:
 
 .. table:: **Table 2** Parameters
 
@@ -47,9 +47,9 @@ Request Body
 Response Body
 -------------
 
-:ref:`Table 3 <en-us_topic_0000001909907360__table10292351155335>` describes the response parameters.
+:ref:`Table 3 <en-us_topic_0000002341058534__table10292351155335>` describes the response parameters.
 
-.. _en-us_topic_0000001909907360__table10292351155335:
+.. _en-us_topic_0000002341058534__table10292351155335:
 
 .. table:: **Table 3** Parameters
 

@@ -15,9 +15,9 @@ URI
 
 GET /v1/{project_id}/training-jobs
 
-:ref:`Table 1 <en-us_topic_0000001909747396__table16518993181628>` describes the required parameters.
+:ref:`Table 1 <en-us_topic_0000002374856605__table16518993181628>` describes the required parameters.
 
-.. _en-us_topic_0000001909747396__table16518993181628:
+.. _en-us_topic_0000002374856605__table16518993181628:
 
 .. table:: **Table 1** URI parameters
 
@@ -58,9 +58,9 @@ None
 Response Body
 -------------
 
-:ref:`Table 3 <en-us_topic_0000001909747396__table31621671103510>` describes the response parameters.
+:ref:`Table 3 <en-us_topic_0000002374856605__table31621671103510>` describes the response parameters.
 
-.. _en-us_topic_0000001909747396__table31621671103510:
+.. _en-us_topic_0000002374856605__table31621671103510:
 
 .. table:: **Table 3** Parameters
 
@@ -81,12 +81,12 @@ Response Body
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------+
    | job_count_limit       | Integer               | Number of training jobs that can be created                                                                       |
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------+
-   | jobs                  | **jobs** array        | Attributes of a training job. For details, see :ref:`Table 4 <en-us_topic_0000001909747396__table3971109103614>`. |
+   | jobs                  | **jobs** array        | Attributes of a training job. For details, see :ref:`Table 4 <en-us_topic_0000002374856605__table3971109103614>`. |
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------+
    | quotas                | Integer               | Maximum number of training jobs                                                                                   |
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909747396__table3971109103614:
+.. _en-us_topic_0000002374856605__table3971109103614:
 
 .. table:: **Table 4** **jobs** parameters
 

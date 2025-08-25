@@ -22,7 +22,7 @@ POST /v2/{project_id}/pools/{pool_name}/nodes/batch-delete
    +============+===========+========+==========================================================================================+
    | project_id | Yes       | String | Project ID. For details, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`. |
    +------------+-----------+--------+------------------------------------------------------------------------------------------+
-   | pool_name  | Yes       | String | Name of a resource pool                                                                  |
+   | pool_name  | Yes       | String | Resource pool ID. The value is the **metadata.name** field in the resource pool details. |
    +------------+-----------+--------+------------------------------------------------------------------------------------------+
 
 Request Parameters
@@ -43,21 +43,12 @@ Response Parameters
 
 .. table:: **Table 3** Response body parameters
 
-   +-----------------------+-----------------------+-----------------------+
-   | Parameter             | Type                  | Description           |
-   +=======================+=======================+=======================+
-   | error_code            | String                | Error code.           |
-   |                       |                       |                       |
-   |                       |                       | Minimum: **8**        |
-   |                       |                       |                       |
-   |                       |                       | Maximum: **36**       |
-   +-----------------------+-----------------------+-----------------------+
-   | error_msg             | String                | Error message.        |
-   |                       |                       |                       |
-   |                       |                       | Minimum: **2**        |
-   |                       |                       |                       |
-   |                       |                       | Maximum: **512**      |
-   +-----------------------+-----------------------+-----------------------+
+   ========== ====== ==============
+   Parameter  Type   Description
+   ========== ====== ==============
+   error_code String Error code.
+   error_msg  String Error message.
+   ========== ====== ==============
 
 Example Requests
 ----------------

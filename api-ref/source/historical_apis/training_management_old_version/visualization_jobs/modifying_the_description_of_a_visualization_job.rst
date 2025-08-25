@@ -15,9 +15,9 @@ URI
 
 PUT /v1/{project_id}/visualization-jobs/{job_id}
 
-:ref:`Table 1 <en-us_topic_0000001909907448__table4247299117445>` describes the required parameters.
+:ref:`Table 1 <en-us_topic_0000002340898774__table4247299117445>` describes the required parameters.
 
-.. _en-us_topic_0000001909907448__table4247299117445:
+.. _en-us_topic_0000002340898774__table4247299117445:
 
 .. table:: **Table 1** Parameters
 
@@ -32,9 +32,9 @@ PUT /v1/{project_id}/visualization-jobs/{job_id}
 Request Body
 ------------
 
-:ref:`Table 2 <en-us_topic_0000001909907448__table212731411827>` describes the request parameters.
+:ref:`Table 2 <en-us_topic_0000002340898774__table212731411827>` describes the request parameters.
 
-.. _en-us_topic_0000001909907448__table212731411827:
+.. _en-us_topic_0000002340898774__table212731411827:
 
 .. table:: **Table 2** Parameters
 
@@ -47,9 +47,9 @@ Request Body
 Response Body
 -------------
 
-:ref:`Table 3 <en-us_topic_0000001909907448__table33036183111023>` describes the response parameters.
+:ref:`Table 3 <en-us_topic_0000002340898774__table33036183111023>` describes the response parameters.
 
-.. _en-us_topic_0000001909907448__table33036183111023:
+.. _en-us_topic_0000002340898774__table33036183111023:
 
 .. table:: **Table 3** Parameters
 
@@ -103,4 +103,4 @@ Sample Response
 Status Code
 -----------
 
-For details about the status code, see :ref:`Table 1 <en-us_topic_0000001909907492__table1450010510213>`.
+For details about the status code, see :ref:`Table 1 <en-us_topic_0000002374856625__table1450010510213>`.

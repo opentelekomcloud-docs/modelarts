@@ -44,24 +44,24 @@ Request Parameters
    |                 |                 |                                                                                                         |                                                                                                                                                         |
    |                 |                 |                                                                                                         | -  **false**: Do not create a task version when creating a task. (Default value)                                                                        |
    +-----------------+-----------------+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | data_source     | No              | :ref:`ProcessorDataSource <en-us_topic_0000001943866725__request_processordatasource>` object           | Data source. Either this parameter or **inputs** is delivered.                                                                                          |
+   | data_source     | No              | :ref:`ProcessorDataSource <en-us_topic_0000002374896813__request_processordatasource>` object           | Data source. Either this parameter or **inputs** is delivered.                                                                                          |
    +-----------------+-----------------+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
    | description     | No              | String                                                                                                  | Description of a data processing task. The description contains 0 to 256 characters and does not support the following special characters: ``^!<>=&"'`` |
    +-----------------+-----------------+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | inputs          | No              | Array of :ref:`ProcessorDataSource <en-us_topic_0000001943866725__request_processordatasource>` objects | Data source list. Either this parameter or **data_source** is delivered.                                                                                |
+   | inputs          | No              | Array of :ref:`ProcessorDataSource <en-us_topic_0000002374896813__request_processordatasource>` objects | Data source list. Either this parameter or **data_source** is delivered.                                                                                |
    +-----------------+-----------------+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
    | name            | Yes             | String                                                                                                  | Name of a data processing task.                                                                                                                         |
    +-----------------+-----------------+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | template        | No              | :ref:`TemplateParam <en-us_topic_0000001943866725__request_templateparam>` object                       | Data processing template, such as the algorithm ID and parameters.                                                                                      |
+   | template        | No              | :ref:`TemplateParam <en-us_topic_0000002374896813__request_templateparam>` object                       | Data processing template, such as the algorithm ID and parameters.                                                                                      |
    +-----------------+-----------------+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
    | version_id      | No              | String                                                                                                  | Dataset version ID.                                                                                                                                     |
    +-----------------+-----------------+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | work_path       | No              | :ref:`WorkPath <en-us_topic_0000001943866725__request_workpath>` object                                 | Working directory of a data processing task.                                                                                                            |
+   | work_path       | No              | :ref:`WorkPath <en-us_topic_0000002374896813__request_workpath>` object                                 | Working directory of a data processing task.                                                                                                            |
    +-----------------+-----------------+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
    | workspace_id    | No              | String                                                                                                  | Workspace ID. If no workspace is created, the default value is **0**. If a workspace is created and used, use the actual value.                         |
    +-----------------+-----------------+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001943866725__request_processordatasource:
+.. _en-us_topic_0000002374896813__request_processordatasource:
 
 .. table:: **Table 3** ProcessorDataSource
 
@@ -95,7 +95,7 @@ Request Parameters
    | version_name    | No              | String          | Dataset version name.                                                                                                                                                        |
    +-----------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001943866725__request_templateparam:
+.. _en-us_topic_0000002374896813__request_templateparam:
 
 .. table:: **Table 4** TemplateParam
 
@@ -116,10 +116,10 @@ Request Parameters
    +-----------------+-----------------+---------------------------------------------------------------------------------------------+--------------------------------------------------------------------+
    | name            | No              | String                                                                                      | Template name.                                                     |
    +-----------------+-----------------+---------------------------------------------------------------------------------------------+--------------------------------------------------------------------+
-   | operator_params | No              | Array of :ref:`OperatorParam <en-us_topic_0000001943866725__request_operatorparam>` objects | Operator parameter list.                                           |
+   | operator_params | No              | Array of :ref:`OperatorParam <en-us_topic_0000002374896813__request_operatorparam>` objects | Operator parameter list.                                           |
    +-----------------+-----------------+---------------------------------------------------------------------------------------------+--------------------------------------------------------------------+
 
-.. _en-us_topic_0000001943866725__request_operatorparam:
+.. _en-us_topic_0000002374896813__request_operatorparam:
 
 .. table:: **Table 5** OperatorParam
 
@@ -135,7 +135,7 @@ Request Parameters
    | params                 | No        | Object  | Operator parameter. The parameter type is map<string,object>. Currently, object only supports the types of Boolean, Integer, Long, String, List[/topic/body/section/table/tgroup/tbody/row/entry/p/br {""}) (br] and Map<String,String>. For two special scenarios of object detection and image classification in a data preprocessing task, the value of **task_type** is **object_detection** or **image_classification**.  |
    +------------------------+-----------+---------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001943866725__request_workpath:
+.. _en-us_topic_0000002374896813__request_workpath:
 
 .. table:: **Table 6** WorkPath
 

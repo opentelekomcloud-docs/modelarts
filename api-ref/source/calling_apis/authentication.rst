@@ -5,10 +5,10 @@
 Authentication
 ==============
 
-Requests for calling an API can be authenticated using either of the following methods: AK/SK-based authentication: Requests are authenticated by encrypting the request body using an AK/SK pair.
+You can use either of the authentication methods below to call APIs. AK/SK-based authentication is recommended because it is more secure than token-based authentication.
 
--  Token-based authentication: Requests are authenticated using a token.
--  AK/SK authentication: Requests are encrypted using the access key ID (AK) and secret access key (SK).
+-  Token-based authentication: General requests are authenticated using tokens.
+-  AK/SK-based authentication: Requests are authenticated by encrypting the request body using an AK/SK.
 
 Token-based Authentication
 --------------------------
@@ -17,7 +17,7 @@ Token-based Authentication
 
    The validity period of a token is 24 hours. When using a token for authentication, cache it to prevent frequently calling the IAM API used to obtain a user token.
 
-A token specifies temporary permissions in a computer system. During API authentication using a token, the token is added to requests to get permissions for calling the API.
+A token specifies certain permissions in a computer system. During token-based authentication, the token is added to requests to get permissions for calling the API.
 
 In :ref:`Making an API Request <modelarts_03_0005>`, the process of calling the API used to obtain a user token is described.
 
@@ -47,9 +47,9 @@ In :ref:`Making an API Request <modelarts_03_0005>`, the process of calling the 
        }
    }
 
-After a token is obtained, the **X-Auth-Token** header field must be added to requests to specify the token when calling other APIs. For example, if the token is **ABCDEFJ....**, **X-Auth-Token: ABCDEFJ....** can be added to a request as follows:
+After a token is obtained, the **X-Auth-Token** header must be added to requests to specify the token when calling other APIs. For example, if the token is **ABCDEFJ....**, add **X-Auth-Token: ABCDEFJ....** to a request as follows:
 
-.. code-block::
+.. code-block:: text
 
    POST https://{endpoint}/v1/{project_id}/services
    Content-Type: application/json
@@ -58,15 +58,15 @@ After a token is obtained, the **X-Auth-Token** header field must be added to re
 AK/SK-based Authentication
 --------------------------
 
-An AK/SK is used to verify the identity of a request sender. In AK/SK-based authentication, a signature needs to be obtained and then added to requests.
+You can use AK/SK encryption to verify the identity of a request sender. In AK/SK-based authentication, a signature needs to be obtained and then added to requests.
 
 .. note::
 
-   AK: access key ID, which is a unique identifier used in conjunction with a secret access key to sign requests cryptographically.
+   AK: access key ID, which is a unique identifier used with a secret access key to sign requests cryptographically.
 
-   SK: secret access key used in conjunction with an AK to sign requests cryptographically. It identifies a request sender and prevents the request from being modified.
+   SK: secret access key, which is used in conjunction with an AK to sign requests cryptographically. It identifies a request sender and prevents the request from being modified.
 
-The following uses a demo project to show how to sign a request and use an HTTP client to send an HTTPS request.
+The following demo shows how to sign a request and use an HTTP client to send an HTTPS request.
 
 Download the demo project at https://github.com/api-gate-way/SdkDemo.
 
@@ -76,9 +76,9 @@ Download the demo project at https://github.com/api-gate-way/SdkDemo.
 
 If you do not need the demo project, visit the following URL to download the API Gateway signing SDK:
 
-Obtain the API Gateway signing SDK from the enterprise administrator.
+Obtain the API Gateway signature tool package from the enterprise administrator.
 
-Decompress the downloaded package and reference the obtained JAR files as dependencies, as highlighted in the following figure.
+Decompress the downloaded package and reference the obtained JAR files as dependencies, as shown below.
 
 |image1|
 
@@ -90,43 +90,43 @@ Decompress the downloaded package and reference the obtained JAR files as depend
 
    a. Log in to the console, enter the **My Credentials** page, and choose **Access Keys** > **Create Access Key**.
    b. In the **Create Access Key** dialog box that is displayed, use the login password for verification.
-   c. Click **OK**, open the **credentials.csv** file, and save the key file as prompted. The access key file is saved in the default downloads folder of the browser. Then, the access key (**Access Key Id** and **Secret Access Key**) is obtained.
+   c. Click **OK**, open the **credentials.csv** file, and save the key file as prompted. The access key file is saved to the default download location in your browser. Then, the access key (**Access Key Id** and **Secret Access Key**) is obtained.
 
-#. Download and decompress the demo project.
+#. Obtain and decompress the demo project.
 
-#. .. _en-us_topic_0000001909747456__li94791126103617:
+#. .. _en-us_topic_0000002340898762__li94791126103617:
 
    Import the demo project to Eclipse.
 
 
-   .. figure:: /_static/images/en-us_image_0000001943866749.gif
-      :alt: **Figure 1** Selecting Existing Projects into Workspace
+   .. figure:: /_static/images/en-us_image_0000002351867010.png
+      :alt: **Figure 1** Select an existing project
 
-      **Figure 1** Selecting Existing Projects into Workspace
+      **Figure 1** Select an existing project
 
 
-   .. figure:: /_static/images/en-us_image_0000001909747556.gif
+   .. figure:: /_static/images/en-us_image_0000002351876486.png
       :alt: **Figure 2** Selecting the demo project
 
       **Figure 2** Selecting the demo project
 
 
-   .. figure:: /_static/images/en-us_image_0000001909907556.gif
+   .. figure:: /_static/images/en-us_image_0000002352037350.png
       :alt: **Figure 3** Structure of the demo project
 
       **Figure 3** Structure of the demo project
 
 #. Sign the request.
 
-   The request signing method is integrated in the JAR files imported in :ref:`3 <en-us_topic_0000001909747456__li94791126103617>`. The request needs to be signed before it is sent. The signature will then be added as part of the HTTP header to the request.
+   The request signing method is integrated in the JAR files imported in :ref:`3 <en-us_topic_0000002340898762__li94791126103617>`. Before sending the request, sign the requested content. The obtained signature is included in the HTTP header of the request.
 
    The demo code is classified into the following classes to demonstrate signing and sending the HTTP request:
 
-   -  **AccessService**: abstract class that merges the GET, POST, PUT, and DELETE methods into the **access** method
-   -  **Demo**: execution entry used to simulate the sending of GET, POST, PUT, and DELETE requests
-   -  **AccessServiceImpl**: implementation of the **access** method, which contains the code required for communication with API Gateway
+   -  **AccessService**: An abstract class that merges the GET, POST, PUT, and DELETE methods into the access method.
+   -  **Demo**: An execution entry used to simulate the sending of GET, POST, PUT, and DELETE requests.
+   -  **AccessServiceImpl**: Implements the access method, which contains the code required for communication with APIG.
 
-   The following describes how to call a POST method to sign the request.
+   The following describes how to invoke the POST method to sign the request.
 
    a. Add a request header.
 
@@ -137,13 +137,13 @@ Decompress the downloaded package and reference the obtained JAR files as depend
          //TODO: Add special headers.
          //request.addHeader("X-Project-Id", "xxxxx");
 
-   b. Edit the **main()** method in the Demo.java file, and replace the bold text with actual values.
+   b. Edit the main method in the **Demo.java** file.
 
-      As shown in the following code, if you use other methods such as POST, PUT, and DELETE, see the corresponding comment. Replace the values of **region**, **serviceName**, **ak**, **sk**, and **url**. The URL for obtaining the VPC is used in the sample project. Replace it with the actual URL. For details about how to obtain the endpoint, see :ref:`Regions and Endpoints <modelarts_03_0141>`.
+      Replace the bold texts with actual values. If you use other methods, such as POST, PUT, and DELETE, see the corresponding annotations. Replace the values of **region**, **serviceName**, **ak**, **sk**, and **url**. The URL for obtaining the VPC is used in the sample project. Replace it with the actual URL. For details about how to obtain the endpoint, see :ref:`Regions and Endpoints <modelarts_03_0141>`.
 
       .. code-block:: text
 
-         //TODO: Replace the value of region with the actual region where the service to be accessed is located.
+         //TODO: Replace region with the name of the region in which the service to be accessed is located.
          private static final String region = "";
 
          //TODO: Replace vpc with the name of the service you want to access. For example, ecs, vpc, iam, and elb.
@@ -151,7 +151,7 @@ Decompress the downloaded package and reference the obtained JAR files as depend
 
          public static void main(String[] args) throws UnsupportedEncodingException
          {
-         //TODO: Replace the values of ak and sk with the AK/SK obtained on the My Credentials page.
+         //TODO: Replace the AK and SK with those obtained on the My Credential page.
          String ak = "ZIRRKMTWP******1WKNKB";
          String sk = "Us0mdMNHk******YrRCnW0ecfzl";
 
@@ -159,7 +159,7 @@ Decompress the downloaded package and reference the obtained JAR files as depend
          //TODO: To access a global service, such as IAM, DNS, CDN, and TMS, add the X-Domain-Id header to specify an account ID.
          //TODO: To add a header, find "Add special headers" in the AccessServiceImple.java file.
 
-         //TODO: Test the API.
+         //TODO: Test the API
          String url = "https://{Endpoint}/v1/{project_id}/vpcs";
          get(ak, sk, url);
 
@@ -182,10 +182,10 @@ Decompress the downloaded package and reference the obtained JAR files as depend
          //delete(ak, sk, deleteUrl);
          }
 
-   c. Compile the code and call the API.
+   c. Compile and run the code to call an API.
 
-      In the **Package Explorer** area on the left, right-click **Demo.java** and choose **Run AS** > **Java Application** from the shortcut menu to run the demo code.
+      In the **Package Explorer** area on the left, right-click **Demo.java**, choose **Run AS** > **Java Application** from the shortcut menu to run the demo code.
 
-      You can view the API call logs on the console.
+      You can view the calling logs on the console.
 
-.. |image1| image:: /_static/images/en-us_image_0000001909907552.gif
+.. |image1| image:: /_static/images/en-us_image_0000002385752073.png

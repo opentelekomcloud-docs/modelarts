@@ -5,18 +5,20 @@
 Tag Management
 ==============
 
--  :ref:`Creating Resource Pool Tags in Batches <batchcreatepooltags>`
--  :ref:`Deleting Resource Pool Tags in Batches <batchdeletepooltags>`
--  :ref:`Querying All Tags of Resource Pools <listpooltags>`
--  :ref:`Querying Tags of a Resource Pool <showpooltags>`
--  :ref:`Querying Resource Pools by Tag <listpoolsbytags>`
+-  :ref:`Obtaining All Resource Tags of a Resource Pool <listpooltags>`
+-  :ref:`Obtaining Resource Tags of a Resource Pool <showpooltags>`
+-  :ref:`Modifying Resource Tags of a Resource Pool <updatepooltags>`
+-  :ref:`Obtaining All Resource Tags of Nodes <listnodetags>`
+-  :ref:`Obtaining Resource Tags of Nodes <shownodetags>`
+-  :ref:`Modifying Resource Tags of Nodes <updatenodetags>`
 
 .. toctree::
    :maxdepth: 1
    :hidden: 
 
-   creating_resource_pool_tags_in_batches
-   deleting_resource_pool_tags_in_batches
-   querying_all_tags_of_resource_pools
-   querying_tags_of_a_resource_pool
-   querying_resource_pools_by_tag
+   obtaining_all_resource_tags_of_a_resource_pool
+   obtaining_resource_tags_of_a_resource_pool
+   modifying_resource_tags_of_a_resource_pool
+   obtaining_all_resource_tags_of_nodes
+   obtaining_resource_tags_of_nodes
+   modifying_resource_tags_of_nodes

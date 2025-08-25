@@ -5,9 +5,9 @@
 Job Statuses
 ============
 
-:ref:`Table 1 <en-us_topic_0000001943866565__en-us_topic_0105159288_table21749790153351>` describes the job statuses.
+:ref:`Table 1 <en-us_topic_0000002374856665__en-us_topic_0105159288_table21749790153351>` describes the job statuses.
 
-.. _en-us_topic_0000001943866565__en-us_topic_0105159288_table21749790153351:
+.. _en-us_topic_0000002374856665__en-us_topic_0105159288_table21749790153351:
 
 .. table:: **Table 1** Job statuses
 

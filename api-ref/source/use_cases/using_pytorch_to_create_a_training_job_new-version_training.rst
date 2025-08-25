@@ -12,17 +12,17 @@ Overview
 
 The process for creating a training job using PyTorch is as follows:
 
-#. , which will be added in a request header for authentication.
+#. Obtain a user token, which will be added in a request header for authentication.
 
 #. Call the API for :ref:`obtaining general flavors supported by a training job <showtrainingjobflavors>` to obtain the required flavors.
 
 #. Call the API for :ref:`obtaining the preset AI frameworks supported by a training job <showtrainingjobengines>` to view the engines and their versions supported by a training job.
 
-#. .. _en-us_topic_0000001452265821__li33722031111515:
+#. .. _en-us_topic_0000002340898518__li33722031111515:
 
    Call the API for :ref:`creating an algorithm <createalgorithm>` to create an algorithm and record the algorithm ID.
 
-#. .. _en-us_topic_0000001452265821__li62310211161:
+#. .. _en-us_topic_0000002340898518__li62310211161:
 
    Call the API for :ref:`creating a training job <createtrainingjob>` to create a training job using the UUID returned by the created algorithm and record the job ID.
 
@@ -40,15 +40,15 @@ Prerequisites
 -  You have obtained the endpoints of .
 -  The following information is available: region where ModelArts is deployed, :ref:`project ID and name <modelarts_03_0147>`, :ref:`account name and ID <modelarts_03_0148>`, and :ref:`username and user ID <modelarts_03_0006>`.
 
--  The training code of PyTorch is available. For example, the startup file **test-pytorch.py** has been stored in the **obs://xxxxxx-job-test-v2/pytorch/fast_example/code/cpu** directory of OBS.
--  A data file for the training job is available. For example, a training dataset has been stored in the **obs://xxxxxx-job-test-v2/pytorch/fast_example/data** directory of OBS.
--  A path for outputting the training job model has been created, for example, **obs://xxxxxx-job-test-v2/pytorch/fast_example/outputs**.
--  A path for outputting the training job logs has been created, for example, **obs://xxxxxx-job-test-v2/pytorch/fast_example/log**.
+-  The training code of PyTorch is available. For example, the startup file **test-pytorch.py** has been stored in the **obs://cnnorth4-job-test-v2/pytorch/fast_example/code/cpu** directory of OBS.
+-  A data file for the training job is available. For example, a training dataset has been stored in the **obs://cnnorth4-job-test-v2/pytorch/fast_example/data** directory of OBS.
+-  A path for outputting the training job model has been created, for example, **obs://cnnorth4-job-test-v2/pytorch/fast_example/outputs**.
+-  A path for outputting the training job logs has been created, for example, **obs://cnnorth4-job-test-v2/pytorch/fast_example/log**.
 
 Procedure
 ---------
 
-#. .. _en-us_topic_0000001452265821__li676316281367:
+#. .. _en-us_topic_0000002340898518__li676316281367:
 
    Call the API for :ref:`obtaining general flavors supported by a training job <showtrainingjobflavors>` to obtain the required flavors.
 
@@ -124,7 +124,7 @@ Procedure
 
       -  Select and record the flavor required for creating the training job based on the **flavor_id** value. This section uses flavor **modelarts.vm.cpu.8u** with its **max_num** set to **16** as an example.
 
-#. .. _en-us_topic_0000001452265821__li1750593718369:
+#. .. _en-us_topic_0000002340898518__li1750593718369:
 
    Call the API for :ref:`obtaining the preset AI frameworks supported by a training job <showtrainingjobengines>` to view the engines and their versions supported by a training job.
 
@@ -150,7 +150,7 @@ Procedure
                  ......
                  {
                      "engine_id": "mindspore_1.6.0-cann_5.0.3.6-py_3.7-euler_2.8.3-aarch64",
-                     "engine_name": "Ascend-Powered-Engine",
+                     "engine_name": "Powered-Engine",
                      "engine_version": "mindspore_1.6.0-cann_5.0.3.6-py_3.7-euler_2.8.3-aarch64",
                      "v1_compatible": false,
                      "run_user": "1000",
@@ -228,8 +228,8 @@ Procedure
                  "description": "test pytorch job in cpu in mode gloo"
              },
              "job_config": {
-                 "boot_file": "/xxxxxx-job-test-v2/pytorch/fast_example/code/cpu/test-pytorch.py",
-                 "code_dir": "/xxxxxx-job-test-v2/pytorch/fast_example/code/cpu/",
+                 "boot_file": "/cnnorth4-job-test-v2/pytorch/fast_example/code/cpu/test-pytorch.py",
+                 "code_dir": "/cnnorth4-job-test-v2/pytorch/fast_example/code/cpu/",
                  "engine": {
                      "engine_name": "PyTorch",
                      "engine_version": "pytorch_1.8.0-cuda_10.2-py_3.7-ubuntu_18.04-x86_64"
@@ -282,7 +282,7 @@ Procedure
 
       -  **parameters_customization** in the **job_config** field indicates whether to support custom hyperparameters. Set this parameter to **true**.
       -  **parameters** in the **job_config** field indicates the hyperparameters of the algorithm. Set **name** to the hyperparameter name (a maximum of 64 characters, including uppercase letters, lowercase letters, digits, underscores (_), and hyphens (-)). Set **value** to the default value of the hyperparameter. Set **constraint** to the constraints of the hyperparameter. For example, set **type** to **String** (**String**, **Integer**, **Float**, and **Boolean** are supported), set **editable** to **true**, and set **required** to **false**.
-      -  **engine** in the **job_config** field indicates the engine on which the algorithm depends. Use the **engine_name** and **engine_version** values recorded in :ref:`2 <en-us_topic_0000001452265821__li1750593718369>`.
+      -  **engine** in the **job_config** field indicates the engine on which the algorithm depends. Use the **engine_name** and **engine_version** values recorded in :ref:`2 <en-us_topic_0000002340898518__li1750593718369>`.
 
    b. Status code **200 OK** is returned, indicating that the algorithm is successfully created. The response body is as follows:
 
@@ -310,8 +310,8 @@ Procedure
              },
              "share_info": {},
              "job_config": {
-                 "code_dir": "/xxxxxx-job-test-v2/pytorch/fast_example/code/cpu/",
-                 "boot_file": "/xxxxxx-job-test-v2/pytorch/fast_example/code/cpu/test-pytorch.py",
+                 "code_dir": "/cnnorth4-job-test-v2/pytorch/fast_example/code/cpu/",
+                 "boot_file": "/cnnorth4-job-test-v2/pytorch/fast_example/code/cpu/test-pytorch.py",
                  "parameters": [
                      {
                          "name": "dist",
@@ -426,7 +426,7 @@ Procedure
                      "name": "data_url",
                      "remote": {
                          "obs": {
-                             "obs_url": "/xxxxxx-job-test-v2/pytorch/fast_example/data/"
+                             "obs_url": "/cnnorth4-job-test-v2/pytorch/fast_example/data/"
                          }
                      }
                  }],
@@ -434,7 +434,7 @@ Procedure
                      "name": "train_url",
                      "remote": {
                          "obs": {
-                             "obs_url": "/xxxxxx-job-test-v2/pytorch/fast_example/outputs/"
+                             "obs_url": "/cnnorth4-job-test-v2/pytorch/fast_example/outputs/"
                          }
                      }
                  }]
@@ -445,7 +445,7 @@ Procedure
                      "node_count": 1
                  },
                  "log_export_path": {
-                     "obs_url": "/xxxxxx-job-test-v2/pytorch/fast_example/log/"
+                     "obs_url": "/cnnorth4-job-test-v2/pytorch/fast_example/log/"
                  }
              }
          }
@@ -454,9 +454,9 @@ Procedure
 
       -  Set **kind** to the type of the training job. The default value is **job**.
       -  Set **name** and **description** in the **metadata** field to the name and description of the training job.
-      -  Set **id** in the **algorithm** field to the algorithm ID obtained in :ref:`4 <en-us_topic_0000001452265821__li33722031111515>`.
+      -  Set **id** in the **algorithm** field to the algorithm ID obtained in :ref:`4 <en-us_topic_0000002340898518__li33722031111515>`.
       -  Set **inputs** and **outputs** in the **algorithm** field to the information about the input and output URLs of the training job. In this example, **obs_url** in **remote** of the **inputs** parameter indicates the OBS path for selecting the training data from the OBS bucket. **obs_url** in **remote** of the **outputs** parameter indicates the OBS path for storing the training output.
-      -  Set **flavor_id** in the **spec** field to the flavor on which the training job depends. Use the **flavor_id** recorded in :ref:`1 <en-us_topic_0000001452265821__li676316281367>`. **node_count** indicates whether to use multi-node training (distributed training). Set it to **1** for a single-node training by default. **log_export_path** specifies the OBS path to which logs are uploaded.
+      -  Set **flavor_id** in the **spec** field to the flavor on which the training job depends. Use the **flavor_id** recorded in :ref:`1 <en-us_topic_0000002340898518__li676316281367>`. **node_count** indicates whether to use multi-node training (distributed training). Set it to **1** for a single-node training by default. **log_export_path** specifies the OBS path to which logs are uploaded.
 
    b. Status code **201 Created** is returned, indicating that the training job has been created. The response body is as follows:
 
@@ -490,8 +490,8 @@ Procedure
              "algorithm": {
                  "id": "01c399ae-8593-4ef5-9e4d-085950aacde1",
                  "name": "test-pytorch-cpu",
-                 "code_dir": "/xxxxxx-job-test-v2/pytorch/fast_example/code/cpu/",
-                 "boot_file": "/xxxxxx-job-test-v2/pytorch/fast_example/code/cpu/test-pytorch.py",
+                 "code_dir": "/cnnorth4-job-test-v2/pytorch/fast_example/code/cpu/",
+                 "boot_file": "/cnnorth4-job-test-v2/pytorch/fast_example/code/cpu/test-pytorch.py",
                  "parameters": [
                      {
                          "name": "dist",
@@ -530,7 +530,7 @@ Procedure
                          "local_dir": "/home/ma-user/modelarts/inputs/data_url_0",
                          "remote": {
                              "obs": {
-                                 "obs_url": "/xxxxxx-job-test-v2/pytorch/fast_example/data/"
+                                 "obs_url": "/cnnorth4-job-test-v2/pytorch/fast_example/data/"
                              }
                          }
                      }
@@ -542,7 +542,7 @@ Procedure
                          "local_dir": "/home/ma-user/modelarts/outputs/train_url_0",
                          "remote": {
                              "obs": {
-                                 "obs_url": "/xxxxxx-job-test-v2/pytorch/fast_example/outputs/"
+                                 "obs_url": "/cnnorth4-job-test-v2/pytorch/fast_example/outputs/"
                              }
                          },
                          "mode": "upload_periodically",
@@ -593,7 +593,7 @@ Procedure
                      }
                  },
                  "log_export_path": {
-                     "obs_url": "/xxxxxx-job-test-v2/pytorch/fast_example/log/"
+                     "obs_url": "/cnnorth4-job-test-v2/pytorch/fast_example/log/"
                  },
                  "is_hosted_log": true
              }
@@ -612,7 +612,7 @@ Procedure
 
       Set the following parameter based on site requirements:
 
-      Set **training_job_id** to the training job ID recorded in :ref:`5 <en-us_topic_0000001452265821__li62310211161>`.
+      Set **training_job_id** to the training job ID recorded in :ref:`5 <en-us_topic_0000002340898518__li62310211161>`.
 
    b. Status code **200 OK** is returned. The response body is as follows:
 
@@ -667,8 +667,8 @@ Procedure
              "algorithm": {
                  "id": "01c399ae-8593-4ef5-9e4d-085950aacde1",
                  "name": "test-pytorch-cpu",
-                 "code_dir": "/xxxxxx-job-test-v2/pytorch/fast_example/code/cpu/",
-                 "boot_file": "/xxxxxx-job-test-v2/pytorch/fast_example/code/cpu/test-pytorch.py",
+                 "code_dir": "/cnnorth4-job-test-v2/pytorch/fast_example/code/cpu/",
+                 "boot_file": "/cnnorth4-job-test-v2/pytorch/fast_example/code/cpu/test-pytorch.py",
                  "parameters": [
                      {
                          "name": "dist",
@@ -707,7 +707,7 @@ Procedure
                          "local_dir": "/home/ma-user/modelarts/inputs/data_url_0",
                          "remote": {
                              "obs": {
-                                 "obs_url": "/xxxxxx-job-test-v2/pytorch/fast_example/data/"
+                                 "obs_url": "/cnnorth4-job-test-v2/pytorch/fast_example/data/"
                              }
                          }
                      }
@@ -719,7 +719,7 @@ Procedure
                          "local_dir": "/home/ma-user/modelarts/outputs/train_url_0",
                          "remote": {
                              "obs": {
-                                 "obs_url": "/xxxxxx-job-test-v2/pytorch/fast_example/outputs/"
+                                 "obs_url": "/cnnorth4-job-test-v2/pytorch/fast_example/outputs/"
                              }
                          },
                          "mode": "upload_periodically",
@@ -770,7 +770,7 @@ Procedure
                      }
                  },
                  "log_export_path": {
-                     "obs_url": "/xxxxxx-job-test-v2/pytorch/fast_example/log/"
+                     "obs_url": "/cnnorth4-job-test-v2/pytorch/fast_example/log/"
                  },
                  "is_hosted_log": true
              }
@@ -795,13 +795,7 @@ Procedure
       -  **task_id** indicates the name of the training job. Generally, set it to **work-0**.
       -  **Content-Type** can be set either to **text/plain** or **application/octet-stream**. **text/plain** indicates that a temporary OBS preview URL is returned. **application/octet-stream** indicates that a temporary OBS download URL is returned.
 
-   b. Status code **200 OK** is returned. The response body is as follows:
-
-      .. code-block::
-
-         {
-             "obs_url": "https://modelarts-training-log.com:443/66ff6991-fd66-40b6-8101-0829a46d3731/worker-0/modelarts-job-66ff6991-fd66-40b6-8101-0829a46d3731-worker-0.log?AWSAccessKeyId=GFGTBKOZENDD83QEMZMV&Expires=1641896599&Signature=BedFZHEU1oCmqlI912UL9mXlhkg%3D"
-         }
+   b. Status code **200 OK** is returned.
 
       The returned field indicates the OBS path of logs. You can copy the value to the browser to view the result.
 

@@ -17,15 +17,21 @@ GET /v2/{project_id}/training-jobs/{training_job_id}/metrics/{task_id}
 
 .. table:: **Table 1** Path Parameters
 
-   +-----------------+-----------+--------+---------------------------------------------------------------------------------------------------------------+
-   | Parameter       | Mandatory | Type   | Description                                                                                                   |
-   +=================+===========+========+===============================================================================================================+
-   | project_id      | Yes       | String | Project ID. For details, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`.                      |
-   +-----------------+-----------+--------+---------------------------------------------------------------------------------------------------------------+
-   | training_job_id | Yes       | String | ID of a training job.                                                                                         |
-   +-----------------+-----------+--------+---------------------------------------------------------------------------------------------------------------+
-   | task_id         | Yes       | String | Name of a training job. You can obtain the value from the **status.tasks** field in the training job details. |
-   +-----------------+-----------+--------+---------------------------------------------------------------------------------------------------------------+
+   +-----------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory | Type   | Description                                                                                                              |
+   +=================+===========+========+==========================================================================================================================+
+   | project_id      | Yes       | String | Project ID. For details, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`.                                 |
+   +-----------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------------+
+   | training_job_id | Yes       | String | Training job ID For details about how to obtain the value, see :ref:`Querying the Training Job List <listtrainingjobs>`. |
+   +-----------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------------+
+   | task_id         | Yes       | String | Name of a training job. You can obtain the value from the **status.tasks** field in the training job details.            |
+   +-----------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------------+
+   | project_id      | Yes       | String | Project ID. For details, see :ref:`Obtaining a Project ID and Name <modelarts_03_0147>`.                                 |
+   +-----------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------------+
+   | training_job_id | Yes       | String | Training job ID For details about how to obtain the value, see :ref:`Querying the Training Job List <listtrainingjobs>`. |
+   +-----------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------------+
+   | task_id         | Yes       | String | Name of a training job. You can obtain the value from the **status.tasks** field in the training job details.            |
+   +-----------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------------+
 
 Request Parameters
 ------------------
@@ -39,32 +45,32 @@ Response Parameters
 
 .. table:: **Table 2** Response body parameters
 
-   +-----------+----------------------------------------------------------------------------------+------------------+
-   | Parameter | Type                                                                             | Description      |
-   +===========+==================================================================================+==================+
-   | metrics   | Array of :ref:`metrics <en-us_topic_0000002042965024__response_metrics>` objects | Running metrics. |
-   +-----------+----------------------------------------------------------------------------------+------------------+
+   +-----------+-------------------------------------------------------------------------------------------------------------------------+------------------+
+   | Parameter | Type                                                                                                                    | Description      |
+   +===========+=========================================================================================================================+==================+
+   | metrics   | Array of :ref:`MetricObject <en-us_topic_0000002374896693__en-us_topic_0000002055322438_response_metricobject>` objects | Running metrics. |
+   +-----------+-------------------------------------------------------------------------------------------------------------------------+------------------+
 
-.. _en-us_topic_0000002042965024__response_metrics:
+.. _en-us_topic_0000002374896693__en-us_topic_0000002055322438_response_metricobject:
 
-.. table:: **Table 3** metrics
+.. table:: **Table 3** MetricObject
 
    +-----------------------+-----------------------+------------------------------------------------------------------------+
    | Parameter             | Type                  | Description                                                            |
    +=======================+=======================+========================================================================+
    | metric                | String                | Running metric. The options are as follows:                            |
    |                       |                       |                                                                        |
-   |                       |                       | -  cpuUsage: CPU usage                                                 |
+   |                       |                       | -  **cpuUsage**: CPU usage                                             |
    |                       |                       |                                                                        |
-   |                       |                       | -  memUsage: indicates the physical memory usage.                      |
+   |                       |                       | -  **memUsage**: physical memory usage                                 |
    |                       |                       |                                                                        |
-   |                       |                       | -  gpuUtil: GPU usage                                                  |
+   |                       |                       | -  **gpuUtil**: GPU usage                                              |
    |                       |                       |                                                                        |
-   |                       |                       | -  gpuMemUsage: GPU memory usage                                       |
+   |                       |                       | -  **gpuMemUsage**: GPU memory usage                                   |
    |                       |                       |                                                                        |
-   |                       |                       | -  npuUtil: NPU usage                                                  |
+   |                       |                       | -  **npuUtil**: NPU usage                                              |
    |                       |                       |                                                                        |
-   |                       |                       | -  npuMemUsage: NPU GPU memory usage                                   |
+   |                       |                       | -  **npuMemUsage**: NPU memory usage                                   |
    +-----------------------+-----------------------+------------------------------------------------------------------------+
    | value                 | Array of doubles      | Value of a running metric. An average value is collected every minute. |
    +-----------------------+-----------------------+------------------------------------------------------------------------+

@@ -55,12 +55,12 @@ Response Parameters
    +----------------+--------------------------------------------------------------------------------------+----------------------------------+
    | Parameter      | Type                                                                                 | Description                      |
    +================+======================================================================================+==================================+
-   | checking_stats | :ref:`CheckTaskStats <en-us_topic_0000001909747388__response_checktaskstats>` object | Real-time acceptance statistics. |
+   | checking_stats | :ref:`CheckTaskStats <en-us_topic_0000002340898818__response_checktaskstats>` object | Real-time acceptance statistics. |
    +----------------+--------------------------------------------------------------------------------------+----------------------------------+
-   | total_stats    | :ref:`CheckTaskStats <en-us_topic_0000001909747388__response_checktaskstats>` object | Historical statistics.           |
+   | total_stats    | :ref:`CheckTaskStats <en-us_topic_0000002340898818__response_checktaskstats>` object | Historical statistics.           |
    +----------------+--------------------------------------------------------------------------------------+----------------------------------+
 
-.. _en-us_topic_0000001909747388__response_checktaskstats:
+.. _en-us_topic_0000002340898818__response_checktaskstats:
 
 .. table:: **Table 4** CheckTaskStats
 

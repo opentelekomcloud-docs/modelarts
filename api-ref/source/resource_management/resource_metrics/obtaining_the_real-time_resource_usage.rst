@@ -46,76 +46,76 @@ Response Parameters
    |                       |                                                                                          |                            |
    |                       |                                                                                          | -  **PoolMetricsList**     |
    +-----------------------+------------------------------------------------------------------------------------------+----------------------------+
-   | items                 | Array of :ref:`MetricsItem <en-us_topic_0000002080257329__response_metricsitem>` objects | Metric list                |
+   | items                 | Array of :ref:`MetricsItem <en-us_topic_0000002374896569__response_metricsitem>` objects | Metric list                |
    +-----------------------+------------------------------------------------------------------------------------------+----------------------------+
 
-.. _en-us_topic_0000002080257329__response_metricsitem:
+.. _en-us_topic_0000002374896569__response_metricsitem:
 
 .. table:: **Table 3** MetricsItem
 
    +-----------+--------------------------------------------------------------------------------------------------------+------------------------------+
    | Parameter | Type                                                                                                   | Description                  |
    +===========+========================================================================================================+==============================+
-   | table     | :ref:`table <en-us_topic_0000002080257329__response_table>` object                                     | Resource list                |
+   | table     | :ref:`MetricTableItem <en-us_topic_0000002374896569__response_metrictableitem>` object                 | Resource list                |
    +-----------+--------------------------------------------------------------------------------------------------------+------------------------------+
-   | metadata  | :ref:`ResourceMetricsMetadata <en-us_topic_0000002080257329__response_resourcemetricsmetadata>` object | Metadata of resource metrics |
+   | metadata  | :ref:`ResourceMetricsMetadata <en-us_topic_0000002374896569__response_resourcemetricsmetadata>` object | Metadata of resource metrics |
    +-----------+--------------------------------------------------------------------------------------------------------+------------------------------+
 
-.. _en-us_topic_0000002080257329__response_table:
+.. _en-us_topic_0000002374896569__response_metrictableitem:
 
-.. table:: **Table 4** table
+.. table:: **Table 4** MetricTableItem
 
-   +-----------+----------------------------------------------------------------------------+-------------------------+
-   | Parameter | Type                                                                       | Description             |
-   +===========+============================================================================+=========================+
-   | allocated | :ref:`Allocated <en-us_topic_0000002080257329__response_allocated>` object | Allocated resources     |
-   +-----------+----------------------------------------------------------------------------+-------------------------+
-   | capacity  | :ref:`Capacity <en-us_topic_0000002080257329__response_capacity>` object   | Total resource capacity |
-   +-----------+----------------------------------------------------------------------------+-------------------------+
+   +-----------+----------------------------------------------------------------------------+----------------------------------------+
+   | Parameter | Type                                                                       | Description                            |
+   +===========+============================================================================+========================================+
+   | allocated | :ref:`Allocated <en-us_topic_0000002374896569__response_allocated>` object | Information about allocated resources. |
+   +-----------+----------------------------------------------------------------------------+----------------------------------------+
+   | capacity  | :ref:`Capacity <en-us_topic_0000002374896569__response_capacity>` object   | Resource capacity information.         |
+   +-----------+----------------------------------------------------------------------------+----------------------------------------+
 
-.. _en-us_topic_0000002080257329__response_allocated:
+.. _en-us_topic_0000002374896569__response_allocated:
 
 .. table:: **Table 5** Allocated
 
    +-----------+--------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
    | Parameter | Type                                                               | Description                                                                                             |
    +===========+====================================================================+=========================================================================================================+
-   | value     | :ref:`Value <en-us_topic_0000002080257329__response_value>` object | Resource amount                                                                                         |
+   | value     | :ref:`Value <en-us_topic_0000002374896569__response_value>` object | Resource amount                                                                                         |
    +-----------+--------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
    | timestamp | String                                                             | UTC time, in the format of yyyy-MM-dd'T'HH:mm:ss'Z'                                                     |
    +-----------+--------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
    | window    | String                                                             | Statistics interval. **1s** indicates 1 second, **1m** indicates 1 minute, and **1h** indicates 1 hour. |
    +-----------+--------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002080257329__response_capacity:
+.. _en-us_topic_0000002374896569__response_capacity:
 
 .. table:: **Table 6** Capacity
 
    +-----------+--------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
    | Parameter | Type                                                               | Description                                                                                             |
    +===========+====================================================================+=========================================================================================================+
-   | value     | :ref:`Value <en-us_topic_0000002080257329__response_value>` object | Resource amount                                                                                         |
+   | value     | :ref:`Value <en-us_topic_0000002374896569__response_value>` object | Resource amount                                                                                         |
    +-----------+--------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
-   | maxValue  | :ref:`Value <en-us_topic_0000002080257329__response_value>` object | Maximum number of elastic resources                                                                     |
+   | maxValue  | :ref:`Value <en-us_topic_0000002374896569__response_value>` object | Maximum number of elastic resources                                                                     |
    +-----------+--------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
    | timestamp | String                                                             | UTC time, in the format of yyyy-MM-dd'T'HH:mm:ss'Z'                                                     |
    +-----------+--------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
    | window    | String                                                             | Statistics interval. **1s** indicates 1 second, **1m** indicates 1 minute, and **1h** indicates 1 hour. |
    +-----------+--------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002080257329__response_value:
+.. _en-us_topic_0000002374896569__response_value:
 
 .. table:: **Table 7** Value
 
-   ============= ====== =================
-   Parameter     Type   Description
-   ============= ====== =================
-   cpu           String Number of CPUs
-   memory        String Memory
-   nvidia.com/t4 String Number of T4 CPUs
-   ============= ====== =================
+   ========= ====== =======================
+   Parameter Type   Description
+   ========= ====== =======================
+   cpu       String Number of CPUs
+   memory    String Memory
+   tnt004    String Number of AI resources.
+   ========= ====== =======================
 
-.. _en-us_topic_0000002080257329__response_resourcemetricsmetadata:
+.. _en-us_topic_0000002374896569__response_resourcemetricsmetadata:
 
 .. table:: **Table 8** ResourceMetricsMetadata
 
@@ -129,7 +129,11 @@ Response Parameters
 Example Requests
 ----------------
 
-None
+Obtain the real-time resource usage of a resource pool.
+
+.. code-block:: text
+
+   GET https://{endpoint}/v2/{project_id}/metrics/runtime/pools
 
 Example Responses
 -----------------
@@ -149,7 +153,7 @@ OK
            "value" : {
              "cpu" : 5,
              "memory" : "15548Mi",
-             "nvidia.com/t4" : "1073m"
+             "tnt004" : "1073m"
            },
            "timestamp" : "2022-03-30T07:09:10Z",
            "window" : "1m"
@@ -158,12 +162,12 @@ OK
            "value" : {
              "cpu" : 16,
              "memory" : "64Gi",
-             "nvidia.com/t4" : 2
+             "tnt004" : 2
            },
            "maxValue" : {
              "cpu" : 16,
              "memory" : "64Gi",
-             "nvidia.com/t4" : 2
+             "tnt004" : 2
            },
            "timestamp" : "2022-03-30T07:09:10Z",
            "window" : "1m"

@@ -71,10 +71,10 @@ Response Parameters
    +==============+======================================================================================+=====================================+
    | total_number | Integer                                                                              | Total number of labeling teams.     |
    +--------------+--------------------------------------------------------------------------------------+-------------------------------------+
-   | workforces   | Array of :ref:`Workforce <en-us_topic_0000001943866657__response_workforce>` objects | Labeling team list queried by page. |
+   | workforces   | Array of :ref:`Workforce <en-us_topic_0000002340898714__response_workforce>` objects | Labeling team list queried by page. |
    +--------------+--------------------------------------------------------------------------------------+-------------------------------------+
 
-.. _en-us_topic_0000001943866657__response_workforce:
+.. _en-us_topic_0000002340898714__response_workforce:
 
 .. table:: **Table 4** Workforce
 
