@@ -12,6 +12,7 @@ Resource Pool Management
 -  :ref:`Updating a Resource Pool <patchpool>`
 -  :ref:`Monitoring a Resource Pool <showpoolmonitor>`
 -  :ref:`Obtaining Resource Pool Statistics <showpoolstatistics>`
+-  :ref:`Retrying the Job Type That Fails to Be Enabled <retrypoolscope>`
 
 .. toctree::
    :maxdepth: 1
@@ -24,3 +25,4 @@ Resource Pool Management
    updating_a_resource_pool
    monitoring_a_resource_pool
    obtaining_resource_pool_statistics
+   retrying_the_job_type_that_fails_to_be_enabled

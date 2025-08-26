@@ -25,11 +25,11 @@ GET /v2/{project_id}/statistics/pools
 
 .. table:: **Table 2** Query Parameters
 
-   =========== ========= ====== ======================================
+   =========== ========= ====== =========================================
    Parameter   Mandatory Type   Description
-   =========== ========= ====== ======================================
-   workspaceId No        String Workspace. The default value is **0**.
-   =========== ========= ====== ======================================
+   =========== ========= ====== =========================================
+   workspaceId No        String Workspace ID. The default value is **0**.
+   =========== ========= ====== =========================================
 
 Request Parameters
 ------------------
@@ -43,36 +43,38 @@ Response Parameters
 
 .. table:: **Table 3** Response body parameters
 
-   +---------------+------------------------------------------------------------------------------+--------------------------+
-   | Parameter     | Type                                                                         | Description              |
-   +===============+==============================================================================+==========================+
-   | statistics    | :ref:`statistics <en-us_topic_0000002044058296__response_statistics>` object | Resource pool statistics |
-   +---------------+------------------------------------------------------------------------------+--------------------------+
-   | operationTime | String                                                                       | Statistics time          |
-   +---------------+------------------------------------------------------------------------------+--------------------------+
+   +---------------+----------------------------------------------------------------------------------------------+--------------------------+
+   | Parameter     | Type                                                                                         | Description              |
+   +===============+==============================================================================================+==========================+
+   | statistics    | :ref:`PoolStatisticsItem <en-us_topic_0000002340898542__response_poolstatisticsitem>` object | Resource pool statistics |
+   +---------------+----------------------------------------------------------------------------------------------+--------------------------+
+   | operationTime | String                                                                                       | Statistics time          |
+   +---------------+----------------------------------------------------------------------------------------------+--------------------------+
 
-.. _en-us_topic_0000002044058296__response_statistics:
+.. _en-us_topic_0000002340898542__response_poolstatisticsitem:
 
-.. table:: **Table 4** statistics
+.. table:: **Table 4** PoolStatisticsItem
 
-   +-----------+----------------------------------------------------------------------+-------------------------------------------------------+
-   | Parameter | Type                                                                 | Description                                           |
-   +===========+======================================================================+=======================================================+
-   | status    | :ref:`status <en-us_topic_0000002044058296__response_status>` object | Statistics about resource pools in different statuses |
-   +-----------+----------------------------------------------------------------------+-------------------------------------------------------+
+   +-----------+--------------------------------------------------------------------------------------------------+--------------------------------------------------------+
+   | Parameter | Type                                                                                             | Description                                            |
+   +===========+==================================================================================================+========================================================+
+   | status    | :ref:`PoolStatisticsStatus <en-us_topic_0000002340898542__response_poolstatisticsstatus>` object | Statistics about resource pools in different statuses. |
+   +-----------+--------------------------------------------------------------------------------------------------+--------------------------------------------------------+
 
-.. _en-us_topic_0000002044058296__response_status:
+.. _en-us_topic_0000002340898542__response_poolstatisticsstatus:
 
-.. table:: **Table 5** status
+.. table:: **Table 5** PoolStatisticsStatus
 
    +-----------+---------+----------------------------------------------------------------------------------------------------------+
    | Parameter | Type    | Description                                                                                              |
    +===========+=========+==========================================================================================================+
-   | creating  | Integer | Number of resource pools that are being created                                                          |
+   | creating  | Integer | Number of resource pools that are being created.                                                         |
    +-----------+---------+----------------------------------------------------------------------------------------------------------+
-   | created   | Integer | Number of created resource pools                                                                         |
+   | created   | Integer | Number of created resource pools.                                                                        |
    +-----------+---------+----------------------------------------------------------------------------------------------------------+
    | failed    | Integer | Number of resource pools that failed to be created in the last three days. The maximum value is **500**. |
+   +-----------+---------+----------------------------------------------------------------------------------------------------------+
+   | pending   | Integer | Number of resource pools in the waiting status.                                                          |
    +-----------+---------+----------------------------------------------------------------------------------------------------------+
 
 **Status code: 500**
@@ -89,13 +91,11 @@ Response Parameters
 Example Requests
 ----------------
 
-Obtaining the monitored information of a resource pool
+Obtain resource pool statistics.
 
 .. code-block:: text
 
-   GET https://{endpoint}/v2/{project_id}/pools
-
-   { }
+   GET https://{endpoint}/v2/{project_id}/statistics/pools
 
 Example Responses
 -----------------
@@ -109,13 +109,14 @@ OK
    {
      "statistics" : {
        "status" : {
-         "created" : 3,
+         "created" : 9,
          "creating" : 0,
-         "failed" : 1,
+         "deleting" : 1,
+         "failed" : 0,
          "pending" : 0
        }
      },
-     "operationTime" : "2022-12-05 11:15:59.329633162 +0000 UTC"
+     "operationTime" : "2025-03-27 11:48:55.446172146 +0000 UTC"
    }
 
 **Status code: 500**

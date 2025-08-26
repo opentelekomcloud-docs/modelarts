@@ -17,9 +17,9 @@ URI
 
 POST /v1/{project_id}/visualization-jobs
 
-:ref:`Table 1 <en-us_topic_0000001909907520__table569625523811>` describes the required parameters.
+:ref:`Table 1 <en-us_topic_0000002374896629__table569625523811>` describes the required parameters.
 
-.. _en-us_topic_0000001909907520__table569625523811:
+.. _en-us_topic_0000002374896629__table569625523811:
 
 .. table:: **Table 1** Parameters
 
@@ -32,9 +32,9 @@ POST /v1/{project_id}/visualization-jobs
 Request Body
 ------------
 
-:ref:`Table 2 <en-us_topic_0000001909907520__table196759327241>` describes the request parameters.
+:ref:`Table 2 <en-us_topic_0000002374896629__table196759327241>` describes the request parameters.
 
-.. _en-us_topic_0000001909907520__table196759327241:
+.. _en-us_topic_0000002374896629__table196759327241:
 
 .. table:: **Table 2** Parameters
 
@@ -49,12 +49,12 @@ Request Body
    +-----------+-----------+--------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | job_type  | No        | String | Type of a visualization job. You can create visualization jobs of TensorBoard and MindInsight types. The default type is TensorBoard.                                           |
    +-----------+-----------+--------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | flavor    | No        | Object | Specifications when a visualization job is created. You do not need to set this parameter. For details, see :ref:`Table 3 <en-us_topic_0000001909907520__table18319659123214>`. |
+   | flavor    | No        | Object | Specifications when a visualization job is created. You do not need to set this parameter. For details, see :ref:`Table 3 <en-us_topic_0000002374896629__table18319659123214>`. |
    +-----------+-----------+--------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | schedule  | No        | Object | Auto stop setting. For details, see :ref:`Table 4 <en-us_topic_0000001909907520__table3694202918279>`.                                                                          |
+   | schedule  | No        | Object | Auto stop setting. For details, see :ref:`Table 4 <en-us_topic_0000002374896629__table3694202918279>`.                                                                          |
    +-----------+-----------+--------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909907520__table18319659123214:
+.. _en-us_topic_0000002374896629__table18319659123214:
 
 .. table:: **Table 3** **flavor** parameters
 
@@ -64,7 +64,7 @@ Request Body
    | code      | Yes       | String | Resource specification code of a visualization job. You can obtain the code through the **flavor** parameter. |
    +-----------+-----------+--------+---------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909907520__table3694202918279:
+.. _en-us_topic_0000002374896629__table3694202918279:
 
 .. table:: **Table 4** **schedule** parameters
 
@@ -81,9 +81,9 @@ Request Body
 Response Body
 -------------
 
-:ref:`Table 5 <en-us_topic_0000001909907520__table28681002612>` describes the response parameters.
+:ref:`Table 5 <en-us_topic_0000002374896629__table28681002612>` describes the response parameters.
 
-.. _en-us_topic_0000001909907520__table28681002612:
+.. _en-us_topic_0000002374896629__table28681002612:
 
 .. table:: **Table 5** Parameters
 
@@ -161,4 +161,4 @@ Sample Response
 Status Code
 -----------
 
-For details about the status code, see :ref:`Table 1 <en-us_topic_0000001909907492__table1450010510213>`.
+For details about the status code, see :ref:`Table 1 <en-us_topic_0000002374856625__table1450010510213>`.

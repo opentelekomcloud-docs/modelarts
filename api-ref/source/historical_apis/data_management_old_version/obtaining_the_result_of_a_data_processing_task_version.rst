@@ -75,10 +75,10 @@ Response Parameters
    +-----------+------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+
    | has_more  | Boolean                                                                                                                                  | Whether all results are returned. |
    +-----------+------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+
-   | results   | Array of :ref:`DescProcessorTaskVersionResultsResp <en-us_topic_0000001909907332__response_descprocessortaskversionresultsresp>` objects | Result displayed by page.         |
+   | results   | Array of :ref:`DescProcessorTaskVersionResultsResp <en-us_topic_0000002340898830__response_descprocessortaskversionresultsresp>` objects | Result displayed by page.         |
    +-----------+------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+
 
-.. _en-us_topic_0000001909907332__response_descprocessortaskversionresultsresp:
+.. _en-us_topic_0000002340898830__response_descprocessortaskversionresultsresp:
 
 .. table:: **Table 4** DescProcessorTaskVersionResultsResp
 

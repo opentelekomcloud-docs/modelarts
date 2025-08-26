@@ -15,9 +15,9 @@ URI
 
 GET /v1/{project_id}/training-jobs/{job_id}/versions/{version_id}/log/file-names
 
-:ref:`Table 1 <en-us_topic_0000001909907344__table4669394316232>` describes the required parameters.
+:ref:`Table 1 <en-us_topic_0000002340898786__table4669394316232>` describes the required parameters.
 
-.. _en-us_topic_0000001909907344__table4669394316232:
+.. _en-us_topic_0000002340898786__table4669394316232:
 
 .. table:: **Table 1** Parameters
 
@@ -39,9 +39,9 @@ None
 Response Body
 -------------
 
-:ref:`Table 2 <en-us_topic_0000001909907344__table3969737616316>` describes the response parameters.
+:ref:`Table 2 <en-us_topic_0000002340898786__table3969737616316>` describes the response parameters.
 
-.. _en-us_topic_0000001909907344__table3969737616316:
+.. _en-us_topic_0000002340898786__table3969737616316:
 
 .. table:: **Table 2** Parameters
 

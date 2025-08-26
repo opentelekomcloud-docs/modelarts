@@ -38,21 +38,21 @@ Request Parameters
    +-----------+-----------+-----------------------------------------------------------------------------+-------------------------------+
    | Parameter | Mandatory | Type                                                                        | Description                   |
    +===========+===========+=============================================================================+===============================+
-   | labels    | No        | Array of :ref:`Label <en-us_topic_0000001909747452__request_label>` objects | List of labels to be created. |
+   | labels    | No        | Array of :ref:`Label <en-us_topic_0000002374856637__request_label>` objects | List of labels to be created. |
    +-----------+-----------+-----------------------------------------------------------------------------+-------------------------------+
 
-.. _en-us_topic_0000001909747452__request_label:
+.. _en-us_topic_0000002374856637__request_label:
 
 .. table:: **Table 3** Label
 
    +-----------------+-----------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
    | Parameter       | Mandatory       | Type                                                                                          | Description                                                                                                                      |
    +=================+=================+===============================================================================================+==================================================================================================================================+
-   | attributes      | No              | Array of :ref:`LabelAttribute <en-us_topic_0000001909747452__request_labelattribute>` objects | Multi-dimensional attribute of a label. For example, if the label is music, attributes such as style and artist may be included. |
+   | attributes      | No              | Array of :ref:`LabelAttribute <en-us_topic_0000002374856637__request_labelattribute>` objects | Multi-dimensional attribute of a label. For example, if the label is music, attributes such as style and artist may be included. |
    +-----------------+-----------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
    | name            | No              | String                                                                                        | Label name.                                                                                                                      |
    +-----------------+-----------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
-   | property        | No              | :ref:`LabelProperty <en-us_topic_0000001909747452__request_labelproperty>` object             | Basic attribute key-value pair of a label, such as color and shortcut keys.                                                      |
+   | property        | No              | :ref:`LabelProperty <en-us_topic_0000002374856637__request_labelproperty>` object             | Basic attribute key-value pair of a label, such as color and shortcut keys.                                                      |
    +-----------------+-----------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
    | type            | No              | Integer                                                                                       | Label type. Options:                                                                                                             |
    |                 |                 |                                                                                               |                                                                                                                                  |
@@ -79,7 +79,7 @@ Request Parameters
    |                 |                 |                                                                                               | -  **600**: video labeling                                                                                                       |
    +-----------------+-----------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909747452__request_labelattribute:
+.. _en-us_topic_0000002374856637__request_labelattribute:
 
 .. table:: **Table 4** LabelAttribute
 
@@ -98,10 +98,10 @@ Request Parameters
    |                 |                 |                                                                                                         |                                                                                                               |
    |                 |                 |                                                                                                         | -  **select**: single-choice drop-down list                                                                   |
    +-----------------+-----------------+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
-   | values          | No              | Array of :ref:`LabelAttributeValue <en-us_topic_0000001909747452__request_labelattributevalue>` objects | List of label attribute values.                                                                               |
+   | values          | No              | Array of :ref:`LabelAttributeValue <en-us_topic_0000002374856637__request_labelattributevalue>` objects | List of label attribute values.                                                                               |
    +-----------------+-----------------+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909747452__request_labelattributevalue:
+.. _en-us_topic_0000002374856637__request_labelattributevalue:
 
 .. table:: **Table 5** LabelAttributeValue
 
@@ -112,7 +112,7 @@ Request Parameters
    value     No        String Label attribute value.
    ========= ========= ====== =========================
 
-.. _en-us_topic_0000001909747452__request_labelproperty:
+.. _en-us_topic_0000002374856637__request_labelproperty:
 
 .. table:: **Table 6** LabelProperty
 
@@ -160,7 +160,7 @@ Response Parameters
    +-----------------------+----------------------------------------------------------------------------------------------+-----------------------------------------------------+
    | error_msg             | String                                                                                       | Error message.                                      |
    +-----------------------+----------------------------------------------------------------------------------------------+-----------------------------------------------------+
-   | results               | Array of :ref:`BatchResponse <en-us_topic_0000001909747452__response_batchresponse>` objects | Response body for creating a label.                 |
+   | results               | Array of :ref:`BatchResponse <en-us_topic_0000002374856637__response_batchresponse>` objects | Response body for creating a label.                 |
    +-----------------------+----------------------------------------------------------------------------------------------+-----------------------------------------------------+
    | success               | Boolean                                                                                      | Check whether the operation is successful. Options: |
    |                       |                                                                                              |                                                     |
@@ -169,7 +169,7 @@ Response Parameters
    |                       |                                                                                              | -  **false**: The operation is failed.              |
    +-----------------------+----------------------------------------------------------------------------------------------+-----------------------------------------------------+
 
-.. _en-us_topic_0000001909747452__response_batchresponse:
+.. _en-us_topic_0000002374856637__response_batchresponse:
 
 .. table:: **Table 8** BatchResponse
 

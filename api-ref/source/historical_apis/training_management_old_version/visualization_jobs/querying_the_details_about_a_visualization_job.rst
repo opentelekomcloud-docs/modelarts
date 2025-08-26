@@ -15,9 +15,9 @@ URI
 
 GET /v1/{project_id}/visualization-jobs/{job_id}
 
-:ref:`Table 1 <en-us_topic_0000001909747500__table569625523811>` describes the required parameters.
+:ref:`Table 1 <en-us_topic_0000002374856581__table569625523811>` describes the required parameters.
 
-.. _en-us_topic_0000001909747500__table569625523811:
+.. _en-us_topic_0000002374856581__table569625523811:
 
 .. table:: **Table 1** Parameters
 
@@ -37,9 +37,9 @@ None
 Response Body
 -------------
 
-:ref:`Table 2 <en-us_topic_0000001909747500__table6495326155010>` describes the response parameters.
+:ref:`Table 2 <en-us_topic_0000002374856581__table6495326155010>` describes the response parameters.
 
-.. _en-us_topic_0000001909747500__table6495326155010:
+.. _en-us_topic_0000002374856581__table6495326155010:
 
 .. table:: **Table 2** Parameters
 
@@ -113,4 +113,4 @@ Sample Response
 Status Code
 -----------
 
-For details about the status code, see :ref:`Table 1 <en-us_topic_0000001909907492__table1450010510213>`.
+For details about the status code, see :ref:`Table 1 <en-us_topic_0000002374856625__table1450010510213>`.

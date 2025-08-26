@@ -7,12 +7,13 @@ Development Environment Management
 
 -  :ref:`Creating a Notebook Instance <createnotebook>`
 -  :ref:`Querying Notebook Instances <listnotebooks>`
+-  :ref:`Querying All Notebook Instances <listallnotebooks>`
 -  :ref:`Querying Details of a Notebook Instance <shownotebook>`
 -  :ref:`Updating a Notebook Instance <updatenotebook>`
 -  :ref:`Deleting a Notebook Instance <deletenotebook>`
 -  :ref:`Saving a Running Instance as a Container Image <createimage>`
--  :ref:`Obtaining the Available Flavors <listflavors>`
--  :ref:`Querying Flavors Available for a Notebook Instance <showswitchableflavors>`
+-  :ref:`Querying the List of Valid Specifications Supported by Notebook Instances <listflavors>`
+-  :ref:`Querying the List of Switchable Specifications Supported by Notebook Instances <showswitchableflavors>`
 -  :ref:`Querying the Available Duration of a Running Notebook Instance <showlease>`
 -  :ref:`Prolonging a Notebook Instance <renewlease>`
 -  :ref:`Starting a Notebook Instance <startnotebook>`
@@ -26,7 +27,6 @@ Development Environment Management
 -  :ref:`Obtaining User Image Groups <listimagegroup>`
 -  :ref:`Obtaining Details of an Image <showimage>`
 -  :ref:`Deleting an Image <deleteimage>`
--  :ref:`Querying All Notebook Instances <listallnotebooks>`
 
 .. toctree::
    :maxdepth: 1
@@ -34,12 +34,13 @@ Development Environment Management
 
    creating_a_notebook_instance
    querying_notebook_instances
+   querying_all_notebook_instances
    querying_details_of_a_notebook_instance
    updating_a_notebook_instance
    deleting_a_notebook_instance
    saving_a_running_instance_as_a_container_image
-   obtaining_the_available_flavors
-   querying_flavors_available_for_a_notebook_instance
+   querying_the_list_of_valid_specifications_supported_by_notebook_instances
+   querying_the_list_of_switchable_specifications_supported_by_notebook_instances
    querying_the_available_duration_of_a_running_notebook_instance
    prolonging_a_notebook_instance
    starting_a_notebook_instance
@@ -53,4 +54,3 @@ Development Environment Management
    obtaining_user_image_groups
    obtaining_details_of_an_image
    deleting_an_image
-   querying_all_notebook_instances

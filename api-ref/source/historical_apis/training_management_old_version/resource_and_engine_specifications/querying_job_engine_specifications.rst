@@ -17,9 +17,9 @@ URI
 
 GET /v1/{project_id}/job/ai-engines
 
-:ref:`Table 1 <en-us_topic_0000001909907452__table6017292495443>` describes the required parameters.
+:ref:`Table 1 <en-us_topic_0000002374896733__table6017292495443>` describes the required parameters.
 
-.. _en-us_topic_0000001909907452__table6017292495443:
+.. _en-us_topic_0000002374896733__table6017292495443:
 
 .. table:: **Table 1** Parameters
 
@@ -45,9 +45,9 @@ None
 Response Body
 -------------
 
-:ref:`Table 3 <en-us_topic_0000001909907452__table41713500151328>` describes the response parameters.
+:ref:`Table 3 <en-us_topic_0000002374896733__table41713500151328>` describes the response parameters.
 
-.. _en-us_topic_0000001909907452__table41713500151328:
+.. _en-us_topic_0000002374896733__table41713500151328:
 
 .. table:: **Table 3** Parameters
 
@@ -64,26 +64,21 @@ Response Body
    |                       |                       |                                                                                                                                |
    |                       |                       | This parameter is not included when the API call succeeds.                                                                     |
    +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------+
-   | engines               | **engines** array     | List of engine specifications attributes. For details, see :ref:`Table 4 <en-us_topic_0000001909907452__table21589744151355>`. |
+   | engines               | **engines** array     | List of engine specifications attributes. For details, see :ref:`Table 4 <en-us_topic_0000002374896733__table21589744151355>`. |
    +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909907452__table21589744151355:
+.. _en-us_topic_0000002374896733__table21589744151355:
 
 .. table:: **Table 4** **engines** parameters
 
-   +-----------------------+-----------------------+---------------------------------------------------+
-   | Parameter             | Type                  | Description                                       |
-   +=======================+=======================+===================================================+
-   | engine_type           | Integer               | Engine type of a training job                     |
-   |                       |                       |                                                   |
-   |                       |                       | -  13: Ascend-Powered-Engine                      |
-   +-----------------------+-----------------------+---------------------------------------------------+
-   | engine_id             | Long                  | ID of the engine selected for a training job      |
-   +-----------------------+-----------------------+---------------------------------------------------+
-   | engine_name           | String                | Name of the engine selected for a training job    |
-   +-----------------------+-----------------------+---------------------------------------------------+
-   | engine_version        | String                | Version of the engine selected for a training job |
-   +-----------------------+-----------------------+---------------------------------------------------+
+   ============== ======= =================================================
+   Parameter      Type    Description
+   ============== ======= =================================================
+   engine_type    Integer Engine type of a training job
+   engine_id      Long    ID of the engine selected for a training job
+   engine_name    String  Name of the engine selected for a training job
+   engine_version String  Version of the engine selected for a training job
+   ============== ======= =================================================
 
 Sample Request
 --------------
@@ -126,4 +121,4 @@ Sample Response
 Status Code
 -----------
 
-For details about the status code, see :ref:`Table 1 <en-us_topic_0000001909907492__table1450010510213>`.
+For details about the status code, see :ref:`Table 1 <en-us_topic_0000002374856625__table1450010510213>`.

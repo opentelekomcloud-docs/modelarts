@@ -27,6 +27,7 @@ Training Management
 -  :ref:`Early Stopping a Trial of an Auto Search Job <showautosearchtrialearlystop>`
 -  :ref:`Obtaining Information About the YAML Template of an Auto Search Job <showautosearchyamltemplatesinfo>`
 -  :ref:`Obtaining the Content of the YAML Template of an Auto Search Job <showautosearchyamltemplatecontent>`
+-  :ref:`Obtaining the Events of a Training Job <listtrainingjobevents>`
 -  :ref:`Obtaining the General Specifications Supported by a Training Job <showtrainingjobflavors>`
 -  :ref:`Obtaining the Preset AI Frameworks Supported by a Training Job <showtrainingjobengines>`
 
@@ -56,5 +57,6 @@ Training Management
    early_stopping_a_trial_of_an_auto_search_job
    obtaining_information_about_the_yaml_template_of_an_auto_search_job
    obtaining_the_content_of_the_yaml_template_of_an_auto_search_job
+   obtaining_the_events_of_a_training_job
    obtaining_the_general_specifications_supported_by_a_training_job
    obtaining_the_preset_ai_frameworks_supported_by_a_training_job

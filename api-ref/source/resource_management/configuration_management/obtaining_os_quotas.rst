@@ -35,58 +35,53 @@ Response Parameters
 
 .. table:: **Table 2** Response body parameters
 
-   +-----------+----------------------------------------------------------------------+-----------------+
-   | Parameter | Type                                                                 | Description     |
-   +===========+======================================================================+=================+
-   | quotas    | :ref:`quotas <en-us_topic_0000002080257325__response_quotas>` object | Resource quotas |
-   +-----------+----------------------------------------------------------------------+-----------------+
+   +-----------+--------------------------------------------------------------------+------------------+
+   | Parameter | Type                                                               | Description      |
+   +===========+====================================================================+==================+
+   | quotas    | :ref:`Quota <en-us_topic_0000002374856417__response_quota>` object | Resource quotas. |
+   +-----------+--------------------------------------------------------------------+------------------+
 
-.. _en-us_topic_0000002080257325__response_quotas:
+.. _en-us_topic_0000002374856417__response_quota:
 
-.. table:: **Table 3** quotas
+.. table:: **Table 3** Quota
 
-   +-----------+--------------------------------------------------------------------------------------+----------------------------+
-   | Parameter | Type                                                                                 | Description                |
-   +===========+======================================================================================+============================+
-   | resources | Array of :ref:`resources <en-us_topic_0000002080257325__response_resources>` objects | Resource quota information |
-   +-----------+--------------------------------------------------------------------------------------+----------------------------+
+   +-----------+----------------------------------------------------------------------------------------------+-----------------------------+
+   | Parameter | Type                                                                                         | Description                 |
+   +===========+==============================================================================================+=============================+
+   | resources | Array of :ref:`ResourceQuota <en-us_topic_0000002374856417__response_resourcequota>` objects | Resource quota information. |
+   +-----------+----------------------------------------------------------------------------------------------+-----------------------------+
 
-.. _en-us_topic_0000002080257325__response_resources:
+.. _en-us_topic_0000002374856417__response_resourcequota:
 
-.. table:: **Table 4** resources
+.. table:: **Table 4** ResourceQuota
 
-   ========= ======= =================================
-   Parameter Type    Description
-   ========= ======= =================================
-   type      String  Resource type
-   quota     Integer Upper limit of the resource quota
-   used      Integer Used quota
-   ========= ======= =================================
+   ========= ====== ==================================
+   Parameter Type   Description
+   ========= ====== ==================================
+   type      String Resource type.
+   quota     String Upper limit of the resource quota.
+   used      String Used quota.
+   ========= ====== ==================================
 
 **Status code: 404**
 
 .. table:: **Table 5** Response body parameters
 
-   +-----------------------+-----------------------+-----------------------+
-   | Parameter             | Type                  | Description           |
-   +=======================+=======================+=======================+
-   | error_code            | String                | Error code            |
-   |                       |                       |                       |
-   |                       |                       | Minimum: **8**        |
-   |                       |                       |                       |
-   |                       |                       | Maximum: **36**       |
-   +-----------------------+-----------------------+-----------------------+
-   | error_msg             | String                | Error message         |
-   |                       |                       |                       |
-   |                       |                       | Minimum: **2**        |
-   |                       |                       |                       |
-   |                       |                       | Maximum: **512**      |
-   +-----------------------+-----------------------+-----------------------+
+   ========== ====== =============
+   Parameter  Type   Description
+   ========== ====== =============
+   error_code String Error code
+   error_msg  String Error message
+   ========== ====== =============
 
 Example Requests
 ----------------
 
-None
+Obtain quota information.
+
+.. code-block:: text
+
+   GET https://{endpoint}/v1/{project_id}/quotas
 
 Example Responses
 -----------------

@@ -12,9 +12,9 @@ ModelArts - API Reference
    training_management/index
    ai_application_management/index
    service_management/index
+   service_task_management/index
    resource_management/index
    authorization_management/index
    use_cases/index
-   common_parameters/index
+   appendix/index
    historical_apis/index
-   change_history

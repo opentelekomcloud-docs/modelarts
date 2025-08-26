@@ -38,7 +38,7 @@ Request Parameters
    +--------------------+-----------------+-------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter          | Mandatory       | Type                                                                          | Description                                                                                                                                                                                                                     |
    +====================+=================+===============================================================================+=================================================================================================================================================================================================================================+
-   | data_source        | No              | :ref:`DataSource <en-us_topic_0000001909747540__request_datasource>` object   | Data source.                                                                                                                                                                                                                    |
+   | data_source        | No              | :ref:`DataSource <en-us_topic_0000002340898738__request_datasource>` object   | Data source.                                                                                                                                                                                                                    |
    +--------------------+-----------------+-------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | difficult_only     | No              | Boolean                                                                       | Whether to import only hard examples. Options:                                                                                                                                                                                  |
    |                    |                 |                                                                               |                                                                                                                                                                                                                                 |
@@ -46,7 +46,7 @@ Request Parameters
    |                    |                 |                                                                               |                                                                                                                                                                                                                                 |
    |                    |                 |                                                                               | -  **false**: All samples are imported. (Default value)                                                                                                                                                                         |
    +--------------------+-----------------+-------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | excluded_labels    | No              | Array of :ref:`Label <en-us_topic_0000001909747540__request_label>` objects   | Do not import samples containing the specified label.                                                                                                                                                                           |
+   | excluded_labels    | No              | Array of :ref:`Label <en-us_topic_0000002340898738__request_label>` objects   | Do not import samples containing the specified label.                                                                                                                                                                           |
    +--------------------+-----------------+-------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | final_annotation   | No              | Boolean                                                                       | Whether to import data to the final state. Options:                                                                                                                                                                             |
    |                    |                 |                                                                               |                                                                                                                                                                                                                                 |
@@ -94,9 +94,9 @@ Request Parameters
    |                    |                 |                                                                               |                                                                                                                                                                                                                                 |
    |                    |                 |                                                                               | -  **manifest**: Import datasets through a manifest file.                                                                                                                                                                       |
    +--------------------+-----------------+-------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | included_labels    | No              | Array of :ref:`Label <en-us_topic_0000001909747540__request_label>` objects   | Import samples containing the specified label.                                                                                                                                                                                  |
+   | included_labels    | No              | Array of :ref:`Label <en-us_topic_0000002340898738__request_label>` objects   | Import samples containing the specified label.                                                                                                                                                                                  |
    +--------------------+-----------------+-------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | label_format       | No              | :ref:`LabelFormat <en-us_topic_0000001909747540__request_labelformat>` object | Label format. This parameter is used only for text datasets.                                                                                                                                                                    |
+   | label_format       | No              | :ref:`LabelFormat <en-us_topic_0000002340898738__request_labelformat>` object | Label format. This parameter is used only for text datasets.                                                                                                                                                                    |
    +--------------------+-----------------+-------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | with_column_header | No              | Boolean                                                                       | Whether the first row in the file is a column name. This field is valid for the table dataset. Options:                                                                                                                         |
    |                    |                 |                                                                               |                                                                                                                                                                                                                                 |
@@ -105,7 +105,7 @@ Request Parameters
    |                    |                 |                                                                               | -  **false**: The first row in the file is not the column name. (Default value)                                                                                                                                                 |
    +--------------------+-----------------+-------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909747540__request_datasource:
+.. _en-us_topic_0000002340898738__request_datasource:
 
 .. table:: **Table 3** DataSource
 
@@ -130,9 +130,9 @@ Request Parameters
    |                    |                 |                                                                                     |                                                                                                         |
    |                    |                 |                                                                                     | -  **6**: Inference service                                                                             |
    +--------------------+-----------------+-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
-   | schema_maps        | No              | Array of :ref:`SchemaMap <en-us_topic_0000001909747540__request_schemamap>` objects | Schema mapping information corresponding to the table data.                                             |
+   | schema_maps        | No              | Array of :ref:`SchemaMap <en-us_topic_0000002340898738__request_schemamap>` objects | Schema mapping information corresponding to the table data.                                             |
    +--------------------+-----------------+-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
-   | source_info        | No              | :ref:`SourceInfo <en-us_topic_0000001909747540__request_sourceinfo>` object         | Information required for importing a table data source.                                                 |
+   | source_info        | No              | :ref:`SourceInfo <en-us_topic_0000002340898738__request_sourceinfo>` object         | Information required for importing a table data source.                                                 |
    +--------------------+-----------------+-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
    | with_column_header | No              | Boolean                                                                             | Whether the first row in the file is a column name. This field is valid for the table dataset. Options: |
    |                    |                 |                                                                                     |                                                                                                         |
@@ -141,7 +141,7 @@ Request Parameters
    |                    |                 |                                                                                     | -  **false**: The first row in the file is not the column name.                                         |
    +--------------------+-----------------+-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909747540__request_schemamap:
+.. _en-us_topic_0000002340898738__request_schemamap:
 
 .. table:: **Table 4** SchemaMap
 
@@ -152,7 +152,7 @@ Request Parameters
    src_name  No        String Name of the source column.
    ========= ========= ====== ===============================
 
-.. _en-us_topic_0000001909747540__request_sourceinfo:
+.. _en-us_topic_0000002340898738__request_sourceinfo:
 
 .. table:: **Table 5** SourceInfo
 
@@ -190,18 +190,18 @@ Request Parameters
    | vpc_id          | No              | String          | ID of the VPC where an MRS cluster resides.                                 |
    +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909747540__request_label:
+.. _en-us_topic_0000002340898738__request_label:
 
 .. table:: **Table 6** Label
 
    +-----------------+-----------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
    | Parameter       | Mandatory       | Type                                                                                          | Description                                                                                                                      |
    +=================+=================+===============================================================================================+==================================================================================================================================+
-   | attributes      | No              | Array of :ref:`LabelAttribute <en-us_topic_0000001909747540__request_labelattribute>` objects | Multi-dimensional attribute of a label. For example, if the label is music, attributes such as style and artist may be included. |
+   | attributes      | No              | Array of :ref:`LabelAttribute <en-us_topic_0000002340898738__request_labelattribute>` objects | Multi-dimensional attribute of a label. For example, if the label is music, attributes such as style and artist may be included. |
    +-----------------+-----------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
    | name            | No              | String                                                                                        | Label name.                                                                                                                      |
    +-----------------+-----------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
-   | property        | No              | :ref:`LabelProperty <en-us_topic_0000001909747540__request_labelproperty>` object             | Basic attribute key-value pair of a label, such as color and shortcut keys.                                                      |
+   | property        | No              | :ref:`LabelProperty <en-us_topic_0000002340898738__request_labelproperty>` object             | Basic attribute key-value pair of a label, such as color and shortcut keys.                                                      |
    +-----------------+-----------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
    | type            | No              | Integer                                                                                       | Label type. Options:                                                                                                             |
    |                 |                 |                                                                                               |                                                                                                                                  |
@@ -228,7 +228,7 @@ Request Parameters
    |                 |                 |                                                                                               | -  **600**: video labeling                                                                                                       |
    +-----------------+-----------------+-----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909747540__request_labelattribute:
+.. _en-us_topic_0000002340898738__request_labelattribute:
 
 .. table:: **Table 7** LabelAttribute
 
@@ -247,10 +247,10 @@ Request Parameters
    |                 |                 |                                                                                                         |                                                                                                               |
    |                 |                 |                                                                                                         | -  **select**: single-choice drop-down list                                                                   |
    +-----------------+-----------------+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
-   | values          | No              | Array of :ref:`LabelAttributeValue <en-us_topic_0000001909747540__request_labelattributevalue>` objects | List of label attribute values.                                                                               |
+   | values          | No              | Array of :ref:`LabelAttributeValue <en-us_topic_0000002340898738__request_labelattributevalue>` objects | List of label attribute values.                                                                               |
    +-----------------+-----------------+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909747540__request_labelattributevalue:
+.. _en-us_topic_0000002340898738__request_labelattributevalue:
 
 .. table:: **Table 8** LabelAttributeValue
 
@@ -261,7 +261,7 @@ Request Parameters
    value     No        String Label attribute value.
    ========= ========= ====== =========================
 
-.. _en-us_topic_0000001909747540__request_labelproperty:
+.. _en-us_topic_0000002340898738__request_labelproperty:
 
 .. table:: **Table 9** LabelProperty
 
@@ -295,7 +295,7 @@ Request Parameters
    | @modelarts:to_type       | No              | String          | Default attribute: Type of the tail entity in the triplet relationship label. This attribute must be specified when a relationship label is created. This parameter is used only for the text triplet dataset. |
    +--------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001909747540__request_labelformat:
+.. _en-us_topic_0000002340898738__request_labelformat:
 
 .. table:: **Table 10** LabelFormat
 

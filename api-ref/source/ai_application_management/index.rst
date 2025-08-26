@@ -7,7 +7,6 @@ AI Application Management
 
 -  :ref:`Obtaining the Model Runtime <showmodelengineandruntime>`
 -  :ref:`Querying the AI Application List <listmodels>`
--  :ref:`Creating an AI Application <createmodel>`
 -  :ref:`Obtaining Details About an AI Application <showmodel>`
 -  :ref:`Deleting an AI application <deletemodel>`
 
@@ -17,6 +16,5 @@ AI Application Management
 
    obtaining_the_model_runtime
    querying_the_ai_application_list
-   creating_an_ai_application
    obtaining_details_about_an_ai_application
    deleting_an_ai_application

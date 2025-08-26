@@ -52,79 +52,75 @@ Response Parameters
    |                       |                                                                                                      |                                         |
    |                       |                                                                                                      | -  **PluginTemplate**: plug-in template |
    +-----------------------+------------------------------------------------------------------------------------------------------+-----------------------------------------+
-   | metadata              | :ref:`PluginTemplateMetadata <en-us_topic_0000002044058268__response_plugintemplatemetadata>` object | Plug-in template metadata               |
+   | metadata              | :ref:`PluginTemplateMetadata <en-us_topic_0000002340898514__response_plugintemplatemetadata>` object | Plug-in template metadata               |
    +-----------------------+------------------------------------------------------------------------------------------------------+-----------------------------------------+
-   | spec                  | :ref:`PluginTemplateSpec <en-us_topic_0000002044058268__response_plugintemplatespec>` object         | Plug-in template specifications         |
+   | spec                  | :ref:`PluginTemplateSpec <en-us_topic_0000002340898514__response_plugintemplatespec>` object         | Plug-in template specifications         |
    +-----------------------+------------------------------------------------------------------------------------------------------+-----------------------------------------+
 
-.. _en-us_topic_0000002044058268__response_plugintemplatemetadata:
+.. _en-us_topic_0000002340898514__response_plugintemplatemetadata:
 
 .. table:: **Table 3** PluginTemplateMetadata
 
-   ========= ====== =====================
-   Parameter Type   Description
-   ========= ====== =====================
-   name      String Plug-in template name
-   ========= ====== =====================
+   +-------------+--------------------+----------------------------------------------------------------+
+   | Parameter   | Type               | Description                                                    |
+   +=============+====================+================================================================+
+   | name        | String             | Plug-in template name                                          |
+   +-------------+--------------------+----------------------------------------------------------------+
+   | annotations | Map<String,String> | Plug-in template annotations in the format of key-value pairs. |
+   +-------------+--------------------+----------------------------------------------------------------+
 
-.. _en-us_topic_0000002044058268__response_plugintemplatespec:
+.. _en-us_topic_0000002340898514__response_plugintemplatespec:
 
 .. table:: **Table 4** PluginTemplateSpec
 
-   +-----------------------+-----------------------------------------------------------------------------------------------------------+---------------------------------+
-   | Parameter             | Type                                                                                                      | Description                     |
-   +=======================+===========================================================================================================+=================================+
-   | type                  | String                                                                                                    | Plug-in template type. Options: |
-   |                       |                                                                                                           |                                 |
-   |                       |                                                                                                           | -  **npuDriver**: NPU driver    |
-   |                       |                                                                                                           |                                 |
-   |                       |                                                                                                           | -  **gpuDriver**: GPU driver    |
-   |                       |                                                                                                           |                                 |
-   |                       |                                                                                                           | -  **ccePlugin**: CCE plug-in   |
-   |                       |                                                                                                           |                                 |
-   |                       |                                                                                                           | -  **helm**: Helm template      |
-   |                       |                                                                                                           |                                 |
-   |                       |                                                                                                           | -  **icAgent**: ICAgent         |
-   +-----------------------+-----------------------------------------------------------------------------------------------------------+---------------------------------+
-   | description           | String                                                                                                    | Plug-in template description    |
-   +-----------------------+-----------------------------------------------------------------------------------------------------------+---------------------------------+
-   | versions              | Map<String,\ :ref:`PluginTemplateVersion <en-us_topic_0000002044058268__response_plugintemplateversion>`> | Plug-in template versions       |
-   +-----------------------+-----------------------------------------------------------------------------------------------------------+---------------------------------+
+   +-----------------------+---------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
+   | Parameter             | Type                                                                                                          | Description                                        |
+   +=======================+===============================================================================================================+====================================================+
+   | type                  | String                                                                                                        | Plug-in template type. The options are as follows: |
+   |                       |                                                                                                               |                                                    |
+   |                       |                                                                                                               | -  **npu-river**: NPU driver                       |
+   |                       |                                                                                                               |                                                    |
+   |                       |                                                                                                               | -  **gpu-driver**: GPU driver                      |
+   +-----------------------+---------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
+   | description           | String                                                                                                        | Plug-in template description                       |
+   +-----------------------+---------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
+   | versions              | Map<String,\ :ref:`PluginTemplateVersionV2 <en-us_topic_0000002340898514__response_plugintemplateversionv2>`> | Plug-in template versions                          |
+   +-----------------------+---------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
 
-.. _en-us_topic_0000002044058268__response_plugintemplateversion:
+.. _en-us_topic_0000002340898514__response_plugintemplateversionv2:
 
-.. table:: **Table 5** PluginTemplateVersion
+.. table:: **Table 5** PluginTemplateVersionV2
 
-   ========= ====== ===================
-   Parameter Type   Description
-   ========= ====== ===================
-   detail    String Version description
-   ========= ====== ===================
+   ================= ====== ========================================
+   Parameter         Type   Description
+   ================= ====== ========================================
+   version           String Version number of the plug-in template.
+   creationTimestamp String Creation time.
+   inputs            Object Plug-in installation parameters.
+   translate         Object Translation information used by the GUI.
+   description       String Version description.
+   detail            String Version description.
+   ================= ====== ========================================
 
 **Status code: 404**
 
 .. table:: **Table 6** Response body parameters
 
-   +-----------------------+-----------------------+-----------------------+
-   | Parameter             | Type                  | Description           |
-   +=======================+=======================+=======================+
-   | error_code            | String                | Error code            |
-   |                       |                       |                       |
-   |                       |                       | Minimum: **8**        |
-   |                       |                       |                       |
-   |                       |                       | Maximum: **36**       |
-   +-----------------------+-----------------------+-----------------------+
-   | error_msg             | String                | Error message         |
-   |                       |                       |                       |
-   |                       |                       | Minimum: **2**        |
-   |                       |                       |                       |
-   |                       |                       | Maximum: **512**      |
-   +-----------------------+-----------------------+-----------------------+
+   ========== ====== =============
+   Parameter  Type   Description
+   ========== ====== =============
+   error_code String Error code
+   error_msg  String Error message
+   ========== ====== =============
 
 Example Requests
 ----------------
 
-None
+The following is an example of how to query plug-in template details.
+
+.. code-block::
+
+   https://{endpoint}/v1/{project_id}/plugintemplates/{plugintemplate_name}
 
 Example Responses
 -----------------

@@ -17,9 +17,9 @@ URI
 
 POST /v1/{project_id}/training-jobs
 
-:ref:`Table 1 <en-us_topic_0000001943866685__table143351836151117>` describes the required parameters.
+:ref:`Table 1 <en-us_topic_0000002341058426__table143351836151117>` describes the required parameters.
 
-.. _en-us_topic_0000001943866685__table143351836151117:
+.. _en-us_topic_0000002341058426__table143351836151117:
 
 .. table:: **Table 1** Parameters
 
@@ -32,9 +32,9 @@ POST /v1/{project_id}/training-jobs
 Request Body
 ------------
 
-:ref:`Table 2 <en-us_topic_0000001943866685__table6270801111211>` describes the request parameters.
+:ref:`Table 2 <en-us_topic_0000002341058426__table6270801111211>` describes the request parameters.
 
-.. _en-us_topic_0000001943866685__table6270801111211:
+.. _en-us_topic_0000002341058426__table6270801111211:
 
 .. table:: **Table 2** Parameters
 
@@ -45,12 +45,12 @@ Request Body
    +--------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------+
    | job_desc     | No        | String | Description of a training job. The value must contain 0 to 256 characters. By default, this parameter is left blank.               |
    +--------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------+
-   | config       | Yes       | Object | Parameters for creating a training job For details, see :ref:`Table 3 <en-us_topic_0000001943866685__table24411850104213>`.        |
+   | config       | Yes       | Object | Parameters for creating a training job For details, see :ref:`Table 3 <en-us_topic_0000002341058426__table24411850104213>`.        |
    +--------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------+
    | workspace_id | No        | String | Workspace where a job resides. Default value: **0**                                                                                |
    +--------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001943866685__table24411850104213:
+.. _en-us_topic_0000002341058426__table24411850104213:
 
 .. table:: **Table 3** **config** parameters
 
@@ -63,7 +63,7 @@ Request Body
    +--------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | boot_file_url      | Yes             | String          | Boot file of a training job, which needs to be stored in the code directory. Example value: **/usr/app/boot.py** This parameter must be used together with **app_url**. After setting **model_id**, you do not need to set **app_url** or **boot_file_url**, and **engine_id**.                                                                                                                   |
    +--------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | parameter          | No              | Array<Object>   | Running parameters of a training job. It is a collection of label-value pairs. Values can be customized. **label** is a parameter name and **value** is the parameter value. For details, see the sample request. This parameter is a container environment variable when a training job uses a custom image. For details, see :ref:`Table 8 <en-us_topic_0000001943866685__table1267642234716>`. |
+   | parameter          | No              | Array<Object>   | Running parameters of a training job. It is a collection of label-value pairs. Values can be customized. **label** is a parameter name and **value** is the parameter value. For details, see the sample request. This parameter is a container environment variable when a training job uses a custom image. For details, see :ref:`Table 8 <en-us_topic_0000002341058426__table1267642234716>`. |
    +--------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | data_url           | No              | String          | OBS URL of the dataset required by a training job. By default, this parameter is left blank. For example, **/usr/data/**. This parameter cannot be used together with **data_source** or **dataset_id** and **dataset_version_id**. However, one of the parameters must exist.                                                                                                                    |
    +--------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -71,7 +71,7 @@ Request Body
    +--------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | dataset_version_id | No              | String          | Dataset version ID of a training job. This parameter must be used together with **dataset_id**, but cannot be used together with **data_url** or **data_source**.                                                                                                                                                                                                                                 |
    +--------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | data_source        | No              | Array<Object>   | Dataset of a training job. This parameter cannot be used together with **data_url** or **dataset_id** and **dataset_version_id**. For details, see :ref:`Table 4 <en-us_topic_0000001943866685__table250595919011>`.                                                                                                                                                                              |
+   | data_source        | No              | Array<Object>   | Dataset of a training job. This parameter cannot be used together with **data_url** or **dataset_id** and **dataset_version_id**. For details, see :ref:`Table 4 <en-us_topic_0000002341058426__table250595919011>`.                                                                                                                                                                              |
    +--------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | spec_id            | Yes             | Long            | ID of the resource specifications selected for a training job. Obtain the ID by calling the API described in :ref:`Querying Job Resource Specifications <modelarts_03_0072>`. When creating a public pool job, ensure that **spec_id** is mandatory and cannot be used with **pool_id**.                                                                                                          |
    +--------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -92,10 +92,10 @@ Request Body
    |                    |                 |                 | -  **true**: Default value. A version is created when a training job is created.                                                                                                                                                                                                                                                                                                                  |
    |                    |                 |                 | -  **false**: A version is not created when a training job is created.                                                                                                                                                                                                                                                                                                                            |
    +--------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | volumes            | No              | JSON Array      | Storage volume that can be used by a training job. For details, see :ref:`Table 5 <en-us_topic_0000001943866685__table6403153714711>`.                                                                                                                                                                                                                                                            |
+   | volumes            | No              | JSON Array      | Storage volume that can be used by a training job. For details, see :ref:`Table 5 <en-us_topic_0000002341058426__table6403153714711>`.                                                                                                                                                                                                                                                            |
    +--------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001943866685__table250595919011:
+.. _en-us_topic_0000002341058426__table250595919011:
 
 .. table:: **Table 4** **data_source** parameters
 
@@ -111,19 +111,19 @@ Request Body
    | data_url        | No        | String | OBS bucket path. This parameter cannot be used together with **dataset_id** or **dataset_version**.                                            |
    +-----------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001943866685__table6403153714711:
+.. _en-us_topic_0000002341058426__table6403153714711:
 
 .. table:: **Table 5** **volumes** parameters
 
    +-----------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter | Mandatory | Type   | Description                                                                                                                                                                                                                                                       |
    +===========+===========+========+===================================================================================================================================================================================================================================================================+
-   | nfs       | No        | Object | Storage volume of the shared file system type. Only the training jobs running in a resource pool with the shared file system network connected support such storage volumes. For details, see :ref:`Table 6 <en-us_topic_0000001943866685__table19871043113315>`. |
+   | nfs       | No        | Object | Storage volume of the shared file system type. Only the training jobs running in a resource pool with the shared file system network connected support such storage volumes. For details, see :ref:`Table 6 <en-us_topic_0000002341058426__table19871043113315>`. |
    +-----------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | host_path | No        | Object | Storage volume of the host file system type. Only training jobs running in a dedicated resource pool support such storage volumes. For details, see :ref:`Table 7 <en-us_topic_0000001943866685__table4873028185611>`.                                            |
+   | host_path | No        | Object | Storage volume of the host file system type. Only training jobs running in a dedicated resource pool support such storage volumes. For details, see :ref:`Table 7 <en-us_topic_0000002341058426__table4873028185611>`.                                            |
    +-----------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000001943866685__table19871043113315:
+.. _en-us_topic_0000002341058426__table19871043113315:
 
 .. table:: **Table 6** **nfs** parameters
 
@@ -142,7 +142,7 @@ Request Body
    |                 |                 |                 | -  **false**: read/write permission. This is the default value.     |
    +-----------------+-----------------+-----------------+---------------------------------------------------------------------+
 
-.. _en-us_topic_0000001943866685__table4873028185611:
+.. _en-us_topic_0000002341058426__table4873028185611:
 
 .. table:: **Table 7** **host_path** parameters
 
@@ -159,7 +159,7 @@ Request Body
    |                 |                 |                 | -  **false**: read/write permission. This is the default value.     |
    +-----------------+-----------------+-----------------+---------------------------------------------------------------------+
 
-.. _en-us_topic_0000001943866685__table1267642234716:
+.. _en-us_topic_0000002341058426__table1267642234716:
 
 .. table:: **Table 8** **parameter** parameters
 
@@ -173,9 +173,9 @@ Request Body
 Response Body
 -------------
 
-:ref:`Table 9 <en-us_topic_0000001943866685__table1260716526159>` describes the response parameters.
+:ref:`Table 9 <en-us_topic_0000002341058426__table1260716526159>` describes the response parameters.
 
-.. _en-us_topic_0000001943866685__table1260716526159:
+.. _en-us_topic_0000002341058426__table1260716526159:
 
 .. table:: **Table 9** Parameters
 
