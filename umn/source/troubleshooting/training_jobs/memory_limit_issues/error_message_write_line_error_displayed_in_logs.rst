@@ -11,7 +11,7 @@ Symptom
 During program running, a large number of error messages "write line error" are generated. This issue recurs each time the program runs at a specific progress.
 
 
-.. figure:: /_static/images/en-us_image_0000002079104265.png
+.. figure:: /_static/images/en-us_image_0000002374727525.png
    :alt: **Figure 1** Error log
 
    **Figure 1** Error log

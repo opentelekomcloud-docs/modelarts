@@ -5,11 +5,11 @@
 Data Management
 ===============
 
-During AI development, massive volumes of data need to be processed, and data preparing and labeling usually take more than half of the time required for the entire development process. ModelArts data management provides an efficient data management and labeling framework. It supports image, text, audio, and video data types in a range of labeling scenarios such as image classification, object detection, speech paragraph labeling, and text classification so that data management can be used in various AI projects such as computer vision, natural language processing, and audio and video analysis projects. In addition, ModelArts data management provides functions such as data filtering, data analysis, data processing, team labeling, and version management, enabling you to manage the full data labeling process. :ref:`Figure 1 <en-us_topic_0000002043019592__fig196581550111013>` shows the data labeling process.
+During AI development, massive volumes of data need to be processed, and data preparing and labeling usually take more than half of the time required for the entire development process. ModelArts data management provides an efficient data management and labeling framework. It supports image, text, audio, and video data types in a range of labeling scenarios such as image classification, object detection, speech paragraph labeling, and text classification so that data management can be used in various AI projects such as computer vision, natural language processing, and audio and video analysis projects. In addition, ModelArts data management provides functions such as data filtering, data analysis, data processing, team labeling, and version management, enabling you to manage the full data labeling process. :ref:`Figure 1 <en-us_topic_0000002340729096__fig196581550111013>` shows the data labeling process.
 
-.. _en-us_topic_0000002043019592__fig196581550111013:
+.. _en-us_topic_0000002340729096__fig196581550111013:
 
-.. figure:: /_static/images/en-us_image_0000002043178084.png
+.. figure:: /_static/images/en-us_image_0000002340889184.png
    :alt: **Figure 1** Data labeling process
 
    **Figure 1** Data labeling process

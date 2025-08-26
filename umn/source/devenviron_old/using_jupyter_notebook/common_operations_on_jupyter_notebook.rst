@@ -15,7 +15,7 @@ In the notebook instance list, locate the row where the target notebook instance
 Two tab pages are available on the **Jupyter Notebook** page: **Files** and **Running**.
 
 
-.. figure:: /_static/images/en-us_image_0000002079181745.png
+.. figure:: /_static/images/en-us_image_0000002374850145.png
    :alt: **Figure 1** Jupyter Notebook
 
    **Figure 1** Jupyter Notebook
@@ -31,7 +31,7 @@ Uploading a File
 Open a notebook instance and go to the **Jupyter Notebook** page. On the **Files** tab page, click **Upload** in the upper right corner to select a file from the local PC and upload it.
 
 
-.. figure:: /_static/images/en-us_image_0000002079181749.png
+.. figure:: /_static/images/en-us_image_0000002340732320.png
    :alt: **Figure 2** Uploading a file
 
    **Figure 2** Uploading a file
@@ -59,7 +59,7 @@ After a file is created, click the file name to go to the file compilation page.
    |                       |                              | -  Raw NBConvert: conversion tool.                                                                                                                                                                                                                                                                                                                                                                                          |
    |                       |                              | -  Heading: Quickly add a MarkDown title.                                                                                                                                                                                                                                                                                                                                                                                   |
    +-----------------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | 4                     | AI engine and Python version | Displays the AI engine and Python version corresponding to the current file. For details about all AI engines and Python versions supported by ModelArts, see :ref:`Supported AI Engines <en-us_topic_0000002043182276__en-us_topic_0000001846136609_en-us_topic_0162690357_section191109611479>`.                                                                                                                          |
+   | 4                     | AI engine and Python version | Displays the AI engine and Python version corresponding to the current file. For details about all AI engines and Python versions supported by ModelArts, see :ref:`Supported AI Engines <en-us_topic_0000002374849973__en-us_topic_0000001846136609_en-us_topic_0162690357_section191109611479>`.                                                                                                                          |
    +-----------------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | 5                     | Code cell                    | Each cell has two modes: command mode and editing mode.                                                                                                                                                                                                                                                                                                                                                                     |
    |                       |                              |                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -78,7 +78,7 @@ To delete a file or folder from Jupyter Notebook, select the file or folder in t
    After the file or folder is deleted, click the **Refresh** button in the upper right corner to refresh the Jupyter page and clear the cache.
 
 
-.. figure:: /_static/images/en-us_image_0000002079181737.png
+.. figure:: /_static/images/en-us_image_0000002374850165.png
    :alt: **Figure 3** Jupyter page
 
    **Figure 3** Jupyter page
@@ -94,6 +94,6 @@ After a file is uploaded to Notebook as a compressed package, you can decompress
 
 For more details, search for the decompression command in mainstream search engines.
 
-For details about how to open Notebook Terminal, see :ref:`Enabling the Notebook Terminal Function <en-us_topic_0000002043023960__en-us_topic_0000001799496556_en-us_topic_0190535990_section78015461056>`.
+For details about how to open Notebook Terminal, see :ref:`Enabling the Notebook Terminal Function <en-us_topic_0000002374849977__en-us_topic_0000001799496556_en-us_topic_0190535990_section78015461056>`.
 
-.. |image1| image:: /_static/images/en-us_image_0000002079181729.png
+.. |image1| image:: /_static/images/en-us_image_0000002340892080.png

@@ -15,9 +15,9 @@ Solution
 
 #. Use the current account to log in to the OBS console and check whether the current account can access OBS.
 
-   -  If the account can access OBS, rectify the fault by referring to :ref:`2 <en-us_topic_0000002079104733__li181091239132313>`.
+   -  If the account can access OBS, rectify the fault by referring to :ref:`2 <en-us_topic_0000002374845801__li181091239132313>`.
 
-#. .. _en-us_topic_0000002079104733__li181091239132313:
+#. .. _en-us_topic_0000002374845801__li181091239132313:
 
-   -  If yes, .
+   -  If yes, contact the administrator.
    -  If not, replace the AK/SK with those created using the current account. For details, see :ref:`Access Keys <modelarts_05_0004>`.

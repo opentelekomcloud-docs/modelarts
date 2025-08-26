@@ -28,11 +28,11 @@ In ModelArts, user's data is stored in OBS buckets, but training jobs are runnin
 Solution
 --------
 
-If an error occurs when you read a file, you can use MoXing to copy data to a container and then access the data in the container. For details, see :ref:`1 <en-us_topic_0000002043025176__li0773121693319>`.
+If an error occurs when you read a file, you can use MoXing to copy data to a container and then access the data in the container. For details, see :ref:`1 <en-us_topic_0000002340887876__li0773121693319>`.
 
-You can also read files based on the file type. For details, see :ref:`Reading .json files <en-us_topic_0000002043025176__li1489841103613>`, :ref:`Reading .npy files <en-us_topic_0000002043025176__li19472171513369>`, and :ref:`Using the cv2 library to read files <en-us_topic_0000002043025176__li13209101919362>`, and :ref:`Using the torch package in the MXNet environment <en-us_topic_0000002043025176__li476001011517>`.
+You can also read files based on the file type. For details, see :ref:`Reading .json files <en-us_topic_0000002340887876__li1489841103613>`, :ref:`Reading .npy files <en-us_topic_0000002340887876__li19472171513369>`, and :ref:`Using the cv2 library to read files <en-us_topic_0000002340887876__li13209101919362>`, and :ref:`Using the torch package in the MXNet environment <en-us_topic_0000002340887876__li476001011517>`.
 
-#. .. _en-us_topic_0000002043025176__li0773121693319:
+#. .. _en-us_topic_0000002340887876__li0773121693319:
 
    If an error occurs when you read a file, you can use MoXing to copy data to a container and then access the data in the container as follows:
 
@@ -42,7 +42,7 @@ You can also read files based on the file type. For details, see :ref:`Reading .
       mox.file.make_dirs('/cache/data_url')
       mox.file.copy_parallel('obs://bucket-name/data_url', '/cache/data_url')
 
-#. .. _en-us_topic_0000002043025176__li1489841103613:
+#. .. _en-us_topic_0000002340887876__li1489841103613:
 
    To **read .\ **json** files**, run the following code:
 
@@ -50,7 +50,7 @@ You can also read files based on the file type. For details, see :ref:`Reading .
 
       json.loads(mox.file.read(json_path, binary=True))
 
-#. .. _en-us_topic_0000002043025176__li19472171513369:
+#. .. _en-us_topic_0000002340887876__li19472171513369:
 
    To **use **numpy.load** to read .\ **npy** files**, run the following code:
 
@@ -67,7 +67,7 @@ You can also read files based on the file type. For details, see :ref:`Reading .
          with mox.file.File(_SAMPLE_PATHS['rgb'], 'rb') as f:
          np.load(f)
 
-#. .. _en-us_topic_0000002043025176__li13209101919362:
+#. .. _en-us_topic_0000002340887876__li13209101919362:
 
    To **use the cv2 library to read files**, run the following code:
 
@@ -75,7 +75,7 @@ You can also read files based on the file type. For details, see :ref:`Reading .
 
       cv2.imdecode(np.fromstring(mox.file.read(img_path), np.uint8), 1)
 
-#. .. _en-us_topic_0000002043025176__li476001011517:
+#. .. _en-us_topic_0000002340887876__li476001011517:
 
    To **use the torch package in the MXNet environment**, run the following code:
 

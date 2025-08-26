@@ -18,7 +18,7 @@ Prerequisites
 -  A VPC is available.
 -  A subnet is available.
 
-.. _en-us_topic_0000002043020048__en-us_topic_0143244658_section4115221610:
+.. _en-us_topic_0000002340890628__en-us_topic_0143244658_section4115221610:
 
 Creating a Network
 ------------------
@@ -41,7 +41,7 @@ Creating a Network
 
 #. Confirm the settings and click **OK**.
 
-.. _en-us_topic_0000002043020048__section1473914311415:
+.. _en-us_topic_0000002340890628__section1473914311415:
 
 (Optional) Interconnecting a VPC with a ModelArts Network
 ---------------------------------------------------------

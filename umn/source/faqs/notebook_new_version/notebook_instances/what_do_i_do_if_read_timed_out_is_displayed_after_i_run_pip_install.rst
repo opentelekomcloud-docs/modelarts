@@ -17,4 +17,4 @@ Solution
 
 Run **pip install --upgrade pip** and then **pip install**.
 
-.. |image1| image:: /_static/images/en-us_image_0000002079183593.png
+.. |image1| image:: /_static/images/en-us_image_0000002374848369.png

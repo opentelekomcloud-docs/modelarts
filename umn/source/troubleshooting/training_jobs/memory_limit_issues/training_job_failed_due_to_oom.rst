@@ -15,7 +15,7 @@ If a training job failed due to out of memory (OOM), possible symptoms as as fol
 #. The log file contains error information with keyword **killed**.
 
 
-   .. figure:: /_static/images/en-us_image_0000002079182873.png
+   .. figure:: /_static/images/en-us_image_0000002340729620.png
       :alt: **Figure 1** Error log
 
       **Figure 1** Error log
@@ -23,7 +23,7 @@ If a training job failed due to out of memory (OOM), possible symptoms as as fol
 #. Error message "RuntimeError: CUDA out of memory." is displayed in logs.
 
 
-   .. figure:: /_static/images/en-us_image_0000002079182861.png
+   .. figure:: /_static/images/en-us_image_0000002374847409.png
       :alt: **Figure 2** Error log
 
       **Figure 2** Error log

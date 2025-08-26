@@ -12,9 +12,9 @@ Due to the limitation of API Gateway, the duration of a single prediction in Mod
 Specifications for Writing Inference Code
 -----------------------------------------
 
-#. In the model inference code file **customize_service.py**, add a child model class. This child model class inherits properties from its parent model class. For details about the import statements of different types of parent model classes, see :ref:`Table 1 <en-us_topic_0000002079182509__en-us_topic_0172466150_table55021545175412>`.
+#. In the model inference code file **customize_service.py**, add a child model class. This child model class inherits properties from its parent model class. For details about the import statements of different types of parent model classes, see :ref:`Table 1 <en-us_topic_0000002340732400__en-us_topic_0172466150_table55021545175412>`.
 
-   .. _en-us_topic_0000002079182509__en-us_topic_0172466150_table55021545175412:
+   .. _en-us_topic_0000002340732400__en-us_topic_0172466150_table55021545175412:
 
    .. table:: **Table 1** Import statements of different types of parent model classes
 
@@ -49,9 +49,9 @@ Specifications for Writing Inference Code
    .. note::
 
       -  You can override the preprocess and postprocess methods for preprocessing the API input and postprocessing the inference output.
-      -  Overriding the init method of the parent model class may cause an AI application to run abnormally.
+      -  Overriding the init method of the parent model class may cause a model to run abnormally.
 
-#. .. _en-us_topic_0000002079182509__en-us_topic_0172466150_li135956421288:
+#. .. _en-us_topic_0000002340732400__en-us_topic_0172466150_li135956421288:
 
    The attribute that can be used is the local path where the model resides. The attribute name is **self.model_path**. In addition, PySpark-based models can use **self.spark** to obtain the SparkSession object in **customize_service.py**.
 
@@ -177,7 +177,7 @@ The preceding sample code resizes images imported to the user's form to adapt to
 Inference Script Example of Custom Inference Logic
 --------------------------------------------------
 
-Customize a dependency package in the configuration file by referring to :ref:`Example of a Model Configuration File Using a Custom Dependency Package <en-us_topic_0000002079182513__en-us_topic_0172466149_section119911955122011>`. Then, use the following code example to load the model in **saved_model** format for inference.
+Customize a dependency package in the configuration file by referring to :ref:`Example of a Model Configuration File Using a Custom Dependency Package <en-us_topic_0000002340892196__en-us_topic_0172466149_section119911955122011>`. Then, use the following code example to load the model in **saved_model** format for inference.
 
 .. note::
 
@@ -319,111 +319,3 @@ Customize a dependency package in the configuration file by referring to :ref:`E
 
               # Loading multiple models, for example, test2.onnx
               # self.model_path2 = os.path.join(root, test2.onnx)
-
-MindSpore Inference Script Example
-----------------------------------
-
--  The inference script is as follows:
-
-   .. code-block::
-
-      import threading
-
-      import mindspore
-      import mindspore.nn as nn
-      import numpy as np
-      import logging
-      from mindspore import Tensor, context
-      from mindspore.common.initializer import Normal
-      from mindspore.train.serialization import load_checkpoint, load_param_into_net
-      from model_service.model_service import SingleNodeService
-      from PIL import Image
-
-      logger = logging.getLogger(__name__)
-      logger.setLevel(logging.INFO)
-
-
-      context.set_context(mode=context.GRAPH_MODE, device_target="Ascend")
-
-
-      class LeNet5(nn.Cell):
-          """Lenet network structure."""
-
-          # define the operator required
-          def __init__(self, num_class=10, num_channel=1):
-              super(LeNet5, self).__init__()
-              self.conv1 = nn.Conv2d(num_channel, 6, 5, pad_mode='valid')
-              self.conv2 = nn.Conv2d(6, 16, 5, pad_mode='valid')
-              self.fc1 = nn.Dense(16 * 5 * 5, 120, weight_init=Normal(0.02))
-              self.fc2 = nn.Dense(120, 84, weight_init=Normal(0.02))
-              self.fc3 = nn.Dense(84, num_class, weight_init=Normal(0.02))
-              self.relu = nn.ReLU()
-              self.max_pool2d = nn.MaxPool2d(kernel_size=2, stride=2)
-              self.flatten = nn.Flatten()
-
-          # use the preceding operators to construct networks
-          def construct(self, x):
-              x = self.max_pool2d(self.relu(self.conv1(x)))
-              x = self.max_pool2d(self.relu(self.conv2(x)))
-              x = self.flatten(x)
-              x = self.relu(self.fc1(x))
-              x = self.relu(self.fc2(x))
-              x = self.fc3(x)
-              return x
-
-
-      class MnistService(SingleNodeService):
-          def __init__(self, model_name, model_path):
-              self.model_name = model_name
-              self.model_path = model_path
-              logger.info("self.model_name:%s self.model_path: %s", self.model_name,
-                          self.model_path)
-              self.network = None
-              # Load the model in non-blocking mode to prevent blocking timeout.
-              thread = threading.Thread(target=self.load_model)
-              thread.start()
-
-          def load_model(self):
-              logger.info("load network ... \n")
-              self.network = LeNet5()
-              ckpt_file = self.model_path + "/checkpoint_lenet_1-1_1875.ckpt"
-              logger.info("ckpt_file: %s", ckpt_file)
-              param_dict = load_checkpoint(ckpt_file)
-              load_param_into_net(self.network, param_dict)
-              # Inference warm-up. Otherwise, the initial inference will take a long time.
-              self.network_warmup()
-              logger.info("load network successfully ! \n")
-
-          def network_warmup(self):
-              # Inference warm-up. Otherwise, the initial inference will take a long time.
-              logger.info("warmup network ... \n")
-              images = np.array(np.random.randn(1, 1, 32, 32), dtype=np.float32)
-              inputs = Tensor(images, mindspore.float32)
-              inference_result = self.network(inputs)
-              logger.info("warmup network successfully ! \n")
-
-          def _preprocess(self, input_data):
-              preprocessed_result = {}
-              images = []
-              for k, v in input_data.items():
-                  for file_name, file_content in v.items():
-                      image1 = Image.open(file_content)
-                      image1 = image1.resize((1, 32 * 32))
-                      image1 = np.array(image1, dtype=np.float32)
-                      images.append(image1)
-
-              images = np.array(images, dtype=np.float32)
-              logger.info(images.shape)
-              images.resize([len(input_data), 1, 32, 32])
-              logger.info("images shape: %s", images.shape)
-              inputs = Tensor(images, mindspore.float32)
-              preprocessed_result['images'] = inputs
-
-              return preprocessed_result
-
-          def _inference(self, preprocessed_result):
-              inference_result = self.network(preprocessed_result['images'])
-              return inference_result
-
-          def _postprocess(self, inference_result):
-              return str(inference_result)

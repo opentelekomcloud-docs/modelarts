@@ -8,18 +8,18 @@ Creating a Hyperparameter Search Job
 Background
 ----------
 
-Hyperparameters that you want to optimize need to be defined when you configure **Hyperparameters**. You can specify the name, type, default value, and constraints. For details, see :ref:`Defining Hyperparameters <en-us_topic_0000002079176585__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section1883311313516>`.
+Hyperparameters that you want to optimize need to be defined when you configure **Hyperparameters**. You can specify the name, type, default value, and constraints. For details, see :ref:`Defining Hyperparameters <en-us_topic_0000002340887436__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section1883311313516>`.
 
 If the AI engine is **PyTorch-1.4.0-python3.6-v2** or **TF-1.13.1-python3.6-v2** and the hyperparameter to be optimized is of the float type, you can use hyperparameter search on ModelArts.
 
 You can perform the hyperparameter search without any code modification. The procedure is as follows:
 
-#. :ref:`Preparations <en-us_topic_0000002043018920__en-us_topic_0000001846056413_en-us_topic_0000001159996229_section19539763520>`
-#. :ref:`Creating an Algorithm <en-us_topic_0000002043018920__en-us_topic_0000001846056413_en-us_topic_0000001159996229_section54440253422>`
-#. :ref:`Creating a Training Job (New) <en-us_topic_0000002043018920__en-us_topic_0000001846056413_en-us_topic_0000001159996229_section3995430104214>`
-#. :ref:`Viewing Details About a Hyperparameter Search Job <en-us_topic_0000002043018920__en-us_topic_0000001846056413_en-us_topic_0000001159996229_section1194724314164>`
+#. :ref:`Preparations <en-us_topic_0000002340727672__en-us_topic_0000001846056413_en-us_topic_0000001159996229_section19539763520>`
+#. :ref:`Creating an Algorithm <en-us_topic_0000002340727672__en-us_topic_0000001846056413_en-us_topic_0000001159996229_section54440253422>`
+#. :ref:`Creating a Training Job (New) <en-us_topic_0000002340727672__en-us_topic_0000001846056413_en-us_topic_0000001159996229_section3995430104214>`
+#. :ref:`Viewing Details About a Hyperparameter Search Job <en-us_topic_0000002340727672__en-us_topic_0000001846056413_en-us_topic_0000001159996229_section1194724314164>`
 
-.. _en-us_topic_0000002043018920__en-us_topic_0000001846056413_en-us_topic_0000001159996229_section19539763520:
+.. _en-us_topic_0000002340727672__en-us_topic_0000001846056413_en-us_topic_0000001159996229_section19539763520:
 
 Preparations
 ------------
@@ -30,7 +30,7 @@ Preparations
 -  At least one empty folder has been created in OBS for storing the training output.
 -  The OBS directory you use and ModelArts are in the same region.
 
-.. _en-us_topic_0000002043018920__en-us_topic_0000001846056413_en-us_topic_0000001159996229_section54440253422:
+.. _en-us_topic_0000002340727672__en-us_topic_0000001846056413_en-us_topic_0000001159996229_section54440253422:
 
 Creating an Algorithm
 ---------------------
@@ -38,12 +38,12 @@ Creating an Algorithm
 Log in to the ModelArts management console and create an algorithm by referring to :ref:`Creating an Algorithm <develop-modelarts-0009>`. When configuring parameters of the algorithm, pay attention to the configuration of **Hyperparameters** and **Supported Policies**.
 
 
-.. figure:: /_static/images/en-us_image_0000002079098097.png
+.. figure:: /_static/images/en-us_image_0000002340728300.png
    :alt: **Figure 1** Parameters of hyperparameter search
 
    **Figure 1** Parameters of hyperparameter search
 
-Hyperparameters that you want to optimize need to be defined when you configure **Hyperparameters**. You can specify the name, type, default value, and constraints. For details, see :ref:`Defining Hyperparameters <en-us_topic_0000002079176585__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section1883311313516>`.
+Hyperparameters that you want to optimize need to be defined when you configure **Hyperparameters**. You can specify the name, type, default value, and constraints. For details, see :ref:`Defining Hyperparameters <en-us_topic_0000002340887436__en-us_topic_0000001133351332_en-us_topic_0000001071986951_section1883311313516>`.
 
 Select **autoSearch(S)** to enable the auto search function for the algorithm. During an auto search, ModelArts uses a regular expression to obtain the search indicator parameters and performs hyperparameter optimization based on the optimization direction. You need to print search parameters in the code and configure the following parameters:
 
@@ -77,7 +77,7 @@ Select **autoSearch(S)** to enable the auto search function for the algorithm. D
 
 After you submit the request for creating the algorithm, wait until the algorithm is available on the algorithm management page. When the newly created algorithm is available, you can perform other operations.
 
-.. _en-us_topic_0000002043018920__en-us_topic_0000001846056413_en-us_topic_0000001159996229_section3995430104214:
+.. _en-us_topic_0000002340727672__en-us_topic_0000001846056413_en-us_topic_0000001159996229_section3995430104214:
 
 Creating a Training Job (New)
 -----------------------------
@@ -90,7 +90,7 @@ After the hyperparameter search is enabled, you can configure the search indicat
 
 After a hyperparameter search job is created, it will take a period of time to run it.
 
-.. _en-us_topic_0000002043018920__en-us_topic_0000001846056413_en-us_topic_0000001159996229_section1194724314164:
+.. _en-us_topic_0000002340727672__en-us_topic_0000001846056413_en-us_topic_0000001159996229_section1194724314164:
 
 Viewing Details About a Hyperparameter Search Job
 -------------------------------------------------

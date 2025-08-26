@@ -10,10 +10,9 @@ ModelArts is capable of managing models and services. This allows mainstream fra
 Generally, AI model deployment and large-scale implementation are complex.
 
 
-.. figure:: /_static/images/en-us_image_0000002079177809.png
+.. figure:: /_static/images/en-us_image_0000002340729320.png
    :alt: **Figure 1** Process of deploying a model
 
    **Figure 1** Process of deploying a model
 
 -  The real-time inference service features high concurrency, low latency, and elastic scaling, and supports multi-model gray release and A/B testing.
--  ModelArts is optimized based on the high-performance AI inference chip Ascend 310. It can process PBs of inference data within a single day, publish over 1 million inference APIs on the cloud, and control inference network latency to milliseconds.

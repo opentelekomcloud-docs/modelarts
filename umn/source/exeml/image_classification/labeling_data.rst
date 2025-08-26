@@ -24,13 +24,13 @@ Synchronizing or Adding Images
 On the **ExeML** page, click the project name. The **Label Data** tab page is displayed. When creating a project, you can add images from a local PC or synchronize image data from OBS.
 
 
-.. figure:: /_static/images/en-us_image_0000002079181765.png
+.. figure:: /_static/images/en-us_image_0000002374730265.png
    :alt: **Figure 1** Adding local images
 
    **Figure 1** Adding local images
 
 
-.. figure:: /_static/images/en-us_image_0000002079103161.png
+.. figure:: /_static/images/en-us_image_0000002340732268.png
    :alt: **Figure 2** Synchronizing OBS images
 
    **Figure 2** Synchronizing OBS images
@@ -63,4 +63,4 @@ After labeling data, you can modify the labeled data on the **Labeled** tab page
    -  Modifying a label: Click the editing icon in the **Operation** column. In the dialog box that is displayed, enter the new label name and click **OK**. After the modification, the images that have been added with the label use the new label name.
    -  Deleting a label: Click the deletion icon in the **Operation** column. In the displayed dialog box, select **Delete label**, **Delete label and images with only the label (Do not delete source files)**, or **Delete label and images with only the label (Delete source files)**, and click **OK**.
 
-.. |image1| image:: /_static/images/en-us_image_0000002079103169.png
+.. |image1| image:: /_static/images/en-us_image_0000002374850117.png

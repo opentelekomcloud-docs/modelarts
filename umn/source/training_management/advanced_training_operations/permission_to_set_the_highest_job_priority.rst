@@ -12,7 +12,7 @@ Assigning the Permission to Set the Highest Job Priority to an IAM User
 
 #. Log in to the management console as a tenant user, hover the cursor over your username in the upper right corner, and choose **Identity and Access Management** from the drop-down list to switch to the IAM management console.
 
-#. .. _en-us_topic_0000002079097989__li1793015304613:
+#. .. _en-us_topic_0000002340887428__li1793015304613:
 
    On the IAM console, choose **Permissions** > **Policies/Roles** from the navigation pane, click **Create Custom Policy** in the upper right corner, and configure the following parameters.
 
@@ -20,7 +20,7 @@ Assigning the Permission to Set the Highest Job Priority to an IAM User
    -  **Policy View**: Select **Visual editor**.
    -  **Policy Content**: Select **Allow**, **ModelArts Service**, **modelarts:trainJob:setHighPriority**, and default resources.
 
-#. In the navigation pane, choose **User Groups**. Then, click **Authorize** in the **Operation** column of the target user group. On the **Authorize User Group** page, select the custom policies created in :ref:`2 <en-us_topic_0000002079097989__li1793015304613>`, and click **Next**. Then, select the scope and click **OK**.
+#. In the navigation pane, choose **User Groups**. Then, click **Authorize** in the **Operation** column of the target user group. On the **Authorize User Group** page, select the custom policies created in :ref:`2 <en-us_topic_0000002340887428__li1793015304613>`, and click **Next**. Then, select the scope and click **OK**.
 
    After the configuration, all users in the user group have the permission to use Cloud Shell to log in to a running training container.
 

@@ -110,5 +110,5 @@ If team labeling is enabled for a labeling job, view its labeling details in the
 
    Click **Delete** in the **Operation** column to delete the annotator.
 
-.. |image1| image:: /_static/images/en-us_image_0000002043181028.png
-.. |image2| image:: /_static/images/en-us_image_0000002079101757.png
+.. |image1| image:: /_static/images/en-us_image_0000002340893930.png
+.. |image2| image:: /_static/images/en-us_image_0000002374731909.png

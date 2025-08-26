@@ -65,7 +65,7 @@ ModelArts allows you to import table data (CSV files) from OBS.
 Import description:
 
 -  The prerequisite for successful import is that the schema of the data source must be the same as that specified during dataset creation. The schema indicates column names and types of a table. Once specified during dataset creation, the values cannot be changed.
--  When a CSV file is imported from OBS, the data type is not validated, but the number of columns must be the same as that in the schema of the dataset. If the data format is invalid, the data is set to null. For details, see :ref:`Table 3 <en-us_topic_0000002079104369__table5251155510463>`.
+-  When a CSV file is imported from OBS, the data type is not validated, but the number of columns must be the same as that in the schema of the dataset. If the data format is invalid, the data is set to null. For details, see :ref:`Table 3 <en-us_topic_0000002340893974__table5251155510463>`.
 -  You must select the directory where the CSV file is stored. The number of columns in the CSV file must be the same as that in the dataset schema. The schema of the CSV file can be automatically obtained.
 
 .. code-block::

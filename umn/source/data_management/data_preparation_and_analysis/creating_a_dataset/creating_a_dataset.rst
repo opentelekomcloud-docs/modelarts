@@ -26,7 +26,7 @@ Image, Audio, Text, Video, and Free Format
 #. Click **Create**. On the **Create Dataset** page, create a dataset based on the data type and data labeling requirements. Enter the basic information about the dataset.
 
 
-   .. figure:: /_static/images/en-us_image_0000002079104421.png
+   .. figure:: /_static/images/en-us_image_0000002340894062.png
       :alt: **Figure 1** Parameters
 
       **Figure 1** Parameters
@@ -47,9 +47,9 @@ Image, Audio, Text, Video, and Free Format
 
          If data is not stored in OBS and the required data cannot be downloaded from AI Hub, ModelArts enables you to upload the data from a local path. Before uploading data, configure **Storage Path** and **Labeling Status**. Click **Upload data** to select the local file for uploading. Select a labeling format when the labeling status is **Labeled**. The labeling formats of the input data vary depending on the dataset type. For details about the labeling formats supported by ModelArts, see :ref:`Introduction to Data Importing <dataprepare-modelarts-0008>`.
 
-   -  For more details about parameters, see :ref:`Table 1 <en-us_topic_0000002079104369__en-us_topic_0000001139785210_table18965124216518>`.
+   -  For more details about parameters, see :ref:`Table 1 <en-us_topic_0000002340893974__en-us_topic_0000001139785210_table18965124216518>`.
 
-      .. _en-us_topic_0000002079104369__en-us_topic_0000001139785210_table18965124216518:
+      .. _en-us_topic_0000002340893974__en-us_topic_0000001139785210_table18965124216518:
 
       .. table:: **Table 1** Dataset parameters
 
@@ -62,7 +62,7 @@ Image, Audio, Text, Video, and Free Format
          |                                   |                                                                                                                                                                                                                                                                                                                                                                                                                          |
          |                                   |    OBS parallel file systems are not supported. Select an OBS bucket.                                                                                                                                                                                                                                                                                                                                                    |
          |                                   |                                                                                                                                                                                                                                                                                                                                                                                                                          |
-         |                                   |    When you create a dataset, data in the OBS path will be imported to the dataset. If you modify data in OBS, the data in the dataset will be inconsistent with that in OBS. As a result, certain data may be unavailable. If you need to modify data in a dataset, see :ref:`Import Mode <en-us_topic_0000002043025308__section2764112633219>` or :ref:`Importing Data from an OBS Path <dataprepare-modelarts-0012>`. |
+         |                                   |    When you create a dataset, data in the OBS path will be imported to the dataset. If you modify data in OBS, the data in the dataset will be inconsistent with that in OBS. As a result, certain data may be unavailable. If you need to modify data in a dataset, see :ref:`Import Mode <en-us_topic_0000002374851801__section2764112633219>` or :ref:`Importing Data from an OBS Path <dataprepare-modelarts-0012>`. |
          |                                   |                                                                                                                                                                                                                                                                                                                                                                                                                          |
          |                                   |    If the numbers of samples and labels of the dataset exceed quotas, importing the samples and labels will fail.                                                                                                                                                                                                                                                                                                        |
          +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -102,9 +102,9 @@ Tables
 
    -  **Data Type**: Select a data type based on your needs.
 
-   -  For more details about parameters, see :ref:`Table 2 <en-us_topic_0000002079104369__table78034844518>`.
+   -  For more details about parameters, see :ref:`Table 2 <en-us_topic_0000002340893974__table78034844518>`.
 
-      .. _en-us_topic_0000002079104369__table78034844518:
+      .. _en-us_topic_0000002340893974__table78034844518:
 
       .. table:: **Table 2** Dataset parameters
 
@@ -113,7 +113,7 @@ Tables
          +===================================+==================================================================================================================================================================================================================================================================================+
          | Import Operation                  | **Storage Path**: Select an OBS path.                                                                                                                                                                                                                                            |
          +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-         | Schema                            | Names and types of table columns, which must be the same as those of the imported data. Set the column name based on the imported data and select the column type. For details about the supported types, see :ref:`Table 3 <en-us_topic_0000002079104369__table5251155510463>`. |
+         | Schema                            | Names and types of table columns, which must be the same as those of the imported data. Set the column name based on the imported data and select the column type. For details about the supported types, see :ref:`Table 3 <en-us_topic_0000002340893974__table5251155510463>`. |
          |                                   |                                                                                                                                                                                                                                                                                  |
          |                                   | Click **Add Schema** to add a new record. When creating a dataset, you must specify a schema. Once created, the schema cannot be modified.                                                                                                                                       |
          |                                   |                                                                                                                                                                                                                                                                                  |
@@ -129,7 +129,7 @@ Tables
          |                                   | -  **temp**: temporary working directory.                                                                                                                                                                                                                                        |
          +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-      .. _en-us_topic_0000002079104369__table5251155510463:
+      .. _en-us_topic_0000002340893974__table5251155510463:
 
       .. table:: **Table 3** Schema data types
 

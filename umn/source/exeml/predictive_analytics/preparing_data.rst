@@ -35,6 +35,7 @@ Requirements on Datasets
    -  In addition to the label column, the dataset must contain at least two valid feature columns. Ensure that there are at least two values in each feature column and that the percentage of missing data must be lower than 10%.
    -  The training data in CSV file cannot contain the table header. Otherwise, the training fails.
    -  Due to the limitation of the feature filtering algorithm, place the label column in the last column of the dataset. Otherwise, the training may fail.
+   -  When the data type in the dataset is int, the input length is limited to 20 characters.
 
 Requirements for Files Uploaded to OBS
 --------------------------------------

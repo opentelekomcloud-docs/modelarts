@@ -23,4 +23,4 @@ After a prediction request is sent, the service stops and then starts.
 Solution
 --------
 
-Check the image used by the service, identify the cause of the service stop, and rectify the fault. Re-create the AI application and use it to deploy a service.
+Check the image used by the service, identify the cause of the service stop, and rectify the fault. Re-create the model and use it to deploy a service.

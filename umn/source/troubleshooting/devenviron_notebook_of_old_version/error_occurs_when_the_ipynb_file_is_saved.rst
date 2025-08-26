@@ -18,11 +18,11 @@ The same file is modified in two or more development environments at the same ti
 Solution
 --------
 
-Close the same file in other development environments. See :ref:`Figure 1 <en-us_topic_0000002079104225__fig18822143215509>`.
+Close the same file in other development environments. See :ref:`Figure 1 <en-us_topic_0000002340727832__fig18822143215509>`.
 
-.. _en-us_topic_0000002079104225__fig18822143215509:
+.. _en-us_topic_0000002340727832__fig18822143215509:
 
-.. figure:: /_static/images/en-us_image_0000002043183700.png
+.. figure:: /_static/images/en-us_image_0000002340888780.png
    :alt: **Figure 1** Closing the development environment
 
    **Figure 1** Closing the development environment
