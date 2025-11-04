@@ -72,5 +72,9 @@ After a model is deployed as a real-time service, you can access the service pag
       |                                   |                                                                                                                                                                                                  |
       |                                   | You can select the start time and end time when defining the time segment.                                                                                                                       |
       +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Tags                              | Tags that have been added to the service. Tags can be added, modified, and deleted.                                                                                                              |
+      |                                   |                                                                                                                                                                                                  |
+      |                                   | For details about how to use tags, see :ref:`Using TMS Tags to Manage Resources by Group <resmgmt-modelarts_0063>`.                                                                              |
+      +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. |image1| image:: /_static/images/en-us_image_0000002374850333.png
