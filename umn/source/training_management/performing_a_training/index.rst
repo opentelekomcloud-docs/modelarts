@@ -9,6 +9,7 @@ Performing a Training
 -  :ref:`Viewing Training Job Details <develop-modelarts-0013>`
 -  :ref:`Viewing Training Job Logs <develop-modelarts-0097>`
 -  :ref:`Viewing Training Job Events <develop-modelarts-0092>`
+-  :ref:`Viewing Training Job Tags <develop-modelarts-0108>`
 -  :ref:`Viewing the Resource Usage of a Training Job <develop-modelarts-0015>`
 -  :ref:`Viewing Environment Variables of a Training Container <develop-modelarts-0104>`
 -  :ref:`Stopping, Rebuilding, or Searching for a Training Job <develop-modelarts-0017>`
@@ -23,6 +24,7 @@ Performing a Training
    viewing_training_job_details
    viewing_training_job_logs
    viewing_training_job_events
+   viewing_training_job_tags
    viewing_the_resource_usage_of_a_training_job
    viewing_environment_variables_of_a_training_container
    stopping_rebuilding_or_searching_for_a_training_job

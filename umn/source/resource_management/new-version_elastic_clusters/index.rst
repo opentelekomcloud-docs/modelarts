@@ -15,6 +15,7 @@ New-Version Elastic Clusters
 -  :ref:`Deleting a Resource Pool <resmgmt-modelarts_0010>`
 -  :ref:`Abnormal Status of a Dedicated Resource Pool <resmgmt-modelarts_0011>`
 -  :ref:`ModelArts Network <resmgmt-modelarts_0012>`
+-  :ref:`Using TMS Tags to Manage Resources by Group <resmgmt-modelarts_0063>`
 
 .. toctree::
    :maxdepth: 1
@@ -30,3 +31,4 @@ New-Version Elastic Clusters
    deleting_a_resource_pool
    abnormal_status_of_a_dedicated_resource_pool
    modelarts_network
+   using_tms_tags_to_manage_resources_by_group

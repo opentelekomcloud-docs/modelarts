@@ -247,7 +247,23 @@ Creating a Training Job
       |                                   | -  The options are **1hour**, **2hours**, **4hours**, **6hours**, and **Customization** (1 hour to 72 hours).                                                                                                                                                                                                                                                                                           |
       +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-5. Click **Submit** to create the training job.
+5. (Optional) Configure advanced settings.
+
+   .. table:: **Table 5** Advanced settings
+
+      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Parameter                         | Description                                                                                                                                                                                                                        |
+      +===================================+====================================================================================================================================================================================================================================+
+      | Tags                              | ModelArts can work with Tag Management Service (TMS). When creating resource-consuming tasks in ModelArts, for example, training jobs, configure tags for these tasks so that ModelArts can use tags to manage resources by group. |
+      |                                   |                                                                                                                                                                                                                                    |
+      |                                   | For details about how to use tags, see :ref:`Using TMS Tags to Manage Resources by Group <resmgmt-modelarts_0063>`.                                                                                                                |
+      +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+   .. note::
+
+      You can select a predefined TMS tag from the tag drop-down list or customize a tag. Predefined tags are available to all service resources that support tags. Customized tags are available only to the service resources of the user who has created the tags.
+
+6. Click **Submit** to create the training job.
 
    A training job generally runs for a period of time. To view the real-time status and basic information of a training job, switch to the training job list.
 
