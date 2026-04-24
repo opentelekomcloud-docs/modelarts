@@ -22,22 +22,24 @@ Solution
 
 Initialize the development environment on the dedicated resource pool page.
 
-#. Go to the **Dedicated Resource Pools** page and choose **More** > **Set Job Type** in the **Operation** column.
+#. Go to the **Resource Management > Elastic Clusters** page and choose **More** > **Set Job Type** in the **Operation** column.
 
-   |image1|
+
+   .. figure:: /_static/images/en-us_image_0000002578546691.png
+      :alt: **Figure 1** Set Job Type
+
+      **Figure 1** Set Job Type
 
 #. In the **Set Job Type** dialog box, select **DevEnviron** and click **OK**. Then, the development environment is being initialized. After its status changes to **Running**, the newly purchased dedicated resource pool can be used to create notebook instances.
 
 
-   .. figure:: /_static/images/en-us_image_0000002340889292.png
-      :alt: **Figure 1** Setting job type to DevEnviron
+   .. figure:: /_static/images/en-us_image_0000002548110696.png
+      :alt: **Figure 2** Setting job type to DevEnviron
 
-      **Figure 1** Setting job type to DevEnviron
+      **Figure 2** Setting job type to DevEnviron
 
 
-   .. figure:: /_static/images/en-us_image_0000002374727501.png
-      :alt: **Figure 2** Initializing the development environment
+   .. figure:: /_static/images/en-us_image_0000002571423233.png
+      :alt: **Figure 3** Initializing the development environment
 
-      **Figure 2** Initializing the development environment
-
-.. |image1| image:: /_static/images/en-us_image_0000002340729532.png
+      **Figure 3** Initializing the development environment

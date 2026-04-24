@@ -10,7 +10,7 @@ When deploying a batch service, you can select the location of the output data d
 Procedure
 ---------
 
-#. Log in to the ModelArts management console and choose **Service Deployment** > **Batch Services**.
+#. Log in to the ModelArts management console and choose **Model Deployment > Batch Services**.
 
 #. Click the name of the target service in the **Completed** status. The service details page is displayed.
 
@@ -28,4 +28,4 @@ Procedure
       -  If audio files are input, a result file is generated for each audio file in the *Audio file name*\ **\__result.txt** format, for example, **1-36929-A-47.wav_result.txt**.
       -  If table data is input, the result file is generated in the *Table name*\ **\__result.txt** format, for example, **train.csv_result.txt**.
 
-.. |image1| image:: /_static/images/en-us_image_0000002374730469.png
+.. |image1| image:: /_static/images/en-us_image_0000002541063118.png

@@ -10,7 +10,7 @@ To add data for an existing project, perform the following operations. The opera
 Obtaining the Data Source of an ExeML Project
 ---------------------------------------------
 
-#. Log in to the ModelArts management console and choose **ExeML** from the left navigation pane.
+#. Log in to the ModelArts management console and choose **Development Workspace > ExeML** from the left navigation pane.
 #. In the ExeML project list, you can view the data source corresponding to the project in the **Data Source** column. Click your desired data source link to go to the dataset selected or created during project creation.
 
 Uploading New Data to OBS

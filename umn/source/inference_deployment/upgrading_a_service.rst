@@ -9,9 +9,9 @@ For a deployed service, you can modify its basic information to match service ch
 
 You can modify the basic information about a service in either of the following ways:
 
-:ref:`Method 1: Modify Service Information on the Service Management Page <en-us_topic_0000002374850185__en-us_topic_0172547189_section6987155265816>`
+:ref:`Method 1: Modify Service Information on the Service Management Page <en-us_topic_0000002571423389__en-us_topic_0172547189_section6987155265816>`
 
-:ref:`Method 2: Modify Service Information on the Service Details Page <en-us_topic_0000002374850185__en-us_topic_0172547189_section12604201617210>`
+:ref:`Method 2: Modify Service Information on the Service Details Page <en-us_topic_0000002571423389__en-us_topic_0172547189_section12604201617210>`
 
 Prerequisites
 -------------
@@ -36,12 +36,12 @@ Constraints
       | OBS                                    | Not supported                | Not supported                                                                                                                           |
       +----------------------------------------+------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002374850185__en-us_topic_0172547189_section6987155265816:
+.. _en-us_topic_0000002571423389__en-us_topic_0172547189_section6987155265816:
 
 Method 1: Modify Service Information on the Service Management Page
 -------------------------------------------------------------------
 
-#. Log in to the ModelArts management console and choose **Service Deployment** from the left navigation pane. Go to the service management page of the target service.
+#. Log in to the ModelArts management console and choose **Model Deployment** from the left navigation pane. Go to the service management page of the target service.
 
 #. In the service list, click **Modify** in the **Operation** column of the target service, modify basic service information, and submit the modification task as prompted.
 
@@ -50,12 +50,12 @@ Method 1: Modify Service Information on the Service Management Page
    -  For details about the real-time service parameters, see :ref:`Deploying as a Real-Time Service <inference-modelarts-0018>`.
    -  For details about the batch service parameters, see :ref:`Deploying as a Batch Service <inference-modelarts-0040>`.
 
-.. _en-us_topic_0000002374850185__en-us_topic_0172547189_section12604201617210:
+.. _en-us_topic_0000002571423389__en-us_topic_0172547189_section12604201617210:
 
 Method 2: Modify Service Information on the Service Details Page
 ----------------------------------------------------------------
 
-#. Log in to the ModelArts management console and choose **Service Deployment** from the left navigation pane. Go to the service management page of the target service.
+#. Log in to the ModelArts management console and choose **Model Deployment** from the left navigation pane. Go to the service management page of the target service.
 
 #. Click the name of the target service. The service details page is displayed.
 

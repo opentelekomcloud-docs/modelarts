@@ -8,7 +8,7 @@ Changing Job Types Supported by a Resource Pool
 Description
 -----------
 
-ModelArts supports many types of jobs. Some of them can run in dedicated resource pools, including training jobs, inference services, and notebook development environments.
+ModelArts supports many types of jobs. Some of them can run in Standard Clusters, including training jobs, inference services, and notebook development environments.
 
 You can change job types supported by a dedicated resource pool. Available options for **Job Type** are **Training Job**, **Inference Service**, and **DevEnviron**.
 
@@ -26,7 +26,7 @@ The target dedicated resource pool must be running.
 Procedure
 ---------
 
-#. Log in to the ModelArts management console. In the navigation pane, choose **Dedicated Resource Pools** > **Elastic Cluster**.
+#. Log in to the ModelArts management console. In the navigation pane, choose **Resource Management** **> Standard Cluster**.
 #. In the **Operation** column of a resource pool, choose **More** > **Set Job Type**.
 #. In the **Set Job Type** dialog box, select job types.
 #. Click **OK**.

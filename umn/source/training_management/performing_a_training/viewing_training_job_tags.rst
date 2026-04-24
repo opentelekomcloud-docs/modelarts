@@ -7,7 +7,7 @@ Viewing Training Job Tags
 
 You can add tags to a training job for quick search.
 
-#. Log in to the ModelArts console. In the navigation pane, choose **Training Management** > **Training Jobs**.
+#. Log in to the ModelArts console. In the navigation pane, choose **Model Training > Training Jobs**.
 
 #. In the training job list, click the name of the target job to go to the training job details page.
 

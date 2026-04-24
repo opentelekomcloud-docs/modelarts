@@ -10,7 +10,7 @@ A file exceeding 5 GB cannot be directly uploaded to JupyterLab.
 To upload files exceeding 5 GB, upload them to OBS. Then, call the ModelArts MoXing or SDK API in the target notebook instance to read and write the files in OBS.
 
 
-.. figure:: /_static/images/en-us_image_0000001846137341.png
+.. figure:: /_static/images/en-us_image_0000002571423179.png
    :alt: **Figure 1** Uploading and downloading large files in a notebook instance
 
    **Figure 1** Uploading and downloading large files in a notebook instance
@@ -47,17 +47,17 @@ The procedure is as follows:
 
          unzip xxx.zip  # Directly decompress the package in the path where the package is stored.
 
-      After the code is executed, open the terminal shown in :ref:`Figure 2 <en-us_topic_0000001846055525__fig711883121018>` and run the **ls /home/ma-user/work** command to view the file downloaded to the notebook instance. Alternatively, view the downloaded file in the left navigation pane of Jupyter. If the file is not displayed, refresh the page.
+      After the code is executed, open the terminal shown in :ref:`Figure 2 <en-us_topic_0000002541062616__fig711883121018>` and run the **ls /home/ma-user/work** command to view the file downloaded to the notebook instance. Alternatively, view the downloaded file in the left navigation pane of Jupyter. If the file is not displayed, refresh the page.
 
-      .. _en-us_topic_0000001846055525__fig711883121018:
+      .. _en-us_topic_0000002541062616__fig711883121018:
 
-      .. figure:: /_static/images/en-us_image_0000001846057261.png
+      .. figure:: /_static/images/en-us_image_0000002576413857.png
          :alt: **Figure 2** Opening the terminal
 
          **Figure 2** Opening the terminal
 
 
-      .. figure:: /_static/images/en-us_image_0000001846137357.png
+      .. figure:: /_static/images/en-us_image_0000002571543155.png
          :alt: **Figure 3** File downloaded to a notebook instance
 
          **Figure 3** File downloaded to a notebook instance

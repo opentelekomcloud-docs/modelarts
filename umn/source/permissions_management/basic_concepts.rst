@@ -55,19 +55,19 @@ By default, new IAM users do not have any permissions assigned. You need to add 
 
 When assigning permissions to a user group, IAM does not directly assign specific permissions to the user group. Instead, IAM needs to add the permissions to a policy and then assign the policy to the user group. To facilitate user permissions management, each cloud service provides some preset policies for you to directly use. If the preset policies cannot meet your requirements of fine-grained permissions management, you can customize policies.
 
-:ref:`Table 1 <en-us_topic_0000002340727632__table16882637182018>` lists all the preset system-defined policies supported by ModelArts.
+:ref:`Table 1 <en-us_topic_0000002571422747__table16882637182018>` lists all the preset system-defined policies supported by ModelArts.
 
-.. _en-us_topic_0000002340727632__table16882637182018:
+.. _en-us_topic_0000002571422747__table16882637182018:
 
 .. table:: **Table 1** System-defined policies supported by ModelArts
 
-   +----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | Policy                     | Feature                                                                                                                                           | Type                  |
-   +============================+===================================================================================================================================================+=======================+
-   | ModelArts FullAccess       | Administrator permissions for ModelArts. Users granted these permissions can operate and use ModelArts.                                           | System-defined policy |
-   +----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-   | ModelArts CommonOperations | Common user permissions for ModelArts. Users granted these permissions can operate and use ModelArts, but cannot manage dedicated resource pools. | System-defined policy |
-   +----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+   +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+   | Policy                     | Feature                                                                                                                                   | Type                  |
+   +============================+===========================================================================================================================================+=======================+
+   | ModelArts FullAccess       | Administrator permissions for ModelArts. Users granted these permissions can operate and use ModelArts.                                   | System-defined policy |
+   +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+   | ModelArts CommonOperations | Common user permissions for ModelArts. Users granted these permissions can operate and use ModelArts, but cannot manage Elastic Clusters. | System-defined policy |
+   +----------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
 
 Generally, ModelArts FullAccess is assigned only to administrators. If fine-grained management is not required, assigning ModelArts CommonOperations to all users will meet the development requirements of most small teams. If you want to customize policies for fine-grained permissions management, see :ref:`IAM <modelarts_24_0080>`.
 
@@ -85,7 +85,7 @@ ModelArts Agency Authorization
 
 ModelArts must be authorized by users to access other cloud services for AI computing. In the IAM permission system, such authorization is performed through agencies.
 
-To simplify agency authorization, ModelArts supports automatic agency authorization configuration. You only need to configure an agency for yourself or specified users on the **Global Configuration** page of the ModelArts console.
+To simplify agency authorization, ModelArts supports automatic agency authorization configuration. You only need to configure an agency for yourself or specified users on the **Permission Management** page of the ModelArts console.
 
 .. note::
 
@@ -93,17 +93,17 @@ To simplify agency authorization, ModelArts supports automatic agency authorizat
    -  ModelArts agency authorization is region-specific, which means that you must perform agency authorization in each region you use.
 
 
-.. figure:: /_static/images/en-us_image_0000002340727712.png
-   :alt: **Figure 1** Global configuration
+.. figure:: /_static/images/en-us_image_0000002578288257.png
+   :alt: **Figure 1** Permission Management
 
-   **Figure 1** Global configuration
+   **Figure 1** Permission Management
 
-On the **Global Configuration** page of the ModelArts console, after you click **Add Authorization**, you can configure an agency for a specific user or all users. Generally, an agency named **modelarts_agency_<**\ *Username*\ **>\_**\ *Random ID* is created by default. In the **Permissions** area, you can select the preset permission configuration or select the required policies. If both options cannot meet your requirements, you can create an agency on the IAM management page (you need to delegate ModelArts to access your resources), and then use an existing agency instead of adding an agency on the **Add Authorization** page.
+On the\ **Permission Management** page of the ModelArts console, after you click **Add Authorization**, you can configure an agency for a specific user or all users. Generally, an agency named **ma_agency_<**\ *Username*\ **>\_**\ *Random ID* is created by default. In the **Permissions** area, you can select the preset permission configuration or select the required policies. If both options cannot meet your requirements, you can create an agency on the IAM management page (you need to delegate ModelArts to access your resources), and then use an existing agency instead of adding an agency on the **Add Authorization** page.
 
 ModelArts associates multiple users with one agency. This means that if two users need to configure the same agency, you do not need to create an agency for each user. Instead, you only need to configure the same agency for the two users.
 
 
-.. figure:: /_static/images/en-us_image_0000002374725669.png
+.. figure:: /_static/images/en-us_image_0000002571422853.png
    :alt: **Figure 2** Mapping between users and agencies
 
    **Figure 2** Mapping between users and agencies
@@ -119,7 +119,7 @@ In strict authorization mode, explicit authorization by the account administrato
 
 In non-strict authorization mode, IAM users can use ModelArts without explicit authorization. The administrator needs to configure the deny policy for IAM users to prevent them from using some ModelArts functions.
 
-The administrator can change the authorization mode on the **Global Configuration** page.
+The administrator can change the authorization mode on the **Permission Management** page.
 
 .. important::
 
@@ -150,7 +150,7 @@ Key features of ModelArts permissions management:
 
 -  If you are an individual user, you do not need to consider fine-grained permissions management. Your account has all permissions to use ModelArts by default.
 -  All functions of ModelArts are controlled by IAM. You can use IAM authorization to implement fine-grained permissions management for specific users.
--  All users (including individual users) can use specific functions only after agency authorization on ModelArts (**Settings** > **Add Authorization**). Otherwise, unexpected errors may occur.
+-  All users (including individual users) can use specific functions only after agency authorization on ModelArts (**Permission Management** > **Add Authorization**). Otherwise, unexpected errors may occur.
 -  If you have enabled the enterprise project function, you can also enable ModelArts workspace and use both basic authorization and workspace for refined permissions management.
 
-.. |image1| image:: /_static/images/en-us_image_0000002340727744.png
+.. |image1| image:: /_static/images/en-us_image_0000002571422831.png

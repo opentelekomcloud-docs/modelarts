@@ -7,7 +7,7 @@ How Do I View GPU Usage on the Notebook?
 
 If you select GPU when creating a notebook instance, perform the following operations to view GPU usage:
 
-#. Log in to the ModelArts management console, and choose **DevEnviron > Notebooks**.
+#. Log in to the ModelArts management console, and choose **Development Workspace > Notebook**.
 
 #. In the **Operation** column of the target notebook instance in the notebook list, click **Open** to go to the **Jupyter** page.
 
@@ -43,6 +43,6 @@ If you select GPU when creating a notebook instance, perform the following opera
 
    If no process is using GPUs, the file may be unavailable or empty.
 
-.. |image1| image:: /_static/images/en-us_image_0000002374847569.png
-.. |image2| image:: /_static/images/en-us_image_0000002340729728.png
-.. |image3| image:: /_static/images/en-us_image_0000002340889480.png
+.. |image1| image:: /_static/images/en-us_image_0000002571423563.png
+.. |image2| image:: /_static/images/en-us_image_0000002540903568.png
+.. |image3| image:: /_static/images/en-us_image_0000002571543527.png

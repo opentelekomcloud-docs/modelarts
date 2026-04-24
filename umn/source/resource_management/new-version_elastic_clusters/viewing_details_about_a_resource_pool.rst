@@ -5,7 +5,7 @@
 Viewing Details About a Resource Pool
 =====================================
 
-#. Log in to the ModelArts management console. In the navigation pane, choose **Dedicated Resource Pools** > **Elastic Cluster**.
+#. Log in to the ModelArts management console. In the navigation pane, choose **Resource Management** **> Standard Cluster**.
 #. In the resource pool list, click a resource pool to go to its details page and view its information.
 
    -  If there are multiple resource pools, click |image1| in the upper left corner of the details page of one resource pool to switch between resource pools. Click **More** in the upper right corner to perform operations such as adjust capacity, delete the resource pool, or set the job type. The available operations vary depending on resource pools.
@@ -88,7 +88,7 @@ If a logical subpool has been created in a resource pool, you can enable node bi
 
    After node binding is enabled, the service background automatically binds nodes to the logical subpool.
 
-   #. Log in to the ModelArts console. In the navigation pane on the left, choose **Dedicated Resource Pools** > **Elastic Clusters**.
+   #. Log in to the ModelArts console. In the navigation pane on the left, choose **Delicated Resource Pools > Elastic Clusters**.
    #. Locate the target resource pool in the list and choose |image4| > **Enable Node Binding** in the **Operation** column.
    #. In the displayed **Enable Node Binding** dialog box, click **OK**.
 
@@ -98,12 +98,12 @@ If a logical subpool has been created in a resource pool, you can enable node bi
 
       Once node binding is disabled, the jobs in the original logical subpool may be occupied. Exercise caution when performing this operation.
 
-   #. Log in to the ModelArts console. In the navigation pane on the left, choose **Dedicated Resource Pools** > **Elastic Clusters**.
+   #. Log in to the ModelArts console. In the navigation pane on the left, choose **Resource Management** **> Standard Cluster**.
    #. Locate the target resource pool in the list and choose |image5| > **Disable Node Binding** in the **Operation** column.
    #. In the displayed dialog box, confirm the information, enter **YES** in the text box, and click **OK**.
 
-.. |image1| image:: /_static/images/en-us_image_0000002340890712.png
-.. |image2| image:: /_static/images/en-us_image_0000002374728901.png
-.. |image3| image:: /_static/images/en-us_image_0000002374848749.png
-.. |image4| image:: /_static/images/en-us_image_0000002375090341.png
-.. |image5| image:: /_static/images/en-us_image_0000002375010457.png
+.. |image1| image:: /_static/images/en-us_image_0000002541062546.png
+.. |image2| image:: /_static/images/en-us_image_0000002571542827.png
+.. |image3| image:: /_static/images/en-us_image_0000002571422869.png
+.. |image4| image:: /_static/images/en-us_image_0000002540902862.png
+.. |image5| image:: /_static/images/en-us_image_0000002541062446.png

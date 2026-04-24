@@ -8,7 +8,7 @@ Restrictions on the Size of an Image for Importing a Model
 Symptom
 -------
 
-When an imported model is used to deploy a service, the system displays a message indicating that the idle disk space is insufficient for service deployment.
+When an imported model is used to deploy a service, the system displays a message indicating that the idle disk space is insufficient for Model Deployment.
 
 Possible Causes
 ---------------

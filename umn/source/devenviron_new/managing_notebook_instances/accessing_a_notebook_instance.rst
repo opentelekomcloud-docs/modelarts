@@ -22,5 +22,5 @@ Create an instance and mount the persistent storage to **/home/ma-user/work**.
 
 The data stored in the **work** directory only is retained after the instance is stopped or restarted. When you use a development environment, store the data for persistence in **/home/ma-user/work**.
 
-.. |image1| image:: /_static/images/en-us_image_0000001799498028.png
-.. |image2| image:: /_static/images/en-us_image_0000001846057113.png
+.. |image1| image:: /_static/images/en-us_image_0000002571423227.png
+.. |image2| image:: /_static/images/en-us_image_0000002540903224.png

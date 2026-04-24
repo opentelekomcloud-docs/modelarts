@@ -12,7 +12,7 @@ Installing an External Library from a Jupyter Notebook
 
 Assume that you want to install Shapely from a notebook instance. Follow the following instructions:
 
-#. In the left navigation pane of the ModelArts management console, choose **DevEnviron > Notebooks**. Open a notebook instance in the displayed notebook instance list.
+#. In the left navigation pane of the ModelArts management console, choose **Development Workspace > Notebook**. Open a notebook instance in the displayed notebook instance list.
 
 #. In the **Jupyter Notebook** page that is displayed, click **New** and select the required AI engine from the drop-down list.
 
@@ -25,7 +25,7 @@ Installing an External Library from a Terminal
 
 Assume that you want to install Shapely from the terminal of a notebook instance by using pip. Follow the following instructions:
 
-#. In the left navigation pane of the ModelArts management console, choose **DevEnviron > Notebooks**. Open a notebook instance in the displayed notebook instance list.
+#. In the left navigation pane of the ModelArts management console, choose **Development Workspace > Notebook**. Open a notebook instance in the displayed notebook instance list.
 
 #. In the displayed Jupyter dashboard, click **New** and choose **Terminal** from the shortcut menu.
 

@@ -12,7 +12,7 @@ Exposed ModelArts functions are controlled through IAM permissions. For example,
 
 ModelArts must access other services for AI computing. For example, ModelArts must access OBS to read your data for training. For security purposes, ModelArts must be authorized to access other cloud services. This is agency authorization.
 
-ModelArts provides one-click auto authorization. You can quickly configure agency authorization on the **Global Configuration** page of ModelArts. Then, ModelArts will automatically create an agency for you and configure it in ModelArts.
+ModelArts provides one-click auto authorization. You can quickly configure agency authorization on the **Permission Management** page of ModelArts. Then, ModelArts will automatically create an agency for you and configure it in ModelArts.
 
 In this mode, the authorization scope is specified based on the preset system policies of dependent services to ensure sufficient permissions for using services. The created agency has almost all permissions of dependent services. If you want to precisely control the scope of permissions granted to an agency, use custom authorization. For details about permissions management, see :ref:`Basic Concepts <modelarts_24_0078>`.
 
@@ -30,19 +30,19 @@ Constraints
 
 -  IAM user
 
-   -  If the agency has been authorized, you can view the authorization information on the **Settings** page.
+   -  If the agency has been authorized, you can view the authorization information on the **Permission Management** page.
    -  If you have not been authorized, ModelArts will display a message indicating that you have not been authorized when you access the **Add Authorization** page. In this case, contact your administrator to add authorization.
 
 Adding Authorization
 --------------------
 
-#. Log in to the ModelArts management console. In the left navigation pane, choose **Settings**. The **Global Configuration** page is displayed.
+#. Log in to the ModelArts management console. In the left navigation pane, choose **Permission Management**. The **Permission Management** page is displayed.
 
 
-   .. figure:: /_static/images/en-us_image_0000002374729281.png
-      :alt: **Figure 1** Settings
+   .. figure:: /_static/images/en-us_image_0000002543538354.png
+      :alt: **Figure 1** Permission Management
 
-      **Figure 1** Settings
+      **Figure 1** Permission Management
 
 #. Click **Add Authorization**. On the **Add Authorization** page that is displayed, configure the parameters.
 
@@ -81,10 +81,10 @@ Adding Authorization
 Viewing Authorized Permissions
 ------------------------------
 
-You can view the configured authorizations on the **Global Configuration** page. Click **View Permissions** in the **Authorization Content** column to view the permission details.
+You can view the configured authorizations on the **Permission Management** page. Click **View Permissions** in the **Authorization Content** column to view the permission details.
 
 
-.. figure:: /_static/images/en-us_image_0000002374849141.png
+.. figure:: /_static/images/en-us_image_0000002574140195.png
    :alt: **Figure 2** View Permissions
 
    **Figure 2** View Permissions
@@ -95,7 +95,7 @@ Changing the Authorization Scope
 #. To change the authorization scope, click **Modify permissions in IAM** in the **View Permissions** dialog box.
 
 
-   .. figure:: /_static/images/en-us_image_0000002374849181.png
+   .. figure:: /_static/images/en-us_image_0000002540902890.png
       :alt: **Figure 3** Modify permissions in IAM
 
       **Figure 3** Modify permissions in IAM
@@ -113,11 +113,11 @@ To better manage your authorization, you can delete the authorization of an IAM 
 
 -  **Deleting the authorization of a user**
 
-   On the **Settings** page, the authorizations configured for IAM users under the current account are displayed. You can click **Delete** in the **Operation** column to delete the authorization of a user. After the deletion takes effect, the user cannot use ModelArts functions.
+   On the **Permission Management**\  page, the authorizations configured for IAM users under the current account are displayed. You can click **Delete** in the **Operation** column to delete the authorization of a user. After the deletion takes effect, the user cannot use ModelArts functions.
 
 -  **Deleting authorizations in batches**
 
-   On the **Settings** page, click **Delete Authorization** above the authorization list to delete all authorizations of the current account. After the deletion, the account and all IAM users under the account cannot use ModelArts functions.
+   On the **Permission Management**\  page, click **Clear Authorization** above the authorization list to delete all authorizations of the current account. After the deletion, the account and all IAM users under the account cannot use ModelArts functions.
 
 FAQs
 ----
@@ -128,7 +128,7 @@ FAQs
 
 #. Where is the entrance for authorization using an access key?
 
-   Access key authorization on the global configuration page has been discontinued. If you used an access key for authorization before, switch to agency authorization. To do so, click **Clear Authorization** on the **Global Configuration** page and use an agency for authorization.
+   Access key authorization on the **Permission Management** page has been discontinued. If you used an access key for authorization before, switch to agency authorization. To do so, click **Clear Authorization** on the **Permission Management** page and use an agency for authorization.
 
 #. How do I obtain an access key (AK/SK)?
 
@@ -137,7 +137,7 @@ FAQs
 #. How do I delete an existing agency from the agency list?
 
 
-   .. figure:: /_static/images/en-us_image_0000002340731304.png
+   .. figure:: /_static/images/en-us_image_0000002540902842.png
       :alt: **Figure 4** Use existing
 
       **Figure 4** Use existing
@@ -145,7 +145,7 @@ FAQs
    Go to the IAM console, click **Agencies** in the navigation pane, and delete the target agency.
 
 
-   .. figure:: /_static/images/en-us_image_0000002340891092.png
+   .. figure:: /_static/images/en-us_image_0000002571422871.png
       :alt: **Figure 5** IAM console
 
       **Figure 5** IAM console

@@ -22,14 +22,14 @@ You can deploy a model as a real-time service that provides a real-time test UI 
 
       The options are **1 hour later**, **2 hours later**, **4 hours later**, **6 hours later**, and **Custom**. If you select **Custom**, enter any integer from 1 to 24 in the text box on the right.
 
-#. After the model deployment is started, view the deployment status on the **Service Deployment** page.
+#. After the model deployment is started, view the deployment status on the **Model Deployment** page.
 
    It takes a certain period of time to deploy a model. When the status in the **Version Manager** pane changes from **Deploying** to **Running**, the deployment is complete.
 
 Testing the Service
 -------------------
 
--  On the **Service Deployment** page, select a service type. For example, on the ExeML page, the object detection model is deployed as a real-time service by default. On the **Real-Time Services** page, click **Prediction** in the **Operation** column of the target service to perform a service test.
+-  On the **Model Deployment** page, select a service type. For example, on the ExeML page, the object detection model is deployed as a real-time service by default. On the **Real-Time Services** page, click **Prediction** in the **Operation** column of the target service to perform a service test.
 -  The following describes the procedure for performing a service test after the predictive analytics model is deployed as a service on the ExeML page.
 
    #. After the model is deployed, you can test the model using code. On the **ExeML** page, click the target project, go to the **Deploy Service** tab page, select a service version in the **Running** state, and enter the code in the **Service Test** pane.

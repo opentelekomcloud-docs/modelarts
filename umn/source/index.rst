@@ -8,7 +8,7 @@ ModelArts - User Guide
    service_overview/index
    preparations/index
    exeml/index
-   data_management/index
+   data_preparation/index
    devenviron_new/index
    devenviron_old/index
    training_management/index

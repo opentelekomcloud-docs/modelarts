@@ -16,27 +16,27 @@ Context
 Procedure
 ---------
 
-#. Log in to the ModelArts management console. In the navigation pane, choose **Settings** and check whether the access authorization has been configured. If not, configure access authorization.
+#. Log in to the ModelArts management console. In the navigation pane, choose **Permission Management** and check whether the access authorization has been configured. If not, configure access authorization.
 
-#. Log in to the ModelArts management console. In the navigation pane on the left, choose **DevEnviron > Notebook** to switch to the new-version **Notebook** page.
+#. Log in to the ModelArts management console. In the navigation pane on the left, choose **Development Workspace > Notebook** to switch to the new-version **Notebook** page.
 
 
-   .. figure:: /_static/images/en-us_image_0000001853035117.png
+   .. figure:: /_static/images/en-us_image_0000002574073981.png
       :alt: **Figure 1** Accessing notebook of the new version
 
       **Figure 1** Accessing notebook of the new version
 
-#. Click **Create**. On the **Create Notebook** page, configure parameters.
+#. Click **Create Notebook**. On the **Create Notebook** page, configure parameters.
 
-   a. Configure basic information of the notebook instance, including its name, description, and auto stop status. For details, see :ref:`Table 1 <en-us_topic_0000001846136097__table1669535791517>`.
+   a. Configure basic information of the notebook instance, including its name, description, and auto stop status. For details, see :ref:`Table 1 <en-us_topic_0000002571422989__table1669535791517>`.
 
 
-      .. figure:: /_static/images/en-us_image_0000001806156600.png
+      .. figure:: /_static/images/en-us_image_0000002540903266.png
          :alt: **Figure 2** Basic information of a notebook instance
 
          **Figure 2** Basic information of a notebook instance
 
-      .. _en-us_topic_0000001846136097__table1669535791517:
+      .. _en-us_topic_0000002571422989__table1669535791517:
 
       .. table:: **Table 1** Basic parameters
 
@@ -52,15 +52,15 @@ Procedure
          |                                   | The options are **1 hour**, **2 hours**, **4 hours**, **6 hours**, and **Custom**. You can select **Custom** to specify any integer from 1 to 24 hours.                                                                  |
          +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   b. Configure notebook parameters, such as the image and instance flavor. For details, see :ref:`Table 2 <en-us_topic_0000001846136097__table4606194015227>`.
+   b. Configure notebook parameters, such as the image and instance flavor. For details, see :ref:`Table 2 <en-us_topic_0000002571422989__table4606194015227>`.
 
 
-      .. figure:: /_static/images/en-us_image_0000001806316500.png
+      .. figure:: /_static/images/en-us_image_0000002571423271.png
          :alt: **Figure 3** Notebook instance parameters
 
          **Figure 3** Notebook instance parameters
 
-      .. _en-us_topic_0000001846136097__table4606194015227:
+      .. _en-us_topic_0000002571422989__table4606194015227:
 
       .. table:: **Table 2** Notebook instance parameters
 
@@ -94,7 +94,7 @@ Procedure
          |                                   |                                                                                                                                                                                                                                                                                                                                                  |
          |                                   |    Set disk space, ranging from 5 GB to 4096 GB, based on actual usage. The default value is 5 GB.                                                                                                                                                                                                                                               |
          |                                   |                                                                                                                                                                                                                                                                                                                                                  |
-         |                                   | -  **SFS**, which is supported by dedicated resource pools only                                                                                                                                                                                                                                                                                  |
+         |                                   | -  **SFS**, which is supported by Standard Clusters only                                                                                                                                                                                                                                                                                         |
          |                                   |                                                                                                                                                                                                                                                                                                                                                  |
          |                                   | All the storage paths of **Default**, **EVS**, and **SFS** are mounted to **/home/ma-user/work**. All read and write operations on files in the notebook instance are stored in this directory, not in OBS.                                                                                                                                      |
          |                                   |                                                                                                                                                                                                                                                                                                                                                  |
@@ -137,7 +137,7 @@ Procedure
 #. In the notebook instance list, click the instance name. On the instance details page that is displayed, view the instance configuration.
 
 
-   .. figure:: /_static/images/en-us_image_0000001806157356.png
+   .. figure:: /_static/images/en-us_image_0000002571423283.png
       :alt: **Figure 4** Details about a notebook instance
 
       **Figure 4** Details about a notebook instance

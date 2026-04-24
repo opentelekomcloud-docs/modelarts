@@ -22,4 +22,4 @@ Solution
 
 Disable the plug-in and save file again.
 
-.. |image1| image:: /_static/images/en-us_image_0000002340888604.png
+.. |image1| image:: /_static/images/en-us_image_0000002540903570.png

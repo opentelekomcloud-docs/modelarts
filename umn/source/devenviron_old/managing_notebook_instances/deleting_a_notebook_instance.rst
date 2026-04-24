@@ -7,7 +7,7 @@ Deleting a Notebook Instance
 
 You can delete notebook instances that are no longer used to release resources.
 
-#. Log in to the ModelArts management console. In the left navigation pane, choose **DevEnviron > Notebooks** to switch to the **Notebooks** page.
+#. Log in to the ModelArts management console. In the left navigation pane, choose **Development Workspace > Notebook** to switch to the **Notebooks** page.
 #. In the notebook instance list, locate the row where the target notebook instance resides and click **Delete** in the **Operation** column. In the dialog box that is displayed, click **OK**.
 
    .. note::

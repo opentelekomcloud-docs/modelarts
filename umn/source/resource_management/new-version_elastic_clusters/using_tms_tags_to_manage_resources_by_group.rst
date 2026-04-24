@@ -7,23 +7,23 @@ Using TMS Tags to Manage Resources by Group
 
 ModelArts can work with Tag Management Service (TMS). When creating resource-consuming tasks in ModelArts, configure tags for these tasks so that ModelArts can use tags to manage resources by group.
 
-ModelArts allows you to configure tags when you create training jobs, notebook instances, real-time inference services, or standard dedicated resource pools.
+ModelArts allows you to configure tags when you create training jobs, notebook instances, real-time inference services, or standard Standard Clusters.
 
 Operation Process
 -----------------
 
-#. :ref:`Step 1 Create Predefined Tags on TMS <en-us_topic_0000002459970966__section147721921112>`
-#. :ref:`Step 2 Add a Tag to a ModelArts Task <en-us_topic_0000002459970966__section4865163351118>`
-#. :ref:`Step 3 Obtain ModelArts Resource Usage by Resource Type in TMS <en-us_topic_0000002459970966__section13310346154612>`
+#. :ref:`Step 1 Create Predefined Tags on TMS <en-us_topic_0000002541062376__section147721921112>`
+#. :ref:`Step 2 Add a Tag to a ModelArts Task <en-us_topic_0000002541062376__section4865163351118>`
+#. :ref:`Step 3 Obtain ModelArts Resource Usage by Resource Type in TMS <en-us_topic_0000002541062376__section13310346154612>`
 
-.. _en-us_topic_0000002459970966__section147721921112:
+.. _en-us_topic_0000002541062376__section147721921112:
 
 Step 1 Create Predefined Tags on TMS
 ------------------------------------
 
 Log in to the TMS console and create tags on the **Predefined Tags** page. The created tags are global and can be used in all regions.
 
-.. _en-us_topic_0000002459970966__section4865163351118:
+.. _en-us_topic_0000002541062376__section4865163351118:
 
 Step 2 Add a Tag to a ModelArts Task
 ------------------------------------
@@ -50,7 +50,7 @@ When creating a notebook instance, training job, or real-time inference services
 
    When adding a tag to a ModelArts task, you can create new tags by specifying the keys and values of the new tags. The created tags are available for only the current project.
 
-.. _en-us_topic_0000002459970966__section13310346154612:
+.. _en-us_topic_0000002541062376__section13310346154612:
 
 Step 3 Obtain ModelArts Resource Usage by Resource Type in TMS
 --------------------------------------------------------------
@@ -58,10 +58,10 @@ Step 3 Obtain ModelArts Resource Usage by Resource Type in TMS
 Log in to the TMS console. On the **Resources Tag** page, view resource tasks in specified regions based on resource types and tags.
 
 -  **Region**: A region and availability zone (AZ) identify the location of a data center. You can create resources in a specific region and AZ. For details about regions, see `Region and AZ <https://docs.otc.t-systems.com/image-management-service/umn/overview/basic_concepts/region_and_az.html>`__.
--  **Resource Type**: :ref:`Table 1 <en-us_topic_0000002459970966__table51761326797>` lists the resource types that can be viewed on ModelArts.
+-  **Resource Type**: :ref:`Table 1 <en-us_topic_0000002541062376__table51761326797>` lists the resource types that can be viewed on ModelArts.
 -  **Resource Tag**: If no tag is specified, all resources are displayed, regardless of whether the resources are configured with tags. One or multiple tags can be selected to obtain resource usage.
 
-.. _en-us_topic_0000002459970966__table51761326797:
+.. _en-us_topic_0000002541062376__table51761326797:
 
 .. table:: **Table 1** Resource types that can be viewed on ModelArts
 
@@ -71,7 +71,7 @@ Log in to the TMS console. On the **Resources Tag** page, view resource tasks in
    ModelArts-Notebook        Notebook instances in ModelArts DevEnviron
    ModelArts-TrainingJob     ModelArts training jobs
    ModelArts-RealtimeService ModelArts real-time inference services
-   ModelArts-ResourcePool    ModelArts dedicated resource pools
+   ModelArts-ResourcePool    ModelArts Standard Clusters
    ========================= ==========================================
 
 .. note::

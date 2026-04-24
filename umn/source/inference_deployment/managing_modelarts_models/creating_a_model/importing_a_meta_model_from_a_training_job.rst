@@ -23,13 +23,13 @@ Prerequisites
 Creating a Model
 ----------------
 
-#. Log in to the ModelArts management console and choose **Model Management (AI Applications)** in the left navigation pane. The **Model Management** page is displayed.
-#. Click **Create** in the upper left corner.
+#. Log in to the ModelArts management console and choose **Model Management** in the left navigation pane. The **Model Management** page is displayed.
+#. Click **Create Model** in the upper left corner.
 #. On the displayed page, configure parameters.
 
-   a. Set basic information about the model. For details about the parameters, see :ref:`Table 1 <en-us_topic_0000002340892132__en-us_topic_0207629475_table19428112584211>`.
+   a. Set basic information about the model. For details about the parameters, see :ref:`Table 1 <en-us_topic_0000002541063060__en-us_topic_0207629475_table19428112584211>`.
 
-      .. _en-us_topic_0000002340892132__en-us_topic_0207629475_table19428112584211:
+      .. _en-us_topic_0000002541063060__en-us_topic_0207629475_table19428112584211:
 
       .. table:: **Table 1** Parameters of basic model information
 
@@ -42,14 +42,14 @@ Creating a Model
          |                                   |                                                                                                                                                                                             |
          |                                   | .. note::                                                                                                                                                                                   |
          |                                   |                                                                                                                                                                                             |
-         |                                   |    After a model is created, you can :ref:`create new versions <en-us_topic_0000002374730361__en-us_topic_0171858290_section102881451161111>` using different meta models for optimization. |
+         |                                   |    After a model is created, you can :ref:`create new versions <en-us_topic_0000002541063068__en-us_topic_0171858290_section102881451161111>` using different meta models for optimization. |
          +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
          | Description                       | Brief description of a model                                                                                                                                                                |
          +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   b. Select the meta model source and set related parameters. Set **Meta Model Source** to **Training job**. For details about the parameters, see :ref:`Table 2 <en-us_topic_0000002340892132__en-us_topic_0207629475_table104931647171713>`.
+   b. Select the meta model source and set related parameters. Set **Meta Model Source** to **Training job**. For details about the parameters, see :ref:`Table 2 <en-us_topic_0000002541063060__en-us_topic_0207629475_table104931647171713>`.
 
-      .. _en-us_topic_0000002340892132__en-us_topic_0207629475_table104931647171713:
+      .. _en-us_topic_0000002541063060__en-us_topic_0207629475_table104931647171713:
 
       .. table:: **Table 2** Parameters of the meta model source
 
@@ -78,4 +78,4 @@ Creating a Model
 Follow-Up Procedure
 -------------------
 
-:ref:`Deploying a Model as a Service <en-us_topic_0000002340732432__section5706068262>`: In the model list, click the down arrow on the left of a model name to check all versions of the model. Locate the row that contains the target version, click **Deploy** in the **Operation** column, and select a deployment type from the drop-down list box. The model can be deployed in a deployment type selected during model creation.
+:ref:`Deploying a Model as a Service <en-us_topic_0000002540903372__section5706068262>`: In the model list, click the down arrow on the left of a model name to check all versions of the model. Locate the row that contains the target version, click **Deploy** in the **Operation** column, and select a deployment type from the drop-down list box. The model can be deployed in a deployment type selected during model creation.

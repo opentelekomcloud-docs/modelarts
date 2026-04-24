@@ -8,7 +8,7 @@ Introduction to Inference
 After an AI model is developed, you can use it to create a model and quickly deploy the application as an inference service. The AI inference capabilities can be integrated into your IT platform by calling APIs.
 
 
-.. figure:: /_static/images/en-us_image_0000002340892352.png
+.. figure:: /_static/images/en-us_image_0000002571423421.png
    :alt: **Figure 1** Inference
 
    **Figure 1** Inference
@@ -18,7 +18,7 @@ After an AI model is developed, you can use it to create a model and quickly dep
 -  Deploy as a service: Deploy the model as a container instance in the resource pool and register inference APIs that can be accessed externally.
 -  Perform inference: Add the function of calling the inference APIs to your application to integrate AI inference into the service process.
 
-.. _en-us_topic_0000002340732432__section5706068262:
+.. _en-us_topic_0000002540903372__section5706068262:
 
 Deploying a Model as a Service
 ------------------------------

@@ -20,19 +20,19 @@ Based on the preceding symptoms, the cause is that the Terminal environment is i
 Solution
 --------
 
-#. Log in to the ModelArts management console, and choose **DevEnviron > Notebooks**.
+#. Log in to the ModelArts management console, and choose **Development Workspace > Notebook**.
 
 #. In the **Operation** column of the target notebook instance in the notebook list, click **Open** to go to the **Jupyter** page.
 
 #. On the **Files** tab page of the **Jupyter** page, click **New** and select **Terminal**. The **Terminal** page is displayed.
 
 
-   .. figure:: /_static/images/en-us_image_0000002340729556.png
+   .. figure:: /_static/images/en-us_image_0000002540903276.png
       :alt: **Figure 1** Going to the **Terminal** page
 
       **Figure 1** Going to the **Terminal** page
 
-#. Run the following command to obtain the command line for activating the environment, as shown in :ref:`Figure 2 <en-us_topic_0000002374846137__fig9291155351810>`.
+#. Run the following command to obtain the command line for activating the environment, as shown in :ref:`Figure 2 <en-us_topic_0000002571542851__fig9291155351810>`.
 
    .. code-block::
 
@@ -44,9 +44,9 @@ Solution
 
       source /home/ma-user/anaconda3/bin/activate TensorFlow-1.8
 
-   .. _en-us_topic_0000002374846137__fig9291155351810:
+   .. _en-us_topic_0000002571542851__fig9291155351810:
 
-   .. figure:: /_static/images/en-us_image_0000002340889320.png
+   .. figure:: /_static/images/en-us_image_0000002571543239.png
       :alt: **Figure 2** Activating the Terminal environment
 
       **Figure 2** Activating the Terminal environment

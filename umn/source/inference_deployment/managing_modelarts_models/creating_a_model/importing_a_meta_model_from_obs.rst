@@ -16,20 +16,20 @@ Constraints
 Prerequisites
 -------------
 
--  The model has been developed and trained, and the type and version of the AI engine used by the model are supported by ModelArts. For details, see :ref:`Supported AI Engines for ModelArts Inference <en-us_topic_0000002374850257__en-us_topic_0171858287_section04192617912>`.
+-  The model has been developed and trained, and the type and version of the AI engine used by the model are supported by ModelArts. For details, see :ref:`Supported AI Engines for ModelArts Inference <en-us_topic_0000002571423399__en-us_topic_0171858287_section04192617912>`.
 -  The trained model package, inference code, and configuration file have been uploaded to OBS.
 -  The OBS directory you use and ModelArts are in the same region.
 
 Creating a Model
 ----------------
 
-#. Log in to the ModelArts console, and choose **Model Management (AI Applications)** from the navigation pane. The **Model Management** page is displayed.
-#. Click **Create** in the upper left corner.
+#. Log in to the ModelArts console, and choose **Model Management** from the navigation pane. The **Model Management** page is displayed.
+#. Click **Create** Model in the upper left corner.
 #. On the displayed page, configure parameters.
 
-   a. Enter basic information about the model. For details, see :ref:`Table 1 <en-us_topic_0000002340892184__en-us_topic_0207629478_table19428112584211>`.
+   a. Enter basic information about the model. For details, see :ref:`Table 1 <en-us_topic_0000002571543335__en-us_topic_0207629478_table19428112584211>`.
 
-      .. _en-us_topic_0000002340892184__en-us_topic_0207629478_table19428112584211:
+      .. _en-us_topic_0000002571543335__en-us_topic_0207629478_table19428112584211:
 
       .. table:: **Table 1** Basic information
 
@@ -42,16 +42,16 @@ Creating a Model
          |                                   |                                                                                                                                                                                             |
          |                                   | .. note::                                                                                                                                                                                   |
          |                                   |                                                                                                                                                                                             |
-         |                                   |    After a model is created, you can :ref:`create new versions <en-us_topic_0000002374730361__en-us_topic_0171858290_section102881451161111>` using different meta models for optimization. |
+         |                                   |    After a model is created, you can :ref:`create new versions <en-us_topic_0000002541063068__en-us_topic_0171858290_section102881451161111>` using different meta models for optimization. |
          +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
          | Description                       | Brief description of the model.                                                                                                                                                             |
          +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   b. Select the meta model source and configure related parameters. Set **Meta Model Source** to **OBS**. For details about the parameters, see :ref:`Table 2 <en-us_topic_0000002340892184__en-us_topic_0207629478_table1631162916535>`.
+   b. Select the meta model source and configure related parameters. Set **Meta Model Source** to **OBS**. For details about the parameters, see :ref:`Table 2 <en-us_topic_0000002571543335__en-us_topic_0207629478_table1631162916535>`.
 
       To import a meta model from OBS, edit the inference code and configuration file by following :ref:`model package specifications <inference-modelarts-0055>` and place the inference code and configuration file in the **model** folder storing the meta model. If the selected directory does not comply with the model package specifications, the model cannot be created.
 
-      .. _en-us_topic_0000002340892184__en-us_topic_0207629478_table1631162916535:
+      .. _en-us_topic_0000002571543335__en-us_topic_0207629478_table1631162916535:
 
       .. table:: **Table 2** Meta model source parameters
 
@@ -88,7 +88,7 @@ Creating a Model
          +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
          | Deployment Type                   | Choose the service types for application deployment. The service types you select will be the only options available for deployment. For instance, selecting **Real-Time Services** means the model can only be deployed as real-time services.                                                                                                                                                  |
          +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-         | API Configuration                 | You can enable it to edit RESTful APIs to define the model input and output formats. The API configuration must comply with ModelArts specifications. For details, see apis parameters in :ref:`Specifications for Editing a Model Configuration File <inference-modelarts-0056>`. :ref:`Code Example of apis Parameters <en-us_topic_0000002340892196__section9498141310396>` shows an example. |
+         | API Configuration                 | You can enable it to edit RESTful APIs to define the model input and output formats. The API configuration must comply with ModelArts specifications. For details, see apis parameters in :ref:`Specifications for Editing a Model Configuration File <inference-modelarts-0056>`. :ref:`Code Example of apis Parameters <en-us_topic_0000002541063024__section9498141310396>` shows an example. |
          +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
    c. Check the information and click **Create now**.
@@ -98,4 +98,4 @@ Creating a Model
 Follow-Up Operations
 --------------------
 
-:ref:`Deploying a Model as a Service <en-us_topic_0000002340732432__section5706068262>`: In the model list, click the down arrow on the left of a model name to check all versions of the model. Locate the row that contains the target version, click **Deploy** in the **Operation** column, and select a deployment type from the drop-down list. The model can be deployed as a deployment type selected during model creation.
+:ref:`Deploying a Model as a Service <en-us_topic_0000002540903372__section5706068262>`: In the model list, click the down arrow on the left of a model name to check all versions of the model. Locate the row that contains the target version, click **Deploy** in the **Operation** column, and select a deployment type from the drop-down list. The model can be deployed as a deployment type selected during model creation.

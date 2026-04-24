@@ -44,16 +44,16 @@ Upload Entry 2: Clicking the File Upload Icon and Uploading a File
 Click |image2| in the navigation bar on the top of the window. In the displayed dialog box, drag or select a local file and upload it.
 
 
-.. figure:: /_static/images/en-us_image_0000001846057009.png
+.. figure:: /_static/images/en-us_image_0000002540903170.png
    :alt: **Figure 1** File upload icon
 
    **Figure 1** File upload icon
 
 
-.. figure:: /_static/images/en-us_image_0000001856322841.png
+.. figure:: /_static/images/en-us_image_0000002541062778.png
    :alt: **Figure 2** File uploading page
 
    **Figure 2** File uploading page
 
-.. |image1| image:: /_static/images/en-us_image_0000001799497936.png
-.. |image2| image:: /_static/images/en-us_image_0000001799338144.png
+.. |image1| image:: /_static/images/en-us_image_0000002541062812.png
+.. |image2| image:: /_static/images/en-us_image_0000002571423123.png

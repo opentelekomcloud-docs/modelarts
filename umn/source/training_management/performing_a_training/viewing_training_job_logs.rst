@@ -14,7 +14,7 @@ On the training job details page, you can preview logs, download logs, search fo
    If a log file is oversized, the system displays only the latest logs in the log pane. To view all logs, click the link in the upper part of the log pane, which will direct you to a new page.
 
 
-   .. figure:: /_static/images/en-us_image_0000002374725709.png
+   .. figure:: /_static/images/en-us_image_0000002540903200.png
       :alt: **Figure 1** Viewing all logs
 
       **Figure 1** Viewing all logs
@@ -32,18 +32,18 @@ On the training job details page, you can preview logs, download logs, search fo
    Training logs are retained for only 30 days. To permanently store logs, click the download icon in the upper right corner of the log pane. You can download the logs of multiple compute nodes in a batch. You can also enable **Persistent Log Saving** and set a log path when you create a training job. In this way, the logs will be automatically stored in the specified OBS path.
 
 
-   .. figure:: /_static/images/en-us_image_0000002340887528.png
+   .. figure:: /_static/images/en-us_image_0000002578131861.png
       :alt: **Figure 2** Downloading logs
 
       **Figure 2** Downloading logs
 
 -  Searching for logs by keyword
 
-   In the upper right corner of the log pane, enter a keyword in the search box to search for logs, as shown in :ref:`Figure 3 <en-us_topic_0000002340887420__en-us_topic_0000001205728145_fig1676414594594>`.
+   In the upper right corner of the log pane, enter a keyword in the search box to search for logs, as shown in :ref:`Figure 3 <en-us_topic_0000002571542811__en-us_topic_0000001205728145_fig1676414594594>`.
 
-   .. _en-us_topic_0000002340887420__en-us_topic_0000001205728145_fig1676414594594:
+   .. _en-us_topic_0000002571542811__en-us_topic_0000001205728145_fig1676414594594:
 
-   .. figure:: /_static/images/en-us_image_0000002340727796.png
+   .. figure:: /_static/images/en-us_image_0000002547452046.png
       :alt: **Figure 3** Searching for logs by keyword
 
       **Figure 3** Searching for logs by keyword
@@ -53,7 +53,7 @@ On the training job details page, you can preview logs, download logs, search fo
 -  Filtering system logs
 
 
-   .. figure:: /_static/images/en-us_image_0000002340887580.png
+   .. figure:: /_static/images/en-us_image_0000002547611706.png
       :alt: **Figure 4** System logs
 
       **Figure 4** System logs

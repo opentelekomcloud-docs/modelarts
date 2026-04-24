@@ -27,7 +27,7 @@ Due to limited local resources, developers using a local IDE run and debug code 
 ModelArts notebook instances are out of the box with various built-in engines and flavors for you to select. You can use a dedicated container environment. Only after simple configurations, you can remotely access the environment to run and debug code from your local IDE.
 
 
-.. figure:: /_static/images/en-us_image_0000001846136977.png
+.. figure:: /_static/images/en-us_image_0000002540903314.png
    :alt: **Figure 1** Remotely accessing notebook from a local IDE
 
    **Figure 1** Remotely accessing notebook from a local IDE

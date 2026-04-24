@@ -53,7 +53,7 @@ When using dataloader to read data, set **num_work** to a small value.
 
 |image4|
 
-.. |image1| image:: /_static/images/en-us_image_0000002374846533.jpg
-.. |image2| image:: /_static/images/en-us_image_0000002340728668.jpg
-.. |image3| image:: /_static/images/en-us_image_0000002374726717.jpg
-.. |image4| image:: /_static/images/en-us_image_0000002340888560.jpg
+.. |image1| image:: /_static/images/en-us_image_0000002571543441.jpg
+.. |image2| image:: /_static/images/en-us_image_0000002571543447.jpg
+.. |image3| image:: /_static/images/en-us_image_0000002541063148.jpg
+.. |image4| image:: /_static/images/en-us_image_0000002540903488.jpg

@@ -10,12 +10,12 @@ In small- and medium-sized teams, administrators need to globally control ModelA
 Scenarios
 ---------
 
-To develop a project using notebook, administrators need full control permissions for using ModelArts dedicated resource pools, and access and operation permissions on all notebook instances.
+To develop a project using notebook, administrators need full control permissions for using ModelArts Elastic Clusters, and access and operation permissions on all notebook instances.
 
-To use development environments, developers only need operation permissions for using their own instances and dependent services. They do not need to perform operations on ModelArts dedicated resource pools or view notebook instances of other users.
+To use development environments, developers only need operation permissions for using their own instances and dependent services. They do not need to perform operations on ModelArts Elastic Clusters or view notebook instances of other users.
 
 
-.. figure:: /_static/images/en-us_image_0000002374725889.png
+.. figure:: /_static/images/en-us_image_0000002540902900.png
    :alt: **Figure 1** Account relationships
 
    **Figure 1** Account relationships
@@ -23,17 +23,17 @@ To use development environments, developers only need operation permissions for 
 Configuring Permissions for an Administrator
 --------------------------------------------
 
-Assign full control permissions to administrators for using ModelArts dedicated resource pools and all notebook instances. The procedure is as follows:
+Assign full control permissions to administrators for using ModelArts Elastic Clusters and all notebook instances. The procedure is as follows:
 
 #. Use a tenant account to create an administrator user group **ModelArts_admin_group** and add administrator accounts to **ModelArts_admin_group**.
 
-#. .. _en-us_topic_0000002340887372__li58484438106:
+#. .. _en-us_topic_0000002571542735__li58484438106:
 
    Create a custom policy.
 
    a. Log in to the management console using an administrator account, hover over your username in the upper right corner, and click **Identity and Access Management** from the drop-down list to switch to the IAM management console.
 
-   b. .. _en-us_topic_0000002340887372__li284812437102:
+   b. .. _en-us_topic_0000002571542735__li284812437102:
 
       Create custom policy 1 and assign IAM and OBS permissions to the user. In the navigation pane of the IAM console, choose **Permissions** > **Policies/Roles**. Click **Create Custom Policy** in the upper right corner. On the displayed page, enter **Policy1_IAM_OBS** for **Policy Name**, select **JSON** for **Policy View**, configure the policy content, and click **OK**.
 
@@ -61,7 +61,7 @@ Assign full control permissions to administrators for using ModelArts dedicated 
              ]
          }
 
-   c. Repeat :ref:`2.b <en-us_topic_0000002340887372__li284812437102>` to create custom policy 2 and grant the user the permissions to perform operations on dependent services ECS, SWR, MRS, and SMN as well as ModelArts. Set **Policy Name** to **Policy2_AllowOperation** and **Policy View** to **JSON**, configure the policy content, and click **OK**.
+   c. Repeat :ref:`2.b <en-us_topic_0000002571542735__li284812437102>` to create custom policy 2 and grant the user the permissions to perform operations on dependent services ECS, SWR, MRS, and SMN as well as ModelArts. Set **Policy Name** to **Policy2_AllowOperation** and **Policy View** to **JSON**, configure the policy content, and click **OK**.
 
       The custom policy **Policy2_AllowOperation** is as follows, which grants the user the permissions to perform operations on dependent services ECS, SWR, MRS, and SMN as well as ModelArts. You can directly copy and paste the content.
 
@@ -90,14 +90,14 @@ Assign full control permissions to administrators for using ModelArts dedicated 
              ]
          }
 
-#. Grant the policy created in :ref:`2 <en-us_topic_0000002340887372__li58484438106>` to the administrator group **ModelArts_admin_group**.
+#. Grant the policy created in :ref:`2 <en-us_topic_0000002571542735__li58484438106>` to the administrator group **ModelArts_admin_group**.
 
    a. In the navigation pane of the IAM console, choose **User Groups**. On the **User Groups** page, locate the row that contains **ModelArts_admin_group**, click **Authorize** in the **Operation** column, and select **Policy1_IAM_OBS** and **Policy2_AllowOperation**. Click **Next**.
    b. Specify the scope as **All resources** and click **OK**.
 
 #. Configure agent-based ModelArts access authorization for an administrator to allow ModelArts to access dependent services such as OBS.
 
-   a. Log in to the ModelArts management console using a tenant account. In the navigation pane, choose **Settings**. The **Global Configuration** page is displayed.
+   a. Log in to the ModelArts management console using a tenant account. In the navigation pane, choose **Permission Management**. The **Permission Management** page is displayed.
    b. Click **Add Authorization**. On the **Add Authorization** page, set **Authorized User** to **IAM user**, select an administrator account for **Authorized To**, select **Add agency**, and select **Common User** for **Permissions**. Permissions control is not required for administrators, so use default setting **Common User**.
    c. Click **Create**.
 
@@ -107,7 +107,7 @@ Assign full control permissions to administrators for using ModelArts dedicated 
 
       Change the password as prompted upon the first login.
 
-   b. In the navigation pane of the ModelArts management console, choose **Dedicated Resource Pools** and click **Create**. If the console does not display a message indicating insufficient permissions, the permissions have been assigned to the administrator.
+   b. In the navigation pane of the ModelArts management console, choose **Standard Cluster** and click **Create**. If the console does not display a message indicating insufficient permissions, the permissions have been assigned to the administrator.
 
 Configuring Permissions for a Developer
 ---------------------------------------
@@ -119,7 +119,7 @@ Use IAM for fine-grained control of developer permissions. The procedure is as f
 
    a. Log in to the management console using a tenant account, hover over your username in the upper right corner, and click **Identity and Access Management** from the drop-down list to switch to the IAM management console.
 
-   b. Create custom policy 3 to prevent users from performing operations on ModelArts dedicated resource pools and viewing notebook instances of other users.
+   b. Create custom policy 3 to prevent users from performing operations on ModelArts Elastic Clusters and viewing notebook instances of other users.
 
       In the navigation pane of the IAM console, choose **Permissions** > **Policies/Roles**. Click **Create Custom Policy** in the upper right corner. On the displayed page, enter **Policy3_DenyOperation** for **Policy Name**, select **JSON** for **Policy View**, configure the policy content, and click **OK**.
 
@@ -150,13 +150,13 @@ Use IAM for fine-grained control of developer permissions. The procedure is as f
 
 #. Configure agent-based ModelArts access authorization for a developer to allow ModelArts to access dependent services such as OBS.
 
-   a. Log in to the ModelArts management console using a tenant account. In the navigation pane, choose **Settings**. The **Global Configuration** page is displayed.
+   a. Log in to the ModelArts management console using a tenant account. In the navigation pane, choose **Permission Management**. The **Permission Management** page is displayed.
 
    b. Click **Add Authorization**. On the **Add Authorization** page, set **Authorized User** to **IAM user**, select a developer account for **Authorized To**, add an agency **ma_agency_develop_user**, set **Permissions** to **Custom**, and select **OBS Administrator**. Developers only need OBS authorization to allow developers to access OBS when using notebook.
 
    c. Click **Create**.
 
-   d. On the **Global Configuration** page, click **Add Authorization** again. On the displayed **Add Authorization** page, configure an agency for other developer users.
+   d. On the **Permission Management** page, click **Add Authorization** again. On the displayed **Add Authorization** page, configure an agency for other developer users.
 
       On the **Add Authorization** page, set **Authorized User** to **IAM user**, select a developer account for **Authorized To**, and select the existing agency **ma_agency_develop_user** created before.
 
@@ -166,4 +166,4 @@ Use IAM for fine-grained control of developer permissions. The procedure is as f
 
       Change the password as prompted upon the first login.
 
-   b. In the navigation pane of the ModelArts management console, choose **Dedicated Resource Pools** and click **Create**. If the console does not display a message indicating insufficient permissions, the permissions have been assigned to the developer.
+   b. In the navigation pane of the ModelArts management console, choose **Standard Cluster** and click **Create**. If the console does not display a message indicating insufficient permissions, the permissions have been assigned to the developer.

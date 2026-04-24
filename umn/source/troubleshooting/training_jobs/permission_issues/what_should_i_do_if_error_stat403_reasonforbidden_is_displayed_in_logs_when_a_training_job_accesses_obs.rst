@@ -11,7 +11,7 @@ Symptom
 When a training job accesses OBS, an error occurs.
 
 
-.. figure:: /_static/images/en-us_image_0000002374847117.png
+.. figure:: /_static/images/en-us_image_0000002571423211.png
    :alt: **Figure 1** Error log
 
    **Figure 1** Error log

@@ -5,14 +5,14 @@
 How Do I Enable the Terminal Function in DevEnviron of ModelArts?
 =================================================================
 
-#. Log in to the ModelArts management console, and choose **DevEnviron > Notebooks**.
+#. Log in to the ModelArts management console, and choose **Development Workspace > Notebook**.
 
 #. Create a notebook instance. When the instance is running, click **Open** in the **Operation** column. The **JupyterLab** page is displayed.
 
 #. Choose **File** > **New** > **Terminal**. The **Terminal** page is displayed.
 
 
-   .. figure:: /_static/images/en-us_image_0000002340888676.png
+   .. figure:: /_static/images/en-us_image_0000002571423469.png
       :alt: **Figure 1** Going to the **Terminal** page
 
       **Figure 1** Going to the **Terminal** page

@@ -15,7 +15,7 @@ Prerequisites
 -  The address and port number of the development environment are available. To obtain this information, go to the notebook instance details page.
 
 
-   .. figure:: /_static/images/en-us_image_0000001809617018.png
+   .. figure:: /_static/images/en-us_image_0000002540903340.png
       :alt: **Figure 1** Instance details page
 
       **Figure 1** Instance details page
@@ -29,7 +29,7 @@ Step 1 Install the SSH Tool
 
 `Download <https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html>`__ and install the SSH remote connection tool, for example, PuTTY.
 
-.. _en-us_topic_0000001799496572__section97911985211:
+.. _en-us_topic_0000002571542859__section97911985211:
 
 Step 2 Use PuTTYgen to Convert the .pem Key Pair File to a .ppk Key Pair File
 -----------------------------------------------------------------------------
@@ -41,7 +41,7 @@ Step 2 Use PuTTYgen to Convert the .pem Key Pair File to a .ppk Key Pair File
 #. Click **Save private key** to save the generated .ppk file. The file name can be customized, for example, **key.ppk**.
 
 
-   .. figure:: /_static/images/en-us_image_0000001799338312.png
+   .. figure:: /_static/images/en-us_image_0000002541062946.png
       :alt: **Figure 2** Converting the .pem key pair file to a .ppk key pair file
 
       **Figure 2** Converting the .pem key pair file to a .ppk key pair file
@@ -59,7 +59,7 @@ Step 3 Use SSH to Connect to a Notebook Instance
    d. **Saved Sessions**: task name, which can be clicked for remote connection when you use PuTTY next time
 
 
-   .. figure:: /_static/images/en-us_image_0000001799498076.png
+   .. figure:: /_static/images/en-us_image_0000002571543281.png
       :alt: **Figure 3** Configuring **Session**
 
       **Figure 3** Configuring **Session**
@@ -67,7 +67,7 @@ Step 3 Use SSH to Connect to a Notebook Instance
 #. Choose **Window** > **Translation** and select **UTF-8** from the drop-down list box in the **Remote character set** area.
 
 
-   .. figure:: /_static/images/en-us_image_0000001846057169.png
+   .. figure:: /_static/images/en-us_image_0000002571423341.png
       :alt: **Figure 4** Setting the character format
 
       **Figure 4** Setting the character format
@@ -75,19 +75,19 @@ Step 3 Use SSH to Connect to a Notebook Instance
 #. Choose **Connection** > **Data** and enter **ma-user** for **Auto-login username**.
 
 
-   .. figure:: /_static/images/en-us_image_0000001846137225.png
+   .. figure:: /_static/images/en-us_image_0000002540903306.png
       :alt: **Figure 5** Entering a username
 
       **Figure 5** Entering a username
 
-#. Choose **Connection** > **SSH** > **Auth**, click **Browse**, and select the .ppk file generated in :ref:`step 2 <en-us_topic_0000001799496572__section97911985211>`.
+#. Choose **Connection** > **SSH** > **Auth**, click **Browse**, and select the .ppk file generated in :ref:`step 2 <en-us_topic_0000002571542859__section97911985211>`.
 
    |image1|
 
 #. Click **Open**. If you are logging in to the instance for the first time, PuTTY displays a security warning dialog box, asking if you want to accept the instance security certificate. Click **Accept** to save the certificate to your local registry.
 
 
-   .. figure:: /_static/images/en-us_image_0000001799338300.png
+   .. figure:: /_static/images/en-us_image_0000002541062934.png
       :alt: **Figure 6** Asking if you want to accept the instance security certificate
 
       **Figure 6** Asking if you want to accept the instance security certificate
@@ -95,9 +95,9 @@ Step 3 Use SSH to Connect to a Notebook Instance
 #. Connect to the notebook instance.
 
 
-   .. figure:: /_static/images/en-us_image_0000001799338336.png
+   .. figure:: /_static/images/en-us_image_0000002571423307.png
       :alt: **Figure 7** Connecting to a notebook instance
 
       **Figure 7** Connecting to a notebook instance
 
-.. |image1| image:: /_static/images/en-us_image_0000001799498084.png
+.. |image1| image:: /_static/images/en-us_image_0000002541062958.png

@@ -9,8 +9,8 @@ A port number (for example, 8443) has been specified in a model configuration fi
 
 To change the default port, do as follows:
 
-#. Log in to the ModelArts management console. In the navigation pane, choose **Model Management (AI Applications)**.
-#. Click **Create**. On the page for creating a model, set **Meta Model Source** to **Container image** and select a custom image.
+#. Log in to the ModelArts management console. In the navigation pane, choose **Asset Management > Model Management**.
+#. Click **Create** **Model.** On the page for creating a model, set **Meta Model Source** to **Container image** and select a custom image.
 #. Configure the container API and port number. Ensure that the port number is the same as that specified in the model configuration file.
 #. After the configuration, click **Create now**. Wait until the model runs properly.
 #. Deploy the model as a real-time service again.

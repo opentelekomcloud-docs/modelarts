@@ -21,13 +21,13 @@ The OBS directory you use and ModelArts are in the same region.
 Creating a Model
 ----------------
 
-#. Log in to the ModelArts management console, and choose **Model Management (AI Applications)** in the left navigation pane. The **Model Management** page is displayed.
-#. Click **Create** in the upper left corner.
+#. Log in to the ModelArts management console, and choose **Model Management** in the left navigation pane. The **Model Management** page is displayed.
+#. Click **Create Model** in the upper left corner.
 #. On the displayed page, set the parameters.
 
-   a. Set basic information about the model. For details about the parameters, see :ref:`Table 1 <en-us_topic_0000002374850237__en-us_topic_0207629477_table19428112584211>`.
+   a. Set basic information about the model. For details about the parameters, see :ref:`Table 1 <en-us_topic_0000002571423373__en-us_topic_0207629477_table19428112584211>`.
 
-      .. _en-us_topic_0000002374850237__en-us_topic_0207629477_table19428112584211:
+      .. _en-us_topic_0000002571423373__en-us_topic_0207629477_table19428112584211:
 
       .. table:: **Table 1** Parameters of basic model information
 
@@ -40,14 +40,14 @@ Creating a Model
          |                                   |                                                                                                                                                                                             |
          |                                   | .. note::                                                                                                                                                                                   |
          |                                   |                                                                                                                                                                                             |
-         |                                   |    After a model is created, you can :ref:`create new versions <en-us_topic_0000002374730361__en-us_topic_0171858290_section102881451161111>` using different meta models for optimization. |
+         |                                   |    After a model is created, you can :ref:`create new versions <en-us_topic_0000002541063068__en-us_topic_0171858290_section102881451161111>` using different meta models for optimization. |
          +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
          | Description                       | Brief description of a model                                                                                                                                                                |
          +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   b. Select the meta model source and set related parameters. Set **Meta Model Source** to **Container image**. For details about the parameters, see :ref:`Table 2 <en-us_topic_0000002374850237__en-us_topic_0207629477_table104931647171713>`.
+   b. Select the meta model source and set related parameters. Set **Meta Model Source** to **Container image**. For details about the parameters, see :ref:`Table 2 <en-us_topic_0000002571423373__en-us_topic_0207629477_table104931647171713>`.
 
-      .. _en-us_topic_0000002374850237__en-us_topic_0207629477_table104931647171713:
+      .. _en-us_topic_0000002571423373__en-us_topic_0207629477_table104931647171713:
 
       .. table:: **Table 2** Parameters of the meta model source
 
@@ -86,16 +86,16 @@ Creating a Model
          +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
          | Start command                     | customizable start command of a model                                                                                                                                                                                                                                                                                                                                                                              |
          +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-         | Apis                              | When you enable this function, you can edit RESTful APIs to define the model input and output formats. The API configuration must comply with ModelArts specifications. For details, see apis parameters in :ref:`Specifications for Editing a Model Configuration File <inference-modelarts-0056>`. :ref:`Code Example of apis Parameters <en-us_topic_0000002340892196__section9498141310396>` shows an example. |
+         | Apis                              | When you enable this function, you can edit RESTful APIs to define the model input and output formats. The API configuration must comply with ModelArts specifications. For details, see apis parameters in :ref:`Specifications for Editing a Model Configuration File <inference-modelarts-0056>`. :ref:`Code Example of apis Parameters <en-us_topic_0000002541063024__section9498141310396>` shows an example. |
          +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   c. Check the information and click **Next**. The model is created.
+   c. Check the information and click **Create now**. The model is created.
 
       In the model list, you can view the created model and its version. When the status changes to **Normal**, the model is successfully created. On this page, you can perform such operations as creating new versions, quickly deploying models, and publishing models.
 
 Follow-Up Procedure
 -------------------
 
-:ref:`Deploying a Model as a Service <en-us_topic_0000002340732432__section5706068262>`: In the model list, click the down arrow on the left of a model name to check all versions of the model. Locate the row that contains the target version, click **Deploy** in the **Operation** column, and select a deployment type from the drop-down list box. The model can be deployed in a deployment type selected during model creation.
+:ref:`Deploying a Model as a Service <en-us_topic_0000002540903372__section5706068262>`: In the model list, click the down arrow on the left of a model name to check all versions of the model. Locate the row that contains the target version, click **Deploy** in the **Operation** column, and select a deployment type from the drop-down list box. The model can be deployed in a deployment type selected during model creation.
 
-.. |image1| image:: /_static/images/en-us_image_0000002374730573.png
+.. |image1| image:: /_static/images/en-us_image_0000002540903470.png

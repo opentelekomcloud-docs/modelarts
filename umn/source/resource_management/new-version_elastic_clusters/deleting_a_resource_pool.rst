@@ -11,7 +11,7 @@ If a dedicated resource pool is no longer needed for AI service development, you
 
    After a dedicated resource pool is deleted, the development environments, training jobs, and inference services that depend on the resource pool are unavailable. A dedicated resource pool cannot be restored after being deleted.
 
-#. Log in to the ModelArts management console. In the navigation pane, choose **Dedicated Resource Pools** > **Elastic Cluster**.
+#. Log in to the ModelArts management console. In the navigation pane, choose **Resource Management** **> Standard Cluster**.
 
 #. Locate the row that contains the target resource pool, choose **More** > **Delete** in the **Operation** column.
 

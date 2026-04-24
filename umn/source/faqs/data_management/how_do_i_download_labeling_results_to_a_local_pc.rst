@@ -9,7 +9,7 @@ After being published, the labeling information and data in ModelArts datasets a
 
 To obtain the OBS path, do as follows:
 
-#. Log in to the ModelArts management console and choose **Data Management** > **Datasets**.
+#. Log in to the ModelArts management console and choose **Datasets**.
 #. Locate the target dataset and click the triangle icon on the left of the dataset name to expand the dataset details. You can obtain the OBS path set for **Output Dataset Path**.
 #. Log in to the OBS management console and locate the version directory from the obtained OBS path to obtain the labeling result of the dataset.
 
