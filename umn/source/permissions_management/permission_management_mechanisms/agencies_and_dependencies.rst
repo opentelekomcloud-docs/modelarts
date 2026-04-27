@@ -107,7 +107,7 @@ When using ModelArts to develop algorithms or manage training jobs, you are requ
    +----------------------+-------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------+
    | Application Scenario | Dependent Service | Dependent Policy                                                                                                                                                                                        | Supported Function                                   |
    +======================+===================+=========================================================================================================================================================================================================+======================================================+
-   | Training management  | IAM               | iam:credentials:listCredentials (querying permanent access keys)                                                                                                                                        | Use the configured agency authorization.             |
+   | Model Training       | IAM               | iam:credentials:listCredentials (querying permanent access keys)                                                                                                                                        | Use the configured agency authorization.             |
    |                      |                   |                                                                                                                                                                                                         |                                                      |
    |                      |                   | iam:agencies:listAgencies (querying agencies based on specified conditions)                                                                                                                             |                                                      |
    +----------------------+-------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------+
@@ -320,7 +320,7 @@ When using ModelArts to develop algorithms or manage training jobs, you are requ
    |                      |                   | obs:object:PutObjectAcl (configuring an object ACL)                                                                                                                                                     |                                                      |
    +----------------------+-------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------+
 
-.. table:: **Table 7** Managing service deployment
+.. table:: **Table 7** Managing Model Deployment
 
    +----------------------+-------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------+
    | Application Scenario | Dependent Service | Dependent Policy                                                                                                                                                                                        | Supported Function       |
@@ -541,22 +541,22 @@ Agency authorization
 
 To simplify operations when you use ModelArts to run jobs, certain operations are automatically performed on the ModelArts backend, for example, downloading the datasets in an OBS bucket to a workspace before a training job is started and dumping training job logs to the OBS bucket.
 
-ModelArts does not save your token authentication credentials. Before performing operations on your resources (such as OBS buckets) in a backend asynchronous job, you are required to explicitly authorize ModelArts through an IAM agency. ModelArts will use the agency to obtain a temporary authentication credential for performing operations on your resources. For details, see :ref:`Adding Authorization <en-us_topic_0000002340887384__en-us_topic_0256240291_section2221743101516>`.
+ModelArts does not save your token authentication credentials. Before performing operations on your resources (such as OBS buckets) in a backend asynchronous job, you are required to explicitly authorize ModelArts through an IAM agency. ModelArts will use the agency to obtain a temporary authentication credential for performing operations on your resources. For details, see :ref:`Adding Authorization <en-us_topic_0000002540902772__en-us_topic_0256240291_section2221743101516>`.
 
-.. _en-us_topic_0000002374845445__fig501741161215:
+.. _en-us_topic_0000002571542721__fig501741161215:
 
-.. figure:: /_static/images/en-us_image_0000002374725685.png
+.. figure:: /_static/images/en-us_image_0000002540902850.png
    :alt: **Figure 1** Agency authorization
 
    **Figure 1** Agency authorization
 
-As shown in :ref:`Figure 1 <en-us_topic_0000002374845445__fig501741161215>`, after authorization is configured on ModelArts, ModelArts uses the temporary credential to access and operate your resources, relieving you from some complex and time-consuming operations. The agency credential will also be synchronized to your jobs (including notebook instances and training jobs). You can use the agency credential to access your resources in the jobs.
+As shown in :ref:`Figure 1 <en-us_topic_0000002571542721__fig501741161215>`, after authorization is configured on ModelArts, ModelArts uses the temporary credential to access and operate your resources, relieving you from some complex and time-consuming operations. The agency credential will also be synchronized to your jobs (including notebook instances and training jobs). You can use the agency credential to access your resources in the jobs.
 
 You can use either of the following methods to authorize ModelArts using an agency:
 
 **One-click authorization**
 
-ModelArts provides one-click automatic authorization. You can quickly configure agency authorization on the **Global Configuration** page of ModelArts. Then, ModelArts will automatically create an agency for you and configure it in ModelArts.
+ModelArts provides one-click automatic authorization. You can quickly configure agency authorization on the **Permission Management** page of ModelArts. Then, ModelArts will automatically create an agency for you and configure it in ModelArts.
 
 In this mode, the authorization scope is specified based on the preset system policies of dependent services to ensure sufficient permissions for using services. The created agency has almost all permissions of dependent services. If you want to precisely control the scope of permissions granted to an agency, use the second method.
 
@@ -784,7 +784,7 @@ To customize the permissions for an agency, select permissions based on your ser
    |                           |                     | modelarts:service:update      |                                                     |
    +---------------------------+---------------------+-------------------------------+-----------------------------------------------------+
 
-.. table:: **Table 14** Basic agency authorization for managing dedicated resource pools
+.. table:: **Table 14** Basic agency authorization for managing Elastic Clusters
 
    +----------------------------------+-------------------+--------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
    | Application Scenario             | Dependent Service | Agency Authorization           | Description                                                                                                                    |

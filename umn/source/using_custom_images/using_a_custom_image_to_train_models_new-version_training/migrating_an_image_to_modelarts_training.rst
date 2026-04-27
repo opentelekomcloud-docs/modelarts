@@ -5,13 +5,13 @@
 Migrating an Image to ModelArts Training
 ========================================
 
-To migrate an image to the new training management version, perform the following operations:
+To migrate an image to the new Model Training version, perform the following operations:
 
-#. Add the default user group **ma-group** (**GID** = **100**) for the image of the new-version training management. If the user group whose **GID** is **100** exists, skip this step.
-#. Add the default user **ma-user** (**UID** = **1000**) for the image of the new-version training management. If the user whose **UID** is **1000** exists, skip this step.
+#. Add the default user group **ma-group** (**GID** = **100**) for the image of the new-version Model Training. If the user group whose **GID** is **100** exists, skip this step.
+#. Add the default user **ma-user** (**UID** = **1000**) for the image of the new-version Model Training. If the user whose **UID** is **1000** exists, skip this step.
 #. Modify the permission on files in the image to allow **ma-user** whose **UID** is **1000** to read and write the files.
 
-You can modify an image by referring to the following Dockerfile so that the image complies with specifications for custom images of the new-version training management.
+You can modify an image by referring to the following Dockerfile so that the image complies with specifications for custom images of the new-version Model Training.
 
 .. code-block::
 
@@ -28,7 +28,7 @@ You can modify an image by referring to the following Dockerfile so that the ima
    USER ma-user
    WORKDIR /home/ma-user
 
-In the new-version training management, custom images are executed by the user whose **UID** is **1000** by default. Before using an image in the new-version training management, check image file permissions on the server where the image was built. The process is as follows:
+In the new-version Model Training, custom images are executed by the user whose **UID** is **1000** by default. Before using an image in the new-version Model Training, check image file permissions on the server where the image was built. The process is as follows:
 
 Run the following command to specify the user whose **UID** is **1000** to run the image:
 

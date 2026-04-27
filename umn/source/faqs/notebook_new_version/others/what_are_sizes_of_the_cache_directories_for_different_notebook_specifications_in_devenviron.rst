@@ -9,9 +9,9 @@ When creating a notebook instance, you can select CPUs or GPUs based on the data
 
 ModelArts mounts disks to **/cache**. You can use this directory to store temporary files. The **/cache** directory shares resources with the code directory. The directory size varies depending on resource specifications.
 
-No disks can be mounted to **/cache** for CPUs. When only one GPU card is used, the **/cache** directory size is limited to 500 GB. If multiple GPUs cards are used, the **/cache** directory size is limited to 3 TB and calculated using the following formula: **/cache** directory size = Number of cards x 500 GB. For details, see :ref:`Table 1 <en-us_topic_0000002340888552__table8250191216198>`.
+No disks can be mounted to **/cache** for CPUs. When only one GPU card is used, the **/cache** directory size is limited to 500 GB. If multiple GPUs cards are used, the **/cache** directory size is limited to 3 TB and calculated using the following formula: **/cache** directory size = Number of cards x 500 GB. For details, see :ref:`Table 1 <en-us_topic_0000002571423355__table8250191216198>`.
 
-.. _en-us_topic_0000002340888552__table8250191216198:
+.. _en-us_topic_0000002571423355__table8250191216198:
 
 .. table:: **Table 1** /cache directory sizes for different notebook specifications
 

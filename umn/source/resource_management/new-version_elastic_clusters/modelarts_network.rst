@@ -18,12 +18,12 @@ Prerequisites
 -  A VPC is available.
 -  A subnet is available.
 
-.. _en-us_topic_0000002340890628__en-us_topic_0143244658_section4115221610:
+.. _en-us_topic_0000002540902728__en-us_topic_0143244658_section4115221610:
 
 Creating a Network
 ------------------
 
-#. Log in to the ModelArts management console. In the navigation pane, choose **Dedicated Resource Pools** > **Elastic Cluster**.
+#. Log in to the ModelArts management console. In the navigation pane, choose **Resource Management** **> Standard Cluster**.
 #. Click **Network** and then **Create**.
 #. In the **Create Network** dialog box, set parameters.
 
@@ -41,7 +41,7 @@ Creating a Network
 
 #. Confirm the settings and click **OK**.
 
-.. _en-us_topic_0000002340890628__section1473914311415:
+.. _en-us_topic_0000002540902728__section1473914311415:
 
 (Optional) Interconnecting a VPC with a ModelArts Network
 ---------------------------------------------------------

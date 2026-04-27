@@ -8,7 +8,7 @@ Upgrading a Resource Pool Driver
 Description
 -----------
 
-If GPUs resources are used in a dedicated resource pool, you may need to customize GPU drivers. ModelArts allows you to upgrade GPU drivers of your dedicated resource pools.
+If GPUs resources are used in a dedicated resource pool, you may need to customize GPU drivers. ModelArts allows you to upgrade GPU drivers of your Standard Clusters.
 
 There are two driver upgrade modes: secure upgrade and forcible upgrade.
 
@@ -23,7 +23,7 @@ The target dedicated resource pool is in running, and the resource pool contains
 Upgrading the Driver
 --------------------
 
-#. Log in to the ModelArts management console. In the navigation pane, choose **Dedicated Resource Pools** > **Elastic Cluster**.
+#. Log in to the ModelArts management console. In the navigation pane, choose **Resource Management** **> Standard Cluster**.
 #. In the **Operation** column of the target resource pool, choose **More** > **Upgrade Driver**.
 #. In the **Upgrade Driver** dialog box, the driver type, number of nodes, current version, target version, and upgrade mode of the dedicated resource pool are displayed.
 

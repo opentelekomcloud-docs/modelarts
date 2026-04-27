@@ -28,5 +28,5 @@ Solution
 
    **code.py** and **select.py** are typically prone to conflict.
 
-.. |image1| image:: /_static/images/en-us_image_0000002340728828.jpg
-.. |image2| image:: /_static/images/en-us_image_0000002374726801.jpg
+.. |image1| image:: /_static/images/en-us_image_0000002571543291.jpg
+.. |image2| image:: /_static/images/en-us_image_0000002540903338.jpg

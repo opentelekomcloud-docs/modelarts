@@ -6,7 +6,7 @@ Viewing Training Job Details
 ============================
 
 #. Log in to the ModelArts management console.
-#. In the navigation pane on the left, choose **Training Management** > **Training Jobs**.
+#. In the navigation pane on the left, choose **Model Training > Training Jobs**.
 #. In the training job list, click a job name to switch to the training job details page.
 #. On the left of the training job details page, view basic job settings and algorithm parameters.
 

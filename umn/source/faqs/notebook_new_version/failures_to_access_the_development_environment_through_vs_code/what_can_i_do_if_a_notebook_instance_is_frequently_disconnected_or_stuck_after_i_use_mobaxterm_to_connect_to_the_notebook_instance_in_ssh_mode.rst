@@ -21,7 +21,7 @@ Solution
 #. Open MobaXterm and click **Settings** on the menu bar.
 
 
-   .. figure:: /_static/images/en-us_image_0000002374727441.png
+   .. figure:: /_static/images/en-us_image_0000002571543523.png
       :alt: **Figure 1** Settings
 
       **Figure 1** Settings
@@ -29,21 +29,21 @@ Solution
 #. On the MobaXterm configuration page, click the **SSH** tab and select **SSH keepalive**.
 
 
-   .. figure:: /_static/images/en-us_image_0000002340889220.png
+   .. figure:: /_static/images/en-us_image_0000002541063230.png
       :alt: **Figure 2** Selecting SSH keepalive
 
       **Figure 2** Selecting SSH keepalive
 
    .. note::
 
-      If MobaXterm Professional is used, go to :ref:`step 3 <en-us_topic_0000002340728152__li20358102665416>`.
+      If MobaXterm Professional is used, go to :ref:`step 3 <en-us_topic_0000002540903106__li20358102665416>`.
 
-#. .. _en-us_topic_0000002340728152__li20358102665416:
+#. .. _en-us_topic_0000002540903106__li20358102665416:
 
    Change the default value **360 seconds** to **3600 seconds** or a larger value for **Stop server after**.
 
 
-   .. figure:: /_static/images/en-us_image_0000002374847289.png
+   .. figure:: /_static/images/en-us_image_0000002571423561.png
       :alt: **Figure 3** Setting Stop server after
 
       **Figure 3** Setting Stop server after

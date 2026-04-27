@@ -10,7 +10,7 @@ You can download the model trained by a training job and upload the downloaded m
 Obtaining a Model Download Path
 -------------------------------
 
-#. Log in to the ModelArts console. In the left navigation pane, choose **Training Management** > **Training Jobs**. The **Training Jobs** page is displayed.
+#. Log in to the ModelArts console. In the left navigation pane, choose **Model Training > Training Jobs**. The **Training Jobs** page is displayed.
 #. In the training job list, click a job name to view job details.
 #. On the **Configurations** tab page, obtain the path specified for **Training Output Path**, that is, the download path of the training model.
 

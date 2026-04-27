@@ -23,7 +23,7 @@ Procedure
 
 #. Log in to the management console as a tenant user, hover the cursor over your username in the upper right corner, and choose **Identity and Access Management** from the drop-down list to switch to the IAM management console.
 
-#. .. _en-us_topic_0000002340727616__li1793015304613:
+#. .. _en-us_topic_0000002571422777__li1793015304613:
 
    In the navigation pane, choose **Permissions** > **Policies/Roles**. On the **Policies/Roles** page, click **Create Custom Policy** in the upper right corner, configure parameters, and click **OK**.
 
@@ -58,7 +58,7 @@ Procedure
              ]
          }
 
-#. In the navigation pane, choose **User Groups**. On the **User Groups** page, locate the row containing the target user group and click **Authorize** in the **Operation** column. On the **Authorize User Group** page, select the custom policy created in :ref:`2 <en-us_topic_0000002340727616__li1793015304613>` and click **Next**. Then, select the scope and click **OK**.
+#. In the navigation pane, choose **User Groups**. On the **User Groups** page, locate the row containing the target user group and click **Authorize** in the **Operation** column. On the **Authorize User Group** page, select the custom policy created in :ref:`2 <en-us_topic_0000002571422777__li1793015304613>` and click **Next**. Then, select the scope and click **OK**.
 
    After the configuration, all users in the user group have the permission to view all notebook instances created by users in the user group.
 
@@ -71,8 +71,8 @@ Procedure
 Verification
 ------------
 
-Log in to the ModelArts console as an IAM user, choose **Training Management** > **Training Jobs**, and click **Create Training Job**. On the page for creating a training job, only a dedicated resource pool can be selected for **Resource Pool**.
+Log in to the ModelArts console as an IAM user, choose **Model Training > Training Jobs**, and click **Create Training Job**. On the page for creating a training job, only a dedicated resource pool can be selected for **Resource Pool**.
 
-Log in to the ModelArts console as an IAM user, choose **DevEnviron** > **Notebook**, and click **Create**. On the page for creating a notebook instance, only a dedicated resource pool can be selected for **Resource Pool**.
+Log in to the ModelArts console as an IAM user, choose **Development Workspace > Notebook**, and click **Create**. On the page for creating a notebook instance, only a dedicated resource pool can be selected for **Resource Pool**.
 
-Log in to the ModelArts console as an IAM user, choose **Service Deployment** > **Real-Time Services**, and click **Deploy**. On the page for service deployment, only a dedicated resource pool can be selected for **Resource Pool**.
+Log in to the ModelArts console as an IAM user, choose **Model Deployment > Real-Time Services**, and click **Deploy**. On the page for Model Deployment, only a dedicated resource pool can be selected for **Resource Pool**.

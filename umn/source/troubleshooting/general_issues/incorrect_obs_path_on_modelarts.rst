@@ -44,7 +44,7 @@ For details, see "Configuring Access Authorization (Global Configuration)".
 
 **Check the code directory and boot file of a training job.**
 
-#. Log in to the ModelArts management console, choose **Training Management** > **Training Jobs**, locate the failed training job, and click its name or ID to go to the job details page.
+#. Log in to the ModelArts management console, choose **Model Training > Training Jobs**, locate the failed training job, and click its name or ID to go to the job details page.
 #. In the left pane of the details page, check whether the code directory and boot file are correctly selected.
 
    -  Select an OBS directory for code directory. If a file is selected, the system will display a message indicating an invalid OBS path.

@@ -39,7 +39,7 @@ Functions of Model Management
    | :ref:`Managing ModelArts Models <inference-modelarts-0002>`     | To facilitate traceback and model tuning, ModelArts provides the model version management function. You can manage models by version.                                |
    +-----------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _en-us_topic_0000002374850257__en-us_topic_0171858287_section04192617912:
+.. _en-us_topic_0000002571423399__en-us_topic_0171858287_section04192617912:
 
 Supported AI Engines for ModelArts Inference
 --------------------------------------------

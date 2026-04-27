@@ -47,5 +47,5 @@ During the training process, key events can be manually or automatically refresh
 Procedure
 ---------
 
-#. In the navigation pane of the ModelArts management console, choose **Training Management** > **Training Jobs**. In the training job list, click a job name.
+#. In the navigation pane of the ModelArts management console, choose **Model Training > Training Jobs**. In the training job list, click a job name.
 #. Click **Events** to view events.

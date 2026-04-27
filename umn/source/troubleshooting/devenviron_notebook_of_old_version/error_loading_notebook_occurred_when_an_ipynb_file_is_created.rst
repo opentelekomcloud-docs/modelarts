@@ -11,7 +11,7 @@ Symptom
 On the Notebook Jupyter page, "Error loading notebook" is displayed when an IPYNB file is created.
 
 
-.. figure:: /_static/images/en-us_image_0000002340729340.png
+.. figure:: /_static/images/en-us_image_0000002541063044.png
    :alt: **Figure 1** Error message
 
    **Figure 1** Error message

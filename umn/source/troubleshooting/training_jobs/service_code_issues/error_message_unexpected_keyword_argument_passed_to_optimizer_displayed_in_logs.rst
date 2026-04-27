@@ -20,7 +20,7 @@ Possible Causes
 Certain parameters have been renamed in Keras. For details, see `Keras 2.3.0 <https://github.com/keras-team/keras/releases/tag/2.3.0>`__.
 
 
-.. figure:: /_static/images/en-us_image_0000002340729088.png
+.. figure:: /_static/images/en-us_image_0000002540903260.png
    :alt: **Figure 1** API changes
 
    **Figure 1** API changes

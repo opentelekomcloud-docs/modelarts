@@ -24,5 +24,5 @@ Solution
 
 Delete unnecessary files in **/home/ma-user/work**.
 
-.. |image1| image:: /_static/images/en-us_image_0000002374727077.png
-.. |image2| image:: /_static/images/en-us_image_0000002340888868.png
+.. |image1| image:: /_static/images/en-us_image_0000002571543495.png
+.. |image2| image:: /_static/images/en-us_image_0000002571423533.png

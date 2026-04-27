@@ -33,8 +33,8 @@ Searching for a Training Job
 
 If you log in to ModelArts using an IAM account, all training jobs under this account are displayed in the training job list. To quickly search for a training job, use the following methods:
 
-Method: Enable **Display Only My Instances**. Then, only jobs created under the current IAM account are displayed in the training job list.
+Method: Enable **Only My Jobs**. Then, only jobs created under the current IAM account are displayed in the training job list.
 
 Method: Search for a training job by job name.
 
-Method: Search for jobs by name, ID, job type, status, creation time, algorithm, and resource pool.
+Method: Search for jobs by Name, ID, Status, Runtime Type, Resource Pool ID, Resource Pool Federation ID,Created By.

@@ -73,8 +73,8 @@ Summary and Suggestions
 
 It is a good practice to delete unnecessary files when using a notebook instance to prevent a training failure caused by insufficient disk space.
 
-.. |image1| image:: /_static/images/en-us_image_0000002374847425.png
-.. |image2| image:: /_static/images/en-us_image_0000002340889344.png
-.. |image3| image:: /_static/images/en-us_image_0000002340889360.png
-.. |image4| image:: /_static/images/en-us_image_0000002374847449.png
-.. |image5| image:: /_static/images/en-us_image_0000002340889380.png
+.. |image1| image:: /_static/images/en-us_image_0000002541062926.png
+.. |image2| image:: /_static/images/en-us_image_0000002571423249.png
+.. |image3| image:: /_static/images/en-us_image_0000002571543223.png
+.. |image4| image:: /_static/images/en-us_image_0000002541062936.png
+.. |image5| image:: /_static/images/en-us_image_0000002571423269.png

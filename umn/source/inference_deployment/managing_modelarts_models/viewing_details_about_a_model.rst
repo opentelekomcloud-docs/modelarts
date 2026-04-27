@@ -7,7 +7,7 @@ Viewing Details About a Model
 
 After a model is created, you can view its information on the details page.
 
-#. Log in to the ModelArts management console. In the navigation pane on the left, choose **Model Management (AI Applications)**. The **Model Management** page is displayed.
+#. Log in to the ModelArts management console. In the navigation pane on the left, choose **Model Management** . The **Model Management** page is displayed.
 
 #. Click the name of the target model. The application details page is displayed.
 

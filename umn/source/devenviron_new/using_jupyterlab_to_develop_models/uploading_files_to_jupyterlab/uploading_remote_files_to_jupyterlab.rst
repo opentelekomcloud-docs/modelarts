@@ -10,7 +10,7 @@ Files can be downloaded through remote file addresses to JupyterLab.
 Method: Enter the URL of a remote file in the text box of a browser, and the file is directly downloaded.
 
 
-.. figure:: /_static/images/en-us_image_0000001856413817.png
+.. figure:: /_static/images/en-us_image_0000002571543083.png
    :alt: **Figure 1** Uploading Remote Files to JupyterLab
 
    **Figure 1** Uploading Remote Files to JupyterLab

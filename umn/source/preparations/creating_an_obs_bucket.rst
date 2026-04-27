@@ -17,7 +17,7 @@ ModelArts cannot store data and uses OBS as its data storage center. All the inp
 Before using ModelArts, create an OBS bucket and folders for storing data.
 
 
-.. figure:: /_static/images/en-us_image_0000002340731372.png
+.. figure:: /_static/images/en-us_image_0000002571542863.png
    :alt: **Figure 1** OBS
 
    **Figure 1** OBS
@@ -38,7 +38,7 @@ Procedure
 #. Click **Objects** in the navigation pane on the left. On the **Objects** page, click **Create Folder** to create an OBS folder. For example, create a folder named **flowers** in the created **c-flowers** OBS bucket. For details, see "Creating a Folder".
 
 
-   .. figure:: /_static/images/en-us_image_0000002340731328.png
+   .. figure:: /_static/images/en-us_image_0000002574149577.png
       :alt: **Figure 2** Create Folder
 
       **Figure 2** Create Folder
@@ -62,6 +62,6 @@ FAQs
 
    #. Check the region where ModelArts is deployed.
 
-      Log in to the ModelArts management console and view the region where ModelArts is located in the upper left corner.
+      Login to the ModelArts management console and view the region where ModelArts is located in the upper left corner.
 
    #. Check whether the region of the created OBS bucket is the same as that of ModelArts. Ensure that they are the same.

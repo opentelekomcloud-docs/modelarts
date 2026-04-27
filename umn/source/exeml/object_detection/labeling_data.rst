@@ -22,7 +22,7 @@ Labeling Images
 
    -  You can click the arrow keys in the upper and lower parts of the image, or press the left and right arrow keys on the keyboard to select another image. Then, repeat the preceding operations to label the image. If an image contains more than one object, you can label all the objects.
    -  You can add multiple labels with different colors for an object detection ExeML project for easy identification. After selecting an object, select a new color and enter a new label name in the dialog box that is displayed to add a new label.
-   -  In an ExeML project, object detection supports only rectangular labeling boxes. In the **Data Management** function, more types of labeling boxes are supported for object detection datasets.
+   -  In an ExeML project, object detection supports only rectangular labeling boxes. In the **Data Preparation** function, more types of labeling boxes are supported for object detection datasets.
    -  In the **Label Data** window, you can scroll the mouse to zoom in or zoom out on the image to quickly locate the object.
 
 #. After all images in the image directory are labeled, click **ExeML** in the upper left corner. In the dialog box that is displayed, click **OK** to save the labeling information. The **Label Data** page is displayed. On the **Labeled** tab page, you can view the labeled images or view the label names and quantity in the right pane.
@@ -33,13 +33,13 @@ Synchronizing or Adding Images
 On the **ExeML** page, click the project name. The **Label Data** tab page is displayed. When creating a project, you can add images from a local PC or synchronize image data from OBS.
 
 
-.. figure:: /_static/images/en-us_image_0000002340732236.png
+.. figure:: /_static/images/en-us_image_0000002540903390.png
    :alt: **Figure 1** Adding local images
 
    **Figure 1** Adding local images
 
 
-.. figure:: /_static/images/en-us_image_0000002340732232.png
+.. figure:: /_static/images/en-us_image_0000002571543333.png
    :alt: **Figure 2** Synchronizing OBS images
 
    **Figure 2** Synchronizing OBS images

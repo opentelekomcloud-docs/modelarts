@@ -106,5 +106,5 @@ During model creation, key events can both be manually and automatically refresh
 Viewing Events
 --------------
 
-#. In the navigation pane of the ModelArts management console, choose **Model Management (AI Applications)**. In the model list, click the name of the target model to go to its details page.
+#. In the navigation pane of the ModelArts management console, choose **Asset Management >** **Model Management** . In the model list, click the name of the target model to go to its details page.
 #. View the events on the **Events** tab page.

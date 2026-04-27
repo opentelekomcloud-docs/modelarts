@@ -17,7 +17,7 @@ Step 1 Logging In to SWR
 #. Click **Generate Login Command** in the upper right corner to obtain a login command.
 
 
-   .. figure:: /_static/images/en-us_image_0000002374730233.png
+   .. figure:: /_static/images/en-us_image_0000002571543151.png
       :alt: **Figure 1** Login Command
 
       **Figure 1** Login Command
@@ -25,7 +25,7 @@ Step 1 Logging In to SWR
 #. Log in to the ECS environment as the **root** user and enter the login command.
 
 
-   .. figure:: /_static/images/en-us_image_0000002374730229.png
+   .. figure:: /_static/images/en-us_image_0000002540903202.png
       :alt: **Figure 2** Login command executed on the ECS
 
       **Figure 2** Login command executed on the ECS
@@ -48,7 +48,7 @@ This section describes how to upload an image to SWR.
       sudo docker push swr.xxx.com/deep-learning/tf-1.13.2:latest
 
 
-   .. figure:: /_static/images/en-us_image_0000002340892016.png
+   .. figure:: /_static/images/en-us_image_0000002541062866.png
       :alt: **Figure 3** Uploading an image
 
       **Figure 3** Uploading an image

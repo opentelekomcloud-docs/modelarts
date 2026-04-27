@@ -14,12 +14,12 @@ Accessing JupyterLab
 
 To access JupyterLab from a running notebook instance, perform the following operations:
 
-#. Log in to the ModelArts management console. Choose **DevEnviron** > **Notebook** in the navigation pane on the left. The notebook list of the new version is displayed.
+#. Log in to the ModelArts management console. Choose **Development Workspace > Notebook** in the navigation pane on the left. The notebook list of the new version is displayed.
 
 #. Click **Open** in the **Operation** column of a running notebook instance to access JupyterLab.
 
 
-   .. figure:: /_static/images/en-us_image_0000001852878165.png
+   .. figure:: /_static/images/en-us_image_0000002571423467.png
       :alt: **Figure 1** Accessing a notebook instance
 
       **Figure 1** Accessing a notebook instance
@@ -27,7 +27,7 @@ To access JupyterLab from a running notebook instance, perform the following ope
 #. The **Launcher** page is automatically displayed. Perform required operations. For details, see `JupyterLab Documentation <https://jupyterlab.readthedocs.io/en/stable/>`__.
 
 
-   .. figure:: /_static/images/en-us_image_0000001806319384.png
+   .. figure:: /_static/images/en-us_image_0000002544869832.png
       :alt: **Figure 2** JupyterLab homepage
 
       **Figure 2** JupyterLab homepage
@@ -44,7 +44,7 @@ On the JupyterLab homepage, click a proper AI engine in the **Notebook** area to
 The AI engines supported by each notebook instance vary depending on the runtime environment. The following figure is only an example. Select an AI engine based on site requirements.
 
 
-.. figure:: /_static/images/en-us_image_0000001806159588.png
+.. figure:: /_static/images/en-us_image_0000002571543491.png
    :alt: **Figure 3** Selecting an AI engine and creating IPYNB file
 
    **Figure 3** Selecting an AI engine and creating IPYNB file
@@ -52,7 +52,7 @@ The AI engines supported by each notebook instance vary depending on the runtime
 The created IPYNB file is displayed in the navigation pane on the left.
 
 
-.. figure:: /_static/images/en-us_image_0000001853038381.png
+.. figure:: /_static/images/en-us_image_0000002541062984.png
    :alt: **Figure 4** Created IPYNB file
 
    **Figure 4** Created IPYNB file
@@ -67,7 +67,7 @@ On the JupyterLab homepage, click a proper AI engine in the **Console** area to 
 The AI engines supported by each notebook instance vary depending on the runtime environment. The following figure is only an example. Select an AI engine based on site requirements.
 
 
-.. figure:: /_static/images/en-us_image_0000001853038397.png
+.. figure:: /_static/images/en-us_image_0000002541063186.png
    :alt: **Figure 5** Selecting an AI engine and creating a console
 
    **Figure 5** Selecting an AI engine and creating a console
@@ -75,7 +75,7 @@ The AI engines supported by each notebook instance vary depending on the runtime
 After the file is created, the console page is displayed.
 
 
-.. figure:: /_static/images/en-us_image_0000001852879025.png
+.. figure:: /_static/images/en-us_image_0000002540903478.png
    :alt: **Figure 6** Creating a notebook file (console)
 
    **Figure 6** Creating a notebook file (console)
@@ -88,7 +88,7 @@ JupyterLab allows you to open multiple notebook instances or files (such as HTML
 In JupyterLab, you can customize the display of multiple files. In the file display area on the right, you can drag a file to adjust its position. Multiple files can be concurrently displayed.
 
 
-.. figure:: /_static/images/en-us_image_0000001846057337.png
+.. figure:: /_static/images/en-us_image_0000002541063176.png
    :alt: **Figure 7** Customized display of multiple files
 
    **Figure 7** Customized display of multiple files
@@ -98,7 +98,7 @@ When writing code in a notebook instance, you can create multiple views of a fil
 To open multiple views, open an IPYNB file and choose **File** > **New View for Notebook**.
 
 
-.. figure:: /_static/images/en-us_image_0000001846137269.png
+.. figure:: /_static/images/en-us_image_0000002541063204.png
    :alt: **Figure 8** Multiple views of a file
 
    **Figure 8** Multiple views of a file
@@ -118,7 +118,7 @@ For example, obtain PythonPath.
    !echo $PYTHONPATH
 
 
-.. figure:: /_static/images/en-us_image_0000001799498116.png
+.. figure:: /_static/images/en-us_image_0000002571543445.png
    :alt: **Figure 9** Running code
 
    **Figure 9** Running code
@@ -129,13 +129,13 @@ Renewing or Automatically Stopping a Notebook Instance
 If you enable auto stop when you created or started a notebook instance, the remaining duration for stopping the instance is displayed in the upper right corner of JupyterLab. You can click the time for renewal.
 
 
-.. figure:: /_static/images/en-us_image_0000001846057177.png
+.. figure:: /_static/images/en-us_image_0000002541063160.png
    :alt: **Figure 10** Remaining duration
 
    **Figure 10** Remaining duration
 
 
-.. figure:: /_static/images/en-us_image_0000001846137417.png
+.. figure:: /_static/images/en-us_image_0000002571423511.png
    :alt: **Figure 11** Renewing an instance
 
    **Figure 11** Renewing an instance
@@ -146,13 +146,13 @@ Setting a Font
 After accessing a ModelArts notebook instance from iOS, set the font to prevent abnormal display.
 
 
-.. figure:: /_static/images/en-us_image_0000001846137333.png
+.. figure:: /_static/images/en-us_image_0000002545233350.png
    :alt: **Figure 12** Advanced Settings Editor
 
    **Figure 12** Advanced Settings Editor
 
 
-.. figure:: /_static/images/en-us_image_0000001846057317.png
+.. figure:: /_static/images/en-us_image_0000002575564199.png
    :alt: **Figure 13** Set **fontFamily** to **Menlo**.
 
    **Figure 13** Set **fontFamily** to **Menlo**.
@@ -161,7 +161,7 @@ Common JupyterLab Buttons and Plug-ins
 --------------------------------------
 
 
-.. figure:: /_static/images/en-us_image_0000001846057181.png
+.. figure:: /_static/images/en-us_image_0000002575736609.png
    :alt: **Figure 14** Common JupyterLab buttons and plug-ins
 
    **Figure 14** Common JupyterLab buttons and plug-ins
@@ -184,30 +184,18 @@ Common JupyterLab Buttons and Plug-ins
 
 .. table:: **Table 2** JupyterLab plug-ins
 
-   +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-   | Plug-in                           | Description                                                                                                                           |
-   +===================================+=======================================================================================================================================+
-   | |image11|                         | List files. Click this button to show all files in the notebook instance.                                                             |
-   +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-   | |image12|                         | List ModelArts examples.                                                                                                              |
-   |                                   |                                                                                                                                       |
-   |                                   | ModelArts examples vary based on regions. For details about the ModelArts examples available in a region, see the management console. |
-   +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-   | |image13|                         | Display the terminals and kernels that are running in the current instance.                                                           |
-   +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-   | |image14|                         | Git plug-in, which can be used to quickly access the GitHub code library.                                                             |
-   +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-   | |image15|                         | Quickly show commands.                                                                                                                |
-   +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-   | |image16|                         | Property inspector.                                                                                                                   |
-   +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-   | |image17|                         | Display the tabs for the opened files.                                                                                                |
-   +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-   | |image18|                         | Show the document organization.                                                                                                       |
-   +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------+-----------------------------------------------------------------------------+
+   | Plug-in   | Description                                                                 |
+   +===========+=============================================================================+
+   | |image14| | List files. Click this button to show all files in the notebook instance.   |
+   +-----------+-----------------------------------------------------------------------------+
+   | |image15| | Display the terminals and kernels that are running in the current instance. |
+   +-----------+-----------------------------------------------------------------------------+
+   | |image16| | Git plug-in, which can be used to quickly access the GitHub code library.   |
+   +-----------+-----------------------------------------------------------------------------+
 
 
-.. figure:: /_static/images/en-us_image_0000001846137289.png
+.. figure:: /_static/images/en-us_image_0000002571543499.png
    :alt: **Figure 15** Buttons in the navigation bar
 
    **Figure 15** Buttons in the navigation bar
@@ -237,7 +225,7 @@ Common JupyterLab Buttons and Plug-ins
    +----------+--------------------------------------------------------------------------------------------------------------------------------------+
 
 
-.. figure:: /_static/images/en-us_image_0000001799338424.png
+.. figure:: /_static/images/en-us_image_0000002545317754.png
    :alt: **Figure 16** Buttons in the menu bar of an IPYNB file
 
    **Figure 16** Buttons in the menu bar of an IPYNB file
@@ -247,35 +235,35 @@ Common JupyterLab Buttons and Plug-ins
    +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
    | Button                            | Description                                                                                                                              |
    +===================================+==========================================================================================================================================+
-   | |image19|                         | Save a file.                                                                                                                             |
+   | |image17|                         | Save a file.                                                                                                                             |
    +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-   | |image20|                         | Add a new cell.                                                                                                                          |
+   | |image18|                         | Add a new cell.                                                                                                                          |
    +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-   | |image21|                         | Cut the selected cell.                                                                                                                   |
+   | |image19|                         | Cut the selected cell.                                                                                                                   |
    +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-   | |image22|                         | Copy the selected cell.                                                                                                                  |
+   | |image20|                         | Copy the selected cell.                                                                                                                  |
    +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-   | |image23|                         | Paste the selected cell.                                                                                                                 |
+   | |image21|                         | Paste the selected cell.                                                                                                                 |
    +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-   | |image24|                         | Execute the selected cell.                                                                                                               |
+   | |image22|                         | Execute the selected cell.                                                                                                               |
    +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-   | |image25|                         | Terminate a kernel.                                                                                                                      |
+   | |image23|                         | Terminate a kernel.                                                                                                                      |
    +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-   | |image26|                         | Restart a kernel.                                                                                                                        |
+   | |image24|                         | Restart a kernel.                                                                                                                        |
    +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-   | |image27|                         | There are four options in the drop-down list:                                                                                            |
+   | |image25|                         | There are four options in the drop-down list:                                                                                            |
    |                                   |                                                                                                                                          |
    |                                   | **Code** (Python code), **Markdown** (Markdown code, typically used for comments), **Raw** (a conversion tool), and **-** (not modified) |
    +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-   | |image28|                         | View historical code versions.                                                                                                           |
+   | |image26|                         | View historical code versions.                                                                                                           |
    +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-   | |image29|                         | Git plug-in. The gray button indicates that the plug-in is unavailable in the current region.                                            |
+   | |image27|                         | Git plug-in. The gray button indicates that the plug-in is unavailable in the current region.                                            |
    +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-   | |image30|                         | Instance flavor.                                                                                                                         |
+   | |image28|                         | Instance flavor.                                                                                                                         |
    +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-   | |image31|                         | Kernel for you to select.                                                                                                                |
+   | |image29|                         | Kernel for you to select.                                                                                                                |
    +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-   | |image32|                         | Code running status. |image33| indicates the code is being executed.                                                                     |
+   | |image30|                         | Code running status. |image31| indicates the code is being executed.                                                                     |
    +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
 
 Monitoring Resources
@@ -284,41 +272,39 @@ Monitoring Resources
 To obtain resource usage, select **Resource Monitor** in the right pane. The CPU usage and memory usage can be viewed.
 
 
-.. figure:: /_static/images/en-us_image_0000001799338504.png
+.. figure:: /_static/images/en-us_image_0000002571543405.png
    :alt: **Figure 17** Resource usage
 
    **Figure 17** Resource usage
 
-.. |image1| image:: /_static/images/en-us_image_0000001799338352.png
-.. |image2| image:: /_static/images/en-us_image_0000001846137373.png
-.. |image3| image:: /_static/images/en-us_image_0000001846057209.png
-.. |image4| image:: /_static/images/en-us_image_0000001799498216.png
-.. |image5| image:: /_static/images/en-us_image_0000001846137469.png
-.. |image6| image:: /_static/images/en-us_image_0000001799338352.png
-.. |image7| image:: /_static/images/en-us_image_0000001846137373.png
-.. |image8| image:: /_static/images/en-us_image_0000001846057209.png
-.. |image9| image:: /_static/images/en-us_image_0000001799498216.png
-.. |image10| image:: /_static/images/en-us_image_0000001846137469.png
-.. |image11| image:: /_static/images/en-us_image_0000001846057189.png
-.. |image12| image:: /_static/images/en-us_image_0000001799338488.png
-.. |image13| image:: /_static/images/en-us_image_0000001846137281.png
-.. |image14| image:: /_static/images/en-us_image_0000001799498136.png
-.. |image15| image:: /_static/images/en-us_image_0000001846137433.png
-.. |image16| image:: /_static/images/en-us_image_0000001799338408.png
-.. |image17| image:: /_static/images/en-us_image_0000001799498232.png
-.. |image18| image:: /_static/images/en-us_image_0000001846137297.png
-.. |image19| image:: /_static/images/en-us_image_0000001799338448.png
-.. |image20| image:: /_static/images/en-us_image_0000001799498272.png
-.. |image21| image:: /_static/images/en-us_image_0000001799498092.png
-.. |image22| image:: /_static/images/en-us_image_0000001799338560.png
-.. |image23| image:: /_static/images/en-us_image_0000001799498152.png
-.. |image24| image:: /_static/images/en-us_image_0000001846057353.png
-.. |image25| image:: /_static/images/en-us_image_0000001799338464.png
-.. |image26| image:: /_static/images/en-us_image_0000001799338544.png
-.. |image27| image:: /_static/images/en-us_image_0000001799498288.png
-.. |image28| image:: /_static/images/en-us_image_0000001846137449.png
-.. |image29| image:: /_static/images/en-us_image_0000001846057237.png
-.. |image30| image:: /_static/images/en-us_image_0000001799338472.png
-.. |image31| image:: /_static/images/en-us_image_0000001846137325.png
-.. |image32| image:: /_static/images/en-us_image_0000001846057365.png
-.. |image33| image:: /_static/images/en-us_image_0000001799338536.png
+.. |image1| image:: /_static/images/en-us_image_0000002571423329.png
+.. |image2| image:: /_static/images/en-us_image_0000002571543377.png
+.. |image3| image:: /_static/images/en-us_image_0000002540903538.png
+.. |image4| image:: /_static/images/en-us_image_0000002540903494.png
+.. |image5| image:: /_static/images/en-us_image_0000002540903546.png
+.. |image6| image:: /_static/images/en-us_image_0000002571423329.png
+.. |image7| image:: /_static/images/en-us_image_0000002571543377.png
+.. |image8| image:: /_static/images/en-us_image_0000002540903538.png
+.. |image9| image:: /_static/images/en-us_image_0000002540903494.png
+.. |image10| image:: /_static/images/en-us_image_0000002540903546.png
+.. |image11| image:: /_static/images/en-us_image_0000002571423529.png
+.. |image12| image:: /_static/images/en-us_image_0000002571543257.png
+.. |image13| image:: /_static/images/en-us_image_0000002571423487.png
+.. |image14| image:: /_static/images/en-us_image_0000002571423529.png
+.. |image15| image:: /_static/images/en-us_image_0000002571543257.png
+.. |image16| image:: /_static/images/en-us_image_0000002571423487.png
+.. |image17| image:: /_static/images/en-us_image_0000002571423521.png
+.. |image18| image:: /_static/images/en-us_image_0000002571423383.png
+.. |image19| image:: /_static/images/en-us_image_0000002571543311.png
+.. |image20| image:: /_static/images/en-us_image_0000002540903278.png
+.. |image21| image:: /_static/images/en-us_image_0000002541063028.png
+.. |image22| image:: /_static/images/en-us_image_0000002571543355.png
+.. |image23| image:: /_static/images/en-us_image_0000002541063108.png
+.. |image24| image:: /_static/images/en-us_image_0000002571423449.png
+.. |image25| image:: /_static/images/en-us_image_0000002541063194.png
+.. |image26| image:: /_static/images/en-us_image_0000002571423539.png
+.. |image27| image:: /_static/images/en-us_image_0000002571543457.png
+.. |image28| image:: /_static/images/en-us_image_0000002571543301.png
+.. |image29| image:: /_static/images/en-us_image_0000002545334018.png
+.. |image30| image:: /_static/images/en-us_image_0000002541063128.png
+.. |image31| image:: /_static/images/en-us_image_0000002541063146.png

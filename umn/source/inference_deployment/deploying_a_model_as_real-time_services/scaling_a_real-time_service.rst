@@ -14,8 +14,8 @@ Overview
 
 ModelArts provides manual scaling and auto scaling to meet different user requirements. Only the number of instances of a single model can be changed.
 
--  :ref:`Manual scaling <en-us_topic_0000002376135609__section320811015347>` allows you to manually change the number of instances of a single model.
--  :ref:`Auto Scaling <en-us_topic_0000002376135609__section94184418348>` allows you to configure scaling policies to add instances when the traffic is high, and reduce them when the traffic is low. This helps you use your resources more efficiently.
+-  :ref:`Manual scaling <en-us_topic_0000002540903400__section320811015347>` allows you to manually change the number of instances of a single model.
+-  :ref:`Auto Scaling <en-us_topic_0000002540903400__section94184418348>` allows you to configure scaling policies to add instances when the traffic is high, and reduce them when the traffic is low. This helps you use your resources more efficiently.
 
    .. table:: **Table 1** Comparison between manual scaling and auto scaling
 
@@ -43,7 +43,7 @@ Constraints
 -  Scaling is not allowed when a service is stopped, abnormal, being deployed, or being scaled.
 -  At least one policy rule must be configured.
 
-.. _en-us_topic_0000002376135609__section320811015347:
+.. _en-us_topic_0000002540903400__section320811015347:
 
 Manual Scaling
 --------------
@@ -60,7 +60,7 @@ Manual scaling allows you to manually change the number of instances of a single
 
 #. Click **Next** and then **Submit**. The real-time service list page is displayed.
 
-.. _en-us_topic_0000002376135609__section94184418348:
+.. _en-us_topic_0000002540903400__section94184418348:
 
 Auto Scaling
 ------------
@@ -125,7 +125,7 @@ Auto scaling allows you to configure scaling policies to add instances when the 
             +------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
             | Target Instances | Set the number of target instances for scaling.                                                                                                                                                                                                                                                                            |
             +------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-            | Triggered        | Choose when to run the rule. You can set it to run daily, weekly, monthly, or at a custom time using a cron expression. This time indicates the local time of where the node is deployed. For details about how to use a cron expression, see :ref:`Cron Expression <en-us_topic_0000002376135609__section1370244010274>`. |
+            | Triggered        | Choose when to run the rule. You can set it to run daily, weekly, monthly, or at a custom time using a cron expression. This time indicates the local time of where the node is deployed. For details about how to use a cron expression, see :ref:`Cron Expression <en-us_topic_0000002540903400__section1370244010274>`. |
             +------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
          .. table:: **Table 4** Rule parameters (metric-based triggering)
@@ -156,7 +156,7 @@ Auto scaling allows you to configure scaling policies to add instances when the 
 
 #. After you click **Next** and **Submit**, the service automatically resizes based on the configured scaling policy.
 
-.. _en-us_topic_0000002376135609__section1370244010274:
+.. _en-us_topic_0000002540903400__section1370244010274:
 
 Cron Expression
 ---------------
@@ -164,7 +164,7 @@ Cron Expression
 You can use a cron expression to trigger auto scaling. A cron expression is in the format of "Minute Hour Date Month Week". For example, 30 10 15 \* \* indicates that the rule is triggered at 10:30 on the 15th day of each month. You must set the cron expression based on the local time zone.
 
 
-.. figure:: /_static/images/en-us_image_0000002376138265.png
+.. figure:: /_static/images/en-us_image_0000002571543435.png
    :alt: **Figure 1** Cron expression syntax
 
    **Figure 1** Cron expression syntax

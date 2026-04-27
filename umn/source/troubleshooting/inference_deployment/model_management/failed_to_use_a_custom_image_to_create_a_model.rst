@@ -26,7 +26,7 @@ Solution
 
 #. Go to the SWR console and check whether the target image is available and whether the URL of the image is the same as the actual one, including the spelling and letter cases in the URL.
 
-#. Check whether SWR operation permissions are included in the agency authorization configured on ModelArts. To do so, go to the **Global Configuration** page on ModelArts and view the authorization details. If no SWR operation permissions are configured, go to the IAM console and grant the permissions to the target agency.
+#. Check whether SWR operation permissions are included in the agency authorization configured on ModelArts. To do so, go to the **Permission Management** page on ModelArts and view the authorization details. If no SWR operation permissions are configured, go to the IAM console and grant the permissions to the target agency.
 
 #. Set a private image
 

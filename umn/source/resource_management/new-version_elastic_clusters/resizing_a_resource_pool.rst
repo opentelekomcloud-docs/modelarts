@@ -28,7 +28,7 @@ Resizing a Dedicated Resource Pool
 
 A resource pool can be resized by adjusting the number of nodes of existing flavors or adding or deleting flavors.
 
-#. Log in to the ModelArts management console. In the navigation pane, choose **Dedicated Resource Pools** > **Elastic Cluster**.
+#. Log in to the ModelArts management console. In the navigation pane, choose **Resource Management** **> Standard Cluster**.
 
    .. note::
 
@@ -38,10 +38,10 @@ A resource pool can be resized by adjusting the number of nodes of existing flav
 
    Click **Adjust Capacity** in the **Operation** column of the target resource pool.
 
-   In the **Resource Configurations** area, set **AZ** to **Automatically allocated** or **Specifies AZ**. Click **Submit** and then **OK** to save the changes.
+   In the **Resource Configurations** area, set **AZ** to **Automatic** or **Manual**. Click **Submit** and then **OK** to save the changes.
 
-   -  If **AZ** is set to **Automatically allocated**, you can increase or decrease the number of nodes to scale out or in the resource pool. After the scaling, nodes are automatically allocated to AZs.
-   -  If you select **Specifies AZ**, you can allocate nodes to different AZs.
+   -  If **AZ** is set to **Automatic**, you can increase or decrease the number of nodes to scale out or in the resource pool. After the scaling, nodes are automatically allocated to AZs.
+   -  If you select **Manual**, you can allocate nodes to different AZs.
 
 #. Add or delete flavors.
 
@@ -54,4 +54,4 @@ A resource pool can be resized by adjusting the number of nodes of existing flav
 
          When you delete a flavor, the resource pool nodes of the flavor will be deleted accordingly and cannot be restored.
 
-.. |image1| image:: /_static/images/en-us_image_0000002374848901.png
+.. |image1| image:: /_static/images/en-us_image_0000002571422883.png

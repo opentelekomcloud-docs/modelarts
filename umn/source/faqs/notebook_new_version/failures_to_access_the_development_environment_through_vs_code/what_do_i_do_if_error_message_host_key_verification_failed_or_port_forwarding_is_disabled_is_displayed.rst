@@ -53,5 +53,5 @@ Solution
 
 Note that SSH logins will be insecure after the preceding parameters are added because the **known_hosts** file will be ignored during the logins.
 
-.. |image1| image:: /_static/images/en-us_image_0000002374847265.png
-.. |image2| image:: /_static/images/en-us_image_0000002340729452.png
+.. |image1| image:: /_static/images/en-us_image_0000002540903506.png
+.. |image2| image:: /_static/images/en-us_image_0000002571543463.png

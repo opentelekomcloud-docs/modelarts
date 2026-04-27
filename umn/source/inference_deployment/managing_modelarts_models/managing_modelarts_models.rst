@@ -12,7 +12,7 @@ Prerequisites
 
 A model has been created in ModelArts.
 
-.. _en-us_topic_0000002374730361__en-us_topic_0171858290_section102881451161111:
+.. _en-us_topic_0000002541063068__en-us_topic_0171858290_section102881451161111:
 
 Creating a New Version
 ----------------------
@@ -31,7 +31,7 @@ On the **Model Management** page, click the downward arrow on the left of the mo
 Deleting a Model
 ----------------
 
-In the navigation pane, choose **Model Management (AI Applications)**. On the **Model Management** page, click **Delete** in the **Operation** column to delete the target model.
+In the navigation pane, choose **Model Management** . On the **Model Management** page, click **Delete** in the **Operation** column to delete the target model.
 
 .. note::
 

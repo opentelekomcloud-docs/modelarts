@@ -11,7 +11,7 @@ Symptom
 When PyTorch is used for distributed training, the following error occurs.
 
 
-.. figure:: /_static/images/en-us_image_0000002340889412.png
+.. figure:: /_static/images/en-us_image_0000002571543391.png
    :alt: **Figure 1** Error log
 
    **Figure 1** Error log

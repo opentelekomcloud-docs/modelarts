@@ -10,7 +10,7 @@ Starting or Stopping an Instance
 
 Stop the notebook instances that are not needed. You can also restart a stopped instance.
 
-#. Log in to the ModelArts management console. Choose **DevEnviron** > **Notebook** in the navigation pane on the left. The notebook list of the new version is displayed.
+#. Log in to the ModelArts management console. Choose **Development Workspace > Notebook** in the navigation pane on the left. The notebook list of the new version is displayed.
 #. Start or stop the target notebook instance.
 
    -  To start a notebook instance, click **Start** in the **Operation** column of the target notebook instance. Only stopped notebook instances can be started.
@@ -27,7 +27,7 @@ Deleting an Instance
 
 Delete the notebook instances that are not needed.
 
-#. Log in to the ModelArts management console. Choose **DevEnviron** > **Notebook** in the navigation pane on the left. The notebook list of the new version is displayed.
+#. Log in to the ModelArts management console. Choose **Development Workspace > Notebook** in the navigation pane on the left. The notebook list of the new version is displayed.
 #. In the notebook list, click **Delete** in the **Operation** column of the target notebook instance. In the dialog box that is displayed, click **OK**.
 
    .. caution::

@@ -13,7 +13,7 @@ After a model is created, an error occurred when it is deployed as a service.
 Possible Causes
 ---------------
 
-When a model is imported using a custom or base image, many service logics are customized. Any error in the logics will result in a service deployment or prediction failure.
+When a model is imported using a custom or base image, many service logics are customized. Any error in the logics will result in a Model Deployment or prediction failure.
 
 Solution
 --------

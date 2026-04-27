@@ -12,16 +12,16 @@ Procedure
 
 #. On the **ExeML** page, click the name of the project that is successfully created. The **Label Data** tab page is displayed.
 
-#. On the **Label Data** tab page, click **Train** in the upper right corner. In the displayed **Training Configuration** dialog box, set related parameters. :ref:`Table 1 <en-us_topic_0000002340891904__en-us_topic_0000001799497332_en-us_topic_0284258841_en-us_topic_0169446261_table56110116164>` describes the parameters. Ensure that the number of decimal places of training and validation ratios ranges from 1 to 5.
+#. On the **Label Data** tab page, click **Train** in the upper right corner. In the displayed **Training Configuration** dialog box, set related parameters. :ref:`Table 1 <en-us_topic_0000002540902808__en-us_topic_0000001799497332_en-us_topic_0284258841_en-us_topic_0169446261_table56110116164>` describes the parameters. Ensure that the number of decimal places of training and validation ratios ranges from 1 to 5.
 
-   .. _en-us_topic_0000002340891904__en-us_topic_0000001799497332_en-us_topic_0284258841_en-us_topic_0169446261_table56110116164:
+   .. _en-us_topic_0000002540902808__en-us_topic_0000001799497332_en-us_topic_0284258841_en-us_topic_0169446261_table56110116164:
 
    .. table:: **Table 1** Parameter description
 
       +---------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------+
       | Parameter                             | Description                                                                                                                                                                                                                                                                                                                                                                         | Default Value                        |
       +=======================================+=====================================================================================================================================================================================================================================================================================================================================================================================+======================================+
-      | Dataset Version                       | This version is the one when the dataset is published in **Data Management**. In an ExeML project, when a training job is started, the dataset is published as a version based on the previous data labeling.                                                                                                                                                                       | Randomly provided by the system      |
+      | Dataset Version                       | This version is the one when the dataset is published in **Data Preparation**. In an ExeML project, when a training job is started, the dataset is published as a version based on the previous data labeling.                                                                                                                                                                      | Randomly provided by the system      |
       |                                       |                                                                                                                                                                                                                                                                                                                                                                                     |                                      |
       |                                       | The system automatically provides a version number. You can change it to the version number that you want.                                                                                                                                                                                                                                                                          |                                      |
       +---------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------+
@@ -46,9 +46,9 @@ Procedure
 
 #. On the **Train Model** tab page, wait until the training status changes from **Running** to **Completed**.
 
-#. View the training details, such as **Accuracy**, **Evaluation Result**, **Training Parameters**, and **Classification Statistics**. For details about the evaluation result parameters, see :ref:`Table 2 <en-us_topic_0000002340891904__en-us_topic_0000001799497332_en-us_topic_0284258841_en-us_topic_0169446261_table15870125755817>`.
+#. View the training details, such as **Accuracy**, **Evaluation Result**, **Training Parameters**, and **Classification Statistics**. For details about the evaluation result parameters, see :ref:`Table 2 <en-us_topic_0000002540902808__en-us_topic_0000001799497332_en-us_topic_0284258841_en-us_topic_0169446261_table15870125755817>`.
 
-   .. _en-us_topic_0000002340891904__en-us_topic_0000001799497332_en-us_topic_0284258841_en-us_topic_0169446261_table15870125755817:
+   .. _en-us_topic_0000002540902808__en-us_topic_0000001799497332_en-us_topic_0284258841_en-us_topic_0169446261_table15870125755817:
 
    .. table:: **Table 2** Evaluation result parameters
 

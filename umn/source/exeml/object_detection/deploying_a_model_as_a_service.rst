@@ -21,7 +21,7 @@ You can deploy a model as a real-time service that provides a real-time test UI 
 
    The options are **1 hour later**, **2 hours later**, **4 hours later**, **6 hours later**, and **Custom**. If you select **Custom**, you can enter any integer from 1 to 24 hours in the text box on the right.
 
-#. After the model deployment is started, view the deployment status on the **Service Deployment** page.
+#. After the model deployment is started, view the deployment status on the **Model Deployment** page.
 
    It takes a certain period of time to deploy a model. When the status in the **Version Manager** pane changes from **Deploying** to **Running**, the deployment is complete.
 
@@ -32,16 +32,16 @@ You can deploy a model as a real-time service that provides a real-time test UI 
 Testing a Service
 -----------------
 
--  On the **Service Deployment** page, select a service type. For example, on the ExeML page, the object detection model is deployed as a real-time service by default. On the **Real-Time Services** page, click **Prediction** in the **Operation** column of the target service to perform a service test.
+-  On the **Model Deployment** page, select a service type. For example, on the ExeML page, the object detection model is deployed as a real-time service by default. On the **Real-Time Services** page, click **Prediction** in the **Operation** column of the target service to perform a service test.
 -  The following describes the procedure for performing a service test after the object detection model is deployed as a service on the ExeML page.
 
    #. After the model is deployed, test the service using an image. On the **ExeML** page, click the target project, go to the **Deploy Service** tab page, select the service version in the **Running** status, click **Upload** in the service test area, and upload a local image to perform the test.
 
-   #. Click **Predict** to perform the test. After the prediction is complete, the result is displayed in the **Test Result** pane on the right. If the model accuracy does not meet your expectation, add images on the **Label Data** tab page, label the images, and train and deploy the model again. :ref:`Table 1 <en-us_topic_0000002340891944__en-us_topic_0000001846056693_en-us_topic_0284258842_en-us_topic_0169446262_table27971626122015>` describes the parameters in the prediction result. If you are satisfied with the model prediction result, call the API to access the real-time service as prompted. For details, see "Accessing a Real-Time Service".
+   #. Click **Predict** to perform the test. After the prediction is complete, the result is displayed in the **Test Result** pane on the right. If the model accuracy does not meet your expectation, add images on the **Label Data** tab page, label the images, and train and deploy the model again. :ref:`Table 1 <en-us_topic_0000002571542769__en-us_topic_0000001846056693_en-us_topic_0284258842_en-us_topic_0169446262_table27971626122015>` describes the parameters in the prediction result. If you are satisfied with the model prediction result, call the API to access the real-time service as prompted. For details, see "Accessing a Real-Time Service".
 
       Currently, only JPG, JPEG, BMP, and PNG images are supported.
 
-      .. _en-us_topic_0000002340891944__en-us_topic_0000001846056693_en-us_topic_0284258842_en-us_topic_0169446262_table27971626122015:
+      .. _en-us_topic_0000002571542769__en-us_topic_0000001846056693_en-us_topic_0284258842_en-us_topic_0169446262_table27971626122015:
 
       .. table:: **Table 1** Parameters in the prediction result
 
@@ -50,14 +50,14 @@ Testing a Service
          +===================+============================================================================================================================================================================================================================================+
          | detection_classes | Label of each detection box                                                                                                                                                                                                                |
          +-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-         | detection_boxes   | Coordinates of four points (y_min, x_min, y_max, and x_max) of each detection box, as shown in :ref:`Figure 1 <en-us_topic_0000002340891944__en-us_topic_0000001846056693_en-us_topic_0284258842_en-us_topic_0169446262_fig8987811133012>` |
+         | detection_boxes   | Coordinates of four points (y_min, x_min, y_max, and x_max) of each detection box, as shown in :ref:`Figure 1 <en-us_topic_0000002571542769__en-us_topic_0000001846056693_en-us_topic_0284258842_en-us_topic_0169446262_fig8987811133012>` |
          +-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
          | detection_scores  | Confidence of each detection box                                                                                                                                                                                                           |
          +-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-      .. _en-us_topic_0000002340891944__en-us_topic_0000001846056693_en-us_topic_0284258842_en-us_topic_0169446262_fig8987811133012:
+      .. _en-us_topic_0000002571542769__en-us_topic_0000001846056693_en-us_topic_0284258842_en-us_topic_0169446262_fig8987811133012:
 
-      .. figure:: /_static/images/en-us_image_0000002340732312.png
+      .. figure:: /_static/images/en-us_image_0000002540903172.png
          :alt: **Figure 1** Illustration for coordinates of four points of a detection box
 
          **Figure 1** Illustration for coordinates of four points of a detection box

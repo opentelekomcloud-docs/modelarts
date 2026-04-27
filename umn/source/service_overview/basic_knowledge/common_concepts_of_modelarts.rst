@@ -28,4 +28,4 @@ Batch inference specifies a batch job that processes batch data for inference.
 Resource Pool
 -------------
 
-ModelArts provides large-scale computing clusters for model development, training, and deployment. There are two types of resource pools: public resource pool and dedicated resource pool. The public resource pool is provided by default. Dedicated resource pools are created separately and used exclusively.
+ModelArts provides large-scale computing clusters for model development, training, and deployment. There are two types of resource pools: public resource pool and dedicated resource pool. The public resource pool is provided by default. Standard Clusters are created separately and used exclusively.

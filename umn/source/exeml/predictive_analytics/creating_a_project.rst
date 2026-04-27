@@ -10,10 +10,10 @@ ModelArts ExeML supports image classification, and object detection projects. Yo
 Procedure
 ---------
 
-#. Log in to the ModelArts management console. In the left navigation pane, choose **ExeML**. The **ExeML** page is displayed.
+#. Log in to the ModelArts management console. In the left navigation pane, choose **Development Workspace > ExeML**. The **ExeML** page is displayed.
 
 
-   .. figure:: /_static/images/en-us_image_0000002340892012.png
+   .. figure:: /_static/images/en-us_image_0000002543593566.png
       :alt: **Figure 1** ExeML
 
       **Figure 1** ExeML

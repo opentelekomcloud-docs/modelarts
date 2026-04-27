@@ -7,13 +7,13 @@ Viewing Service Details
 
 After a model is deployed as a real-time service, you can access the service page to view its details.
 
-#. Log in to the ModelArts management console and choose **Service Deployment** > **Real-Time Services**.
+#. Log in to the ModelArts management console and choose **Model Deployment > Real-Time Services**.
 
 #. On the **Real-Time Services** page, click the name of the target service. The service details page is displayed.
 
-   You can view the service name, status, and other information. For details, see :ref:`Table 1 <en-us_topic_0000002340732380__en-us_topic_0165025305_table54131529105213>`.
+   You can view the service name, status, and other information. For details, see :ref:`Table 1 <en-us_topic_0000002541063054__en-us_topic_0165025305_table54131529105213>`.
 
-   .. _en-us_topic_0000002340732380__en-us_topic_0165025305_table54131529105213:
+   .. _en-us_topic_0000002541063054__en-us_topic_0165025305_table54131529105213:
 
    .. table:: **Table 1** real-time service parameters
 
@@ -39,9 +39,9 @@ After a model is deployed as a real-time service, you can access the service pag
       | **WebSocket**                     | Whether to upgrade to the WebSocket service.                                                                              |
       +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------+
 
-#. You can switch between tabs on the details page of a real-time service to view more details. For details, see :ref:`Table 2 <en-us_topic_0000002340732380__en-us_topic_0165025305_table62441712183917>`.
+#. You can switch between tabs on the details page of a real-time service to view more details. For details, see :ref:`Table 2 <en-us_topic_0000002541063054__en-us_topic_0165025305_table62441712183917>`.
 
-   .. _en-us_topic_0000002340732380__en-us_topic_0165025305_table62441712183917:
+   .. _en-us_topic_0000002541063054__en-us_topic_0165025305_table62441712183917:
 
    .. table:: **Table 2** Details of a real-time service
 
@@ -77,4 +77,4 @@ After a model is deployed as a real-time service, you can access the service pag
       |                                   | For details about how to use tags, see :ref:`Using TMS Tags to Manage Resources by Group <resmgmt-modelarts_0063>`.                                                                              |
       +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. |image1| image:: /_static/images/en-us_image_0000002374850333.png
+.. |image1| image:: /_static/images/en-us_image_0000002571423431.png
