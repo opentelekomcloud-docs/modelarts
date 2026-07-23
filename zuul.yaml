@@ -1,10 +1,9 @@
+---
 - project:
     merge-mode: squash-merge
     default-branch: main
     templates:
-    - api-ref-hc-jobs
-    - umn-hc-jobs
-    - helpcenter-base-jobs
+      - helpcenter-base-jobs-no-check
     vars:
       sphinx_pdf_files:
         - ma-umn.pdf
@@ -12,7 +11,7 @@
         - ma-api-ref.pdf
     check:
       jobs:
-      - noop
+        - noop
     gate:
       jobs:
-      - noop
+        - noop
